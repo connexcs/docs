@@ -87,10 +87,10 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 ## Step-by-Step IDE Guide
 
 1. Login to your account.
-2. Navigate to the **IDE** section. Click on the `+` (Create Resource) button. <br><img src= "misc/img/ide1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "misc/img/ide2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. The application is created under `Unpublished Apps`. <br><img src= "misc/img/ide4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. **Create a Config Button**: Create and configure a button that appears in your application UI and performs specific actions. <br><img src= "misc/img/ide5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Navigate to the **IDE** section. Click on the `+` (Create Resource) button. <br><img src= "/misc/img/ide1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "/misc/img/ide2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. The application is created under `Unpublished Apps`. <br><img src= "/misc/img/ide4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. **Create a Config Button**: Create and configure a button that appears in your application UI and performs specific actions. <br><img src= "/misc/img/ide5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       1. `Label`: The display name of the button.
       2. `Icon`: The icon shown alongside the button label.
       3. `Type (Color)`: Defines the button color/style.
@@ -101,7 +101,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       8. `Max Select`: Maximum number of items allowed for selection when using the button.
       9. `Sort Order`: Controls the position of the button relative to other buttons.
       10. `App`: Specifies which application this button belongs to.
-6. **Create a Purchase DID Now Button**. <br><img src= "misc/img/ide6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. **Create a Purchase DID Now Button**. <br><img src= "/misc/img/ide6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 7. **Create Environmental Variables**: This section is used to define configurable key–value pairs that can be used across the application for dynamic behavior and environment-specific settings.
       1. `App`: Specifies the application where the variable is used.
       2. `Key`: The name/identifier of the variable. Used in code or configuration to reference the value.
@@ -112,9 +112,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
          3. **Locked**: Restricts editing completely.
       5. `Default`: Marks this as the default value (used when no override is provided).
 8. Create `Environmental Variables` for the following:
-      1. The `currency` environmental variable is a configuration setting that defines which currency the application should use by default. <br><img src= "misc/img/ide7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-      2. The`cx_api_user` environmental variable is used to store the username (or identifier) for API authentication within the application. <br><img src= "misc/img/ide8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-      3. The `did_mask_size` environmental variable defines how many digits of a DID (phone number) should be masked/hidden.<br><img src= "misc/img/ide9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. The `currency` environmental variable is a configuration setting that defines which currency the application should use by default. <br><img src= "/misc/img/ide7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      2. The`cx_api_user` environmental variable is used to store the username (or identifier) for API authentication within the application. <br><img src= "/misc/img/ide8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      3. The `did_mask_size` environmental variable defines how many digits of a DID (phone number) should be masked/hidden.<br><img src= "/misc/img/ide9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 9. Next step is to build the `UI` using `Page Builder`. This is for `Environment Variables Config`. This UI is a **form built using Page Builder components** to allow users to **view and update environment variables** for the application.
 
@@ -187,15 +187,15 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
          | **Javascript CDN Library** | Allows adding external JS libraries via CDN for extended functionality.|
 
 10. Define the `Data source settings` under `Form Attributes`.
-    1. `saveEnv`:<br><img src= "misc/img/ide10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    2. `loadEnvValues`: <br><img src= "misc/img/ide11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    3. `getApiUsers`: <br><img src= "misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    4. `Data Processing`: <br><img src= "misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    1. `saveEnv`:<br><img src= "/misc/img/ide10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. `loadEnvValues`: <br><img src= "/misc/img/ide11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. `getApiUsers`: <br><img src= "/misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 11. Define the `Action Panel settings` under `Form Attributes`.
-    1. `Function mounted`:<br><img src= "misc/img/ide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    2. `Function onConfirm_env`: <br><img src= "misc/img/ide18.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    3. `Function onCancel_tshukgo8`: <br><img src= "misc/img/ide19.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    1. `Function mounted`:<br><img src= "/misc/img/ide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. `Function onConfirm_env`: <br><img src= "/misc/img/ide18.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. `Function onCancel_tshukgo8`: <br><img src= "/misc/img/ide19.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 12. Next step is to configure the **Button component** using **Page Builder**. This button (`Start Purchasing DIDs`) is an **action trigger that allows users to **initiate the DID purchasing workflow** by executing the configured `onClick` action (`startPurchasingDids`).
 
@@ -240,20 +240,20 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
    | **Action Panel** | Defines available form actions such as submit, reset, or custom operations.|
    | **Javascript CDN Library** | Enables inclusion of external JavaScript libraries via CDN for extended functionality.|
 
-13. Define the `Data source settings` under `Form Attributes`.
-    1.  `GET did`:<br><img src= "misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    2. `GET isOrderAffordable`: <br><img src= "misc/img/ide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    3. `GET checkout`: <br><img src= "misc/img/ide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-    4. `Data Processing`: <br><img src= "misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1.  Define the `Data source settings` under `Form Attributes`.
+    1.  `GET did`:<br><img src= "/misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "/misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. `GET isOrderAffordable`: <br><img src= "/misc/img/ide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. `GET checkout`: <br><img src= "/misc/img/ide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-14. Define the `Action Panel settings` under `Form Attributes`.
-   1. `Function mounted`:<br><img src= "misc/img/ide27.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   2. `Function btnSearch`: <br><img src= "misc/img/ide28.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   3. `Function proceedToCart`: <br><img src= "misc/img/ide29.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   4. `Function addSelectedDidsToCart`:<br><img src= "misc/img/ide30.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   5. `Function startPurchasingDids`:<br><img src= "misc/img/ide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2.  Define the `Action Panel settings` under `Form Attributes`.
+   1. `Function mounted`:<br><img src= "/misc/img/ide27.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   2. `Function btnSearch`: <br><img src= "/misc/img/ide28.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   3. `Function proceedToCart`: <br><img src= "/misc/img/ide29.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   4. `Function addSelectedDidsToCart`:<br><img src= "/misc/img/ide30.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   5. `Function startPurchasingDids`:<br><img src= "/misc/img/ide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-15. Next step is to configure the **Cart Dialog UI**. <br><img src= "misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3.  Next step is to configure the **Cart Dialog UI**. <br><img src= "/misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    **Dialog Component Attributes**
 
       | Field | Description|
@@ -278,9 +278,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
       | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-16. **Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
+4.  **Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
 
-17. Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5.  Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Text Component Attributes**
 
       | Field| Description|
@@ -302,9 +302,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Action** | **Description** |
       | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
 
-18. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
+6.  **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-19. Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7.  Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "/misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Data Grid Component Attributes**
 
       | Field | Description |
@@ -327,9 +327,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       |**Action Settings**|
       | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
 
-20. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
+8.  **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-21. Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+9.  Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "/misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     **Alert Component (Insufficient Balance)**
 
@@ -388,9 +388,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Add to Cart** | Adds selected DIDs to cart.|
       | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
 
-22. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
+10. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
 
-23. **ScriptForge Settings: DID ENV Setup**
+11. **ScriptForge Settings: DID ENV Setup**
 
 ```js
 /**
@@ -564,6 +564,6 @@ async function main () {
 }
 ```
 
-25. Click on `App Settings` and then `Publish` it. <br><img src= "misc/img/ide37.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+25. Click on `App Settings` and then `Publish` it. <br><img src= "/misc/img/ide37.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 26. After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
