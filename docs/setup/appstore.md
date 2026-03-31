@@ -272,3 +272,47 @@ Users must securely store these credentials, as they may not be shown again.
 
 !!! Info
      A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
+
+### ASR per CLI
+
+#### Overview
+
+The **ASR per CLI** application provides a report that displays the **Answer-Seizure Ratio (ASR)** for each CLI (Caller Line Identification), helping users analyze call performance at a granular level.
+
+Instead of manually compiling call metrics, users can view ASR data directly within the application, enabling faster insights, better monitoring, and more informed decision-making.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ASR per CLI** and click `Install`.<img src= "/apps/img/apc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/apc2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+3. The installed versions are visible.
+   <img src= "/apps/img/apc3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+4. The app is installed app can be seen in **Management :material-menu-right: Customer**. <br><img src= "/apps/img/apc4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+5. Click on the `ASR per CLI` button on the top.
+The **UTC Date Range** allows users to filter data based on Coordinated Universal Time (UTC), ensuring consistent time-based analysis across different time zones.
+
+### ConnexCS Control Panel Defaults
+
+#### Overview
+
+The **ConnexCS Control Panel Defaults** application includes predefined configurations for commonly used modules such as **Bulk Run Tests**, **Carrier Win Rate**, **Custom Reports**, **DTMF**, **Latency**, **Route Stats**, **Stats**, **USA Calls**, and **USA Rate Center**.
+
+These defaults help standardize reporting and monitoring setups across the platform while allowing users to customize them as needed.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ConnexCS Control Panel Defaults** and click `Install`.<img src= "/apps/img/default1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/default2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+3. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/default3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+4. The installed versions are visible.
+   <img src= "/apps/img/default4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+5. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name]**. These duplicate features are automatically added when the application is installed and are customizable. <br><img src= "/apps/img/default5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
