@@ -118,46 +118,46 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 
 9. **ScriptForge Settings: DID ENV Setup**
 
-   ```js
-   /**
-    * Asynchronously saves environment variables based on the provided data.
-   *
-    * @param {Object} data - The data object containing environment variable values.
-    * @param {string} data.api_user - The API user value to be set.
-    * @param {string} data.class4_server - The Class 4 server value to be set.
-    * @param {string} data.class5_server - The Class 5 server value to be set.
-    * @returns {Promise<Object>} A promise that resolves to an object with a status property indicating the result.
-   */
-   async function saveEnv({ envValue }) {
-	   try {
-		   for (const [key, value] of Object.entries(envValue)) {
-			await setEnvVar(key, `${value}`)
-		   }
-		   return { status: 'OK' }
-	   } catch (error) {
-		   throw new Error(error.message)
-	   }
-   }
+      ```js
+      /**
+      * Asynchronously saves environment variables based on the provided data.
+      *
+      * @param {Object} data - The data object containing environment variable values.
+      * @param {string} data.api_user - The API user value to be set.
+      * @param {string} data.class4_server - The Class 4 server value to be set.
+      * @param {string} data.class5_server - The Class 5 server value to be set.
+      * @returns {Promise<Object>} A promise that resolves to an object with a status property indicating the result.
+      */
+      async function saveEnv({ envValue }) {
+	      try {
+		      for (const [key, value] of Object.entries(envValue)) {
+			   await setEnvVar(key, `${value}`)
+		      }
+		      return { status: 'OK' }
+	      } catch (error) {
+		      throw new Error(error.message)
+	      }
+      }
 
-   /**
-    * Asynchronously loads environment variables and returns an object containing specific server and user values.
-   *
-    * @async
-    * @function loadEnvValues
-    * @returns {Promise<Object>} An object containing the following properties:
-    * - class4_server {string}: The value of the C4SERVER environment variable.
-    * - api_user {string}: The value of the cx_api_user environment variable.
-    * - class5_server {string}: The value of the C5SERVER environment variable.
-   */
-   async function loadEnvValues() {
-	   const vars = await getEnvVars()
-	   return {
-		   api_user: vars.cx_api_user,
-		   currency: vars.currency,
-		   did_mask_size: vars.did_mask_size,
-	   }
-   }
-   ```
+      /**
+      * Asynchronously loads environment variables and returns an object containing specific server and user values.
+      *
+      * @async
+      * @function loadEnvValues
+      * @returns {Promise<Object>} An object containing the following properties:
+      * - class4_server {string}: The value of the C4SERVER environment variable.
+      * - api_user {string}: The value of the cx_api_user environment variable.
+      * - class5_server {string}: The value of the C5SERVER environment variable.
+      */
+      async function loadEnvValues() {
+	      const vars = await getEnvVars()
+	      return {
+		      api_user: vars.cx_api_user,
+		      currency: vars.currency,
+		      did_mask_size: vars.did_mask_size,
+	      }
+      }
+      ```
 
 10. Next step is to build the `UI` using `Page Builder`. This is for config screen to save infomation in `ENV`. This UI is a **form built using Page Builder components** to allow users to **view and update environment variables** for the application.
 
@@ -231,134 +231,134 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 
 11. **ScriptForge Settings: DID ENV Setup: DID Query**
 
-   ```js
-   const cxRest = require('cxRest')
-   const api = cxRest.auth(process.env.cx_api_user)
+      ```js
+      const cxRest = require('cxRest')
+      const api = cxRest.auth(process.env.cx_api_user)
 
-   const didMaskSize = process.env.did_mask_size
-   const currency = process.env.currency
+      const didMaskSize = process.env.did_mask_size
+      const currency = process.env.currency
 
-   async function main(data) {
-	   const res = await query(data)
-	   console.log('current time', new Date().toLocaleString())
-	   return JSON.stringify(res)
-   }
+      async function main(data) {
+	      const res = await query(data)
+	      console.log('current time', new Date().toLocaleString())
+	      return JSON.stringify(res)
+      }
 
-   async function updatePaymentRecords(record) {
-	   const packages = await api.post('/payment', record)
-	   return packages
-   }
+      async function updatePaymentRecords(record) {
+	      const packages = await api.post('/payment', record)
+	      return packages
+      }
 
-   async function checkoutCart (order) {
-	   let customer = null
-	   try {
-		   customer = await getCustomer(order)
-	   } catch (e) {
-		   throw e
-	   }
-	   const failedOrders = []
-	   // Update DID ownership to the provided customer
-	   order.cart.forEach(async cartItem => {
-		   try {
-			   const res = await api.put(`did/${cartItem.did_id}`, { customer_id: customer.id })
-			   if (res.status !== 'OK') {
-				   failedOrders.push(cartItem)
-				   throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
-			   }
-			   const didDetails = (await api.get(`did?id=${cartItem.did_id}`))
-			   await updatePaymentRecords({
-				   company_id: customer.id,
-				   currency: cartItem.currency,
-				   description: `DID ordered: (${didDetails[0].did})`,
-				   status: 'Completed',
-				   total: - cartItem?.setup_cost
-			   })
-		   } catch (e) {
-			   failedOrders.push(cartItem)
-			   throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
-		   }
-	   })
-	   return { status: 'OK' }
-   }
+      async function checkoutCart (order) {
+	      let customer = null
+	      try {
+		      customer = await getCustomer(order)
+	      } catch (e) {
+		      throw e
+	      }
+	      const failedOrders = []
+	      // Update DID ownership to the provided customer
+	      order.cart.forEach(async cartItem => {
+		      try {
+			      const res = await api.put(`did/${cartItem.did_id}`, { customer_id: customer.id })
+			      if (res.status !== 'OK') {
+				      failedOrders.push(cartItem)
+				      throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
+			      }
+			      const didDetails = (await api.get(`did?id=${cartItem.did_id}`))
+			      await updatePaymentRecords({
+				      company_id: customer.id,
+				      currency: cartItem.currency,
+				      description: `DID ordered: (${didDetails[0].did})`,
+				      status: 'Completed',
+				      total: - cartItem?.setup_cost
+			      })
+		      } catch (e) {
+			      failedOrders.push(cartItem)
+			      throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
+		      }
+	      })
+	      return { status: 'OK' }
+      }
 
-   /**
-   * Check if the customer can afford all the items in the cart
-   * @return {Boolean} - Whether the customer can afford the cart or not
-   */
-   async function isOrderAffordable (order) {
-	   const customer = await getCustomer(order)
-	   const accountBalance = Number(customer.credit) + Number(customer.debit_limit)
-	   const cartTotalCost = order.cart.reduce((totalCost, cartItem) => {
-		   // Get the total cost of items in the cart
-		   return totalCost + cartItem.setup_cost
-	   }, 0)
-	   return accountBalance >= cartTotalCost
-   }
+      /**
+       * Check if the customer can afford all the items in the cart
+       * @return {Boolean} - Whether the customer can afford the cart or not
+      */
+      async function isOrderAffordable (order) {
+	      const customer = await getCustomer(order)
+	      const accountBalance = Number(customer.credit) + Number(customer.debit_limit)
+	      const cartTotalCost = order.cart.reduce((totalCost, cartItem) => {
+		      // Get the total cost of items in the cart
+		      return totalCost + cartItem.setup_cost
+	      }, 0)
+	      return accountBalance >= cartTotalCost
+      }
 
-   async function getCustomer (order) {
-	   const vars = await getEnvVars()
-	   if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
-	   return await api.get(`customer/${order._company.company_id}`)
-   }
+      async function getCustomer (order) {
+	      const vars = await getEnvVars()
+	      if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
+	      return await api.get(`customer/${order._company.company_id}`)
+      }
 
-   async function query(qry) {
-	   const vars = await getEnvVars()
-	   if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
-	   const packages = await api.get('setup/package')
-	   // return packages
-	   // return packages
-	   const dids = (await api.get(`did?s=${qry.prefix}&_startRow=0&_endRow=10000&_pivotMode=false&customer_id=[null]`))
-	   .filter(did => did.package_id)
-	   .map(did => {
-		   const packageDets = packages.find(pack => pack.id === did.package_id)
-		   if (!packageDets) throw new Error('DID must be assigned to a package.')
-		   // Mask DIDs
-		   // Setup Charge, Recurring Charge, Charge Interval,
-		   // currency: USD, mask_digits: 6
-		   // Max basket size - do later
-		   did.did = hideEndCharacters(did.did, didMaskSize)
+      async function query(qry) {
+	      const vars = await getEnvVars()
+	      if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
+	      const packages = await api.get('setup/package')
+	      // return packages
+	      // return packages
+	      const dids = (await api.get(`did?s=${qry.prefix}&_startRow=0&_endRow=10000&_pivotMode=false&customer_id=[null]`))
+	      .filter(did => did.package_id)
+	      .map(did => {
+		      const packageDets = packages.find(pack => pack.id === did.package_id)
+		      if (!packageDets) throw new Error('DID must be assigned to a package.')
+		      // Mask DIDs
+		      // Setup Charge, Recurring Charge, Charge Interval,
+		      // currency: USD, mask_digits: 6
+		      // Max basket size - do later
+		      did.did = hideEndCharacters(did.did, didMaskSize)
 
-		   // FIX SETUP_COST
-		   // =============
-		   return {
-			   did_id: did.id,
-			   did: did.did,
-			   setup_cost: packageDets.setup_retail,
-			   recurring_cost: packageDets.retail,
-			   charge_interval: packageDets.frequency.charAt(0).toUpperCase() + packageDets.frequency.slice(1),
-			   currency,
-			   package_id: packageDets.package_id
-		   }
-	   })
+		      // FIX SETUP_COST
+		      // =============
+		      return {
+			      did_id: did.id,
+			      did: did.did,
+			      setup_cost: packageDets.setup_retail,
+			      recurring_cost: packageDets.retail,
+			      charge_interval: packageDets.frequency.charAt(0).toUpperCase() + packageDets.frequency.slice(1),
+			      currency,
+			      package_id: packageDets.package_id
+		      }
+	      })
    
-	   return dids
-   }
+	      return dids
+      }
 
-   function hideEndCharacters(inputString, numToHide) {
-	   // Create a new string with 'x' repeated for the last numToHide characters
-	   const maskedPart = 'x'.repeat(numToHide)
+      function hideEndCharacters(inputString, numToHide) {
+	      // Create a new string with 'x' repeated for the last numToHide characters
+	      const maskedPart = 'x'.repeat(numToHide)
 	
-	   // Append the remaining characters from the original string
-	   const result = inputString.slice(0, -numToHide) + maskedPart
+	      // Append the remaining characters from the original string
+	      const result = inputString.slice(0, -numToHide) + maskedPart
 	
-	   return result
-   }
+	      return result
+      }
 
 
-   async function main () {
-	   const abc = (await api.get(`did?id=3557782`))
-	   return abc
-	   // const order = {
-	   // _company: {
-	   // company_id: 49051
-	   // }
-	   // }
-	   // const customer = await getCustomer(order)
-	   // return customer
-	   // const accountBalance = Number(customer.credit)
-	   // return accountBalance
-   }
-   ```
+      async function main () {
+	      const abc = (await api.get(`did?id=3557782`))
+	      return abc
+	      // const order = {
+	      // _company: {
+	      // company_id: 49051
+	      // }
+	      // }
+	      // const customer = await getCustomer(order)
+	      // return customer
+	      // const accountBalance = Number(customer.credit)
+	      // return accountBalance
+      }
+      ```
 
 12. Define the `Data source settings` under `Form Attributes`.
     1. `saveEnv`:<br><img src= "/misc/img/ide10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -373,31 +373,31 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 
 14. Next step is to configure the **Button component** using **Page Builder**. This button (`Start Purchasing DIDs`) is an **action trigger that allows users to **initiate the DID purchasing workflow** by executing the configured `onClick` action (`startPurchasingDids`).
 
-**Dialog Component Attributes**
+      **Dialog Component Attributes**
 
-   | Field | Description|
-   | ------|------------|
-   | **Type** | Defines the component type (here, a Dialog popup). |
-   |**ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
-   | **Title** | The heading displayed at the top of the dialog. |
-   | **Width** | Controls the width of the dialog (e.g., `35rem`). |
-   | **Visible**  | Toggles whether the dialog is shown or hidden. |
-   | **Center** | Aligns the dialog to the center of the screen if enabled. |
-   | **Show Close** | Displays a close (X) button on the dialog. |
-   | **Show Cancel Button** | Enables the Cancel button at the bottom. |
-   | **Button Text (Cancel)** | Defines the label for the Cancel button. |
-   | **Show Confirm Button** | Enables the Confirm button. |
-   | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
-   | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
-   | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
-   | **Custom Class** | Allows applying custom CSS styling to the dialog.|
-   | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
-   |**Action Settings**|
-   | **Action**| **Description**|
-   | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
-   | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
+      | Field | Description|
+      | ------|------------|
+      | **Type** | Defines the component type (here, a Dialog popup). |
+      |**ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
+      | **Title** | The heading displayed at the top of the dialog. |
+      | **Width** | Controls the width of the dialog (e.g., `35rem`). |
+      | **Visible**  | Toggles whether the dialog is shown or hidden. |
+      | **Center** | Aligns the dialog to the center of the screen if enabled. |
+      | **Show Close** | Displays a close (X) button on the dialog. |
+      | **Show Cancel Button** | Enables the Cancel button at the bottom. |
+      | **Button Text (Cancel)** | Defines the label for the Cancel button. |
+      | **Show Confirm Button** | Enables the Confirm button. |
+      | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
+      | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
+      | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
+      | **Custom Class** | Allows applying custom CSS styling to the dialog.|
+      | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
+      |**Action Settings**|
+      | **Action**| **Description**|
+      | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
+      | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-   **Form Attributes: Same as defined above**
+      **Form Attributes: Same as defined above**
 
 15. Define the `Data source settings` under `Form Attributes`.
     1. `GET did`:<br><img src= "/misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "/misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -413,142 +413,145 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
     5. `Function startPurchasingDids`:<br><img src= "/misc/img/ide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 17. Next step is to configure the **Cart Dialog UI**. <br><img src= "/misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   **Dialog Component Attributes**
+   
+      **Dialog Component Attributes**
 
-   | Field | Description|
-   | ------|------------|
-   | **Type** | Defines the component type (here, a Dialog popup). |
-   | **ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
-   | **Title** | The heading displayed at the top of the dialog. |
-   | **Width** | Controls the width of the dialog (e.g., `35rem`). |
-   | **Visible**  | Toggles whether the dialog is shown or hidden. |
-   | **Center** | Aligns the dialog to the center of the screen if enabled. |
-   | **Show Close** | Displays a close (X) button on the dialog. |
-   | **Show Cancel Button** | Enables the Cancel button at the bottom. |
-   | **Button Text (Cancel)** | Defines the label for the Cancel button. |
-   | **Show Confirm Button** | Enables the Confirm button. |
-   | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
-   | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
-   | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
-   | **Custom Class** | Allows applying custom CSS styling to the dialog.|
-   | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
-   |**Action Settings**|
-   | **Action**| **Description**|
-   | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
-   | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
+      | Field | Description|
+      | ------|------------|
+      | **Type** | Defines the component type (here, a Dialog popup). |
+      | **ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
+      | **Title** | The heading displayed at the top of the dialog. |
+      | **Width** | Controls the width of the dialog (e.g., `35rem`). |
+      | **Visible**  | Toggles whether the dialog is shown or hidden. |
+      | **Center** | Aligns the dialog to the center of the screen if enabled. |
+      | **Show Close** | Displays a close (X) button on the dialog. |
+      | **Show Cancel Button** | Enables the Cancel button at the bottom. |
+      | **Button Text (Cancel)** | Defines the label for the Cancel button. |
+      | **Show Confirm Button** | Enables the Confirm button. |
+      | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
+      | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
+      | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
+      | **Custom Class** | Allows applying custom CSS styling to the dialog.|
+      | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
+      |**Action Settings**|
+      | **Action**| **Description**|
+      | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
+      | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
 18. **Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
 
 19. Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    **Text Component Attributes**
+    
+      **Text Component Attributes**
 
-   | Field| Description|
-   | -----|------------|
-   | **Type**| Defines the component type (Text). |
-   | **ID** | Unique identifier used to reference this component (`cart_text`).|
-   | **Name** | Internal reference name (optional).|
-   | **Width**| Controls the width of the text component.|
-   | **Label Width** | Defines label width (custom set to `40`). |
-   | **Label Wrap** | Allows the label text to wrap onto multiple lines.|
-   | **Hide Label** | Toggles visibility of the label. |
-   | **Text Prompt** | Optional helper or descriptive text. |
-   | **Default Value** | The default text displayed (e.g., *"These are the numbers (DIDs) you intend to buy."*). |
-   | **Custom Class** | Applies custom CSS styling.|
-   | **Attribute Action (Data Binding)** | Enables dynamic binding of text content to variables or state. |
-   | **Hidden** | Controls visibility dynamically when enabled.|
-   | **Validation (Required)** | Marks the field as required (not typically used for static text).|
-   |**Action Settings**|
-   | **Action** | **Description** |
-   | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
+      | Field| Description|
+      | -----|------------|
+      | **Type**| Defines the component type (Text). |
+      | **ID** | Unique identifier used to reference this component (`cart_text`).|
+      | **Name** | Internal reference name (optional).|
+      | **Width**| Controls the width of the text component.|
+      | **Label Width** | Defines label width (custom set to `40`). |
+      | **Label Wrap** | Allows the label text to wrap onto multiple lines.|
+      | **Hide Label** | Toggles visibility of the label. |
+      | **Text Prompt** | Optional helper or descriptive text. |
+      | **Default Value** | The default text displayed (e.g., *"These are the numbers (DIDs) you intend to buy."*). |
+      | **Custom Class** | Applies custom CSS styling.|
+      | **Attribute Action (Data Binding)** | Enables dynamic binding of text content to variables or state. |
+      | **Hidden** | Controls visibility dynamically when enabled.|
+      | **Validation (Required)** | Marks the field as required (not typically used for static text).|
+      |**Action Settings**|
+      | **Action** | **Description** |
+      | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
 
 20. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
 21. Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "/misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    **Data Grid Component Attributes**
+    
+      **Data Grid Component Attributes**
 
-   | Field | Description |
-   | ------|-------------|
-   | **Type**  | Defines the component type (Data Grid). |
-   | **ID** | Unique identifier used to reference this grid (`cart_grid`). |
-   | **Width**| Controls the width of the grid.|
-   | **Height**| Sets the height of the grid (e.g., `500px`).|
-   | **Status Bar** | Displays status information like row count or summaries. |
-   | **Side Bar** | Enables additional options like column visibility and filters. |
-   | **Row Selection**| Defines selection type (None, Single, Multiple). |
-   | **Enable Range Selection** | Allows selecting a range of cells. |
-   | **Suppress Context Menu**| Disables right-click menu if enabled.|
-   | **Context Menu**| Configures options available on right-click (e.g., Copy). |
-   | **Data Source** | Defines where the grid fetches its data (API, variable, etc.). |
-   | **Default**  | Sets default/static data if no data source is provided. |
-   | **Column Config** | Defines columns (e.g., DID, Setup Cost, Recurring Cost, Charge Interval). |
-   | **Attribute Action (Data Binding)** | Enables binding grid data dynamically to application state.|
-   | **Hidden** | Controls visibility dynamically.|
-   |**Action Settings**|
-   | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
+      | Field | Description |
+      | ------|-------------|
+      | **Type**  | Defines the component type (Data Grid). |
+      | **ID** | Unique identifier used to reference this grid (`cart_grid`). |
+      | **Width**| Controls the width of the grid.|
+      | **Height**| Sets the height of the grid (e.g., `500px`).|
+      | **Status Bar** | Displays status information like row count or summaries. |
+      | **Side Bar** | Enables additional options like column visibility and filters. |
+      | **Row Selection**| Defines selection type (None, Single, Multiple). |
+      | **Enable Range Selection** | Allows selecting a range of cells. |
+      | **Suppress Context Menu**| Disables right-click menu if enabled.|
+      | **Context Menu**| Configures options available on right-click (e.g., Copy). |
+      | **Data Source** | Defines where the grid fetches its data (API, variable, etc.). |
+      | **Default**  | Sets default/static data if no data source is provided. |
+      | **Column Config** | Defines columns (e.g., DID, Setup Cost, Recurring Cost, Charge Interval). |
+      | **Attribute Action (Data Binding)** | Enables binding grid data dynamically to application state.|
+      | **Hidden** | Controls visibility dynamically.|
+      |**Action Settings**|
+      | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
 
 22. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
 23. Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "/misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   **Alert Component (Insufficient Balance)**
+      **Alert Component (Insufficient Balance)**
 
-   | Field|Description|
-   | -----|---------- | 
-   | **Type** | Defines the component as an Alert message. |
-   | **Message** | Displays warning (*Insufficient Balance Alert*).|
-   | **Description** | Provides details (*balance is below cart total*).  |
-   | **Type/Style**  | Styled as an error/warning (red). |
-   | **Closable**| Allows user to dismiss the alert.|
-   | **Visibility**  | Triggered dynamically based on balance validation. |
+      | Field|Description|
+      | -----|---------- | 
+      | **Type** | Defines the component as an Alert message. |
+      | **Message** | Displays warning (*Insufficient Balance Alert*).|
+      | **Description** | Provides details (*balance is below cart total*).  |
+      | **Type/Style**  | Styled as an error/warning (red). |
+      | **Closable**| Allows user to dismiss the alert.|
+      | **Visibility**  | Triggered dynamically based on balance validation. |
 
-   **Search Input + Button**
+      **Search Input + Button**
 
-   | Field | Description |
-   | ------|-------------|
-   | **Input Field** | Accepts partial DID input (e.g., `120`). |
-   | **Placeholder** | Guides user input (*Enter part of the number*). |
-   | **Search Button** | Triggers DID search action. |
-   | **onClick (Search)** | Executes logic to fetch available DIDs.|
+      | Field | Description |
+      | ------|-------------|
+      | **Input Field** | Accepts partial DID input (e.g., `120`). |
+      | **Placeholder** | Guides user input (*Enter part of the number*). |
+      | **Search Button** | Triggers DID search action. |
+      | **onClick (Search)** | Executes logic to fetch available DIDs.|
 
-   **Action Button (Add Selected DIDs to Cart)**
+      **Action Button (Add Selected DIDs to Cart)**
 
-   | Field | Description |
-   | ------|------------ |
-   | **Button Name** | *Add Selected DIDs To Cart*. |
-   | **Type** | Styled as success (green). |
-   | **onClick** | Adds selected rows from grid to cart.|
-   | **Functionality** | Updates cart state and selected DID count. |
+      | Field | Description |
+      | ------|------------ |
+      | **Button Name** | *Add Selected DIDs To Cart*. |
+      | **Type** | Styled as success (green). |
+      | **onClick** | Adds selected rows from grid to cart.|
+      | **Functionality** | Updates cart state and selected DID count. |
 
-   **Selected Count Display**
+      **Selected Count Display**
 
-   | Field | Description |
-   | ------|------------ |
-   | **Label** | Displays *Selected DIDs*. |
-   | **Value** | Dynamically shows count (e.g., `0`). |
-   | **Data Binding** | Updates based on grid selection.|
+      | Field | Description |
+      | ------|------------ |
+      | **Label** | Displays *Selected DIDs*. |
+      | **Value** | Dynamically shows count (e.g., `0`). |
+      | **Data Binding** | Updates based on grid selection.|
 
-   **Data Grid Component (Available DIDs)**
+      **Data Grid Component (Available DIDs)**
 
-   | Field| Description |
-   | -----|-------------|
-   | **Columns**| DID, Setup Cost, Recurring Cost, Charge Interval. |
-   | **Filters** | Allows filtering of available numbers. |
-   | **Column Settings** | Enables column visibility customization.|
-   | **Row Selection**| Allows selecting multiple DIDs.|
-   | **Data Source**| Populated via search/API.|
-   | **Interaction** | Selected rows used for cart actions.|
+      | Field| Description |
+      | -----|-------------|
+      | **Columns**| DID, Setup Cost, Recurring Cost, Charge Interval. |
+      | **Filters** | Allows filtering of available numbers. |
+      | **Column Settings** | Enables column visibility customization.|
+      | **Row Selection**| Allows selecting multiple DIDs.|
+      | **Data Source**| Populated via search/API.|
+      | **Interaction** | Selected rows used for cart actions.|
 
-   **Action Flow**
+      **Action Flow**
 
-   |Action| Description|
-   | -----|----------- |
-   | **Search** | Fetches DID data based on input. |
-   | **Select Rows** | User selects DIDs from grid.|
-   | **Add to Cart** | Adds selected DIDs to cart.|
-   | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
+      |Action| Description|
+      | -----|----------- |
+      | **Search** | Fetches DID data based on input. |
+      | **Select Rows** | User selects DIDs from grid.|
+      | **Add to Cart** | Adds selected DIDs to cart.|
+      | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
 
 24. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
 
-25.Click on `App Settings` and then `Publish` it. <br><img src= "/misc/img/ide37.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+25. Click on `App Settings` and then `Publish` it. <br><img src= "/misc/img/ide37.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 26. After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
