@@ -88,7 +88,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 
 1. Login to your account.
 2. Navigate to the **IDE** section. Click on the `+` (Create Resource) button. <br><img src= "/misc/img/ide1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "/misc/img/ide2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "/misc/img/ide2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. The application is created under `Unpublished Apps`. <br><img src= "/misc/img/ide4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. **Create a Config Button**: Create and configure a button that appears in your application UI and performs specific actions. <br><img src= "/misc/img/ide5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       1. `Label`: The display name of the button.
@@ -256,137 +256,137 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 15.Next step is to configure the **Cart Dialog UI**. <br><img src= "/misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    **Dialog Component Attributes**
 
-      | Field | Description|
-      | ------|------------|
-      | **Type** | Defines the component type (here, a Dialog popup). |
-      | **ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
-      | **Title** | The heading displayed at the top of the dialog. |
-      | **Width** | Controls the width of the dialog (e.g., `35rem`). |
-      | **Visible**  | Toggles whether the dialog is shown or hidden. |
-      | **Center** | Aligns the dialog to the center of the screen if enabled. |
-      | **Show Close** | Displays a close (X) button on the dialog. |
-      | **Show Cancel Button** | Enables the Cancel button at the bottom. |
-      | **Button Text (Cancel)** | Defines the label for the Cancel button. |
-      | **Show Confirm Button** | Enables the Confirm button. |
-      | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
-      | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
-      | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
-      | **Custom Class** | Allows applying custom CSS styling to the dialog.|
-      | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
-      |**Action Settings**|
-      | **Action**| **Description**|
-      | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
-      | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
+   | Field | Description|
+   | ------|------------|
+   | **Type** | Defines the component type (here, a Dialog popup). |
+   | **ID** | Unique identifier used to reference this dialog in logic or actions (`env_config`). |
+   | **Title** | The heading displayed at the top of the dialog. |
+   | **Width** | Controls the width of the dialog (e.g., `35rem`). |
+   | **Visible**  | Toggles whether the dialog is shown or hidden. |
+   | **Center** | Aligns the dialog to the center of the screen if enabled. |
+   | **Show Close** | Displays a close (X) button on the dialog. |
+   | **Show Cancel Button** | Enables the Cancel button at the bottom. |
+   | **Button Text (Cancel)** | Defines the label for the Cancel button. |
+   | **Show Confirm Button** | Enables the Confirm button. |
+   | **Loading (Confirm)** | Shows a loading state on the Confirm button during processing. |
+   | **Margin Top**  | Adds spacing from the top of the screen (e.g., `15vh`). |
+   | **Prevent Escape Key Close** | Disables closing the dialog using the Escape key. |
+   | **Custom Class** | Allows applying custom CSS styling to the dialog.|
+   | **Attribute Action (Data Binding)** | Enables binding the dialog data dynamically to variables or state.|
+   |**Action Settings**|
+   | **Action**| **Description**|
+   | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
+   | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
 16.**Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
 
 17.Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Text Component Attributes**
 
-      | Field| Description|
-      | -----|------------|
-      | **Type**| Defines the component type (Text). |
-      | **ID** | Unique identifier used to reference this component (`cart_text`).|
-      | **Name** | Internal reference name (optional).|
-      | **Width**| Controls the width of the text component.|
-      | **Label Width** | Defines label width (custom set to `40`). |
-      | **Label Wrap** | Allows the label text to wrap onto multiple lines.|
-      | **Hide Label** | Toggles visibility of the label. |
-      | **Text Prompt** | Optional helper or descriptive text. |
-      | **Default Value** | The default text displayed (e.g., *"These are the numbers (DIDs) you intend to buy."*). |
-      | **Custom Class** | Applies custom CSS styling.|
-      | **Attribute Action (Data Binding)** | Enables dynamic binding of text content to variables or state. |
-      | **Hidden** | Controls visibility dynamically when enabled.|
-      | **Validation (Required)** | Marks the field as required (not typically used for static text).|
-      |**Action Settings**|
-      | **Action** | **Description** |
-      | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
+   | Field| Description|
+   | -----|------------|
+   | **Type**| Defines the component type (Text). |
+   | **ID** | Unique identifier used to reference this component (`cart_text`).|
+   | **Name** | Internal reference name (optional).|
+   | **Width**| Controls the width of the text component.|
+   | **Label Width** | Defines label width (custom set to `40`). |
+   | **Label Wrap** | Allows the label text to wrap onto multiple lines.|
+   | **Hide Label** | Toggles visibility of the label. |
+   | **Text Prompt** | Optional helper or descriptive text. |
+   | **Default Value** | The default text displayed (e.g., *"These are the numbers (DIDs) you intend to buy."*). |
+   | **Custom Class** | Applies custom CSS styling.|
+   | **Attribute Action (Data Binding)** | Enables dynamic binding of text content to variables or state. |
+   | **Hidden** | Controls visibility dynamically when enabled.|
+   | **Validation (Required)** | Marks the field as required (not typically used for static text).|
+   |**Action Settings**|
+   | **Action** | **Description** |
+   | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
 
 18.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-19. Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "/misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+19.Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "/misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Data Grid Component Attributes**
 
-      | Field | Description |
-      | ------|-------------|
-      | **Type**  | Defines the component type (Data Grid). |
-      | **ID** | Unique identifier used to reference this grid (`cart_grid`). |
-      | **Width**| Controls the width of the grid.|
-      | **Height**| Sets the height of the grid (e.g., `500px`).|
-      | **Status Bar** | Displays status information like row count or summaries. |
-      | **Side Bar** | Enables additional options like column visibility and filters. |
-      | **Row Selection**| Defines selection type (None, Single, Multiple). |
-      | **Enable Range Selection** | Allows selecting a range of cells. |
-      | **Suppress Context Menu**| Disables right-click menu if enabled.|
-      | **Context Menu**| Configures options available on right-click (e.g., Copy). |
-      | **Data Source** | Defines where the grid fetches its data (API, variable, etc.). |
-      | **Default**  | Sets default/static data if no data source is provided. |
-      | **Column Config** | Defines columns (e.g., DID, Setup Cost, Recurring Cost, Charge Interval). |
-      | **Attribute Action (Data Binding)** | Enables binding grid data dynamically to application state.|
-      | **Hidden** | Controls visibility dynamically.|
-      |**Action Settings**|
-      | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
+   | Field | Description |
+   | ------|-------------|
+   | **Type**  | Defines the component type (Data Grid). |
+   | **ID** | Unique identifier used to reference this grid (`cart_grid`). |
+   | **Width**| Controls the width of the grid.|
+   | **Height**| Sets the height of the grid (e.g., `500px`).|
+   | **Status Bar** | Displays status information like row count or summaries. |
+   | **Side Bar** | Enables additional options like column visibility and filters. |
+   | **Row Selection**| Defines selection type (None, Single, Multiple). |
+   | **Enable Range Selection** | Allows selecting a range of cells. |
+   | **Suppress Context Menu**| Disables right-click menu if enabled.|
+   | **Context Menu**| Configures options available on right-click (e.g., Copy). |
+   | **Data Source** | Defines where the grid fetches its data (API, variable, etc.). |
+   | **Default**  | Sets default/static data if no data source is provided. |
+   | **Column Config** | Defines columns (e.g., DID, Setup Cost, Recurring Cost, Charge Interval). |
+   | **Attribute Action (Data Binding)** | Enables binding grid data dynamically to application state.|
+   | **Hidden** | Controls visibility dynamically.|
+   |**Action Settings**|
+   | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
 
 20.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
 21.Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "/misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-    **Alert Component (Insufficient Balance)**
+   **Alert Component (Insufficient Balance)**
 
-      | Field|Description|
-      | -----|---------- | 
-      | **Type** | Defines the component as an Alert message. |
-      | **Message** | Displays warning (*Insufficient Balance Alert*).|
-      | **Description** | Provides details (*balance is below cart total*).  |
-      | **Type/Style**  | Styled as an error/warning (red). |
-      | **Closable**| Allows user to dismiss the alert.|
-      | **Visibility**  | Triggered dynamically based on balance validation. |
+   | Field|Description|
+   | -----|---------- | 
+   | **Type** | Defines the component as an Alert message. |
+   | **Message** | Displays warning (*Insufficient Balance Alert*).|
+   | **Description** | Provides details (*balance is below cart total*).  |
+   | **Type/Style**  | Styled as an error/warning (red). |
+   | **Closable**| Allows user to dismiss the alert.|
+   | **Visibility**  | Triggered dynamically based on balance validation. |
 
-    **Search Input + Button**
+   **Search Input + Button**
 
-      | Field | Description |
-      | ------|-------------|
-      | **Input Field** | Accepts partial DID input (e.g., `120`). |
-      | **Placeholder** | Guides user input (*Enter part of the number*). |
-      | **Search Button** | Triggers DID search action. |
-      | **onClick (Search)** | Executes logic to fetch available DIDs.|
+   | Field | Description |
+   | ------|-------------|
+   | **Input Field** | Accepts partial DID input (e.g., `120`). |
+   | **Placeholder** | Guides user input (*Enter part of the number*). |
+   | **Search Button** | Triggers DID search action. |
+   | **onClick (Search)** | Executes logic to fetch available DIDs.|
 
-    **Action Button (Add Selected DIDs to Cart)**
+   **Action Button (Add Selected DIDs to Cart)**
 
-      | Field | Description |
-      | ------|------------ |
-      | **Button Name** | *Add Selected DIDs To Cart*. |
-      | **Type** | Styled as success (green). |
-      | **onClick** | Adds selected rows from grid to cart.|
-      | **Functionality** | Updates cart state and selected DID count. |
+   | Field | Description |
+   | ------|------------ |
+   | **Button Name** | *Add Selected DIDs To Cart*. |
+   | **Type** | Styled as success (green). |
+   | **onClick** | Adds selected rows from grid to cart.|
+   | **Functionality** | Updates cart state and selected DID count. |
 
-    **Selected Count Display**
+   **Selected Count Display**
 
-      | Field | Description |
-      | ------|------------ |
-      | **Label** | Displays *Selected DIDs*. |
-      | **Value** | Dynamically shows count (e.g., `0`). |
-      | **Data Binding** | Updates based on grid selection.|
+   | Field | Description |
+   | ------|------------ |
+   | **Label** | Displays *Selected DIDs*. |
+   | **Value** | Dynamically shows count (e.g., `0`). |
+   | **Data Binding** | Updates based on grid selection.|
 
-    **Data Grid Component (Available DIDs)**
+   **Data Grid Component (Available DIDs)**
 
-      | Field| Description |
-      | -----|-------------|
-      | **Columns**| DID, Setup Cost, Recurring Cost, Charge Interval. |
-      | **Filters** | Allows filtering of available numbers. |
-      | **Column Settings** | Enables column visibility customization.|
-      | **Row Selection**| Allows selecting multiple DIDs.|
-      | **Data Source**| Populated via search/API.|
-      | **Interaction** | Selected rows used for cart actions.|
+   | Field| Description |
+   | -----|-------------|
+   | **Columns**| DID, Setup Cost, Recurring Cost, Charge Interval. |
+   | **Filters** | Allows filtering of available numbers. |
+   | **Column Settings** | Enables column visibility customization.|
+   | **Row Selection**| Allows selecting multiple DIDs.|
+   | **Data Source**| Populated via search/API.|
+   | **Interaction** | Selected rows used for cart actions.|
 
-      **Action Flow**
+   **Action Flow**
 
-      |Action| Description|
-      | -----|----------- |
-      | **Search** | Fetches DID data based on input. |
-      | **Select Rows** | User selects DIDs from grid.|
-      | **Add to Cart** | Adds selected DIDs to cart.|
-      | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
+   |Action| Description|
+   | -----|----------- |
+   | **Search** | Fetches DID data based on input. |
+   | **Select Rows** | User selects DIDs from grid.|
+   | **Add to Cart** | Adds selected DIDs to cart.|
+   | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
 
 22.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
 
