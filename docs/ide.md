@@ -110,13 +110,56 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
          1. **Protected**: Prevents accidental modification or deletion.
          2. **Private**: Hides the value from general visibility (used for sensitive data like API keys).
          3. **Locked**: Restricts editing completely.
-      5. `Default`: Marks this as the default value (used when no override is provided).
+         4. **Default**: Marks this as the default value (used when no override is provided).
 8. Create `Environmental Variables` for the following:
       1. The `currency` environmental variable is a configuration setting that defines which currency the application should use by default. <br><img src= "/misc/img/ide7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       2. The`cx_api_user` environmental variable is used to store the username (or identifier) for API authentication within the application. <br><img src= "/misc/img/ide8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       3. The `did_mask_size` environmental variable defines how many digits of a DID (phone number) should be masked/hidden.<br><img src= "/misc/img/ide9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-9. Next step is to build the `UI` using `Page Builder`. This is for `Environment Variables Config`. This UI is a **form built using Page Builder components** to allow users to **view and update environment variables** for the application.
+9. **ScriptForge Settings: DID ENV Setup**
+
+   ```js
+   /**
+    * Asynchronously saves environment variables based on the provided data.
+   *
+    * @param {Object} data - The data object containing environment variable values.
+    * @param {string} data.api_user - The API user value to be set.
+    * @param {string} data.class4_server - The Class 4 server value to be set.
+    * @param {string} data.class5_server - The Class 5 server value to be set.
+    * @returns {Promise<Object>} A promise that resolves to an object with a status property indicating the result.
+   */
+   async function saveEnv({ envValue }) {
+	   try {
+		   for (const [key, value] of Object.entries(envValue)) {
+			await setEnvVar(key, `${value}`)
+		   }
+		   return { status: 'OK' }
+	   } catch (error) {
+		   throw new Error(error.message)
+	   }
+   }
+
+   /**
+    * Asynchronously loads environment variables and returns an object containing specific server and user values.
+   *
+    * @async
+    * @function loadEnvValues
+    * @returns {Promise<Object>} An object containing the following properties:
+    * - class4_server {string}: The value of the C4SERVER environment variable.
+    * - api_user {string}: The value of the cx_api_user environment variable.
+    * - class5_server {string}: The value of the C5SERVER environment variable.
+   */
+   async function loadEnvValues() {
+	   const vars = await getEnvVars()
+	   return {
+		   api_user: vars.cx_api_user,
+		   currency: vars.currency,
+		   did_mask_size: vars.did_mask_size,
+	   }
+   }
+   ```
+
+10. Next step is to build the `UI` using `Page Builder`. This is for config screen to save infomation in `ENV`. This UI is a **form built using Page Builder components** to allow users to **view and update environment variables** for the application.
 
       1. **Container (env_card)**: A layout/card component that groups all fields together. Provides structure and visual separation.
       2. **Field: API User**:
@@ -169,7 +212,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
          | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
          | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-         **Configure the Form Attributes**
+         **Configure the **Form Attributes**, which are applied at the **file level** and affect **all components within the form**, ensuring consistent layout, styling, and behavior across the entire UI.**
 
          | Field | Description |
          | ------|-------------|
@@ -186,18 +229,149 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
          | **Action Panel** | Defines actions like submit, reset, or custom operations for the form.|
          | **Javascript CDN Library** | Allows adding external JS libraries via CDN for extended functionality.|
 
-10. Define the `Data source settings` under `Form Attributes`.
+11. **ScriptForge Settings: DID ENV Setup: DID Query**
+
+   ```js
+   const cxRest = require('cxRest')
+   const api = cxRest.auth(process.env.cx_api_user)
+
+   const didMaskSize = process.env.did_mask_size
+   const currency = process.env.currency
+
+   async function main(data) {
+	   const res = await query(data)
+	   console.log('current time', new Date().toLocaleString())
+	   return JSON.stringify(res)
+   }
+
+   async function updatePaymentRecords(record) {
+	   const packages = await api.post('/payment', record)
+	   return packages
+   }
+
+   async function checkoutCart (order) {
+	   let customer = null
+	   try {
+		   customer = await getCustomer(order)
+	   } catch (e) {
+		   throw e
+	   }
+	   const failedOrders = []
+	   // Update DID ownership to the provided customer
+	   order.cart.forEach(async cartItem => {
+		   try {
+			   const res = await api.put(`did/${cartItem.did_id}`, { customer_id: customer.id })
+			   if (res.status !== 'OK') {
+				   failedOrders.push(cartItem)
+				   throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
+			   }
+			   const didDetails = (await api.get(`did?id=${cartItem.did_id}`))
+			   await updatePaymentRecords({
+				   company_id: customer.id,
+				   currency: cartItem.currency,
+				   description: `DID ordered: (${didDetails[0].did})`,
+				   status: 'Completed',
+				   total: - cartItem?.setup_cost
+			   })
+		   } catch (e) {
+			   failedOrders.push(cartItem)
+			   throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
+		   }
+	   })
+	   return { status: 'OK' }
+   }
+
+   /**
+   * Check if the customer can afford all the items in the cart
+   * @return {Boolean} - Whether the customer can afford the cart or not
+   */
+   async function isOrderAffordable (order) {
+	   const customer = await getCustomer(order)
+	   const accountBalance = Number(customer.credit) + Number(customer.debit_limit)
+	   const cartTotalCost = order.cart.reduce((totalCost, cartItem) => {
+		   // Get the total cost of items in the cart
+		   return totalCost + cartItem.setup_cost
+	   }, 0)
+	   return accountBalance >= cartTotalCost
+   }
+
+   async function getCustomer (order) {
+	   const vars = await getEnvVars()
+	   if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
+	   return await api.get(`customer/${order._company.company_id}`)
+   }
+
+   async function query(qry) {
+	   const vars = await getEnvVars()
+	   if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
+	   const packages = await api.get('setup/package')
+	   // return packages
+	   // return packages
+	   const dids = (await api.get(`did?s=${qry.prefix}&_startRow=0&_endRow=10000&_pivotMode=false&customer_id=[null]`))
+	   .filter(did => did.package_id)
+	   .map(did => {
+		   const packageDets = packages.find(pack => pack.id === did.package_id)
+		   if (!packageDets) throw new Error('DID must be assigned to a package.')
+		   // Mask DIDs
+		   // Setup Charge, Recurring Charge, Charge Interval,
+		   // currency: USD, mask_digits: 6
+		   // Max basket size - do later
+		   did.did = hideEndCharacters(did.did, didMaskSize)
+
+		   // FIX SETUP_COST
+		   // =============
+		   return {
+			   did_id: did.id,
+			   did: did.did,
+			   setup_cost: packageDets.setup_retail,
+			   recurring_cost: packageDets.retail,
+			   charge_interval: packageDets.frequency.charAt(0).toUpperCase() + packageDets.frequency.slice(1),
+			   currency,
+			   package_id: packageDets.package_id
+		   }
+	   })
+   
+	   return dids
+   }
+
+   function hideEndCharacters(inputString, numToHide) {
+	   // Create a new string with 'x' repeated for the last numToHide characters
+	   const maskedPart = 'x'.repeat(numToHide)
+	
+	   // Append the remaining characters from the original string
+	   const result = inputString.slice(0, -numToHide) + maskedPart
+	
+	   return result
+   }
+
+
+   async function main () {
+	   const abc = (await api.get(`did?id=3557782`))
+	   return abc
+	   // const order = {
+	   // _company: {
+	   // company_id: 49051
+	   // }
+	   // }
+	   // const customer = await getCustomer(order)
+	   // return customer
+	   // const accountBalance = Number(customer.credit)
+	   // return accountBalance
+   }
+   ```
+
+12. Define the `Data source settings` under `Form Attributes`.
     1. `saveEnv`:<br><img src= "/misc/img/ide10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `loadEnvValues`: <br><img src= "/misc/img/ide11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    3. `getApiUsers`: <br><img src= "/misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. `getApiUsers`: <br><img src= "/misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
+    4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>There are two additional images (Database and Query) under `getAPIUser` because the API user data is being **fetched dynamically from a database using a query**, rather than being hardcoded.
 
-11. Define the `Action Panel settings` under `Form Attributes`.
+13. Define the `Action Panel settings` under `Form Attributes`.
     1. `Function mounted`:<br><img src= "/misc/img/ide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `Function onConfirm_env`: <br><img src= "/misc/img/ide18.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     3. `Function onCancel_tshukgo8`: <br><img src= "/misc/img/ide19.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-12. Next step is to configure the **Button component** using **Page Builder**. This button (`Start Purchasing DIDs`) is an **action trigger that allows users to **initiate the DID purchasing workflow** by executing the configured `onClick` action (`startPurchasingDids`).
+14. Next step is to configure the **Button component** using **Page Builder**. This button (`Start Purchasing DIDs`) is an **action trigger that allows users to **initiate the DID purchasing workflow** by executing the configured `onClick` action (`startPurchasingDids`).
 
 **Dialog Component Attributes**
 
@@ -223,37 +397,22 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
    | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
    | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-   **Form Attributes**
+   **Form Attributes: Same as defined above**
 
-   | **Parameter** | **Explanation** |
-   | --------------|-----------------|
-   | **UI (Element / Ant Design / Vuetify)** | Defines the UI framework used to render the form components and styling. |
-   | **Form Width** | Sets the overall width of the form container (e.g., `100%` for full width).|
-   | **Label Position**| Determines where labels appear relative to input fields (Left, Right, Top). |
-   | **Label Width** | Specifies the fixed width allocated to labels for alignment consistency. |
-   | **Label Suffix** | Adds a suffix (e.g., `:`) after each label when enabled. |
-   | **Size**  | Controls the size of all form components (Large, Default, Small). |
-   | **Style Sheets**  | Allows applying custom styles or themes to the form via configuration. |
-   | **Custom Class** | Assigns a custom CSS class for additional styling or overrides. |
-   | **Log Level** | Defines the logging level for form-related events (e.g., Warn, Info, Error).|
-   | **Data Source** | Configures how the form retrieves and submits data (e.g., binding to APIs or variables). |
-   | **Action Panel** | Defines available form actions such as submit, reset, or custom operations.|
-   | **Javascript CDN Library** | Enables inclusion of external JavaScript libraries via CDN for extended functionality.|
-
-13.Define the `Data source settings` under `Form Attributes`.
+15. Define the `Data source settings` under `Form Attributes`.
     1. `GET did`:<br><img src= "/misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "/misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `GET isOrderAffordable`: <br><img src= "/misc/img/ide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     3. `GET checkout`: <br><img src= "/misc/img/ide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
     4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-14.Define the `Action Panel settings` under `Form Attributes`.
+16. Define the `Action Panel settings` under `Form Attributes`.
     1. `Function mounted`:<br><img src= "/misc/img/ide27.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `Function btnSearch`: <br><img src= "/misc/img/ide28.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     3. `Function proceedToCart`: <br><img src= "/misc/img/ide29.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     4. `Function addSelectedDidsToCart`:<br><img src= "/misc/img/ide30.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     5. `Function startPurchasingDids`:<br><img src= "/misc/img/ide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-15.Next step is to configure the **Cart Dialog UI**. <br><img src= "/misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+17. Next step is to configure the **Cart Dialog UI**. <br><img src= "/misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    **Dialog Component Attributes**
 
    | Field | Description|
@@ -278,9 +437,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
    | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
    | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-16.**Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
+18. **Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
 
-17.Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+19. Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Text Component Attributes**
 
    | Field| Description|
@@ -302,9 +461,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
    | **Action** | **Description** |
    | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
 
-18.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
+20. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-19.Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "/misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+21. Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "/misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Data Grid Component Attributes**
 
    | Field | Description |
@@ -327,9 +486,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
    |**Action Settings**|
    | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
 
-20.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
+22. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-21.Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "/misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+23. Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "/misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    **Alert Component (Insufficient Balance)**
 
@@ -388,182 +547,8 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
    | **Add to Cart** | Adds selected DIDs to cart.|
    | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
 
-22.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
-
-23.**ScriptForge Settings: DID ENV Setup**
-
-```js
-/**
- * Asynchronously saves environment variables based on the provided data.
- *
- * @param {Object} data - The data object containing environment variable values.
- * @param {string} data.api_user - The API user value to be set.
- * @param {string} data.class4_server - The Class 4 server value to be set.
- * @param {string} data.class5_server - The Class 5 server value to be set.
- * @returns {Promise<Object>} A promise that resolves to an object with a status property indicating the result.
- */
-async function saveEnv({ envValue }) {
-	try {
-		for (const [key, value] of Object.entries(envValue)) {
-			await setEnvVar(key, `${value}`)
-		}
-		return { status: 'OK' }
-	} catch (error) {
-		throw new Error(error.message)
-	}
-}
-
-/**
- * Asynchronously loads environment variables and returns an object containing specific server and user values.
- *
- * @async
- * @function loadEnvValues
- * @returns {Promise<Object>} An object containing the following properties:
- * - class4_server {string}: The value of the C4SERVER environment variable.
- * - api_user {string}: The value of the cx_api_user environment variable.
- * - class5_server {string}: The value of the C5SERVER environment variable.
- */
-async function loadEnvValues() {
-	const vars = await getEnvVars()
-	return {
-		api_user: vars.cx_api_user,
-		currency: vars.currency,
-		did_mask_size: vars.did_mask_size,
-	}
-}
-```
-
-24.**ScriptForge Settings: DID ENV Setup: DID Query**
-
-```js
-const cxRest = require('cxRest')
-const api = cxRest.auth(process.env.cx_api_user)
-
-const didMaskSize = process.env.did_mask_size
-const currency = process.env.currency
-
-async function main(data) {
-	const res = await query(data)
-	console.log('current time', new Date().toLocaleString())
-	return JSON.stringify(res)
-}
-
-async function updatePaymentRecords(record) {
-	const packages = await api.post('/payment', record)
-	return packages
-}
-
-async function checkoutCart (order) {
-	let customer = null
-	try {
-		customer = await getCustomer(order)
-	} catch (e) {
-		throw e
-	}
-	const failedOrders = []
-	// Update DID ownership to the provided customer
-	order.cart.forEach(async cartItem => {
-		try {
-			const res = await api.put(`did/${cartItem.did_id}`, { customer_id: customer.id })
-			if (res.status !== 'OK') {
-				failedOrders.push(cartItem)
-				throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
-			}
-			const didDetails = (await api.get(`did?id=${cartItem.did_id}`))
-			await updatePaymentRecords({
-				company_id: customer.id,
-				currency: cartItem.currency,
-				description: `DID ordered: (${didDetails[0].did})`,
-				status: 'Completed',
-				total: - cartItem?.setup_cost
-			})
-		} catch (e) {
-			failedOrders.push(cartItem)
-			throw new Error(`Failed to Complete orders.${JSON.stringify(failedOrders)}--- ${JSON.stringify(e)}`)
-		}
-	})
-	return { status: 'OK' }
-}
-
-/**
- * Check if the customer can afford all the items in the cart
- * @return {Boolean} - Whether the customer can afford the cart or not
- */
-async function isOrderAffordable (order) {
-	const customer = await getCustomer(order)
-	const accountBalance = Number(customer.credit) + Number(customer.debit_limit)
-	const cartTotalCost = order.cart.reduce((totalCost, cartItem) => {
-		// Get the total cost of items in the cart
-		return totalCost + cartItem.setup_cost
-	}, 0)
-	return accountBalance >= cartTotalCost
-}
-
-async function getCustomer (order) {
-	const vars = await getEnvVars()
-	if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
-	return await api.get(`customer/${order._company.company_id}`)
-}
-
-async function query(qry) {
-	const vars = await getEnvVars()
-	if(!vars.cx_api_user) throw new Error('API User is not selected. Please select one from the config')
-	const packages = await api.get('setup/package')
-	// return packages
-	// return packages
-	const dids = (await api.get(`did?s=${qry.prefix}&_startRow=0&_endRow=10000&_pivotMode=false&customer_id=[null]`))
-	.filter(did => did.package_id)
-	.map(did => {
-		const packageDets = packages.find(pack => pack.id === did.package_id)
-		if (!packageDets) throw new Error('DID must be assigned to a package.')
-		// Mask DIDs
-		// Setup Charge, Recurring Charge, Charge Interval,
-		// currency: USD, mask_digits: 6
-		// Max basket size - do later
-		did.did = hideEndCharacters(did.did, didMaskSize)
-
-		// FIX SETUP_COST
-		// =============
-		return {
-			did_id: did.id,
-			did: did.did,
-			setup_cost: packageDets.setup_retail,
-			recurring_cost: packageDets.retail,
-			charge_interval: packageDets.frequency.charAt(0).toUpperCase() + packageDets.frequency.slice(1),
-			currency,
-			package_id: packageDets.package_id
-		}
-	})
-	
-	return dids
-}
-
-function hideEndCharacters(inputString, numToHide) {
-	// Create a new string with 'x' repeated for the last numToHide characters
-	const maskedPart = 'x'.repeat(numToHide)
-	
-	// Append the remaining characters from the original string
-	const result = inputString.slice(0, -numToHide) + maskedPart
-	
-	return result
-}
-
-
-async function main () {
-	const abc = (await api.get(`did?id=3557782`))
-	return abc
-	// const order = {
-	// 	_company: {
-	// 		company_id: 49051
-	// 	}
-	// }
-	// const customer = await getCustomer(order)
-	// return customer
-	// const accountBalance = Number(customer.credit)
-	// return accountBalance
-}
-```
+24. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
 
 25.Click on `App Settings` and then `Publish` it. <br><img src= "/misc/img/ide37.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-26.After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
+26. After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
