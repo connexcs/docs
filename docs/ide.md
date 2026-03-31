@@ -88,7 +88,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 
 1. Login to your account.
 2. Navigate to the **IDE** section. Click on the `+` (Create Resource) button. <br><img src= "/misc/img/ide1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "/misc/img/ide2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "/misc/img/ide2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. The application is created under `Unpublished Apps`. <br><img src= "/misc/img/ide4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. **Create a Config Button**: Create and configure a button that appears in your application UI and performs specific actions. <br><img src= "/misc/img/ide5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       1. `Label`: The display name of the button.
