@@ -88,7 +88,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 
 1. Login to your account.
 2. Navigate to the **IDE** section. Click on the `+` (Create Resource) button. <br><img src= "/misc/img/ide1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "/misc/img/ide2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click on `App` and enter the `App Name`. Click on `Save and Continue`. <br><img src= "/misc/img/ide2.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. The application is created under `Unpublished Apps`. <br><img src= "/misc/img/ide4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. **Create a Config Button**: Create and configure a button that appears in your application UI and performs specific actions. <br><img src= "/misc/img/ide5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       1. `Label`: The display name of the button.
@@ -240,20 +240,20 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
    | **Action Panel** | Defines available form actions such as submit, reset, or custom operations.|
    | **Javascript CDN Library** | Enables inclusion of external JavaScript libraries via CDN for extended functionality.|
 
-13. Define the `Data source settings` under `Form Attributes`.
-    1.  `GET did`:<br><img src= "/misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "/misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+13.Define the `Data source settings` under `Form Attributes`.
+    1. `GET did`:<br><img src= "/misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "/misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `GET isOrderAffordable`: <br><img src= "/misc/img/ide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     3. `GET checkout`: <br><img src= "/misc/img/ide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
     4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-14. Define the `Action Panel settings` under `Form Attributes`.
+14.Define the `Action Panel settings` under `Form Attributes`.
     1. `Function mounted`:<br><img src= "/misc/img/ide27.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `Function btnSearch`: <br><img src= "/misc/img/ide28.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     3. `Function proceedToCart`: <br><img src= "/misc/img/ide29.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     4. `Function addSelectedDidsToCart`:<br><img src= "/misc/img/ide30.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     5. `Function startPurchasingDids`:<br><img src= "/misc/img/ide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-15. Next step is to configure the **Cart Dialog UI**. <br><img src= "/misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+15.Next step is to configure the **Cart Dialog UI**. <br><img src= "/misc/img/ide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    **Dialog Component Attributes**
 
       | Field | Description|
@@ -278,9 +278,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **onCancel**  | Defines what happens when the Cancel button is clicked (e.g., close dialog or reset state). |
       | **onConfirm** | Defines what happens when the Confirm button is clicked (e.g., save environment variables). |
 
-16. **Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
+16.**Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
 
-17. Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+17.Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Text Component Attributes**
 
       | Field| Description|
@@ -302,7 +302,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Action** | **Description** |
       | **onChange** | Defines behavior when the text value changes (rarely used for static text components). |
 
-18. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
+18.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
 19. Next step is to configure the **Data Grid Component inside the Cart Dialog UI**. This component (`cart_grid`) is used to **display selected DIDs in a tabular format**, including pricing and billing details, enabling users to review items before checkout. <br><img src= "/misc/img/ide34.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     **Data Grid Component Attributes**
@@ -327,9 +327,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       |**Action Settings**|
       | **onCellClicked** | Defines behavior when a cell is clicked (e.g., select, trigger action). |
 
-20. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
+20.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are the same as the **Button component** using **Page Builder** (point number 12).
 
-21. Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "/misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+21.Next step is to configure the **DID Ordering UI** using **Page Builder**. This interface is a **composite UI built using multiple Page Builder components** that allows users to **search, select, and add DIDs to cart, while handling validation (e.g., insufficient balance)**.<br><img src= "/misc/img/ide36.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     **Alert Component (Insufficient Balance)**
 
@@ -388,9 +388,9 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       | **Add to Cart** | Adds selected DIDs to cart.|
       | **Validation**  | Checks balance before checkout and shows alert if insufficient.|
 
-22. **Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
+22.**Form Attributes**, **Data Source Settings**, and **Action Panel Settings** are consistent with other components configured using **Page Builder** (e.g., Button component in point 12).
 
-23. **ScriptForge Settings: DID ENV Setup**
+23.**ScriptForge Settings: DID ENV Setup**
 
 ```js
 /**
@@ -433,7 +433,7 @@ async function loadEnvValues() {
 }
 ```
 
-24. **ScriptForge Settings: DID ENV Setup: DID Query**
+24.**ScriptForge Settings: DID ENV Setup: DID Query**
 
 ```js
 const cxRest = require('cxRest')
@@ -564,6 +564,6 @@ async function main () {
 }
 ```
 
-25. Click on `App Settings` and then `Publish` it. <br><img src= "/misc/img/ide37.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+25.Click on `App Settings` and then `Publish` it. <br><img src= "/misc/img/ide37.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-26. After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
+26.After publishing it will appear under **Setup :material-menu-right: Appstore**. You can install the app and use it at your own convenience.
