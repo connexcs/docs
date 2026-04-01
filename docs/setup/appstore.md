@@ -122,6 +122,20 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
       + Enter the `Extension`. It specifies the number you are using to initiate the call.<img src= "/apps/img/cd4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. Click `Save`.
+6. Now you need to configure an endpoint URL, as it serves as the programmatic entry point required to trigger Click-to-Dial call initiation via ScriptForge. A call will first come from the customer’s number, and then it will be routed further through an extension to connect to the next destination.
+7. Navigate to **IDE :material-menu-right: Click-2-Dial application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Click on the `Settings` button :material-menu-right: Endpoint URL's**. It allows external systems (or internal workflows) to trigger a ScriptForge function `(send)` via a `URL (API call)`. <img src= "/apps/img/cd5.png" style="border: 2px solid #4472C4; border-radius: 8px;">.
+
+8. **Technical Explanation**
+      + **Domain** → Specifies the base host where the API is exposed.
+      + **Function Name (send)** → Maps to the underlying ScriptForge function to be executed.
+      + **Final URL** → Fully qualified endpoint that accepts HTTP requests to trigger the function. Enter the `API` from the `Config`. <img src= "/apps/img/cd6.png" style="border: 2px solid #4472C4; border-radius: 8px;">.
+
+9. When this endpoint is called:
+      1. The request is routed to the ScriptForge execution layer.
+      2. The specified function (send) is invoked.
+      3. Any defined logic, integrations, or side effects are executed.
+
+!!! "Note" This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function.
 
 ### Yoco Payment
 
@@ -272,3 +286,107 @@ Users must securely store these credentials, as they may not be shown again.
 
 !!! Info
      A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
+
+### ASR per CLI
+
+#### Overview
+
+The **ASR per CLI** application provides a report that displays the **Answer-Seizure Ratio (ASR)** for each CLI (Caller Line Identification), helping users analyze call performance at a granular level.
+
+Instead of manually compiling call metrics, users can view ASR data directly within the application, enabling faster insights, better monitoring, and more informed decision-making.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ASR per CLI** and click `Install`.<img src= "/apps/img/apc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/apc2.png" width= "400"  style="border: 2px solid #4472C4; border-radius: 8px;">
+
+3. The installed versions are visible. <br><img src= "/apps/img/apc3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+4. The app is installed app can be seen in **Management :material-menu-right: Customer**. <br><img src= "/apps/img/apc4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+5. Click on the `ASR per CLI` button on the top.
+The **UTC Date Range** allows users to filter data based on Coordinated Universal Time (UTC), ensuring consistent time-based analysis across different time zones.
+
+### ConnexCS Control Panel Defaults
+
+#### Overview
+
+The **ConnexCS Control Panel Defaults** application includes predefined configurations for commonly used modules such as **Bulk Run Tests**, **Carrier Win Rate**, **Custom Reports**, **DTMF**, **Latency**, **Route Stats**, **Stats**, **USA Calls**, and **USA Rate Center**.
+
+These defaults help standardize reporting and monitoring setups across the platform while allowing users to customize them as needed.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ConnexCS Control Panel Defaults** and click `Install`.<img src= "/apps/img/default1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+2. Fill in the `App Name`, `Version` and hit `Install` again. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/default2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+3. The installed versions are visible.
+<br><img src= "/apps/img/default3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+4. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name]**. These duplicate features are automatically added when the application is installed and are customizable. <br><img src= "/apps/img/default4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+### Contact Center
+
+[Click here](/customer-portal/cp-contact-center/) for a comprehensive introduction and step-by-step setup guide for the Contact Center.
+
+### Sequential CLI
+
+#### Overview
+
+The **Sequential CLI application** enables users to automatically assign CLIs (Caller Line Identification) in a sequential order from a selected database.
+
+Instead of manually selecting CLIs for each call, the system retrieves them sequentially based on predefined routing logic, ensuring organized distribution and efficient utilization of available numbers.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Sequential CLI** and click `Install`.<img src= "/apps/img/scli1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/scli2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+4. Select the `CLI database` and click on `Confirm`. <img src= "/apps/img/scli4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+5. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Routing :material-menu-right: ScriptForge**. Select the `Sequential CLI` and click `Save`. <br><img src= "/apps/img/scli5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+### Webphone
+
+[Click here](/webphoneapp/) for a comprehensive introduction and step-by-step setup guide for the Webphone.
+
+### Cx MCP
+
+#### Overview
+
+The **Cx MCP** (ConnexCS MCP App) provides an extensible Model Context Protocol (MCP) server for the ConnexCS Application Platform, enabling seamless integration between AI agents, tools, and external services.
+
+Instead of building integrations manually, users can leverage MCP to connect applications, execute actions, and access data through standardized interfaces, enabling scalable automation and AI-driven workflows.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Cx MCP** and click `Install`.<img src= "/apps/img/cxmcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/cxmcp2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu. <img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+### Paynamics
+
+#### Overview
+
+The **Paynamics** application in ConnexCS enables users to process payments through the Paynamics payment gateway, providing a secure and streamlined way to handle transactions within the platform.
+
+It supports payments exclusively in Philippine Peso (PHP), ensuring compatibility with Paynamics’ supported currency, and is designed to facilitate billing, top-ups, and payment workflows efficiently.
+
+#### Steps to Use the App
+
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Paynamics** and click `Install`. <img src= "/apps/img/pay1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/pay2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+3. The installed versions are visible and click on `Config Paynamics` (settings button). <img src= "/apps/img/pay3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+4. Follow the configuration stpes as shown in the following image. <img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">

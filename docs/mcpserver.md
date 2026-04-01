@@ -201,7 +201,7 @@ The MCP implementation is **open source and fully customizable**, allowing you t
 
 ### Steps to Extend MCP
 
-1. Install the `cxMCP App`
+1. Install the `Cx MCP App` from **Setup :material-menu-right: App Store :material-menu-right: Cx MCP**. [Click here](/setup/appstore/#) for more deails. 
 2. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu.
 
 <img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
