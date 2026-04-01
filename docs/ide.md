@@ -363,7 +363,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 12. Define the `Data source settings` under `Form Attributes`.
     1. `saveEnv`:<br><img src= "/misc/img/ide10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `loadEnvValues`: <br><img src= "/misc/img/ide11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    3. `getApiUsers`: <br><img src= "/misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>. There are two additional images (Database and Query) under `getAPIUser` because the API user data is being **fetched dynamically from a database using a query**, rather than being hardcoded.
+    3. `getApiUsers`: <br><img src= "/misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> There are two additional images (Database and Query) under `getAPIUser` because the API user data is being **fetched dynamically from a database using a query**, rather than being hardcoded.
     4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13. Define the `Action Panel settings` under `Form Attributes`.
