@@ -223,6 +223,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Default Template Customer (Set Initial Credit, etc)
 * Several Custom Domains Supported (Separate Branding on each)
 * Custom Permissions (30+ Options)
+* [Contact Center / Dialer](https://docs.connexcs.com/customer-portal/cp-contact-center/) — outbound contact center with campaigns, agents, scripts, leadsets, and a dialer dashboard.
 * [Call Reporting](https://docs.connexcs.com/customer-portal/cp-breakout/)
 * Customizable CDR Downloads
 * [Email Verification](https://docs.connexcs.com/getting-started/#email-verification)
@@ -254,6 +255,11 @@ The following is a comprehensive list of features included in the latest stable 
 * Music on Hold
 * [IVR Menus](https://docs.connexcs.com/class5/creating-ivr/#create-an-interactive-voice-response)
 
+### AI & Intelligent Applications
+* [AI Agent](https://docs.connexcs.com/class5/ai-agent/) — a full AI call center agent suite with LLM integration, task flows, transcription, TTS, guard rails, and reseller billing.
+* [Knowledge Base](https://docs.connexcs.com/class5/knowledge-base/) — indexed document storage that AI Agents can query for accurate answers.
+* [ConneXML](https://docs.connexcs.com/class5/connexml/) — programmable call-control XML instructions for advanced telephony application workflows.
+
 ## Developer
 
 * [ScriptForge (Javascript) Applications](https://docs.connexcs.com/customer/routing/#scriptforge)
@@ -261,6 +267,9 @@ The following is a comprehensive list of features included in the latest stable 
     * [Class 5 Applications](https://docs.connexcs.com/class5/apps/)
     * UI Enhancement
     * Batch Processing
+* [IDE](https://docs.connexcs.com/ide/) — centralized workspace for Applications, Page Builder, ScriptForge, Query Builder, Pub/Sub Bus, and developer workflows.
+* [MCP Server](https://docs.connexcs.com/mcpserver/) — Model Context Protocol server app that enables AI clients to query ConnexCS back end via ScriptForge.
+* [Data Suite](https://docs.connexcs.com/datasuite/) — full data management workspace with CSV import, remote database queries, bulk uploads, and table mapping.
 * [Pages - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/developers/pages/introduction/)
 * [Analytics - Build your own Reports](https://docs.connexcs.com/developers/analytics/)
 * Userspace Database - Create your own databases
@@ -311,6 +320,8 @@ The following is a comprehensive list of features included in the latest stable 
 * Live SIP Registrations
 
 ## Technical Tools
+
+* [Terminal Tools](https://docs.connexcs.com/terminal-tools/) — command-line CX-Tools for script management, SQL queries, key-value access, deployments, and automation.
 
 ### Call Logging
 
