@@ -123,7 +123,7 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
 
 5. Click `Save`.
 6. Now you need to configure an endpoint URL, as it serves as the programmatic entry point required to trigger Click-to-Dial call initiation via ScriptForge. A call will first come from the customer’s number, and then it will be routed further through an extension to connect to the next destination.
-7. Navigate to **IDE :material-menu-right: Click-2-Dial application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Click on the `Settings` button :material-menu-right: Endpoint URL's**. It allows external systems (or internal workflows) to trigger a ScriptForge function `(send)` via a `URL (API call)`. <img src= "/apps/img/cd5.png" style="border: 2px solid #4472C4; border-radius: 8px;">.
+7. Navigate to **IDE :material-menu-right: Click-2-Dial application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Click on the `Settings` button :material-menu-right: Endpoint URL's**. It allows external systems (or internal workflows) to trigger a ScriptForge function `(send)` via a `URL (API call)`. <img src= "/apps/img/cd5.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">.
 
 8. **Technical Explanation**
       + **Domain** → Specifies the base host where the API is exposed.
@@ -135,7 +135,7 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
       2. The specified function (send) is invoked.
       3. Any defined logic, integrations, or side effects are executed.
 
-!!! "Note" This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function.
+!!! Note "This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function."
 
 ### Yoco Payment
 
@@ -320,10 +320,10 @@ These defaults help standardize reporting and monitoring setups across the platf
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ConnexCS Control Panel Defaults** and click `Install`.<img src= "/apps/img/default1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. Fill in the `App Name`, `Version` and hit `Install` again. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/default2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Fill in the `App Name`, `Version` and hit `Install` again. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/default2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. The installed versions are visible.
-<br><img src= "/apps/img/default3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+<br><img src= "/apps/img/default3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name]**. These duplicate features are automatically added when the application is installed and are customizable. <br><img src= "/apps/img/default4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -341,13 +341,13 @@ Instead of manually selecting CLIs for each call, the system retrieves them sequ
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Sequential CLI** and click `Install`.<img src= "/apps/img/scli1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Sequential CLI** and click `Install`.<img src= "/apps/img/scli1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/scli2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-4. Select the `CLI database` and click on `Confirm`. <img src= "/apps/img/scli4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. Select the `CLI database` and click on `Confirm`. <br><img src= "/apps/img/scli4.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Routing :material-menu-right: ScriptForge**. Select the `Sequential CLI` and click `Save`. <br><img src= "/apps/img/scli5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
