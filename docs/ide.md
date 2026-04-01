@@ -363,8 +363,8 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 12. Define the `Data source settings` under `Form Attributes`.
     1. `saveEnv`:<br><img src= "/misc/img/ide10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `loadEnvValues`: <br><img src= "/misc/img/ide11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    3. `getApiUsers`: <br><img src= "/misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
-    4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>There are two additional images (Database and Query) under `getAPIUser` because the API user data is being **fetched dynamically from a database using a query**, rather than being hardcoded.
+    3. `getApiUsers`: <br><img src= "/misc/img/ide12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>. There are two additional images (Database and Query) under `getAPIUser` because the API user data is being **fetched dynamically from a database using a query**, rather than being hardcoded.
+    4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13. Define the `Action Panel settings` under `Form Attributes`.
     1. `Function mounted`:<br><img src= "/misc/img/ide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -400,7 +400,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
       **Form Attributes: Same as defined above**
 
 15. Define the `Data source settings` under `Form Attributes`.
-    1. `GET did`:<br><img src= "/misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "/misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    1. `GET did`:<br><img src= "/misc/img/ide20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/misc/img/ide22.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br></br><br><img src= "/misc/img/ide23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>There are two additional images (Database and Query) under `getDID` because the DID data is being **fetched dynamically from a database using a query**, rather than being hardcoded.
     2. `GET isOrderAffordable`: <br><img src= "/misc/img/ide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     3. `GET checkout`: <br><img src= "/misc/img/ide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
     4. `Data Processing`: <br><img src= "/misc/img/ide15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -441,7 +441,7 @@ For detailed usage instructions and comprehensive guidance, please refer to our 
 18. **Form Attributes**, **Data Soure Settings** and **Action Panel Settings** are same as **Button component** using **Page Builder** (point number 12).
 
 19. Next step is to configure the **Card** (Text Component) inside the **Cart Dialog UI**. This component (`cart_text`) is used to **display informational text** within the dialog, helping users understand the purpose of the data shown (selected DIDs). <br><img src= "/misc/img/ide33.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    
+
       **Text Component Attributes**
 
       | Field| Description|
