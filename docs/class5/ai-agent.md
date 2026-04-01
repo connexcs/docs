@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Carrier Management / Analytics & Monitoring<br>
+<strong>Category</strong>: Class 5 Services / AI Agent<br>
 <strong>Audience</strong>: Administrators, Engineers, Support Team<br>
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 30–45 minutes<br>

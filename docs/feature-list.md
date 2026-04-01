@@ -200,7 +200,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Single control panel for all servers
 * Realtime updates from server
 * Smartphone Compatible
-* [Multi-Langauge](https://docs.connexcs.com/changing-language/)
+* [Multi-Language](https://docs.connexcs.com/changing-language/)
 * Multi-Currency
 * Multi-Timezone
 * Microsoft / Google HMAC OTP
@@ -262,7 +262,7 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Developer
 
-* [ScriptForge (Javascript) Applications](https://docs.connexcs.com/customer/routing/#scriptforge)
+* [ScriptForge (Javascript) Applications](https://docs.connexcs.com/apps/architecture/scriptforge/)
     * [Routing](https://docs.connexcs.com/customer/routing/)
     * [Class 5 Applications](https://docs.connexcs.com/class5/apps/)
     * UI Enhancement
@@ -270,9 +270,8 @@ The following is a comprehensive list of features included in the latest stable 
 * [IDE](https://docs.connexcs.com/ide/) — centralized workspace for Applications, Page Builder, ScriptForge, Query Builder, Pub/Sub Bus, and developer workflows.
 * [MCP Server](https://docs.connexcs.com/mcpserver/) — Model Context Protocol server app that enables AI clients to query ConnexCS back end via ScriptForge.
 * [Data Suite](https://docs.connexcs.com/datasuite/) — full data management workspace with CSV import, remote database queries, bulk uploads, and table mapping.
-* [Pages - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/developers/pages/introduction/)
-* [Analytics - Build your own Reports](https://docs.connexcs.com/developers/analytics/)
-* Userspace Database - Create your own databases
+* [Pages - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/apps/page-builder/)
+* [Userspace Database](https://docs.connexcs.com/apps/architecture/database/) - Create your own databases
     * Real-time querying with ScriptForge
 * [Template Customisation](https://docs.connexcs.com/setup/config/templates/)
     * Emails
@@ -350,7 +349,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Invoice Format per destination or per day.
 * [Re-rating of calls if incorrectly setup](https://docs.connexcs.com/customer/cdr/#recalculate-call-detail-record)
 
-### Call Deatil Record
+### Call Detail Record
 
 * In Browser Vie
 * Download
