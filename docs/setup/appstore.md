@@ -135,8 +135,7 @@ Instead of manually dialing a phone number, users or systems can trigger a call 
       2. The specified function (send) is invoked.
       3. Any defined logic, integrations, or side effects are executed.
 
-!!! "Note"
-    This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function.
+!!! "Note" This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function.
 
 ### Yoco Payment
 
@@ -300,10 +299,9 @@ Instead of manually compiling call metrics, users can view ASR data directly wit
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ASR per CLI** and click `Install`.<img src= "/apps/img/apc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/apc2.png" width= "300"  style="border: 2px solid #4472C4; border-radius: 8px;">
+2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/apc2.png" width= "400"  style="border: 2px solid #4472C4; border-radius: 8px;">
 
-3. The installed versions are visible.
-   <img src= "/apps/img/apc3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. The installed versions are visible. <br><img src= "/apps/img/apc3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. The app is installed app can be seen in **Management :material-menu-right: Customer**. <br><img src= "/apps/img/apc4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -322,10 +320,10 @@ These defaults help standardize reporting and monitoring setups across the platf
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ConnexCS Control Panel Defaults** and click `Install`.<img src= "/apps/img/default1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. Fill in the `App Name`, `Version` and hit `Install` again. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/default2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Fill in the `App Name`, `Version` and hit `Install` again. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/default2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. The installed versions are visible.
-<img src= "/apps/img/default3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+<br><img src= "/apps/img/default3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name]**. These duplicate features are automatically added when the application is installed and are customizable. <br><img src= "/apps/img/default4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -349,7 +347,7 @@ Instead of manually selecting CLIs for each call, the system retrieves them sequ
 
 3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-4. Select the `CLI database` and click on `Confirm`. <img src= "/apps/img/scli4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. Select the `CLI database` and click on `Confirm`. <img src= "/apps/img/scli4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 5. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Routing :material-menu-right: ScriptForge**. Select the `Sequential CLI` and click `Save`. <br><img src= "/apps/img/scli5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -369,9 +367,9 @@ Instead of building integrations manually, users can leverage MCP to connect app
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Cx MCP** and click `Install`.<img src= "/apps/img/cxmcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/cxmcp2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/cxmcp2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu. <img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -387,8 +385,8 @@ It supports payments exclusively in Philippine Peso (PHP), ensuring compatibilit
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Paynamics** and click `Install`. <img src= "/apps/img/pay1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/pay2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/pay2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-3. The installed versions are visible and click on `Config Paynamics` (settings button). <img src= "/apps/img/pay3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. The installed versions are visible and click on `Config Paynamics` (settings button). <img src= "/apps/img/pay3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4. Follow the configuration stpes as shown in the following image. <img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
