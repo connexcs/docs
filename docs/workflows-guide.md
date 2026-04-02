@@ -17,45 +17,45 @@
 #### Steps:
 
 1. **Account Verification** ([Getting Started](getting-started.md))
-   - Verify email address
-   - Verify mobile number
-   - Complete company information
-   - Configure profile settings
+      - Verify email address
+      - Verify mobile number
+      - Complete company information
+      - Configure profile settings
 
 2. **Configure Carrier** ([Carrier Setup](carrier.md))
-   - Navigate to **Management → Carrier**
-   - Click **+** to add new carrier
-   - Enter carrier name and basic information
-   - Configure authentication in [Carrier Auth](carrier/carrier-auth.md)
-   - Set up failover if needed ([Carrier Failover](carrier/carrier-failover.md))
+      - Navigate to **Management → Carrier**
+      - Click **+** to add new carrier
+      - Enter carrier name and basic information
+      - Configure authentication in [Carrier Auth](carrier/carrier-auth.md)
+      - Set up failover if needed ([Carrier Failover](carrier/carrier-failover.md))
 
 3. **Create Provider Rate Card** ([Provider Rate Card](provider-ratecard.md))
-   - Navigate to **Management → Rate Card → Provider Rate Card**
-   - Upload carrier pricing or create manually
-   - Test rate lookups
+      - Navigate to **Management → Rate Card → Provider Rate Card**
+      - Upload carrier pricing or create manually
+      - Test rate lookups
 
 4. **Configure Customer** ([Customer Setup](customer/customer.md))
-   - Navigate to **Management → Customer**
-   - Click **+** to add new customer
-   - Enter customer details
-   - Configure authentication ([Customer Auth](customer/auth.md))
+      - Navigate to **Management → Customer**
+      - Click **+** to add new customer
+      - Enter customer details
+      - Configure authentication ([Customer Auth](customer/auth.md))
 
 5. **Create Customer Rate Card** ([Customer Rate Card](customer-ratecard.md))
-   - Navigate to **Management → Rate Card → Customer Rate Card**
-   - Create markup over provider rates
-   - Test customer pricing
+      - Navigate to **Management → Rate Card → Customer Rate Card**
+      - Create markup over provider rates
+      - Test customer pricing
 
 6. **Configure Routing** ([Customer Routing](customer/routing.md))
-   - Go to **Customer → Routing → Ingress Routing**
-   - Add new route
-   - Select carrier and rate cards
-   - Configure routing strategy
+      - Go to **Customer → Routing → Ingress Routing**
+      - Add new route
+      - Select carrier and rate cards
+      - Configure routing strategy
 
 7. **Test Configuration** ([Circuit Test](circuit-test.md))
-   - Use Circuit Test tool
-   - Make test calls
-   - Verify call flow in [Latest Calls](customer/latest-calls.md)
-   - Check [Logging](logging.md) if issues occur
+      - Use Circuit Test tool
+      - Make test calls
+      - Verify call flow in [Latest Calls](customer/latest-calls.md)
+      - Check [Logging](logging.md) if issues occur
 
 **Success Criteria:**
 - ✓ Test call completes successfully
@@ -118,9 +118,13 @@
       - Verify carrier authentication
 
 **Resolution Paths:**
+
    - Auth issues → Update [Customer Auth](customer/auth.md) or [Carrier Auth](carrier/carrier-auth.md)
+
    - Routing issues → Modify [Customer Routing](customer/routing.md)
+
    - Rate card gaps → Update rate cards
+
    - Carrier problems → Contact carrier or enable failover
 
 **Reference:** [Call Connection Troubleshooting](guides/tshoot-signal.md)
@@ -176,9 +180,13 @@
       - Enable/disable transcoding
 
 **Common Solutions:**
+
    - **One-way audio:** Enable RTP proxy, fix NAT
+
    - **Choppy audio:** Check jitter buffer, packet loss
+
    - **Echo:** Adjust echo cancellation on endpoints
+
    - **Latency:** Choose closer RTP zones, check network
 
 **Reference:** [Call Quality Troubleshooting](guides/tshoot-media.md)
@@ -238,9 +246,13 @@
       - Track customer usage
 
 **Best Practices:**
+
    - Set conservative credit limits initially
+
    - Enable low-balance alerts
+
    - Regular invoice reconciliation
+
    - Monitor for unusual usage patterns
 
 ---
@@ -311,9 +323,13 @@
       - Monitor usage in [CDR](customer/cdr.md)
 
 **Common IVR Patterns:**
+
    - **Simple menu:** Press 1 for sales, 2 for support, 3 for billing
+
    - **Directory:** Dial by name or extension
+
    - **Callback queue:** Offer callback instead of holding
+
    - **Business hours:** Route differently based on time
 
 ---
@@ -379,10 +395,15 @@
       - Document integration
 
 **API Use Cases:**
+
    - Automated customer provisioning
+
    - Real-time balance monitoring
+
    - CDR exports for external billing
+
    - Custom reporting dashboards
+
    - Integration with CRM systems
 
 **Reference:** Full API docs at <https://api-docs.connexcs.com/>
@@ -456,10 +477,15 @@
         - Monitor usage
 
 **Common App Types:**
+
     - Custom reporting dashboards
+    
     - Automated provisioning forms
+    
     - Customer self-service portals
+    
     - Internal admin tools
+    
     - Integration middleware
 
 ---
@@ -629,10 +655,15 @@
         - Update fraud rules as needed
 
 **Red Flags to Monitor:**
+
     - Sudden spike in calls
+    
     - Unusual destinations (high-cost)
+    
     - Short-duration calls (missed call traffic)
+    
     - Calls outside business hours
+    
     - Sequential number dialing
 
 ---
@@ -676,8 +707,11 @@
       - Verify certificate validity
 
 **Attestation Levels:**
+
    - **A (Full):** Complete control over number
+
    - **B (Partial):** Verified caller, may not control number
+
    - **C (Gateway):** Minimal verification
 
 ---
