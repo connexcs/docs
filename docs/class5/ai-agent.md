@@ -57,10 +57,9 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Company**: Associate the AI Agent with a customer.
     + **App**: Associate the AI Agent with the [Application](https://docs.connexcs.com/apps/architecture/app/) that you have created in the IDE.
     + **PBX Server**: Select the PBX Server from the drop-down.
-    + **Platform**: Use either **ConnexCS Converse** or **ConnexCS Converse Direct** to model the AI Agent.
     + **Host**: It's the hosting server where your AI Agent runs and processes interactions.
     + Click `Save`.
-         <img src= "/class5/img/aiagent3new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+         <img src= "/class5/img/aiagent3new_1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Model"
 
@@ -111,6 +110,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 
 === "Advanced"
 
+    + **App**: Select the created app from the drop-down menu.
     + **Built-in Functions**:
         + **Hangup**: Use this flag to terminate the call. You can include a prompt such as, "When call ended, hangup.
         + **Set Variable**: Set variables locally. For example, in a prompt, you could ask, "What's your name?" and save the response to the variable `name`.
@@ -119,7 +119,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Tool Call Allow List**: Select from a list of `functions` available in Apps in IDE. 
     + **Guard Rails**: Choose from multiple Guard Rails options to define constraints for your AI Agent.
     + **Flags**: Select from various flags:
-          + **Async Guard Rails**: *Currently not in use*.
+          + **Async Guard Rails**: *Currently not in use*. Implements safeguards against prompt injection, mitigates hallucination risks, and enforces output validation for system integrity.
           + **Local Voice Activity Detection**: It optimizes VoIP performance by identifying speech in real-time at the user’s device.
           + **Disable ScriptForge**: Disables Scriptforge completely. Enabling this flag will deactivate the Tool Call Support functionality.
           + **Listen First**: Enabling this flag ensures the LLM prioritizes listening to the user before responding.
@@ -142,7 +142,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script.
     
     + Click `Save`.
-        <img src= "/class5/img/aiagent7new17new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src= "/class5/img/aiagent7new17new_1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Example "Example Prompt"
     **Introduction:**  
@@ -248,7 +248,7 @@ It usually involves processing inputs, making decisions, and taking actions to a
        
           + **Flags**: Select from various flags:
               + **Async Guard Rails**: *Currently not in use*.
-              + **Local Voice Activity Detection**: Optimizes VoIP performance by identifying speech in real time at the user’s device. 
+              + **Local Voice Activity Detection**: Optimizes VoIP performance by identifying speech in real time at the user’s device.
               + **Disable ScriptForge**: Disables ScriptForge completely. Enabling this flag will deactivate the Tool Call Support functionality.
               + **Listen First**: Enabling this flag ensures the LLM prioritizes listening to the user before responding.
               + **Vad Start Interrupt**: A  VAD Start Interrupt is triggered when the system detects the onset of voice activity, indicating that speech has begun.
