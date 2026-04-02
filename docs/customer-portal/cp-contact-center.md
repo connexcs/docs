@@ -113,3 +113,6 @@ You can create your own personal AI Agent. [Click here](https://docs.connexcs.co
     ``` 
 
 From this point forward, we move into the next section [Setting up and using the Contact Center](https://docs.connexcs.com/customer-portal/cp-cc-install/).
+
+⚠️ Note: This is an advanced application-based Contact Center.
+For simple queue-based call handling, refer to the [Class 5 Call Center](/class5/call-center/).

@@ -200,7 +200,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Single control panel for all servers
 * Realtime updates from server
 * Smartphone Compatible
-* [Multi-Langauge](https://docs.connexcs.com/changing-language/)
+* [Multi-Language](https://docs.connexcs.com/changing-language/)
 * Multi-Currency
 * Multi-Timezone
 * Microsoft / Google HMAC OTP
@@ -223,6 +223,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Default Template Customer (Set Initial Credit, etc)
 * Several Custom Domains Supported (Separate Branding on each)
 * Custom Permissions (30+ Options)
+* [Contact Center / Dialer](https://docs.connexcs.com/customer-portal/cp-contact-center/) — outbound contact center with campaigns, agents, scripts, leadsets, and a dialer dashboard.
 * [Call Reporting](https://docs.connexcs.com/customer-portal/cp-breakout/)
 * Customizable CDR Downloads
 * [Email Verification](https://docs.connexcs.com/getting-started/#email-verification)
@@ -254,16 +255,23 @@ The following is a comprehensive list of features included in the latest stable 
 * Music on Hold
 * [IVR Menus](https://docs.connexcs.com/class5/creating-ivr/#create-an-interactive-voice-response)
 
+### AI & Intelligent Applications
+* [AI Agent](https://docs.connexcs.com/class5/ai-agent/) — a full AI call center agent suite with LLM integration, task flows, transcription, TTS, guard rails, and reseller billing.
+* [Knowledge Base](https://docs.connexcs.com/class5/knowledge-base/) — indexed document storage that AI Agents can query for accurate answers.
+* [ConneXML](https://docs.connexcs.com/class5/connexml/) — programmable call-control XML instructions for advanced telephony application workflows.
+
 ## Developer
 
-* [ScriptForge (Javascript) Applications](https://docs.connexcs.com/customer/routing/#scriptforge)
+* [ScriptForge (Javascript) Applications](https://docs.connexcs.com/apps/architecture/scriptforge/)
     * [Routing](https://docs.connexcs.com/customer/routing/)
     * [Class 5 Applications](https://docs.connexcs.com/class5/apps/)
     * UI Enhancement
     * Batch Processing
-* [Pages - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/developers/pages/introduction/)
-* [Analytics - Build your own Reports](https://docs.connexcs.com/developers/analytics/)
-* Userspace Database - Create your own databases
+* [IDE](https://docs.connexcs.com/ide/) — centralized workspace for Applications, Page Builder, ScriptForge, Query Builder, Pub/Sub Bus, and developer workflows.
+* [MCP Server](https://docs.connexcs.com/mcpserver/) — Model Context Protocol server app that enables AI clients to query ConnexCS back end via ScriptForge.
+* [Data Suite](https://docs.connexcs.com/datasuite/) — full data management workspace with CSV import, remote database queries, bulk uploads, and table mapping.
+* [Pages - Place custom data collection forms on Customer and Control Panel](https://docs.connexcs.com/apps/page-builder/)
+* [Userspace Database](https://docs.connexcs.com/apps/architecture/database/) - Create your own databases
     * Real-time querying with ScriptForge
 * [Template Customisation](https://docs.connexcs.com/setup/config/templates/)
     * Emails
@@ -312,6 +320,8 @@ The following is a comprehensive list of features included in the latest stable 
 
 ## Technical Tools
 
+* [Terminal Tools](https://docs.connexcs.com/terminal-tools/) — command-line CX-Tools for script management, SQL queries, key-value access, deployments, and automation.
+
 ### Call Logging
 
 * Realtime call log (before CDR generation)
@@ -339,7 +349,7 @@ The following is a comprehensive list of features included in the latest stable 
 * Invoice Format per destination or per day.
 * [Re-rating of calls if incorrectly setup](https://docs.connexcs.com/customer/cdr/#recalculate-call-detail-record)
 
-### Call Deatil Record
+### Call Detail Record
 
 * In Browser Vie
 * Download
