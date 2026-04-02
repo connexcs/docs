@@ -58,8 +58,11 @@
       - Check [Logging](logging.md) if issues occur
 
 **Success Criteria:**
+
 - ✓ Test call completes successfully
+
 - ✓ CDR appears in system
+
 - ✓ Correct pricing applied
 
 ---
@@ -478,15 +481,15 @@
 
 **Common App Types:**
 
-    - Custom reporting dashboards
-    
-    - Automated provisioning forms
-    
-    - Customer self-service portals
-    
-    - Internal admin tools
-    
-    - Integration middleware
+- Custom reporting dashboards
+
+- Automated provisioning forms
+
+- Customer self-service portals
+
+- Internal admin tools
+
+- Integration middleware
 
 ---
 
@@ -656,15 +659,15 @@
 
 **Red Flags to Monitor:**
 
-    - Sudden spike in calls
-    
-    - Unusual destinations (high-cost)
-    
-    - Short-duration calls (missed call traffic)
-    
-    - Calls outside business hours
-    
-    - Sequential number dialing
+- Sudden spike in calls
+
+- Unusual destinations (high-cost)
+
+- Short-duration calls (missed call traffic)
+
+- Calls outside business hours
+
+- Sequential number dialing
 
 ---
 
