@@ -13,7 +13,7 @@
 
 ## Overview
 
-The **Interconnect** section in the Customer Portal allows users to configure and manage **call routing between ConnexCS and external systems or carriers**.
+The **Interconnect** section in the Customer Portal allows users to configure and manage **call routing between your company and external systems or carriers**.
 
 It defines how calls are:
 
@@ -76,8 +76,8 @@ This is a core component for enabling **inbound and outbound voice connectivity*
 2. The system checks configured **Interconnect settings**
 3. Based on routing rules:
 
-   * Calls are sent to a **Termination Address**
-   * OR accepted from an **Origination Address**
+      * Calls are sent to a **Termination Address**
+      * OR accepted from an **Origination Address**
 4. RTP servers handle the **media stream**
 
 ---
