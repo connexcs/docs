@@ -193,7 +193,9 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
 
 ### Remote Query
 
-Upload your data follow the steps mentioned in [Step 3](/datasuite/#step-3-upload-data) and then [Remote Query](https://docs.connexcs.com/datasuite/#step-4-edit-datamodify-data)
+Upload your data follow the steps mentioned in [Step 3](/datasuite/#step-3-upload-data).
+
+The next step [Step 4](https://docs.connexcs.com/datasuite/#step-4-edit-datamodify-data) includes Querying and data modification. 
 
   A remote query is a request that you send to a database server to fetch or process information directly on the server.
   Instead of doing the work (like filtering or calculating data) on your own computer or app (the "client"), you let the powerful server handle it. Once the server finishes, it sends you back only the results you need.
