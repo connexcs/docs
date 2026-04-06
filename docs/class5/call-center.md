@@ -46,3 +46,6 @@ It utilizes the first-in, first-out (FIFO) queuing system. The mod_fifo makes ma
           1. **Abandoned Resume Allowed**: You can choose it to be either **True** or **False**. If you choose **True**, a caller who has abandoned the queue can re-enter and resume their previous position in that queue. To maintain their position in the queue, the member shouldn't have been abandoned for longer than the number of seconds defined in Discard Abandoned After.
 
 3. Click on Save to complete the Call Center configuration.
+
+⚠️ Note: This is a basic PBX queueing feature.
+For advanced contact center capabilities (campaigns, scripts, leadsets), refer to the [Contact Center](/customer-portal/cp-contact-center/) (Apps Platform).
