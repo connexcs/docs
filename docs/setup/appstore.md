@@ -107,35 +107,58 @@ This application allows autonomous dialling of numbers from an uploaded list.
 
 Instead of manually dialing a phone number, users or systems can trigger a call directly from an interface, making the process faster, more efficient, and less error-prone.
 
+### Call Flow (How it works?)
+
+```mermaid
+flowchart TD
+    A[API Request Sent] --> B[Includes api_key & phone]
+    B --> C[Validate Authentication]
+    C -->|Valid| D[Initiate Two Outbound Calls]
+    C -->|Invalid| X[Reject Request]
+
+    D --> E[Call to Configured Extension]
+    D --> F[Call to Destination Number]
+
+    E --> G{Both Calls Answered?}
+    F --> G
+
+    G -->|Yes| H[Bridge Calls Together]
+    G -->|No| I[Wait / Retry / Fail]
+```
+
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`.<img src= "/apps/img/cd1.png" width= "900" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`. <br><img src= "/apps/img/cd1.png" width= "900" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/cd2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/cd2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. In the `Installed Versions` tab click `Config`.
-   <img src= "/apps/img/cd3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. In the `Installed Versions` tab click `Config`. <br><img src= "/apps/img/cd3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. A window will open, prompting you to enter the following details:
-      + Select the `Customer` for the drop-down.
+      + Select the `Customer` for the drop-down. The account from which the call will be initiated.
       + Enter the `API Key`. It acts as a gate-keeper in maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
-      + Enter the `Extension`. It specifies the number you are using to initiate the call.<img src= "/apps/img/cd4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      + Enter the `Extension`. Number that will be called as one leg of the call. <br><img src= "/apps/img/cd4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Click `Save`.
-6. Now you need to configure an endpoint URL, as it serves as the programmatic entry point required to trigger Click-to-Dial call initiation via ScriptForge. A call will first come from the customer’s number, and then it will be routed further through an extension to connect to the next destination.
-7. Navigate to **IDE :material-menu-right: Click-2-Dial application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Click on the `Settings` button :material-menu-right: Endpoint URL's**. It allows external systems (or internal workflows) to trigger a ScriptForge function `(send)` via a `URL (API call)`. <img src= "/apps/img/cd5.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">.
+6. Navigate to: **IDE :material-menu-right: Click-2-Dial Application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Settings :material-menu-right: Endpoint URLs.** This section provides the API endpoint that allows external systems (or internal workflows) to trigger the ScriptForge function send via an HTTP request. <br><img src= "/apps/img/cd5.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">.</br>
 
-8. **Technical Explanation**
+7. **Technical Explanation**
       + **Domain** → Specifies the base host where the API is exposed.
       + **Function Name (send)** → Maps to the underlying ScriptForge function to be executed.
-      + **Final URL** → Fully qualified endpoint that accepts HTTP requests to trigger the function. Enter the `API` from the `Config`. <img src= "/apps/img/cd6.png" style="border: 2px solid #4472C4; border-radius: 8px;">.
+      + **Final URL** → Fully qualified endpoint that accepts HTTP requests to trigger the function. Enter the `API` from the `Config`. <br><img src= "/apps/img/cd6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
 
-9. When this endpoint is called:
+8. When this endpoint is called:
       1. The request is routed to the ScriptForge execution layer.
       2. The specified function (send) is invoked.
       3. Any defined logic, integrations, or side effects are executed.
 
 !!! Note "This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function."
+
+!!! Example "Example"
+    **Example (cURL)**
+    `curl -X POST "https:///api//send"`
+    `-d "api_key=YOUR_API_KEY"`
+    `-d "phone=123456"`
 
 ### Yoco Payment
 
@@ -297,24 +320,45 @@ Instead of manually compiling call metrics, users can view ASR data directly wit
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ASR per CLI** and click `Install`.<img src= "/apps/img/apc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ASR per CLI** and click `Install`. <br><img src= "/apps/img/apc1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/apc2.png" width= "400"  style="border: 2px solid #4472C4; border-radius: 8px;">
+2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/apc2.png" width= "400"  style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. The installed versions are visible. <br><img src= "/apps/img/apc3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. The app is installed app can be seen in **Management :material-menu-right: Customer**. <br><img src= "/apps/img/apc4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Click on the `ASR per CLI` button on the top.
-The **UTC Date Range** allows users to filter data based on Coordinated Universal Time (UTC), ensuring consistent time-based analysis across different time zones.
+6. Select the `Date Range` and click on `refresh` to get the data.
 
 ### ConnexCS Control Panel Defaults
 
 #### Overview
 
-The **ConnexCS Control Panel Defaults** application includes predefined configurations for commonly used modules such as **Bulk Run Tests**, **Carrier Win Rate**, **Custom Reports**, **DTMF**, **Latency**, **Route Stats**, **Stats**, **USA Calls**, and **USA Rate Center**.
+The ConnexCS Control Panel Defaults application provides predefined configurations for commonly used modules, including:
 
-These defaults help standardize reporting and monitoring setups across the platform while allowing users to customize them as needed.
+1. Carrier Win Rate
+2. Custom Reports
+3. DTMF
+4. Latency
+5. Route Stats
+6. Stats
+7. USA Calls
+8. USA Rate Center
+
+These modules are already available in the system by default.
+
+#### Purpose
+
+This application allows users to install copies of the existing default modules.
+
+The original modules remain unchanged.
+
+The installed versions are independent copies.
+
+Users can modify these copies as needed.
+
+This ensures that customization can be performed without impacting the default configurations.
 
 #### Steps to Use the App
 
@@ -325,7 +369,7 @@ These defaults help standardize reporting and monitoring setups across the platf
 3. The installed versions are visible.
 <br><img src= "/apps/img/default3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name]**. These duplicate features are automatically added when the application is installed and are customizable. <br><img src= "/apps/img/default4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name]**. These duplicate features are automatically added when the application is installed. You can then customize them according to specific requirements from IDE section. <br><img src= "/apps/img/default4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Contact Center
 
@@ -337,17 +381,17 @@ These defaults help standardize reporting and monitoring setups across the platf
 
 The **Sequential CLI application** enables users to automatically assign CLIs (Caller Line Identification) in a sequential order from a selected database.
 
-Instead of manually selecting CLIs for each call, the system retrieves them sequentially based on predefined routing logic, ensuring organized distribution and efficient utilization of available numbers.
+Instead of manually selecting CLIs for each call, the system retrieves them sequentially from the database.
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Sequential CLI** and click `Install`.<img src= "/apps/img/scli1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Sequential CLI** and click `Install`. <br><img src= "/apps/img/scli1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/scli2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Fill in the `App Name`, `Version` and hit `Install` again. <br><img src= "/apps/img/scli2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. The installed versions are visible and click on `Config` (settings button). <br><img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. Select the `CLI database` and click on `Confirm`. <br><img src= "/apps/img/scli4.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Select the `database` and click on `Confirm`. <br><img src= "/apps/img/scli4.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Routing :material-menu-right: ScriptForge**. Select the `Sequential CLI` and click `Save`. <br><img src= "/apps/img/scli5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -363,15 +407,22 @@ The **Cx MCP** (ConnexCS MCP App) provides an extensible Model Context Protocol 
 
 Instead of building integrations manually, users can leverage MCP to connect applications, execute actions, and access data through standardized interfaces, enabling scalable automation and AI-driven workflows.
 
+#### How It Works
+
+The app provides a set of default MCP tool calls out of the box.
+
+You can review, edit, or extend these tools from the IDE section of the app.
+Once customized, your modified tools will be used in place of the defaults.
+
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Cx MCP** and click `Install`.<img src= "/apps/img/cxmcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Cx MCP** and click `Install`. <br><img src= "/apps/img/cxmcp1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/cxmcp2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Fill in the `App Name`, `Version` and hit `Install` again. <br><img src= "/apps/img/cxmcp2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. The installed versions are visible and click on `Config` (settings button). <img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. The installed versions are visible and click on `Config` (settings button). <br><img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu. <img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu. <br><img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Paynamics
 
