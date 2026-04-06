@@ -11,11 +11,91 @@
 
 </details>
 
-**Interconnect** provides information on:
+## Overview
 
-1. **Termination address:** This is the address you send calls to.
-2. **Origination address** This is the address to receive calls from.
-3. Click [**here**](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers) to know more about **RTP Servers**.
+The **Interconnect** section in the Customer Portal allows users to configure and manage **call routing between ConnexCS and external systems or carriers**.
+
+It defines how calls are:
+
+* **Sent out (Termination)** to external destinations
+* **Received (Origination)** from external sources
+
+This is a core component for enabling **inbound and outbound voice connectivity** with your providers, customers, or infrastructure.
+
+---
+
+## Common Use Cases
+
+* Connecting to a **VoIP carrier for call termination**
+* Receiving calls from a **DID provider**
+* Linking ConnexCS with an **external PBX or softswitch**
+
+## Key Concepts
+
+### 1. Termination Address
+
+* The **destination endpoint** where outbound calls are sent
+* Typically used to route calls to:
+
+  * Carriers
+  * Upstream providers
+  * External SIP systems
+
+👉 Example: Sending calls to a wholesale VoIP provider
+
+---
+
+### 2. Origination Address
+
+* The **source endpoint** from which inbound calls are received
+* Used to accept calls from:
+
+  * Providers
+  * Customers
+  * External SIP trunks
+
+👉 Example: Receiving incoming DID traffic from a carrier
+
+---
+
+### 3. RTP Servers
+
+* Handles **media (audio) flow** for calls
+* Ensures proper voice transmission between endpoints
+
+👉 Learn more:
+[https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers)
+
+<img src= "/customer-portal/img/interconnect1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+---
+
+## How Interconnect Works
+
+1. A call is initiated (inbound or outbound)
+2. The system checks configured **Interconnect settings**
+3. Based on routing rules:
+
+   * Calls are sent to a **Termination Address**
+   * OR accepted from an **Origination Address**
+4. RTP servers handle the **media stream**
+
+---
+
+## Best Practices
+
+* Use **IP authentication** wherever possible
+* Ensure **RTP server proximity** for better call quality
+* Regularly monitor call logs (CDRs) for issues
+* Validate configurations after any changes
+
+---
+
+## Summary
+
+The **Interconnect module** enables seamless communication between ConnexCS and external telephony systems by defining how calls enter and leave the platform, ensuring proper routing and media handling.
+
+---
 
 ## Number Normalisation and Denormalisation
 
