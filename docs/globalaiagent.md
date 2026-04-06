@@ -34,6 +34,12 @@ With the Global AI Agent, you can:
 * Interact with connected tools via MCP servers
 * Automate operational queries and workflows
 
+### MCP Dependency Requirement
+
+This feature is dependent on the Model Context Protocol (MCP) for execution. All associated workflows, including API-triggered call flows and AI-driven interactions, require MCP to be enabled and correctly configured within the control panel.
+
+If MCP is not active or is misconfigured, the system may fail to initiate calls, process logic, or complete call bridging as expected.
+
 ---
 
 ## Key Capabilities
@@ -86,11 +92,11 @@ With the Global AI Agent, you can:
       1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br>Click `Add to Chat`.</br>
       2. Select the mode of the model:
          1. `General` (default): A fast model focused on quick results.
-         2. `Expert`: A reasoning model, takes longer to respond. 
+         2. `Expert`: A reasoning model, takes longer to respond.
        3. `MCP Severs`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
        4. `Toggle` for fullscreen.
        5. `PAID`: It provides a token-level usage breakdown for the Global AI Agent—showing daily free quota consumption, exhaustion state, transition to paid billing, total billable tokens used, and the active model’s per-token pricing rate. <br><img src= "/misc/img/gaa2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-       6. If your tokens have expired and you still want to continue with the **General/Expert** mode then you need to enable packages under **Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: General LLM Tokens/Expert LLM Tokens**. It will be visible under `PAID USGAE`. The information is displayed per day.
+       6. If your tokens have expired and you still want to continue with the **General/Expert** mode then you need to enable packages under **Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: General LLM Tokens/Expert LLM Tokens**. It will be visible under `PAID USGAE`. Daily usage is automatically reset and reflected here.
 
 3. **Start Interaction**
 
