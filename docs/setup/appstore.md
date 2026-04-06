@@ -157,7 +157,9 @@ flowchart TD
 !!! Example "Example"
     **Example (cURL)**
     `curl -X POST "https:///api//send"`
+
     `-d "api_key=YOUR_API_KEY"`
+    
     `-d "phone=123456"`
 
 ### Yoco Payment
