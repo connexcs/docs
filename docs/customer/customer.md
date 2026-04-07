@@ -87,10 +87,10 @@ Before creating a new customer, let's review the elements available on the Custo
         + Write the Body of the referral.
         + Click on `Send`. <br><img src= "/customer/img/referral.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. **Email**: The Send Email interface allows administrators to compose and send emails directly to one or multiple customers from within the platform. **It also allows all of a customers rate cards to be emailed to them (also in bulk to multiple customers)**.
-   1. **Customers (Required)**: This field lets you select one or more customers to whom the email will be sent. The `Select Multiple` option enables bulk selection.
-   2. **Subject**: Defines the subject line of the email.
-   3. **Body**: A rich text editor where you can compose the email content, format text (bold, italics, lists), and include links.
-   4. **Include Customer Rate**: When selected, this option attaches the customer’s rate information to the email. <br><img src= "/customer/img/email1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      1. **Customers (Required)**: This field lets you select one or more customers to whom the email will be sent. The `Select Multiple` option enables bulk selection.
+      2. **Subject**: Defines the subject line of the email.
+      3. **Body**: A rich text editor where you can compose the email content, format text (bold, italics, lists), and include links.
+      4. **Include Customer Rate**: When selected, this option attaches the customer’s rate information to the email. <br><img src= "/customer/img/email1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 !!! note "Custom Email Servers"
     Change the outbound Email Server and SMS origination number in **Setup :material-menu-right: Settings**.
