@@ -16,9 +16,9 @@
 
 The **ConnexCS App Store** lets you discover, download, and install applications on your user account.
 
-The Apps created using the IDE are available for use in the App Store when published.
+Apps created using the IDE are available for use in the App Store when published.
 
-The Apps can be created by other customers or developers and used by ConnexCS's customers.
+Apps can be created by other customers or developers and used by ConnexCS's customers.
 
 ## Steps to install Apps
 
@@ -54,7 +54,7 @@ The Apps can be created by other customers or developers and used by ConnexCS's 
 
 #### Overview
 
-This application will help you update the Spam Score of your DIDs and send a report to the provided email ID.
+This application helps you update the spam score of your DIDs and send a report to the provided email ID.
 
 !!! Note "Please note that this service is chargeable. Check [Pricing](https://connexcs.com/pricing) here.
 
@@ -66,8 +66,8 @@ Before using the app, ensure that the [**Spam Score package**](https://docs.conn
 
 1. Setup Email that will be used as API user.
 2. Navigate to **IDE :material-menu-right: DID Spam Score App :material-menu-right: Environmental Variables**.
-3. Locate the `cx_api_user`variable. <img src= "/apps/img/fli.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-4. Enter the email address you use to login in value.<img src= "/apps/img/fli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. Locate the `cx_api_user` variable. <img src= "/apps/img/fli.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. Enter the email address you use to log in as the value.<img src= "/apps/img/fli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. Select **DIDs** for **Spam Score Check**.
 6. Navigate to **Global :material-menu-right: DID**.
 7. Select the DIDs you want to check.
@@ -88,11 +88,11 @@ This application allows autonomous dialling of numbers from an uploaded list.
 2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/ac2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 3. After refreshing the Control Panel, the `Auto Dial` button will appear on the side bar.
 4. Click `Auto Dial`, then `Config` to setup the calling process.
-      + Select the `Customer` for the drop-down.
+      + Select the `Customer` from the drop-down.
       + Enter the `Outbound Server` in use.
       + Enter the extension in the `Endpoint` field.
       + Enter the `CLI` and click `Confirm`.<img src= "/apps/img/ac3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png" widht= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
 6. Hit the `Start` button to dial the numbers automatically. `.<img src= "/apps/img/ac5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note "Important Note"
@@ -136,11 +136,11 @@ flowchart TD
 
 4. A window will open, prompting you to enter the following details:
       + Select the `Customer` for the drop-down. The account from which the call will be initiated.
-      + Enter the `API Key`. It acts as a gate-keeper in maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
+      + Enter the `API Key`. It acts as a gatekeeper, maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
       + Enter the `Extension`. Number that will be called as one leg of the call. <br><img src= "/apps/img/cd4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Click `Save`.
-6. Navigate to: **IDE :material-menu-right: Click-2-Dial Application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Settings :material-menu-right: Endpoint URLs.** This section provides the API endpoint that allows external systems (or internal workflows) to trigger the ScriptForge function send via an HTTP request. <br><img src= "/apps/img/cd5.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">.</br>
+6. Navigate to: **IDE :material-menu-right: Click-2-Dial Application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Settings :material-menu-right: Endpoint URLs.** This section provides the API endpoint that allows external systems (or internal workflows) to trigger the ScriptForge function `send` via an HTTP request. <br><img src= "/apps/img/cd5.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">.</br>
 
 7. **Technical Explanation**
       + **Domain** → Specifies the base host where the API is exposed.
@@ -198,7 +198,7 @@ This key determines which Yoco account the API requests are executed against and
 4. A window will open, prompting you to enter the following details:
       + `API User`: The selected API user represents the authenticated entity making API requests.
       + Enter the `Secret Key`. This key is required for authentication. Follow the steps [here](/setup/appstore/#where-to-obtain-the-api-secret-key) to generate and retrieve the API key. **ConnexCS uses this key to securely authenticate and authorise all payment-related API requests**.
-      + `Surcharge`: Configure an additional charge to be applied to payments.You can choose one of the following options:
+      + `Surcharge`: Configure an additional charge to be applied to payments. You can choose one of the following options:
         + **Amount (ZAR)**: Applies a fixed surcharge in South African Rand (ZAR).
         + **Percent**: Applies a percentage-based surcharge on the transaction amount. <img src= "/apps/img/yoco4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
@@ -306,7 +306,7 @@ Users must securely store these credentials, as they may not be shown again.
           | **Purchase Route**| Action column| Button to buy/select the route|
           |**View More**|Additional information|Available to display additional information|
 
-      5. **Purchase Route**: When you wish to purchase a route, double-click on the `Purchase` in the `Purchase Route` column. A window will open where you need to select the `Account` and `Carrier`. By default the carrier is `Nuetrafix` but you can also choose the carrier from the drop-down. Click on `Confirm and Purchase Route`. <br><img src= "/apps/img/nt8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      5. **Purchase Route**: When you wish to purchase a route, double-click on the `Purchase` in the `Purchase Route` column. A window will open where you need to select the `Account` and `Carrier`. By default the carrier is `Neutrafix` but you can also choose the carrier from the drop-down. Click on `Confirm and Purchase Route`. <br><img src= "/apps/img/nt8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       6. **Rate Card Assignment**: Whenever a new seller is created, a rate card is automatically added.
 
 !!! Info
@@ -328,7 +328,7 @@ Instead of manually compiling call metrics, users can view ASR data directly wit
 
 3. The installed versions are visible. <br><img src= "/apps/img/apc3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. The app is installed app can be seen in **Management :material-menu-right: Customer**. <br><img src= "/apps/img/apc4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. The installed app can be seen in **Management :material-menu-right: Customer**. <br><img src= "/apps/img/apc4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Click on the `ASR per CLI` button on the top.
 6. Select the `Date Range` and click on `refresh` to get the data.
@@ -424,7 +424,7 @@ Once customized, your modified tools will be used in place of the defaults.
 
 3. The installed versions are visible and click on `Config` (settings button). <br><img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu. <br><img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Select the app from the drop-down menu. <br><img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Paynamics
 
@@ -442,4 +442,4 @@ It supports payments exclusively in Philippine Peso (PHP), ensuring compatibilit
 
 3. The installed versions are visible and click on `Config Paynamics` (settings button). <img src= "/apps/img/pay3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-4. Follow the configuration stpes as shown in the following image. <img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. Follow the configuration steps as shown in the following image. <img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
