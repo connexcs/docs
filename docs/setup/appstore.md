@@ -66,15 +66,15 @@ Before using the app, ensure that the [**Spam Score package**](https://docs.conn
 
 1. Setup Email that will be used as API user.
 2. Navigate to **IDE :material-menu-right: DID Spam Score App :material-menu-right: Environmental Variables**.
-3. Locate the `cx_api_user`variable. <img src= "/apps/img/fli.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-4. Enter the email address you use to login in value.<img src= "/apps/img/fli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. Locate the `cx_api_user`variable. <br><img src= "/apps/img/fli.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Enter the email address you use to login in value. <br><img src= "/apps/img/fli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 5. Select **DIDs** for **Spam Score Check**.
 6. Navigate to **Global :material-menu-right: DID**.
 7. Select the DIDs you want to check.
-8. Once selected, click on the `Spam Score button` at the top of the page.<img src= "/apps/img/fli2.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+8. Once selected, click on the `Spam Score button` at the top of the page. <br><img src= "/apps/img/fli2.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 9. Send the `Spam Score Report`.
 10. After clicking the Spam Score button, you will be prompted to enter the **email address** to which the DID spam report will be sent.
-11. Enter the desired email address and click `Spam Scout`. <img src= "/apps/img/fli3.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
+11. Enter the desired email address and click `Spam Scout`. <br><img src= "/apps/img/fli3.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Autonomous Calling
 
@@ -84,16 +84,16 @@ This application allows autonomous dialling of numbers from an uploaded list.
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Autonomous Calling** and click `Install`.<img src= "/apps/img/ac1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-2. A window will appear, select the version of the app and hit `Install` again. <img src= "/apps/img/ac2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Autonomous Calling** and click `Install`. <br><img src= "/apps/img/ac1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/ac2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. After refreshing the Control Panel, the `Auto Dial` button will appear on the side bar.
 4. Click `Auto Dial`, then `Config` to setup the calling process.
       + Select the `Customer` for the drop-down.
       + Enter the `Outbound Server` in use.
       + Enter the extension in the `Endpoint` field.
-      + Enter the `CLI` and click `Confirm`.<img src= "/apps/img/ac3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png" widht= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. Hit the `Start` button to dial the numbers automatically. `.<img src= "/apps/img/ac5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      + Enter the `CLI` and click `Confirm`. <br><img src= "/apps/img/ac3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <br><img src= "/apps/img/ac4.png" widht= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. Hit the `Start` button to dial the numbers automatically.<br><img src= "/apps/img/ac5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 !!! Note "Important Note"
     1. Ensure that all phone numbers are entered in the complete international format (e.g., +44 for the UK, +1 for the US).
@@ -189,7 +189,7 @@ This key determines which Yoco account the API requests are executed against and
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Yoco** and click `Install`.<img src= "/apps/img/yoco1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Yoco** and click `Install`. <br><img src= "/apps/img/yoco1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/yoco2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -200,7 +200,7 @@ This key determines which Yoco account the API requests are executed against and
       + Enter the `Secret Key`. This key is required for authentication. Follow the steps [here](/setup/appstore/#where-to-obtain-the-api-secret-key) to generate and retrieve the API key. **ConnexCS uses this key to securely authenticate and authorise all payment-related API requests**.
       + `Surcharge`: Configure an additional charge to be applied to payments.You can choose one of the following options:
         + **Amount (ZAR)**: Applies a fixed surcharge in South African Rand (ZAR).
-        + **Percent**: Applies a percentage-based surcharge on the transaction amount. <img src= "/apps/img/yoco4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        + **Percent**: Applies a percentage-based surcharge on the transaction amount. </br><img src= "/apps/img/yoco4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 5. Click `Save`.
 
@@ -267,11 +267,11 @@ Users must securely store these credentials, as they may not be shown again.
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: NeuTrafix** and click `Install`.<img src= "/apps/img/nt1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: NeuTrafix** and click `Install`. <br><img src= "/apps/img/nt1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/nt2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. Click on `Config` (**settings button**) to assign the `API User` click `Confirm`. <br><img src= "/apps/img/nt3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br> <img src= "/apps/img/nt4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> </br>
-4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**.<img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
+4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
 
 6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -364,7 +364,7 @@ This ensures that customization can be performed without impacting the default c
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ConnexCS Control Panel Defaults** and click `Install`.<img src= "/apps/img/default1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: ConnexCS Control Panel Defaults** and click `Install`.<br><img src= "/apps/img/default1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 2. Fill in the `App Name`, `Version` and hit `Install` again. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/default2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -424,7 +424,7 @@ Once customized, your modified tools will be used in place of the defaults.
 
 3. The installed versions are visible and click on `Config` (settings button). <br><img src= "/apps/img/scli3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu. <br><img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Select the app from the drop-down menu. <br><img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Paynamics
 
@@ -436,10 +436,10 @@ It supports payments exclusively in Philippine Peso (PHP), ensuring compatibilit
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Paynamics** and click `Install`. <img src= "/apps/img/pay1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Paynamics** and click `Install`. <br><img src= "/apps/img/pay1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. Fill in the `App Name`, `Version` and hit `Install` again. <img src= "/apps/img/pay2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Fill in the `App Name`, `Version` and hit `Install` again. <br><img src= "/apps/img/pay2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. The installed versions are visible and click on `Config Paynamics` (settings button). <img src= "/apps/img/pay3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. The installed versions are visible and click on `Config Paynamics` (settings button). <br><img src= "/apps/img/pay3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. Follow the configuration stpes as shown in the following image. <img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. Follow the configuration stpes as shown in the following image. <br><img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
