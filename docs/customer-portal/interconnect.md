@@ -11,26 +11,28 @@
 
 </details>
 
-**Interconnect** provides information on:
+## Overview
 
-1. **Termination address:** This is the address you send calls to.
-2. **Origination address** This is the address to receive calls from.
-3. Click [**here**](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers) to know more about **RTP Servers**.
+The **Interconnect** section provides a **read-only view** of the **authorised IP addresses**, and **RTP servers** used for call routing and media handling on your account.
 
-## Number Normalisation and Denormalisation
+**It shows**:
 
-A phone number gets converted into a standard, or normal, form through the process of normalization. It's tricky to compare two phone numbers to determine if they're the same if the digits aren't normalised.
+- Where outbound calls are sent (**Termination**)
 
-Streem Center can check and handle all the numbers by converting them into a regular form.
+- Which IP addresses are authorised to send inbound calls (**Origination**)
 
-The customer needs to specify which format you wish your number should be and we (carrier) will provide you with the same format.
+- Which **RTP servers** handle call media
 
-[E.164](https://en.wikipedia.org/wiki/E.164#:~:text=164%20defines%20a%20general%20format,a%20maximum%20of%20twelve%20digits.) format that specifies a numbering scheme for the public switched telephone network (PSTN) across the world as well as a few other data networks.
+---
 
-### Using E.164 with SIP
+### RTP Servers
 
-Several situations occurs which compel SIP apps to deal with phone numbers. It's impossible to route phone numbers using the conventional DNS resolution methods for SIP that rely on SIP URIs (Uniform Resource Identifiers). Thus, ENUM offers a way for converting E.164 numbers into URIs (SIP URIs).
+* Handles **media (audio) flow** for calls
+* Ensures proper voice transmission between endpoints
 
-A system called ENUM (E.164 Number Mapping) uses DNS to convert some phone numbers, like "+12025332600," into URIs, or RFC 2396-compliant addresses, like "sip:user@sipcarrier.com."
+👉 Learn more:
+[https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers](https://docs.connexcs.com/setup/settings/servers/#real-time-transport-protocol-servers)
 
-ENUM's main purpose is to make it easier for systems that use URIs to route transactions to link with those that depend on phone numbers.
+<img src= "/customer-portal/img/interconnect1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+---
