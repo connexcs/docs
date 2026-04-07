@@ -147,6 +147,20 @@ The Internal Number Block ensures number allocations are managed efficiently.
 
 Displays the Summaries of calls in **24 hours**, **Daily**, **Weekly**, and **Monthly** formats in 24-hour UTC. **This data is updated hourly**.
 
+| Field| Description|
+|------|------------|
+|**Date** | Represents the reporting period based on the selected view. For example, “Week 27 2024 UTC” refers to all data aggregated for the 27th week of the year 2024, calculated in UTC timezone|
+| **ASR** | Answer-Seizure Ratio – % of successfully connected calls out of attempts|
+| **ACD**| Average Call Duration – average duration of connected calls |
+| **Profit** | Net profit generated from calls (Customer Charge - Vendor Cost) |
+| **Profit %** | Percentage margin calculated as (Profit / Customer Charge) × 100, indicating profitability. |
+| **Customer Charge**  | Total amount billed to the customer |
+| **Attempts** | Total number of call attempts made|
+| **Connected** | Number of successfully connected calls |
+| **Duration** | Total duration of all connected calls|
+| **Billed Duration**  | Duration used for billing (may differ due to rounding rules) |
+| **Action** | UI control for interacting with or drilling into specific records |
+
 You can perform the following functions with this data:
 
 * **Sum and Average**: Select multiple cells in a column to get sum and average values (not a true average, but an average of averages).
