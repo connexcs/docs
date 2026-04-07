@@ -10,75 +10,72 @@
 
 ## Overview
 
-The **Global AI Agent** is a centralized conversational AI interface that allows users to interact with system data, tools, and workflows using natural language.
+The **Global AI Agent** is an intelligent assistant integrated across the platform, designed to streamline workflows, enhance productivity, and simplify user interactions.
 
-It acts as a **single intelligent assistant across the platform**, enabling users to:
+It serves as a unified interface that allows users to:
 
-* Ask questions about their account or system
-* Perform actions using integrated tools
-* Retrieve insights and recommendations
-* Automate workflows through AI-driven conversations
+Interact with platform features using natural language
+Retrieve account-related information instantly
+Automate operational tasks and workflows
+Access contextual help and guidance
 
-Unlike feature-specific AI tools, the Global AI Agent provides a **unified, system-wide interaction layer**.
-
----
-
-## What You Can Do
-
-With the Global AI Agent, you can:
-
-* Check account status and configurations
-* Identify alerts, issues, or anomalies
-* Optimize system setup with AI recommendations
-* Discover unused or underutilized features
-* Interact with connected tools via MCP servers
-* Automate operational queries and workflows
-
-### MCP Dependency Requirement
-
-This feature is dependent on the Model Context Protocol (MCP) for execution. All associated workflows, including API-triggered call flows and AI-driven interactions, require MCP to be enabled and correctly configured within the control panel.
-
-If MCP is not active or is misconfigured, the system may fail to initiate calls, process logic, or complete call bridging as expected.
-
-MCP should only be required when accessing internal account-specific information. For general queries, the AI should respond independently without invoking MCP. Since the chat interface operates separately, any retrieval of account-related data within it leverages MCP in the background.
+The AI Agent combines conversational intelligence with system-level execution, enabling both **informational queries** and **action-based operations**.
 
 ---
 
 ## Key Capabilities
 
-1. **Conversational Interface**
+### 1. Conversational Assistance
+The AI Agent allows users to interact using natural language to:
+- Ask questions about features, settings, or configurations
+- Get step-by-step guidance
+- Troubleshoot issues
 
-     * Chat-based interaction using natural language
-     * No technical commands required
-     * Context-aware responses
+---
 
-2. **Smart Suggestions**
+### 2. Workflow Automation
+Users can automate tasks directly through prompts, such as:
+- Configuring services
+- Managing resources
+- Performing operational actions
 
-    The interface provides pre-built prompts such as:
+The AI Agent translates user input into executable workflows, reducing manual effort.
 
-     * *What is the current status of my account?*
-     * *Are there any alerts or issues I should be aware of?*
-     * *How can I optimize my current configuration?*
-     * *What features are available that I'm not currently using?*
+---
 
-    These help users quickly get started without needing to think of queries.
+### 3. Context-Aware Responses
+The system understands user context and provides:
+- Personalized responses
+- Relevant suggestions
+- Accurate, account-specific insights (when applicable)
 
-3. **Contextual Intelligence**
+---
 
-      * Understands system context and user intent
-      * Provides tailored recommendations
-      * Adapts based on previous interactions
+### 4. Tool Integration (MCP Support)
+The AI Agent integrates with backend tools via **MCP (Model Context Protocol) servers**, enabling it to:
+- Fetch account-specific data
+- Execute actions within the system
+- Interact with platform services in real time
 
-4. **MCP Server Integration**
+---
 
-      * Connects to external tools and services
-      * Enables real-time actions and data retrieval
-      * Acts as an execution layer for AI-driven tasks
+## MCP Dependency
 
-5. **Multi-Mode AI Processing**
+The AI Agent operates in two modes depending on the type of request:
 
-      * **Standard Mode**: Fast responses for general queries
-      * **Expert Mode**: Deeper reasoning for complex tasks
+### When MCP is Required
+MCP is used for:
+- Accessing account-specific information
+- Executing actions (e.g., configurations, updates)
+- Running workflows tied to platform services
+
+### When MCP is Not Required
+MCP is not needed for:
+- General questions
+- Documentation-related queries
+- Concept explanations
+
+In these cases, the AI Agent responds independently without invoking backend tools.
 
 ---
 
@@ -87,8 +84,11 @@ MCP should only be required when accessing internal account-specific information
 1. **Open AI Chat**
 
       * Navigate to the **AI interface**.
-      * Click on **New Conversation (`+`)**.
-      * **Explore More**: This option is used for generating personalized suggestions, it uses some extra tokens to generate responses. <br><img src= "/misc/img/gaa1_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      * Click on **New Conversation (`+`)**. Enter your query or command in **natural language**.
+      * **Explore More (Advanced Suggestions)**: It provides enhanced, personalized suggestions based on your queries.
+          * Generates deeper insights and recommendations.
+          * May consume additional tokens.
+          * Useful for advanced users seeking optimization tips<br><img src= "/misc/img/gaa1_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 2. **Configure Initial Settings**:
       1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br>Click `Add to Chat`.</br>
@@ -97,13 +97,32 @@ MCP should only be required when accessing internal account-specific information
          2. `Expert`: A reasoning model, takes longer to respond.
        3. `MCP Severs`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
        4. `Toggle` for fullscreen.
-       5. `PAID`: It provides a token-level usage breakdown for the Global AI Agent—showing daily free quota consumption, exhaustion state, transition to paid billing, total billable tokens used, and the active model’s per-token pricing rate. <br><img src= "/misc/img/gaa2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+       5. `PAID`: It provides a token-level usage breakdown for the Global AI Agent—showing daily free quota consumption, exhaustion state, transition to paid billing, total billable tokens used, and the active model’s per-token pricing rate. <br><img src= "/misc/img/gaa2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>. [Click here]() for detailed information on **Token Usage**.
        6. If your tokens have expired and you still want to continue with the **General/Expert** mode then you need to enable packages under **Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: General LLM Tokens/Expert LLM Tokens**. It will be visible under `PAID USGAE`. Daily usage is automatically reset and reflected here.
 
 3. **Start Interaction**
 
       * Type your query in the chat box (e.g., *“Show me any issues in my account”*)
       * AI responds with insights, actions, or recommendations <br><img src= "/misc/img/gaa1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+## Token Usage (Paid Feature)
+
+The platform uses a **token-based system** to measure AI usage.
+
+### What Tokens Represent
+- Each query and response consumes tokens
+- More complex requests use more tokens
+
+### Usage Visibility
+Users can:
+- View token consumption per interaction
+- Monitor overall usage
+- Track detailed breakdowns (if enabled)
+
+### Token Expiry & Limits
+If your tokens are exhausted or expired:
+- AI responses may be limited or paused
+- You may need to upgrade or renew your plan
 
 ## Example Use Cases
 
@@ -135,71 +154,46 @@ MCP should only be required when accessing internal account-specific information
 
 ## Best Practices
 
-1. **Be Clear and Specific**
+To get the most out of the AI Agent:
 
-    Instead of:
+- Use **clear and specific prompts**
+- Break complex tasks into smaller steps
+- Verify critical outputs before execution
+- Use Explore More for deeper insights when needed
 
-    > “Check system”
+## Limitations
 
-    Use:
-
-    > “Are there any issues or alerts in my account?”
-
-2. **Use Context When Needed**
-
-      * Upload relevant data or describe your setup
-      * Improves response accuracy
-
-3. **Start Simple, Then Expand**
-
-      * Begin with basic queries
-      * Gradually move to complex workflows
-
-4. **Leverage Suggestions**
-
-      * Use pre-built prompts for faster results
-      * Modify them as needed
-
-## Tips for Better Results
-
-* Break complex queries into smaller steps
-* Specify what you want (status, optimization, issues, etc.)
-* Use follow-up questions to refine results
-* Switch to **Expert Mode** for deeper insights
+While powerful, the AI Agent has some limitations:
+- May not fully understand highly ambiguous queries
+- Requires MCP for real-time data and actions
+- Output accuracy depends on input clarity
 
 ---
 
-## Power User Features
+## Security & Data Handling
 
-For advanced users:
-
-* Integrate with **MCP servers** for automation
-* Execute workflows through AI
-* Combine multiple tools in a single conversation
-* Build intelligent operational pipelines
+- Account-specific actions require MCP authorization  
+- Sensitive operations are executed within secure system boundaries  
+- The AI Agent only accesses data necessary to fulfill requests  
 
 ---
 
-## Getting Help
+## Error Handling
 
-If the AI does not respond as expected:
-
-1. Rephrase your query
-2. Add more context
-3. Use simpler instructions
-4. Switch between Standard and Expert modes
+In case of issues:
+- If MCP fails → the system will notify you and may retry  
+- If a request cannot be completed → a fallback response is provided  
+- Users may rephrase or retry commands for better results  
 
 ---
 
 ## Summary
+The Global AI Agent enhances the platform by combining:
+- Conversational intelligence  
+- Workflow automation  
+- Real-time system interaction  
 
-The **Global AI Agent** serves as a **central intelligence layer** across the platform, enabling:
+It enables users to move faster, reduce manual effort, and interact with the system more intuitively.
 
-* Faster decision-making
-* Reduced manual effort
-* Intelligent automation
-* Seamless interaction with system tools
+Or tailor it specifically for ConnexCS documentation style
 
-It transforms how users interact with the platform—from navigating menus to simply **asking questions and getting results instantly**.
-
----
