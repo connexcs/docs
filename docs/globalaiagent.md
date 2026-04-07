@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: AI & Automation → Global AI Agent<br> <strong>Audience</strong>: Developers, Product Teams, System Administrators, Support Teams<br> <strong>Difficulty</strong>: Beginner–Intermediate<br> <strong>Time Required</strong>: 5–10 minutes<br> <strong>Prerequisites</strong>: ConnexCS account with AI Agent access; basic understanding of chat interfaces and automation workflows<br> <strong>Related Topics</strong>: MCP Server, AI Chat, App Platform, Automation Tools<br> <strong>Next Steps</strong>: Configure AI Agent settings, connect MCP servers, start conversations, and integrate with workflows.<br>
+<strong>Category</strong>: AI & Automation → Global AI Agent<br> <strong>Audience</strong>: Developers, Product Teams, System Administrators, Support Teams<br> <strong>Difficulty</strong>: Beginner–Intermediate<br> <strong>Time Required</strong>: 5–10 minutes<br> <strong>Prerequisites</strong>: ConnexCS account with AI Agent access; basic understanding of chat interfaces and automation workflows<br> <strong>Related Topics</strong>: MCP Server, AI Chat, App Platform, Automation Tools<br> <strong>Next Steps</strong>: Configure AI Agent settings, connect MCP Servers, start conversations, and integrate with workflows.<br>
 
 </details>
 
@@ -105,8 +105,8 @@ In these cases, the AI Agent responds independently without invoking backend too
 1. **Open AI Chat**
 
       * Navigate to the **AI interface**.
-      * Click on **New Conversation (`+`)**. Enter your query or command in **natural language**.
-      * **Explore More (Advanced Suggestions)**: It provides enhanced, personalized suggestions based on your queries.
+      * Click on **New Conversation (+)** and enter your query or command in **natural language**.
+      * **Explore More (Advanced Suggestions)**: This provides enhanced, personalized suggestions based on your queries.
           * Generates deeper insights and recommendations.
           * May consume additional tokens.
           * Useful for advanced users seeking optimization tips<br><img src= "/misc/img/gaa1_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -115,24 +115,24 @@ In these cases, the AI Agent responds independently without invoking backend too
       1. `Add Context` (optional field): Allows you to provide additional information to the AI before or during a conversation so it can give more accurate, relevant, and helpful responses. You can either add `Text Input` or upload text files using `File Upload` option. <br><img src= "/class5/img/chat3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/class5/img/chat4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"> <br>Click `Add to Chat`.</br>
       2. Select the mode of the model:
          1. `General` (default): A fast model focused on quick results.
-         2. `Expert`: A reasoning model, takes longer to respond.
-       3. `MCP Severs`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
+         2. `Expert`: This provides enhanced, personalized suggestions based on your queries.
+       3. `MCP Sevrers`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
        4. `Toggle` for fullscreen.
        5. `PAID`: It provides a token-level usage breakdown for the Global AI Agent—showing daily free quota consumption, exhaustion state, transition to paid billing, total billable tokens used, and the active model’s per-token pricing rate. <br><img src= "/misc/img/gaa2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br> [Click here](/globalaiagent/#token-usage-paid-feature) for detailed information on **Token Usage**.
-       6. If your tokens have expired and you still want to continue with the **General/Expert** mode then you need to enable packages under **Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: General LLM Tokens/Expert LLM Tokens**. It will be visible under `PAID USGAE`. Daily usage is automatically reset and reflected here.
+       6. If your tokens have expired and you still want to continue with the General/Expert mode, you need to enable packages under **Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: General LLM Tokens/Expert LLM Tokens**. It will be visible under `PAID USAGE`. Daily usage is automatically reset and reflected here.
 
 3. **Start Interaction**
 
       * Type your query in the chat box (e.g., *“Show me any issues in my account”*)
-      * AI responds with insights, actions, or recommendations <br><img src= "/misc/img/gaa1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      * The AI responds with insights, actions, or recommendations <br><img src= "/misc/img/gaa1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## Token Usage (Paid Feature)
 
 The platform uses a **token-based system** to measure AI usage.
 
 ### What Tokens Represent
-- Each query and response consumes tokens
-- More complex requests use more tokens
+- Each query and response consumes tokens.
+- More complex requests use more tokens.
 
 ### Usage Visibility
 Users can:
@@ -215,7 +215,7 @@ In case of issues:
 
 - If a request cannot be completed → a fallback response is provided  
 
-- Users may rephrase or retry commands for better results  
+- Users may rephrase or retry commands to achieve better results 
 
 ---
 
