@@ -149,17 +149,17 @@ Displays the Summaries of calls in **24 hours**, **Daily**, **Weekly**, and **Mo
 
 | Field| Description|
 |------|------------|
-|**Date** | Represents the reporting period based on the selected view. For example, “Week 27 2024 UTC” refers to all data aggregated for the 27th week of the year 2024, calculated in UTC timezone|
-| **ASR** | Answer-Seizure Ratio – % of successfully connected calls out of attempts|
-| **ACD**| Average Call Duration – average duration of connected calls |
-| **Profit** | Net profit generated from calls (Customer Charge - Vendor Cost) |
-| **Profit %** | Percentage margin calculated as (Profit / Customer Charge) × 100, indicating profitability. |
+|**Date** | Represents the reporting period based on the selected view|
+| **ASR (Answer-Seizure Ratio)**|Percentage of successfully connected calls out of total call attempts|
+| **ACD (Average Call Duration)**| Average duration of connected calls |
+| **Profit** | Net profit generated from calls |
+| **Profit %** | Percentage margin expressed as a percentage|
 | **Customer Charge**  | Total amount billed to the customer |
 | **Attempts** | Total number of call attempts made|
 | **Connected** | Number of successfully connected calls |
 | **Duration** | Total duration of all connected calls|
-| **Billed Duration**  | Duration used for billing (may differ due to rounding rules) |
-| **Action** | UI control for interacting with or drilling into specific records |
+| **Billed Duration**  |Total duration used for billing purposes (may differ due to rounding rules)|
+| **Action** | Used to generate invoice|
 
 You can perform the following functions with this data:
 
