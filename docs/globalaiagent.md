@@ -40,6 +40,8 @@ This feature is dependent on the Model Context Protocol (MCP) for execution. All
 
 If MCP is not active or is misconfigured, the system may fail to initiate calls, process logic, or complete call bridging as expected.
 
+MCP should only be required when accessing internal account-specific information. For general queries, the AI should respond independently without invoking MCP. Since the chat interface operates separately, any retrieval of account-related data within it leverages MCP in the background.
+
 ---
 
 ## Key Capabilities
@@ -127,7 +129,6 @@ If MCP is not active or is misconfigured, the system may fail to initiate calls,
 
 5. **AI-Assisted Operations**
 
-      * Perform tasks using conversational commands
       * Reduce manual navigation
 
 ---
