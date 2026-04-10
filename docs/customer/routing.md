@@ -147,6 +147,8 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI / ANI's.
 
++ **FTC Log DNC Only (USA)**: When this option is enabled, the system checks whether the dialed number is listed in the FTC Do Not Call (DNC) registry and records this information in the meta column of the CDR. <br> This feature is for **monitoring purposes** only, it does not block or restrict calls.</br> It allows you to analyze and measure the percentage of traffic that falls under DNC, without affecting call routing or completion.
+
 + **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
 
 + **Stir Shaken Min Attest**: It enables the selection of STIR/SHAKEN attestation levels for validating incoming calls. Users can configure the system to permit only calls that meet specific attestation standards. The available validation levels are as follows:
@@ -159,7 +161,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **TCPA  Litigator DNC**: Enabling this flag blocks outbound calls to known TCPA Litigators.
 
-<img src= "/customer/img/rsecurity.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/rsecurity_new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Destination Type Lookup & Fallback Logic — USA and International
 

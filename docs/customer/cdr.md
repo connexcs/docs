@@ -52,6 +52,61 @@ The Customer **CDR** tab lists Call Detail Records associated with the selected 
 * **Column filter/sort**: Click the header of each column to filter and sort the displayed entries. Since each call generates a CDR, this function is specifically useful for customers with high call volumes.
 * **Download**: Press **`Download`** to save the record to your hard drive in CSV format. You can also select the columns to include in the download.
 * The **SQL Query** option allows you to run a query.
+
+## Meta Fields in CDR
+
+The **Meta** column in the CDR (Call Detail Records) section provides additional call-level attributes generated during call processing.
+
+These fields offer insights into compliance checks and call authentication status.
+
+### DNC (Do Not Call) Status
+
+* **`us_dnc: not_found`**
+  Indicates that the dialed number was checked against the **USA Do Not Call (DNC) registry** and was **not found** in the list.
+
+  **Interpretation:**
+  The number is not restricted by DNC regulations and is eligible for outbound communication.
+
+---
+
+### STIR/SHAKEN Attestation
+
+* **`stir_shaken_attest: C`**
+  Represents the STIR/SHAKEN attestation level assigned to the call.
+
+  **Attestation Levels:**
+
+  * **A** → Full attestation (highest level of trust)
+  * **B** → Partial attestation
+  * **C** → Gateway attestation (lowest level of trust)
+
+  **Interpretation:**
+  Level **C** indicates that the originating carrier cannot fully verify the caller identity and is only attesting to the entry point of the call into the network.
+
+---
+
+### Combined Meta Values
+
+When multiple attributes are present, they are displayed together:
+
+* **`stir_shaken_attest: C, us_dnc: not_found`**
+
+  **Interpretation:**
+
+  * The number is not listed in the USA DNC registry
+  * The call has a low level of caller authentication (attestation level C)
+
+---
+
+### Summary
+
+The Meta field enables:
+
+* Visibility into **regulatory compliance checks** (e.g., DNC)
+* Monitoring of **call authentication status** (STIR/SHAKEN)
+* Better analysis for **routing, filtering, and trust evaluation**
+
+---
   
 ## Recalculate Call Detail Record
 
