@@ -56,7 +56,7 @@ Apps can be created by other customers or developers and used by ConnexCS's cust
 
 This application helps you update the spam score of your DIDs and send a report to the provided email ID.
 
-!!! Note "Please note that this service is chargeable. Check [Pricing](https://connexcs.com/pricing) here.
+!!! Note "Please note that this service is chargeable. Check [Pricing](https://connexcs.com/pricing) here."
 
 #### Prerequisites
 
