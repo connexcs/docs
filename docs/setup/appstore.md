@@ -66,13 +66,8 @@ Before using the app, ensure that the [**Spam Score package**](https://docs.conn
 
 1. Setup Email that will be used as API user.
 2. Navigate to **IDE :material-menu-right: DID Spam Score App :material-menu-right: Environmental Variables**.
-<<<<<<< HEAD
 3. Locate the `cx_api_user` variable. <img src= "/apps/img/fli.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 4. Enter the email address you use to log in as the value.<img src= "/apps/img/fli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-=======
-3. Locate the `cx_api_user`variable. <br><img src= "/apps/img/fli.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. Enter the email address you use to login in value. <br><img src= "/apps/img/fli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
->>>>>>> 8ff1fa0b9ad177864f0a2641648fa0ab19111bd8
 5. Select **DIDs** for **Spam Score Check**.
 6. Navigate to **Global :material-menu-right: DID**.
 7. Select the DIDs you want to check.
@@ -96,15 +91,9 @@ This application allows autonomous dialling of numbers from an uploaded list.
       + Select the `Customer` from the drop-down.
       + Enter the `Outbound Server` in use.
       + Enter the extension in the `Endpoint` field.
-<<<<<<< HEAD
       + Enter the `CLI` and click `Confirm`.<img src= "/apps/img/ac3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
 6. Hit the `Start` button to dial the numbers automatically. `.<img src= "/apps/img/ac5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-=======
-      + Enter the `CLI` and click `Confirm`. <br><img src= "/apps/img/ac3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <br><img src= "/apps/img/ac4.png" widht= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-6. Hit the `Start` button to dial the numbers automatically.<br><img src= "/apps/img/ac5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
->>>>>>> 8ff1fa0b9ad177864f0a2641648fa0ab19111bd8
 
 !!! Note "Important Note"
     1. Ensure that all phone numbers are entered in the complete international format (e.g., +44 for the UK, +1 for the US).
@@ -453,8 +442,4 @@ It supports payments exclusively in Philippine Peso (PHP), ensuring compatibilit
 
 3. The installed versions are visible and click on `Config Paynamics` (settings button). <br><img src= "/apps/img/pay3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-<<<<<<< HEAD
 4. Follow the configuration steps as shown in the following image. <img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-=======
-4. Follow the configuration stpes as shown in the following image. <br><img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
->>>>>>> 8ff1fa0b9ad177864f0a2641648fa0ab19111bd8
