@@ -170,7 +170,11 @@
 |**DCM**|*Document Content Module*|DCM uses $ placeholders in ConnexCS Page Builder that are replaced with real data to personalize pages dynamically.|
 |**USA NANPA**|*North American Numbering Plan Administrator*|Manages area codes and prefixes for the U.S., Canada, and parts of the Caribbean under FCC oversight.|
 |**R-Factor**|n/a|A network quality score (0–100) derived from the ITU-T E-Model (G.107) that measures the combined impact of latency, jitter, packet loss, and codec behavior on call quality.|
-
+|**MCP**|*Model Context Protocol*|A standardized framework that allows AI agents to communicate with external systems using natural language|
+|**ConnexCS MCP Server**|n/a|A service that enables AI assistants to securely interact with ConnexCS tools and platform data|
+|**OAuth**|*Open Authorization*| An authorization framework that allows secure, token-based access to resources without sharing user credentials|
+|**Anvil**|n/a|An AI-powered interface builder that generates web applications based on user input provided through a chat interface|
+|**Cx MCP**|n/a|Cx MCP enables seamless integration of AI agents and services for automated workflows on ConnexCS.
 
 ## ACD Calculation Method
 
