@@ -69,7 +69,7 @@ style D fill:#ECEFF1,stroke:#C70039,stroke-width:2px
 style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 ```
 
-### Sort Index and Weight
+#### Sort Index and Weight
 
 + **Sort Index** controls the order of call attempts.
 
@@ -77,7 +77,7 @@ style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
 
 !!! Example
     If two destinations have `Sort Index = 1`, calls will be distributed between them based on their assigned `weights` (e.g., weight 10 vs 1 means one destination will receive more calls proportionally).
-    Once all destinations within a Sort Index group are exhausted or unavailable, the system will move to the next Sort Index.
+    <br>Once all destinations within a Sort Index group are exhausted or unavailable, the system will move to the next Sort Index.</br>
 
 ### Queue
 
