@@ -185,6 +185,10 @@ For each Package there is an associated **Minimum Days** the package is valid fo
 
     You can set a **Max Daily Quantity** for your customer's lookups. This restricts them to using only the specific number you allocate, ensuring controlled usage.
 
++ **Flags**: Configuration options used to enable or disable specific call processing behaviors or rules.
+    + `Strip Stir Shaken`: Removes STIR/SHAKEN headers received from downstream before forwarding the call upstream.
+    + `Random`: When this option is enabled, calls will be distributed randomly across the configured DID destinations.  
+
 ### Script Forge
 
 Run a custom script on calls to the DID to perform actions such as routing based on the time of day or if specific users or numbers are active.
