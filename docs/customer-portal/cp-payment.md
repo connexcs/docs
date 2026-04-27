@@ -69,7 +69,7 @@ The Paynamics application enables users to process payments through the Paynamic
 
 It supports payments exclusively in Philippine Peso (PHP), ensuring compatibility with Paynamics’ supported currency, and is designed to facilitate billing, top-ups, and payment workflows efficiently.
 
-<img src= "/customer-portal/img/paynamicsp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer-portal/paynamicsp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Pay Via** (dropdown): This lets you choose the payment method. The available options shown are: `GCash`, `GrabPay Philippines`, `PayMaya Philippines`, `ShopeePay Philippines`.
 
