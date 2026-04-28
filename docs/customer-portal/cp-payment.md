@@ -60,3 +60,19 @@ Yoco manages the full payment lifecycle, including transaction authorisation, va
     !!! Note "Any configured **surcharge** (fixed or percentage) is applied automatically."
 
 + **Currency**: Displays the currency in which the payment will be processed. **Currency is fixed to ZAR (South African Rand)**.
+
+## Pay with Paynamics
+
+### Overview
+
+The Paynamics application enables users to process payments through the Paynamics payment gateway, providing a secure and streamlined way to handle transactions within the platform.
+
+It supports payments exclusively in Philippine Peso (PHP), ensuring compatibility with Paynamics’ supported currency, and is designed to facilitate billing, top-ups, and payment workflows efficiently.
+
+<img src= "/customer-portal/paynamicsp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
++ **Pay Via** (dropdown): This lets you choose the payment method. The available options shown are: `GCash`, `GrabPay Philippines`, `PayMaya Philippines`, `ShopeePay Philippines`.
+
++ **Amount**: The field where you enter the payment amount.
+
++ **Currency**: Fixed to PHP (Philippine Peso), since Paynamics supports PHP transactions only.
