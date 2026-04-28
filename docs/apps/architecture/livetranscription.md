@@ -1,5 +1,11 @@
 # Live transcription via WebSocket
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Developer Guide / Real-Time Transcription & WebSocket Integration<br> <strong>Audience</strong>: Developers, Solutions Engineers, Technical Integrators<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 20–30 minutes<br> <strong>Prerequisites</strong>: Access to platform control panel, familiarity with WebSocket concepts, basic scripting knowledge, and ability to generate JWT tokens<br> <strong>Related Topics</strong>: <a href="#">Script Forge Overview</a>, <a href="#">WebSocket Integration</a>, <a href="#">JWT Authentication</a><br> <strong>Next Steps</strong>: Validate real-time transcription flow, integrate the WebSocket stream into your application (e.g., dashboards or analytics tools), implement error handling and reconnection logic, and secure token management for production use.<br>
+
+</details>
+
 ## Overview
 
 Live transcription via WebSocket enables real-time streaming of call transcripts as they are generated.
@@ -8,7 +14,10 @@ By combining transcription with a persistent WebSocket connection, transcription
 
 ## What is this guide about?
 
-This guide provides an introduction to setting up live call transcription streaming using WebSocket. It outlines how to enable transcription, configure a Script Forge script to capture transcription events, and establish a secure connection to receive real-time data. This setup allows systems to access and use call transcripts instantly as they are generated, enabling faster insights and real-time processing.
+This guide provides an introduction to setting up live call transcription streaming using WebSocket.
+
+It outlines how to enable transcription, configure a Script Forge script to capture transcription events, and establish a secure connection to receive real-time data.
+This setup allows systems to access and use call transcripts instantly as they are generated, enabling faster insights and real-time processing.
 
 ## How to Use?
 
