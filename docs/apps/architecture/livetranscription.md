@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Developer Guide / Real-Time Transcription & WebSocket Integration<br> <strong>Audience</strong>: Developers, Solutions Engineers, Technical Integrators<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 20–30 minutes<br> <strong>Prerequisites</strong>: Access to platform control panel, familiarity with WebSocket concepts, basic scripting knowledge, and ability to generate JWT tokens<br> <strong>Related Topics</strong>: <a href="#">Script Forge Overview</a>, <a href="#">WebSocket Integration</a>, <a href="#">JWT Authentication</a><br> <strong>Next Steps</strong>: Validate real-time transcription flow, integrate the WebSocket stream into your application (e.g., dashboards or analytics tools), implement error handling and reconnection logic, and secure token management for production use.<br>
+<strong>Category</strong>: Developer Guide / Real-Time Transcription & WebSocket Integration<br> <strong>Audience</strong>: Developers, Solutions Engineers, Technical Integrators<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 20–30 minutes<br> <strong>Prerequisites</strong>: Access to platform control panel, familiarity with WebSocket concepts, basic scripting knowledge, and ability to generate JWT tokens<br> <strong>Related Topics</strong>: [Script Forge Overview](/apps/architecture/scriptforge/), [WebSocket Integration](/apps/architecture/cxWebSocket/), [JWT Authentication](/setup/integrations/jwt/#introduction)<br> <strong>Next Steps</strong>: Validate real-time transcription flow, integrate the WebSocket stream into your application (e.g., dashboards or analytics tools), implement error handling and reconnection logic, and secure token management for production use.<br>
 
 </details>
 
@@ -26,7 +26,7 @@ This setup allows systems to access and use call transcripts instantly as they a
 1. Navigate to **Management :material-menu-right: Customer :material-menu-right: Route**, open the route you want to transcribe, and enable the `Transcription` toggle.
 2. Save the route.
 
-## Step 2 — Create the Script Forge script
+### Step 2 — Create the Script Forge script
 
 1. Go to **IDE :material-menu-right: Script Forge** and click **`+` Add Script**.
 2. In the script settings, change the **App Type** dropdown to **App+**. This mode supports persistent WebSocket connections and the `cxWebSocket` and `cxPubSub` APIs.
