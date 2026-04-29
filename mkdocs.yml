@@ -324,6 +324,7 @@ nav:
                 - cxUserspace: apps/architecture/cxUserspace.md
                 - cxWebSocket: apps/architecture/cxWebSocket.md
                 - cxMcpServer: apps/architecture/cxMcpServer.md
+            - Live transcription via WebSocket: apps/architecture/livetranscription.md
 
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
