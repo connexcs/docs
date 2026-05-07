@@ -188,3 +188,80 @@ remove_regex="^X-.*"
     Misconfigured regular expressions may remove essential SIP headers and **break SIP protocol behaviour**, leading to call failures or service disruption. This is an advanced configuration and must be used with care.
 
 <img src= "/carrier/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+---
+
+## Gateway Failover — Complete Configuration Guide
+
+Gateway Failover allows ConnexCS to automatically try alternative IP addresses within the same carrier when a call fails on the primary IP. This is distinct from carrier-level failover, which switches to a different carrier entirely.
+
+!!! Note
+    Gateway Failover has no effect if only one IP address is configured in the carrier's Auth tab. You must add multiple IPs first before enabling this feature.
+
+### Step 1 — Add Multiple IPs to Carrier Authentication
+
+1. Navigate to **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name]**
+2. Click the **Auth** tab
+3. Click the **:material-plus:** button to add an authentication entry
+4. Enter the carrier IP address, port, and transport settings
+5. Click **`Save`**
+6. Repeat steps 3–5 for each additional IP you want available as a failover target
+
+Each IP entry in the Auth tab represents a separate gateway endpoint. When Gateway Failover is enabled, ConnexCS will attempt these in sequence if the primary IP fails.
+
+### Step 2 — Enable Gateway Failover
+
+1. Navigate to **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name]**
+2. Click the **Config** tab
+3. Locate the **Gateway Failover** field
+4. Select the appropriate level:
+
+    | Setting | Behaviour |
+    |---|---|
+    | **None** | No failover — call fails immediately if primary IP does not respond |
+    | **Failover 1** | Tries 1 alternative IP after primary fails |
+    | **Failover 2** | Tries up to 2 alternative IPs in sequence after primary fails |
+    | **Failover 3** | Tries up to 3 alternative IPs in sequence after primary fails |
+
+5. Click **`Save`**
+
+### When Gateway Failover Activates
+
+Gateway Failover triggers when:
+
+- The primary IP does not respond within the **First Reply Timeout** period
+- A SIP error response is received (e.g., 503 Service Unavailable)
+- The connection is refused or times out at the network level
+
+Gateway Failover does **not** trigger for:
+
+- Calls that connect but fail for routing reasons (e.g., 404 Not Found)
+- Calls that are answered and then disconnected mid-session
+
+### Relationship with Consec Fail Backoff
+
+Gateway Failover and Consec Fail Backoff are complementary features that serve different purposes:
+
+| Feature | Purpose | Scope |
+|---|---|---|
+| **Gateway Failover** | Tries alternative IPs within the same carrier on a per-call basis | Per call |
+| **Consec Fail Backoff** | Reduces traffic to a carrier after repeated consecutive failures | Sustained outage |
+
+For maximum resilience, enable both when you have a carrier with multiple gateway IPs. Failover handles individual call failures; Consec Fail Backoff handles prolonged route degradation.
+
+### Monitoring Failover Events
+
+- View failed attempts and failover events in **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name] :material-menu-right: Latest Calls**
+- Filter by SIP response code to identify patterns — for example, repeated 503s from a specific IP
+- Configure carrier alerts under **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name] :material-menu-right: Alerts** to notify your team when failure rates exceed a threshold
+
+### Example Configuration
+
+**Scenario:** A carrier has three gateway IPs — one primary and two backups. You want the system to try all three before failing the call.
+
+1. Add all three IPs to the carrier **Auth** tab
+2. Set **Gateway Failover** to **Failover 2** in the **Config** tab
+3. Set **First Reply Timeout** to **1 second** so non-responding gateways are detected quickly
+4. Enable **Consec Fail Backoff** so traffic is automatically reduced if a gateway remains down for an extended period
+
+---
