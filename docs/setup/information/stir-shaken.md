@@ -201,7 +201,7 @@ You can also use supported STIR/SHAKEN validation tools to confirm proper signin
 
 To add a certificate:
 
-1. Click on the :fontawesome-plus: symbol.
+1. Click on the :material-menu-right: symbol.
 2. Complete the **Name (indicated as "Alpha" in Control Panel)**, **Certificate**, and **Key** fields from the certificate provided by the issuing authority.
 3. Click **`Save`**.
 
