@@ -1,27 +1,160 @@
 # Transcription
 
+**Global :material-menu-right: Transcription**
+
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
 <strong>Category</strong>: Features / Call Transcription<br>
 <strong>Audience</strong>: Administrators, Engineers, Analytics & Compliance Teams<br>
 <strong>Difficulty</strong>: Intermediate<br>
-<strong>Time Required</strong>: Approximately 30–60 minutes<br>
-<strong>Prerequisites</strong>: Active ConnexCS account; call recording must be enabled and storage set up.<br>
+<strong>Time Required</strong>: Approximately 30–60 minutes (configuration); transcription processing time varies per call volume<br>
+<strong>Prerequisites</strong>:
+<ul>
+<li>Active ConnexCS account with transcription enabled — this is a paid feature; check <a href="https://connexcs.com/pricing">Pricing</a> before setup.</li>
+<li>Call recording must be enabled and storage configured before transcription can function. See <a href="https://docs.connexcs.com/customer-portal/cp-recording/">Recording</a>.</li>
+<li>Basic understanding of keyword/phrase matching and boolean logic (AND, OR, NOT).</li>
+</ul>
 <strong>Related Topics</strong>:
-<a href="https://docs.connexcs.com/customer-portal/cp-recording/">Recording</a><br>
-<strong>Next Steps</strong>: Enable transcription service for selected calls, configure keyword search/reporting workflows, and integrate transcripts into analytics or compliance workflows.<br>
+<a href="https://docs.connexcs.com/customer-portal/cp-recording/">Recording</a> — required prerequisite for transcription ·
+<a href="https://docs.connexcs.com/setup/advanced/fraud/">Fraud Profile</a> — complementary fraud monitoring controls ·
+<a href="https://docs.connexcs.com/setup/information/audit-log/">Audit Log</a> — review configuration changes and compliance audit trails ·
+<a href="https://docs.connexcs.com/globalaiagent/">Global AI Agent</a> — AI-assisted call analysis and platform queries<br>
+<strong>Next Steps</strong>: After enabling transcription, <a href="https://docs.connexcs.com/transcription/#transcription-query-profile">build a Query Profile</a> to define keyword detection rules, then <a href="https://docs.connexcs.com/transcription/#transcription-alerts">configure Alerts</a> to trigger automated responses when phrases are detected.<br>
+<strong>Need Help?</strong>: If the Enable Transcription option is not visible in your account, or if you require transcription in a language other than English, <a href="https://connexcs.com/contact-us">contact ConnexCS support</a>.<br>
+<strong>Meta Description</strong>: Configure call transcription in ConnexCS to detect fraud, monitor compliance, and review agent quality using keyword search, query profiles, and automated alerts.<br>
 
 </details>
-
-**Global :material-menu-right: Transcription**
 
 ## Introduction
 
 A transcription service translates voice communication, whether live or recorded, into text. If you have a recorded call, you may use this service to have it transcribed in English.
 
-English is the only language offered at present. But we can make other languages available per the customer's request.
+English by default; additional languages available on request.
 
 Depending on the needs of customers, you can define individual prices. You can also select the quantity you want to offer your customer.
+
+## Operational Use Cases
+
+Transcription and query analysis can help operators monitor conversations, identify operational risks, and improve customer interaction visibility.
+
+**Common use cases include**:
+
+1. **Fraud Monitoring**:
+
+    Query profiles can help identify suspicious phrases, high-risk keywords, or unusual conversation patterns associated with fraudulent activity or social engineering attempts.
+
+2. **Compliance Review**:
+
+    Operators can monitor calls for regulatory or policy-related keywords to support internal compliance processes and operational audits.
+
+3. **Customer Experience Monitoring**:
+
+    Conversation analysis can help identify recurring customer concerns, service quality issues, or negative interaction patterns that may require operational review.
+
+4. **Keyword Detection**:
+
+    Query profiles can automatically detect configured keywords or phrases within call transcripts to help surface relevant conversations for further review.
+
+5. **Dispute Investigation**:
+
+    Searchable transcripts can help operators review historical conversations during customer disputes, escalations, or operational investigations.
+
+---
+
+## Query Profiles
+
+Query Profiles allow operators to define reusable keyword and phrase matching rules for transcript analysis.
+
+Profiles can be configured globally or assigned to specific customers based on operational requirements.
+
+---
+
+### AND / OR / NOT Logic
+
+Query profiles support logical operators for flexible matching behavior.
+
+#### AND Example
+
+```text
+refund AND cancellation
+```
+
+Matches transcripts containing both:
+
+* “refund”
+* “cancellation”
+
+---
+
+#### OR Example
+
+```text
+fraud OR scam
+```
+
+Matches transcripts containing either:
+
+* “fraud”
+* “scam”
+
+---
+
+#### NOT Example
+
+```text
+refund NOT approved
+```
+
+Matches transcripts containing:
+
+* “refund”
+
+but excluding transcripts containing:
+
+* “approved”
+
+---
+
+### Phrase Matching
+
+Phrase matching helps identify exact conversation patterns.
+
+Example:
+
+```text
+"cancel my account"
+```
+
+Matches the complete phrase rather than individual keywords separately.
+
+---
+
+### Reusable Profiles
+
+Query profiles can be reused across multiple customers, routes, or operational workflows.
+
+This helps standardize:
+
+* compliance monitoring
+* QA workflows
+* keyword detection
+* operational review processes
+
+---
+
+### Global vs Customer Profiles
+
+#### Global Profiles
+
+Global profiles apply across multiple customers or environments and are useful for organization-wide monitoring policies.
+
+---
+
+#### Customer Profiles
+
+Customer-specific profiles allow operators to create customized monitoring rules for individual customer requirements or workflows.
+
+---
 
 ## Transcription Setup
 
@@ -74,12 +207,12 @@ Once this service has been enabled on your account, you can follow the steps bel
 * **Date**: Date of the call.
 * **Customer Name**: Name of the customer whose transcription is displayed.
 * **Text**: Sentences of the transcribed call.
-* **Leg**: Assigns `0` value to caller, `1` to the callie.
+* **Leg**: Assigns `0` value to caller, `1` to the callee.
 * **Score**: While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
 
 #### Transcription Query Profile
 
-A Transcription Query Profile is a configuration that defines how transcription services should handle if a certain word or phrase is spoken during the call.
+A Transcription Query Profile defines how the system should respond when a specific word or phrase is detected in a transcript.
 
 To create the query list, please follow the steps below:
 
@@ -179,4 +312,79 @@ You can use various Operators to refine your research:
     <img src="/transcription/img/not.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Tip
-    By using **multiple search operators together**, you can create more specific search queries that helps you find the most relevant entries quicker.
+    By using **multiple search operators** together, you can create more specific search queries that help you find the most relevant entries more quickly.
+
+## Search & Investigation Workflows
+
+Transcripts and query matches can be used to support operational investigations and conversation review workflows.
+
+---
+
+### Search by Keyword
+
+Operators can search transcripts using keywords or phrases to quickly locate relevant conversations.
+
+---
+
+### Filter by Customer or Date
+
+Filtering options help narrow investigation scope using:
+
+* customer
+* date range
+* call direction
+* query profile
+* matched keywords
+
+---
+
+### Review Flagged Conversations
+
+Calls matching configured query profiles can be reviewed for:
+
+* compliance checks
+* operational analysis
+* escalation handling
+* QA review
+
+---
+
+### Investigate Customer Disputes
+
+Transcript searches can help operators review historical conversations during billing disputes, escalations, or service investigations.
+
+## Operational Best Practices
+
+### Optimize Queries for Accuracy
+
+Use targeted keywords and phrases to improve match relevance and reduce unnecessary results.
+
+---
+
+### Avoid Overly Broad Keywords
+
+Very common words may generate excessive matches and reduce operational visibility.
+
+---
+
+### Review False Positives Periodically
+
+Regularly review query results to refine keyword logic and improve detection accuracy.
+
+---
+
+### Define Retention Policies
+
+Configure transcript retention policies based on operational, compliance, and storage requirements.
+
+---
+
+### Use Structured Naming Conventions
+
+Use clear naming conventions for query profiles to simplify operational management and reporting.
+
+---
+
+### Regularly Validate Query Effectiveness
+
+Periodically test query profiles against real transcript data to ensure expected detection behavior.
