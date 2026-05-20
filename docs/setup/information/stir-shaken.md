@@ -67,14 +67,14 @@ Once you have the certificate, it's added to ConnexCS as described in the steps 
 
 The STIR/SHAKEN workflow generally follows these steps:
 
-1. A call originates from a customer or carrier.
-2. The originating provider validates the caller identity.
-3. The provider assigns an attestation level.
-4. ConnexCS generates a SIP Identity header containing a signed PASSporT token.
-5. The downstream provider validates the signature using the public certificate.
-6. The terminating provider determines whether the caller identity can be trusted.
+1. A call is initiated by a customer or carrier through ConnexCS.
+2. ConnexCS validates the caller identity and determines the appropriate attestation level based on the customer configuration and trust relationship.
+3. ConnexCS generates a signed PASSporT token containing the caller identity information.
+4. The PASSporT token is added to the SIP Identity header of the outbound INVITE request.
+5. The receiving carrier or downstream provider retrieves the public certificate and validates the digital signature.
+6. Based on the verification result and attestation level, the terminating provider determines whether the caller identity can be trusted.
 
-This process helps downstream providers identify whether a call has been authenticated by the originating service provider.
+This process helps carriers identify authenticated calls, reduce caller ID spoofing, and improve trust in voice communications.
 
 ---
 
