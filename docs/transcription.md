@@ -7,15 +7,12 @@
 <strong>Category</strong>: Features / Call Transcription<br>
 <strong>Audience</strong>: Administrators, Engineers, Analytics & Compliance Teams<br>
 <strong>Difficulty</strong>: Intermediate<br>
-<strong>Time Required</strong>: Approximately 30–60 minutes (configuration); transcription processing time varies per call volume<br>
 <strong>Prerequisites</strong>:
 <ul>
 <li>Active ConnexCS account with transcription enabled — this is a paid feature; check <a href="https://connexcs.com/pricing">Pricing</a> before setup.</li>
-<li>Call recording must be enabled and storage configured before transcription can function. See <a href="https://docs.connexcs.com/customer-portal/cp-recording/">Recording</a>.</li>
 <li>Basic understanding of keyword/phrase matching and boolean logic (AND, OR, NOT).</li>
 </ul>
 <strong>Related Topics</strong>:
-<a href="https://docs.connexcs.com/customer-portal/cp-recording/">Recording</a> — required prerequisite for transcription ·
 <a href="https://docs.connexcs.com/setup/advanced/fraud/">Fraud Profile</a> — complementary fraud monitoring controls ·
 <a href="https://docs.connexcs.com/setup/information/audit-log/">Audit Log</a> — review configuration changes and compliance audit trails ·
 <a href="https://docs.connexcs.com/globalaiagent/">Global AI Agent</a> — AI-assisted call analysis and platform queries<br>
@@ -370,12 +367,6 @@ Very common words may generate excessive matches and reduce operational visibili
 ### Review False Positives Periodically
 
 Regularly review query results to refine keyword logic and improve detection accuracy.
-
----
-
-### Define Retention Policies
-
-Configure transcript retention policies based on operational, compliance, and storage requirements.
 
 ---
 
