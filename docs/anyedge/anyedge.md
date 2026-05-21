@@ -182,14 +182,6 @@ AnyEdge uses multiple routing strategies to distribute traffic efficiently acros
 
 Understanding when and how to use each method is essential for optimal performance and reliability.
 
-### Routing Methods Overview
-
-| Method | Purpose|Behavior|
-| -------|--------|--------|
-| **Priority (Sort Index)** | Control routing order | Calls are attempted in a defined sequence (lower index first) |
-| **Weight-Based Routing**  | Distribute load proportionally | Calls are distributed across destinations based on assigned weights |
-| **Random Routing**| Simple load distribution | Calls are distributed randomly across all destinations |
-
 ### Priority-Based Routing (Sort Index)
 
 **How it works:**
@@ -207,7 +199,6 @@ Understanding when and how to use each method is essential for optimal performan
 
 **How it works:**
 
-* Applied within the same Sort Index group
 * Calls are distributed based on weight ratio (e.g., 10:1)
 * Higher weight receives more traffic
 
@@ -215,65 +206,6 @@ Understanding when and how to use each method is essential for optimal performan
 
 * For **load balancing across multiple active destinations**
 * When destinations have **different capacities**
-
-### Random Routing
-
-**How it works:**
-
-* Calls are distributed randomly across all configured destinations
-* No priority or weighting is considered
-
-**When to use:**
-
-* For **simple load distribution**
-* When all destinations have **equal capacity and priority**
-
-### Capacity-Based Routing
-
-**How it works:**
-
-* Traffic is distributed based on the **handling capacity of each destination**
-* Prevents overloading endpoints
-
-**When to use:**
-
-* When destinations have **defined CPS or concurrency limits**
-* In high-traffic environments
-
-### Health-Based Routing
-
-**How it works:**
-
-* Only **healthy and responsive destinations** are included in routing
-* Unhealthy endpoints are automatically excluded
-
-**When to use:**
-
-* Always enabled implicitly for **reliability and failover**
-
-### Dynamic Rebalancing
-
-**How it works:**
-
-* Traffic distribution adjusts automatically based on:
-
-  * Destination availability
-  * Performance
-  * Failures
-
-**When to use:**
-
-* In environments requiring **high availability and adaptive routing**
-
-## How These Work Together
-
-Routing decisions typically follow this order:
-
-1. **Health Check** → Only healthy destinations are considered
-2. **Priority (Sort Index)** → Select routing group
-3. **Weight / Random** → Distribute traffic within the group
-4. **Capacity Check** → Ensure limits are not exceeded
-5. **Dynamic Rebalancing** → Adjust in real time
 
 ---
 
@@ -288,7 +220,7 @@ A configured SIP destination becomes unavailable or stops responding.
 
 * The system detects failure through SIP timeouts or error responses
 * The destination is temporarily removed from routing
-* Calls are automatically routed to the next available destination based on routing logic (Sort Index, Weight, or Random)
+* Calls are automatically routed to the next available destination
 
 **NOC Action:**
 
@@ -313,62 +245,14 @@ An entire PoP becomes unreachable due to network outage or infrastructure failur
 * Validate connectivity to alternate PoPs
 * Check for increased latency or load on other PoPs
 
-### Scenario 3: Traffic Spike (High Load)
-
-**Situation:**
-Call volume increases significantly (e.g., peak traffic or sudden spike).
-
-**Behavior:**
-
-* Traffic is distributed across available destinations based on configured weights and routing rules
-* Load is balanced to prevent overloading a single endpoint
-* System continues routing within configured capacity limits
-
-**NOC Action:**
-
-* Monitor CPS and concurrency levels
-* Ensure sufficient routing capacity is configured
-* Scale destinations if required
-
-### Scenario 4: CPS Limit Exceeded
-
-**Situation:**
-Call attempts exceed configured Calls Per Second (CPS) limits.
-
-**Behavior:**
-
-* Excess calls may be throttled, queued, or rejected depending on configuration
-* Routing continues for calls within allowed CPS
-
-**NOC Action:**
-
-* Review CPS configuration
-* Check rejection or failure reasons in CDRs
-* Adjust limits or increase capacity if needed
-
-### Scenario 5: Destination Failure Within Same Priority Group
-
-**Situation:**
-One destination within a Sort Index group fails.
-
-**Behavior:**
-
-* Traffic is redistributed among remaining destinations in the same group
-* Weight-based distribution continues among available endpoints
-
-**NOC Action:**
-
-* Verify remaining destinations are healthy
-* Check if traffic distribution aligns with configured weights
-
-### Scenario 6: Uneven Traffic Distribution
+### Scenario 3: Uneven Traffic Distribution
 
 **Situation:**
 Traffic appears uneven across destinations.
 
 **Behavior:**
 
-* Distribution follows configured weights or random logic
+* Distribution follows configured weights
 * Short-term imbalance may occur due to randomness
 
 **NOC Action:**
@@ -690,102 +574,5 @@ AnyEdge provides multiple layers of security to protect the network from malicio
 * SIP flooding attacks
 * Call spoofing attempts
 * Traffic anomalies indicating fraud or misuse
-
-### Combined Protection Flow
-
-1. Incoming traffic reaches the nearest PoP
-2. Traffic is validated and filtered (SIP + hygiene checks)
-3. Malicious or invalid traffic is blocked or rate-limited
-4. Clean traffic is forwarded to routing and processing layers
-
-### Operational Considerations
-
-* Ensure only trusted IPs and endpoints are configured
-* Monitor unusual traffic patterns via CDRs and logs
-* Review rejection reasons to identify potential threats
-* Regularly validate routing and authentication settings
-
----
-
-## NAT Handling and Edge Cases
-
-AnyEdge supports NAT traversal and pinholing mechanisms to ensure reliable communication when endpoints are behind Network Address Translation (NAT).
-
----
-
-### What is NAT and Why It Matters
-
-NAT (Network Address Translation) allows multiple devices to share a single public IP address. While common, it can create issues for SIP-based communication because:
-
-* Private IPs are not directly reachable from external networks
-* SIP signaling and media (RTP) may not align correctly
-* Sessions can fail if return traffic cannot find the correct path
-
-### NAT Traversal
-
-**How it works:**
-
-* Ensures SIP signaling and media streams can pass through NAT devices
-* Maintains correct mapping between internal (private) and external (public) IPs
-
-**Why it is important:**
-
-* Allows endpoints behind NAT to communicate with external SIP servers
-* Prevents one-way audio or call setup failures
-
-### NAT Pinholing
-
-**How it works:**
-
-* When a call is initiated, a temporary “pinhole” is created in the NAT device
-* This allows return traffic (SIP/RTP) to flow back to the originating device
-* The pinhole remains open for the duration of the session
-
-**Why it is important:**
-
-* Ensures bidirectional communication
-* Maintains session continuity for calls
-
-### When to Use NAT Handling
-
-NAT handling is required when:
-
-* SIP endpoints (phones, PBXs) are behind private networks
-* Traffic passes through firewalls or routers performing NAT
-* Calls involve external carriers or remote endpoints
-
-### Common NAT-Related Issues
-
-| Issue | Cause | Impact |
-| ------|-------|--------|
-| **One-way audio** | RTP not correctly routed through NAT| Only one party hears audio |
-| **Call setup failure** | SIP signaling blocked or misrouted | Calls fail to connect |
-| **Dropped calls** | NAT mapping expires mid-session| Call disconnects unexpectedly |
-| **Incorrect IP in SIP headers** | Private IP exposed instead of public IP | Routing failures|
-
-### Example Scenarios
-
-**Scenario 1: Endpoint Behind NAT**
-
-* A customer device is behind a router using private IPs
-* NAT traversal ensures SIP signaling reaches the correct destination
-* Pinholing allows RTP audio to flow correctly
-
-**Scenario 2: Firewall Restrictions**
-
-* A firewall blocks unsolicited inbound traffic
-* NAT pinholing allows return traffic only for established sessions
-
-**Scenario 3: Multi-Region Routing**
-
-* Calls pass through different PoPs
-* NAT handling ensures consistent routing and session stability across regions
-
-### Operational Considerations
-
-* Ensure correct SIP headers (Contact, Via, SDP) reflect reachable IPs
-* Monitor for one-way audio or failed calls in CDRs
-* Validate firewall and NAT timeout settings
-* Use proper routing configurations to support NAT environments
 
 ---
