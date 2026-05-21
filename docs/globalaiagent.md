@@ -89,9 +89,8 @@ The AI Agent integrates with backend tools via **MCP (Model Context Protocol) se
 7. Raw trace preservation for manual engineering inspection
 8. Faster incident triage for NOC teams
 9. AI-driven telecom operational insights
-10. Auditable evidence for troubleshooting and analysis
-11. Improved decision-making using real-time telecom intelligence
-12. Faster resolution of routing and quality issues
+10. Improved decision-making using real-time telecom intelligence
+11. Faster resolution of routing and quality issues
 
 ## MCP Dependency
 

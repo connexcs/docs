@@ -207,7 +207,7 @@ Gateway Failover allows ConnexCS to automatically try alternative IP addresses w
 5. Click **`Save`**
 6. Repeat steps 3–5 for each additional IP you want available as a failover target
 
-Each IP entry in the Auth tab represents a separate gateway endpoint. When Gateway Failover is enabled, ConnexCS will attempt these in sequence if the primary IP fails.
+Each IP entry in the Auth tab represents a separate gateway endpoint. When Gateway Failover is enabled, If a call fails on the first selected IP, the system will automatically retry using another available IP under the same carrier.
 
 ### Step 2 — Enable Gateway Failover
 
@@ -219,9 +219,9 @@ Each IP entry in the Auth tab represents a separate gateway endpoint. When Gatew
     | Setting | Behaviour |
     |---|---|
     | **None** | No failover — call fails immediately if primary IP does not respond |
-    | **Failover 1** | Tries 1 alternative IP after primary fails |
-    | **Failover 2** | Tries up to 2 alternative IPs in sequence after primary fails |
-    | **Failover 3** | Tries up to 3 alternative IPs in sequence after primary fails |
+    | **Failover 1** | If the initial IP attempt fails, the call is retried on 1 other IP within the same carrier |
+    | **Failover 2** | If the initial IP attempt fails, the call is retried on up to 2 other IP within the same carrier |
+    | **Failover 3** | If the initial IP attempt fails, the call is retried up to 3 other IP within the same carrier |
 
 5. Click **`Save`**
 
@@ -229,7 +229,7 @@ Each IP entry in the Auth tab represents a separate gateway endpoint. When Gatew
 
 Gateway Failover triggers when:
 
-- The primary IP does not respond within the **First Reply Timeout** period
+- The selected IP does not respond within the configured First Reply Timeout period
 - A SIP error response is received (e.g., 503 Service Unavailable)
 - The connection is refused or times out at the network level
 
@@ -248,20 +248,5 @@ Gateway Failover and Consec Fail Backoff are complementary features that serve d
 | **Consec Fail Backoff** | Reduces traffic to a carrier after repeated consecutive failures | Sustained outage |
 
 For maximum resilience, enable both when you have a carrier with multiple gateway IPs. Failover handles individual call failures; Consec Fail Backoff handles prolonged route degradation.
-
-### Monitoring Failover Events
-
-- View failed attempts and failover events in **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name] :material-menu-right: Latest Calls**
-- Filter by SIP response code to identify patterns — for example, repeated 503s from a specific IP
-- Configure carrier alerts under **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name] :material-menu-right: Alerts** to notify your team when failure rates exceed a threshold
-
-### Example Configuration
-
-**Scenario:** A carrier has three gateway IPs — one primary and two backups. You want the system to try all three before failing the call.
-
-1. Add all three IPs to the carrier **Auth** tab
-2. Set **Gateway Failover** to **Failover 2** in the **Config** tab
-3. Set **First Reply Timeout** to **1 second** so non-responding gateways are detected quickly
-4. Enable **Consec Fail Backoff** so traffic is automatically reduced if a gateway remains down for an extended period
 
 ---
