@@ -38,4 +38,4 @@
 !!! Note
     You can see the information like **ID**, **Attempts made/Attempts**, **Start Latency**, **Run Time**, **Started At**, **Finished At** and **Failed Reason** for all the statuses discussed above.
 
-<img src= "/setup/img/job12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/job123.png" style="border: 2px solid #4472C4; border-radius: 8px;">
