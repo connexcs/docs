@@ -42,7 +42,7 @@ Under **Address** section can only verify the address and can't modify it.
 
 Under **Contact Information** section can only verify and edit the contact details.
 
-    <img src= "/setup/img/accountprofile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/accountprofile1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! note "Additional Configuration"
     To change any other settings, please contact Technical Support.
@@ -66,7 +66,7 @@ To add or edit SMTP information, click the blue pencil icon:
 
 **`Test Email`** or **`Test SMS`** buttons send test messages via each method. You can find the buttons on the far right of the SMTP details window.
 
-<img src="/setup/img/smtp1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/smtp1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "TLS SMTP"
     To use TLS SMTP, set the Server format as "mail.yourdomain.com:465."
