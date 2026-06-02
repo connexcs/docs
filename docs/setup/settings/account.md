@@ -66,7 +66,7 @@ To add or edit SMTP information, click the blue pencil icon:
 
 **`Test Email`** or **`Test SMS`** buttons send test messages via each method. You can find the buttons on the far right of the SMTP details window.
 
-<img src= "/setup/img/smtp1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/setup/img/smtp1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! tip "TLS SMTP"
     To use TLS SMTP, set the Server format as "mail.yourdomain.com:465."
