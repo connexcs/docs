@@ -159,6 +159,14 @@ The following sections will appear when you click on the `blue +` sign.
     + **Daily Spend Limit**: The maximum limit for a customer for making calls in their chosen currency. Once the limit is reached it won't allow any new calls to connect.
     + **Default STIR Shaken Attestation**: The attestation level you select here is the same attestation level that will be applied to the CLIs that your customer adds from customer portal.
 
+=== "Timeout"
+
+    | Setting | Description | Example|
+    | --------|-------------| ------ | 
+    | **First Reply Timeout** | Maximum time to wait for the first SIP response from the destination after sending an INVITE| If set to **3 seconds** and no SIP response (e.g., 100 Trying, 180 Ringing) is received within 3 seconds, the call attempt is considered failed and routing can move to the next destination|
+    | **PDD Timeout** | Maximum allowed **Post-Dial Delay (PDD)** before the call starts ringing or is answered| If set to **8 seconds** and the destination does not return ringing or answer within 8 seconds, ConnexCS can terminate the attempt and try another route|
+    | **Ring Timeout** | Maximum time the call is allowed to ring before timing out| If set to **120 seconds**, the call will continue ringing for up to 2 minutes before being treated as unanswered and moving to the next routing action|
+
 === "Address"
 
     * **Address:** Complete the customer's physical address.
