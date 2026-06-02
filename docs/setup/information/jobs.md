@@ -26,17 +26,16 @@
 
 ## Types of Tasks
 
-1. **Card**: You can check the status of the Rate Card, when you build it.
-2. **CDR**: You can check the status of any re-rate.
-3. **Delayed**: You can check the status of any task you've delayed.
-4. **ORC**: You can check the status of any server which has been added or restarted.
-5. **Send**: You can check the status of the e-mails you send. You can even re-try to send the e-mail along with failed reasons.
-6. **ScriptForge**: You can check the status of the ScriptForge running in the background.
+1. **Send**: You can check the status of the e-mails you send. You can even re-try to send the e-mail along with failed reasons.
+2. **ORC**: You can check the status of any server which has been added or restarted.
+3. **SIP Test**: You can check the status of any Circuit Tests.
+4. **Card**: You can check the status of the Rate Card, when you build it.
+5. **ScriptForge**: You can check the status of the ScriptForge running in the background.
+6. **CDR**: You can check the status of any re-rate.
 7. **Switch**: You can check the status of any changes are made to the OpenSIPS.
-8. **SIP Test**: You can check the status of any Circuit Tests.
-9. **Transcribe**: You can check the status of any call under transcription process.
+8. **E-mail**: You can check the status of emails sent by the system, view delivery results, identify failed emails, and retry sending when required.
 
 !!! Note
     You can see the information like **ID**, **Attempts made/Attempts**, **Start Latency**, **Run Time**, **Started At**, **Finished At** and **Failed Reason** for all the statuses discussed above.
 
-<img src= "/setup/img/job1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/setup/img/job12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
