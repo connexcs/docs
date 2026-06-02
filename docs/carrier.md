@@ -188,3 +188,65 @@ remove_regex="^X-.*"
     Misconfigured regular expressions may remove essential SIP headers and **break SIP protocol behaviour**, leading to call failures or service disruption. This is an advanced configuration and must be used with care.
 
 <img src= "/carrier/img/regex.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+---
+
+## Gateway Failover — Complete Configuration Guide
+
+Gateway Failover allows ConnexCS to automatically try alternative IP addresses within the same carrier when a call fails on the primary IP. This is distinct from carrier-level failover, which switches to a different carrier entirely.
+
+!!! Note
+    Gateway Failover has no effect if only one IP address is configured in the carrier's Auth tab. You must add multiple IPs first before enabling this feature.
+
+### Step 1 — Add Multiple IPs to Carrier Authentication
+
+1. Navigate to **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name]**
+2. Click the **Auth** tab
+3. Click the **:material-plus:** button to add an authentication entry
+4. Enter the carrier IP address, port, and transport settings
+5. Click **`Save`**
+6. Repeat steps 3–5 for each additional IP you want available as a failover target
+
+Each IP entry in the Auth tab represents a separate gateway endpoint. When Gateway Failover is enabled, If a call fails on the first selected IP, the system will automatically retry using another available IP under the same carrier.
+
+### Step 2 — Enable Gateway Failover
+
+1. Navigate to **Management :material-menu-right: Carrier :material-menu-right: [Carrier Name]**
+2. Click the **Config** tab
+3. Locate the **Gateway Failover** field
+4. Select the appropriate level:
+
+    | Setting | Behaviour |
+    |---|---|
+    | **None** | No failover — call fails immediately if primary IP does not respond |
+    | **Failover 1** | If the initial IP attempt fails, the call is retried on 1 other IP within the same carrier |
+    | **Failover 2** | If the initial IP attempt fails, the call is retried on up to 2 other IP within the same carrier |
+    | **Failover 3** | If the initial IP attempt fails, the call is retried up to 3 other IP within the same carrier |
+
+5. Click **`Save`**
+
+### When Gateway Failover Activates
+
+Gateway Failover triggers when:
+
+- The selected IP does not respond within the configured First Reply Timeout period
+- A SIP error response is received (e.g., 503 Service Unavailable)
+- The connection is refused or times out at the network level
+
+Gateway Failover does **not** trigger for:
+
+- Calls that connect but fail for routing reasons (e.g., 404 Not Found)
+- Calls that are answered and then disconnected mid-session
+
+### Relationship with Consec Fail Backoff
+
+Gateway Failover and Consec Fail Backoff are complementary features that serve different purposes:
+
+| Feature | Purpose | Scope |
+|---|---|---|
+| **Gateway Failover** | Tries alternative IPs within the same carrier on a per-call basis | Per call |
+| **Consec Fail Backoff** | Reduces traffic to a carrier after repeated consecutive failures | Sustained outage |
+
+For maximum resilience, enable both when you have a carrier with multiple gateway IPs. Failover handles individual call failures; Consec Fail Backoff handles prolonged route degradation.
+
+---

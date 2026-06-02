@@ -29,6 +29,7 @@ The AI Agent combines conversational intelligence with system-level execution, e
 ## Key Capabilities
 
 ### 1. Conversational Assistance
+
 The AI Agent allows users to interact using natural language to:
 
 - Ask questions about features, settings, or configurations
@@ -40,6 +41,7 @@ The AI Agent allows users to interact using natural language to:
 ---
 
 ### 2. Workflow Automation
+
 Users can automate tasks directly through prompts, such as:
 
 - Configuring services
@@ -53,6 +55,7 @@ The AI Agent translates user input into executable workflows, reducing manual ef
 ---
 
 ### 3. Context-Aware Responses
+
 The system understands user context and provides:
 
 - Personalized responses
@@ -64,6 +67,7 @@ The system understands user context and provides:
 ---
 
 ### 4. Tool Integration (MCP Support)
+
 The AI Agent integrates with backend tools via **MCP (Model Context Protocol) servers**, enabling it to:
 
 - Fetch account-specific data
@@ -74,11 +78,26 @@ The AI Agent integrates with backend tools via **MCP (Model Context Protocol) se
 
 ---
 
+## Use Cases
+
+1. Instant Call Investigation and Troubleshooting
+2. Customer and Revenue Intelligence
+3. AI-assisted SIP trace analysis for faster troubleshooting
+4. Call reconstruction for root cause analysis
+5. RTCP metric interpretation for media quality monitoring
+6. Intelligent route triage to identify routing issues
+7. Raw trace preservation for manual engineering inspection
+8. Faster incident triage for NOC teams
+9. AI-driven telecom operational insights
+10. Improved decision-making using real-time telecom intelligence
+11. Faster resolution of routing and quality issues
+
 ## MCP Dependency
 
 The AI Agent operates in two modes depending on the type of request:
 
 ### When MCP is Required
+
 MCP is used for:
 
 - Accessing account-specific information
@@ -88,6 +107,7 @@ MCP is used for:
 - Running workflows tied to platform services
 
 ### When MCP is Not Required
+
 MCP is not needed for:
 
 - General questions
@@ -116,7 +136,7 @@ In these cases, the AI Agent responds independently without invoking backend too
       2. Select the mode of the model:
          1. `General` (default): A fast model focused on quick results.
          2. `Expert`: This provides enhanced, personalized suggestions based on your queries.
-       3. `MCP Sevrers`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
+       3. `MCP Servers`: Allows you to select the MCP server the AI uses to access tools, data, and integrations for performing actions during the conversation.
        4. `Toggle` for fullscreen.
        5. `PAID`: It provides a token-level usage breakdown for the Global AI Agent—showing daily free quota consumption, exhaustion state, transition to paid billing, total billable tokens used, and the active model’s per-token pricing rate. <br><img src= "/misc/img/gaa2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br> [Click here](/globalaiagent/#token-usage-paid-feature) for detailed information on **Token Usage**.
        6. If your tokens have expired and you still want to continue with the General/Expert mode, you need to enable packages under **Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: General LLM Tokens/Expert LLM Tokens**. It will be visible under `PAID USAGE`. Daily usage is automatically reset and reflected here.
@@ -131,10 +151,12 @@ In these cases, the AI Agent responds independently without invoking backend too
 The platform uses a **token-based system** to measure AI usage.
 
 ### What Tokens Represent
+
 - Each query and response consumes tokens.
 - More complex requests use more tokens.
 
 ### Usage Visibility
+
 Users can:
 
 - View token consumption per interaction
@@ -144,6 +166,7 @@ Users can:
 - Track detailed breakdowns (if enabled)
 
 ### Token Expiry & Limits
+
 If your tokens are exhausted or expired:
 
 - AI responses may be limited or paused
@@ -220,6 +243,7 @@ In case of issues:
 ---
 
 ## Summary
+
 The Global AI Agent enhances the platform by combining:
 
 - Conversational intelligence  
