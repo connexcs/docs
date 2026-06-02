@@ -81,8 +81,8 @@ Yes, with the actual data visible, the explanations can be much more specific:
 
 | Field | Description |
 | ------|-------------|
-| **Name** | The package, add-on, or service available on the account (e.g., Storage, Call Recording, Spam Scout). |
-| **Cost**| The rate charged for the package based on its billing unit (e.g., per NOC, TB/day, channel, or dip).  |
+| **Name** | The package, add-on, or service available on the account (e.g., Storage, Call Recording, Spam Scout)|
+| **Cost**| The rate charged for the package based on its billing unit (e.g., per NOC, TB/day, channel, or dip)|
 | **Qty** | The number of units allocated or licensed for the package|
 | **Today Usage**| The amount of the package consumed today relative to the allocated quantity|
 | **Today Charge**| The charges incurred from today's package usage|
