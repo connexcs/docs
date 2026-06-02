@@ -145,7 +145,7 @@ For detailed instructions, see [**Carrier**](https://docs.connexcs.com/carrier/)
 4. Add a tax percentage, which will be calculated for each payment.
 5. Click `Save`.
 
-      <img src= "/getting-started/img/61.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+      <img src= "/getting-started/img/61_new.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! Note "Viewing Outstanding Actions"
     To view outstanding actions on a customer, hover over the **Warning icon**. In the example below, you can see that routing and authentication haven't been set. Click the customer's name to update their routing details.
@@ -318,3 +318,22 @@ To access your profile, click your name in the upper right corner and select `Pr
     4. Capture and submit a live photo of themselves while holding the verification document.
     5. Upload a clear image of the verification document used for identity confirmation.
     6. These submissions are used to validate the customer’s identity and ensure compliance with regulatory requirements.
+
+=== "SSH Keys"
+
+    The **SSH Keys** tab allows users to manage SSH public keys associated with their account.
+    SSH keys provide a secure authentication mechanism for supported services and integrations by using key-based authentication instead of passwords.
+    
+    Administrators can add, view, and remove SSH keys linked to their account. Each configured key can be used to verify the identity of a user, system, or application when accessing supported resources.
+
+    | Action | Description |
+    | -------|------------ | 
+    | **New SSH Key**| Add a new SSH public key to the account|
+    | **View Keys**| Display all SSH keys currently associated with the account|
+    | **Remove Key**  | Delete an SSH key that is no longer required or trusted.    |
+
+    **Best Practices**:
+
+      * Only add SSH keys from trusted devices and users.
+      * Remove unused or compromised keys immediately.
+      * Regularly review configured SSH keys to ensure account security.
