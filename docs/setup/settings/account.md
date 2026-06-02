@@ -75,7 +75,19 @@ To add or edit SMTP information, click the blue pencil icon:
 
 ## Packages
 
-You can see below the Company information, a list of the applied ConnexCS packages, along with Quantity, Name (of the package), and the Cost (in per minute changes).
+You can see below the Company information, a list of the applied ConnexCS packages.
+
+Yes, with the actual data visible, the explanations can be much more specific:
+
+| Field | Description |
+| ------|-------------|
+| **Name** | The package, add-on, or service available on the account (e.g., Storage, Call Recording, Spam Scout). |
+| **Cost**| The rate charged for the package based on its billing unit (e.g., per NOC, TB/day, channel, or dip).  |
+| **Qty** | The number of units allocated or licensed for the package|
+| **Today Usage**| The amount of the package consumed today relative to the allocated quantity|
+| **Today Charge**| The charges incurred from today's package usage|
+| **Month To Date Usage**  | The total package usage accumulated during the current billing month|
+| **Month To Date Charge** | The total charges accrued for the package during the current billing month
 
 Click **Enable Call Recording** to add the feature to the Account. First, you need to enable this on individual accounts under **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress routing :material-menu-right: [Media](https://docs.connexcs.com/customer/routing/#media)**.
 
