@@ -322,9 +322,12 @@ To access your profile, click your name in the upper right corner and select `Pr
 === "SSH Keys"
 
     The **SSH Keys** tab allows users to manage SSH public keys associated with their account.
+    
     SSH keys provide a secure authentication mechanism for supported services and integrations by using key-based authentication instead of passwords.
     
-    Administrators can add, view, and remove SSH keys linked to their account. Each configured key can be used to verify the identity of a user, system, or application when accessing supported resources.
+    Administrators can add, view, and remove SSH keys linked to their account. 
+    
+    Each configured key can be used to verify the identity of a user, system, or application when accessing supported resources.
 
     | Action | Description |
     | -------|------------ | 
