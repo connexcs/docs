@@ -182,19 +182,6 @@ AnyEdge uses multiple routing strategies to distribute traffic efficiently acros
 
 Understanding when and how to use each method is essential for optimal performance and reliability.
 
-### Priority-Based Routing (Sort Index)
-
-**How it works:**
-
-* Destinations are grouped by Sort Index
-* Calls are routed to the lowest index first
-* If all destinations in a group fail, routing moves to the next index
-
-**When to use:**
-
-* For **primary → secondary failover setups**
-* When you want strict routing order
-
 ### Weight-Based Routing
 
 **How it works:**
