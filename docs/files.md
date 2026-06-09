@@ -112,8 +112,8 @@ To authorize an SSH key:
 2. Navigate to `Profile :material-menu-right: SSH Keys`.
 3. Create a `New SSH Key`. <br> <img src= "/misc/img/sftp1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. Enter `Key` Details:
-   * Key Name (Identifier)
-   * SSH Public Key <br> <img src= "/misc/img/sftp2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      * Key Name (Identifier)
+      * SSH Public Key <br> <img src= "/misc/img/sftp2.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     > Only the Public Key should be uploaded. Never upload your Private Key.
 
