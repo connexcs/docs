@@ -18,7 +18,7 @@
 
 AnyEdge is a dynamic, distributed solution designed to optimize call distribution and load balancing across multiple regions. It enhances redundancy, improves call routing efficiency, and ensures high availability for VoIP traffic.
 
-ConnexCS **AnyEdge** acts as a load-balancer / dispatcher. It balances the traffic between the SIP servers and the customers.
+ConnexCS **AnyEdge** acts as a load balancer / dispatcher. It balances the traffic between the SIP servers and the customers.
 
 It's a next-generation solution for the Edge Session Initiation Protocol (SIP).
 
@@ -33,8 +33,8 @@ Each customer benefits from a unique, dedicated IP address through AnyEdge
 Calls are routed to the nearest AnyEdge server for optimal performance and reduced latency.
 
 !!! Info "AnyEdge Features"
-    1. We provide 10,000+ CPS to all customers for optimal scalability and performance.
-    2. All our customers benefit from 100Gbps DDoS protection.
+    1. Supports up to 10,000 CPS per customer.
+    2. All our customers benefit from 10Gbps DDoS protection.
 
 ### Key Features
 
@@ -43,10 +43,211 @@ Calls are routed to the nearest AnyEdge server for optimal performance and reduc
 + **Optimized Call Distribution**: Distributes traffic efficiently to reduce latency.
 + **Flexible Configuration**: Supports various routing policies and priority settings.
 
+### How Traffic Flows Through AnyEdge
+
+```mermaid
+flowchart TD
+    A[Client / Carrier] --> B[Anycast IP]
+    B --> C[Nearest PoP via BGP]
+    C --> D[Edge Processing]
+    D --> E[Load Balancer]
+    E --> F[SIP Servers / Destinations]
+    F --> G[Call Connected]
+
+    %% Failover path
+    C -. Failure .-> H[Alternate PoP]
+    H --> D
+```
+
 ### Benefits
 
 + **Improved Redundancy**: Avoids downtime by automatically rerouting calls.
 + **Optimized Call Routing**: Ensures better call quality and lower latency.
+
+---
+
+## Anycast Architecture: Global IP Routing, BGP Behavior, and PoP Selection
+
+AnyEdge uses **Anycast architecture** to provide high availability, low latency, and automatic failover for voice traffic.
+
+### What is Anycast?
+
+Anycast is a networking technique where the **same IP address is advertised from multiple geographic locations** (Points of Presence or PoPs).
+
+This allows incoming traffic to be routed to the **nearest or best-performing location** instead of a single fixed destination.
+
+### Role of BGP in Routing
+
+AnyEdge relies on **Border Gateway Protocol (BGP)** to route traffic.
+
+* Each PoP advertises the same Anycast IP
+* BGP determines the **optimal path** based on network conditions such as latency, hop count, and availability
+* Traffic is automatically directed to the **closest or most efficient PoP**
+
+This ensures that calls enter the network at the most optimal location without manual intervention.
+
+### Points of Presence (PoPs)
+
+PoPs are **distributed edge locations** where AnyEdge infrastructure is deployed.
+
+Each PoP:
+
+* Receives incoming traffic via the Anycast IP
+* Performs initial routing and validation
+* Forwards traffic to the appropriate destination or backend system
+
+Having multiple PoPs ensures **geographic redundancy and improved performance**.
+
+### Automatic Failover
+
+If a PoP becomes unavailable due to network issues or outages:
+
+* BGP automatically withdraws routes from the affected PoP
+* Traffic is rerouted to the **next closest available PoP**
+* No manual failover configuration is required
+
+This provides **seamless failover** and minimizes service disruption.
+
+### Traffic Flow Overview
+
+1. A call is sent to the Anycast IP
+2. BGP routes the call to the nearest PoP
+3. The PoP processes and forwards the call to the configured destination
+4. If the PoP is unavailable, traffic is automatically rerouted to another PoP
+
+### Key Benefits
+
+* **Low Latency** – Traffic enters the network at the nearest location
+* **High Availability** – Multiple PoPs ensure redundancy
+* **Automatic Failover** – No manual intervention required
+* **Scalability** – Traffic is distributed globally across infrastructure
+
+---
+
+## Failover Behavior and Traffic Recovery
+
+AnyEdge is designed to provide **automatic and seamless failover** to maintain service continuity during network or infrastructure issues.
+
+### What Triggers Failover?
+
+Failover is automatically triggered when a routing endpoint or PoP becomes unavailable due to:
+
+* Network connectivity loss
+* SIP server or destination failure
+* Timeout or no response from destination
+* Health check failures
+* Routing capacity limits being exceeded
+
+### Health Checks and Monitoring
+
+AnyEdge continuously monitors the health of routing destinations and infrastructure using:
+
+* **SIP response validation** (e.g., no response, error responses)
+* **Connectivity checks** to endpoints
+* **Performance indicators** such as latency or failures
+
+If a destination fails these checks, it is temporarily excluded from routing.
+
+### Failover Behavior
+
+When a failure is detected:
+
+1. Traffic is immediately removed from the affected destination or PoP
+2. Routing shifts to the next available destination based on configured logic (e.g., Sort Index, Weight, or Random)
+3. If an entire PoP is unavailable, BGP automatically reroutes traffic to the nearest available PoP
+4. Calls continue to be processed without manual intervention
+
+### Failover Timing
+
+* Failover is **near real-time**, depending on detection speed and network conditions
+* No manual switching is required
+* Recovery is automatic once the failed destination becomes healthy again
+
+### Recovery Behavior
+
+* Once a destination or PoP is restored and passes health checks, it is automatically reintroduced into routing
+* Traffic distribution resumes based on the configured routing logic
+
+### Operational Considerations
+
+* Ensure multiple destinations or PoPs are configured to enable effective failover
+* Monitor call failures and routing patterns via CDRs
+* Validate routing priorities (Sort Index / Weight) to control fallback behavior
+
+---
+
+## Load Balancing Logic and Routing Strategies
+
+AnyEdge uses multiple routing strategies to distribute traffic efficiently across destinations.
+
+Understanding when and how to use each method is essential for optimal performance and reliability.
+
+### Weight-Based Routing
+
+**How it works:**
+
+* Calls are distributed based on weight ratio (e.g., 10:1)
+* Higher weight receives more traffic
+
+**When to use:**
+
+* For **load balancing across multiple active destinations**
+* When destinations have **different capacities**
+
+---
+
+## Real-World Routing Scenarios
+
+### Scenario 1: Destination Server Failure
+
+**Situation:**
+A configured SIP destination becomes unavailable or stops responding.
+
+**Behavior:**
+
+* The system detects failure through SIP timeouts or error responses
+* The destination is temporarily removed from routing
+* Calls are automatically routed to the next available destination
+
+**NOC Action:**
+
+* Verify destination status (IP, port, SIP response)
+* Check recent CDRs for failure patterns
+* Confirm fallback routes are correctly configured
+
+### Scenario 2: Complete PoP Failure
+
+**Situation:**
+An entire PoP becomes unreachable due to network outage or infrastructure failure.
+
+**Behavior:**
+
+* BGP withdraws the affected PoP route
+* Traffic is automatically redirected to the next closest available PoP
+* No manual intervention is required
+
+**NOC Action:**
+
+* Monitor traffic shift in real time
+* Validate connectivity to alternate PoPs
+* Check for increased latency or load on other PoPs
+
+### Scenario 3: Uneven Traffic Distribution
+
+**Situation:**
+Traffic appears uneven across destinations.
+
+**Behavior:**
+
+* Distribution follows configured weights
+* Short-term imbalance may occur due to randomness
+
+**NOC Action:**
+
+* Validate weight configuration
+* Analyze CDR trends over time (not just short intervals)
+
+---
 
 ## AnyEdge Setup
 
@@ -62,7 +263,7 @@ Click the :material-plus: button to set the following:
 
     See [**Inbound Proxy / Dispatcher / Load Balancer**](https://docs.connexcs.com/anyedge/anyedge/#inbound-proxy-dispatcher-load-balancer) for details.
 
-* **Cyber-Physical System(CPS)**: Total calls per second allowed.
+* **CPS**: Total calls per second allowed.
 
     See [**Metrics**](https://docs.connexcs.com/anyedge/anyedge/#metrics) for details
 
@@ -70,7 +271,7 @@ Click the :material-plus: button to set the following:
   
 * **Validate**: Find the checks to use, if any.
 
-    **For example**, a Basic Check will verify if all the fields are appropriately formed, or else it will reject the package (protecting from attacks such as buffer overflow). Select one or more checks to validate those fields.
+    **For example**, a Basic Check will verify if all the fields are appropriately formed, or else it will reject the package (protecting from attacks such as buffer overflow).
 
     Select one or more checks to validate those fields.
 
@@ -176,8 +377,6 @@ The primary use case for **AnyEdge** is to disseminate calls to a pool of SIP Se
 
 You must set the load balancer's CPS limit. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
 
-The CPS limit of the load balancer needs setting up. You can view both the CPS and the totals for the number of calls that failed because of the CPS breach.
-
 Use the following graphs to view the metrics:
 
 1. CPS - Calls Per Second
@@ -277,18 +476,90 @@ If you have a pool of several servers, you can proxy your communications via **A
 
 ## AnyEdge SIP Ping Replies
 
-The UAS is pinging the AnyEdge Loadbalancer and further, the Loadbalancer passes the pings to the Opensips Servers. Further, the Opensips Servers reply to the Laodbalancer, and then the ping gets to the UAS. In case, any of the SIP servers are slow, it slows down the AnyEdge Loadbalancer as well. Thus, introducing Latency in the system.
+The UAS is pinging the AnyEdge Load Balancer and further, the Load Balancer passes the pings to the Opensips Servers. Further, the Opensips Servers reply to the Load Balancer, and then the ping gets to the UAS. In case, any of the SIP servers are slow, it slows down the AnyEdge Load Balancer as well. Thus, introducing Latency in the system.
 
 <img src= "/anyedge/any3.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-Therefore, the AnyEdge SIP Ping Replies feature will help fix this issue. This feature will allow the AnyEdge Loadbalancer to reply to the UAS ping messages without passing them to the Opensips Server. This feature will fix the latency issue, and the application latency will be closer match to what we expect.
+Therefore, the AnyEdge SIP Ping Replies feature will help fix this issue. This feature will allow the AnyEdge Load Balancer to reply to the UAS ping messages without passing them to the Opensips Server. This feature will fix the latency issue, and the application latency will be closer match to what we expect.
 
-This feature adds another capability where the AnyEdge Laodbalancer is aware of the latency of the Opensips (backend) servers. The AnyEdge Loadbalancer measures the latency on backend servers by checking that the servers are online. This can be done by adding the **Timestamps**.
+This feature adds another capability where the AnyEdge Load Balancer is aware of the latency of the Opensips (backend) servers. The AnyEdge Load Balancer measures the latency on backend servers by checking that the servers are online. This can be done by adding the **Timestamps**.
 
 According to RFC 3261, there is a proper header Timestamp available. We include this Timestamp header with the message we're going to send. When we get a reply, it comes along with the Timestamp as well. The Timestamp of the message and reply should be identical, which measures the latency or calculates the difference.
 
 ### How to Enable AnyEdge SIP Ping Replies
 
 1. Go to Setup :material-menu-right: AnyEdge and click on the `Edit` button. <img src= "/anyedge/any1.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
-2. You will a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature. <img src= "/anyedge/any2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. You will see a window, select the **AnyEdge SIP Ping Replies** from the dropdown in **Flags** to enable this feature. <img src= "/anyedge/any2.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 3. Click on `Save`.
+
+---
+
+## Security and Traffic Protection
+
+AnyEdge provides multiple layers of security to protect the network from malicious traffic, unauthorized access, and service disruption.
+
+### DDoS Protection
+
+**How it works:**
+
+* Incoming traffic is distributed across multiple PoPs using Anycast
+* High volumes of traffic are absorbed and filtered at the edge
+* Suspicious or excessive traffic is rate-limited or dropped
+
+**What is blocked:**
+
+* Traffic spikes intended to overwhelm the system
+* Repeated connection attempts from suspicious sources
+
+### SIP Validation
+
+**How it works:**
+
+* SIP messages are inspected for correctness and compliance
+* Invalid or malformed SIP requests are rejected
+
+**What is allowed:**
+
+* Properly formatted SIP requests (e.g., valid INVITE, REGISTER)
+* Authenticated and expected traffic
+
+**What is blocked:**
+
+* Malformed SIP packets
+* Unauthorized or spoofed SIP messages
+* Requests that do not follow protocol standards
+
+### Traffic Hygiene
+
+**How it works:**
+
+* Filters are applied to ensure only legitimate traffic enters the system
+* Unknown or untrusted sources can be restricted
+* Rate limits and validation checks maintain clean traffic flow
+
+**What is allowed:**
+
+* Traffic from configured and trusted sources
+* Requests within defined limits and thresholds
+
+**What is blocked:**
+
+* Unknown IPs (if restricted)
+* Excessive or abnormal traffic patterns
+* Suspicious or non-compliant requests
+
+### Attack Mitigation
+
+**How it works:**
+
+* Continuous monitoring detects abnormal behavior
+* Traffic is automatically adjusted or rerouted to maintain stability
+* Unhealthy or malicious endpoints are excluded from routing
+
+**Examples of mitigated threats:**
+
+* SIP flooding attacks
+* Call spoofing attempts
+* Traffic anomalies indicating fraud or misuse
+
+---
