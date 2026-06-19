@@ -215,7 +215,7 @@ To exercise any of these rights, contact: [INSERT PRIVACY CONTACT EMAIL]
 
 To raise a complaint about how ConnexCS handles your personal data, contact the **Information Commissioner's Office (ICO)** at [ico.org.uk](https://ico.org.uk).
 
-For full details of data processing activities, refer to the [ConnexCS Privacy Notice](https://connexcs.com/privacy-policy/).
+For full details of data processing activities, refer to the [ConnexCS Privacy Notice](https://connexcs.com/company-policies/data-privacy-policy).
 
 ---
 
