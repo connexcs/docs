@@ -130,7 +130,7 @@ Use the following connection settings:
 | **Protocol** | SFTP |
 | **Host** | sftp.connexcs.com|
 | **Port** | 22 |
-| **Username** | ConnexCS Username   |
+| **Username** | Enter the username you use to sign in to the ConnexCS Control Panel|
 | **Authentication** | Password or SSH Key |
 
 ---
