@@ -319,12 +319,14 @@ nav:
                 - cxJob: apps/architecture/cxJob.md
                 - cxKV: apps/architecture/cxKV.md
                 - cxKysely: apps/architecture/cxKysely.md
+                - cxMcpServer: apps/architecture/cxMcpServer.md
                 - cxPubSub: apps/architecture/cxPubSub.md
+                - cxRegistry: apps/architecture/cxRegistry.md
                 - cxRest: apps/architecture/cxRest.md
+                - cxRouter: apps/architecture/cxRouter.md
                 - cxSend: apps/architecture/cxSend.md
                 - cxUserspace: apps/architecture/cxUserspace.md
                 - cxWebSocket: apps/architecture/cxWebSocket.md
-                - cxMcpServer: apps/architecture/cxMcpServer.md
             - Live transcription via WebSocket: apps/architecture/livetranscription.md
 
         - Template: apps/architecture/template.md
