@@ -35,7 +35,9 @@ Every invoice in ConnexCS originates from a call. The full lifecycle moves throu
 CDRs are the historical record of every call in a given period. They are the recommended dataset for answering any question about billing or invoice discrepancies.
 
 !!! tip
-    Do not base billing on account balance changes. Always derive charges from CDR records. Where possible, export CDR data at least 24 hours after the final day of the billing period to ensure all records have been captured and processed.
+    * Do not base billing on account balance changes.
+    * Always derive charges from CDR records.
+    * Where possible, export CDR data at least 24 hours after the final day of the billing period to ensure all records have been captured and processed.
 
 See [Customer CDR](https://docs.connexcs.com/customer/cdr/) for filtering, exporting, and working with CDR data.
 
