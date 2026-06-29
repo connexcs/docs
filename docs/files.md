@@ -49,3 +49,128 @@ We support the automatic archival of rate cards.
 These can be downloaded in `.csv` format for convenient access and record-keeping.
 
 [texttospeech]: /misc/img/texttospeech.png "Text to Speech"
+
+## SFTP Access
+
+### Overview
+
+**SFTP (Secure File Transfer Protocol)** allows users to securely access and manage files stored within the ConnexCS File System.
+
+Using an SFTP client, users can connect directly to their ConnexCS storage and perform file operations such as:
+
+* Downloading call recordings
+* Accessing voicemail files
+* Managing uploaded audio files
+* Retrieving files from the File System
+* Uploading, modifying, or deleting files (subject to permissions)
+* Performing bulk file transfers
+* Automating backups and integrations
+
+SFTP access provides an alternative to the web-based File Manager and is particularly useful for bulk file operations, automated workflows, and third-party integrations.
+
+---
+
+### Prerequisites
+
+Before connecting via SFTP:
+
+1. SFTP access must be enabled for your account.
+2. You must have a valid ConnexCS account.
+3. An SFTP client must be installed.
+
+Supported clients include:
+
+* WinSCP
+* MobaXterm
+* FileZilla
+* Cyberduck
+* OpenSSH Command Line
+
+#### How to enable SFTP access?
+
+1. Login to your account.
+2. Navigate to `Profile :material-menu-right: Advanced`. Click on `Edit`. <br> <img src= "/misc/img/sftp3.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Enable the `Flags`. Click `Save`. <br> <img src= "/misc/img/sftp4.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+---
+
+### Authentication Methods
+
+ConnexCS supports the following authentication methods:
+
+#### Username and Password
+
+Users can authenticate using the same credentials used to log in to their ConnexCS account.
+
+#### SSH Key Authentication
+
+Users can optionally authenticate using SSH public/private key pairs.
+
+SSH key authentication provides enhanced security and eliminates the need to enter passwords.
+
+---
+
+### Configuring SSH Keys
+
+To authorize an SSH key:
+
+1. Login to your account.
+2. Navigate to `Profile :material-menu-right: SSH Keys`.
+3. Create a `New SSH Key`. <br> <img src= "/misc/img/sftp1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Enter `Key` Details:
+      * Key Name (Identifier)
+      * SSH Public Key <br> <img src= "/misc/img/sftp2.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+    > Only the Public Key should be uploaded. Never upload your Private Key.
+
+5. Click on `Save`. After saving, the SSH key becomes available for SFTP authentication.
+
+---
+
+### SFTP Connection Details
+
+Use the following connection settings:
+
+| Parameter      | Value               |
+| -------------- | ------------------- |
+| **Protocol** | SFTP |
+| **Host** | sftp.connexcs.com|
+| **Port** | 22 |
+| **Username** | Enter the username (ConnexCS email) you use to sign in to the ConnexCS Control Panel|
+| **Authentication** | Password or SSH Key |
+
+---
+
+### Connecting Using Username and Password
+
+1. Open your preferred SFTP client.
+2. Configure the connection:
+
+    | Setting  | Value                  |
+    | -------- | ---------------------- |
+    | **Host**     | sftp.connexcs.com      |
+    | **Port**     | 22                     |
+    | **Username** | Your ConnexCS Username (email) |
+    | **Password** | Your ConnexCS Password |
+
+3. Click **Connect**. The system will authenticate using your standard ConnexCS login credentials.
+
+---
+
+### Connecting Using SSH Keys
+
+1. Upload your Public SSH Key to ConnexCS.
+2. Open your preferred SFTP client.
+3. Configure:
+
+    | Setting        | Value                  |
+    | -------------- | ---------------------- |
+    | **Host** | sftp.connexcs.com |
+    | **Port** | 22 |
+    | **Username** | Your ConnexCS Username (email)|
+    | **Authentication** | SSH Key|
+
+4. Select the corresponding Private Key from your local machine.
+5. Click **Connect**.
+
+---
