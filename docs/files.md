@@ -86,6 +86,12 @@ Supported clients include:
 * Cyberduck
 * OpenSSH Command Line
 
+#### How to enable SFTP access?
+
+1. Login to your account.
+2. Navigate to `Profile :material-menu-right: Advanced`. Click on `Edit`. <br> <img src= "/misc/img/sftp3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Enable the `Flags`. Click `Save`. <br> <img src= "/misc/img/sftp4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
 ---
 
 ### Authentication Methods
@@ -130,7 +136,7 @@ Use the following connection settings:
 | **Protocol** | SFTP |
 | **Host** | sftp.connexcs.com|
 | **Port** | 22 |
-| **Username** | Enter the username you use to sign in to the ConnexCS Control Panel|
+| **Username** | Enter the username (ConnexCS email) you use to sign in to the ConnexCS Control Panel|
 | **Authentication** | Password or SSH Key |
 
 ---
@@ -144,7 +150,7 @@ Use the following connection settings:
     | -------- | ---------------------- |
     | **Host**     | sftp.connexcs.com      |
     | **Port**     | 22                     |
-    | **Username** | Your ConnexCS Username |
+    | **Username** | Your ConnexCS Username (email) |
     | **Password** | Your ConnexCS Password |
 
 3. Click **Connect**. The system will authenticate using your standard ConnexCS login credentials.
@@ -161,7 +167,7 @@ Use the following connection settings:
     | -------------- | ---------------------- |
     | **Host** | sftp.connexcs.com |
     | **Port** | 22 |
-    | **Username** | Your ConnexCS Username |
+    | **Username** | Your ConnexCS Username (email)|
     | **Authentication** | SSH Key|
 
 4. Select the corresponding Private Key from your local machine.
