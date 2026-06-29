@@ -169,7 +169,8 @@ Per call: 9.1s → rounded up to 10s → 10/60 × $0.005 = $0.000833 → rounded
 The discrepancy here is $0.0142 across just 100 calls. At high call volumes this difference becomes material.
 
 !!! important
-    Always calculate the cost for each call **individually** and then sum. Never aggregate durations before applying the rate.
+    * Always calculate the cost for each call **individually** and then sum.
+    * Never aggregate durations before applying the rate.
 
 ---
 

@@ -73,7 +73,9 @@ Tax can be configured and applied to customer invoices at the account level. Thi
 Tax amounts are calculated during invoice generation and appear as a line item on the PDF invoice. Configure tax settings per customer account under the customer's billing or main settings.
 
 !!! note
-    ConnexCS applies tax based on the configuration you set. Ensuring the correct tax rates are applied for each jurisdiction is the responsibility of the account administrator. Consult your local regulatory requirements when configuring tax for cross-border billing.
+    * ConnexCS applies tax based on the configuration you set.
+    * Ensuring the correct tax rates are applied for each jurisdiction is the responsibility of the account administrator
+    * Consult your local regulatory requirements when configuring tax for cross-border billing.
 
 ---
 
@@ -119,7 +121,9 @@ The following guardrails are applied on every call in real time:
 **Balance Monitor** — Account balances are checked every 60 seconds. When a prepay customer's balance reaches the configured debit limit, new calls are blocked until the balance is replenished.
 
 !!! tip
-    Profit Assurance and Rate Cap are configured at the routing or rate card level. Balance thresholds are set per customer account. Review these settings whenever you update rate cards or onboard a new carrier.
+    * Profit Assurance and Rate Cap are configured at the routing or rate card level.
+    * Balance thresholds are set per customer account.
+    * Review these settings whenever you update rate cards or onboard a new carrier.
 
 ---
 

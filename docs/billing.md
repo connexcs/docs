@@ -16,22 +16,6 @@
 
 </details>
 
-# Billing
-
-**Document Metadata**
-
-| Field | Detail |
-|---|---|
-| **Category** | Setup → Billing |
-| **Audience** | Administrators, Engineers, Finance Team |
-| **Difficulty** | Intermediate |
-| **Time Required** | 15–25 minutes |
-| **Prerequisites** | A working understanding of rate cards and CDRs; access to your ConnexCS account |
-| **Related Topics** | [Billing Basics](https://docs.connexcs.com/billing-basics/) · [Billing Guide](https://docs.connexcs.com/guides/billing-guide/) · [Rate Card Overview](https://docs.connexcs.com/rate-card-building/) |
-| **Next Steps** | Confirm your billing model, configure rate cards, set up MRC packages if required, and test with a sample invoice |
-
----
-
 ## Two Directions of Billing
 
 ConnexCS billing operates in two directions simultaneously:
@@ -102,7 +86,8 @@ Re-rating allows ConnexCS to reprocess historical CDRs using updated rate card v
 When re-rating is triggered, ConnexCS recalculates the cost and revenue for each affected CDR against the corrected rate card. Invoices and reports are updated to reflect the corrected totals.
 
 !!! warning
-    Re-rating affects historical invoice data. Always confirm the scope of CDRs to be re-rated and communicate any resulting invoice changes to affected customers before reprocessing.
+    * Re-rating affects historical invoice data.
+    * Always confirm the scope of CDRs to be re-rated and communicate any resulting invoice changes to affected customers before reprocessing.
 
 ---
 
