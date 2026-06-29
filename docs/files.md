@@ -89,8 +89,8 @@ Supported clients include:
 #### How to enable SFTP access?
 
 1. Login to your account.
-2. Navigate to `Profile :material-menu-right: Advanced`. Click on `Edit`. <br> <img src= "/misc/img/sftp3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. Enable the `Flags`. Click `Save`. <br> <img src= "/misc/img/sftp4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Navigate to `Profile :material-menu-right: Advanced`. Click on `Edit`. <br> <img src= "/misc/img/sftp3.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Enable the `Flags`. Click `Save`. <br> <img src= "/misc/img/sftp4.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 
