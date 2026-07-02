@@ -174,7 +174,9 @@
 |**ConnexCS MCP Server**|n/a|A service that enables AI assistants to securely interact with ConnexCS tools and platform data|
 |**OAuth**|*Open Authorization*| An authorization framework that allows secure, token-based access to resources without sharing user credentials|
 |**Anvil**|n/a|An AI-powered interface builder that generates web applications based on user input provided through a chat interface|
-|**Cx MCP**|n/a|Cx MCP enables seamless integration of AI agents and services for automated workflows on ConnexCS.
+|**Cx MCP**|n/a|Cx MCP enables seamless integration of AI agents and services for automated workflows on ConnexCS.|
+|**TRACED Act**| Telephone Robocall Abuse Criminal Enforcement and Deterrence Act| US legislation aimed at combating illegal robocalls.|
+|**LLM**|Large Language Model| AI model trained on large amounts of text to understand, generate, and respond to human language|
 
 ## ACD Calculation Method
 
