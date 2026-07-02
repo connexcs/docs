@@ -109,18 +109,16 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 
 1. Login to your account.
 2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "/setup/img/wp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-3. Click on **WebPhone**. <img src= "/setup/img/wp2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-4. Click **Install**.
-5. After hitting the Install button. A window appears which has 2 fields, **App Name** and **Version**. We shall keep the default App name and the suggested version of the App.<br><img src= "/setup/img/wp3.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-6. Click on **Install** and the App will be installed on your user account. <img src= "/setup/img/wp4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+3. Click on **Install**. <img src= "/setup/img/wp2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. Click **Install** again.
+5. The WebPhone app is now installed. Click the installed app to continue with its configuration. <br><img src= "/setup/img/webnew1.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-### Step 2: Publishing
+### Step 2: Configuration
 
-1. Navigate to the **IDE** section, and from the dropdown select the **WebPhone App**.
-2. Click on the **Domain**, and press the blue plus sign to add the domain of your WebPhone.
-3. To keep things simple, we will use a top-level domain provider by ConnexCS.
-4. Enter your unique name in the first part of the domain and we will deploy this for you on the **.cnx.page** domain.
-5. Click on **Save**. <img src= "/setup/img/wp5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Click on `Webphone Config`. <br><img src= "/setup/img/webnew2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Select the `SIP Server` from the dropdown. Click on `Add Server` under `Add New Server`.
+3. `Enable` or `disable` the **Use CLI as Username** setting. When enabled, the **Username** is automatically used as the caller ID, so you don't need to enter a separate caller ID.
+4. You can either use your own domian or an existing one.
 
 !!! Note
     Please note you can change this later if you want to deploy this on your own domain.
@@ -175,25 +173,16 @@ To setup WebRTC on a server:
 
 [Click here](https://docs.connexcs.com/apps/architecture/domain/#steps-for-setting-up-the-domain) to check the steps for adding the Domain to your App.
 
-### Step 5: Configuring (Optional Step)
-
-1. Go to **IDE :material-menu-right: WebPhone :material-menu-right: Environmental variables**.
-2. Click on the blue plus sign to create a new variable.
-3. A window will pop-up, where you need to enter the **key** as wsServers (example value) and **value** as yourservername.host.connexcs.net (example value). These values and will appear in the drop-down on the Webphone login-page.
-    - Key = wsServers
-    - Value = yourservername.host.connexcs.net (you can separate each with ' if there are multiple)
-4. For selecting **Flags** [click here](https://docs.connexcs.com/apps/architecture/environmental-variables/#steps-for-configuring-the-variables).
-5. Click on **Save**.
-
-<img src= "/setup/img/wp10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-### Step 6: Login
+### Step 5: Login
 
 1. Now let's have a look at the deployed domain.
-2. Enter in the domain name in the URL e.g., webphone1.cnx.page.
-3. Enter the **Username** and **Password**.
-4. Select the **Server** from the dropdown. If you don’t want the customer to type-in the server, you can add the servers in the drop-down in the next step which is **Configuration**. You won't have the drop-down if you don’t fill out the information of the servers in the environmental variables.<br><img src= "/setup/img/wp7.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. After logging in you can dial from your WebPhone.<br><img src= "/setup/img/wp8.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Enter in the domain name in the URL e.g., `test4.cnx.page`.
+3. A login window will appear withe th following fields: <br><img src= "/setup/img/webnew3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   1. Select a **Server** from the dropdown if `multiple servers` are available. If only `one server` has been added, it is selected automatically. If `no servers` have been added, you will need to enter the server details manually.
+   2. Enter the **SIP Username**.
+   3. Enter the **Password**.
+   4. Enter the **CLI** *only if* the `Use CLI as Username` setting is **enabled**.
+4. After logging in you can dial from your WebPhone. <br><img src= "/setup/img/webnew4.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Navigation
 
@@ -205,4 +194,4 @@ To setup WebRTC on a server:
 6. **Log Out** (top-right): Click on this button to sign out of the Webphone.
 7. **Current Call Time**: Displays the duration of the ongoing call.
 
-<img src= "/setup/img/wp9.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;">
+<br><img src= "/setup/img/webnew5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
