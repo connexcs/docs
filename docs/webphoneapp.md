@@ -108,10 +108,10 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 ### Step 1: Installing
 
 1. Login to your account.
-2. Navigate to **Setup** :material-menu-right: **App Store**. <img src= "/setup/img/wp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-3. Click on **Install**. <img src= "/setup/img/wp2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-4. Click **Install** again.
-5. The WebPhone app is now installed. Click the installed app to continue with its configuration. <br><img src= "/setup/img/webnew1.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Navigate to **Setup** :material-menu-right: **App Store**.
+3. Click on **Install**. <br><img src= "/setup/img/webnew6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Click **Install** again. <br><img src= "/setup/img/webnew7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. The WebPhone app is now installed. Click the installed app to continue with its configuration. <br><img src= "/setup/img/webnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Step 2: Configuration
 
@@ -184,7 +184,7 @@ To setup WebRTC on a server:
    4. Enter the **CLI** *only if* the `Use CLI as Username` setting is **enabled**.
 4. After logging in you can dial from your WebPhone. <br><img src= "/setup/img/webnew4.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-### Navigation
+#### Navigation
 
 1. **Dialpad**: Dialpad for making and answering calls.
 2. **Mic Off**: Mute the call.
