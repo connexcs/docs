@@ -110,8 +110,8 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 1. Login to your account.
 2. Navigate to **Setup** :material-menu-right: **App Store**.
 3. Click on **Install**. <br><img src= "/setup/img/webnew6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. Click **Install** again. <br><img src= "/setup/img/webnew7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. The WebPhone app is now installed. Click the installed app to continue with its configuration. <br><img src= "/setup/img/webnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Click **Install** again. <br><img src= "/setup/img/webnew7.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. The WebPhone app is now installed. Click the installed app to continue with its configuration. <br><img src= "/setup/img/webnew1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Step 2: Configuration
 
@@ -177,12 +177,12 @@ To setup WebRTC on a server:
 
 1. Now let's have a look at the deployed domain.
 2. Enter in the domain name in the URL e.g., `test4.cnx.page`.
-3. A login window will appear withe th following fields: <br><img src= "/setup/img/webnew3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. A login window will appear withe th following fields: <br><img src= "/setup/img/webnew3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    1. Select a **Server** from the dropdown if `multiple servers` are available. If only `one server` has been added, it is selected automatically. If `no servers` have been added, you will need to enter the server details manually.
    2. Enter the **SIP Username**.
    3. Enter the **Password**.
    4. Enter the **CLI** *only if* the `Use CLI as Username` setting is **enabled**.
-4. After logging in you can dial from your WebPhone. <br><img src= "/setup/img/webnew4.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. After logging in you can dial from your WebPhone. <br><img src= "/setup/img/webnew4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 #### Navigation
 
