@@ -16,30 +16,48 @@
 
 ## Overview
 
-The Failover tab lists calls that failed with this carrier but connected with another carrier.
+The **Failover** tab lists calls that failed with one carrier but were successfully connected through another carrier.
 
-This typically helps to troubleshoot an issue with the carrier that's failing the calls.
+This helps you:
 
-You can also use this to identify FAS (False Answer Supervision) billing fraud.
+- Troubleshoot carrier routing issues.
+- Identify carriers with poor performance or routing failures.
+- Detect potential **False Answer Supervision (FAS)** billing fraud.
 
-<img src= "/carrier/img/carrierfailover.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+---
 
 ## False Answer Supervision (FAS)
 
-**1. What is FAS?**
+### What is FAS?
 
-+ A fraudulent practice where a carrier connects a call to an unintended destination (e.g., a radio message or a low-cost number) instead of the intended recipient.
+**False Answer Supervision (FAS)** is a fraudulent practice in which a carrier falsely indicates that a call has been successfully connected while routing it to an unintended destination, such as a recorded announcement, radio station, or a low-cost number.
 
-+ The caller is charged, but the carrier avoids paying termination fees.
+As a result:
 
-**2. How FAS Affects Failover Reporting?**
+- The caller is charged for the call.
+- The intended recipient is never reached.
+- The fraudulent carrier avoids paying the proper termination charges.
 
-+ Calls that appear in the failover list may include fraudulent connections from a carrier utilizing FAS.
+### How FAS Affects Failover Reporting
 
-+ Carrier A may falsely report calls as successfully connected when they weren't genuinely completed.
+Calls appearing in the **Failover** report may indicate potential FAS activity.
 
-!!! info "ConnexCS will halt routing on the following codes"
-    - `3XX` (Re-write to 503)
-    - `486`
-    - `480`
-    - `404`
+For example:
+
+- Carrier A falsely reports the call as answered.
+- ConnexCS detects the unsuccessful call attempt and routes the call through another carrier.
+- The call successfully connects via the alternate carrier, while the failed attempt remains visible in the Failover report for investigation.
+
+---
+
+## SIP Response Codes That Do Not Trigger Failover
+
+ConnexCS halts routing and **does not perform failover** for the following SIP response codes:
+
+| SIP Code | Description |
+|----------|-------------|
+| **3XX** | Redirection responses *(rewritten internally to **503 Service Unavailable**)* |
+| **404** | Not Found |
+| **480** | Temporarily Unavailable |
+| **486** | Busy Here |
+| **6XX** | Global Failure responses *(for example: **600 Busy Everywhere**, **603 Decline**, **604 Does Not Exist Anywhere**, **606 Not Acceptable**)* |
