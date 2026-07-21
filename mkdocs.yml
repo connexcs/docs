@@ -240,7 +240,9 @@ nav:
         - How To:
             - Locate Call-ID: guides/howto/callid.md
             - Restrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
-        - Monitoring: guides/monitoring.md
+        - Monitoring: 
+            - Monitoring Tools: guides/monitoring.md
+            - CDR Heuristics: guides/cdr-heuristics.md
         - OSI Model: guides/osi-model.md
         - Major Telecom Regulatory Authorities: guides/major-telecom-regulatory-authorities.md
         - General Data Protection Regulation: guides/gdpr.md
