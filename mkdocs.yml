@@ -25,6 +25,7 @@ theme:
         
             
 extra_javascript:
+- openpanel.js
 - extra.js
 # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
 extra_css:
