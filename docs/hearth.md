@@ -1,20 +1,31 @@
 # Hearth
 
-## Document Metadata
+<details>
+<summary><strong>Document Metadata</strong></summary>
+<br>
 
-**Category:** Developer SDKs / Databases / External Data Storage
+<strong>Category</strong>: Developer SDKs → Databases → External Data Storage<br>
 
-**Audience:** Developers, Application Developers, Anvil Developers, Script Developers
+<strong>Audience</strong>: Developers, Application Developers, Anvil Developers, Script Developers<br>
 
-**Difficulty:** Intermediate
+<strong>Difficulty</strong>: Intermediate<br>
 
-**Time Required:** Approximately 10–20 minutes
+<strong>Time Required</strong>: 10–20 minutes<br>
 
-**Prerequisites:** Basic knowledge of JavaScript or TypeScript, access to a ConnexCS account, a valid JWT token, access to a Hearth instance, and familiarity with Anvil or Node.js development.
+<strong>Prerequisites</strong>:<br>
+<ul>
+<li>Basic knowledge of JavaScript or TypeScript</li>
+<li>Access to a ConnexCS account</li>
+<li>A valid JWT token for authentication</li>
+<li>Access to a Hearth instance</li>
+<li>Familiarity with Anvil or Node.js development</li>
+</ul>
 
-**Related Topics:** Anvil, ScriptForge, Apps Platform, Terminal Tools (CX-Tools), JWT Authentication
+<strong>Related Topics</strong>: Anvil, ScriptForge, Apps Platform, Terminal Tools (CX-Tools), JWT Authentication<br>
 
-**Next Steps:** Install or import the Hearth SDK, create a Hearth client, authenticate using a JWT token, connect to a schema, perform database operations, and integrate Hearth into your Anvil applications.
+<strong>Next Steps</strong>: Install or import the Hearth SDK, create a Hearth client, authenticate using a JWT token, connect to a schema, perform database operations, and integrate Hearth into your Anvil applications.<br>
+
+</details>
 
 ---
 
@@ -36,7 +47,7 @@ Hearth is distributed as an npm package:
     Hearth provides a consistent API for managing external application data. Although it is distributed as an npm package for Node.js applications, it can also be imported directly into **Anvil** using ES Modules (ESM), making it suitable for both server-side and browser-based application development.
 
     For installation instructions, API reference, and additional examples, visit:
-    https://www.npmjs.com/package/@connexcs/hearth
+    [https://www.npmjs.com/package/@connexcs/hearth](https://www.npmjs.com/package/@connexcs/hearth)
 
 ## Who is this for?
 
