@@ -264,6 +264,7 @@ nav:
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
     - ANVIL: anvil.md
+    - Hearth: hearth.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
