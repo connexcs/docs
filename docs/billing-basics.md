@@ -44,17 +44,6 @@ A call must be at least 60 seconds. After that, duration rounds up in 6-second s
 - 61-second call → billed as 66 seconds
 - 67-second call → billed as 72 seconds
 
-**Increment comparison at $0.015/min:**
-
-| # | Actual Duration (s) | Increment | Billed Duration (s) | Cost ($) | Effective Rate ($/min) |
-|---|---|---|---|---|---|
-| 1 | 7 | 6/6 | 12 | 0.00300 | 0.02571 |
-| 2 | 7 | 12/6 | 12 | 0.00300 | 0.02571 |
-| 3 | 7 | 30/6 | 30 | 0.00750 | 0.06429 |
-| 4 | 7 | 60/6 | 60 | 0.01500 | 0.12857 |
-
-The same 7-second call can cost anywhere from $0.003 to $0.015 depending on the increment scheme applied.
-
 ---
 
 ## Duration Rounding, Billing Rounding, and Precision
@@ -77,16 +66,23 @@ A call of 1.4 seconds rounds down to 1 second (Full-Down). A call of 1.5 seconds
 
 Precision sets the number of decimal places used when calculating the cost of each call. More decimal places reduces rounding error per call, but the difference compounds significantly across high call volumes — particularly in contact centres where most calls are under 30 seconds.
 
-**Precision impact at $0.015/min on a 9-second call:**
+!!! Example "Example"
+    **Example (Rate: $0.100/min, Call Duration: 9 seconds, Rounding method: Full-Up (Half-Up))**
 
-| # | Call Duration (s) | Precision | Cost ($) | Effective Rate ($/min) |
-|---|---|---|---|---|
-| 1 | 9 | 2 dp | 0.01 | 0.0666 |
-| 2 | 9 | 3 dp | 0.002 | 0.0133 |
-| 3 | 9 | 4 dp | 0.0018 | 0.012 |
-| 4 | 9 | 5 dp | 0.00175 | 0.0116 |
+    **Exact calculation: 9 ÷ 60 × $0.100 = $0.015**
 
-Rounding to 2 decimal places charges nearly six times the effective rate of rounding to 5 decimal places on a short call.
+      | # | Call Duration (s) | Precision | Billed Cost ($) | Effective Rate ($/min) |
+      | - | ----------------: | :-------: | --------------: | ---------------------: |
+      | 1 | 9 |    2 dp   |            0.02 |                 0.1333 |
+      | 2 | 9 |    3 dp   |           0.015 |                 0.1000 |
+      | 3 | 9 |    4 dp   |          0.0150 |                 0.1000 |
+      | 4 | 9 |    5 dp   |         0.01500 |                 0.1000 |
+
+      0.0149 → 0.01 (2 dp)
+      0.0150 → 0.02 (2 dp)
+      0.0150 → 0.015 (3 dp)
+
+      In this example, rounding to 2 decimal places increases the effective rate by approximately 33%, whereas 3 or more decimal places preserve the intended billing rate.
 
 ---
 
@@ -155,18 +151,32 @@ Multiplying total call minutes by the per-minute rate does not produce an accura
 
 **Why it fails:** Each call must be rated individually, with its own duration rounding and billing increment applied, before costs are summed. Aggregating minutes first and then applying the rate ignores the per-call rounding that occurs at each step.
 
-**Example:**
+!!! Example "Example"
+      **Rate: $0.005 per minute**
+      **100 calls, each lasting 9.1 seconds**
+      **Duration rounding**: Ceiling (always round up to the next whole second)
+      **Cost rounding**: Full-Up (Half-Up) to 4 decimal places
 
-- 100 calls, each 9.1 seconds, at $0.005/min, Full-Up duration rounding, 4 decimal places
+      **Incorrect method**: The following calculation is incorrect because it aggregates call durations before applying billing rules.
+      **100 × 9.1s = 910s = 15.16 min → 15.16 × 0.005 = **$0.0759****
 
-**Incorrect method:**
-100 × 9.1s = 910s = 15.16 min → 15.16 × $0.005 = **$0.0758**
+      **Correct method:** Each call is billed independently.
+      Per call: 9.1s → 10s (Ceiling duration rounding)
 
-**Correct method:**
-Per call: 9.1s → rounded up to 10s → 10/60 × $0.005 = $0.000833 → rounded to 4dp Full-Up = **$0.0009**
-100 calls × $0.0009 = **$0.09**
+      10 ÷ 60 × 0.005 = $0.00083333
 
-The discrepancy here is $0.0142 across just 100 calls. At high call volumes this difference becomes material.
+      Rounded to 4 decimal places (Full-Up) = $0.0008
+
+      100 calls × 0.0008 = $0.0800
+
+      **Total: $0.0800**
+
+      **Difference**:  
+      1. Aggregate duration (incorrect)= $0.0758
+      2. Per-call billing (correct)= $0.0800
+      3. Difference = $0.0042
+
+      Although the difference is only 0.0042 dollars across 100 calls, it scales significantly with high call volumes. Across 1 million similar calls, the discrepancy would be approximately $42.
 
 !!! important
     * Always calculate the cost for each call **individually** and then sum.

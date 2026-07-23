@@ -14,7 +14,7 @@
 
 ## The Billing Lifecycle
 
-Every invoice in ConnexCS originates from a call. The full lifecycle moves through six stages:
+The full lifecycle moves through six stages:
 
 **1. Customer call** — A call is placed through the ConnexCS switch. The Class 4 platform handles routing and begins capturing call detail information from the moment the call connects.
 
@@ -45,7 +45,7 @@ See [Customer CDR](https://docs.connexcs.com/customer/cdr/) for filtering, expor
 
 ## Invoice Generation
 
-ConnexCS generates invoices automatically on the billing cycle configured for each customer account. Each customer can have an independent cycle — one customer might bill monthly, another weekly — depending on the agreement in place.
+ConnexCS supports configurable billing cycles for each customer account, such as weekly or monthly, based on the customer's agreement. When the configured billing period ends, users can manually generate the invoice through the platform. Each customer account can have its own independent billing schedule.
 
 **What the invoice includes:**
 
@@ -54,7 +54,7 @@ ConnexCS generates invoices automatically on the billing cycle configured for ea
 - Tax amounts calculated at the account level (see [Tax Handling](#tax-handling) below)
 - Invoice totals in the customer's configured currency
 
-When the billing cycle triggers, ConnexCS compiles the usage data, applies any recurring charges, calculates tax, and produces a PDF invoice. The invoice is made available to the customer through the customer portal and can be delivered by email.
+When the billing cycle triggers, ConnexCS compiles the usage data, applies any recurring charges, calculates tax, and produces a PDF invoice. The invoice is made available to the customer through the customer portal.
 
 See [Customer Invoices](https://docs.connexcs.com/customer/invoices/) for managing and reviewing invoices.
 
@@ -63,8 +63,6 @@ See [Customer Invoices](https://docs.connexcs.com/customer/invoices/) for managi
 ## Multi-Currency Support
 
 ConnexCS supports billing customers and paying suppliers in different currencies. Customer accounts can each be configured with their own billing currency, allowing you to invoice a UK customer in GBP, a US customer in USD, and a European carrier in EUR — all within the same platform.
-
-Exchange rate handling is configurable at the account level. Check your account settings under **Setup → Settings → Account** for currency configuration options.
 
 ---
 
@@ -116,7 +114,7 @@ ConnexCS enforces billing protection rules before each call connects, not after.
 
 The following guardrails are applied on every call in real time:
 
-**Profit Assurance** — If the provider buy rate for a route exceeds the customer sell rate, the call is blocked before it connects. This prevents negative-margin calls from completing.
+**Profit Assurance** — If the provider buy rate for a route exceeds the customer sell rate, the call is blocked before it connects, helping prevent negative-margin calls. However, calls can still result in a loss if billing parameters, such as the Minimum Call Duration (MCD) or pulse settings, are configured incorrectly.
 
 **Rate Cap** — A maximum per-minute rate can be set for provider routes. Any route priced above the cap is excluded from routing, preventing unexpected carrier surcharge exposure.
 

@@ -16,18 +16,6 @@
 
 </details>
 
-## Two Directions of Billing
-
-ConnexCS billing operates in two directions simultaneously:
-
-**Customer billing** — you charge your customers for calls they place, based on rate cards, billing increments, and any monthly recurring packages.
-
-**Supplier billing** — your carriers charge you for traffic you route through them. ConnexCS tracks these costs separately so you can reconcile supplier invoices against your own CDR-rated costs and monitor margin at every level.
-
-Understanding both directions is essential before configuring any billing model.
-
----
-
 ## ConnexCS Billing Per Channel
 
 Billing per channel is the traditional approach, where the customer pays for a set number of channels or ports — the VoIP equivalent of per-line billing in mobile networks.
@@ -58,36 +46,6 @@ In per-minute billing, the number of seconds used is tallied daily, combined wit
 
 - More expensive than per-channel billing when traffic is consistent and high-volume.
 - Running multiple servers increases cost proportionally.
-
----
-
-## Monthly Recurring Charges (MRC)
-
-MRC packages allow you to apply fixed monthly fees to customer accounts on top of usage-based charges. Common use cases include:
-
-- DID (Direct Inward Dialling) number rental fees
-- Platform access or seat fees
-- Bundled minute allowances billed at a flat rate
-
-MRC packages are configured under **Setup → Config → Packages** and assigned at the customer account level. When an invoice is generated, all applicable MRC charges for the billing period are automatically included alongside usage-based charges. The invoice total reflects both components.
-
-See [Packages](https://docs.connexcs.com/setup/config/packages/) for configuration steps.
-
----
-
-## Re-Rating
-
-Re-rating allows ConnexCS to reprocess historical CDRs using updated rate card values. This is useful when:
-
-- A rate card error is discovered after calls have already been rated and invoiced.
-- A carrier retrospectively adjusts their pricing and you need to realign costs.
-- You are migrating from one rate card structure to another and need historical data to reflect the new model.
-
-When re-rating is triggered, ConnexCS recalculates the cost and revenue for each affected CDR against the corrected rate card. Invoices and reports are updated to reflect the corrected totals.
-
-!!! warning
-    * Re-rating affects historical invoice data.
-    * Always confirm the scope of CDRs to be re-rated and communicate any resulting invoice changes to affected customers before reprocessing.
 
 ---
 
