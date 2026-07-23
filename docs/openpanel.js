@@ -1,9 +1,9 @@
 // OpenPanel analytics (self-hosted at analytics.connexcs.com)
 // Anonymous page-view/referrer tracking only — no identify(), no login on this site.
-// Skipped on localhost so local `mkdocs serve` testing doesn't pollute real analytics.
+// Only runs on connexcs.com hosts, so localhost/other mirrors don't pollute real analytics.
 (function () {
     var host = window.location.hostname;
-    if (!host || host === "localhost" || host === "127.0.0.1") return;
+    if (!host || host.indexOf("connexcs.com") === -1) return;
 
     window.op = window.op || function () { var n = []; return new Proxy(function () { arguments.length && n.push([].slice.call(arguments)) }, { get: function (t, r) { return "q" === r ? n : function () { n.push([r].concat([].slice.call(arguments))) } }, has: function (t, r) { return "q" === r } }) }();
     window.op('init', {
