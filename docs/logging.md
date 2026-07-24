@@ -123,10 +123,10 @@ Use **uppercase** operators to combine search terms.
     - Boolean operators **must** be uppercase (`AND`, `OR`, `NOT`).
     - Lowercase words such as `and` or `or` are treated as normal search text.
     - Operators search across the following fields:
-      - Caller (CLI)
-      - Destination Number
-      - Originating Unit
-      - Call-ID
+        - Caller (CLI)
+        - Destination Number
+        - Originating Unit
+        - Call-ID
 
 ### Date and Time Filtering
 
