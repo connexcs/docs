@@ -206,7 +206,7 @@ It enables you to start interactive AI conversations, manage chat history, explo
 | `list`| Lists all AI conversations| View previous conversations and resume an earlier discussion|`ai list`|
 | `mcp`| Lists available Model Context Protocol (MCP) servers for AI chat| View the MCP servers available to extend the AI assistant with additional tools and context|`ai mcp`|
 | `models` | Lists available AI models and displays daily token usage | Review available language models and monitor your daily AI usage|`ai models`|
-| `score` | Submits feedback for an AI response| Rate the quality or usefulness of a response to help improve future AI interactions|
+| `score` | Submits feedback for an AI response| Rate the quality or usefulness of a response to help improve future AI interactions|`ai score --trace <id> --value <0-1> [--comment <text>]`|
 | `show`| Displays the messages within a selected AI conversation| Review previous prompts and responses from an existing conversation|`ai show`|
 
 ### `api`
