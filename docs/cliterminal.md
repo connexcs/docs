@@ -122,19 +122,19 @@ These commands provide version control and build management capabilities directl
 
 | Command | Description | Example Use Case |Syntax|
 | --------|------------ | ---------------- |------|
-| `backward` | Moves a file **one version back** in its history, restoring the previous version | You made a mistake in the latest edit and want to revert to the version before it |`backward`|
-| `build` | Manages **published builds** of your project. It includes subcommands like `activate`, `forward`, `backward`, and `list` to publish, switch, or view builds | Publish a new documentation version or roll back to an earlier published build|`build`|
-| `diff` | Compares **two versions of a file** and displays the differences between them | Review what changed between Version 5 and Version 7 before publishing | `diff`|
-| `forward`  | Moves a file **one version forward** in its history after it has been moved backward | You reverted a file but later decide to restore the newer version|`forward`|
+| `backward` | Moves a file **one version back** in its history, restoring the previous version | You made a mistake in the latest edit and want to revert to the version before it |`backward [<file-path>]`|
+| `build` | Manages **published builds** of your project. It includes subcommands like `activate`, `forward`, `backward`, and `list` to publish, switch, or view builds | Publish a new documentation version or roll back to an earlier published build|`build activate [build-id]` <br> `build forward` <br> `build backward` <br> `build list [--json]`|
+| `diff` | Compares **two versions of a file** and displays the differences between them | Review what changed between Version 5 and Version 7 before publishing | `diff <file-path> [<from-version>] [<to-version>]`|
+| `forward`  | Moves a file **one version forward** in its history after it has been moved backward | You reverted a file but later decide to restore the newer version|`forward [<file-path>]`|
 | `snapshot` | Creates and manages **project snapshots**, which capture the state of the entire project at a specific point in time| Create a snapshot before making major changes so you can restore the entire project if needed|`snapshot`|
 
 #### Subcommands for `snapshot`
 
 | Subcommand | Description  | Example Use Case |Syntax|
 | ---------- | ------------ | -----------------|------|
-| `create`   | Creates a snapshot of the current project state| Create a recovery point before making significant changes to your project|`snapshot create`|
-| `list`     | Lists all snapshots for the current project| Review available snapshots before restoring a previous project state| `snapshot list`|
-| `restore`  | Restores a previously created snapshot, replacing the current project state| Roll back the project after an unsuccessful deployment or accidental changes|`snapshot restore`|
+| `create`   | Creates a snapshot of the current project state| Create a recovery point before making significant changes to your project|`snapshot create [label]`|
+| `list`     | Lists all snapshots for the current project| Review available snapshots before restoring a previous project state| `snapshot list [--json]`|
+| `restore`  | Restores a previously created snapshot, replacing the current project state| Roll back the project after an unsuccessful deployment or accidental changes|`snapshot restore <snapshot-id> [--yes]`|
 
 ### `commands`
 
@@ -142,19 +142,19 @@ The terminal provides a comprehensive set of commands for interacting with the p
 
 | Command | Description | Example Use Case |Syntax|
 | --------|------------ | ---------------- |------|
-| `audit` |  Displays the setup audit log| Review configuration changes or verify the platform setup after deployment|`audit`|
-| `cd` |  Changes the current virtual directory| Navigate from your home directory to a project folder before editing files|`cd`|
+| `audit` |  Displays the setup audit log| Review configuration changes or verify the platform setup after deployment|`audit [--json] [--limit <n>] [--offset <n>]`|
+| `cd` |  Changes the current virtual directory| Navigate from your home directory to a project folder before editing files|`cd [path]`|
 | `clear`|  Clears the terminal screen| Remove previous command output to start with a clean terminal view|`clear`|
 | `date` | Displays the current server time in UTC| Verify the server time when troubleshooting scheduled jobs or log timestamps|`date`|
 | `dig` | Performs DNS lookups for common record types (A, AAAA, MX, NS, TXT, CNAME, SOA, PTR, SRV, and ANY)| Verify that a domain resolves to the correct IP address or inspect its DNS records|`dig [@server] [type] <hostname> [--json] [--short]`|
-| `docs`|  Searches the ConnexCS documentation| Quickly locate documentation for a feature or command without leaving the terminal|`docs`|
+| `docs`|  Searches the ConnexCS documentation| Quickly locate documentation for a feature or command without leaving the terminal|`docs [--json] [query...]`|
 | `dog` | Alias for the `dig` command| Perform DNS lookups using an alternative command name|`dog [@server] [type] <hostname> [--json] [--short]`|
 | `exit`| Ends the current terminal session| Close the terminal after completing administrative tasks|`exit`|
-| `help` | Displays help information for commands and topics| Learn how a command works or view its available options|`help`|
+| `help` | Displays help information for commands and topics| Learn how a command works or view its available options|`help [command...]`|
 | `history` | Displays the command history for the current session| Review previously executed commands or repeat a recent operation|`history`|
 | `ip`  | Retrieves information about an IP address| Identify the location, ASN, or ownership details of an IP address |`ip [--json] <address>`|
-| `log` | Queries or streams the system log in real time | Monitor logs while troubleshooting a service or verifying system activity|`log`|
-| `ls` | Lists files and directories in the current virtual directory| View the contents of the current directory before opening or modifying files|`ls`|
+| `log` | Queries or streams the system log in real time | Monitor logs while troubleshooting a service or verifying system activity|`log [query] [--tail|-f] [--start <t>] [--end <t>] [--limit <n>] [--json]`|
+| `ls` | Lists files and directories in the current virtual directory| View the contents of the current directory before opening or modifying files|`ls [path]`|
 | `mkdir` | Creates a new directory *(not supported under `/anvil`)*| Organize project files by creating a new folder|`mkdir <path>`|
 | `mtr`| Combines ping and traceroute to analyze the network path to a host| Diagnose packet loss or latency between the platform and a destination|`mtr [-4|-6] [-c count] <host>`|
 | `mv` | Renames or moves a file or directory *(not supported under `/anvil`)*| Rename a configuration file or move it to another directory|`mv <source> <target>`|
@@ -167,12 +167,12 @@ The terminal provides a comprehensive set of commands for interacting with the p
 | `rm` | Removes a file or directory| Delete obsolete files or directories from the workspace|`rm [-r] <path>`|
 | `rmdir`| Removes an empty directory *(not supported under `/anvil`)*| Delete an empty folder that is no longer required|`rmdir <path>`|
 | `run`| Executes a ScriptForge backend script| Run an automation or backend script as part of your workflow|`run <file> [fn] [--quiet] [--key=value ...]`|
-| `tls` | Displays TLS certificate details, including issuer, subject, expiration, and trust status| Verify a server's SSL/TLS certificate before establishing a secure connection|`run <file> [fn] [--quiet] [--key=value ...]`|
+| `tls` | Displays TLS certificate details, including issuer, subject, expiration, and trust status| Verify a server's SSL/TLS certificate before establishing a secure connection|`tls [-p port] [--json] <host>`|
 | `tools`| Lists data manipulation tools available for use in pipelines| Explore the available utilities when building or debugging a pipeline|`tools`|
 | `traceroute`| Displays the network path to a host hop by hop| Identify where network latency or routing issues occur|`traceroute [-4\|-6] [-m max_ttl] [-w timeout] <host>`|
-| `version`| Displays build information, session details, JWT claims, expiration, and rate limit information| Confirm the current platform version or inspect session details|`version`|
+| `version`| Displays build information, session details, JWT claims, expiration, and rate limit information| Confirm the current platform version or inspect session details|`version [--json] [-R|--refresh]`|
 |`whoami`| Displays the authenticated user for the current session| Verify which account is currently authenticated|`whoami`|
-| `whois`| Performs a WHOIS lookup for a domain or IP address *(alias for `rdap`)*| Check the registration information for a domain or public IP address|`whois`|
+| `whois`| Performs a WHOIS lookup for a domain or IP address *(alias for `rdap`)*| Check the registration information for a domain or public IP address|`whois [--json] <domain-or-ip>`|
 
 ### `tools`
 
@@ -182,16 +182,16 @@ These tools can be used individually or combined in pipelines to manipulate comm
 
 | Tool | Description | Example Use Case |Syntax|
 | -----|------------ | ---------------- |------|
-| `cat` | Displays the contents of a file or passes standard input directly to the output| View the contents of a configuration file or pipe data to another command|`cat`|
+| `cat` | Displays the contents of a file or passes standard input directly to the output| View the contents of a configuration file or pipe data to another command|`cat [<file>...]`|
 | `cut`| Extracts specific fields or columns from delimited text| Display only the IP address column from a CSV or log file|`cut -f N [-d DELIM]`|
 | `from-json`| Converts structured records into JSON text lines| Export command output in JSON format for further processing or integration|
 | `grep` | Filters output by matching lines against a specified pattern| Search logs for error messages or find records containing a specific keyword|`grep [-i] [-v] <pattern> [<file>...]`|
-| `head`| Displays the first *N* lines of input (10 by default)| Preview the beginning of a large log or data file|
-| `less`| Displays content one screen at a time, allowing interactive navigation| Browse large files without loading the entire file into the terminal |`less`|
-| `sort` | Sorts lines of text alphabetically or numerically| Organize log entries, IP addresses, or other text-based output|
-| `tail`| Displays the last *N* lines of input (10 by default)| View the most recent log entries or monitor the latest activity|
-| `to-json` | Parses plain text into structured JSON records | Convert text-based output into JSON for use in scripts or pipelines|
-| `wc`| Counts lines, words, and characters in the input | Determine the size of a file or count the number of matching log entries|`wc`|
+| `head`| Displays the first *N* lines of input (10 by default)| Preview the beginning of a large log or data file|`head [-n N] [<file>]`|
+| `less`| Displays content one screen at a time, allowing interactive navigation| Browse large files without loading the entire file into the terminal |`less [<file>...]`|
+| `sort` | Sorts lines of text alphabetically or numerically| Organize log entries, IP addresses, or other text-based output|`sort [-r] [-n] [-u]`|
+| `tail`| Displays the last *N* lines of input (10 by default)| View the most recent log entries or monitor the latest activity|`tail [-n N] [<file>]`|
+| `to-json` | Parses plain text into structured JSON records | Convert text-based output into JSON for use in scripts or pipelines|`to-json`|
+| `wc`| Counts lines, words, and characters in the input | Determine the size of a file or count the number of matching log entries|`wc [-l] [-w] [-c]`|
 
 ### `ai`
 
@@ -209,13 +209,17 @@ It enables you to start interactive AI conversations, manage chat history, explo
 | `score` | Submits feedback for an AI response| Rate the quality or usefulness of a response to help improve future AI interactions|
 | `show`| Displays the messages within a selected AI conversation| Review previous prompts and responses from an existing conversation|`ai show`|
 
-### `api` 
+### `api`
 
 The `api` command enables you to interact with ConnexCS API endpoints without leaving the terminal.
 
 It can be used to send requests, retrieve data, perform administrative operations, and automate platform tasks using the same APIs available to external applications.
 
 This command is useful for testing API endpoints, validating responses, troubleshooting integrations, and executing routine operations directly from the command line.
+
+| Command    | Description | Example Use Case |Syntax|
+| ---------- | ------------| -----------------|------|
+| `get`   | Make a GET request to an API endpoint| Retrieve resource information, such as customer details, call records, routing configurations, or account settings, without modifying the underlying data|`api get`|
 
 #### Example Use Cases
 
@@ -250,9 +254,9 @@ This command is useful for verifying connectivity, measuring latency, troublesho
 | ---------- | ------------| -----------------|------|
 | `dns` | Resolves DNS records for a target using the Globalping probe network| Verify how a domain resolves from different regions around the world|`lobalping dns [--from <location>] [--limit <n>] [--json] <target> [--type <A\|AAAA\|MX\|...>]`|
 | `http`| Sends an HTTP request to a target from the Globalping probe network| Check whether a website or API endpoint is accessible globally and validate its HTTP response|`globalping http [--from <location>] [--limit <n>] [--json] <target> [--method <GET\|HEAD>] [--path <path>]`|
-| `limits`| Displays the current Globalping rate limits| Monitor your available request quota before running network tests|`globalping limits`|
+| `limits`| Displays the current Globalping rate limits| Monitor your available request quota before running network tests|`globalping limits [--json]`|
 | `mtr`| Performs a My Traceroute (MTR) test from the Globalping probe network| Diagnose packet loss or latency across multiple network hops from remote locations|`globalping mtr [--from <location>] [--limit <n>] [--json] <target>`|
-| `ping`| Sends ICMP echo requests from the Globalping probe network| Measure network latency and verify host availability from different geographic regions|`  globalping ping [--from <location>] [--limit <n>] [--json] <target> [--packets <n>]`|
+| `ping`| Sends ICMP echo requests from the Globalping probe network| Measure network latency and verify host availability from different geographic regions|`globalping ping [--from <location>] [--limit <n>] [--json] <target> [--packets <n>]`|
 | `traceroute` | Performs a traceroute from the Globalping probe network| Identify the network path and locate routing issues affecting a destination|`globalping traceroute [--from <location>] [--limit <n>] [--json] <target>`|
 
 ### `hearth`
@@ -262,6 +266,18 @@ The `hearth` command provides an interactive interface for managing Hearth datab
 It allows you to browse and manage schemas, create and delete schemas, work with tables, and build data queries through a guided terminal experience.
 
 Instead of requiring manual SQL commands, the interactive interface presents menus and prompts that simplify database management and data exploration.
+
+| Command | Description | Example Use Case | Syntax |
+|---------|-------------|------------------|--------|
+| `hearth` | Launches the interactive Hearth builder for managing schemas, tables, and queries | Browse schemas, manage tables, and build queries through an interactive interface | `hearth` |
+| `hearth whoami` | Displays your authenticated Hearth identity. | Verify the currently authenticated Hearth user before performing administrative tasks. | `hearth whoami` |
+| `hearth schemas` | Lists all available Hearth schemas. | View existing schemas before selecting one to manage or query. | `hearth schemas` |
+| `hearth schemas create | Creates a new schema. | Create a schema to organize application or project data. | `hearth schemas create <name>` |
+| **hearth schemas drop** | Deletes an existing schema. | Remove a schema that is no longer required. | `hearth schemas drop <name> [--force]` |
+| **hearth tables** | Lists all tables within the specified schema. | View the tables available in a schema before querying or managing data. | `hearth tables <schema>` |
+| **hearth tables drop** | Deletes a table from the specified schema. | Remove an obsolete or unused table from a schema. | `hearth tables drop <schema> <table>` |
+| **hearth table** | Displays metadata for a specific table. | Inspect a table's structure, columns, and metadata before querying it. | `hearth table <schema> <table>` |
+| **hearth `<schema>` `<table>`** | Executes a one-shot query to list records from the specified table. Optional filters can be applied to narrow the results. | Quickly retrieve records from a table without entering the interactive builder. | `hearth <schema> <table> [filter...]` |
 
 #### Features
 
