@@ -39,14 +39,14 @@ For JavaScript and TypeScript applications, ConnexCS provides the official SDK:
 
 👉 **@connexcs/hearth**
 
-https://www.npmjs.com/package/@connexcs/hearth
+[https://www.npmjs.com/package/@connexcs/hearth](https://www.npmjs.com/package/@connexcs/hearth)
 
 !!! info
     Hearth can be accessed through its REST API or the official **@connexcs/hearth** JavaScript/TypeScript SDK. Both communicate with the same Hearth database, allowing you to choose whichever best fits your application or development environment.
 
     For installation instructions, API documentation, SDK reference, and additional examples, visit:
 
-    https://www.npmjs.com/package/@connexcs/hearth
+    [https://www.npmjs.com/package/@connexcs/hearth](https://www.npmjs.com/package/@connexcs/hearth)
 
 ---
 
@@ -69,12 +69,6 @@ Access and manage application data from ScriptForge using the official JavaScrip
 Integrate external applications and services with ConnexCS while maintaining isolated application data within Hearth.
 
 ---
-
-## Authentication & Security
-
-### Flow (High Level)
-
-Flow (high level)
 
 ## Authentication & Security
 
