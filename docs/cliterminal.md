@@ -114,7 +114,7 @@ Process, filter, transform, and analyze command output using built-in text proce
 
 ## Commands
 
-### `anvil` 
+### `anvil`
 
 `anvil` commands are command-line interface (CLI) commands that enable users to manage project versions, compare revisions, publish builds, and create or restore project snapshots.
 
@@ -122,11 +122,11 @@ These commands provide version control and build management capabilities directl
 
 | Command | Description | Example Use Case |Syntax|
 | --------|------------ | ---------------- |------|
-| `backward` | Moves a file **one version back** in its history, restoring the previous version | You made a mistake in the latest edit and want to revert to the version before it |
-| `build` | Manages **published builds** of your project. It includes subcommands like `activate`, `forward`, `backward`, and `list` to publish, switch, or view builds | Publish a new documentation version or roll back to an earlier published build|
-| `diff` | Compares **two versions of a file** and displays the differences between them | Review what changed between Version 5 and Version 7 before publishing |
-| `forward`  | Moves a file **one version forward** in its history after it has been moved backward | You reverted a file but later decide to restore the newer version|
-| `snapshot` | Creates and manages **project snapshots**, which capture the state of the entire project at a specific point in time| Create a snapshot before making major changes so you can restore the entire project if needed|
+| `backward` | Moves a file **one version back** in its history, restoring the previous version | You made a mistake in the latest edit and want to revert to the version before it |`backward`|
+| `build` | Manages **published builds** of your project. It includes subcommands like `activate`, `forward`, `backward`, and `list` to publish, switch, or view builds | Publish a new documentation version or roll back to an earlier published build|`build`|
+| `diff` | Compares **two versions of a file** and displays the differences between them | Review what changed between Version 5 and Version 7 before publishing | `diff`|
+| `forward`  | Moves a file **one version forward** in its history after it has been moved backward | You reverted a file but later decide to restore the newer version|`forward`|
+| `snapshot` | Creates and manages **project snapshots**, which capture the state of the entire project at a specific point in time| Create a snapshot before making major changes so you can restore the entire project if needed|`snapshot`|
 
 #### Subcommands for `snapshot`
 
@@ -160,7 +160,7 @@ The terminal provides a comprehensive set of commands for interacting with the p
 | `mv` | Renames or moves a file or directory *(not supported under `/anvil`)*| Rename a configuration file or move it to another directory|`mv <source> <target>`|
 | `nano` | Opens an Anvil file in a full-screen text editor| Edit a configuration or documentation file directly from the terminal|`nano <file>`|
 | `network-ping` | Sends ping requests from the platform's network instead of the current terminal session| Verify connectivity from the platform to a remote host|`network-ping [--json] <host>`|
-| `ping` | Sends ICMP echo requests to a host | Confirm whether a server or network device is reachable|`ping [-c count] [-i interval] [-W timeout] [-s size] [-q] [-4|-6] <host>`|
+| `ping` | Sends ICMP echo requests to a host | Confirm whether a server or network device is reachable|`ping [-c count] [-i interval] [-W timeout] [-s size] [-q] [-4\|-6] <host>`|
 | `ping-sip` | Sends a SIP OPTIONS request and displays the response| Verify that a SIP endpoint is online and responding to SIP requests|`ping-sip [-p port] [-c count] [-t timeout_ms] [--json] <host>[:port]`|
 | `pwd` | Displays the current virtual directory| Confirm your current location before running file management commands|`pwd`|
 | `rdap` | Retrieves domain or IP registration information using RDAP| View ownership and registration details for a domain or IP address|`rdap [--json] <domain-or-ip>`|
@@ -169,7 +169,7 @@ The terminal provides a comprehensive set of commands for interacting with the p
 | `run`| Executes a ScriptForge backend script| Run an automation or backend script as part of your workflow|`run <file> [fn] [--quiet] [--key=value ...]`|
 | `tls` | Displays TLS certificate details, including issuer, subject, expiration, and trust status| Verify a server's SSL/TLS certificate before establishing a secure connection|`run <file> [fn] [--quiet] [--key=value ...]`|
 | `tools`| Lists data manipulation tools available for use in pipelines| Explore the available utilities when building or debugging a pipeline|`tools`|
-| `traceroute`| Displays the network path to a host hop by hop| Identify where network latency or routing issues occur|`traceroute [-4|-6] [-m max_ttl] [-w timeout] <host>`|
+| `traceroute`| Displays the network path to a host hop by hop| Identify where network latency or routing issues occur|`traceroute [-4\|-6] [-m max_ttl] [-w timeout] <host>`|
 | `version`| Displays build information, session details, JWT claims, expiration, and rate limit information| Confirm the current platform version or inspect session details|`version`|
 |`whoami`| Displays the authenticated user for the current session| Verify which account is currently authenticated|`whoami`|
 | `whois`| Performs a WHOIS lookup for a domain or IP address *(alias for `rdap`)*| Check the registration information for a domain or public IP address|`whois`|
@@ -182,7 +182,7 @@ These tools can be used individually or combined in pipelines to manipulate comm
 
 | Tool | Description | Example Use Case |Syntax|
 | -----|------------ | ---------------- |------|
-| `cat` | Displays the contents of a file or passes standard input directly to the output| View the contents of a configuration file or pipe data to another command|
+| `cat` | Displays the contents of a file or passes standard input directly to the output| View the contents of a configuration file or pipe data to another command|`cat`|
 | `cut`| Extracts specific fields or columns from delimited text| Display only the IP address column from a CSV or log file|`cut -f N [-d DELIM]`|
 | `from-json`| Converts structured records into JSON text lines| Export command output in JSON format for further processing or integration|
 | `grep` | Filters output by matching lines against a specified pattern| Search logs for error messages or find records containing a specific keyword|`grep [-i] [-v] <pattern> [<file>...]`|
@@ -248,11 +248,11 @@ This command is useful for verifying connectivity, measuring latency, troublesho
 
 | Command    | Description | Example Use Case |Syntax|
 | ---------- | ------------| -----------------|------|
-| `dns` | Resolves DNS records for a target using the Globalping probe network| Verify how a domain resolves from different regions around the world|`lobalping dns [--from <location>] [--limit <n>] [--json] <target> [--type <A|AAAA|MX|...>]`|
-| `http`| Sends an HTTP request to a target from the Globalping probe network| Check whether a website or API endpoint is accessible globally and validate its HTTP response|`globalping http [--from <location>] [--limit <n>] [--json] <target> [--method <GET|HEAD>] [--path <path>]`|
+| `dns` | Resolves DNS records for a target using the Globalping probe network| Verify how a domain resolves from different regions around the world|`lobalping dns [--from <location>] [--limit <n>] [--json] <target> [--type <A\|AAAA\|MX\|...>]`|
+| `http`| Sends an HTTP request to a target from the Globalping probe network| Check whether a website or API endpoint is accessible globally and validate its HTTP response|`globalping http [--from <location>] [--limit <n>] [--json] <target> [--method <GET\|HEAD>] [--path <path>]`|
 | `limits`| Displays the current Globalping rate limits| Monitor your available request quota before running network tests|`globalping limits`|
 | `mtr`| Performs a My Traceroute (MTR) test from the Globalping probe network| Diagnose packet loss or latency across multiple network hops from remote locations|`globalping mtr [--from <location>] [--limit <n>] [--json] <target>`|
-| `ping`| Sends ICMP echo requests from the Globalping probe network| Measure network latency and verify host availability from different geographic regions|globalping ping [--from <location>] [--limit <n>] [--json] <target> [--packets <n>]|
+| `ping`| Sends ICMP echo requests from the Globalping probe network| Measure network latency and verify host availability from different geographic regions|`  globalping ping [--from <location>] [--limit <n>] [--json] <target> [--packets <n>]`|
 | `traceroute` | Performs a traceroute from the Globalping probe network| Identify the network path and locate routing issues affecting a destination|`globalping traceroute [--from <location>] [--limit <n>] [--json] <target>`|
 
 ### `hearth`
@@ -366,7 +366,7 @@ This command is useful for administrators and network engineers who need to vali
 |`anyedge`|	Lists all configured AnyEdge servers|View available AnyEdge servers to verify deployment locations or troubleshoot edge connectivity|`server anyedge`|
 |`list`|Lists all configured servers|Review the servers available in the current environment before performing diagnostics|`server list`|
 |`mtr`|	Runs an MTR (My Traceroute) test to a target from a server's network vantage point|Diagnose latency, routing issues, or packet loss as seen from a specific server|``server mtr`|
-|`ping`|Sends ICMP echo requests from a server's network vantage point|Verify whether a destination is reachable from a specific server|``server ping`|
+|`ping`|Sends ICMP echo requests from a server's network vantage point|Verify whether a destination is reachable from a specific server|`server ping`|
 |`rtp`|	Lists all configured RTP servers|View the RTP servers used for media processing and verify their availability|`server rtp`|
 
 ### `sql`
