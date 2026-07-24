@@ -10,20 +10,18 @@
 
 <strong>Difficulty</strong>: Intermediate<br>
 
-<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Time Required</strong>: 5–10 minutes<br>
 
 <strong>Prerequisites</strong>:<br>
 <ul>
-<li>Basic knowledge of JavaScript or TypeScript</li>
-<li>Access to a ConnexCS account</li>
+<li>A ConnexCS account</li>
 <li>A valid JWT token for authentication</li>
-<li>Access to a Hearth instance</li>
-<li>Familiarity with Anvil or Node.js development</li>
+<li>Basic familiarity with REST APIs or JavaScript/TypeScript</li>
 </ul>
 
-<strong>Related Topics</strong>: Anvil, ScriptForge, Apps Platform, Terminal Tools (CX-Tools), JWT Authentication<br>
+<strong>Related Topics</strong>: Anvil, ScriptForge, Apps Platform, REST API, JavaScript SDK, JWT Authentication<br>
 
-<strong>Next Steps</strong>: Install or import the Hearth SDK, create a Hearth client, authenticate using a JWT token, connect to a schema, perform database operations, and integrate Hearth into your Anvil applications.<br>
+<strong>Next Steps</strong>: Learn how Hearth works, authenticate using a JWT token, choose between the REST API or JavaScript SDK, and explore the official SDK documentation and API reference.<br>
 
 </details>
 
@@ -31,41 +29,44 @@
 
 ## Overview
 
-**Hearth** is the official ConnexCS external database client that enables applications to securely store and retrieve data independently of the core ConnexCS platform database.
+**Hearth** is the ConnexCS managed database for storing and managing application data.
 
-It provides a lightweight JavaScript/TypeScript SDK for connecting to Hearth services, authenticating requests, and performing database operations from applications such as **Anvil**, custom applications, and external `Node.js` services.
+It enables developers to create schemas and tables, store and query structured data, and manage application data through a `REST API` or the official `JavaScript/TypeScript SDK`.
 
-Unlike the internal ConnexCS platform database, Hearth is designed as a dedicated application data layer. This separation allows developers to build applications that maintain their own schemas and tables without interacting directly with the platform's operational databases.
+Hearth provides a secure, multi-tenant environment where application data is isolated from the core ConnexCS platform, allowing developers to build applications without managing their own database infrastructure.
 
-Hearth is distributed as an npm package:
+For JavaScript and TypeScript applications, ConnexCS provides the official SDK:
 
 👉 **@connexcs/hearth**
 
-[https://www.npmjs.com/package/@connexcs/hearth](https://www.npmjs.com/package/@connexcs/hearth)
+https://www.npmjs.com/package/@connexcs/hearth
 
 !!! info
-    Hearth provides a consistent API for managing external application data. Although it is distributed as an npm package for Node.js applications, it can also be imported directly into **Anvil** using ES Modules (ESM), making it suitable for both server-side and browser-based application development.
+    Hearth can be accessed through its REST API or the official **@connexcs/hearth** JavaScript/TypeScript SDK. Both communicate with the same Hearth database, allowing you to choose whichever best fits your application or development environment.
 
-    For installation instructions, API reference, and additional examples, visit:
-    [https://www.npmjs.com/package/@connexcs/hearth](https://www.npmjs.com/package/@connexcs/hearth)
+    For installation instructions, API documentation, SDK reference, and additional examples, visit:
+
+    https://www.npmjs.com/package/@connexcs/hearth
+
+---
 
 ## Who is this for?
 
-### Application Developers
+### Developers
 
-Build applications that require persistent storage independent of the ConnexCS platform database.
+Build applications that require secure, persistent storage for structured data using either the Hearth REST API or the official JavaScript SDK.
 
-## Anvil Developers
+### Anvil Developers
 
-Use Hearth as the primary database layer for Anvil applications to create, query, and manage application-specific data.
+Use Hearth as the primary database for Anvil applications to store, retrieve, and manage application-specific data.
 
-## Script Developers
+### ScriptForge Developers
 
-Access and manipulate structured data from JavaScript or TypeScript applications using a simple SDK.
+Access and manage application data from ScriptForge using the official JavaScript SDK or the REST API.
 
-## Platform Integrators
+### Platform Integrators
 
-Integrate external services with ConnexCS while maintaining isolated application data.
+Integrate external applications and services with ConnexCS while maintaining isolated application data within Hearth.
 
 ---
 
@@ -73,90 +74,114 @@ Integrate external services with ConnexCS while maintaining isolated application
 
 ### Flow (High Level)
 
-1. Import the Hearth SDK into your application.
-2. Create a client using the Hearth server URL.
-3. Authenticate using a valid JWT token.
-4. Connect to the required schema.
-5. Perform CRUD operations against tables within the schema.
-6. Handle authentication and database errors using `HearthError`.
+Flow (high level)
 
-Authentication is performed using JWT tokens, ensuring only authorized applications can access Hearth resources.
+## Authentication & Security
 
+### Flow (High Level)
+
+1. **Inside the ConnexCS platform** (for example, ScriptForge), your identity is already established, and the authentication token is passed through automatically.
+2. **From an external application**, provide a valid JWT containing at least your `userId`, `email`, `accountId`, and a space-separated list of scopes.
+3. Every request must pass two independent authorization checks:
+    - **Scopes** – Determine which operations the token is permitted to perform, such as reading or writing data, creating schemas, or managing tables.
+    - **Grants** – Verify that the authenticated user or account has permission to access the requested schema or table.
+4. Verify your identity and assigned scopes at any time by calling the `GET /api/v1/whoami` endpoint.
+
+### Common Scopes
+
+| Scope | Description |
+|--------|-------------|
+| `hearth:data:read` | Read rows (list records and fetch by ID). |
+| `hearth:data:write` | Insert, update, delete, and bulk-load rows. |
+| `hearth:schema:create` | Create schemas. |
+| `hearth:schema:drop` | Drop schemas. |
+| `hearth:ddl:manage` | Create, alter, and drop tables. |
+| `hearth:grants:manage` | Manage schema visibility and access permissions. |
+| `hearth:snapshot:read` | Download schema snapshots. |
+| `hearth:backup:manage` | Start and monitor backup jobs. |
 ---
 
 ## Core Concepts
 
-### Client
+### Schemas
 
-The Hearth client represents an authenticated connection to a Hearth server. All database operations are performed through the client.
-
----
-
-### Hearth Server
-
-The Hearth server is the endpoint that hosts one or more application databases.
-
-Example:
-
-```text
-https://hearth.connexcs.com
-```
-
----
-
-### Schema
-
-A schema acts as the logical database for an application.
-
-Each schema can contain multiple tables and is commonly used to isolate data between different applications or services.
-
-Examples include:
-
-* CRM
-* Contact Center
-* Custom Application Database
+Schemas are logical containers for application data. Each schema contains one or more tables and helps organize data for different applications or services.
 
 ---
 
 ### Tables
 
-Each schema contains one or more tables that store structured records.
-
-Applications can perform standard database operations such as:
-
-* Create
-* Read
-* Update
-* Delete
-* Query
+Tables store structured application data using typed columns. Applications can create, query, update, and delete records through the Hearth API or SDK.
 
 ---
 
-## Installation
+### Rows
 
-Install Hearth using npm:
+Rows are your actual data, read via a compact query language (filters, sorting, field selection, pagination) and written as `json` objects or bulk-loaded as `csv`.
+
+---
+
+### Multi-tenancy
+
+Hearth is a multi-tenant database. Each ConnexCS account has isolated application data, ensuring users only access schemas and tables they are permitted to use.
+
+---
+
+## REST API or JavaScript SDK?
+
+Hearth supports two methods of interacting with your data:
+
+- **REST API** — Suitable for any programming language or application capable of making authenticated HTTP requests.
+- **JavaScript SDK (`@connexcs/hearth`)** — The official JavaScript/TypeScript client that simplifies authentication, query building, streaming, and error handling.
+
+Both options connect to the same Hearth database, allowing you to choose the approach that best suits your application.
+
+### Using the REST API
 
 ```bash
-npm install @connexcs/hearth
+curl -G https://hearth.connexcs.com/api/v1/crm/contacts \
+  -H "Authorization: Bearer $HEARTH_TOKEN" \
+  --data-urlencode "filter[name][ilike]=%ada%" \
+  --data-urlencode "sort=-created_at" \
+  --data-urlencode "limit=50"
 ```
+
+### Using the JavaScript SDK
+
+```typescript
+import { createClient } from "@connexcs/hearth";
+
+const hearth = createClient("https://hearth.connexcs.com", {
+  schema: "crm",
+  getToken: () => auth.getAccessToken(),
+});
+
+const contacts = await hearth
+  .from("contacts")
+  .select("id", "name", "created_at")
+  .ilike("name", "%ada%")
+  .order("created_at", { ascending: false })
+  .limit(50);
+```
+
+For additional examples, installation instructions, and the complete API and SDK reference, visit the official **@connexcs/hearth** package documentation.
 
 ---
 
-## Basic Usage
+## Error Handling
 
-Create a Hearth client:
+Hearth returns standard HTTP status codes together with a consistent JSON error response containing an error code, message, and request ID.
 
-```javascript
-import { createClient } from '@connexcs/hearth'
+```bash
 
-const client = await createClient({
-    url: 'https://hearth.connexcs.com',
-    token: '<JWT_TOKEN>',
-    schema: 'CRM'
-})
+{
+  "code": "not_found",
+  "message": "Resource not found",
+  "requestId": "01J8ZK..."
+}
 ```
 
-Once connected, the client can access schemas, tables, and perform database operations.
+When using the JavaScript SDK, these responses are automatically exposed as typed `HearthError` exceptions, making error handling simpler within JavaScript and TypeScript applications.
 
 ---
 
@@ -166,13 +191,13 @@ Since Anvil uses **ES Modules (ESM)**, Hearth should be imported directly from a
 
 ### Import Hearth
 
-```javascript
+```js
 import { createClient, HearthError } from 'https://esm.sh/@connexcs/hearth'
 ```
 
 ### Create a Client
 
-```javascript
+```js
 const client = await createClient({
     url: 'https://hearth.connexcs.com',
     token: jwtToken,
@@ -180,7 +205,7 @@ const client = await createClient({
 })
 ```
 
-After creating the client, you can:
+**After creating the client, you can**:
 
 * Create or access schemas
 * Create tables
@@ -189,47 +214,17 @@ After creating the client, you can:
 * Delete records
 * Query stored data
 
-!!! note
+!!! Info "Please note"
     When using Hearth in **Anvil**, ensure your application is configured to use **ES Modules (ESM)**. Since Anvil imports packages directly from ESM-compatible sources, use the following import statement:
 
     ```javascript
     import { createClient, HearthError } from 'https://esm.sh/@connexcs/hearth'
     ```
 
-## Error Handling
-
-Hearth exposes a dedicated `HearthError` class for handling database-related exceptions.
-
-Example:
-
-```javascript
-try {
-    // Hearth operations
-}
-catch (error) {
-    if (error instanceof HearthError) {
-        console.error(error.message)
-    }
-}
-```
-
----
-
-## Best Practices
-
-* Store JWT tokens securely and never expose them publicly.
-* Use separate schemas for different applications whenever possible.
-* Reuse an existing client instead of creating multiple connections.
-* Handle `HearthError` exceptions gracefully.
-* Keep application data isolated from the core ConnexCS platform database.
-* Follow the principle of least privilege when granting database access.
-
----
-
 ## Additional Resources
 
-**Official npm Package**
+### Official JavaScript SDK
 
-[https://www.npmjs.com/package/@connexcs/hearth](https://www.npmjs.com/package/@connexcs/hearth)
+https://www.npmjs.com/package/@connexcs/hearth
 
-For complete API documentation, supported methods, installation instructions, and advanced examples, refer to the official Hearth package documentation.
+For complete installation instructions, API documentation, SDK reference, and advanced usage examples, refer to the official **@connexcs/hearth** package documentation.
