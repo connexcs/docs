@@ -184,7 +184,7 @@ These tools can be used individually or combined in pipelines to manipulate comm
 | -----|------------ | ---------------- |------|
 | `cat` | Displays the contents of a file or passes standard input directly to the output| View the contents of a configuration file or pipe data to another command|`cat [<file>...]`|
 | `cut`| Extracts specific fields or columns from delimited text| Display only the IP address column from a CSV or log file|`cut -f N [-d DELIM]`|
-| `from-json`| Converts structured records into JSON text lines| Export command output in JSON format for further processing or integration|
+| `from-json`| Converts structured records into JSON text lines| Export command output in JSON format for further processing or integration|`from-json`
 | `grep` | Filters output by matching lines against a specified pattern| Search logs for error messages or find records containing a specific keyword|`grep [-i] [-v] <pattern> [<file>...]`|
 | `head`| Displays the first *N* lines of input (10 by default)| Preview the beginning of a large log or data file|`head [-n N] [<file>]`|
 | `less`| Displays content one screen at a time, allowing interactive navigation| Browse large files without loading the entire file into the terminal |`less [<file>...]`|
@@ -204,7 +204,7 @@ It enables you to start interactive AI conversations, manage chat history, explo
 | `chat`   | Starts an interactive AI chat session| Ask questions about the platform, generate scripts, troubleshoot issues, or receive configuration guidance without leaving the terminal|`ai chat`|
 | `delete` | Deletes an existing AI conversation| Remove completed or obsolete conversations to keep your chat history organized|`ai deldete`|
 | `list`| Lists all AI conversations| View previous conversations and resume an earlier discussion|`ai list`|
-| `mcp`| Lists available Model Context Protocol (MCP) servers for AI chat| View the MCP servers available to extend the AI assistant with additional tools and context|
+| `mcp`| Lists available Model Context Protocol (MCP) servers for AI chat| View the MCP servers available to extend the AI assistant with additional tools and context|`ai mcp`|
 | `models` | Lists available AI models and displays daily token usage | Review available language models and monitor your daily AI usage|`ai models`|
 | `score` | Submits feedback for an AI response| Rate the quality or usefulness of a response to help improve future AI interactions|
 | `show`| Displays the messages within a selected AI conversation| Review previous prompts and responses from an existing conversation|`ai show`|
@@ -272,12 +272,12 @@ Instead of requiring manual SQL commands, the interactive interface presents men
 | `hearth` | Launches the interactive Hearth builder for managing schemas, tables, and queries | Browse schemas, manage tables, and build queries through an interactive interface | `hearth` |
 | `hearth whoami` | Displays your authenticated Hearth identity. | Verify the currently authenticated Hearth user before performing administrative tasks. | `hearth whoami` |
 | `hearth schemas` | Lists all available Hearth schemas. | View existing schemas before selecting one to manage or query. | `hearth schemas` |
-| `hearth schemas create | Creates a new schema. | Create a schema to organize application or project data. | `hearth schemas create <name>` |
-| **hearth schemas drop** | Deletes an existing schema. | Remove a schema that is no longer required. | `hearth schemas drop <name> [--force]` |
-| **hearth tables** | Lists all tables within the specified schema. | View the tables available in a schema before querying or managing data. | `hearth tables <schema>` |
-| **hearth tables drop** | Deletes a table from the specified schema. | Remove an obsolete or unused table from a schema. | `hearth tables drop <schema> <table>` |
-| **hearth table** | Displays metadata for a specific table. | Inspect a table's structure, columns, and metadata before querying it. | `hearth table <schema> <table>` |
-| **hearth `<schema>` `<table>`** | Executes a one-shot query to list records from the specified table. Optional filters can be applied to narrow the results. | Quickly retrieve records from a table without entering the interactive builder. | `hearth <schema> <table> [filter...]` |
+| `hearth schemas create` | Creates a new schema. | Create a schema to organize application or project data. | `hearth schemas create <name>` |
+| `hearth schemas drop` | Deletes an existing schema. | Remove a schema that is no longer required. | `hearth schemas drop <name> [--force]` |
+| `hearth tables` | Lists all tables within the specified schema. | View the tables available in a schema before querying or managing data. | `hearth tables <schema>` |
+| `hearth tables drop` | Deletes a table from the specified schema. | Remove an obsolete or unused table from a schema. | `hearth tables drop <schema> <table>` |
+| `hearth table` | Displays metadata for a specific table. | Inspect a table's structure, columns, and metadata before querying it. | `hearth table <schema> <table>` |
+| `hearth <schema> <table>`| Executes a one-shot query to list records from the specified table. Optional filters can be applied to narrow the results. | Quickly retrieve records from a table without entering the interactive builder. | `hearth <schema> <table> [filter...]` |
 
 #### Features
 
@@ -294,11 +294,11 @@ The interactive Hearth interface enables you to:
 
 | Task              | Description  |
 | ----------------- | ------------ |
-| Browse schemas    | View all available schemas before selecting one to work with|
-| Create a schema   | Create a new schema to organize application data|
-| Manage tables     | Navigate to a schema and view or modify its tables|
-| Query data        | Build queries interactively without manually writing SQL|
-| Explore databases | Inspect existing database structures during development or troubleshooting|
+| **Browse schemas**    | View all available schemas before selecting one to work with|
+| **Create a schema**   | Create a new schema to organize application data|
+| **Manage tables**     | Navigate to a schema and view or modify its tables|
+| **Query data**        | Build queries interactively without manually writing SQL|
+| **Explore databases** | Inspect existing database structures during development or troubleshooting|
 
 #### Typical Workflow
 
