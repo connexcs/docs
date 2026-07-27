@@ -128,29 +128,24 @@ flowchart TD
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`. <br><img src= "/apps/img/cd1.png" width= "900" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`. <br><img src= "/apps/img/cd1new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/cd2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. A window will appear, hit `Install` again. <br><img src= "/apps/img/cd2new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. In the `Installed Versions` tab click `Config`. <br><img src= "/apps/img/cd3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. In the `Installed Versions` tab click `Config`. <br><img src= "/apps/img/cd3new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. A window will open, prompting you to enter the following details:
-      + Select the `Customer` for the drop-down. The account from which the call will be initiated.
-      + Enter the `API Key`. It acts as a gatekeeper, maintaining the security, reliability, and integrity of API-based interactions. API Keys are generated randomly for each customer as soon as you press `+Add`.
-      + Enter the `Extension`. Number that will be called as one leg of the call. <br><img src= "/apps/img/cd4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
+      + Select the `Class 4 server` (from the drop-down) that routes outbound calls to the destination number through the configured carriers.
+      + Select the `Class 5 server` that manages customer extensions and places the call to the configured extension before connecting it to the destination.
+      + `Customer Portal Domain`: Select the customer portal domain that hosts the Click-2-Dial application and generates the API endpoint. The API endpoint used by external applications to send Click-2-Dial requests. Applications must send a POST request with a valid API key and destination phone number.
+      + `API Keys`:
+          + `Customer`: Select the customer account that will be authorized to use the Click-2-Dial API. The generated API key is associated with this customer.
+          + `API Key`: A unique authentication key generated for the selected customer. External applications must include this key in every Click-2-Dial API request to authenticate and initiate calls.
+          + `CLI`: Specify the Caller Line Identification (Caller ID) that is displayed to the destination party when the outbound call is placed. Enter the number in international format (for example, 441234567890).
+          + `Extension`: Specify the extension that should be called first. When a valid API request is received, the Click-2-Dial application rings this extension and, once answered, connects it to the destination number.
+          + `Add Row`: Click Add Row to create a new Click-2-Dial API configuration for another customer.
+          + `Delete`: Click the Delete icon to remove the selected customer's API key configuration from the Click-2-Dial application.
 5. Click `Save`.
-6. Navigate to: **IDE :material-menu-right: Click-2-Dial Application :material-menu-right: Script Forge (Click-2-Dial Originate) :material-menu-right: Settings :material-menu-right: Endpoint URLs.** This section provides the API endpoint that allows external systems (or internal workflows) to trigger the ScriptForge function `send` via an HTTP request. <br><img src= "/apps/img/cd5.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">.</br>
-
-7. **Technical Explanation**
-      + **Domain** → Specifies the base host where the API is exposed.
-      + **Function Name (send)** → Maps to the underlying ScriptForge function to be executed.
-      + **Final URL** → Fully qualified endpoint that accepts HTTP requests to trigger the function. Enter the `API` from the `Config`. <br><img src= "/apps/img/cd6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
-
-8. When this endpoint is called:
-      1. The request is routed to the ScriptForge execution layer.
-      2. The specified function (send) is invoked.
-      3. Any defined logic, integrations, or side effects are executed.
 
 !!! Note "This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function."
 
