@@ -128,9 +128,9 @@ flowchart TD
 
 #### Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`. <br><img src= "/apps/img/cd1new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`. <br><img src= "/apps/img/cd1new1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. A window will appear, hit `Install` again. <br><img src= "/apps/img/cd2new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. A window will appear, hit `Install` again. <br><img src= "/apps/img/cd2new1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. In the `Installed Versions` tab click `Config`. <br><img src= "/apps/img/cd3new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -468,7 +468,7 @@ Peering Hub provides a centralized interface to:
 #### How It Works
 
 ```mermaid
-flowchart LR
+flowchart TD
     A[Generate Private Key] --> B[Create Certificate Request]
     B --> C[Submit to iConnectiv STI-PA]
     C --> D[Certificate Issued]
@@ -498,13 +498,13 @@ flowchart LR
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Peering Hub** and click `Install`. <br><img src= "/apps/img/ph1.png"  style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/ph2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. A window will appear, hit `Install` again. <br><img src= "/apps/img/ph2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. In the `Installed Versions` tab click `Config`. This section is used to configure the API endpoint that the Peering Hub application uses to communicate with the Peering Hub service. The configured URL is used for all requests related to STIR/SHAKEN certificate management. <br><img src= "/apps/img/ph3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. A window will open, prompting you to enter the following details:
-   1. `API Base URL`: Specify the base URL of the Peering Hub API. The application sends all requests, such as certificate provisioning, key management, and deployment, to this endpoint. **Only change this value if you need to connect to a different Peering Hub environment, such as a testing or private deployment.**
-   2. Click `Save` to apply and store the configured API Base URL. All future requests from the Peering Hub application will use the saved endpoint.
-   3. Click `Reset to Default` to restore the API Base URL to the default Peering Hub endpoint (https://app-api.peeringhub.io). Use this option to discard any custom configuration and reconnect to the default service.
+         1. `API Base URL`: Specify the base URL of the Peering Hub API. The application sends all requests, such as certificate provisioning, key management, and deployment, to this endpoint. **Only change this value if you need to connect to a different Peering Hub environment, such as a testing or private deployment.**
+         2. Click `Save` to apply and store the configured API Base URL. All future requests from the Peering Hub application will use the saved endpoint.
+         3. Click `Reset to Default` to restore the API Base URL to the default Peering Hub endpoint (https://app-api.peeringhub.io). Use this option to discard any custom configuration and reconnect to the default service.
 5. Navigate to **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**. Click on the `PeeringHub` button. <br><img src= "/apps/img/ph4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-6. Sign in to PeeringHub. <br><img src= "/apps/img/ph5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> After loogin in you directly migrate certificate.
+6. Sign in to PeeringHub. <br><img src= "/apps/img/ph5.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br> After login in you can directly migrate your certificate.
