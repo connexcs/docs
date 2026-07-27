@@ -147,16 +147,6 @@ flowchart TD
           + `Delete`: Click the Delete icon to remove the selected customer's API key configuration from the Click-2-Dial application.
 5. Click `Save`.
 
-!!! Note "This feature requires the **Programmatic Call Originate** package to be enabled; otherwise, it will not function."
-
-!!! Example "Example"
-    **Example (cURL)**
-    `curl -X POST "https:///api//send"`
-
-    `-d "api_key=YOUR_API_KEY"`
-    
-    `-d "phone=123456"`
-
 ### Yoco Payment
 
 #### Overview
