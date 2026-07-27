@@ -80,9 +80,129 @@ It's particularly useful for troubleshooting by highlighting discrepancies betwe
 7. Check `View only difference lines` to view only the parameters of call logs that differ between two Call IDs. <img src="/logging/comp5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 8. Once the comparison is complete, you can `Clear Compare` to reset all the Call IDs comparisons.
 
-## Searching the Logs
+## Call Log Search
 
-To search the Logs, at the top-right of the Logging page, enter the search for calls by phone number, Call ID, or IP address into the text box and click **`Search`**.
+The **Call Log Search** feature provides a unified interface for searching call records using `phone numbers`, `Call-IDs`, `IP addresses`, and other call-related information.
+
+**The Call Log Search supports**:
+
+- Standard keyword searches
+- Boolean operators (`AND`, `OR`, `NOT`)
+- Exact phrase searches
+- Wildcards
+- Date and time filters entered directly into the search box
+
+### Basic Search
+
+For everyday searches, simply enter a phone number, Call-ID, IP address, or other text.
+
+The search automatically checks:
+
+- Caller (CLI)
+- Destination Number
+- Originating Unit
+- Call-ID
+
+No special syntax is required for standard lookups.
+
+### Search Operators
+
+Use **uppercase** operators to combine search terms.
+
+| Search | Result |
+|--------|--------|
+| `441234 OR 441235` | Finds calls matching either number. |
+| `441234 AND london` | Finds calls containing both terms. |
+| `441234 NOT failed` | Finds calls matching `441234` but excluding `failed`. |
+| `"exact phrase"` | Finds the words together in the specified order. |
+| `4412*` | Finds values beginning with `4412`. |
+| `<callid-a> OR <callid-b>` | Finds either Call-ID. |
+
+!!! Note "Note"
+
+    - Boolean operators **must** be uppercase (`AND`, `OR`, `NOT`).
+    - Lowercase words such as `and` or `or` are treated as normal search text.
+    - Operators search across the following fields:
+        - Caller (CLI)
+        - Destination Number
+        - Originating Unit
+        - Call-ID
+
+### Date and Time Filtering
+
+Date filters can be added anywhere within the search query.
+
+| Search | Result |
+|--------|--------|
+| `after:yesterday` | Finds calls from yesterday onward. |
+| `before:2026-06-01` | Finds calls up to **1 June 2026**. |
+| `after:2026-06-01 before:2026-06-02` | Finds calls within the specified date range. |
+| `after:"last monday"` | Uses a quoted natural language date. |
+| `441234 after:yesterday` | Combines a text search with a date filter. |
+
+### Supported Keywords
+
+|Lower Bound|Upper Bound|
+|-----------|-----------|
+|`after:` <br>`since:` <br>`start:`|`before:` <br>`until:` <br> `end:`|
+
+### Supported Date Formats
+
+|Natural language dates|ISO Dates| Date and Time|
+|---------------------|----------|--------------|
+|`today` <br> `yesterday`<br>`last monday`| `2026-06-01`|`2026-06-01 14:30`|
+
+!!! Tip
+    The search box can also be used together with the existing date picker and time-range controls.
+
+### Field-Specific Search
+
+Search within a specific field using the following format:
+
+```text
+field=value
+```
+
+!!! Example "Examples"
+
+    | Search | Result |
+    |--------|--------|
+    | `cli=441234` | Finds calls where the caller (CLI) is `441234`|
+    | `dest_number=44207...` | Finds calls to a specific destination number|
+
+!!! Note "Important Notes"
+    - Boolean operators must always be written in uppercase.
+    - Quote multi-word natural language dates.
+
+    ✔ Correct
+
+    ```text
+    after:"last monday"
+    ```
+
+    ✘ Incorrect
+
+    ```text
+    after:last monday
+    ```
+
+    - IP address searches (such as switch or server IPs) work normally as standalone searches. When combined with `AND`, `OR`, or `NOT`, they are matched against the searchable text fields rather than the switch or server IP fields.
+    - Searching by **Call-ID-B** (the encoded `CNX...` format) works as a standalone search. When combined with boolean operators, the encoded value is **not** decoded.
+
+### Search Cheat Sheet
+
+| Search Type | Example |
+|-------------|---------|
+| Plain text | `441234567` |
+| Either match | `a OR b` |
+| Both terms | `a AND b` |
+| Exclude | `a NOT b` |
+| Exact phrase | `"customer name"` |
+| Wildcard | `4412*` |
+| Specific field | `cli=441234` |
+| From a date | `after:yesterday` or `after:2026-06-01` |
+| Up to a date | `before:2026-06-02` |
+| Date range | `after:2026-06-01 before:2026-06-02` |
 
 ### Call ID Details
 
