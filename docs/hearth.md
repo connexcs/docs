@@ -60,10 +60,6 @@ Build applications that require secure, persistent storage for structured data u
 
 Use Hearth as the primary database for Anvil applications to store, retrieve, and manage application-specific data.
 
-### ScriptForge Developers
-
-Access and manage application data from ScriptForge using the official JavaScript SDK or the REST API.
-
 ### Platform Integrators
 
 Integrate external applications and services with ConnexCS while maintaining isolated application data within Hearth.
@@ -74,7 +70,7 @@ Integrate external applications and services with ConnexCS while maintaining iso
 
 ### Flow (High Level)
 
-1. **Inside the ConnexCS platform** (for example, ScriptForge), your identity is already established, and the authentication token is passed through automatically.
+1. **Inside the ConnexCS platform** (for example, ScriptForge), your identity is already established, and the authentication token is passed through automatically.-- **TO BE ADDRESSED LATER**
 2. **From an external application**, provide a valid JWT containing at least your `userId`, `email`, `accountId`, and a space-separated list of scopes.
 3. Every request must pass two independent authorization checks:
     - **Scopes** – Determine which operations the token is permitted to perform, such as reading or writing data, creating schemas, or managing tables.
