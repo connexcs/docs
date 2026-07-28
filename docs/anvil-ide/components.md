@@ -7,7 +7,7 @@ ScriptForge is ConnexCS's backend scripting system. Scripts live in the `backend
 Open a `.js` script. You will see **▶ Run** and **▶ Run with Vars** links appear directly above each exported `async function` in the code (these are called CodeLens actions). You can also use the toolbar buttons at the top of the editor.
 
 - **Run** — Executes the script's `main()` function immediately. The result appears in the **Preview** panel to the right.
-- **Run with Vars** — Opens a dialog where you can enter input variables before running. Useful when your script expects parameters. <br><img src= "/apps/img/aide24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+- **Run with Vars** — Opens a dialog where you can enter input variables before running. Useful when your script expects parameters. <br><img src= "/apps/img/aide24.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Viewing Results (Show ScriptForge Preview)
 

@@ -36,13 +36,13 @@ Understanding the purpose of each panel, tool, and workspace component enables d
 | **Terminal**  | Opens and manages integrated terminal sessions for executing command-line operations|
 | **Help** | Provides access to documentation, keyboard shortcuts, release notes, and application support resources|
 
-<img src= "/apps/img/aide3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide3.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Explorer
 
 Opens the Explorer view, where you can browse, create, rename, move, and delete files and folders within your workspace. It serves as the primary file management panel for your project.
 
-<img src= "/apps/img/aide4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide4.png" width= "3500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Search
 
@@ -50,7 +50,7 @@ Opens the Explorer view, where you can browse, create, rename, move, and delete 
 2. You can narrow the search by specifying **Files to Include** or **Files to Exclude**, making it easier to search within specific files or folders while ignoring others.
 3. Advanced options such as **Match Case**, **Whole Word**, and **Regular Expression** are also available to refine search results.
 
-<img src= "/apps/img/aide5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide5.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Source Control
 
@@ -60,7 +60,7 @@ It allows you to view modified files, stage and commit changes, review differenc
 
 If no provider is configured, a message indicating that no source control providers are registered is displayed.
 
-<img src= "/apps/img/aide6.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide6.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Run and Debug
 
@@ -70,7 +70,7 @@ It provides tools for launching programs, setting breakpoints, inspecting variab
 
 If no debug extension is installed or enabled, a message prompting you to enable or install one is displayed.
 
-<img src= "/apps/img/aide7.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide7.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Extensions
 
@@ -78,7 +78,7 @@ Opens the **Extensions** view, where you can browse, install, update, enable, di
 
 Extensions add support for additional programming languages, debugging tools, themes, integrations, and other features to enhance your development experience.
 
-<img src= "/apps/img/aide8.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide8.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## ConnexCS Sidebar
 
@@ -115,7 +115,7 @@ Opens the **Accounts menu**, where you can manage your **signed-in account** and
 
 From this menu, you can view your current account, configure **Backup and Sync settings**, enable **Cloud Changes**, and manage account preferences for **extensions** and other supported services.
 
-<img src= "/apps/img/aide10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide10.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Manage
 
@@ -123,7 +123,7 @@ Opens the **Manage** menu, where you can access and configure editor settings an
 
 From here, you can open the **Command Palette**, manage **Profiles**, **Settings**, **Extensions**, **Keyboard Shortcuts**, **Snippets**, **Tasks**, and **Themes**, as well as configure Backup and Sync and other application preferences.
 
-<img src= "/apps/img/aide11.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide11.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Outline and Timeline
 
@@ -132,7 +132,7 @@ From here, you can open the **Command Palette**, manage **Profiles**, **Settings
 | **Outline** | Displays the structure of the currently active file by listing its symbols, such as classes, functions, methods, variables, and headings. This allows you to quickly navigate to different sections of the file. If the active file does not support outlines, no information is displayed|
 | **Timeline** | Shows the history of the currently active file, including changes, commits, or saved versions provided by supported source control or extensions. This helps you review previous modifications and track the file's evolution over time. If timeline information is unavailable, the panel remains empty|
 
-<img src= "/apps/img/aide12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide30.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Open a Remote Window
 
@@ -164,7 +164,7 @@ The **Workspace** search box allows you to quickly find files, run commands, sea
 
 Opens the chat panel, where you can interact with the AI assistant to get help with coding, explanations, debugging, code generation, documentation, and other development tasks.
 
-Enter your request in the input box, and the assistant will provide context-aware responses based on your project. <br><img src= "/apps/img/aide16.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+Enter your request in the input box, and the assistant will provide context-aware responses based on your project. <br><img src= "/apps/img/aide16.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 1. `Generate Agent Instructions`: Creates AI agent instructions to help the assistant better understand your codebase and provide more relevant responses.
 2. `+` (Add Context): Allows you to attach additional context to your prompt, enabling the AI assistant to provide more accurate and relevant responses. You can include Files & Folders, Instructions, Problems, Symbols, Sessions, or Tools from your workspace. Use the search bar to quickly locate and attach the required context before submitting your prompt. <br><img src= "/apps/img/aide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>

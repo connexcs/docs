@@ -51,6 +51,6 @@ Each preview panel also has:
 
 4. **Documentation**: Click **Open Docs** in the overflow menu to open the documentation page for the active script.
 
-<img src= "/apps/img/aide27.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide27.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ---
