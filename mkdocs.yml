@@ -392,5 +392,11 @@ nav:
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
 
-
+  - ANVIL IDE:
+    - Introduction: anvil-ide/introduction.md
+    - Getting Started: anvil-ide/getting-started.md
+    - IDE Interface: anvil-ide/interface.md
+    - IDE Components: anvil-ide/components.md
+    - Working with Files: anvil-ide/working-with-files.md
+    - ANVIL App Preview: anvil-ide/anvil-app-preview.md
     
