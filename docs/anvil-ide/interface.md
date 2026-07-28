@@ -42,7 +42,7 @@ Understanding the purpose of each panel, tool, and workspace component enables d
 
 Opens the Explorer view, where you can browse, create, rename, move, and delete files and folders within your workspace. It serves as the primary file management panel for your project.
 
-<img src= "/apps/img/aide4.png" width= "3500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Search
 
@@ -164,7 +164,7 @@ The **Workspace** search box allows you to quickly find files, run commands, sea
 
 Opens the chat panel, where you can interact with the AI assistant to get help with coding, explanations, debugging, code generation, documentation, and other development tasks.
 
-Enter your request in the input box, and the assistant will provide context-aware responses based on your project. <br><img src= "/apps/img/aide16.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+Enter your request in the input box, and the assistant will provide context-aware responses based on your project. <br><img src= "/apps/img/aide16.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 1. `Generate Agent Instructions`: Creates AI agent instructions to help the assistant better understand your codebase and provide more relevant responses.
 2. `+` (Add Context): Allows you to attach additional context to your prompt, enabling the AI assistant to provide more accurate and relevant responses. You can include Files & Folders, Instructions, Problems, Symbols, Sessions, or Tools from your workspace. Use the search bar to quickly locate and attach the required context before submitting your prompt. <br><img src= "/apps/img/aide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
