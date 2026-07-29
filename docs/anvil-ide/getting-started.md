@@ -47,4 +47,8 @@ Once a project is selected, the file explorer shows all your Anvil project files
 
 To switch projects at any time, click the **project name** in the status bar at the bottom, or use the **Switch Project** option in the ConnexCS sidebar.
 
+
+<iframe src= "assets/anvil-ide-getting-started-flow.html" width="100%" height="900" style="border:none;"></iframe>
 ---
+
+

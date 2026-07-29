@@ -42,7 +42,7 @@ Understanding the purpose of each panel, tool, and workspace component enables d
 
 Opens the Explorer view, where you can browse, create, rename, move, and delete files and folders within your workspace. It serves as the primary file management panel for your project.
 
-<img src= "/apps/img/aide4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide4.png" width= "200" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Search
 
@@ -132,7 +132,7 @@ From here, you can open the **Command Palette**, manage **Profiles**, **Settings
 | **Outline** | Displays the structure of the currently active file by listing its symbols, such as classes, functions, methods, variables, and headings. This allows you to quickly navigate to different sections of the file. If the active file does not support outlines, no information is displayed|
 | **Timeline** | Shows the history of the currently active file, including changes, commits, or saved versions provided by supported source control or extensions. This helps you review previous modifications and track the file's evolution over time. If timeline information is unavailable, the panel remains empty|
 
-<img src= "/apps/img/aide30.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide30.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Open a Remote Window
 
