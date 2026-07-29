@@ -94,7 +94,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
 
 === "Distribution Strategy"
 
-    It determines how the Call Center selects an agent for the next incoming call, helping balance workloads, improve customer experience, and maximize agent efficiency. <br>It also includes `**Tier Rules** and **Agent No-Answer settings**, allowing administrators to control call escalation between agent groups and define how unavailable agents are handled.</br><img src= "/class5/img/ccnew3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
+    It determines how the Call Center selects an agent for the next incoming call, helping balance workloads, improve customer experience, and maximize agent efficiency. <br>It also includes `**Tier Rules** and **Agent No-Answer settings**, allowing administrators to control call escalation between agent groups and define how unavailable agents are handled.</br><img src= "/class5/img/ccnew3.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     * **Strategy**
 
@@ -111,8 +111,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
       | **Sequentially By Agent Order** | Attempts agents one at a time based on their configured order until one answers|❌|✅|⚠️(*patrially*)| Fixed routing order, escalation workflows, seniority-based teams   |
       | **Random**| Randomly selects an available agent for each incoming call|⚠️(*partially*)|❌|✅| Small teamss, informal call distribution, randomized load balancing |
 
-         !!! Note "When Tier Rules are enabled, the selected distribution strategy is applied only to agents within the currently active tier. As the queue escalates to additional tiers, the same strategy is applied to agents in those tiers until the call is answered."
-
+      > **Note:** "When Tier Rules are enabled, the selected distribution strategy is applied only to agents within the currently active tier. As the queue escalates to additional tiers, the same strategy is applied to agents in those tiers until the call is answered."
 
     * **Agent No-Answer Status**
 
@@ -125,7 +124,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
       | **On Break**| The agent is automatically placed into the **On Break** state after missing a queue call. The agent must manually return to an available state before receiving new calls|❌| Preventing repeated routing to unattended workstations or temporarily unavailable agents|
       | **Logged Out**| The agent is automatically logged out of the queue after missing a call. The agent must log back in before becoming eligible to receive queue calls again|❌| High-accountability environments such as contact centers with strict attendance or compliance requirements|
 
-      !!! Note "The selected Agent No-Answer Status only takes effect when an agent does not answer a queue call. It does not affect agents who manually change their status or log out of the queue."
+      > **Note:** The selected Agent No-Answer Status only takes effect when an agent does not answer a queue call. It does not affect agents who manually change their status or log out of the queue."
 
     * **Tier Rules**
 
@@ -144,7 +143,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
 
     * **Wait Time & Abandonment**
 
-      The Wait Time & Abandonment settings control how long callers remain in the queue, how calls are handled when no agents are available, when abandoned calls are discarded, and where calls are routed if the queue cannot process them. <br><img src= "/class5/img/ccnew4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      The Wait Time & Abandonment settings control how long callers remain in the queue, how calls are handled when no agents are available, when abandoned calls are discarded, and where calls are routed if the queue cannot process them. <br><img src= "/class5/img/ccnew4.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       | Setting | Description |
       | --------|-------------|
@@ -260,7 +259,7 @@ It displays key performance indicators (KPIs), live call activity, queue health,
 
 The Dashboard displays warning banners when administrator attention is required.
 
-!!! Example "Examples include"
+!!! Example "Examples include:"
       * Agents assigned to queue tiers but currently logged out.
       * Agents approaching automatic removal due to missed calls.
       * Other queue or staffing-related alerts.
