@@ -1,4 +1,4 @@
-# Introduction
+# Clas 5
 
 To fully appreciate the features of Class 5 services, it's essential to first understand Class 4 services and the key differences between them.
 
