@@ -67,10 +67,14 @@ See: [Ingress Routing / ASR+ details](https://docs.connexcs.com/customer/routing
 
 Customer rate cards are derived from carrier (provider) rate cards through configurable margin rules, rather than being built or maintained as separate flat files.
 
-Supported capabilities:
+**Supported capabilities:**
+
 - **NPA-NXX and LRN routing**, including unlimited LRN dips at no additional per-dip cost.
+
 - **Multi-currency support** with configurable rounding behavior.
+
 - **Full revision history** retained for every rate card, including carrier and customer cards.
+
 - Margin rules applied at compile time when generating a customer card from one or more carrier cards.
 
 See: [Rate Card Overview](https://docs.connexcs.com/rate-card-building/), [Provider Rate Card](https://docs.connexcs.com/provider-ratecard/), [Customer Rate Card](https://docs.connexcs.com/customer-ratecard/)
@@ -104,9 +108,12 @@ See: [AnyEdge](https://docs.connexcs.com/anyedge/anyedge/)
 
 The ConnexCS MCP (Model Context Protocol) Server exposes platform diagnostics, call data, and reporting functions to AI agents (e.g., Claude) over a JWT-secured connection.
 
-Supported operations include (non-exhaustive):
+**Supported operations include (non-exhaustive):**
+
 - `searchCallLogs` — query historical call log data.
+
 - `getSipTrace` — retrieve SIP signaling traces for a given call.
+
 - `investigateCall` — run a diagnostic investigation across routing, carrier response codes, and failover events for a given call or time window.
 
 The MCP Server sits between the AI agent and the platform's internal APIs, and is accessed via ScriptForge tool functions or the CX MCP App layer.
