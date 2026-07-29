@@ -108,10 +108,10 @@ The Call Center module is ideal for organizations that need to efficiently distr
       | **Top Down** | Always offers the call to the highest-priority agent first. If unavailable, the system proceeds down the configured agent list|❌|✅|✅| Priority-based routing, receptionists, senior support teams|
       | **Agent With Least Talk Time**  | Selects the available agent with the lowest cumulative talk time|✅|❌|✅| Balancing total conversation time across agents|
       | **Agent With Fewest Calls**| Routes the call to the available agent who has answered the fewest calls during the current session|✅|❌|✅| Equalizing call volume among agents|
-      | **Sequentially By Agent Order** | Attempts agents one at a time based on their configured order until one answers|❌|✅|⚠️| Fixed routing order, escalation workflows, seniority-based teams   |
-      | **Random**| Randomly selects an available agent for each incoming call|⚠️|❌|✅| Small teamss, informal call distribution, randomized load balancing |
+      | **Sequentially By Agent Order** | Attempts agents one at a time based on their configured order until one answers|❌|✅|⚠️(*patrially*)| Fixed routing order, escalation workflows, seniority-based teams   |
+      | **Random**| Randomly selects an available agent for each incoming call|⚠️(*partially*)|❌|✅| Small teamss, informal call distribution, randomized load balancing |
 
-      !!! Note "When Tier Rules are enabled, the selected distribution strategy is applied only to agents within the currently active tier. As the queue escalates to additional tiers, the same strategy is applied to agents in those tiers until the call is answered."
+   !!! Note "When Tier Rules are enabled, the selected distribution strategy is applied only to agents within the currently active tier. As the queue escalates to additional tiers, the same strategy is applied to agents in those tiers until the call is answered."
 
 
     * **Agent No-Answer Status**
@@ -157,7 +157,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
       | **Failover Destination** | Specifies the destination to which calls are routed if the queue cannot continue processing them, such as when wait limits are exceeded or no agents are available. The destination can be another queue, extension, IVR, or another configured customer destination|
 
       | Time Base Score Option | Description | Best Used For |
-      | ---------- | ----------|-------------|---------------|
+      | ---------- | ----------|-------------|
       | **Queue**  | Calculates the caller's waiting time and priority based on when they entered the current queue. If the call is transferred to another queue, the waiting time is reset and starts from the time the caller joins the new queue. | Independent queues where each queue manages its own waiting time and prioritization|
       | **System** | Calculates the caller's waiting time based on when they first entered the call center system. The accumulated waiting time is preserved even if the caller is transferred between multiple queues| Multi-queue environments where callers should retain their original waiting time and receive consistent priority across queue transfers|
 
@@ -171,7 +171,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
 
 === "Consumers"
 
-    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics. <br><img src= "/class5/img/ccnew5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. <br>Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics.</br> <br><img src= "/class5/img/ccnew5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     Administrators can add, modify, or remove agents from the queue, assign priority levels, and monitor their current status and activity.
 
@@ -208,7 +208,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
 
 === "Callers"
 
-      The **Callers** section displays all callers currently waiting in or being served by the Call Center queue. It provides real-time visibility into each caller's status, wait time, assigned agent, and queue priority, enabling supervisors to monitor queue activity and identify callers requiring attention. <br><img src= "/class5/img/ccnew7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      The **Callers** section displays all callers currently waiting in or being served by the Call Center queue. <br>It provides real-time visibility into each caller's status, wait time, assigned agent, and queue priority, enabling supervisors to monitor queue activity and identify callers requiring attention. </br><br><img src= "/class5/img/ccnew7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
       | Field | Description |
       | ------|------------ | 
@@ -219,8 +219,9 @@ The Call Center module is ideal for organizations that need to efficiently distr
       | **Serving Agent** | Identifies the agent currently handling the call. This field remains empty until the call is assigned|
       | **Score**| Displays the caller's queue priority score, which is used by the routing engine to determine the order in which waiting callers are served|
 
-6. Click `Save`. <br><img src= "/class5/img/ccnew6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-7. Some additional actions:
+6.Click `Save`. <br><img src= "/class5/img/ccnew6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+7.Some additional actions:
 
 | Action | Description |
 | -------|-------------|
