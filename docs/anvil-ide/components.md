@@ -126,7 +126,7 @@ To open the terminal:
 
 1. Click the **CX TERMINAL** tab in the bottom panel.
 2. Wait for the terminal to initialize.
-3. After connecting, you'll see a welcome screen similar to the following: <br><img src= "/apps/img/aide31.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. After connecting, you'll see a welcome screen similar to the following: <br><img src= "/apps/img/aide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. Type `help` to get started.
 5. An example of using KV: <br><img src= "/apps/img/aide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 

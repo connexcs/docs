@@ -26,7 +26,7 @@ After completing this guide, you'll have a configured development environment re
 
 1. Login to your **Control Panel**.
 2. Click on **Anvil IDE** from the left-menu.
-3. A new tab will open and redirect you to [`code.connexcs.com`](code.connexcs.com).
+3. A new tab will open and redirect you to [`code.connexcs.com`](https://code.connexcs.com/).
 4. Click on `Sign In to ConnexCS`.
 5. When you open the IDE for the first time, the ConnexCS panel on the left sidebar shows two sign-in options:
 
@@ -47,8 +47,5 @@ Once a project is selected, the file explorer shows all your Anvil project files
 
 To switch projects at any time, click the **project name** in the status bar at the bottom, or use the **Switch Project** option in the ConnexCS sidebar.
 
-
 <iframe src= "/anvil-ide/assets/anvil-ide-getting-started-flow.html" width="100%" height="900" style="border:none;"></iframe>
 ---
-
-
