@@ -213,3 +213,86 @@ Connexamine is built to be safe to run unattended, with production SIP traffic, 
 - What it sends off the box is deliberately minimal — enough to diagnose connectivity problems, nothing that amounts to a call log.
 - Everything sent over the network is encrypted in transit.
 - The one remote-control surface (diagnostics) is narrowly scoped and validated before anything is ever executed.
+
+## How to use?
+
+1. Login to your account.
+2. Navigate to **Global :material-menu-right: ConnExamine**.
+3. Click on the `+ Claim Box` button.
+4. Enter the `Code`- which is the `Deamon Token` or the `IP Address`.
+5. Click on `Claim`. <br><img src= "/misc/img/connex1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. All the session information is visible on the ConnExamine dashboard.<br><img src= "/misc/img/connex2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. Click on the `Session ID` to get more insights on the current session.<br><img src= "/misc/img/connex3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. Session details explained:
+
+* **Overview**
+
+Displays general information about the active Connexamine monitoring session.
+
+| Field  | Description |
+| -------|------------ |
+| **Session ID**   | Unique identifier assigned to the monitored Connexamine agent. This identifier is used to associate telemetry with the corresponding customer or support session|
+| **IP** | Public IP address of the monitored host|
+| **Customer** | Customer account associated with the monitored host. Displays **-** until the session has been linked to a customer|
+| **Last Updated** | Date and time when the most recent telemetry was received from the agent|
+
+**Box Info**
+
+Displays information about the monitored host and the installed Connexamine agent.
+
+| Field  | Description  |
+| -------|------------- |
+| **Hostname** | Hostname of the monitored system|
+| **Agent Version** | Version of the installed Connexamine agent|
+| **OS / Arch**     | Operating system and CPU architecture of the monitored host|
+| **Capabilities**  | Lists the features supported by the connected agent. Each capability indicates functionality that is available for monitoring or remote diagnostics|
+
+**Capability Definitions**
+
+| Capability | Description |
+| -----------|------------ | 
+| **metrics** | Reports aggregated call setup metrics to the ConnexCS portal|
+| **vitals** | Reports host health metrics, including CPU, memory, disk usage, uptime, and system load. |
+| **failure_samples**  | Collects representative failed call samples for troubleshooting|
+| **clock_skew** | Detects and reports system clock drift or synchronization issues|
+| **diagnostics_ping** | Allows remote ICMP ping diagnostics to a specified IP address|
+| **diagnostics_mtr**  | Allows remote MTR (My Traceroute) diagnostics for network path analysis|
+| **self_update**| Supports automatic and remotely triggered agent updates|
+
+**Vitals**
+
+Displays the current health and resource utilization of the monitored host.
+
+| Field | Description |
+| ------|-------------|
+| **Load Avg (1 \| 5 \| 15 min)** | Average system load over the previous 1, 5, and 15 minutes|
+| **CPU** | Current CPU utilization of the monitored host|
+| **Memory (Used / Total)**  | Amount of memory currently in use compared to the total installed memory|
+| **Disk Free** | Available disk space on the monitored host|
+| **Uptime** | Time elapsed since the monitored system was last restarted|
+
+**Metrics (5s)**
+
+Displays call setup statistics collected during the previous **5-second** reporting interval.
+
+| Field | Description |
+| ------|------------ |
+|**By Destination** | Groups call setup metrics by destination IP address. Each destination includes aggregated statistics such as INVITE count, Trying responses, latency measurements, and other call setup metrics for that reporting interval|
+
+**Failure Samples (60s)**
+
+Displays representative call failures collected during the previous **60-second** sampling interval.
+
+| Field | Description |
+| ------|------------ | 
+| **Categories** | Groups failures by SIP response code or timeout category (for example, `sip_480`, `sip_481`, `sip_503`). Selecting a category displays representative failed call samples to assist with troubleshooting recurring issues|
+
+**Some Additional Fields**
+
+| Field  | Description  |
+| -------|--------------|
+| **Location** | Geographic location of the monitored host, determined from its public IP address or associated metadata|
+| **Status** | Current connection status of the Connexamine agent (for example, **Connected** or **Disconnected**)|
+| **Window (s)** *(Metrics)*| Specifies the reporting interval, in seconds, over which call setup metrics are aggregated before being sent to the ConnexCS portal|
+| **Window (s)** *(Failure Samples)* | Specifies the sampling interval, in seconds, during which failed call samples are collected and grouped before being reported|
+
