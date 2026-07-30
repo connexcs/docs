@@ -64,7 +64,7 @@ The SSH Keys section enables you to:
 
 ---
 
-### To authorize an SSH key:
+### To authorize/configure an SSH key:
 
 1. Login to your account.
 2. Navigate to `Profile :material-menu-right: SSH Keys`.
@@ -77,7 +77,7 @@ The SSH Keys section enables you to:
 
 5. Click on `Save`. After saving, the SSH key becomes available for SFTP authentication.
 
-## Available Actions
+### Available Actions
 
 | Action | Description |
 |--------|-------------|
@@ -160,7 +160,7 @@ Supported clients include:
 * Cyberduck
 * OpenSSH Command Line
 
-#### How to enable SFTP access?
+### How to enable SFTP access?
 
 1. Login to your account.
 2. Navigate to `Profile :material-menu-right: Advanced`. Click on `Edit`. <br> <img src= "/misc/img/sftp3.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
