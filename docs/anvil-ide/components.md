@@ -16,8 +16,6 @@
 
 ## Overview
 
-# Anvil IDE Features
-
 The Anvil IDE provides a complete development environment for building, testing, debugging, and managing applications on the ConnexCS platform.
 
 It combines backend scripting, frontend development, live previews, terminal access, AI assistance, and productivity tools into a single workspace.

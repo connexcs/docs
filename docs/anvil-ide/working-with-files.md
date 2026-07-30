@@ -30,7 +30,7 @@ Click any file in the Explorer to open it in the editor. Files are saved directl
 
 Right-click any folder in the Explorer and choose **New File** or **New Folder**. The new item is created inside the folder you right-clicked, or inside the last folder you selected in the tree. <br><img src= "/apps/img/aide22.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-Another option is to click on the `New Folder` or `New File` icons when you hover over the project. <br><img src= "/apps/img/aide23.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+Another option is to click on the `New Folder` or `New File` icons when you hover over the project. <br><img src= "/apps/img/aide23.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## Saving
 
