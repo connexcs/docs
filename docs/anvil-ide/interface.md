@@ -1,4 +1,4 @@
-# The Interface
+# The IDE Interface
 
 <details>
 <summary><strong>Document Metadata</strong></summary>

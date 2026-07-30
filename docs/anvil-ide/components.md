@@ -1,4 +1,20 @@
-# ScriptForge
+# IDE Components
+
+<details>
+<summary><strong>Document Metadata</strong></summary>
+<br>
+
+<strong>Category</strong>: Development → Anvil → IDE Features<br>
+<strong>Audience</strong>: Developers, Solution Engineers, Administrators, Technical Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: 20–30 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS Anvil IDE, an Anvil project, and appropriate permissions to develop or manage project resources.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/doc-guide/">Document Guide</a> — documentation standards, Anvil IDE — getting started, ScriptForge, Query Builder, Anvil Apps, CX Terminal.<br>
+<strong>Next Steps</strong>: Create and execute ScriptForge scripts, preview templates and Anvil applications, use the CX Terminal and KV Store, leverage the AI Assistant, configure IDE settings, and explore additional ConnexCS development tools.<br>
+
+</details>
+
+## ScriptForge
 
 ScriptForge is ConnexCS's backend scripting system. Scripts live in the `backend/` folder and are JavaScript files.
 
@@ -16,7 +32,7 @@ When a script runs, the **Preview** panel opens on the right side of the screen.
 - The return value displayed as formatted JSON, plain text, or raw
 - How long the run took
 
-| **Tab**    | **Description** |
+| Tab    | Description |
 | ---------- | --------------- |
 | **Result** | Displays the output returned after executing the script or function. If the execution is successful, the result is shown here. If an error occurs, the error message, status code, and related details are displayed to help with troubleshooting|
 | **Docs**   | Displays the documentation for the selected function, API, or module. This tab provides reference information such as parameters, return values, and usage details, helping you understand how to use the function correctly|
@@ -61,6 +77,94 @@ To open it, click the **CX TERMINAL** tab in the bottom panel.
 Type `help` to see available commands. The terminal supports standard cx-cli commands for managing your project environment, environment variables, and more.
 
 <img src= "/apps/img/aide28.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+---
+
+## KV Store
+
+The **KV (Key-Value) Store** provides a simple way to store and retrieve small pieces of persistent data directly from the **CX Terminal**.
+
+It is useful for saving configuration values, application state, tokens, timestamps, feature flags, and other information that your ScriptForge scripts or applications may need between executions.
+
+Each value is stored as a **key-value pair**, where:
+
+- **Key** uniquely identifies the stored item.
+- **Value** is the data associated with that key.
+
+The KV Store is ideal for lightweight configuration and runtime data, eliminating the need to create a database table for simple storage requirements.
+
+### Common Use Cases
+
+You can use the KV Store to:
+
+- Store API credentials or access tokens.
+- Save application configuration values.
+- Keep feature flags or environment settings.
+- Record timestamps of the last successful execution.
+- Cache small pieces of frequently accessed data.
+- Store temporary application state between script executions.
+
+> **Note:** The KV Store is intended for lightweight data. It is not designed to replace a relational database or store large datasets.
+
+---
+
+### Accessing the KV Store
+
+The KV Store is managed through the **CX Terminal**, located in the bottom panel of the Anvil IDE.
+
+To open the terminal:
+
+1. Click the **CX TERMINAL** tab in the bottom panel.
+2. Wait for the terminal to initialize.
+3. After connecting, you'll see a welcome screen similar to the following: <br><img src= "/apps/img/aide31.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Type `help` to get started.
+5. An example of using KV: <br><img src= "/apps/img/aide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+---
+
+### Creating or Updating a Value
+
+Use `kv set` to create a new key or update an existing one.
+
+```bash
+kv set <key> "<value>"
+```
+
+Example:
+
+```bash
+kv set test-key "test value"
+```
+
+Output:
+
+```text
+OK
+```
+
+If the key already exists, its value is overwritten.
+
+---
+
+### Retrieving a Value
+
+Use `kv get` to read the value associated with a key.
+
+```bash
+kv get <key>
+```
+
+Example:
+
+```bash
+kv get test-key
+```
+
+Output:
+
+```text
+test value
+```
 
 ---
 
