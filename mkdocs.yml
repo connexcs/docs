@@ -265,6 +265,7 @@ nav:
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
     - ANVIL: anvil.md
+    - SSH Keys and SFTP Access: sftp.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
