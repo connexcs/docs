@@ -70,12 +70,21 @@ Integrate external applications and services with ConnexCS while maintaining iso
 
 ### Flow (High Level)
 
-1. **Inside the ConnexCS platform** (for example, ScriptForge), your identity is already established, and the authentication token is passed through automatically.-- **TO BE ADDRESSED LATER**
+1. **Inside the ConnexCS platform** (for example, ScriptForge, ANVIL), your identity is already established, and the authentication token is passed through using `_AUTH_PASSTHROUGH__`.
 2. **From an external application**, provide a valid JWT containing at least your `userId`, `email`, `accountId`, and a space-separated list of scopes.
 3. Every request must pass two independent authorization checks:
     - **Scopes** – Determine which operations the token is permitted to perform, such as reading or writing data, creating schemas, or managing tables.
     - **Grants** – Verify that the authenticated user or account has permission to access the requested schema or table.
 4. Verify your identity and assigned scopes at any time by calling the `GET /api/v1/whoami` endpoint.
+
+!!! example "Example of using `__AUTH_PASSTHROUGH__`"
+
+    ```js
+    const hearth = createClient(HEARTH_URL, {
+      schema: 'center',
+      getToken: () => '__AUTH_PASSTHROUGH__'
+    })
+    ```
 
 ### Common Scopes
 
@@ -215,6 +224,6 @@ const client = await createClient({
 
 ### Official JavaScript SDK
 
-https://www.npmjs.com/package/@connexcs/hearth
+[https://www.npmjs.com/package/@connexcs/hearth](https://www.npmjs.com/package/@connexcs/hearth)
 
 For complete installation instructions, API documentation, SDK reference, and advanced usage examples, refer to the official **@connexcs/hearth** package documentation.
