@@ -70,12 +70,7 @@ Integrate external applications and services with ConnexCS while maintaining iso
 
 ### Flow (High Level)
 
-1. **Inside the ConnexCS platform** (for example, ScriptForge, ANVIL), your identity is already established, and the authentication token is passed through using `_AUTH_PASSTHROUGH__`.
-2. **From an external application**, provide a valid JWT containing at least your `userId`, `email`, `accountId`, and a space-separated list of scopes.
-3. Every request must pass two independent authorization checks:
-    - **Scopes** – Determine which operations the token is permitted to perform, such as reading or writing data, creating schemas, or managing tables.
-    - **Grants** – Verify that the authenticated user or account has permission to access the requested schema or table.
-4. Verify your identity and assigned scopes at any time by calling the `GET /api/v1/whoami` endpoint.
+**Inside the ConnexCS platform** (for example, ScriptForge, ANVIL), your identity is already established, and the authentication token is passed through using `_AUTH_PASSTHROUGH__`.
 
 !!! example "Example of using `__AUTH_PASSTHROUGH__`"
 
