@@ -66,22 +66,7 @@ Integrate external applications and services with ConnexCS while maintaining iso
 
 ---
 
-## Authentication & Security
-
-### Flow (High Level)
-
-**Inside the ConnexCS platform** (for example, ScriptForge, ANVIL), your identity is already established, and the authentication token is passed through using `_AUTH_PASSTHROUGH__`.
-
-!!! example "Example of using `__AUTH_PASSTHROUGH__`"
-
-    ```js
-    const hearth = createClient(HEARTH_URL, {
-      schema: 'center',
-      getToken: () => '__AUTH_PASSTHROUGH__'
-    })
-    ```
-
-### Common Scopes
+## Common Scopes
 
 | Scope | Description |
 |--------|-------------|
@@ -192,11 +177,10 @@ import { createClient, HearthError } from 'https://esm.sh/@connexcs/hearth'
 ### Create a Client
 
 ```js
-const client = await createClient({
-    url: 'https://hearth.connexcs.com',
-    token: jwtToken,
-    schema: 'CRM'
-})
+  const hearth = createClient('https://hearth.connexcs.com', {
+    schema: 'center',
+    getToken: () => '__AUTH_PASSTHROUGH__'
+  })
 ```
 
 **After creating the client, you can**:
