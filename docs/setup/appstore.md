@@ -14,39 +14,163 @@
 
 **Setup :material-menu-right: App Store**
 
-The **ConnexCS App Store** lets you discover, download, and install applications on your user account.
+## Overview
 
-Apps created using the IDE are available for use in the App Store when published.
+The **Anvil App Store** is the central marketplace for discovering, installing, publishing, and managing applications built for the ConnexCS platform.
 
-Apps can be created by other customers or developers and used by ConnexCS's customers.
+It enables developers to distribute custom applications while allowing administrators to quickly deploy and manage functionality across their environments.
 
-## Steps to install Apps
+The App Store serves as a package registry where applications can be published, versioned, updated, and shared either privately or publicly. It is designed to simplify application lifecycle management within the ConnexCS ecosystem.
 
-1. Login to your account. Navigate to Setup :material-menu-right: App Store. Click on the App you wish to install.
-2. Click on **Install**.
+## Accessing the App Store
 
-<img src= "/setup/img/appstore.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+1. Login to your account.
+2. Navigate to **Setup :material-menu-right: App Store**. <br><img src= "/setup/img/nas1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3.After hitting the '**Install**' button, a window appears with two fields. The first field is '**App Name**', where you can either change the name of the application or keep it the same. The second field allows you to select the **Version** of the application.
+3. This opens the Connex Store, where you can browse available applications and manage your own packages.
 
-4.Click on **Install** and the App will be installed on your user account.
+4. **App Store Sections**
 
-<img src= "/setup/img/appstore1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+* **Anvil Store**: Its the modern application marketplace for Anvil-based applications.
 
-5.You can view the **Description**, **Installed Versions**, **All Versions** and any **Documentation** related to the Application.
+**It provides access to**:
 
-<img src= "/setup/img/appstore2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+- Marketplace applications
+- Installed applications
+- Your published packages
 
-!!! Note
-    See this icon? ![owner](image-1.png). It means you built this application and the ownership belongs to you.
+> Note: The Classic Store is maintained for legacy applications and backward compatibility.
 
-## How to Display documentation for your Application
+## Navigation
 
-1. You can add information about your specific application by using the **Template** component in the **IDE** section.
-2. [Click here](https://docs.connexcs.com/apps/architecture/template/#how-to-add-a-template) to follow the instructions on how to create a template and add documentation, however, note that **template name** should actually be **app_documentation**.
+The App Store is divided into three primary sections.
 
-<img src= "/apps/img/appdoc.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-<img src= "/apps/img/appdoc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+### Marketplace
+
+The **Marketplace** is the discovery section of the **Anvil App Store**, where you can browse and install applications that extend the functionality of your ConnexCS platform.
+
+Applications published to the Marketplace are displayed as package cards containing version information, installation status, and update availability, allowing administrators to quickly deploy new features.
+
+#### Marketplace Layout
+
+The Marketplace consists of the following components.
+
+1. **Search Packages**: Use the search bar at the top of the page to quickly locate applications by:
+
+   * Package name
+   * Description
+   * Keywords
+
+    The application list filters automatically as you type.
+
+2. **Refresh**: Click the **Refresh** icon in the upper-right corner to reload the package registry and display the latest available packages.
+
+3. **Application Cards**: Each application is displayed as a card containing key package information.
+
+    A package card includes:
+
+   * Application icon
+   * Application name
+   * Short description
+   * Current version
+   * Installation status
+   * Update status
+   * Install button (for applications not yet installed)
+
+4. **Installation Status**: Applications display their current installation state *Installed/Not Installed*.
+
+5. **Update Status**: Installed applications indicate whether updates are available *Up to Date/Update Available*.
+
+### Installed Apps
+
+The **Installed Apps** section provides a centralized view of all applications currently installed in your ConnexCS workspace. It allows administrators to monitor installed packages, verify their versions, and ensure that applications are running the latest available release.
+
+Only applications that have already been installed from the Marketplace appear in this section. <br><img src= "/setup/img/nas2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### Installed Apps Layout
+
+The Installed Apps page includes the following components.
+
+1. **Search Packages**: Use the search bar to quickly locate installed applications by:
+
+   * Application name
+   * Description
+   * Keywords
+
+    The list filters automatically as you type.
+
+2. **Refresh**: Click the Refresh icon in the upper-right corner to reload the installed application list and check for the latest package information.
+
+3. **Installed Application Cards**: Each installed application is displayed as a package card containing key information about the application.
+
+    **Each card displays**:
+
+   * Application icon
+   * Application name
+   * Short description
+   * Installed version
+   * Update status
+
+4. **Update Status**: Installed applications indicate whether updates are available *Up to Date/Update Available*.
+
+### My Packages
+
+The **My Packages** section is the package management area of the **Anvil App Store**, allowing developers and publishers to manage the applications they have created and published to the ConnexCS package registry.
+
+From this page, you can view all of your packages, monitor their publication status, track version numbers, and manage package visibility. <br><img src= "/setup/img/nas2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### My Packages Layout
+
+The **My Packages** page contains the following components.
+
+1. **Search Packages**: Use the search bar to quickly find your packages by:
+
+   - Package name
+   - Description
+   - Keywords
+
+    The package list updates automatically as you type.
+
+2. **Refresh**: Click the **Refresh** icon in the upper-right corner to reload the package registry and display the latest package information.
+
+3. **Package Cards**: Each package you own is displayed as a card containing important publishing information.
+
+    **Each card includes**:
+
+    - Package icon
+    - Package name
+    - Description
+    - Visibility
+    - Publication status
+    - Current version
+
+#### Package Visibility
+
+Each package includes a visibility label that determines who can access it.
+
+| Visibility | Description |
+|------------|-------------|
+| **Public** | The package is available to all users with access to the App Store. |
+| **Private** | The package is restricted to authorized users or organizations. |
+
+#### Publication Status
+
+The publication status indicates whether a package is available for installation.
+
+| Status | Description |
+|---------|-------------|
+| **Published** | The package has been published to the registry and is available according to its visibility settings. |
+| **Draft** | The package has been created but has not yet been published. Draft packages are not available for installation by other users. |
+
+#### Version Management
+
+Each package displays its current version number (for example, **v1**, **v2**, or **v9**).
+
+Publishing a new release creates a new version while preserving previous releases, allowing developers to:
+
+- Track application releases
+- Publish updates without replacing previous versions
+- Maintain a clear version history
 
 ## Useful Tools and Applications
 
@@ -98,54 +222,6 @@ This application allows autonomous dialling of numbers from an uploaded list.
 !!! Note "Important Note"
     1. Ensure that all phone numbers are entered in the complete international format (e.g., +44 for the UK, +1 for the US).
     2. When entering multiple phone numbers, list each number on a new line.
-
-### Click-2-Dial (Programmatic API Calling)
-
-#### Overview
-
-**Click-to-Dial API** enables applications, websites, or software systems to initiate phone calls with a single click or programmatic command.
-
-Instead of manually dialing a phone number, users or systems can trigger a call directly from an interface, making the process faster, more efficient, and less error-prone.
-
-### Call Flow (How it works?)
-
-```mermaid
-flowchart TD
-    A[API Request Sent] --> B[Includes api_key & phone]
-    B --> C[Validate Authentication]
-    C -->|Valid| D[Initiate Two Outbound Calls]
-    C -->|Invalid| X[Reject Request]
-
-    D --> E[Call to Configured Extension]
-    D --> F[Call to Destination Number]
-
-    E --> G{Both Calls Answered?}
-    F --> G
-
-    G -->|Yes| H[Bridge Calls Together]
-    G -->|No| I[Wait / Retry / Fail]
-```
-
-#### Steps to Use the App
-
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Click-2-Dial** and click `Install`. <br><img src= "/apps/img/cd1new1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-2. A window will appear, hit `Install` again. <br><img src= "/apps/img/cd2new1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-3. In the `Installed Versions` tab click `Config`. <br><img src= "/apps/img/cd3new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-4. A window will open, prompting you to enter the following details:
-      + Select the `Class 4 server` (from the drop-down) that routes outbound calls to the destination number through the configured carriers.
-      + Select the `Class 5 server` that manages customer extensions and places the call to the configured extension before connecting it to the destination.
-      + `Customer Portal Domain`: Select the customer portal domain that hosts the Click-2-Dial application and generates the API endpoint. The API endpoint used by external applications to send Click-2-Dial requests. Applications must send a POST request with a valid API key and destination phone number.
-      + `API Keys`:
-          + `Customer`: Select the customer account that will be authorized to use the Click-2-Dial API. The generated API key is associated with this customer.
-          + `API Key`: A unique authentication key generated for the selected customer. External applications must include this key in every Click-2-Dial API request to authenticate and initiate calls.
-          + `CLI`: Specify the Caller Line Identification (Caller ID) that is displayed to the destination party when the outbound call is placed. Enter the number in international format (for example, 441234567890).
-          + `Extension`: Specify the extension that should be called first. When a valid API request is received, the Click-2-Dial application rings this extension and, once answered, connects it to the destination number.
-          + `Add Row`: Click Add Row to create a new Click-2-Dial API configuration for another customer.
-          + `Delete`: Click the Delete icon to remove the selected customer's API key configuration from the Click-2-Dial application.
-5. Click `Save`.
 
 ### Yoco Payment
 
@@ -428,85 +504,3 @@ It supports payments exclusively in Philippine Peso (PHP), ensuring compatibilit
 3. The installed versions are visible and click on `Config Paynamics` (settings button). <br><img src= "/apps/img/pay3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. Follow the configuration steps as shown in the following image. <img src= "/apps/img/pay4.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-### Peering Hub
-
-#### Overview
-
-**Peering Hub** is a **STIR/SHAKEN certificate management application** that helps telecommunications service providers securely manage the complete lifecycle of STIR/SHAKEN certificates.
-
-It simplifies the process of generating cryptographic keys, requesting certificates from an authorized Certification Authority (CA) through **iConnectiv (STI-PA)**, and deploying certificates to ConnexCS platforms for signing outbound calls.
-
-#### Why Use Peering Hub?
-
-STIR/SHAKEN is an industry framework designed to combat caller ID spoofing by verifying the authenticity of telephone calls.
-
-Peering Hub provides a centralized interface to:
-
-* Generate and manage private/public key pairs.
-* Request and renew STIR/SHAKEN certificates.
-* Manage certificate deployments.
-* Configure signing credentials for ConnexCS platforms.
-* Monitor certificate status and validity.
-
----
-
-#### Key Features
-
-* **Private Key Management**: Securely generate and store cryptographic private keys used for call signing.
-
-* **Certificate Provisioning**: Request and manage STIR/SHAKEN certificates through **iConnectiv (STI-PA)**.
-
-* **Certificate Deployment**: Deploy approved certificates to ConnexCS platforms for outbound call authentication.
-
-* **Certificate Lifecycle Management**: Track certificate issuance, expiration, renewal, and replacement.
-
-* **Centralized Administration**: Manage all STIR/SHAKEN resources from a single application.
-
----
-
-#### How It Works
-
-```mermaid
-flowchart TD
-    A[Generate Private Key] --> B[Create Certificate Request]
-    B --> C[Submit to iConnectiv STI-PA]
-    C --> D[Certificate Issued]
-    D --> E[Deploy Certificate]
-    E --> F[Sign Outbound Calls]
-    F --> G[Verify Caller Identity]
-```
-
-#### Typical Workflow
-
-1. Generate a cryptographic key pair.
-2. Create a certificate signing request (CSR).
-3. Submit the request through **iConnectiv (STI-PA)**.
-4. Receive the approved STIR/SHAKEN certificate.
-5. Deploy the certificate to the ConnexCS platform.
-6. Outbound calls are digitally signed, allowing receiving carriers to verify the caller's identity.
-
-#### Benefits
-
-* Reduces caller ID spoofing.
-* Improves trust in outbound calls.
-* Simplifies STIR/SHAKEN certificate management.
-* Centralizes certificate deployment and renewal.
-* Helps service providers comply with STIR/SHAKEN requirements.
-
-#### How to use Peering Hub?
-
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Peering Hub** and click `Install`. <br><img src= "/apps/img/ph1.png"  style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-2. A window will appear, hit `Install` again. <br><img src= "/apps/img/ph2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-3. In the `Installed Versions` tab click `Config`. This section is used to configure the API endpoint that the Peering Hub application uses to communicate with the Peering Hub service. The configured URL is used for all requests related to STIR/SHAKEN certificate management. <br><img src= "/apps/img/ph3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-4. A window will open, prompting you to enter the following details:
-      1. `API Base URL`: Specify the base URL of the Peering Hub API. The application sends all requests, such as certificate provisioning, key management, and deployment, to this endpoint. **Only change this value if you need to connect to a different Peering Hub environment, such as a testing or private deployment.**
-      2. Click `Save` to apply and store the configured API Base URL. All future requests from the Peering Hub application will use the saved endpoint.
-      3. Click `Reset to Default` to restore the API Base URL to the default Peering Hub endpoint (https://app-api.peeringhub.io). Use this option to discard any custom configuration and reconnect to the default service.
-
-5. Navigate to **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**. Click on the `PeeringHub` button. <br><img src= "/apps/img/ph4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-6. Sign in to PeeringHub. <br><img src= "/apps/img/ph5.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br>After login you can directly migrate your certificate.</br>
