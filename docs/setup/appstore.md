@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 30–60 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with Setup privileges; basic understanding of the Apps platform and deployment process.<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Apps Platform – Applications</a><br>
+<strong>Related Topics</strong>: <a href="/anvil-apps/peering-hub/">Apps Platform – Applications</a><br>
 <strong>Next Steps</strong>: Install the required app from <code>Setup → App Store</code>, complete its basic configuration, and then verify it works correctly in your environment.<br>
 
 </details>
@@ -29,15 +29,15 @@ The App Store serves as a package registry where applications can be published, 
 
 3. This opens the Connex Store, where you can browse available applications and manage your own packages.
 
-4. **App Store Sections**
+4. **App Store Sections**: 
 
-* **Anvil Store**: Its the modern application marketplace for Anvil-based applications.
+   * **Anvil Store**: Its the modern application marketplace for Anvil-based applications.
 
-**It provides access to**:
+    **It provides access to**:
 
-- Marketplace applications
-- Installed applications
-- Your published packages
+   - Marketplace applications
+   - Installed applications
+   - Your published packages
 
 > Note: The Classic Store is maintained for legacy applications and backward compatibility.
 
@@ -57,9 +57,9 @@ The Marketplace consists of the following components.
 
 1. **Search Packages**: Use the search bar at the top of the page to quickly locate applications by:
 
-   * Package name
-   * Description
-   * Keywords
+      * Package name
+      * Description
+      * Keywords
 
     The application list filters automatically as you type.
 
@@ -69,13 +69,13 @@ The Marketplace consists of the following components.
 
     A package card includes:
 
-   * Application icon
-   * Application name
-   * Short description
-   * Current version
-   * Installation status
-   * Update status
-   * Install button (for applications not yet installed)
+      * Application icon
+      * Application name
+      * Short description
+      * Current version
+      * Installation status
+      * Update status
+      * Install button (for applications not yet installed)
 
 4. **Installation Status**: Applications display their current installation state *Installed/Not Installed*.
 
@@ -83,7 +83,9 @@ The Marketplace consists of the following components.
 
 ### Installed Apps
 
-The **Installed Apps** section provides a centralized view of all applications currently installed in your ConnexCS workspace. It allows administrators to monitor installed packages, verify their versions, and ensure that applications are running the latest available release.
+The **Installed Apps** section provides a centralized view of all applications currently installed in your ConnexCS workspace. 
+
+It allows administrators to monitor installed packages, verify their versions, and ensure that applications are running the latest available release.
 
 Only applications that have already been installed from the Marketplace appear in this section. <br><img src= "/setup/img/nas2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -93,9 +95,9 @@ The Installed Apps page includes the following components.
 
 1. **Search Packages**: Use the search bar to quickly locate installed applications by:
 
-   * Application name
-   * Description
-   * Keywords
+      * Application name
+      * Description
+      * Keywords
 
     The list filters automatically as you type.
 
@@ -105,11 +107,11 @@ The Installed Apps page includes the following components.
 
     **Each card displays**:
 
-   * Application icon
-   * Application name
-   * Short description
-   * Installed version
-   * Update status
+      * Application icon
+      * Application name
+      * Short description
+      * Installed version
+      * Update status
 
 4. **Update Status**: Installed applications indicate whether updates are available *Up to Date/Update Available*.
 
@@ -125,9 +127,9 @@ The **My Packages** page contains the following components.
 
 1. **Search Packages**: Use the search bar to quickly find your packages by:
 
-   - Package name
-   - Description
-   - Keywords
+      - Package name
+      - Description
+      - Keywords
 
     The package list updates automatically as you type.
 
@@ -171,6 +173,8 @@ Publishing a new release creates a new version while preserving previous release
 - Track application releases
 - Publish updates without replacing previous versions
 - Maintain a clear version history
+
+To explore the available Anvil applications, see the [Anvil Apps](/anvil-apps/peering-hub/) documentation page.
 
 ## Useful Tools and Applications
 

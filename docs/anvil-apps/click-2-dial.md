@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 10–15 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with Setup privileges; a configured Class 4 server, Class 5 server, and Customer Portal domain; basic understanding of the Apps platform and API authentication.<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/apps/architecture/app/">Apps Platform – Applications</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/appstore/">Apps Platform – Applications</a><br>
 <strong>Next Steps</strong>: Configure the Class 4/Class 5 servers and Customer Portal domain, generate an API key for the target customer, and test the API endpoint with a valid <code>api_key</code> and destination <code>phone</code> number.<br>
 
 </details>
