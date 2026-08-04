@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 20–30 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with Setup privileges; an iConnectiv (STI-PA) account for STIR/SHAKEN certificate provisioning; basic understanding of the Apps platform and STIR/SHAKEN concepts.<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/appstore/">Apps Platform – Applications</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/appstore/">App Store</a><br>
 <strong>Next Steps</strong>: Generate a private key and certificate signing request in PeeringHub, submit it through iConnectiv (STI-PA), and once approved, deploy the certificate to your ConnexCS platform to begin signing outbound calls.<br>
 
 </details>

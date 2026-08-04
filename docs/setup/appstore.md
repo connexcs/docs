@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 30–60 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with Setup privileges; basic understanding of the Apps platform and deployment process.<br>
-<strong>Related Topics</strong>: <a href="/anvil-apps/peering-hub/">Apps Platform – Applications</a><br>
+<strong>Related Topics</strong>: <a href="/anvil-apps/peering-hub/">Anvil Apps</a><br>
 <strong>Next Steps</strong>: Install the required app from <code>Setup → App Store</code>, complete its basic configuration, and then verify it works correctly in your environment.<br>
 
 </details>
@@ -29,15 +29,8 @@ The App Store serves as a package registry where applications can be published, 
 
 3. This opens the Connex Store, where you can browse available applications and manage your own packages.
 
-4. **App Store Sections**: 
-
-   * **Anvil Store**: Its the modern application marketplace for Anvil-based applications.
-
-    **It provides access to**:
-
-   - Marketplace applications
-   - Installed applications
-   - Your published packages
+4. **App Store Sections**:
+   1. **Anvil Store**: Its the modern application marketplace for Anvil-based applications. It provides access to **Marketplace applications**, **Installed applications**, and **Your published packages**.
 
 > Note: The Classic Store is maintained for legacy applications and backward compatibility.
 
