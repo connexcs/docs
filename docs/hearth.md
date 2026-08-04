@@ -106,6 +106,10 @@ Hearth is a multi-tenant database. Each ConnexCS account has isolated applicatio
 
 ---
 
+### Authentication
+
+Hearth supports authentication using both `RFC 8693` and `asymmetric OpenID Connect (OIDC)`.
+
 ## REST API or JavaScript SDK?
 
 Hearth supports two methods of interacting with your data:
