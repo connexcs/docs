@@ -6,7 +6,9 @@
 </details>
 
 **Document type:** Reference / Interconnect Qualification
+
 **Applies to:** ConnexCS Cloud Softswitch
+
 **Classification:** Public — no confidential information
 
 ## 1. Purpose
