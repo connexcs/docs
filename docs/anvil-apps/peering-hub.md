@@ -88,6 +88,6 @@ flowchart TD
       2. Click `Save` to apply and store the configured API Base URL. All future requests from the Peering Hub application will use the saved endpoint.
       3. Click `Reset to Default` to restore the API Base URL to the default Peering Hub endpoint (https://app-api.peeringhub.io). Use this option to discard any custom configuration and reconnect to the default service.
 
-5. Navigate to **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**. Click on the `PeeringHub` button. <br><img src= "/apps/img/ph4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. Navigate to **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**. Click on the `PeeringHub` button. <br><img src= "/apps/img/ph4new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 6. Sign in to PeeringHub. <br><img src= "/apps/img/ph5.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br>After login you can directly migrate your certificate.</br>
