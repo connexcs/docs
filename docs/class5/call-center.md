@@ -73,6 +73,140 @@ The Call Center module is ideal for organizations that need to efficiently distr
 
 ---
 
+## How the Call Center Works
+
+The Call Center automatically routes incoming calls to eligible agents based on the configured queue settings, agent availability, and selected distribution strategy.
+
+The sections below describe how an incoming call is processed at runtime, and how the **Consumers**, **Status**, **Distribution Strategy**, **Max No Answer**, and **Wrap Up Time** settings interact during an actual call.
+
+---
+
+### 1. Agent Availability (Status)
+
+When a call enters the queue, the system checks the **Consumers** list to determine which agents are currently eligible to receive it.
+
+Only agents whose **Status** is set to **Available** are considered for call distribution.
+
+- An administrator or supervisor can change an agent's status manually.
+- In custom-coded deployments, agents may also be permitted to change their own status (for example, toggling between Available, On Break, or Logged Out).
+
+Agents whose status is **On Break**, **Logged Out**, or any other unavailable state are excluded from routing until their status changes back to Available.
+
+---
+
+### 2. Call Distribution
+
+Once one or more agents are Available, the configured **Distribution Strategy** determines which of those agents is offered the next call:
+
+- Ring All
+- Longest Idle Agent
+- Round Robin
+- Top Down
+- Agent With Least Talk Time
+- Agent With Fewest Calls
+- Sequentially By Agent Order
+- Random
+
+The strategy only ever selects from the pool of currently Available agents — so as that pool changes (agents logging in/out, going on break, or being auto-removed via Max No Answer), the strategy's behavior changes with it in real time.
+
+---
+
+### 3. Missed Calls & Max No Answer
+
+If the selected agent doesn't answer within the configured **Ring Timeout**, the call is treated as missed and re-offered to another eligible agent according to the same Distribution Strategy — the queue does not wait or fail just because one agent missed the call.
+
+Each agent also has a **Max No Answer** setting: the number of *consecutive* missed calls allowed before the system automatically changes that agent's status to whatever is configured under **Agent No-Answer Status**:
+
+| Agent No-Answer Status | Agent auto-returns to Available? |
+|---|---|
+| Available | Yes — immediately |
+| Available (On Demand) | Yes — when queue demand requires it |
+| On Break | No — must be manually changed back |
+| Logged Out | No — must log back in manually |
+
+**Example:** Max No Answer = 3, Agent No-Answer Status = On Break
+- The agent misses 3 consecutive queue calls.
+- Their status automatically changes to On Break.
+- They stop receiving queue calls and remain excluded until a supervisor (or the agent themself, if self-service is enabled) manually sets their status back to Available.
+
+This is what makes the Distribution Strategy dynamic rather than static: it isn't just reacting to who's logged in, it's continuously reacting to missed-call behavior as well.
+
+---
+
+### 4. Call Handling
+
+When an agent answers:
+
+- The caller is connected to that agent.
+- The agent is marked busy and removed from the pool of agents eligible for a *new* call until the current one ends.
+- Other waiting callers remain queued until another eligible agent becomes available.
+
+---
+
+### 5. Wrap-Up Time
+
+After a call ends, if **Wrap Up Time** is configured, the agent is held in a temporarily unavailable state — even though their status still shows Available — giving them time to finish notes, update CRM records, or otherwise prepare for the next call.
+
+**Example:** Wrap Up Time = 30 seconds
+- Agent finishes a call at 10:15:00.
+- The agent becomes eligible for the next queue call from 10:15:30 onward, provided they're otherwise Available.
+
+Once Wrap Up Time expires, the agent automatically returns to the active pool — no manual action needed.
+
+---
+
+### Overall Call Flow
+
+```text
+Incoming call enters queue
+            │
+            ▼
+   Check Consumers list
+            │
+            ▼
+ Filter agents: Status = Available
+            │
+            ▼
+   Apply Distribution Strategy
+            │
+            ▼
+    Offer call to selected agent
+            │
+   ┌────────┴────────┐
+   ▼                  ▼
+Answered          No answer (Ring Timeout)
+   │                  │
+   ▼                  ▼
+Call connects     Re-offer to next agent per
+   │              Distribution Strategy
+   ▼                  │
+Call ends              ▼
+   │              Max No Answer reached?
+   ▼               ┌───────┴───────┐
+Wrap Up Time      No               Yes
+   │               │                │
+   ▼               ▼                ▼
+Auto-returns   Retry loop      Status auto-changes to
+to Available   continues       configured Agent
+   │           (back to                No-Answer Status
+   │           "Offer call")            │
+   │                              ┌─────┴─────┐
+   │                              ▼             ▼
+   │                       Available /    On Break /
+   │                       Available      Logged Out
+   │                       (On Demand)         │
+   │                              │             │
+   │                              ▼             ▼
+   │                       Auto-returns    Requires manual
+   │                       to pool         reset before
+   │                                       receiving calls again
+   └──────────────────────────────┬──────────────────────┘
+                                   ▼
+                    Agent eligible for next call
+```
+
+**Key takeaway:** only two things return an agent to the active pool *automatically* — the Wrap Up Time timer expiring, and a Max No Answer breach where the configured Agent No-Answer Status is itself "Available" or "Available (On Demand)". If the configured status is On Break or Logged Out, the agent needs a manual status change (by a supervisor, or by themselves if self-service is enabled) before they can receive queue calls again.
+
 ## Steps to Create a Call-Center
 
 1. Login to your account.
@@ -106,7 +240,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
       | **Longest Idle Agent**| Routes the call to the available agent who has been idle for the longest time|✅ |❌|✅| Customer support teams, balanced workload distribution|
       | **Round Robin** | Distributes calls sequentially among available agents in rotation|✅|❌|✅| General-purpose queues requiring equal call distribution|
       | **Top Down** | Always offers the call to the highest-priority agent first. If unavailable, the system proceeds down the configured agent list|❌|✅|✅| Priority-based routing, receptionists, senior support teams|
-      | **Agent With Least Talk Time**  | Selects the available agent with the lowest cumulative talk time|✅|❌|✅| Balancing total conversation time across agents|
+      | **Agent With Least Talk Time** | Selects the available agent with the lowest cumulative talk time|✅|❌|✅| Balancing total conversation time across agents|
       | **Agent With Fewest Calls**| Routes the call to the available agent who has answered the fewest calls during the current session|✅|❌|✅| Equalizing call volume among agents|
       | **Sequentially By Agent Order** | Attempts agents one at a time based on their configured order until one answers|❌|✅|⚠️(*patrially*)| Fixed routing order, escalation workflows, seniority-based teams   |
       | **Random**| Randomly selects an available agent for each incoming call|⚠️(*partially*)|❌|✅| Small teamss, informal call distribution, randomized load balancing |
@@ -170,7 +304,7 @@ The Call Center module is ideal for organizations that need to efficiently distr
 
 === "Consumers"
 
-    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. <br>Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics.</br> <br><img src= "/class5/img/ccnew5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. <br>Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics.</br> <br><img src= "/class5/img/ccnew5new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     Administrators can add, modify, or remove agents from the queue, assign priority levels, and monitor their current status and activity.
 
@@ -186,6 +320,17 @@ The Call Center module is ideal for organizations that need to efficiently distr
       | **Waiting** | Displays the amount of time the agent has been idle or waiting since their last queue activity. This value is used by strategies such as **Longest Idle Agent**|
       | **Total Calls**  | Shows the total number of calls answered by the agent within the queue|
       | **Missed Calls** | Displays the number of queue calls that were offered to the agent but were not answered|
+
+    * **SIP User**: When you click on a SIP User, the following parameters will appear:
+      
+      | Field | Description |
+      | ------|------------ |
+      | **Max No Answer** | Number of consecutive unanswered calls before the agent's status is changed to agent-no-answer-status|
+      |**Wrap Up Time**|Seconds the agent is unavailable after a call ends before returning to Available|
+      |**Reject Delay Time**| Seconds to wait before offering another call to an agent who rejected the previous one|
+      |**Busy Delay Time**|Seconds to wait before offering another call to an agent whose line returned busy|
+      |**No Answer Delay Time**| Seconds to wait before offering another call to an agent who did not answer|
+      |**Ring Timeout**| maximum amount of time a system will let an outbound call ring before giving up and treating it as unanswered|
 
     * **Toolbar Actions**: The toolbar above the Consumers table provides quick management options.
 
