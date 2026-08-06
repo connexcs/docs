@@ -396,3 +396,16 @@ This command is useful for querying operational data, validating records, troubl
 |`areas`|Lists all available SQL areas| View the available databases or data areas before executing a query|`sql areas`|
 |`<area> "<query>"`|Executes a SQL query against the specified area| Retrieve records, validate data, or troubleshoot issues using a single SQL command|
 |`<area>`|Opens an interactive SQL session for the specified area|Execute multiple SQL queries interactively without repeatedly specifying the target area|
+
+### `connexamine`
+
+First you need to enter the `ConnExamine` directory by using `cd connexamine`
+
+| Command | Description  | Example Use Case|  Syntax |
+| ------- | -------------|-----------------|---------|
+| `adopt` | Claims a Connexamine box using its unique code or IP address, allowing it to be managed from your account| Claim a newly deployed Connexamine box before running diagnostics| `connexamine adopt <code\|ip>` |
+| `list`  | Lists all adopted Connexamine sessions. You can also select a session to open its live monitoring dashboard| View all available Connexamine boxes and open the dashboard for a specific one| `connexamine list [--json \| --plain]` then select the `connexamine box`|
+| `mtr`   | Runs an **MTR (My Traceroute)** test from a selected Connexamine box and streams the results in real time| Diagnose packet loss or routing issues between the Connexamine box and a remote destination | `connexamine mtr <session-id> <target>`|
+| `ping`  | Sends ICMP echo requests from a selected Connexamine box and streams the live output| Verify network connectivity and latency to a remote host| `connexamine ping <session-id> <target>`|
+| `rm`    | Removes (forgets) a saved Connexamine session from your local client. This does **not** remove or reset the actual Connexamine box. | Clean up old or unused Connexamine sessions from your CLI| `connexamine rm <session-id> [-f \| --force]`|
+| `show`  | Displays the complete telemetry snapshot for a specific Connexamine session, including collected diagnostic information| Review detailed telemetry and health information for a Connexamine box| `connexamine show <session-id> [--json]` |
