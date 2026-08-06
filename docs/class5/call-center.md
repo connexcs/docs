@@ -125,10 +125,15 @@ Each agent also has a **Max No Answer** setting: the number of *consecutive* mis
 | Logged Out | No — must log back in manually |
 
 !!! Example "Example"
+
     **Max No Answer = 3**
+    
     **Agent No-Answer Status = On Break**
+    
     - The agent misses 3 consecutive queue calls.
+    
     - Their status automatically changes to On Break.
+    
     - They stop receiving queue calls and remain excluded until a supervisor (or the agent themself, if self-service is enabled) manually sets their status back to Available.
 
 > Note: *This is what makes the Distribution Strategy dynamic rather than static: it isn't just reacting to who's logged in, it's continuously reacting to missed-call behavior as well.*
@@ -149,11 +154,15 @@ When an agent answers:
 
 After a call ends, if **Wrap Up Time** is configured, the agent is held in a temporarily unavailable state — even though their status still shows Available — giving them time to finish notes, update CRM records, or otherwise prepare for the next call.
 
-**Example:** Wrap Up Time = 30 seconds
-- Agent finishes a call at 10:15:00.
-- The agent becomes eligible for the next queue call from 10:15:30 onward, provided they're otherwise Available.
+!!! Example "Example"
 
-Once Wrap Up Time expires, the agent automatically returns to the active pool — no manual action needed.
+    **Wrap Up Time = 30 seconds**
+    
+    - Agent finishes a call at `10:15:00`.
+    
+    - The agent becomes eligible for the next queue call from `10:15:30` onward, provided they're otherwise Available.
+    
+    - Once Wrap Up Time expires, the agent automatically returns to the active pool — no manual action needed.
 
 ---
 
@@ -306,7 +315,7 @@ to Available   continues       configured Agent
 
 === "Consumers"
 
-    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. <br>Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics.</br> <br><img src= "/class5/img/ccnew5new.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. <br>Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics.</br> <br><img src= "/class5/img/ccnew5new.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     Administrators can add, modify, or remove agents from the queue, assign priority levels, and monitor their current status and activity.
 
@@ -323,7 +332,7 @@ to Available   continues       configured Agent
       | **Total Calls**  | Shows the total number of calls answered by the agent within the queue|
       | **Missed Calls** | Displays the number of queue calls that were offered to the agent but were not answered|
 
-    * **SIP User**: When you click on a SIP User, the following parameters will appear:
+    * **SIP User**: When you click on a SIP User arrow `>`, the following parameters will appear:
       
       | Field | Description |
       | ------|------------ |
