@@ -124,12 +124,14 @@ Each agent also has a **Max No Answer** setting: the number of *consecutive* mis
 | On Break | No — must be manually changed back |
 | Logged Out | No — must log back in manually |
 
-**Example:** Max No Answer = 3, Agent No-Answer Status = On Break
-- The agent misses 3 consecutive queue calls.
-- Their status automatically changes to On Break.
-- They stop receiving queue calls and remain excluded until a supervisor (or the agent themself, if self-service is enabled) manually sets their status back to Available.
+!!! Example "Example"
+    **Max No Answer = 3**
+    **Agent No-Answer Status = On Break**
+    - The agent misses 3 consecutive queue calls.
+    - Their status automatically changes to On Break.
+    - They stop receiving queue calls and remain excluded until a supervisor (or the agent themself, if self-service is enabled) manually sets their status back to Available.
 
-This is what makes the Distribution Strategy dynamic rather than static: it isn't just reacting to who's logged in, it's continuously reacting to missed-call behavior as well.
+> Note: *This is what makes the Distribution Strategy dynamic rather than static: it isn't just reacting to who's logged in, it's continuously reacting to missed-call behavior as well.*
 
 ---
 
@@ -304,7 +306,7 @@ to Available   continues       configured Agent
 
 === "Consumers"
 
-    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. <br>Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics.</br> <br><img src= "/class5/img/ccnew5new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    The **Consumers** section is used to assign and manage the agents who can receive calls from the Call Center queue. <br>Each consumer represents a **SIP user (agent)** and includes settings that control call distribution priority, routing order, availability, and performance statistics.</br> <br><img src= "/class5/img/ccnew5new.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
     Administrators can add, modify, or remove agents from the queue, assign priority levels, and monitor their current status and activity.
 
