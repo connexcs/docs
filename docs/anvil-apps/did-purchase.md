@@ -43,9 +43,9 @@ Provisioning new phone numbers is often a manual, back-and-forth process involvi
 
 ## Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Yoco** and click `Install`. A window will open hit the `Install` button again. <br><img src= "/apps/img/didp1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Yoco** and click `Install`. A window will open hit the `Install` button again. <br><img src= "/apps/img/didp1.png"  style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. Click on the installed App and click on `Config`. <br><img src= "/apps/img/didp2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Click on the installed App and click on `Config`. <br><img src= "/apps/img/didp2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. A config window will open, prompting you to enter the following details:
       + `API User Token`: The ConnexCS API authentication token used by the DID Purchase app to communicate with the platform's DID provisioning API. The value is masked by default (click the eye icon to reveal it) and is **stored encrypted using AES-256-GCM**. It's tagged `ENCRYPTED`, indicating this field is never exposed in plain text once saved.

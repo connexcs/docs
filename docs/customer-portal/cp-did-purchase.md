@@ -38,5 +38,5 @@ This feature demonstrates the capability of the ConnexCS platform to integrate w
 2. Click **DID Purchase**.
 3. A window will open where you need to enter the DID you wish to purchase. Click on `Search`.
 4. A **DID Ordering** window will appear, enter the DID number and hit the **Search** button. A list of DID numbers will appear.
-5. Select the DIDs you wish to purchase, click on **Add to Cart**, then **Checkout**. <img src= "/customer-portal/img/cpdidp1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. The purchased DIDs will be visible on the Purchase DID portal. 
+5. Select the DIDs you wish to purchase, click on **Add to Cart**, then **Checkout**. <img src= "/customer-portal/img/cpdidp1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. The purchased DIDs will be visible on the Purchase DID portal.

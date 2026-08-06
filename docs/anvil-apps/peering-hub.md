@@ -90,4 +90,4 @@ flowchart TD
 
 5. Navigate to **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**. Click on the `PeeringHub` button. <br><img src= "/apps/img/ph4new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-6. Sign in to PeeringHub. <br><img src= "/apps/img/ph5.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br>After login you can directly migrate your certificate.</br>
+6. Sign in to PeeringHub. <br><img src= "/apps/img/ph5.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br>After login you can directly migrate your certificate.</br>
