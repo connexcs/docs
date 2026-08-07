@@ -91,9 +91,25 @@ Shows your sign-in status, active project name, and quick-action buttons. When y
 
 <img src= "/apps/img/aide9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-### Create Resource (`+`)
+### Version Control
 
-You can document **Create Resource** like this:
+| Icon / Element | Function |
+|---|---|
+| 📷 Camera | Captures a new snapshot of the project's current state|
+| ⑂ Branch/fork icon | Creates a new branch |
+|  ↻ Refresh | Refreshes/re-syncs the whole panel with the current project state|
+| "main ✓" dropdown | Shows the active branch name with a checkmark confirming it's selected; click to switch branches|
+| + (plus) | Creates a new branch|
+| ⊍ Pin-like icon |Merge a branch into current |
+| ↻ Refresh | Refreshes just the branch selector/status |
+| Changes | list any uncommitted changes/edits in the project |
+| Snapshots section |  A snapshot is a manually or automatically created save point that captures the full state of the project at a specific moment in time |
+|  | Blue "1" badge | Live count of snapshots taken for the project|
+|   | + (plus, far right) | Manually creates a new snapshot. |
+|  | "Publish ce1c39958c64" is the Snapshot entry |
+|  | "· 1d ago"- Relative timestamp showing when the snapshot was taken | |
+
+<img src= "/apps/img/vc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Create Resource
 
