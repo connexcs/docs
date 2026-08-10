@@ -49,13 +49,13 @@ Save the file with **Ctrl + S** (or **Cmd + S** on Mac). The extension sends the
 ### Step 5 — Run the script
 
 1. Click **Run** in the editor toolbar (or **Run with Vars** to supply test variables).
-2. Output appears in the **Cx Logs** panel at the bottom of the screen.<br><img src= "/apps/img/caa6.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Output appears in the **Cx Logs** panel at the bottom of the screen.<br><img src= "/apps/img/caa6.png"  style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Step 6 — View and restore version history
 
 1. Open the **File History** panel from the Activity Bar.
 2. Expand a file to see all saved versions with timestamps.
-3. Click a version and choose **Restore** to roll the file back to that point. The External Edit Review highlights described earlier in this guide will appear automatically. <br><img src= "/apps/img/caa7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click a version and choose **Restore** to roll the file back to that point. The External Edit Review highlights described earlier in this guide will appear automatically. <br><img src= "/apps/img/caa7.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 
