@@ -35,10 +35,4 @@ This key determines which Yoco account the API requests are executed against and
       + `Surcharge`: Configure an additional charge to be applied to payments. You can choose one of the following options:
         + **Amount (ZAR)**: Applies a fixed surcharge in South African Rand (ZAR).
         + **Percent**: Applies a percentage-based surcharge on the transaction amount. Click `Save`.</br><img src= "/apps/img/yp3.png" widht= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. Click on `App Settings`.
-5. `Custom Domains`: The Custom Domains section allows a domain to be mapped to the application, enabling it to be served under a branded or dedicated hostname rather than a default system URL. This is applicable to customer-facing applications such as DID Purchase, which expose a storefront interface to end users.
-      1. Selecting `+ Add` opens the `Add Domain` dialog.
-      2. The Domain field accepts a fully qualified domain name (e.g. test.cnx.page).
-      3. Upon creation, the application is automatically rebuilt and republished to bind the new domain. No manual redeployment step is required.
-      4. If no domains are configured, the system displays: "*No custom domains configured yet*."
-6. `Assigned Buttons`: The Assigned Buttons section lists the portal entry points registered to this application, indicating where end users can access it within the ConnexCS interface.<br><img src= "/apps/img/yp4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> 
+4. The YoCo button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
