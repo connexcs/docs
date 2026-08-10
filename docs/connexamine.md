@@ -24,11 +24,19 @@ It watches outbound SIP INVITEs on a host — a PBX, a session border controller
 
 ConnExamine is purpose-built to rapidly diagnose call setup delays and failures on a connection. Instead of functioning as a full protocol analyzer, it focuses on the key metrics required to troubleshoot SIP call establishment.
 
+Connexamine is designed to work with the customer's own server — it isn't limited to servers hosted by ConnexCS. If the customer runs a server outside of ConnexCS's infrastructure (for example, a dialer server), Connexamine authenticates to it by entering that server's proxy details.
+
 ## What problem it solves
 
-Most SIP issues escalated to a provider are not caused by complex protocol errors but by **first-hop connectivity problems**—such as a trunk that is slow to respond with `100 Trying`, a carrier that delays sending `180 Ringing`, or a destination that times out without returning a SIP response. Traditionally, diagnosing these issues requires using tools like `sngrep`, `tcpdump`, or `Wireshark` to capture SIP traffic and manually trace the INVITE-to-response sequence for each call.
+Most SIP issues that get escalated to a provider aren't caused by complicated protocol errors. They're usually **first-hop connectivity problems** — things like:
 
-**ConnExamine does that correlation automatically and surfaces just the metrics that matter for this specific problem**:
+* A trunk that's slow to send back `100 Trying`
+* A carrier that takes too long to send `180 Ringing`
+* A destination that never sends any SIP response at all, and just times out
+
+Normally, tracking down these issues means manually digging through call traffic with tools like `sngrep`, `tcpdump`, or `Wireshark` — capturing the SIP packets yourself and tracing each INVITE through to its response, call by call.
+
+**Connexamine does this correlation automatically**. It skips the manual packet-tracing and surfaces just the handful of metrics you actually need to diagnose this kind of problem.
 
 | Metric  | Measurement  | Purpose |
 | --------|--------------|-------- |
@@ -59,6 +67,8 @@ ConnExamine runs in one of two modes, selected at startup:
 
 1. **Interactive mode** (`default`) — a live terminal session for hands-on debugging.
 2. **Daemon / auto mode** (`--auto`) — an unattended background service for continuous monitoring, reporting to ConnexCS.
+
+*These modes run on the server terminal.*
 
 ---
 
@@ -108,6 +118,16 @@ It turns a one-off debugging session into **continuous monitoring of a customer'
 sudo connexamine --auto
 ```
 
+### Commands for the terminal
+
+|Command Name|Example|
+|------------|-----------|
+|`sudo connexamine`|Interactive mode- live terminal debugging|
+|`sudo connexamine -i eth0`|Specific interface|
+|`sudo connexamine --trying-timeout 3000 --pdd-timeout 15000`|Custom timeouts|
+|`sudo connexamine --auto`|Daemon mode (continuous monitoring, reports to your provider)|
+|`connexamine --help`|Help and options|
+
 ### Token Generation Flow
 
 On the first run, Connexamine automatically generates a unique token if one is not provided. This token is used to associate the monitored host with the correct customer account or support case in ConnexCS.
@@ -141,8 +161,6 @@ flowchart TD
 
 ### Why this is useful
 
-Here's a cleaner, documentation-friendly bullet list:
-
 * Enables **continuous monitoring** of call setup performance instead of one-time troubleshooting sessions.
 * Eliminates the need for customers to **reproduce issues** while support engineers monitor an interactive session.
 * Streams **real-time call setup metrics** to the ConnexCS backend for ongoing analysis.
@@ -151,7 +169,6 @@ Here's a cleaner, documentation-friendly bullet list:
 * Reports **host health information**, including CPU, memory, disk usage, and system load, to distinguish network issues from server performance problems.
 * Gives ConnexCS support **continuous visibility** into connection health through the ConnexCS portal.
 * Bridges the gap between **interactive, on-demand debugging** and **long-term remote monitoring**, enabling faster issue detection and resolution.
-
 
 See the full wire protocol in the project's `WS-SCHEMA.md` if you need the exact message shapes.
 
@@ -180,7 +197,7 @@ Within that SIP traffic, it only actively **tracks** outbound INVITEs — calls 
 | Call-ID | Yes | The only way to let a human correlate a reported metric back to a specific, real call for investigation |
 | Destination/source IP | Yes | Identifies *which* upstream connection a problem belongs to — essential when a box has more than one trunk |
 | Host vitals (CPU, memory, disk, load, uptime) | Yes, in `--auto` mode only | Distinguishes "the connection is unhealthy" from "the box itself is overloaded," which otherwise look identical from the outside |
-| **Caller / called phone numbers (FROM/TO)** | **Shown locally only — never transmitted** | Interactive mode displays them on-screen for the person actively debugging, because they're often necessary context in the moment. Daemon mode's telemetry to ConnexCS deliberately omits them — they aren't needed to measure call-setup timing, and there's no reason for that data to leave the box |
+| Caller / called phone numbers (FROM/TO) | Shown locally only — never transmitted | Interactive mode displays them on-screen for the person actively debugging, because they're often necessary context in the moment. Daemon mode's telemetry to ConnexCS deliberately omits them — they aren't needed to measure call-setup timing, and there's no reason for that data to leave the box |
 | Call content / audio | Never | Connexamine never touches media, only signaling headers |
 | SIP message bodies (SDP, etc.) | Never | Only specific signaling headers (Call-ID, From, To, response codes) are parsed |
 
@@ -205,22 +222,29 @@ In short: what leaves the box in `--auto` mode is *timing statistics, response c
 
 By default, the running binary checks weekly for a new release and, if one is available, downloads and applies it automatically (disable via `--no-auto-update`). Downloads happen over TLS from a ConnexCS-controlled CDN. An on-demand update can also be triggered remotely by ConnexCS support — this is treated as an explicit, audited action and is honored even with automatic checks disabled, since it only ever happens in response to a deliberate request, not silently.
 
-### Summary
+## Installation of ConnExamine on your server
 
-Connexamine is built to be safe to run unattended, with production SIP traffic, on a customer's edge:
+1. Go to the server to run the following script:
 
-- It only looks at SIP signaling, never media or call content.
-- What it sends off the box is deliberately minimal — enough to diagnose connectivity problems, nothing that amounts to a call log.
-- Everything sent over the network is encrypted in transit.
-- The one remote-control surface (diagnostics) is narrowly scoped and validated before anything is ever executed.
+   ```bash
+   curl -fsSL https://cdn.cnxcdn.com/connexamine/install.sh | bash
+   ```
 
-## How to use?
+2. Run the folllowing command to enter the `Deamon Mode` for continuous monitoring, reports to your provider:
+
+   ```bash
+   sudo connexamine --auto
+   ```
+
+3. This will generate the `Code/Daemon Token` to be used in the `Claim Box` for authentication purposes.
+
+## How to use ConnExamine on the Control Panel?
 
 1. Login to your account.
 2. Navigate to **Global :material-menu-right: ConnExamine**.
 3. Click on the `+ Claim Box` button.
 4. Enter the `Code`- which is the `Deamon Token` or the `IP Address`.
-5. Click on `Claim`. <br><img src= "/misc/img/connex1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. Click on `Claim`. <br><img src= "/misc/img/connex1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> *
 6. All the session information is visible on the ConnExamine dashboard.<br><img src= "/misc/img/connex2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 7. Click on the `Session ID` to get more insights on the current session.<br><img src= "/misc/img/connex3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 8. Session details explained:
@@ -295,3 +319,12 @@ Displays representative call failures collected during the previous **60-second*
 | **Status** | Current connection status of the Connexamine agent (for example, **Connected** or **Disconnected**)|
 | **Window (s)** *(Metrics)*| Specifies the reporting interval, in seconds, over which call setup metrics are aggregated before being sent to the ConnexCS portal|
 | **Window (s)** *(Failure Samples)* | Specifies the sampling interval, in seconds, during which failed call samples are collected and grouped before being reported|
+
+## Summary
+
+Connexamine is built to be safe to run unattended, with production SIP traffic, on a customer's edge:
+
+- It only looks at SIP signaling, never media or call content.
+- What it sends off the box is deliberately minimal — enough to diagnose connectivity problems, nothing that amounts to a call log.
+- Everything sent over the network is encrypted in transit.
+- The one remote-control surface (diagnostics) is narrowly scoped and validated before anything is ever executed.
