@@ -392,7 +392,7 @@ nav:
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
 
-  - ANVIL Apps: 
+  - Anvil Apps: 
     - Peering Hub: anvil-apps/peering-hub.md
     - Click-2-Dial: anvil-apps/click-2-dial.md
     - Yoco Payments: anvil-apps/yoco-payments.md

@@ -43,7 +43,7 @@ Provisioning new phone numbers is often a manual, back-and-forth process involvi
 
 ## Steps to Use the App
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Yoco** and click `Install`. A window will open hit the `Install` button again. <br><img src= "/apps/img/didp1.png"  style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: DID Purchase** and click `Install`. A window will open hit the `Install` button again. <br><img src= "/apps/img/didp1.png"  style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 2. Click on the installed App and click on `Config`. <br><img src= "/apps/img/didp2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -53,10 +53,4 @@ Provisioning new phone numbers is often a manual, back-and-forth process involvi
       + `Mask Size`: The number of trailing digits to hide when displaying DID numbers in search results (e.g. showing `1423xxxxxxx` instead of the full number until purchased). Default appears to be `4`. Tagged `PUBLIC`, so this setting affects what end users see.
       + Click `Save Changes`. <br><img src= "/apps/img/didp3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. Click on `App Settings`.
-5. `Custom Domains`: The Custom Domains section allows a domain to be mapped to the application, enabling it to be served under a branded or dedicated hostname rather than a default system URL. This is applicable to customer-facing applications such as DID Purchase, which expose a storefront interface to end users.
-      1. Selecting `+ Add` opens the `Add Domain` dialog.
-      2. The Domain field accepts a fully qualified domain name (e.g. test.cnx.page).
-      3. Upon creation, the application is automatically rebuilt and republished to bind the new domain. No manual redeployment step is required.
-      4. If no domains are configured, the system displays: "*No custom domains configured yet*."
-6. `Assigned Buttons`: The Assigned Buttons section lists the portal entry points registered to this application, indicating where end users can access it within the ConnexCS interface.<br><img src= "/apps/img/didp4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. The YoCo button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.

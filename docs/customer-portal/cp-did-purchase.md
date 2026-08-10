@@ -14,7 +14,7 @@
 
 ## Overview
 
-**DID Purchase** is a self-service application that lets you browse, search, and purchase available Direct Inward Dialing (DID) numbers directly from within the providers platform.
+ **DID Purchase** is a self-service application that lets you browse, search, and purchase available Direct Inward Dialing (DID) numbers directly from within the provider's platform.
 
 Instead of requesting numbers manually through support, users can search for available DIDs by prefix or area code, review setup and recurring costs upfront, add selections to a cart, and check out — all from a single interface.
 
@@ -36,7 +36,6 @@ This feature demonstrates the capability of the ConnexCS platform to integrate w
 
 1. Login to your account.
 2. Click **DID Purchase**.
-3. A window will open where you need to enter the DID you wish to purchase. Click on `Search`.
-4. A **DID Ordering** window will appear, enter the DID number and hit the **Search** button. A list of DID numbers will appear.
-5. Select the DIDs you wish to purchase, click on **Add to Cart**, then **Checkout**. <img src= "/customer-portal/img/cpdidp1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. The purchased DIDs will be visible on the Purchase DID portal.
+3. In the **DID Ordering** window, enter the DID prefix/area code and click **Search** to view available numbers.
+4. Select the DIDs you wish to purchase, click on **Add to Cart**, then **Checkout**. <img src= "/customer-portal/img/cpdidp1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. The purchased DIDs will be visible on the Purchase DID portal.

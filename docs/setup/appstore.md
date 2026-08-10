@@ -30,7 +30,7 @@ The App Store serves as a package registry where applications can be published, 
 3. This opens the Connex Store, where you can browse available applications and manage your own packages.
 
 4. **App Store Sections**:
-   1. **Anvil Store**: Its the modern application marketplace for Anvil-based applications. It provides access to **Marketplace applications**, **Installed applications**, and **Your published packages**.
+   1. **Anvil Store**: It's the modern application marketplace for Anvil-based applications. It provides access to **Marketplace applications**, **Installed applications**, and **Your published packages**.
 
 > Note: The Classic Store is maintained for legacy applications and backward compatibility.
 
