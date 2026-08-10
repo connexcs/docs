@@ -43,8 +43,8 @@ This key determines which Yoco account the API requests are executed against and
 
 3. A window will open, prompting you to enter the following details:
       + `API User`: The selected API user represents the authenticated entity making API requests.
-      + Enter the `Secret Key`. This key is required for authentication. Follow the steps [here](/yoco-payments/#where-to-obtain-the-api-secret-key) to generate and retrieve the API key. **ConnexCS uses this key to securely authenticate and authorise all payment-related API requests**.
+      + Enter the `Secret Key`. This key is required for authentication. Follow the steps [here](/anvil-apps/yoco-payments/#where-to-obtain-the-api-secret-key) to generate and retrieve the API key. **ConnexCS uses this key to securely authenticate and authorise all payment-related API requests**.
       + `Surcharge`: Configure an additional charge to be applied to payments. You can choose one of the following options:
         + **Amount (ZAR)**: Applies a fixed surcharge in South African Rand (ZAR).
         + **Percent**: Applies a percentage-based surcharge on the transaction amount. Click `Save`.</br><img src= "/apps/img/yp3.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. The YoCo button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
+4. The YoCco button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
