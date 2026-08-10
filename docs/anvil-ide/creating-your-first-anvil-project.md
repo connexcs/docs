@@ -21,7 +21,7 @@ Anvil is the ConnexCS scripting and configuration platform. The extension connec
 
 1. Once signed in, the Explorer panel shows your available Anvil projects.
 2. To open an existing project, click on **Browse Projects**.
-3. To create a new project, use the **New Project** button (or the equivalent option in the ConnexCS portal at `app.connexcs.com`)<br><img src= "/apps/img/caa1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. To create a new project, use the **New Project** button (or the equivalent option in the ConnexCS portal at `app.connexcs.com`)<br><img src= "/apps/img/caa1png.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. **OR** Click on the `+` sign in the **Explorer** to create a new project. <br><img src= "/apps/img/caa3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Step 3 — Browse and open files
@@ -49,7 +49,7 @@ Save the file with **Ctrl + S** (or **Cmd + S** on Mac). The extension sends the
 ### Step 5 — Run the script
 
 1. Click **Run** in the editor toolbar (or **Run with Vars** to supply test variables).
-2. Output appears in the **Cx Logs** panel at the bottom of the screen.<br><img src= "/apps/img/caa6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Output appears in the **Cx Logs** panel at the bottom of the screen.<br><img src= "/apps/img/caa6.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Step 6 — View and restore version history
 

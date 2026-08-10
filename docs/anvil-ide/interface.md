@@ -111,19 +111,9 @@ Shows your sign-in status, active project name, and quick-action buttons. When y
 
 <img src= "/apps/img/vc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-### Create Resource
+### Create Project
 
-The **Create Resource** option allows you to create new resources within the currently selected Anvil project. Click the **+** (**Create Resource**) icon in the **ConnexCS Explorer** to open the resource selection menu, then choose the type of resource you want to create.
-
-| Resource Type | Description|
-| --------------|----------- |
-| **Script Forge**  | Creates a new **ScriptForge** backend script for implementing server-side business logic, APIs, automations, and workflows|
-| **Template** | Creates a reusable template that can be referenced by multiple resources, helping maintain consistent layouts and content|
-| **Page Builder** | Creates a new Page Builder resource for designing and managing application pages using the visual page editor|
-| **Domain** | Creates a new domain resource for configuring application domains, routing, or related domain settings|
-| **Key-Value Store** | Creates a key-value storage resource for persisting application configuration, settings, or other structured data as key-value pairs|
-
-<img src= "/apps/img/aide29.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+The **Create Project** option allows you to create new  Anvil project. <br><img src= "/apps/img/caa3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## Accounts
 
