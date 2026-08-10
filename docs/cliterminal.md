@@ -271,13 +271,6 @@ This command is useful for testing API endpoints, validating responses, troubles
 | ---------- | ------------| -----------------|------|---------|
 | `get`   | Makes a GET request to an API endpoint | Retrieve resource information, such as customer details, call records, routing configurations, or account settings, without modifying the underlying data | `api get <endpoint> [--query key=value ...] [--header key=value ...] [--json]` | `api get /customers --query status=active` |
 
-<!-- TODO (maintainer): `post`, `put`, and `delete` subcommands are referenced elsewhere as supported
-     but are not documented here. Add rows and syntax once confirmed, e.g.:
-     | `post`   | Makes a POST request with a JSON body   | `api post <endpoint> --body '<json>'`   |
-     | `put`    | Makes a PUT request with a JSON body    | `api put <endpoint> --body '<json>'`    |
-     | `delete` | Makes a DELETE request to an endpoint   | `api delete <endpoint>`                 |
--->
-
 #### Example Use Cases
 
 1. Test an API endpoint during development.
@@ -335,10 +328,6 @@ Instead of requiring manual SQL commands, the interactive interface presents men
 | `hearth tables drop` | Deletes a table from the specified schema | Remove an obsolete or unused table from a schema | `hearth tables drop <schema> <table>` | `hearth tables drop crm leads_old` |
 | `hearth table` | Displays metadata for a specific table | Inspect a table's structure, columns, and metadata before querying it | `hearth table <schema> <table>` | `hearth table crm customers` |
 | `hearth <schema> <table>`| Executes a one-shot query to list records from the specified table. Optional filters can be applied to narrow the results | Quickly retrieve records from a table without entering the interactive builder | `hearth <schema> <table> [filter...]` | `hearth center customers status=active` |
-
-<!-- TODO (maintainer): list the default/common Hearth schemas available out of the box, if any exist
-     before a user creates their own (referenced schemas seen in the interactive menu example below:
-     center, contact_center, contactcenter, crm — confirm which, if any, ship by default). -->
 
 #### Features
 
@@ -457,9 +446,6 @@ This command is useful for querying operational data, validating records, troubl
 | `areas`| Lists all available SQL areas | View the available databases or data areas before executing a query | `sql areas` | `sql areas` |
 | `<area> "<query>"`| Executes a SQL query against the specified area | Retrieve records, validate data, or troubleshoot issues using a single SQL command | `sql <area> "<query>"` | `sql billing "SELECT * FROM invoices LIMIT 10"` |
 | `<area>`| Opens an interactive SQL session for the specified area | Execute multiple SQL queries interactively without repeatedly specifying the target area | `sql <area>` | `sql billing` |
-
-<!-- TODO (maintainer): list the default/available SQL areas here so users don't have to run
-     `sql areas` blind on first use — no areas are named anywhere in the current source doc. -->
 
 ### `connexamine`
 
