@@ -118,7 +118,7 @@ Process, filter, transform, and analyze command output using built-in text proce
 
 ## How to use ConnexCS Terminal
 
-1. Login to your account.
+1. Log in to your account.
 2. Click on the `CLI Terminal` icon.
 3. A command-line terminal appears, where you can execute supported commands and view the results. <br><img src= "/misc/img/cterminal1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. Type `help` to get started. You will see a list of commands for your use. <br><img src= "/misc/img/cterminal2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
