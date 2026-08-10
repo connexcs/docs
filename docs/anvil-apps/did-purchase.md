@@ -1,5 +1,17 @@
 # DID Purchase
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup / Application Store & App Deployment<br>
+<strong>Audience</strong>: Administrators, Support Team, Product Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup privileges; a valid ConnexCS API User Token; carrier-configured DID inventory available for distribution.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/appstore/">App Store</a><br>
+<strong>Next Steps</strong>: Install and configure the DID Purchase app with your API User Token, currency, and mask size settings, then verify the DID Purchase button appears correctly in the Customer Portal for end customers to search, select, and purchase numbers.<br>
+
+</details>
+
 ## Overview
 
 The DID Purchase application allows customers to browse and acquire DIDs (phone numbers) that are made available by their carrier through the ConnexCS platform.
@@ -53,4 +65,4 @@ Provisioning new phone numbers is often a manual, back-and-forth process involvi
       + `Mask Size`: The number of trailing digits to hide when displaying DID numbers in search results (e.g. showing `1423xxxxxxx` instead of the full number until purchased). Default appears to be `4`. Tagged `PUBLIC`, so this setting affects what end users see.
       + Click `Save Changes`. <br><img src= "/apps/img/didp3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. The YoCo button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
+4. The DID Purchase button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.

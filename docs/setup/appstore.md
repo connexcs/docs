@@ -413,10 +413,6 @@ Instead of manually selecting CLIs for each call, the system retrieves them sequ
 
 5. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer[Name] :material-menu-right: Routing :material-menu-right: ScriptForge**. Select the `Sequential CLI` and click `Save`. <br><img src= "/apps/img/scli5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-### Webphone
-
-[Click here](/webphoneapp/) for a comprehensive introduction and step-by-step setup guide for the Webphone.
-
 ### Cx MCP
 
 #### Overview

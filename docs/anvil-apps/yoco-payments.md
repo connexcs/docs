@@ -1,5 +1,17 @@
 # Yoco Payment
 
+<details> <summary><strong>Document Metadata</strong></summary> <br>
+
+<strong>Category</strong>: Setup / Application Store & App Deployment<br>
+<strong>Audience</strong>: Administrators, Finance Team, Product Team<br>
+<strong>Difficulty</strong>: Beginner<br>
+<strong>Time Required</strong>: Approximately 10–15 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with Setup privileges; an active Yoco merchant account with access to the Yoco App / Control Panel; API Developer Integration access to retrieve the Secret Key.<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/appstore/">App Store</a><br>
+<strong>Next Steps</strong>: Install and configure the Yoco app with your Secret Key and surcharge preferences, then verify the Yoco payment button appears correctly in the Customer Portal for end customers to complete transactions.<br>
+
+</details>
+
 ## Overview
 
 **Yoco** is a payment gateway and merchant services platform that enables businesses to accept, process, and manage digital payments securely through APIs and hosted payment flows.
