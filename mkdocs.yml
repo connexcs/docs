@@ -264,7 +264,7 @@ nav:
     - Terminal Tools: terminal-tools.md
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
-    - ANVIL: anvil.md
+    - Anvil: Anvil.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
@@ -392,12 +392,12 @@ nav:
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
 
-  - ANVIL IDE:
+  - Anvil IDE:
     - Introduction: anvil-ide/introduction.md
     - Getting Started: anvil-ide/getting-started.md
     - IDE Interface: anvil-ide/interface.md
     - IDE Components: anvil-ide/components.md
     - Working with Files: anvil-ide/working-with-files.md
-    - ANVIL App Preview: anvil-ide/anvil-app-preview.md
-    - Creating your First ANVIL App: anvil-ide/creating-your-first-anvil-app.md
+    - Anvil App Preview: anvil-ide/anvil-app-preview.md
+    - Creating your First Anvil App: anvil-ide/creating-your-first-anvil-project.md
     
