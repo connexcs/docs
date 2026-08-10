@@ -320,6 +320,12 @@ Displays representative call failures collected during the previous **60-second*
 | **Window (s)** *(Metrics)*| Specifies the reporting interval, in seconds, over which call setup metrics are aggregated before being sent to the ConnexCS portal|
 | **Window (s)** *(Failure Samples)* | Specifies the sampling interval, in seconds, during which failed call samples are collected and grouped before being reported|
 
+## ConnExamine and ConnexCS Terminal
+
+You can access ConnExamine using ConnexCS Terminal.
+
+[Click here](/cliterminal/#connexamine) to know more.
+
 ## Summary
 
 Connexamine is built to be safe to run unattended, with production SIP traffic, on a customer's edge:
