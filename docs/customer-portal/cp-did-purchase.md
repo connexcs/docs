@@ -37,5 +37,5 @@ This feature demonstrates the capability of the ConnexCS platform to integrate w
 1. Login to your account.
 2. Click **DID Purchase**.
 3. In the **DID Ordering** window, enter the DID prefix/area code and click **Search** to view available numbers.
-4. Select the DIDs you wish to purchase, click on **Add to Cart**, then **Checkout**. <img src= "/customer-portal/img/cpdidp1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. The purchased DIDs will be visible on the Purchase DID portal.
+4. Select the DIDs you wish to purchase, click on **Add to Cart**, then **Checkout**.
+5. The purchased DIDs will be visible on the Purchase DID portal. <br><img src= "/customer-portal/img/cpdidp1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>

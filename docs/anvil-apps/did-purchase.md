@@ -63,6 +63,6 @@ Provisioning new phone numbers is often a manual, back-and-forth process involvi
       + `API User Token`: The ConnexCS API authentication token used by the DID Purchase app to communicate with the platform's DID provisioning API. The value is masked by default (click the eye icon to reveal it) and is **stored encrypted using AES-256-GCM**. It's tagged `ENCRYPTED`, indicating this field is never exposed in plain text once saved.
       + `Currency`: The ISO currency code (e.g. `USD`, `EUR`, `GBP`) used to display DID setup and recurring pricing throughout the app. Tagged `PUBLIC`, meaning this value is visible to end users.
       + `Mask Size`: The number of trailing digits to hide when displaying DID numbers in search results (e.g. showing `1423xxxxxxx` instead of the full number until purchased). Default appears to be `4`. Tagged `PUBLIC`, so this setting affects what end users see.
-      + Click `Save Changes`. <br><img src= "/apps/img/didp3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      + Click `Save Changes`. 
 
-4. The DID Purchase button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
+4. The DID Purchase button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions. <br><img src= "/apps/img/didp3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
