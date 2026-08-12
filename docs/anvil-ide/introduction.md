@@ -61,8 +61,6 @@ The Anvil IDE includes a comprehensive set of development tools:
 - Interactive Anvil application preview.
 - Integrated **CX Terminal** for ConnexCS CLI commands.
 - File history with version restoration.
-- SQL auto-completion for Query Builder scripts.
-- Script and template metadata management.
 - Built-in AI-powered ConnexCS Assistant.
 - Automatic synchronization of project files.
 
@@ -74,10 +72,7 @@ The Anvil IDE can be used for a variety of ConnexCS development tasks, including
 
 - Developing and testing ScriptForge backend scripts.
 - Building Anvil frontend applications.
-- Creating and maintaining HTML email and SMS templates.
-- Writing and testing SQL Query Builder scripts.
 - Managing application files and project resources.
-- Testing HTTP endpoint scripts.
 - Previewing frontend applications during development.
 - Debugging applications using integrated logs and execution results.
 - Collaborating on shared Anvil projects with automatic synchronization.
@@ -87,7 +82,7 @@ The Anvil IDE can be used for a variety of ConnexCS development tasks, including
 
 | Where | How to access |
 |---|---|
-| **Hosted web IDE** | Go to [code.connexcs.com](https://code.connexcs.com) directly, or open it from within your ConnexCS account at **app.connexcs.com → Anvil → IDE** (opens in a new tab) |
+| **Hosted web IDE** | Go to [code.connexcs.com](https://code.connexcs.com) directly, or open it from within your ConnexCS account at **app.connexcs.com → Anvil IDE** (opens in a new tab) |
 | **Your own IDE** | Install the **ConnexCS Connect** extension from the VS Code Marketplace, Open VSX, or any IDE that supports VS Code extensions (VS Code desktop, VS Codium, Cursor, etc.) |
 
 Both options give you the same features. The hosted IDE is the quickest way to get started; the extension lets you work inside whichever editor you already use.
