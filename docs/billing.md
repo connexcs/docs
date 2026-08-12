@@ -5,45 +5,65 @@
 <strong>Category</strong>: Setup → Billing<br>
 <strong>Audience</strong>: Administrators, Engineers, Finance Team<br>
 <strong>Difficulty</strong>: Intermediate<br>
-<strong>Time Required</strong>: 10–20 minutes<br>
+<strong>Time Required</strong>: 15–25 minutes<br>
 <strong>Prerequisites</strong>:<br>
 <ul>
 <li>A working understanding of your account’s billing model (per-minute vs. per-channel)</li>
 <li>Access to your usage data or CDRs to understand how charges are incurred</li>
 </ul>
 <strong>Related Topics</strong>: Billing Basics (detailed billing increments, rounding), Billing Guide (overall billing models), Rate Card Overview (since rate cards tie into billing)<br>
-<strong>Next Steps</strong>: Review which billing model your plan uses (per-minute or per-channel), verify your minimum charges and ensure alignment with your traffic patterns.<br>
+<strong>Next Steps</strong>: Confirm your billing model, configure rate cards, set up MRC packages if required, and test with a sample invoice.<br>
 
 </details>
 
 ## ConnexCS Billing Per Channel
 
-Billing per-channel is the traditional approach, where the consumer pays for a set number of channels or ports. It's like the VoIP equivalent of per-line billing in mobile networks.
+Billing per channel is the traditional approach, where the customer pays for a set number of channels or ports — the VoIP equivalent of per-line billing in mobile networks.
 
-### Advantages of Billing Per Channel
+### Advantages
 
-+ Cheaper than per-minute billing in systems with consistent traffic and high usage.
-+ Free servers are available for several tiers of service.
-+ Predictable costs allow for more stable billing cycles and simplified cost-benefit analysis.
+- Cheaper than per-minute billing for systems with consistent, high traffic volumes.
+- Free servers are available for several tiers of service.
+- Predictable costs allow for stable billing cycles and simplified cost-benefit analysis.
 
-### Disadvantages of Billing Per Channel
+### Disadvantages
 
-+ Inconsistent traffic often leads to higher costs.
-+ Capacity planning is inherently less flexible.
+- Inconsistent traffic often leads to higher costs relative to per-minute billing.
+- Capacity planning is inherently less flexible.
 
-## ConnexCS Billing per minute
+---
 
-In per-minute billing, the number of seconds you use gets tallied daily. Its combined with the per-minute cost, and then subtracted from your account.
+## ConnexCS Billing Per Minute
 
-### Advantages of ConnexCS Billing per minute
+In per-minute billing, the number of seconds used is tallied daily, combined with the per-minute cost, and deducted from the account balance.
 
-1. Channels come with peripheral considerations that make it more challenging to scale a billing unit. But per-minute rates are exact enough to scale with the system.
+### Advantages
 
-### Disadvantages of ConnexCS Billing per minute
+- Scales precisely with actual usage — ideal for variable or unpredictable traffic patterns.
+- Per-minute rates are granular enough to align costs closely with revenue at the route level.
 
-1. Expensive with consistent traffic.
-2. Multiple servers are more expensive.
+### Disadvantages
+
+- More expensive than per-channel billing when traffic is consistent and high-volume.
+- Running multiple servers increases cost proportionally.
+
+---
 
 ## Minimum Charges
 
-All accounts must spend a minimum cost per-server to remain active. Check [Pricing](https://connexcs.com/pricing) here. This helps to prevent incurring losses from stagnant accounts.
+All accounts must reach a minimum spend per server per month to remain active. This prevents losses from stagnant or inactive accounts. See the [Pricing page](https://connexcs.com/pricing) for current minimums.
+
+---
+
+## Choosing the Right Model
+
+| Consideration | Per Channel | Per Minute |
+|---|---|---|
+| Traffic pattern | Consistent, high volume | Variable or unpredictable |
+| Cost predictability | High | Moderate |
+| Scaling flexibility | Lower | Higher |
+| Margin visibility | At channel level | At call/route level |
+
+If you run a mix of business types — for example, wholesale interconnect alongside retail VoIP — you may operate both models simultaneously on different customer accounts.
+
+---
