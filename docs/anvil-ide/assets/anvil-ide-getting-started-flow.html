@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anvil IDE — Getting Started Flow</title>
+<style>
+  :root{
+    --bg: #10151c;
+    --panel: #161d27;
+    --panel-border: #26313f;
+    --text: #e7ecf3;
+    --muted: #8b98aa;
+    --accent-a: #5b9dff;   /* signing in */
+    --accent-a-dim: #1c3050;
+    --accent-b: #4fd88a;   /* project selection */
+    --accent-b-dim: #163524;
+    --accent-warn: #ffbd5b;
+    --accent-warn-dim: #3a2c10;
+    --line: #33404f;
+    --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    --sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:var(--sans);}
+  .wrap{max-width:880px;margin:0 auto;padding:36px 24px 60px;}
+
+  .header{margin-bottom:28px;}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+  h1{font-size:22px;margin:6px 0 4px;font-weight:650;letter-spacing:-.01em;}
+  .sub{color:var(--muted);font-size:13.5px;}
+
+  .legend{display:flex;gap:18px;margin:18px 0 8px;font-size:12px;color:var(--muted);}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
+
+  .rail{position:relative;padding-left:26px;margin-top:24px;}
+  .rail::before{
+    content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(to bottom, var(--accent-a) 0%, var(--accent-a) 46%, var(--accent-b) 54%, var(--accent-b) 100%);
+    opacity:.35;
+  }
+
+  .section-label{
+    font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    margin:26px 0 10px;padding-left:26px;
+  }
+  .section-label.a{color:var(--accent-a);}
+  .section-label.b{color:var(--accent-b);}
+
+  .step{position:relative;margin-bottom:10px;}
+  .marker{
+    position:absolute;left:-26px;top:14px;width:20px;height:20px;border-radius:50%;
+    background:var(--panel);border:2px solid var(--line);display:flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:10px;color:var(--muted);transition:all .25s ease;
+  }
+  .step.a .marker{border-color:var(--accent-a);}
+  .step.b .marker{border-color:var(--accent-b);}
+  .step.done .marker{background:var(--accent-a);color:#081120;border-color:var(--accent-a);}
+  .step.b.done .marker{background:var(--accent-b);border-color:var(--accent-b);}
+
+  .card{
+    background:var(--panel);border:1px solid var(--panel-border);border-radius:10px;
+    padding:14px 16px;cursor:pointer;transition:border-color .2s ease, transform .15s ease, background .2s ease;
+  }
+  .card:hover{border-color:var(--accent-a);transform:translateX(2px);}
+  .step.b .card:hover{border-color:var(--accent-b);}
+  .step.active .card{background:var(--accent-a-dim);border-color:var(--accent-a);}
+  .step.b.active .card{background:var(--accent-b-dim);border-color:var(--accent-b);}
+
+  .row{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .title{font-size:14px;font-weight:600;}
+  .chev{color:var(--muted);font-size:12px;transition:transform .2s ease;}
+  .step.active .chev{transform:rotate(90deg);color:var(--text);}
+
+  .detail{
+    max-height:0;overflow:hidden;transition:max-height .25s ease, opacity .2s ease, margin-top .2s ease;
+    font-size:12.5px;color:var(--muted);line-height:1.55;opacity:0;
+  }
+  .step.active .detail{max-height:120px;opacity:1;margin-top:8px;}
+
+  .branch{
+    display:none;gap:10px;margin-top:10px;padding-left:2px;
+  }
+  .branch.show{display:grid;grid-template-columns:1fr 1fr;}
+  .branch .opt{
+    border:1px dashed var(--line);border-radius:8px;padding:10px 12px;font-size:12px;color:var(--muted);
+    cursor:pointer;transition:border-color .2s, color .2s, background .2s;
+  }
+  .branch .opt:hover{border-color:var(--accent-warn);color:var(--text);}
+  .branch .opt.picked{border-color:var(--accent-warn);border-style:solid;background:var(--accent-warn-dim);color:var(--text);}
+  .branch .opt b{display:block;font-size:12.5px;margin-bottom:2px;color:var(--text);}
+
+  .parallel{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+
+  .statusbar{
+    margin-top:30px;font-family:var(--mono);font-size:11.5px;color:var(--muted);
+    background:#0b0f14;border:1px solid var(--panel-border);border-radius:8px;padding:8px 12px;
+    display:flex;justify-content:space-between;
+  }
+  .statusbar b{color:var(--text);}
+  .progress-hint{margin-top:6px;font-size:11px;color:var(--muted);font-family:var(--mono);}
+
+  footer{margin-top:30px;font-size:11px;color:#4d5a6b;font-family:var(--mono);text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <div class="eyebrow">docs · anvil-ide / getting-started</div>
+    <h1>Anvil IDE — Setup Flow</h1>
+    <div class="sub">Click a step to expand it. Pick a sign-in method to see the status bar update.</div>
+  </div>
+
+  <div class="legend">
+    <span><i class="dot" style="background:var(--accent-a)"></i>Signing in</span>
+    <span><i class="dot" style="background:var(--accent-b)"></i>Selecting a project</span>
+  </div>
+
+  <div class="rail">
+
+    <div class="section-label a">1 · Signing In</div>
+
+    <div class="step a" data-i="1">
+      <div class="marker">1</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Log in to your Control Panel</div><div class="chev">▸</div></div>
+        <div class="detail">Sign in to your ConnexCS account at the standard Control Panel URL, as you would for any other module.</div>
+      </div>
+    </div>
+
+    <div class="step a" data-i="2">
+      <div class="marker">2</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Click "Anvil IDE" in the left menu</div><div class="chev">▸</div></div>
+        <div class="detail">A new browser tab opens and redirects you to <code>code.connexcs.com</code>, the hosted IDE.</div>
+      </div>
+    </div>
+
+    <div class="step a" data-i="3">
+      <div class="marker">3</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Click "Sign In to ConnexCS"</div><div class="chev">▸</div></div>
+        <div class="detail">On first launch, the ConnexCS panel on the left sidebar prompts you to authenticate.</div>
+      </div>
+    </div>
+
+    <div class="step a" data-i="4">
+      <div class="marker">4</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Choose a sign-in method</div><div class="chev">▸</div></div>
+        <div class="detail">Two options are offered in the sidebar. Pick one below — it's remembered for this session.</div>
+        <div class="branch show">
+          <div class="opt" data-method="browser" onclick="event.stopPropagation(); pick('browser')">
+            <b>Sign in via Browser</b>OAuth window · recommended for most users
+          </div>
+          <div class="opt" data-method="token" onclick="event.stopPropagation(); pick('token')">
+            <b>Sign in with API Token</b>Paste a ConnexCS API token directly
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step a" data-i="5">
+      <div class="marker">5</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Signed in ✓</div><div class="chev">▸</div></div>
+        <div class="detail">Your files load, and the status bar at the bottom shows your active project.</div>
+      </div>
+    </div>
+
+    <div class="section-label b">2 · Selecting a Project</div>
+
+    <div class="step b" data-i="6">
+      <div class="marker">6</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Welcome panel appears</div><div class="chev">▸</div></div>
+        <div class="detail">Only shown if you haven't selected a project yet this session.</div>
+      </div>
+    </div>
+
+    <div class="step b" data-i="7">
+      <div class="marker">7</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Search or browse for a project</div><div class="chev">▸</div></div>
+        <div class="detail">
+          <div class="parallel">
+            <div>→ Search &amp; select from your existing ConnexCS projects</div>
+            <div>→ Browse recently used projects</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step b" data-i="8">
+      <div class="marker">8</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">File explorer populates</div><div class="chev">▸</div></div>
+        <div class="detail">Shows all project files: scripts, templates, frontend components, and other resources.</div>
+      </div>
+    </div>
+
+    <div class="step b" data-i="9">
+      <div class="marker">9</div>
+      <div class="card" onclick="toggle(this.parentElement)">
+        <div class="row"><div class="title">Switch projects anytime</div><div class="chev">▸</div></div>
+        <div class="detail">Click the project name in the status bar, or use "Switch Project" in the ConnexCS sidebar.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="statusbar">
+    <span>● <b id="sb-project">no project selected</b></span>
+    <span id="sb-auth">auth: <b>not signed in</b></span>
+  </div>
+  <div class="progress-hint" id="hint">Tip: choose a sign-in method above to continue the flow.</div>
+
+  <footer>anvil-ide / getting-started — interactive reference</footer>
+</div>
+
+<script>
+  function toggle(step){
+    const wasActive = step.classList.contains('active');
+    document.querySelectorAll('.step').forEach(s => { if(s!==step) s.classList.remove('active'); });
+    step.classList.toggle('active', !wasActive);
+  }
+
+  function pick(method){
+    document.querySelectorAll('.opt').forEach(o => o.classList.remove('picked'));
+    document.querySelector('.opt[data-method="'+method+'"]').classList.add('picked');
+
+    document.getElementById('sb-auth').innerHTML = 'auth: <b>' +
+      (method === 'browser' ? 'signed in (OAuth)' : 'signed in (API token)') + '</b>';
+    document.getElementById('sb-project').textContent = 'default-project';
+    document.getElementById('hint').textContent = 'Signed in — now try step 7 to select a project.';
+
+    document.querySelectorAll('.step.a').forEach(s => s.classList.add('done'));
+  }
+
+  document.querySelectorAll('.step.b .card').forEach(card => {
+    card.addEventListener('click', () => {
+      const step = card.parentElement;
+      if(step.dataset.i === "7" || step.dataset.i === "8" || step.dataset.i === "9"){
+        document.querySelectorAll('.step.b').forEach(s => {
+          if(Number(s.dataset.i) <= Number(step.dataset.i)) s.classList.add('done');
+        });
+        if(step.dataset.i !== "9"){
+          document.getElementById('sb-project').textContent = 'my-anvil-app';
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>

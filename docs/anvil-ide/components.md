@@ -20,7 +20,7 @@ The Anvil IDE provides a complete development environment for building, testing,
 
 It combines backend scripting, frontend development, live previews, terminal access, AI assistance, and productivity tools into a single workspace.
 
-From within the IDE, developers can execute **ScriptForge** scripts, preview HTML templates and Anvil applications, use the **CX Terminal** to run ConnexCS CLI commands and manage the KV Store, inspect logs, interact with the built-in AI Assistant, write SQL with intelligent auto-completion, and customize their development environment through extension settings.
+From within the IDE, developers can execute **ScriptForge** scripts, preview HTML templates and Anvil applications, Domains, use the **CX Terminal** to run ConnexCS CLI commands and manage the KV Store, inspect logs, interact with the built-in AI Assistant, write SQL with intelligent auto-completion, and customize their development environment through extension settings.
 
 ## ScriptForge
 
@@ -73,6 +73,52 @@ Open a template file. Click the **$(preview) Show Template Preview** button in t
 ### Metadata
 
 Use **Edit Metadata** from the overflow menu to set the template's name, subject, app association, and other properties.
+
+---
+
+## Domains
+
+### Overview
+
+Domains let a developer attach a custom hostname to a project so it is reachable at a specific web address — for example `test.cnx.page` — instead of only an internal or default address.
+
+Each domain is bound to a chosen project build and ScriptForge runtime version, so it is possible to serve a stable build on one domain while other builds continue to be developed.
+
+---
+
+### Where to Find It
+
+The Domains panel is located in the Explorer sidebar, below Outline and Timeline:
+
+- Expand the **Domains** section to see all domains currently configured for the project.
+- If none exist yet, the panel shows "No domains yet for this project."
+- An **Add Domain** button at the bottom of the panel opens the New Domain editor tab.
+
+---
+
+### Creating a Domain
+
+Clicking **Add Domain** opens a **New Domain** tab in the main editor area, alongside any other open files. The tab contains the following fields:
+
+| Field | Default | Description |
+|---|---|---|
+| **Domain** | — | The hostname to attach to the project, e.g. `test.cnx.page`. A format example is shown below the field. |
+| **Build** | Latest build | Which project build the domain serves. Left empty, the domain always serves the most recently created build rather than a fixed one. |
+| **ScriptForge Version** | Latest version | Which ScriptForge runtime version the domain runs against. Left empty, the domain always runs the most recently published version rather than a fixed one.|
+
+> **Tip:** Leaving Build or ScriptForge Version empty is the recommended default for actively developed domains, since the domain then automatically tracks whatever is newest. Pin a specific build or version only when a domain needs to stay fixed — for example, a production domain that should not change until a deliberate release.
+
+---
+
+### Saving or Discarding
+
+1. Fill in the Domain field, and optionally choose a specific Build and ScriptForge Version.
+2. Click **Save** to create the domain and bind it to the project.
+3. Click **Cancel** to close the tab without creating a domain.
+
+Once saved, the new domain appears in the Domains list in the sidebar and can be selected again later to review or change its build and version bindings.
+
+<img src= "/apps/img/domain.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ---
 
@@ -211,6 +257,100 @@ Auto-complete suggestions appear as you type, or press `Ctrl+Space` / `Cmd+Space
 
 ## External Edit Review
 
+### Overview
+
+The External Edit Review feature detects when a file open in the editor is changed by something other than the current editing session — another developer saving from their own IDE, an API call, a script, or a snapshot restore from the History panel.
+
+Rather than silently overwriting the buffer, the extension highlights the differences inline in the editor and lets the developer decide, region by region, whether to keep or undo each change.
+
+> **Availability:** This feature works identically inside the ConnexCS web IDE (code.connexcs.com) and in any VS Code-compatible editor where the ConnexCS extension is installed.
+
+---
+
+### How It Looks
+
+As soon as an external change lands on a file that is open, the affected lines are highlighted using two visual cues:
+
+| Visual cue | Meaning |
+|---|---|
+| **Green background** | Lines that were added or replaced by the external edit. |
+| **Pink banner** | Lines were removed by the edit. Shows a count (e.g. `− 3 lines removed — hover to preview`) and reveals the deleted content on hover|
+
+Above the first changed region, a row of action buttons appears:
+
+```
+Keep  |  Undo  |  Show diff  |  Keep All  |  Undo All
+```
+
+<img src= "/apps/img/externaleditor.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+> **Note:** **Keep All** and **Undo All** only appear when a file has two or more separate changed regions.
+
+---
+
+### The Action Buttons
+
+Each button operates at a defined scope — either a single changed region, or the whole file:
+
+| Button | What it does | Scope |
+|---|---|---|
+| **Keep** | Accepts the external change for that specific region. The highlight clears for that region only; other regions remain highlighted until acted on individually. | Single region |
+| **Undo** | Reverts that specific region back to its state before the external edit. The file content changes immediately, and the highlight clears for that region. | Single region |
+| **Show diff** | Opens a side-by-side comparison tab — left side shows the file as it was when the external change arrived, right side shows the current live version. The tab stays open alongside the original file tab; closing it doesn't affect the file. Inline Keep/Undo buttons remain available while it's open. | Whole file |
+| **Keep All** | Accepts all remaining external changes in the file in one click — equivalent to clicking Keep on every highlighted region in sequence. | Whole file |
+| **Undo All** | Reverts all remaining external changes in the file in one click — equivalent to clicking Undo on every highlighted region in sequence. | Whole file |
+
+<img src= "/apps/img/externaleditor2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+<br><img src= "/apps/img/externaleditor3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+---
+
+### How Highlights Clear
+
+Highlights are not time-based — they persist until explicitly resolved. A region clears when any of the following occurs:
+
+- The user clicks Keep or Undo for that region.
+- The user clicks Keep All or Undo All to resolve everything at once.
+- The user edits the file directly within that region — the extension re-diffs against the original and updates the highlight accordingly. Once the file matches the pre-edit state exactly, all highlights for that region clear.
+
+---
+
+### Hovering Over a Deleted-Lines Banner
+
+Hovering over the pink "− N lines removed — hover to preview" banner reveals a tooltip containing:
+
+1. A bold header stating **N lines removed** by an external edit.
+2. A syntax-highlighted code block showing the exact lines that were deleted.
+3. A reminder that **Undo** restores the deleted lines, or **Show diff** opens a side-by-side comparison.
+
+<img src= "/apps/img/externaleditor1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+---
+
+### History Panel — Restoring a Previous Version
+
+Restoring a file to a previous version through the History panel in the sidebar also triggers External Edit Review:
+
+1. Click the desired version in the History panel and choose **Restore**.
+2. The file immediately updates to that version.
+3. External Edit Review highlights appear automatically — the diff shown is between the version that was open at the time of the restore and the version restored to.
+4. Use **Keep**, **Undo**, **Keep All**, or **Undo All** as with any other external change.
+
+<img src= "/apps/img/externaleditor1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+> **Why this matters:** This gives developers a safety net — they can restore a previous version and then selectively undo parts of the restore if it went further than intended.
+
+---
+
+### Conflict Resolution (Dirty File)
+
+If the file has unsaved edits at the moment an external change arrives, the extension cannot safely overwrite that work. Instead, it opens a separate resolution dialog so the user can compare their version against the incoming server version and decide which to keep.
+
+> **Important distinction:** This dirty-file conflict flow is separate from the External Edit Review feature described in this document — it only applies when there are unsaved local changes.
+
+---
+
 ## Extension Settings (for extension users)
 
 These settings are available when using the ConnexCS Connect extension in your own IDE. Open Settings (`Ctrl+,` / `Cmd+,`) and search for **ConnexCS**.
@@ -255,3 +395,5 @@ The IDE inherits all standard VS Code keyboard shortcuts. The most relevant ones
 ## Signing Out
 
 To sign out, open the ConnexCS sidebar and click **Sign Out** from the quick-actions list. This clears your session from the IDE.
+
+---

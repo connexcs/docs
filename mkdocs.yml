@@ -265,7 +265,6 @@ nav:
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
     - Anvil: anvil.md
-    - ConnexCS Terminal: cliterminal.md
     - Hearth: hearth.md
 
   - Customer Portal:
@@ -385,5 +384,16 @@ nav:
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
     - WebPhone App: webphoneapp.md
+
+  - Anvil IDE:
+    - Introduction: anvil-ide/introduction.md
+    - Getting Started: anvil-ide/getting-started.md
+    - IDE Interface: anvil-ide/interface.md
+    - IDE Components: anvil-ide/components.md
+    - Working with Files: anvil-ide/working-with-files.md
+    - Anvil App Preview: anvil-ide/anvil-app-preview.md
+    - Creating your First Anvil App: anvil-ide/creating-your-first-anvil-project.md
+    
+    
 
     
