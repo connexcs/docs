@@ -264,7 +264,8 @@ nav:
     - Terminal Tools: terminal-tools.md
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
-    - ANVIL: anvil.md
+    - Anvil: anvil.md
+    - ConnexCS Terminal: cliterminal.md
     - Hearth: hearth.md
 
   - Customer Portal:
@@ -383,7 +384,6 @@ nav:
             - Script Creation: customer-portal/cp-cc-creating-scripts.md
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
-    
     - WebPhone App: webphoneapp.md
 
     
