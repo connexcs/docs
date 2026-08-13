@@ -449,8 +449,6 @@ This command is useful for querying operational data, validating records, troubl
 
 ### `connexamine`
 
-First you need to enter the `ConnExamine` directory by using `cd connexamine`
-
 | Command | Description  | Example Use Case|  Syntax | Example |
 | ------- | -------------|-----------------|---------|---------|
 | `adopt` | Claims a Connexamine box using its unique code or IP address, allowing it to be managed from your account | Claim a newly deployed Connexamine box before running diagnostics | `connexamine adopt <code\|ip>` | `connexamine adopt A1B2C3` |
