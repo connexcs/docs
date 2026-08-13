@@ -26,7 +26,7 @@ ConnExamine is purpose-built to rapidly diagnose call setup delays and failures 
 
 Connexamine is designed to work with the customer's own server — it isn't limited to servers hosted by ConnexCS. If the customer runs a server outside of ConnexCS's infrastructure (for example, a dialer server), Connexamine authenticates to it by entering that server's proxy details.
 
-## What problem it solves
+## What problem it solves- Simplifying SIP Troubleshooting
 
 Most SIP issues that get escalated to a provider aren't caused by complicated protocol errors. They're usually **first-hop connectivity problems** — things like:
 
@@ -45,9 +45,7 @@ Normally, tracking down these issues means manually digging through call traffic
 | **Ring Time** | Time from **`180/183`** to **`200 OK`** | Measures how long the call rings before it is answered|
 | **Final Disposition** | Final SIP response code or timeout stage | Indicates the final outcome of the call, including the SIP response code returned or the stage at which the call timed out without receiving a response. |
 
-Every call is **color-coded** (good / average / poor) against sensible defaults, so a non-specialist can glance at a terminal and see a problem — no protocol expertise required to interpret it.
-
-## How it compares to sngrep and similar tools
+## Comparision with sngrep and similar tools
 
 | | ConnExamine | sngrep / generic SIP capture tools |
 |---|---|---|
@@ -59,22 +57,53 @@ Every call is **color-coded** (good / average / poor) against sensible defaults,
 
 ConnExamine is deliberately **narrower and more opinionated** than a general SIP capture tool.
 
+## Benefits
+
+* Enables **continuous monitoring** of call setup performance instead of one-time troubleshooting sessions.
+* Eliminates the need for customers to **reproduce issues** while support engineers monitor an interactive session.
+* Streams **real-time call setup metrics** to the ConnexCS backend for ongoing analysis.
+* Provides **per-destination performance metrics**, making it easier to identify issues with specific carriers or trunks.
+* Collects **failure samples** to help diagnose intermittent or recurring call setup problems.
+* Reports **host health information**, including CPU, memory, disk usage, and system load, to distinguish network issues from server performance problems.
+* Gives ConnexCS support **continuous visibility** into connection health through the ConnexCS portal.
+* Bridges the gap between **interactive, on-demand debugging** and **long-term remote monitoring**, enabling faster issue detection and resolution.
+
 **It doesn't aim to replace `sngrep` for deep protocol debugging (call transfers, re-INVITEs, media negotiation, non-INVITE dialogs)** — it aims to get a first-hop connectivity problem diagnosed by someone who isn't a SIP specialist, in minutes, without needing to learn how to read a SIP ladder diagram.
 
-## The two modes
+## How to use ConnExamine?
+
+### Installation of ConnExamine on your server
+
+1. Go to the server to run the following script:
+
+   ```bash
+   curl -fsSL https://cdn.cnxcdn.com/connexamine/install.sh | bash
+   ```
+
+2. Run the folllowing command to enter the `Deamon Mode` for continuous monitoring, reports to your provider:
+
+   ```bash
+   sudo connexamine --auto
+   ```
+
+3. This will generate the `Code/Daemon Token` to be used in the `Claim Box` for authentication purposes.
+
+#### The two modes
 
 ConnExamine runs in one of two modes, selected at startup:
 
 1. **Interactive mode** (`default`) — a live terminal session for hands-on debugging.
 2. **Daemon / auto mode** (`--auto`) — an unattended background service for continuous monitoring, reporting to ConnexCS.
 
-*These modes run on the server terminal.*
+>Note: **These modes run on the server terminal.**
 
----
+##### Interactive mode
 
-### Interactive mode
+This is the default mode. Run the program to see calls as they happen in a simple, color-coded table.
 
-This is the default mode — run the binary and it captures live, printing a color-coded table to the terminal as calls happen.
+> Note: Every call is **color-coded** (good / average / poor) against sensible defaults, so a non-specialist can glance at a terminal and see a problem — no protocol expertise required to interpret it.
+
+Use the following to start the **interactive mode** on the server terminal:
 
 ```bash
 sudo connexamine
@@ -104,15 +133,13 @@ sudo connexamine
 
 Interactive mode is entirely local: nothing is sent off the box. It ends when you exit the process (`Ctrl+C`).
 
-Because it only needs raw packet access (or the `cap_net_raw` capability — see [Security](#security--what-does-this-program-do)), it can be run ad hoc without any lasting install or configuration, which is what makes it approachable for a one-off debugging session.
-
----
-
-### Daemon mode (`--auto`)
+##### Daemon mode (`--auto`)
 
 **Daemon mode** runs the same capture and analysis engine unattended, in the background, and streams the resulting metrics to a ConnexCS-operated endpoint instead of a terminal.
 
 It turns a one-off debugging session into **continuous monitoring of a customer's connection**, so ConnexCS support can see call-setup health on an upstream trunk over time — without anyone needing to be logged into the box, running the tool, or reading its output.
+
+Use the following to start the **deamon mode** on the server terminal:
 
 ```bash
 sudo connexamine --auto
@@ -128,117 +155,9 @@ sudo connexamine --auto
 |`sudo connexamine --auto`|Daemon mode (continuous monitoring, reports to your provider)|
 |`connexamine --help`|Help and options|
 
-### Token Generation Flow
-
-On the first run, Connexamine automatically generates a unique token if one is not provided. This token is used to associate the monitored host with the correct customer account or support case in ConnexCS.
-
-```mermaid
-flowchart TD
-    A[Start Connexamine in Daemon Mode] --> B{Token Provided?}
-
-    B -->|Yes| C[Use Existing Token]
-    B -->|No| D[Generate Unique Token Automatically]
-    D --> E[Display Token in Console]
-
-    C --> F[Associate Token with Customer or Connection]
-    E --> G[Share Token with ConnexCS Support]
-    G --> F
-
-    F --> H[Telemetry Sent from the Host]
-    H --> I[ConnexCS Identifies the Correct Customer or Connection]
-    I --> J[Link Box to Support Case or Customer Account]
-```
-
-### What it does once running
-
-- **Installs itself as a persistent service.** On a systemd host it installs a proper `systemd` unit so it restarts on boot/crash like any other service; where systemd isn't available (e.g. many containers) it detaches into a supervised background process instead. Either way, a single `--auto` invocation is enough — there's no separate "now install the service" step.
-- **Streams call-setup metrics continuously** (every 5 seconds): counts of INVITEs sent and Trying responses received, and latency statistics for both the Trying stage and fully-connected calls, broken out per destination — the same signal you'd see in the interactive table, aggregated for a support engineer watching remotely.
-- **Reports host health** alongside it: load average, CPU, memory, disk free, process uptime — so a support engineer can tell "the connection is slow" apart from "the box itself is overloaded."
-- **Samples real failures** every 60 seconds — actual Call-IDs behind a spike in `486`s or timeouts, so support can pull a specific case rather than just seeing a count go up.
-- **Flags clock problems.** A box with a badly wrong system clock produces confusing, hard-to-correlate timestamps; auto mode checks for this continuously and reports it.
-- **Accepts limited remote diagnostics.** ConnexCS support can ask the box to run a `ping` or `mtr` toward a specific IP and stream the result back — useful for confirming a routing/network issue without needing separate remote access to the box. This is deliberately narrow (see [Security](#security--what-does-this-program-do)): only `ping`/`mtr`, only against a literal IP address, nothing else can be executed this way.
-- **Keeps itself up to date.** It checks weekly for a newer release and applies it automatically (`--no-auto-update` disables just this automatic check); ConnexCS can also trigger an update on demand.
-
-### Why this is useful
-
-* Enables **continuous monitoring** of call setup performance instead of one-time troubleshooting sessions.
-* Eliminates the need for customers to **reproduce issues** while support engineers monitor an interactive session.
-* Streams **real-time call setup metrics** to the ConnexCS backend for ongoing analysis.
-* Provides **per-destination performance metrics**, making it easier to identify issues with specific carriers or trunks.
-* Collects **failure samples** to help diagnose intermittent or recurring call setup problems.
-* Reports **host health information**, including CPU, memory, disk usage, and system load, to distinguish network issues from server performance problems.
-* Gives ConnexCS support **continuous visibility** into connection health through the ConnexCS portal.
-* Bridges the gap between **interactive, on-demand debugging** and **long-term remote monitoring**, enabling faster issue detection and resolution.
-
-See the full wire protocol in the project's `WS-SCHEMA.md` if you need the exact message shapes.
-
 ---
 
-## Security — what does this program do?
-
-This section details the operational behavior of ConnExamine, including the network traffic it inspects, the data it collects, and the security measures implemented to support safe deployment in production environments, particularly when running in `Daemon (--auto)` mode.
-
-### What it looks at
-
-ConnExamine only inspects **SIP signaling traffic on UDP port 5060**. **It does not capture or process**:
-
-- Media (RTP/audio) at all
-- SIP over TCP, TLS (SIPS), or non-standard ports
-- Any non-SIP traffic on the interface it's watching
-
-Within that SIP traffic, it only actively **tracks** outbound INVITEs — calls your host originates. Inbound INVITEs and other SIP methods (BYE, REGISTER, etc.) may be seen in passing but are not tracked or reported as calls.
-
-### What it collects, and why
-
-| Data | Collected? | Why |
-|---|---|---|
-| Call timing (Trying/PDD/Ring, per call) | Yes | This is the entire point of the tool — measuring call-setup health |
-| SIP response codes / timeout reasons | Yes | Distinguishes a real carrier rejection (e.g. `486 Busy`) from a silent timeout, which point to very different root causes |
-| Call-ID | Yes | The only way to let a human correlate a reported metric back to a specific, real call for investigation |
-| Destination/source IP | Yes | Identifies *which* upstream connection a problem belongs to — essential when a box has more than one trunk |
-| Host vitals (CPU, memory, disk, load, uptime) | Yes, in `--auto` mode only | Distinguishes "the connection is unhealthy" from "the box itself is overloaded," which otherwise look identical from the outside |
-| Caller / called phone numbers (FROM/TO) | Shown locally only — never transmitted | Interactive mode displays them on-screen for the person actively debugging, because they're often necessary context in the moment. Daemon mode's telemetry to ConnexCS deliberately omits them — they aren't needed to measure call-setup timing, and there's no reason for that data to leave the box |
-| Call content / audio | Never | Connexamine never touches media, only signaling headers |
-| SIP message bodies (SDP, etc.) | Never | Only specific signaling headers (Call-ID, From, To, response codes) are parsed |
-
-In short: what leaves the box in `--auto` mode is *timing statistics, response codes, Call-IDs, IPs, and host health* — the minimum needed to diagnose a connectivity problem remotely. It is not a call log and cannot be used to reconstruct who called whom.
-
-### Encryption and transport
-
-- Daemon mode reports over a WebSocket connection to ConnexCS (`wss://`, TLS-encrypted) using `rustls` — no traffic is sent to ConnexCS in plaintext.
-- Self-update downloads are fetched over HTTPS (also `rustls`-backed) from ConnexCS's CDN.
-- The **API token** that identifies a box to ConnexCS is the sole authentication mechanism on the WebSocket connection. It's persisted to disk with restrictive permissions (mode `0600`, readable only by the owner — root when installed as a service) and, when supplied via `--token-file` rather than `--token`, never appears in the process list (`ps`/`/proc`) where any local user could otherwise read it off the command line.
-
-### Remote diagnostics are deliberately constrained
-
-`Auto mode` lets ConnexCS remotely request a `ping` or `mtr`. This is the one feature that involves the server asking the box to *do* something, so it's worth being explicit about its limits:
-
-- The target **must parse as a literal IPv4/IPv6 address** — hostnames aren't accepted, and the value is never passed through a shell, so it cannot be used to inject arbitrary commands.
-- Only `ping` and `mtr` can be run — nothing else.
-- Request parameters (iteration count, timeout) are clamped on the box itself regardless of what's requested, so a malicious or malfunctioning server can't trigger a resource-exhausting flood.
-- At most 5 such requests can run concurrently; anything beyond that is rejected outright.
-
-### Self-update
-
-By default, the running binary checks weekly for a new release and, if one is available, downloads and applies it automatically (disable via `--no-auto-update`). Downloads happen over TLS from a ConnexCS-controlled CDN. An on-demand update can also be triggered remotely by ConnexCS support — this is treated as an explicit, audited action and is honored even with automatic checks disabled, since it only ever happens in response to a deliberate request, not silently.
-
-## Installation of ConnExamine on your server
-
-1. Go to the server to run the following script:
-
-   ```bash
-   curl -fsSL https://cdn.cnxcdn.com/connexamine/install.sh | bash
-   ```
-
-2. Run the folllowing command to enter the `Deamon Mode` for continuous monitoring, reports to your provider:
-
-   ```bash
-   sudo connexamine --auto
-   ```
-
-3. This will generate the `Code/Daemon Token` to be used in the `Claim Box` for authentication purposes.
-
-## How to use ConnExamine on the Control Panel?
+### How to use ConnExamine on the Control Panel?
 
 1. Login to your account.
 2. Navigate to **Global :material-menu-right: ConnExamine**.
@@ -320,11 +239,50 @@ Displays representative call failures collected during the previous **60-second*
 | **Window (s)** *(Metrics)*| Specifies the reporting interval, in seconds, over which call setup metrics are aggregated before being sent to the ConnexCS portal|
 | **Window (s)** *(Failure Samples)* | Specifies the sampling interval, in seconds, during which failed call samples are collected and grouped before being reported|
 
-## ConnExamine and ConnexCS Terminal
+## How to use ConnExamine with ConnexCS Terminal
 
-You can access ConnExamine using ConnexCS Terminal.
+1. Log in to your account.
+2. Click on the `CLI Terminal` icon.
+3. A command-line terminal appears, where you can execute supported ConnExamine commands and view the results. <br><img src= "/misc/img/conterm1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. Below are the supported commands:
 
-[Click here](/cliterminal/#connexamine) to know more.
+   | Command | Description  | Example Use Case|  Syntax | Example |
+   | ------- | -------------|-----------------|---------|---------|
+   | `adopt` | Claims a Connexamine box using its unique code or IP address, allowing it to be managed from your account | Claim a newly deployed Connexamine box before running diagnostics | `connexamine adopt <code\|ip>` | `connexamine adopt A1B2C3` |
+   | `list`  | Lists all adopted Connexamine sessions. You can also select a session to open its live monitoring dashboard | View all available Connexamine boxes and open the dashboard for a specific one | `connexamine list [--json \| --plain]` then select the `connexamine box` | `connexamine list` |
+   | `mtr`   | Runs an **MTR (My Traceroute)** test from a selected Connexamine box and streams the results in real time | Diagnose packet loss or routing issues between the Connexamine box and a remote destination | `connexamine mtr <session-id> <target>` | `connexamine mtr sess-001 example.com` |
+   | `ping`  | Sends ICMP echo requests from a selected Connexamine box and streams the live output | Verify network connectivity and latency to a remote host | `connexamine ping <session-id> <target>` | `connexamine ping sess-001 example.com` |
+   | `rm` | Removes (forgets) a saved Connexamine session from your local client. This does **not** remove or reset the actual Connexamine box | Clean up old or unused Connexamine sessions from your CLI | `connexamine rm <session-id> [-f \| --force]` | `connexamine rm sess-001 --force` |
+   | `show`  | Displays the complete telemetry snapshot for a specific Connexamine session, including collected diagnostic information | Review detailed telemetry and health information for a Connexamine box | `connexamine show <session-id> [--json]` | `connexamine show sess-001` |
+
+## Understanding Security in ConnExamine
+
+This section details the operational behavior of ConnExamine, including the network traffic it inspects, the data it collects, and the security measures implemented to support safe deployment in production environments, particularly when running in `Daemon (--auto)` mode.
+
+### Key Analysis Areas
+
+ConnExamine only inspects **SIP signaling traffic on UDP port 5060**. **It does not capture or process**:
+
+- Media (RTP/audio) at all
+- SIP over TCP, TLS (SIPS), or non-standard ports
+- Any non-SIP traffic on the interface it's watching
+
+Within that SIP traffic, it only actively **tracks** outbound INVITEs — calls your host originates. Inbound INVITEs and other SIP methods (BYE, REGISTER, etc.) may be seen in passing but are not tracked or reported as calls.
+
+### Data Collection & Purpose
+
+| Data | Collected? | Why |
+|---|---|---|
+| Call timing (Trying/PDD/Ring, per call) | Yes | This is the entire point of the tool — measuring call-setup health |
+| SIP response codes / timeout reasons | Yes | Distinguishes a real carrier rejection (e.g. `486 Busy`) from a silent timeout, which point to very different root causes |
+| Call-ID | Yes | The only way to let a human correlate a reported metric back to a specific, real call for investigation |
+| Destination/source IP | Yes | Identifies *which* upstream connection a problem belongs to — essential when a box has more than one trunk |
+| Host vitals (CPU, memory, disk, load, uptime) | Yes, in `--auto` mode only | Distinguishes "the connection is unhealthy" from "the box itself is overloaded," which otherwise look identical from the outside |
+| Caller / called phone numbers (FROM/TO) | Shown locally only — never transmitted | Interactive mode displays them on-screen for the person actively debugging, because they're often necessary context in the moment. Daemon mode's telemetry to ConnexCS deliberately omits them — they aren't needed to measure call-setup timing, and there's no reason for that data to leave the box |
+| Call content / audio | Never | Connexamine never touches media, only signaling headers |
+| SIP message bodies (SDP, etc.) | Never | Only specific signaling headers (Call-ID, From, To, response codes) are parsed |
+
+In short: what leaves the box in `--auto` mode is *timing statistics, response codes, Call-IDs, IPs, and host health* — the minimum needed to diagnose a connectivity problem remotely. It is not a call log and cannot be used to reconstruct who called whom.
 
 ## Summary
 
