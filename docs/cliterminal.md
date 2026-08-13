@@ -154,7 +154,7 @@ These commands provide version control and build management capabilities directl
 | Subcommand | Description  | Example Use Case | Syntax | Example |
 | ---------- | ------------ | -----------------|------|---------|
 | `create`   | Creates a snapshot of the current project state | Create a recovery point before making significant changes to your project | `snapshot create [label]` | `anvil snapshot create pre-release-1.2` |
-| `list`     | Lists all snapshots for the current project | Review available snapshots before restoring a previous project state | `snapshot list [--json]` | `anvil snapshot list` |
+| `list` | Lists all snapshots for the current project | Review available snapshots before restoring a previous project state | `snapshot list [--json]` | `anvil snapshot list` |
 | `restore`  | Restores a previously created snapshot, replacing the current project state | Roll back the project after an unsuccessful deployment or accidental changes | `snapshot restore <snapshot-id> [--yes]` | `anvil snapshot restore 8f2c1a --yes` |
 
 ### `commands`
@@ -448,8 +448,6 @@ This command is useful for querying operational data, validating records, troubl
 | `<area>`| Opens an interactive SQL session for the specified area | Execute multiple SQL queries interactively without repeatedly specifying the target area | `sql <area>` | `sql billing` |
 
 ### `connexamine`
-
-First you need to enter the `ConnExamine` directory by using `cd connexamine`
 
 | Command | Description  | Example Use Case|  Syntax | Example |
 | ------- | -------------|-----------------|---------|---------|
