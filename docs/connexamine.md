@@ -76,15 +76,15 @@ ConnExamine is deliberately **narrower and more opinionated** than a general SIP
 
 1. Go to the server to run the following script:
 
-   ```bash
-   curl -fsSL https://cdn.cnxcdn.com/connexamine/install.sh | bash
-   ```
+      ```bash
+      curl -fsSL https://cdn.cnxcdn.com/connexamine/install.sh | bash
+      ```
 
 2. Run the folllowing command to enter the `Deamon Mode` for continuous monitoring, reports to your provider:
 
-   ```bash
-   sudo connexamine --auto
-   ```
+      ```bash
+      sudo connexamine --auto
+      ```
 
 3. This will generate the `Code/Daemon Token` to be used in the `Claim Box` for authentication purposes.
 
