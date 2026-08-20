@@ -147,6 +147,7 @@ nav:
     - Logging: logging.md
     
     - Class 5:
+        - Class 5 Overview: class5/class5-intro.md
         - AI Agent: class5/ai-agent.md
         - Knowledge Base: class5/knowledge-base.md
         - Apps: class5/apps.md
