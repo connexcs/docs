@@ -180,6 +180,28 @@
 | **FTP** | File Transfer Protocol | A standard network protocol used to transfer files between a client and a server over a TCP/IP network. Unlike SFTP, FTP does not encrypt data or authentication information, making it less secure for transferring sensitive files|
 | **SFTP** | Secure File Transfer Protocol | A secure file transfer protocol that uses the SSH protocol to encrypt data and authenticate users, providing secure access to files on a remote server|
 | **SSH** | Secure Shell | A cryptographic network protocol used to securely access, authenticate, and manage remote systems and services over an encrypted connection|
+| **API**  | Application Programming Interface | A set of rules and methods that allows software applications to communicate with each other |
+| **SDK**  | Software Development Kit | A collection of tools, libraries, and documentation that helps developers build applications for a specific platform or service |
+| **OIDC** | OpenID Connect | An authentication protocol built on OAuth 2.0 that allows applications to verify a user's identity |
+| **DDL**  | Data Definition Language | SQL commands used to create, modify, and delete database structures such as schemas and tables |
+| **HTTP** | Hypertext Transfer Protocol | A protocol used to transfer information between web clients and servers |
+| **CSV**  | Comma-Separated Values | A text-based format used to store tabular data, with values typically separated by commas |
+| **ESM**  | ECMAScript Modules | A JavaScript module system that allows code to be organized and imported between files or packages |
+| **CRM**  | Customer Relationship Management  | Systems and processes used to manage customer information and interactions |
+| **JS**   | JavaScript | A programming language commonly used to build interactive web applications and services| 
+| **TS**   | TypeScript  | A programming language based on JavaScript that adds static typing and other development features |
+| **npm**  | Node Package Manager | A package manager used to install, manage, and distribute JavaScript and Node.js packages |
+| **RFC**  | Request for Comments | A series of technical documents published through the IETF that define Internet standards, protocols, and specifications. RFC 8693 specifically defines OAuth 2.0 Token Exchange |
+| **OIDC** | OpenID Connect | An authentication protocol built on OAuth 2.0 that allows applications to verify a user's identity|
+| **DDL**  | Data Definition Language | SQL commands used to create, modify, and delete database structures such as schemas and tables|
+| **ESM**  | ECMAScript Modules | A JavaScript module system that allows code to be organized and imported between files or packages |
+| **RFC**  | Request for Comments | A series of technical documents published through the IETF that define Internet standards, protocols, and specifications|
+| **PCAP** | Packet Capture | A file containing captured network packets, commonly used to analyze network and SIP traffic|
+| **ASN**  | Autonomous System Number | A unique number assigned to an autonomous system that identifies a network on the Internet|
+| **RDAP** | Registration Data Access Protocol | A protocol used to retrieve registration information about Internet domains and IP addresses|
+| **MTR**  | My Traceroute  | A network diagnostic tool that combines ping and traceroute to analyze network paths, latency, and packet loss |
+| **CSR** | Certificate Signing Request | A request containing the information required to obtain a digital certificate from a Certification Authority|
+| **URL** | Uniform Resource Locator | The address used to access a resource or service on the Internet|
 
 ## ACD Calculation Method
 
