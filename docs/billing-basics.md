@@ -1,3 +1,6 @@
+---
+description: 'Learn ConnexCS billing fundamentals: how account balance updates, why CDRs are the source of truth for charges, and how Breakout Reports stay consistent.'
+---
 # Billing Basics
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

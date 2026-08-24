@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Analytics section gathers, manipulates, and displays graphical and tabular data, letting you edit existing reports or build your own.
+---
 # Analytics
 
 **Developer :material-menu-right: Analytics**

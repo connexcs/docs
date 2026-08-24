@@ -1,5 +1,6 @@
 ---
-title: "Caller Line Identification (CLI) | Routing Rules & Caller ID | ConnexCS"
+title: Customer CLI | Caller ID Fraud Protection
+description: Configure Caller Line Identification (CLI) at the customer level in ConnexCS to sort incoming calls, support billing, and defend against unidentified calls.
 search:
   boost: 3
 ---

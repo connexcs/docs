@@ -1,3 +1,6 @@
+---
+description: Configure a Routing Strategy in ConnexCS to route calls through the routing engine using a specified rule set matched to your business needs.
+---
 # Routing Strategy
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

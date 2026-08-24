@@ -1,3 +1,7 @@
+---
+title: ConnexCS Documentation | Cloud Softswitch Platform
+description: Official ConnexCS documentation covering setup, configuration, monitoring, and troubleshooting for the cloud-based VoIP switching and billing platform.
+---
 ConnexCS User Documentation
 ========================
 

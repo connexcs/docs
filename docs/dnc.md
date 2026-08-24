@@ -1,3 +1,6 @@
+---
+description: Configure Do Not Call (DNC) list handling in ConnexCS to help carriers stay compliant and avoid the fines and prosecution risk of ignoring DNC entries.
+---
 # Do Not Call Lists
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

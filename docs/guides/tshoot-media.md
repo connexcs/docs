@@ -1,3 +1,6 @@
+---
+description: Troubleshoot Media (audio payload) issues in ConnexCS, covering RTP servers and why UDP transmission trades some loss for higher throughput.
+---
 # Troubleshoot Media
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

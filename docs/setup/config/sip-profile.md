@@ -1,3 +1,6 @@
+---
+description: Group SIP users with a common feature set using SIP Profiles in ConnexCS, useful for call centers with agents and operators needing different access.
+---
 # SIP Profile
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

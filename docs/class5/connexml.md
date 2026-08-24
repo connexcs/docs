@@ -1,3 +1,6 @@
+---
+description: ConneXML is the ConnexCS instruction set for Class 5 Applications, defining what happens when an incoming call hits a customer's DID.
+---
 # ConneXML
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: Portal Alerts | Balance & Account Notifications
+description: View automated Alerts in the ConnexCS Customer Portal for real-time account status insight, including balance notifications and thresholds.
+---
 # Alerts
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: The Tabs component organizes a ConnexCS form into multiple sections within one interface, breaking complex tasks into logical, manageable chunks.
+---
 # Tabs
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

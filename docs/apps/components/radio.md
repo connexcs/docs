@@ -1,3 +1,6 @@
+---
+description: The Radio component in the ConnexCS Page Builder presents a group of options where users can select only one, like a set of mutually exclusive switches.
+---
 # Radio
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

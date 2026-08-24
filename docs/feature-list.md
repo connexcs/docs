@@ -1,3 +1,6 @@
+---
+description: Browse the comprehensive list of features included in the latest stable version of the ConnexCS platform, from routing to billing to reporting.
+---
 # Detailed Features
 
 Please [click here](https://connexcs.com/feature-list) to have look at our comprehensive feature list.

@@ -1,3 +1,6 @@
+---
+description: Configure Authentication in the ConnexCS Customer Portal using IP or SIP username/password credentials to verify calls from a trusted source.
+---
 # Authentication (Auth)
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

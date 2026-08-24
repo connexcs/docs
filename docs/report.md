@@ -1,3 +1,6 @@
+---
+description: Generate and download ConnexCS Reports for historical insights by customer or provider route, DTMF cost, and per-number metrics, with scheduling.
+---
 # Report
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: App Platform Introduction | ConnexCS
+description: Introduction to the ConnexCS App Platform, part of a telecom platform covering call routing, billing, security, and analytics for carriers.
+---
 # Introduction
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Change the display language of the ConnexCS Control Panel user interface, and learn which parts of the UI are and aren't affected by the setting.
+---
 # User Interface Display Language
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

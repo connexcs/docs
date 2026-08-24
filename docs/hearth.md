@@ -1,3 +1,6 @@
+---
+description: Hearth is a secure, multi-tenant database for ConnexCS developers to create schemas, store structured data, and query it via REST API or the JS/TS SDK.
+---
 # Hearth
 
 <details>

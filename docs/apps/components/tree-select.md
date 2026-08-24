@@ -1,3 +1,6 @@
+---
+description: Tree-Select organizes dropdown options into parent-child categories in the ConnexCS Page Builder, letting users navigate nested choices.
+---
 # Tree-Select
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

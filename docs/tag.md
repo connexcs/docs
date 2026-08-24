@@ -1,3 +1,7 @@
+---
+title: Tags | Route, Alert & CLI Templates
+description: Use Tags in ConnexCS to link Routes, Alerts, and CLI rules to customers automatically, generating global configuration wherever a tag is applied.
+---
 # Tags
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

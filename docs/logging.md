@@ -1,3 +1,6 @@
+---
+description: Use ConnexCS Logging to check real-time call attempts, SIP traces, and routing status, and simulate calls for most day-to-day issue debugging.
+---
 # Logging
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

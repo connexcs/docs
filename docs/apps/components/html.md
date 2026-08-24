@@ -1,3 +1,6 @@
+---
+description: The HTML component in the ConnexCS Page Builder renders custom markup, with setHTML and set Template used to populate content via Handlebars.
+---
 # HTML
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

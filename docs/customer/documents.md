@@ -1,3 +1,7 @@
+---
+title: Customer Documents | KYC File Collection
+description: Collect KYC (Know Your Customer) files and other required documents from a customer account in ConnexCS, with custom notes per request.
+---
 # Documents
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

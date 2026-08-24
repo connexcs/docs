@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Key-Value Store is a simple, efficient key-value database for the App Platform, storing data as unique key and value pairs.
+---
 # Key Value Store
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

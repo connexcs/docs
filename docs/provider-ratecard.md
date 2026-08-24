@@ -1,3 +1,6 @@
+---
+description: Set up Provider Rate Cards in ConnexCS to define carrier pricing, per-minute rates, billing increments, rounding rules, and routing parameters.
+---
 # Provider Rate Cards
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

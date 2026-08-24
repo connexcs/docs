@@ -1,3 +1,6 @@
+---
+description: Configure the ConnexCS Fraud Profile for flexible, rule-based fraud detection and mitigation if an account is ever compromised.
+---
 # Fraud Profile
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

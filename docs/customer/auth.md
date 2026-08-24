@@ -1,3 +1,7 @@
+---
+title: Customer Authentication | IP & SIP Setup
+description: Configure Customer Authentication in ConnexCS using IP addresses or SIP username/password credentials, with Global auth options across accounts.
+---
 # Auth
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

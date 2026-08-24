@@ -1,3 +1,7 @@
+---
+title: Carrier CDR | Call Detail Records & Billing Data
+description: View Carrier Call Detail Records (CDR) in ConnexCS for billing data like call duration and destination, plus a Global CDR view across all carriers.
+---
 # Call Detail Record
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

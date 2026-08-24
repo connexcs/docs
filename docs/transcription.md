@@ -1,3 +1,7 @@
+---
+title: Call Transcription | Voice-to-Text Service
+description: Convert live or recorded ConnexCS calls into text with the Call Transcription service, available in English by default with more languages on request.
+---
 # Transcription
 
 **Global :material-menu-right: Transcription**

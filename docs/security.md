@@ -1,3 +1,6 @@
+---
+description: Overview of ConnexCS security practices and policies, covering the technology and procedures used to protect the platform from internal and external threats.
+---
 # Security
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

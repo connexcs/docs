@@ -1,3 +1,6 @@
+---
+description: Configure Class5 telephony and call-handling functionality for a customer account in ConnexCS to enhance their communication experience.
+---
 # Class5
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

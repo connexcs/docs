@@ -1,3 +1,6 @@
+---
+description: Submit and track Feature Requests in ConnexCS, suggestions for new functionality or enhancements from customers, partners, and internal teams.
+---
 # Feature Request
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

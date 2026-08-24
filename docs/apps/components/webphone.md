@@ -1,3 +1,6 @@
+---
+description: The Webphone component drops a no-code softphone into a ConnexCS app, with full functionality also exposed via API and Environmental Variables.
+---
 # Webphone
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

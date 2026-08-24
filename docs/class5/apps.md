@@ -1,3 +1,6 @@
+---
+description: Build drag-and-drop Class 5 Apps and ConneXML applications in ConnexCS, such as Echo Tests, Conferences, and IVR setups, in a few clicks.
+---
 # Apps
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

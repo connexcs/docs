@@ -1,3 +1,6 @@
+---
+description: The ConnexCS developer Database reference for custom persistent data storage, scoped per customer or global, for lookups, caching, or stateful apps.
+---
 # Database
 
 **Developer :material-menu-right: Database**

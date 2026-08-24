@@ -1,3 +1,7 @@
+---
+title: Portal Documents | Account File Repository
+description: View all Documents associated with your account in the ConnexCS Customer Portal, including feature lists and payment requirement files.
+---
 # Documents
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

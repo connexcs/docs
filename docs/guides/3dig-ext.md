@@ -1,3 +1,6 @@
+---
+description: Set up 3-Digit Extension Dialling in ConnexCS with a quick internal number block configuration for fast, basic deployment.
+---
 # 3-Digit Extension Dialling
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

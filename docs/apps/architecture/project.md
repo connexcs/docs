@@ -1,3 +1,6 @@
+---
+description: A ConnexCS Project organizes App Platform applications under one umbrella; every published application must be linked to a project for tracking.
+---
 # Project
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

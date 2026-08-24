@@ -1,3 +1,6 @@
+---
+description: Perform number manipulation in ConnexCS under Customer management, including parameter rewrite, alias modification, and CLI rewrite routing rules.
+---
 # Number Manipulation
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

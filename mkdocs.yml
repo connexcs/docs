@@ -4,7 +4,8 @@ site_description: Connex Cloud Softswitch
 site_author: ConnexCS Team
 theme:
   name: material
-  font: false 
+  custom_dir: overrides
+  font: false
   features:
     - navigation.instant
     - navigation.tabs

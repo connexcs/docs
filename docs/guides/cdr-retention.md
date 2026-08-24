@@ -1,3 +1,6 @@
+---
+description: Understand Call Detail Record (CDR) retention in ConnexCS, including what data each record contains and how long it's kept for compliance.
+---
 # Call Detail Record Retention
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

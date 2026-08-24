@@ -1,3 +1,6 @@
+---
+description: Analyze ConnexCS Statements using the Columns section to drill down into Return on Sales (ROS) and other detailed financial values.
+---
 # Statement
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

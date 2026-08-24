@@ -1,3 +1,6 @@
+---
+description: 'ConnexCS App Platform architecture: a globally distributed, stateless web server layer served via AnyCast Edge Nodes with automatic failover between nodes.'
+---
 # Architecture
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

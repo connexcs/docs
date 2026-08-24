@@ -1,3 +1,7 @@
+---
+title: Customer CDR | Call Detail Records & Billing
+description: View Customer Call Detail Records (CDR) in ConnexCS, capturing call duration, destination, and other data essential for billing and analytics.
+---
 # Call Detail Record
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

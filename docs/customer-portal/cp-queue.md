@@ -1,3 +1,6 @@
+---
+description: Create a Call Queue in the ConnexCS Customer Portal to route callers to the longest-waiting available member, with hold audio and music.
+---
 # Queue
 
 The **Queue**, same as Groups, allows you to create a team of people in a call queue. The caller is then routed to the next available member (who waits for the longest to receive a call).

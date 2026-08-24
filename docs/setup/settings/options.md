@@ -1,3 +1,6 @@
+---
+description: Configure system-wide default Options in ConnexCS, including the Internal SIP Code Rewrite setting for revising existing SIP codes.
+---
 # Options
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: ConnexCS KYC and Customer Due Diligence procedures verify customer identity, prevent fraud, and support compliance with UK GDPR and the Data Protection Act.
+---
 # KYC & Identity Verification
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

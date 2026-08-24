@@ -1,3 +1,6 @@
+---
+description: Create Templates in ConnexCS using the Handlebars language to customize outbound email, SMS, Customer Portal, and WebPhone content.
+---
 # Templates
 
 **Setup :material-menu-right: Config :material-menu-right: Templates**

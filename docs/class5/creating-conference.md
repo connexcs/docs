@@ -1,3 +1,7 @@
+---
+title: Conference Calls | Class 5 Bridge Setup
+description: Set up Conference Calls in ConnexCS Class 5 to let multiple callers join a moderated voice call, configured per customer under Class5 settings.
+---
 # Conference Calls
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Browse the ConnexCS Change Log, a chronological record of notable platform updates for tracking how the product evolves over time.
+---
 # Introduction
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Customer Portal Database feature provides custom persistent data storage for number lookups, caching, and stateful applications.
+---
 # Database
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

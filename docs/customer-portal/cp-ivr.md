@@ -1,3 +1,7 @@
+---
+title: Portal IVR | Call Routing Menus
+description: Configure Interactive Voice Response (IVR) phone trees in the ConnexCS Customer Portal, routing callers by number-pad selection to departments.
+---
 # Interactive Voice Response
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

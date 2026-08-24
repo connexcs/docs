@@ -1,3 +1,7 @@
+---
+title: Portal DID Purchase | Search & Buy Numbers
+description: Search, price, and buy DID numbers directly in the ConnexCS Customer Portal by prefix or area code, with cart checkout and carrier-set pricing.
+---
 # DID Purchase
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

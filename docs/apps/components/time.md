@@ -1,3 +1,6 @@
+---
+description: The Time component in the ConnexCS Page Builder captures specific times for appointments, event registration, scheduling, and recurring reminders.
+---
 # Time
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

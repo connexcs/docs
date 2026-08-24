@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Query Builder is an abstraction layer for constructing database queries without writing raw SQL, built for the App Platform.
+---
 # Query Builder
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

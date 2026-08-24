@@ -1,3 +1,6 @@
+---
+description: Review ConnexCS Route Stats by time range, date range, and carrier selectors to analyze routing performance for a customer account.
+---
 # Route Stats
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

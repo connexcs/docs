@@ -1,3 +1,6 @@
+---
+description: Group multiple prefixes into a ConnexCS Prefix Set and apply it to a Customer or Route, avoiding manual per-item configuration and errors.
+---
 # Prefix Sets
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

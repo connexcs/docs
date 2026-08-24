@@ -1,3 +1,6 @@
+---
+description: The Sub-Form component embeds one form inside another in the ConnexCS Page Builder, capturing extra details for a specific section.
+---
 # Sub-Form
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

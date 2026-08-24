@@ -1,3 +1,6 @@
+---
+description: Reference glossary of ConnexCS telecom acronyms and definitions, including ASR and NER call-quality calculations used throughout the documentation.
+---
 # Acronyms and Definitions
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

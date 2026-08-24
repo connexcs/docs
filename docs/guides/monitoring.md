@@ -1,3 +1,6 @@
+---
+description: ConnexCS Monitoring tools for Customers and Carriers help you plan, bill, and troubleshoot, with All Customer Monitoring under Management.
+---
 # Monitoring Guide
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

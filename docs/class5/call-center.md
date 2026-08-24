@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Call Center module routes inbound calls through configurable queues to agents, with full visibility into queues and live calls.
+---
 # Call Center
 
 <details>

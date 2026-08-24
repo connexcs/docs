@@ -1,3 +1,6 @@
+---
+description: Pagination in the ConnexCS Page Builder splits large lists of items across pages, avoiding an endless scroll through catalogs or option sets.
+---
 # Pagination
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

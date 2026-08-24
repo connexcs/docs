@@ -1,3 +1,7 @@
+---
+title: Customer Custom Reports | DTMF & Routing Insights
+description: Build Custom Reports for a ConnexCS customer account, going beyond standard CDRs to analyze DTMF input, rate centers, and technical routing prefixes.
+---
 # Custom Reports
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

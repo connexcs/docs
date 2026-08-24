@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Page Builder lets you design forms and pages with drag-and-drop components and minimal code, accessible to non-technical users.
+---
 # Page Builder
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: Configuring Packages | Global Service Products
+description: Configure global Packages in ConnexCS representing recurring or one-time products, allocated to each customer according to their needs.
+---
 # Packages
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

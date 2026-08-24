@@ -1,3 +1,6 @@
+---
+description: Set the public domain where your ConnexCS App Platform applications are visible and accessible, including the free default cnx.page domain.
+---
 # Domain
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

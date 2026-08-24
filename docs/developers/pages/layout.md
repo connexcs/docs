@@ -1,3 +1,6 @@
+---
+description: Reference for Layout Fields in the ConnexCS Page Builder, controlling element alignment such as Start, End, Center, and Space Around positioning.
+---
 # Layout Fields 
 
 Layout fields can be used to organize the various elements and enhance the form's overall design. 

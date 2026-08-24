@@ -1,3 +1,7 @@
+---
+title: Date Component | App Platform Page Builder
+description: The Date component in the ConnexCS Page Builder provides a calendar-style date picker interface for selecting dates within forms and apps.
+---
 # Date
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

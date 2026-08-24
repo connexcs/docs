@@ -1,3 +1,6 @@
+---
+description: 'Peering Hub simplifies STIR/SHAKEN setup in ConnexCS: generating keys, requesting iConnectiv (STI-PA) certificates, and signing outbound calls.'
+---
 # Peering Hub
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

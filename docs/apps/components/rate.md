@@ -1,3 +1,6 @@
+---
+description: The Rate component in the ConnexCS Page Builder lets users express satisfaction or preference on a visual scale, useful for feedback and surveys.
+---
 # Rate
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

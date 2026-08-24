@@ -1,3 +1,6 @@
+---
+description: Use the ConnexCS Terminal, a built-in command-line interface in the Control Panel, to run ConnexCS CLI commands without leaving the web interface.
+---
 # ConnexCS Terminal
 
 <details>

@@ -1,3 +1,7 @@
+---
+title: Portal Contracts | Approval Status Tracking
+description: Track Contracts in the ConnexCS Customer Portal, including name, creation date, and approval status, with alerts for unapproved agreements.
+---
 # Contracts
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

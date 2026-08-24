@@ -1,3 +1,6 @@
+---
+description: Click-2-Dial lets ConnexCS users trigger calls programmatically from an interface instead of manually dialing, routing to an extension or number.
+---
 # Click-2-Dial (Programmatic API Calling)
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

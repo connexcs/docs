@@ -1,3 +1,7 @@
+---
+title: Carrier Main | Contacts, Rates & Configuration
+description: Configure a Carrier's core settings in ConnexCS, including support contacts, associated Rate Cards, and code-level configuration for the provider.
+---
 # Main
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

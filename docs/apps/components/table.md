@@ -1,3 +1,6 @@
+---
+description: The Table component in the ConnexCS Page Builder presents data in rows and columns while streamlining data entry and improving form usability.
+---
 # Table
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

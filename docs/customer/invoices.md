@@ -1,3 +1,6 @@
+---
+description: Manage the ConnexCS invoicing system for seamless customer billing and payment tracking, closing communication gaps between provider and customer.
+---
 # Invoice
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: Carrier Authentication | IP & Credential Setup
+description: Configure Carrier Authentication in ConnexCS with IP-based access rules or username/password credentials for outbound connections to carriers.
+---
 # Auth
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

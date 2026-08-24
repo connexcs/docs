@@ -1,3 +1,6 @@
+---
+description: The Card component in the ConnexCS Page Builder groups related form fields into a container for a more organized, visually appealing layout.
+---
 # Card
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

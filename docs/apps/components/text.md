@@ -1,3 +1,6 @@
+---
+description: The Text component in the ConnexCS Page Builder is a single-line field for entering text, numbers, or symbols as core form input.
+---
 # Text
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

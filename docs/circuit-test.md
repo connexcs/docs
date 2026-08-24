@@ -1,3 +1,6 @@
+---
+description: Run a ConnexCS Circuit Test to troubleshoot calls using FAS, MOS, jitter, packet loss, and answer delay metrics, and review a history of past tests.
+---
 # Circuit Test
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

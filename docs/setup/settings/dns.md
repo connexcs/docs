@@ -1,3 +1,6 @@
+---
+description: Use ConnexCS managed DNS built for VoIP delivery, including a white-labeled .sip.direct domain you can use directly or set up as a CNAME.
+---
 # Domain Name System
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

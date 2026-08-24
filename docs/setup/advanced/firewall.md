@@ -1,3 +1,6 @@
+---
+description: Block attacker IP addresses with the ConnexCS Firewall's threat detection system, adding single-IP block rules with optional notes.
+---
 # Firewall
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

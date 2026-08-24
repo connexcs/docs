@@ -1,3 +1,7 @@
+---
+title: Portal CDR | Call Detail Record Viewer
+description: View Call Detail Records (CDR) in the ConnexCS Customer Portal, capturing call duration and destination data for billing and reporting.
+---
 # Call Detail Record
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

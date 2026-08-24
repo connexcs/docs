@@ -1,3 +1,6 @@
+---
+description: The Chart component in the ConnexCS Page Builder renders bar, line, area, and pie charts for dashboards, web analytics, and financial reporting.
+---
 # Chart
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

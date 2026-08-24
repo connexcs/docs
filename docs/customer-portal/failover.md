@@ -1,3 +1,6 @@
+---
+description: ConnexCS Failover (Serial Forking) automatically switches to a backup Provider Rate Card if the primary provider fails, keeping service continuous.
+---
 # Failover (Serial Forking)
 
 The failover mechanism guarantees continuous, reliable service by automatically switching to a backup provider rate card(s) in the event of a primary provider failure.

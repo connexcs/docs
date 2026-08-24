@@ -1,3 +1,6 @@
+---
+description: Create Agents for Auto Dialer and Preview Dialer campaigns in the ConnexCS Contact Center, setting how many agents are assigned per campaign.
+---
 # Creating Agents
 
 ---

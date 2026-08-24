@@ -1,3 +1,7 @@
+---
+title: Control Panel Dashboard | Live System Overview
+description: The ConnexCS Control Panel Dashboard gives a real-time overview of live channels, active customers, carriers, and rate cards in one monitoring view.
+---
 # Dashboard
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

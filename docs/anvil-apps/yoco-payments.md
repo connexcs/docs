@@ -1,3 +1,6 @@
+---
+description: Integrate Yoco Payments with ConnexCS to collect customer payments programmatically using a Secret API Key for secure, authenticated transactions.
+---
 # Yoco Payment
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

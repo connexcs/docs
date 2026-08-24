@@ -1,3 +1,7 @@
+---
+title: Portal DID | Direct Inward Dial Management
+description: Manage Direct Inward Dial (DID) numbers in the ConnexCS Customer Portal, routing inbound public network calls straight to their destination.
+---
 # Direct Inward Dial
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

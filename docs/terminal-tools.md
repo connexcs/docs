@@ -1,3 +1,6 @@
+---
+description: CX-Tools brings script management, SQL queries, key-value store access, deployments, and app management to ConnexCS in a single extensible CLI.
+---
 # Terminal Tools
 
 ---

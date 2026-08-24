@@ -1,3 +1,6 @@
+---
+description: Understand the intelligent platform features behind ConnexCS Customer account management before you begin setting up your own customers.
+---
 # Customer
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

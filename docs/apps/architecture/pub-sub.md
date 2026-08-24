@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Pub/Sub Bus enables asynchronous messaging between app components, illustrated with a server-side chat application example.
+---
 # Pub/Sub Bus
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

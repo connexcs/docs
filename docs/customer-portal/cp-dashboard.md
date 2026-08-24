@@ -1,3 +1,7 @@
+---
+title: Portal Dashboard | Account Activity Overview
+description: The ConnexCS Customer Portal Dashboard gives a quick overview of account activity and call statistics, plus access to configuration and real-time testing.
+---
 # Dashboard
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

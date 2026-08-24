@@ -1,3 +1,6 @@
+---
+description: The ConnexCS IDE is a centralized workspace for building, customizing, and managing applications, workflows, and integrations without switching tools.
+---
 # IDE
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: Portal Latest Calls | Incoming & Outgoing Records
+description: View recent incoming and outgoing call records in the ConnexCS Customer Portal, with customizable columns via the View Columns option.
+---
 # Latest Calls
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

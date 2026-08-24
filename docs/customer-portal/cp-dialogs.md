@@ -1,3 +1,7 @@
+---
+title: Portal Dialogs | Active Call View
+description: View active calls in the ConnexCS Customer Portal Dialogs tab, including the Ended status shown while a call finishes tearing down for billing.
+---
 # Dialogs
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

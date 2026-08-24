@@ -1,3 +1,6 @@
+---
+description: The Transfer component lets users move items between two lists in a ConnexCS form, useful for selections, assignments, and content filtering.
+---
 # Transfer
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

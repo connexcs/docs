@@ -1,3 +1,7 @@
+---
+title: Button Builder | App Platform Architecture
+description: Build custom buttons in the ConnexCS App Platform with configurable name, icon, and color, and trigger ScriptForge scripts directly on button click.
+---
 # Button Builder
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

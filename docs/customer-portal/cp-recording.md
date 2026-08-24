@@ -1,3 +1,6 @@
+---
+description: Listen to recorded calls in the ConnexCS Customer Portal, where available on your account, by selecting a date path to inspect recordings.
+---
 # Recording
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

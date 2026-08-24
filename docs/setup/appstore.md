@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Anvil App Store is the central marketplace for discovering, installing, publishing, and managing applications on the platform.
+---
 # App Store
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

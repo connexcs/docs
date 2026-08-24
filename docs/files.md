@@ -1,3 +1,6 @@
+---
+description: Manage the ConnexCS File module, a centralized library for media and documents used by recordings, voicemail, provider cards, and public assets.
+---
 # File
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

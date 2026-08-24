@@ -1,3 +1,6 @@
+---
+description: 'Manage your ConnexCS Account settings: Company and General Information, SMTP details, Packages, and the Service Agreement in one overview.'
+---
 # Account
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

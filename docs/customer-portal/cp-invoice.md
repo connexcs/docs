@@ -1,3 +1,6 @@
+---
+description: View, filter, and download billing records in the ConnexCS Customer Portal Invoice module, with full visibility into account charges.
+---
 # Invoice
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

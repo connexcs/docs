@@ -1,3 +1,7 @@
+---
+title: Global Alias | Account-Wide Number Rewriting
+description: Configure Global Alias in ConnexCS to rewrite numbers, fully or partially, before further call processing across your whole account, by company or country.
+---
 # Alias
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

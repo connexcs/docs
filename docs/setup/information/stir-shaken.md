@@ -1,3 +1,6 @@
+---
+description: Add a STIR/SHAKEN Certificate in ConnexCS to authenticate outbound calls, improve caller ID trust, and mitigate spoofing and robocalling.
+---
 # STIR / SHAKEN Cert
 
 **Setup :material-menu-right: Information :material-menu-right: STIR/SHAKEN Cert**

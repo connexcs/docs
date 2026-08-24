@@ -1,3 +1,6 @@
+---
+description: Create Tags in ConnexCS to categorize customers and apply global Alerts and Routing Strategies automatically wherever the tag is assigned.
+---
 # Tags
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

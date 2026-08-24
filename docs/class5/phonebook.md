@@ -1,3 +1,6 @@
+---
+description: Set up a Class 5 Phonebook in ConnexCS, an internal company directory per customer that stays private to that customer's own users.
+---
 # Phonebook
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

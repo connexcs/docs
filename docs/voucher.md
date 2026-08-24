@@ -1,3 +1,6 @@
+---
+description: Issue and manage ConnexCS Vouchers, setting a fixed value and Minimum Activation spend before the system generates redeemable voucher codes.
+---
 # Vouchers
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

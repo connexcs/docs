@@ -1,3 +1,6 @@
+---
+description: Technical specification for the ConnexCS Class 4 Softswitch, a massively scalable distributed switching system deployable globally with minimal setup.
+---
 # Class 4 Softswitch
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

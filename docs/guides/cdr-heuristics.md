@@ -1,3 +1,6 @@
+---
+description: CDR Heuristics is a ConnexCS carrier intelligence tool that analyzes Call Detail Records to reveal hidden carrier behavior, routing issues, and quality trends.
+---
 # CDR Heuristics
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

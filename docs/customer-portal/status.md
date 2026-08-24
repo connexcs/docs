@@ -1,3 +1,7 @@
+---
+title: Customer Status Pages | Outage Reporting
+description: Create Status Pages in the ConnexCS Customer Portal to keep customers informed in real time about service disruptions, outages, and maintenance.
+---
 # Status
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

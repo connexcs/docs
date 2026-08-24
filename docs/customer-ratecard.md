@@ -1,3 +1,6 @@
+---
+description: Build and manage Customer Rate Cards in ConnexCS, generated from provider rate cards to streamline pricing and minimize manual rating errors.
+---
 # Customer Rate Card
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: The Link component in the ConnexCS Page Builder opens external resources, navigates form sections, triggers actions, or shows contextual help.
+---
 # Link
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

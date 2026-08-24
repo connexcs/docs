@@ -1,3 +1,6 @@
+---
+description: Look up international numbering plans in the ConnexCS Dial Code / Destination database by country and prefix to check number type and provider.
+---
 # Dial Code / Destination
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Restrict ConnexCS customers to specific calling plans using a temporary prefix in User Auth, tagging calls for appropriate destination routing.
+---
 # Restricting individual customers to specific calling plans
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

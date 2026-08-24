@@ -1,3 +1,6 @@
+---
+description: Create Groups (Call Queues) in ConnexCS Class 5 to route calls to a team of agents on a FIFO basis, based on your configured routing strategy.
+---
 # Groups
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

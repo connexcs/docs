@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Global AI Agent is an integrated assistant that handles informational queries and action-based operations to streamline platform workflows.
+---
 # Global AI Agent
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: Customer Portal Domains | Multi-Brand Setup
+description: Add domains and sub-domains to the ConnexCS Control Panel for Customer Portal access, with per-domain branding, permissions, and currency.
+---
 # Portal
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

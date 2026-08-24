@@ -1,3 +1,6 @@
+---
+description: Landing page for the ConnexCS Customer Portal Contact Center, linking to the Introduction overview and the full setup and usage guide.
+---
 # Contact Center
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

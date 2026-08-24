@@ -1,3 +1,6 @@
+---
+description: The Color component in the ConnexCS Page Builder lets users pick a color from a palette or enter a color code for design and formatting fields.
+---
 # Color
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

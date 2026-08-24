@@ -1,3 +1,6 @@
+---
+description: Compare per-channel and per-minute billing models in ConnexCS, including how channel-based and usage-based charges are calculated and deducted.
+---
 # Billing
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

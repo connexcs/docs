@@ -1,3 +1,6 @@
+---
+description: Review the ConnexCS Payment Log for debugging payments made through the Customer Portal or via PayPal Instant Payment Notification (IPN).
+---
 # Payment Log
 
 ---

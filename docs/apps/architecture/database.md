@@ -1,3 +1,6 @@
+---
+description: Create custom persistent data storage in the ConnexCS App Platform, scoped per customer or global, for lookups, caching, or stateful applications.
+---
 # Database
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

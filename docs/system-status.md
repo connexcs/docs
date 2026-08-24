@@ -1,3 +1,7 @@
+---
+title: System Status | Platform Health & Outages
+description: Create Status Pages in ConnexCS to report outages and issues on customer portals, automating downtime communication to your customers.
+---
 # Status
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
