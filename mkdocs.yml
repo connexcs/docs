@@ -267,6 +267,7 @@ nav:
     - Anvil: anvil.md
     - ConnexCS Terminal: cliterminal.md
     - Hearth: hearth.md
+    - ConnExamine: connexamine.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
