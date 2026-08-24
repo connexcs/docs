@@ -177,6 +177,9 @@
 |**Cx MCP**|n/a|Cx MCP enables seamless integration of AI agents and services for automated workflows on ConnexCS.|
 |**TRACED Act**| Telephone Robocall Abuse Criminal Enforcement and Deterrence Act| US legislation aimed at combating illegal robocalls.|
 |**LLM**|Large Language Model| AI model trained on large amounts of text to understand, generate, and respond to human language|
+| **FTP** | File Transfer Protocol | A standard network protocol used to transfer files between a client and a server over a TCP/IP network. Unlike SFTP, FTP does not encrypt data or authentication information, making it less secure for transferring sensitive files|
+| **SFTP** | Secure File Transfer Protocol | A secure file transfer protocol that uses the SSH protocol to encrypt data and authenticate users, providing secure access to files on a remote server|
+| **SSH** | Secure Shell | A cryptographic network protocol used to securely access, authenticate, and manage remote systems and services over an encrypted connection|
 
 ## ACD Calculation Method
 
