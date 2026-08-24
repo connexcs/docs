@@ -220,7 +220,7 @@ To raise a complaint about how ConnexCS handles your personal data, contact the 
 
 For full details of data processing activities, refer to the [ConnexCS Privacy Notice](https://connexcs.com/company-policies/data-privacy-policy).
 
-For any other assistance contact our Support team at [support@connexcs.com](support@connexcs.com).
+For any other assistance contact our Support team at [support@connexcs.com](mailto:support@connexcs.com).
 
 ---
 

@@ -27,7 +27,7 @@ Breakout Reports update in real time and are consistency-checked every 24 hours.
 
 - Bill from CDR data, not from balance changes.
 - Wherever possible, export CDR data at least 24 hours after the final day of the billing period to ensure all records are fully processed.
-- Calculate the cost for each individual call separately, then sum the results. Do not multiply total minutes by a rate — this produces incorrect totals. See [Why Minutes × Rate ≠ Invoice Total](#why-minutes-x-cost-per-minute-is-not-the-same-as-what-the-totals-say) below.
+- Calculate the cost for each individual call separately, then sum the results. Do not multiply total minutes by a rate — this produces incorrect totals. See [Why Minutes × Rate ≠ Invoice Total](#why-minutes-cost-per-minute-invoice-total) below.
 
 ---
 
