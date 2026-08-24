@@ -1,3 +1,6 @@
+---
+description: The Inline layout in the ConnexCS Page Builder arranges form elements compactly for a more organized, responsive, and legible form design.
+---
 # Inline
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

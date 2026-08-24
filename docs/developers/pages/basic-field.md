@@ -1,3 +1,6 @@
+---
+description: Reference for Basic Fields in the ConnexCS Page Builder, the standard form elements used to build simple widgets, with validation examples.
+---
 # Basic Field 
 
 Basic Fields include a collection of standard elements that can be used to create simple widgets for creating forms. A detailed description of all the Basic Fields are discussed below.

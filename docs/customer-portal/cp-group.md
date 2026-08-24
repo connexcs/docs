@@ -1,3 +1,7 @@
+---
+title: Portal Group | Hunt Groups & Call Queues
+description: Create Hunt Groups and Queues in the ConnexCS Customer Portal to route calls to a team, such as Technical Support or Sales, by routing strategy.
+---
 # Group
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: Account Manager Payments | Record Payouts
+description: Record payments made to your ConnexCS Account Manager and track payout history. This feature is currently in Alpha version.
+---
 # Payment
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

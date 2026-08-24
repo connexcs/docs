@@ -1,3 +1,6 @@
+---
+description: Test IP address reachability from ConnexCS servers worldwide with the Network Ping tool, currently in Alpha and under active development.
+---
 # Network Ping
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

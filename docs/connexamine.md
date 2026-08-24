@@ -1,3 +1,6 @@
+---
+description: ConnExamine watches outbound SIP INVITEs to diagnose call setup delays and failures, measuring response, ringing, and answer times on PBXs and gateways.
+---
 # Connexamine
 
 <details>

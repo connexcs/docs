@@ -1,3 +1,6 @@
+---
+description: View the Breakout Report in the ConnexCS Customer Portal, showing billing-accurate customer activity derived directly from processed CDR data.
+---
 # Breakout
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

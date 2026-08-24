@@ -1,3 +1,6 @@
+---
+description: View Packages in the ConnexCS Customer Portal, including recurring charge frequency, one-time fees, product description, and auto-deduction rules.
+---
 # Package
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Define Environmental Variables in the ConnexCS App Platform, accessible from ScriptForge, Templates, Pages, and Button Builder via this.env.
+---
 # Environmental Variables
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

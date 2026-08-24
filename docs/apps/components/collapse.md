@@ -1,3 +1,6 @@
+---
+description: The Collapse component organizes lengthy or complex ConnexCS forms into expandable sections, reducing clutter and improving navigation.
+---
 # Collapse
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

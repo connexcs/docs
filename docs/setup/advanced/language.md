@@ -1,3 +1,6 @@
+---
+description: Customize the ConnexCS interface Language, adding non-English word equivalents or revising the platform's default terminology.
+---
 # Language
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

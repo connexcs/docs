@@ -1,3 +1,6 @@
+---
+description: Upload and manage audio files in the ConnexCS Customer Portal for PBX functions like IVR prompts and Queue hold music, ready for reuse.
+---
 # Audio
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

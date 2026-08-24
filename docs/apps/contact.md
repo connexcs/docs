@@ -1,3 +1,6 @@
+---
+description: 'Install the Contact Center App from the ConnexCS App Store: log in to the Control Panel and navigate to Setup, App Store to begin setup.'
+---
 ## Contact Center Setup & Usage Guide
 
 ### Step-I: Install Contact Center App

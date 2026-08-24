@@ -1,3 +1,6 @@
+---
+description: Stream real-time call transcripts over WebSocket in ConnexCS, delivering transcription events instantly to external systems as calls happen.
+---
 # Live transcription via WebSocket
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

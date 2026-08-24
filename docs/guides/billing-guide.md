@@ -1,3 +1,6 @@
+---
+description: 'ConnexCS Billing Guide: use CDRs as the source of truth for billing and invoice discrepancies, and avoid basing charges on account balance changes.'
+---
 # Billing Guide
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

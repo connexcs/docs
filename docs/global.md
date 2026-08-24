@@ -1,3 +1,6 @@
+---
+description: Use the ConnexCS Global section for an account-wide overview of Customer and Carrier management data, improving oversight across every account.
+---
 # Global
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

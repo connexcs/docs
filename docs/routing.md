@@ -1,3 +1,6 @@
+---
+description: 'How ConnexCS Routing works: customer identification, Ingress Routing against rate cards, and how Rate Cards represent call paths to carriers.'
+---
 # Routing
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

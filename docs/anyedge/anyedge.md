@@ -1,3 +1,6 @@
+---
+description: ConnexCS AnyEdge is a distributed load balancer that optimizes call distribution across regions, improving routing efficiency and VoIP availability.
+---
 # AnyEdge
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: Alert Component | App Platform Page Builder
+description: The Alert component in the ConnexCS App Platform displays success, warning, info, or error boxes as modal dialogs that stay visible until dismissed.
+---
 # Alert
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

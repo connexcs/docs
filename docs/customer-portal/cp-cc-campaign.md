@@ -1,3 +1,6 @@
+---
+description: Create and configure Contact Center Campaigns in the ConnexCS Customer Portal to manage calling activity, agent performance, and lead engagement.
+---
 # Campaign Creation
 
 ---

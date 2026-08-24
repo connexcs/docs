@@ -1,3 +1,6 @@
+---
+description: Enable Spam Protection features in ConnexCS to block fraudulent and unwanted calls that attempt to trick victims into revealing personal data.
+---
 # Enabling Spam Protection Features
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

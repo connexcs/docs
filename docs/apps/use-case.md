@@ -1,3 +1,6 @@
+---
+description: 'Use cases for the ConnexCS App Platform: admin panels, customer-facing panels, agent and call center WebPhones, autonomous calling, and more.'
+---
 # Use Cases
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

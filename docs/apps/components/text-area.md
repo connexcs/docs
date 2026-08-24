@@ -1,3 +1,6 @@
+---
+description: The Text-Area component in the ConnexCS Page Builder captures multi-line free text, ideal for feedback, support requests, and open-ended answers.
+---
 # Text Area
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

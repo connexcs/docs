@@ -1,3 +1,6 @@
+---
+description: Configure the ConnexCS Debit Limit to control Pre-Pay and Post-Pay customer accounts, setting how far a balance can drop before calls are stopped.
+---
 # Credit Control
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

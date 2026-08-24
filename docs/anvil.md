@@ -1,3 +1,6 @@
+---
+description: Explore ConnexCS Anvil, the AI-powered app builder that creates professional web applications from natural-language descriptions. Currently in alpha.
+---
 # ConnexCS Anvil (AI App Builder)
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

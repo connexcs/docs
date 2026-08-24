@@ -1,3 +1,6 @@
+---
+description: Overview of Rate Cards in ConnexCS and how they organize pricing and routing information so calls are priced correctly and routed efficiently.
+---
 # Rate Card Overview
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

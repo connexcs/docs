@@ -1,3 +1,6 @@
+---
+description: Reference guide to major telecom regulatory authorities worldwide, helping VoIP providers understand the country-specific rules they must follow.
+---
 # Governing Bodies
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

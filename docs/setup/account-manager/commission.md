@@ -1,3 +1,6 @@
+---
+description: Set up Commission payouts to your ConnexCS Account Manager. This feature is currently in Alpha and under active development.
+---
 # Commission
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

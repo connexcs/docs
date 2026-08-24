@@ -1,3 +1,6 @@
+---
+description: The Dialog component creates modal windows or pop-up forms inside a larger ConnexCS form, collecting extra input without disrupting the main flow.
+---
 # Dialog
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

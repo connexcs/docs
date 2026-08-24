@@ -1,3 +1,6 @@
+---
+description: Create call Scripts for Auto Dialer and Preview Dialer campaigns in the ConnexCS Contact Center, guiding agents through customer interactions.
+---
 # Creating Scripts
 
 ---

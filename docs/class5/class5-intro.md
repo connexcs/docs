@@ -1,3 +1,7 @@
+---
+title: Class 5 Overview | PBX & Softswitch Services
+description: Introduction to ConnexCS Class 5 services and PBX features, explained alongside Class 4 softswitch routing to highlight the key differences.
+---
 # Class 5
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

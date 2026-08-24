@@ -1,3 +1,6 @@
+---
+description: Learn how to log out of the ConnexCS Control Panel safely using the account menu in the top-right corner of the page, ending your active session.
+---
 # Logging out of the ConnexCS Control Panel
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

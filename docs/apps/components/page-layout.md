@@ -1,3 +1,6 @@
+---
+description: Page Layout is the skeleton that arranges form elements in the ConnexCS Page Builder, determining the placement, size, and spacing of each part.
+---
 # Page Layout
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

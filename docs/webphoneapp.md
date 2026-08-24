@@ -1,3 +1,6 @@
+---
+description: The ConnexCS WebPhone App is a fully customizable, browser-based softphone built on the App Platform, replacing the legacy Web Phone Application.
+---
 # WebPhone App
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

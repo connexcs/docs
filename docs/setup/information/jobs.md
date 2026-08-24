@@ -1,3 +1,6 @@
+---
+description: Monitor ConnexCS Jobs by status (Completed, Failed, Active, Delayed, Wait), covering email sends, server checks, and SIP tests.
+---
 # Jobs
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

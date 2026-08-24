@@ -1,3 +1,6 @@
+---
+description: The Data Grid component displays and edits tabular data in ConnexCS apps, with inline editing, sorting, filtering, and pagination built in.
+---
 # Data Grid
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

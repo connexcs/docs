@@ -1,3 +1,6 @@
+---
+description: The ConnexCS MCP Server lets AI assistants securely access ConnexCS tools and platform data using the Model Context Protocol for natural-language control.
+---
 # ConnexCS MCP Server
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

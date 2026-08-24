@@ -1,3 +1,6 @@
+---
+description: ConnexCS video walkthroughs covering rate card setup, routing, global routing, CLI restrictions, aliases, bulk edit, ScriptForge, and Customer Portal setup.
+---
 # Video Guide
 
 ### Rate Card Setup

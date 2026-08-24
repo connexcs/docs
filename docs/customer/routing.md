@@ -1,3 +1,6 @@
+---
+description: 'How ConnexCS Ingress Routing works for a customer: traffic entry, authentication checks, and routing to a Customer Rate Card and onward provider.'
+---
 # Ingress Routing
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

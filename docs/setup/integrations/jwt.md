@@ -1,3 +1,6 @@
+---
+description: Manage JWT Keys in ConnexCS, including the Refresh Token that keeps user sessions seamless while improving authentication security.
+---
 # JWT Keys
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

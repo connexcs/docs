@@ -1,3 +1,6 @@
+---
+description: Plan ConnexCS platform capacity by assessing current traffic percentages, infrastructure load, and Media Proxy volume requirements.
+---
 # Capacity Planning
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

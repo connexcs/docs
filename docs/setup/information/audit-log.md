@@ -1,3 +1,6 @@
+---
+description: Review the ConnexCS Audit Log for a chronological record of every configuration change, with timestamps, IPs, and before/after differences.
+---
 # Audit Log
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

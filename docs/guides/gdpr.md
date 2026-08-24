@@ -1,3 +1,6 @@
+---
+description: Understand GDPR compliance for VoIP operators and carriers serving the EU market, covering how personal user data must be collected and processed.
+---
 # Understanding General Data Protection Regulation
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

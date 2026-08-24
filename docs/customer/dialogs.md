@@ -1,3 +1,7 @@
+---
+title: Customer Dialogs | Live Call Tracking
+description: Track a customer's currently active calls in ConnexCS Dialogs, including the Ended status used while a call finishes tearing down and billing.
+---
 # Dialogs
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

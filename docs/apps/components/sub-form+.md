@@ -1,3 +1,6 @@
+---
+description: Sub-Form+ is a complex, nestable layout component for list (array) form data in the ConnexCS Page Builder, supporting multi-level nesting.
+---
 # Sub-Form+
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

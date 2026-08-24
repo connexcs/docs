@@ -1,3 +1,6 @@
+---
+description: The Button component in the ConnexCS App Platform triggers events on click, commonly used to submit forms, navigate pages, or run actions.
+---
 # Button
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

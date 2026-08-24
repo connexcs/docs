@@ -1,3 +1,6 @@
+---
+description: The legacy ConnexCS Web Phone runs in-browser with no install required. Development is on hold; new deployments should use the WebPhone App instead.
+---
 # Webphone
 
 !!! Warning

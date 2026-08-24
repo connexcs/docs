@@ -1,3 +1,7 @@
+---
+title: Carrier DID | Direct Inward Dial Numbers
+description: View and add Direct Inward Dial (DID) numbers belonging to a carrier in ConnexCS, the provider-side counterpart to Customer DID management.
+---
 # Direct Inward Dial
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

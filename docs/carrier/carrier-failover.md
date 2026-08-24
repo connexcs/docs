@@ -1,3 +1,6 @@
+---
+description: Review the Carrier Failover report in ConnexCS to see calls that failed on one carrier and connected through another, a possible sign of FAS activity.
+---
 # Failover
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Use OAuth Session integrations in ConnexCS for secure sign-in, token issuance, and automatic session refresh with external systems.
+---
 # OAuth Session
 
 **Setup :material-menu-right: Integrations :material-menu-right: OAUth Session**

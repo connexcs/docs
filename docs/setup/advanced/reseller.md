@@ -1,3 +1,6 @@
+---
+description: Enable Reseller Account functionality in ConnexCS to resell carrier services through a reseller or agent. Currently an Alpha feature.
+---
 # Reseller Account
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

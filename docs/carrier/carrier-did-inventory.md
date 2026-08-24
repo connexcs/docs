@@ -1,3 +1,6 @@
+---
+description: Manage the Carrier DID Inventory in ConnexCS for numbers held by the provider that aren't yet assigned to any specific customer.
+---
 # DID Inventory
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

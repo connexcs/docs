@@ -1,3 +1,6 @@
+---
+description: Use SIP Traces, Pings, and Messages in ConnexCS to diagnose call setup, maintenance, and tear-down issues; call quality needs other troubleshooting tools.
+---
 # SIP Traces, Pings and Messages
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

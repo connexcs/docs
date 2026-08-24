@@ -1,3 +1,6 @@
+---
+description: The Statistic component highlights a number or figure, such as a value, amount, or ranking, with optional countdown and card-style display.
+---
 # Statistic
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

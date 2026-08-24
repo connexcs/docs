@@ -1,3 +1,6 @@
+---
+description: Provision SIP devices in ConnexCS by MAC, IMEI, or UUID for direct customer device setup. This feature is currently in Alpha version.
+---
 # Session Initiation Protocol Devices
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

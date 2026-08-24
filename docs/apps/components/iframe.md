@@ -1,3 +1,6 @@
+---
+description: The I-Frame component embeds an external web page, such as a map, calendar, or payment gateway, inside a ConnexCS form without breaking its layout.
+---
 # I-Frame
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

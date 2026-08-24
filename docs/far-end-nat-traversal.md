@@ -1,3 +1,6 @@
+---
+description: Understand Far-End NAT Traversal in ConnexCS, why SIP ALG support varies across firewalls and gateways, and how it affects call setup through NAT.
+---
 # Far-End Network Address Translation Traversal
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

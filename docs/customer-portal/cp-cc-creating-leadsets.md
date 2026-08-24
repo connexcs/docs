@@ -1,3 +1,6 @@
+---
+description: Create Leadsets in the ConnexCS Contact Center to organize the contacts and prospects that agents will call during a campaign.
+---
 # Creating Leadsets
 
 ---

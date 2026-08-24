@@ -1,3 +1,6 @@
+---
+description: Configure USA Routing in ConnexCS using NPA-NXX and LRN number formats, with inter/intra-state routing based on the CLI or ANI presented in the call.
+---
 # USA Routing
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: The Grid component displays and organizes data in rows and columns within a ConnexCS form, with each cell holding a data element or input field.
+---
 # Grid
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

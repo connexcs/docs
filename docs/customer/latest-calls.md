@@ -1,3 +1,7 @@
+---
+title: Customer Latest Calls | Recent Call Records
+description: View a customer's recent incoming and outgoing calls in ConnexCS, with full SIP traces and simulated test calls for debugging and troubleshooting.
+---
 # Latest Calls
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

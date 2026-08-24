@@ -1,3 +1,7 @@
+---
+title: Portal Conference | PBX Bridge Calls
+description: Manage Conference Call bridges in the ConnexCS Customer Portal, letting several callers join a moderated voice call, with a view of all groups.
+---
 # Conference
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

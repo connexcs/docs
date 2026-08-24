@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Contact Center Dialer Dashboard gives real-time insight into campaign activity, agent status, and remaining data during a dialer run.
+---
 # Dialer Dashboard: Features and Functions
 
 ---

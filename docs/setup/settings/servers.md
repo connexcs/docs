@@ -1,3 +1,6 @@
+---
+description: Manage ConnexCS server infrastructure under Settings, including monitoring, configuration, authentication, and load balancing per server.
+---
 # Servers
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

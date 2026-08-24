@@ -1,3 +1,6 @@
+---
+description: Overview of transactions, invoices, and payment methods in ConnexCS Settings, used to manage payments made to ConnexCS itself.
+---
 # Payments
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

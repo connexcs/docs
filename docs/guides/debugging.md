@@ -1,3 +1,6 @@
+---
+description: 'Debugging basics for the ConnexCS Voice Platform: isolate call problems methodically before diagnosing VoIP and SIP configuration issues.'
+---
 # Debugging Basics
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

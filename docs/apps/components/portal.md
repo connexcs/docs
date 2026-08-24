@@ -1,3 +1,7 @@
+---
+title: Portal Component | App Platform Page Builder
+description: The Portal component in the ConnexCS Page Builder is a programmatic layout element for loading and displaying multiple pages on demand.
+---
 # Portal
 
 ## Description

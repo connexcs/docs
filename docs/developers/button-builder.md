@@ -1,3 +1,7 @@
+---
+title: Button Builder | Developer Pages Reference
+description: Use Button Builder with ConnexCS Pages to add a custom button to an existing site menu, such as selecting multiple customers or DIDs at once.
+---
 # Button Builder
 
 **Developer :material-menu-right: Button Builder**

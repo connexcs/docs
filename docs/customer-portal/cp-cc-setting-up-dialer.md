@@ -1,3 +1,7 @@
+---
+title: Dialer Setup Introduction | Contact Center
+description: Set up the ConnexCS Contact Center Dialer end to end, from creating campaigns and agents to preparing scripts and lead sets for outbound calling.
+---
 # Setting Up the Dialer
 
 ---

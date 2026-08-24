@@ -1,3 +1,6 @@
+---
+description: ConnexCS scales channels, CPS, and traffic across single or multiple zones, with every server and zone configurable from one control panel.
+---
 # Scaling and Load Balancing
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

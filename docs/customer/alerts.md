@@ -1,3 +1,7 @@
+---
+title: Customer Alerts | Threshold Notifications
+description: Create Customer Alerts in ConnexCS to notify contacts when key performance metrics cross predefined thresholds, automating proactive monitoring.
+---
 # Alerts
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

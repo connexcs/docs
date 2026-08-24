@@ -1,3 +1,7 @@
+---
+title: Customer DID | Direct Inward Dial Numbers
+description: Assign Direct Inward Dial (DID) numbers to a ConnexCS customer so inbound public telephone network calls route directly to their account.
+---
 # Direct Inward Dial (DID)
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

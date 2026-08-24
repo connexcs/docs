@@ -1,3 +1,7 @@
+---
+title: Customer Packages | Predefined Service Products
+description: Offer predefined Packages to ConnexCS customers with recurring charges, spend limits, and automatic credit deductions built into each product.
+---
 # Packages
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

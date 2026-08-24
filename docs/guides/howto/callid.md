@@ -1,3 +1,6 @@
+---
+description: 'Learn what a Call-ID is in ConnexCS: a unique identifier generated at call origination and present in every SIP packet sent or received.'
+---
 
 # What's a Call-ID?
 

@@ -1,3 +1,6 @@
+---
+description: Overview of PBX features in the ConnexCS Customer Portal for managing calls and interactions, including Conference bridge functionality.
+---
 # Private Branch Exchange (PBX)
 
 In **PBX**, you will find several useful features to help manage calls and interactions.

@@ -1,3 +1,6 @@
+---
+description: ConnexCS Data Suite helps you collect, process, and analyze data across its lifecycle, with tools for organizing and optimizing platform data.
+---
 # Data Suite
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

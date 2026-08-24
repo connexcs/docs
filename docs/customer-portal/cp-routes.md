@@ -1,3 +1,6 @@
+---
+description: View Termination Routes for outbound calls in the ConnexCS Customer Portal, including the associated Rate Card, name, and prefix settings.
+---
 # Routes
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

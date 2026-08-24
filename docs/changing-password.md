@@ -1,3 +1,6 @@
+---
+description: Step-by-step guide to changing your ConnexCS Control Panel password, including what you need on hand before starting the password change process.
+---
 # Changing your Password
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

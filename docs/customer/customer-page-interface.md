@@ -1,3 +1,6 @@
+---
+description: The ConnexCS Customer Page Interface is a customizable grid for managing customer data, with bulk filtering, editing, and notification actions.
+---
 # Customer Page Interface
 
 ## Overview

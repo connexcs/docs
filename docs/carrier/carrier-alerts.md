@@ -1,3 +1,7 @@
+---
+title: Carrier Alerts | Failover Threshold Notifications
+description: Set up Carrier Alerts in ConnexCS to email a chosen address when Consecutive Failovers hit a defined limit, catching carrier issues early.
+---
 # Alerts
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

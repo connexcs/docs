@@ -1,3 +1,6 @@
+---
+description: The Select component in the ConnexCS Page Builder is a dropdown menu for choosing one option from a predefined list of choices.
+---
 # Select
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

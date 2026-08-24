@@ -1,3 +1,7 @@
+---
+title: API Integrations | Connect External Services
+description: Configure API Integrations in ConnexCS to connect external systems and payment processors, with inbound API details in Architecture docs.
+---
 # Application Programming Interface Integrations
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

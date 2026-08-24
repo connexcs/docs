@@ -1,3 +1,6 @@
+---
+description: Read-only view of authorized IP addresses and RTP servers used for call routing and media handling in the ConnexCS Customer Portal Interconnect section.
+---
 # Interconnect
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

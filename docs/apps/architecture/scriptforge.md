@@ -1,3 +1,7 @@
+---
+title: ScriptForge (FaaS) | App Platform Scripting Engine
+description: ScriptForge is the Functions-as-a-Service scripting engine behind the ConnexCS App Platform, giving developers a full API for building app logic.
+---
 # ScriptForge (FaaS)
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

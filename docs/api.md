@@ -1,3 +1,7 @@
+---
+title: Platform APIs | REST API Overview & Specifications
+description: Understand the two ConnexCS platform APIs, their distinct URLs, and the shared specification they follow for programmatic control of your softswitch.
+---
 # Application Programming Interface
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

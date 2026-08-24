@@ -1,3 +1,6 @@
+---
+description: Troubleshoot SIP Signaling issues in ConnexCS, covering device registration, call setup, maintenance, and tear-down over the SIP protocol.
+---
 # Troubleshoot Signaling
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

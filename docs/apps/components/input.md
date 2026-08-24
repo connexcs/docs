@@ -1,3 +1,6 @@
+---
+description: The Input component in the ConnexCS Page Builder is the core text field for entering and displaying data within forms and applications.
+---
 # Input
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

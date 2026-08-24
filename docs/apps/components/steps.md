@@ -1,3 +1,6 @@
+---
+description: The Steps component guides users through a complex process by breaking it into stages, visually indicating progress in a ConnexCS form.
+---
 # Steps
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

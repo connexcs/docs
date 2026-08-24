@@ -1,3 +1,6 @@
+---
+description: 'How ConnexCS Customer Support works: response expectations, severity-based resolution timeframes, and options for dedicated NOC support on demand.'
+---
 # Customer Support
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

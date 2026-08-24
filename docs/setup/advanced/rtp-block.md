@@ -1,3 +1,6 @@
+---
+description: Use RTP Block (Block Media IP) in ConnexCS to stop a specific IP address from sending media on your platform, configured under Advanced settings.
+---
 # RTP Block
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

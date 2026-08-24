@@ -1,3 +1,6 @@
+---
+description: Understand FCC STIR/SHAKEN regulations on illegal robocalling and caller ID spoofing, and how ConnexCS providers should provision mitigation.
+---
 # Federal Communication Commission Regulations on Secure Telephony Identity Revisited / SHAKEN
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

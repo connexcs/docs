@@ -1,3 +1,7 @@
+---
+title: Configuring Contracts | Compliance Setup
+description: Configure Contracts in ConnexCS to require customer approval before dialing, with a grace period before unapproved contracts block calls.
+---
 # Contracts
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

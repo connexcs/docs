@@ -1,3 +1,6 @@
+---
+description: Understand the OSI Model's seven networking layers, the 1980s industry standard that computer and telecom companies still build on today.
+---
 # Open Systems Interconnections Model
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

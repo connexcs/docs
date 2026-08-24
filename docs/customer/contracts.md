@@ -1,3 +1,7 @@
+---
+title: Customer Contracts | Compliance Agreements
+description: Manage Customer Contracts in ConnexCS, listing agreements tied to an account to support compliance, security, and identity verification.
+---
 # Contract
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

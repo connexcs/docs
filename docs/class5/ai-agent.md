@@ -1,3 +1,6 @@
+---
+description: ConnexCS AI Call Center Agents deliver instant, 24/7 automated support, handling repetitive inquiries at scale without human intervention.
+---
 # AI Agent
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

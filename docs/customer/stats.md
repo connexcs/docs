@@ -1,3 +1,7 @@
+---
+title: Customer Stats | Call Quality & Traffic Analytics
+description: View Customer Stats graphs in ConnexCS for call quality, traffic performance, carrier efficiency, and overall account activity analytics.
+---
 # Stats
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

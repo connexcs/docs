@@ -1,3 +1,6 @@
+---
+description: The Number component in the ConnexCS Page Builder collects quantitative data with validation, spinners, and range-slider input options.
+---
 # Number
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

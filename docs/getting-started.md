@@ -1,3 +1,6 @@
+---
+description: 'Get started with ConnexCS: a walkthrough of the key features and settings you need to begin managing customers, carriers, and rate cards on the platform.'
+---
 # Getting Started
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Guide to the customer document types available in ConnexCS, and how to view and manage them from within individual customer accounts.
+---
 # Guide to Customer Documents
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

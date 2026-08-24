@@ -1,3 +1,6 @@
+---
+description: Diagnose ConnexCS call disconnection reasons, including downstream and upstream BYE messages, to troubleshoot premature call termination.
+---
 # Call Disconnection Reasons and Premature Call Disconnection
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

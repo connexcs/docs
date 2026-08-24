@@ -1,3 +1,6 @@
+---
+description: Manage SSL Certificates in ConnexCS using free Let's Encrypt certificates or your own user-provided certificate for secure connections.
+---
 # Certificate
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

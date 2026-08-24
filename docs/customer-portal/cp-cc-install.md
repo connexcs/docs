@@ -1,3 +1,6 @@
+---
+description: Install the Contact Center app from the ConnexCS App Store, selecting User API, Class 5 Server, and Class 4 Server to complete setup.
+---
 # Contact Center Setup & Usage Guide
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

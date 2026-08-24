@@ -1,3 +1,7 @@
+---
+title: Group Component | App Platform Page Builder
+description: The Group component logically groups related fields in a ConnexCS form, giving it visual structure so users understand how fields relate.
+---
 # Group
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Limit Calls Per Second (CPS) and channel counts in ConnexCS at the account, carrier, or customer level to cap traffic flow and protect capacity.
+---
 # Capacity Limiting
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

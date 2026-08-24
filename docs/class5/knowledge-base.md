@@ -1,3 +1,6 @@
+---
+description: Upload and index documents in the ConnexCS Class 5 Knowledge Base so AI agents and internal systems can reference RFCs, manuals, and guides in real time.
+---
 # Knowledge Base
 
 <details>

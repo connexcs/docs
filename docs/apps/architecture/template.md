@@ -1,3 +1,6 @@
+---
+description: Use ConnexCS Templates to customize outbound email, SMS, Customer Portal, and WebPhone content with a powerful communication templating system.
+---
 # Template
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

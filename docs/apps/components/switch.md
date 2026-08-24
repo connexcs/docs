@@ -1,3 +1,6 @@
+---
+description: The Switch component in the ConnexCS Page Builder toggles a field between on and off states, offering a clear binary choice in a form.
+---
 # Switch
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

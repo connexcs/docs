@@ -1,3 +1,6 @@
+---
+description: Configure RTP Zones in ConnexCS to change the media proxy zone by location, recommended as a fallback if Closest (Elastic) Server has issues.
+---
 # RTP Zones
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

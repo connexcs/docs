@@ -1,3 +1,7 @@
+---
+title: Carrier Latest Calls | Recent Call Monitoring
+description: Monitor a carrier's most recent calls in ConnexCS, including SIP traces and simulated call runs, from the Latest Calls tab or the Logging section.
+---
 # Latest Calls
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

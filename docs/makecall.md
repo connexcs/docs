@@ -1,3 +1,6 @@
+---
+description: 'Reference for the ConnexCS makeCall API: how the call is initiated, the Promise it returns, and how the Event Manager handles the resulting call.'
+---
 # Some Interesting Features
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

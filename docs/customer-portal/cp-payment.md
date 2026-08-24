@@ -1,3 +1,7 @@
+---
+title: Portal Payments | History & CSV Export
+description: View payment history in the ConnexCS Customer Portal. Check the date, amount, and status of every payment, and export records to CSV.
+---
 # Payments
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

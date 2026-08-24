@@ -1,3 +1,7 @@
+---
+title: Contact Center Introduction | Dialer Solution
+description: Introduction to the ConnexCS Dialer, a full contact center solution with a Dialer Dashboard, Agent Management, Campaigns, and Lead Management.
+---
 # Contact Center
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

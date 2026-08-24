@@ -1,3 +1,6 @@
+---
+description: Create Global Routing templates in ConnexCS to apply a repeatable routing configuration across multiple customers who share the same route settings.
+---
 # Routing Global
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

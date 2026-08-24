@@ -1,3 +1,6 @@
+---
+description: Apply Channel Limitation settings across the ConnexCS platform, with several configuration locations to cap concurrent call channels.
+---
 # Channel Limitation Settings
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

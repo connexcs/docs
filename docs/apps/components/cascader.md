@@ -1,3 +1,6 @@
+---
+description: The Cascader (Cascade Select) component lets users navigate a hierarchical set of options, narrowing choices based on previous selections in a form.
+---
 # Cascader
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

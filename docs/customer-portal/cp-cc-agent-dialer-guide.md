@@ -1,3 +1,6 @@
+---
+description: Agent Dialer Guide for ConnexCS Contact Center Auto Dialer and Preview Dialer campaigns, covering login, campaign selection, and call controls.
+---
 # Agent Dialer Guide
 
 ---

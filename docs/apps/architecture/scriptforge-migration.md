@@ -1,3 +1,6 @@
+---
+description: Migrate ConnexCS ScriptForge scripts from the old documentation pattern to the new implementation, with example code changes for cxC5Server.
+---
 # ConnexCS ScriptForge Migration Guide: Old to New Implementation
 
 ## Overview

@@ -1,3 +1,6 @@
+---
+description: Run Remote Testing in the ConnexCS Control Panel under Global > Weylon to provision and review tests; result visualization reports are in development.
+---
 # Remote Testing
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

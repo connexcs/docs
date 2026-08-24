@@ -1,3 +1,6 @@
+---
+description: The Slider component in the ConnexCS Page Builder lets users drag a handle along a bar to visually select a numerical value in a set range.
+---
 # Slider
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,7 @@
+---
+title: IVR Setup | Interactive Voice Response Menus
+description: Build an Interactive Voice Response (IVR) phone tree in ConnexCS Class 5, routing callers to SIP addresses, PSTN numbers, groups, or other IVRs.
+---
 # Interactive Voice Response
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

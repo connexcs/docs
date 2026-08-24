@@ -1,3 +1,7 @@
+---
+title: Customer Main | Core Account Management
+description: Manage core ConnexCS customer functions from the Main tab, including contacts, invoice generation, summary reporting, and number allocation.
+---
 # Main
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: The Editor component in the ConnexCS App Platform lets you build web content for rapid prototyping, CMS pages, email marketing, and static sites.
+---
 # Editor
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: Create Users and Groups in ConnexCS Settings to manage granular, permission-based access to the Control Panel at every endpoint.
+---
 # User
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

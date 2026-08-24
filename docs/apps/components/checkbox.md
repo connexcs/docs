@@ -1,3 +1,6 @@
+---
+description: The Checkbox component in the ConnexCS Page Builder lets users select multiple options from a set of choices, ideal for preference-based forms.
+---
 # Checkbox
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

@@ -1,3 +1,6 @@
+---
+description: The Divider component visually separates sections of a ConnexCS form, improving readability by marking where different sections begin and end.
+---
 # Divider
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

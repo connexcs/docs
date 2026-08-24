@@ -1,3 +1,6 @@
+---
+description: 'Introduction to ConnexCS Pages: use the Page Builder to customize the Control Panel, Customer Portal, and Web Phone across Carrier and Customer areas.'
+---
 # Pages
 
 Using Page Builder, you can customise the Control Panel, Customer Portal, and Web Phone. Pages help you enhance the functionality of these interfaces.

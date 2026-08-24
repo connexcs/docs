@@ -1,3 +1,6 @@
+---
+description: Write ES6 JavaScript in ConnexCS ScriptForge and run it in a secure, low-latency sandbox built for scripts and small applications, not large workloads.
+---
 # ScriptForge
 
 **Developer :material-menu-right: ScriptForge**

@@ -1,3 +1,6 @@
+---
+description: Set up Pinless Calling Cards in ConnexCS. Learn how CLI-based verification lets callers dial in via DID without a PIN, using IVR to route destinations.
+---
 # Pinless Calling Cards
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

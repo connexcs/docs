@@ -1,3 +1,7 @@
+---
+title: Anvil DID Purchase | Buy Carrier Numbers
+description: The Anvil DID Purchase app lets customers browse and acquire carrier-listed DIDs through ConnexCS, which provides the infrastructure, not the numbers.
+---
 # DID Purchase
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

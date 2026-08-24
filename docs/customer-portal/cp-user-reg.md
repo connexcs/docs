@@ -1,3 +1,6 @@
+---
+description: View active SIP User Registrations in the ConnexCS Customer Portal, including username, IP, protocol, NAT status, and TTL details.
+---
 # User registration
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

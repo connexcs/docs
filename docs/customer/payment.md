@@ -1,3 +1,7 @@
+---
+title: Customer Payments | Add, Track & Manage Transactions
+description: Add, track and manage customer payments in ConnexCS. View full payment history, or handle payments globally across the whole account.
+---
 # Payments
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

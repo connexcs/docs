@@ -1,3 +1,6 @@
+---
+description: The ConnexCS App is a container that bundles Button Builder, Database, Domain, Key Value Store, Page Builder, ScriptForge, Templates, and Query Builder.
+---
 # App
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>

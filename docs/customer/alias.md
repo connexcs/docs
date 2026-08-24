@@ -1,3 +1,7 @@
+---
+title: Customer Alias | Per-Account Number Rewriting
+description: Configure Customer Alias in ConnexCS to rewrite numbers, fully or partially, before further call processing for an individual customer account.
+---
 # Alias
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
