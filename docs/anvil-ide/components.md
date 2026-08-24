@@ -20,7 +20,7 @@ The Anvil IDE provides a complete development environment for building, testing,
 
 It combines backend scripting, frontend development, live previews, terminal access, AI assistance, and productivity tools into a single workspace.
 
-From within the IDE, developers can execute **ScriptForge** scripts, preview HTML templates and Anvil applications, Domains, use the **CX Terminal** to run ConnexCS CLI commands and manage the KV Store, inspect logs, interact with the built-in AI Assistant, write SQL with intelligent auto-completion, and customize their development environment through extension settings.
+From within the IDE, developers can execute **ScriptForge** scripts, preview HTML templates and Anvil applications, manage domains, use the **CX Terminal** to run ConnexCS CLI commands and manage the KV Store, inspect logs, interact with the built-in AI Assistant, write SQL with intelligent auto-completion, and customize their development environment through extension settings.
 
 ## ScriptForge
 

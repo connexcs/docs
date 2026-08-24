@@ -107,7 +107,7 @@ Shows your sign-in status, active project name, and quick-action buttons. When y
 |  | Blue "1" badge | Live count of snapshots taken for the project|
 |   | + (plus, far right) | Manually creates a new snapshot. |
 |  | "Publish ce1c39958c64" is the Snapshot entry |
-|  | "· 1d ago"- Relative timestamp showing when the snapshot was taken | |
+|  | "· 1d ago"- Relative timestamp showing when the snapshot was taken |
 
 <img src= "/apps/img/vc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
