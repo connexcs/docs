@@ -191,11 +191,8 @@
 | **JS**   | *JavaScript* | A programming language commonly used to build interactive web applications and services| 
 | **TS**   | *TypeScript*  | A programming language based on JavaScript that adds static typing and other development features |
 | **npm**  | *Node Package Manager* | A package manager used to install, manage, and distribute JavaScript and Node.js packages |
-| **RFC**  | *Request for Comments* | A series of technical documents published through the IETF that define Internet standards, protocols, and specifications. RFC 8693 specifically defines OAuth 2.0 Token Exchange |
-| **OIDC** | *OpenID Connect* | An authentication protocol built on OAuth 2.0 that allows applications to verify a user's identity|
-| **DDL**  | *Data Definition Language* | SQL commands used to create, modify, and delete database structures such as schemas and tables|
-| **ESM**  | *ECMAScript Modules* | A JavaScript module system that allows code to be organized and imported between files or packages |
 | **RFC**  | *Request for Comments* | A series of technical documents published through the IETF that define Internet standards, protocols, and specifications|
+|**RFC 8693** | *n/a*| Defines OAuth 2.0 Token Exchange, an extension grant type for the OAuth 2.0 framework|
 | **PCAP** | *Packet Capture* | A file containing captured network packets, commonly used to analyze network and SIP traffic|
 | **ASN**  | *Autonomous System Number* | A unique number assigned to an autonomous system that identifies a network on the Internet|
 | **RDAP** | *Registration Data Access Protocol* | A protocol used to retrieve registration information about Internet domains and IP addresses|
