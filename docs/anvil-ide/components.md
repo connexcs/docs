@@ -10,7 +10,7 @@
 <strong>Time Required</strong>: 20–30 minutes<br>
 <strong>Prerequisites</strong>: Access to the ConnexCS Anvil IDE, an Anvil project, and appropriate permissions to develop or manage project resources.<br>
 <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/doc-guide/">Document Guide</a> — documentation standards, Anvil IDE — getting started, ScriptForge, Query Builder, Anvil Apps, CX Terminal.<br>
-<strong>Next Steps</strong>: Create and execute ScriptForge scripts, preview templates and Anvil applications, use the CX Terminal and KV Store, leverage the AI Assistant, configure IDE settings, and explore additional ConnexCS development tools.<br>
+<strong>Next Steps</strong>: Create and execute ScriptForge scripts, and Anvil applications, use the CX Terminal and KV Store, leverage the AI Assistant, configure IDE settings, and explore additional ConnexCS development tools.<br>
 
 </details>
 
@@ -20,7 +20,7 @@ The Anvil IDE provides a complete development environment for building, testing,
 
 It combines backend scripting, frontend development, live previews, terminal access, AI assistance, and productivity tools into a single workspace.
 
-From within the IDE, developers can execute **ScriptForge** scripts, preview HTML templates and Anvil applications, manage domains, use the **CX Terminal** to run ConnexCS CLI commands and manage the KV Store, inspect logs, interact with the built-in AI Assistant, write SQL with intelligent auto-completion, and customize their development environment through extension settings.
+From within the IDE, developers can execute **ScriptForge** scripts, preview Anvil applications, manage domains, use the **CX Terminal** to run ConnexCS CLI commands and manage the KV Store, inspect logs, interact with the built-in AI Assistant, write SQL with intelligent auto-completion, and customize their development environment through extension settings.
 
 ## ScriptForge
 
@@ -62,20 +62,6 @@ While a script runs, any `console.log()` calls appear in the **CX Logs** panel a
 
 ---
 
-## Templates (HTML Email & SMS)
-
-Templates live in the `backend/` folder and are `.html` files used for email or SMS messages.
-
-### Live Preview
-
-Open a template file. Click the **$(preview) Show Template Preview** button in the editor toolbar. A preview panel opens to the right showing how your HTML renders. The preview updates as you type (with a short debounce delay).
-
-### Metadata
-
-Use **Edit Metadata** from the overflow menu to set the template's name, subject, app association, and other properties.
-
----
-
 ## Domains
 
 ### Overview
@@ -88,7 +74,9 @@ Each domain is bound to a chosen project build and ScriptForge runtime version, 
 
 ### Where to Find It
 
-The Domains panel is located in the Explorer sidebar, below Outline and Timeline:
+The Domains panel is located in the Explorer sidebar.
+
+<img src= "/apps/img/domainloc.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 - Expand the **Domains** section to see all domains currently configured for the project.
 - If none exist yet, the panel shows "No domains yet for this project."
@@ -228,8 +216,8 @@ The ConnexCS Assistant is an AI-powered chat interface built into the IDE.
 
 ### Opening the Assistant
 
-- Click the **$(sparkle) Open Assistant** button in the ConnexCS sidebar
-- Or use the assistant icon in the secondary sidebar (right side panel)
+- Click the **Open Assistant** button in the ConnexCS sidebar.
+- Or use the assistant icon in the secondary sidebar (right side panel).
 
 ### Using the Assistant
 
@@ -337,7 +325,7 @@ Restoring a file to a previous version through the History panel in the sidebar 
 3. External Edit Review highlights appear automatically — the diff shown is between the version that was open at the time of the restore and the version restored to.
 4. Use **Keep**, **Undo**, **Keep All**, or **Undo All** as with any other external change.
 
-<img src= "/apps/img/externaleditor1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/externaleditor4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 > **Why this matters:** This gives developers a safety net — they can restore a previous version and then selectively undo parts of the restore if it went further than intended.
 
@@ -360,7 +348,6 @@ These settings are available when using the ConnexCS Connect extension in your o
 | `connexcs.apiHost` | Override the ConnexCS API base URL. Leave blank for the default. |
 | `connexcs.oauthHost` | Override the OAuth server URL. Leave blank for the default. |
 | `connexcs.assistant.enabled` | Turn the ConnexCS Assistant on or off. |
-| `connexcs.preview.urlTemplate` | Customise the URL used for the Anvil app preview. You can use `{app_id}` and `{file_path}` as placeholders. |
 | `connexcs.cli.url` | Override the full WebSocket URL for the CX Terminal. |
 | `connexcs.cli.path` | Override just the path portion of the CX Terminal WebSocket URL. |
 | `connexcs.watch.enabled` | Enable/disable real-time file sync from the server. |
@@ -386,7 +373,7 @@ The IDE inherits all standard VS Code keyboard shortcuts. The most relevant ones
 ## Tips
 
 - **Stay signed in:** The IDE remembers your session. If you see a 401 error, your session may have expired — the IDE will automatically attempt to renew it. If it cannot, a sign-in prompt will appear.
-- **One right column:** All side panels (ScriptForge preview, Run with Vars dialog, Template preview, Anvil preview) open as tabs in the same right-side column so they never clutter your screen.
+- **One right column:** All side panels (ScriptForge preview, Run with Vars dialog, Anvil preview) open as tabs in the same right-side column so they never clutter your screen.
 - **Right-click for context actions:** Right-clicking files and folders in the Explorer shows available actions for that file type (Run, Preview, Show History, etc.).
 - **Project switching does not require a reload:** You can switch projects from the status bar at any time without restarting the IDE.
 
