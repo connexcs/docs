@@ -74,8 +74,6 @@ Extensions add support for additional programming languages, debugging tools, th
 
 The **ConnexCS Sidebar** provides access to your project workspace, ConnexCS tools, and project-related actions.
 
-<img src="/apps/img/[NEW-CONNEXCS-SIDEBAR-IMAGE].png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
 ### File Explorer
 
 The **File Explorer** allows you to browse and manage the files and folders in your project. It also provides access to file history and related project information.
