@@ -55,7 +55,7 @@ Save the file with **Ctrl + S** (or **Cmd + S** on Mac). The extension sends the
 
 1. Open the **File History** panel from the Activity Bar.
 2. Expand a file to see all saved versions with timestamps.
-3.  Click a version and choose **Restore** to roll the file back to that point. The [External Edit Review](components.md#external-edit-review) highlights will appear automatically. <br><img src= "/apps/img/caa7.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3.  Click a version and choose **Restore** to roll the file back to that point. The [External Edit Review](/anvil-ide/components/#external-edit-review) highlights will appear automatically. <br><img src= "/apps/img/caa7.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 

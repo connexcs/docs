@@ -1,5 +1,3 @@
-Absolutely. Below is the **full document**, with the ConnexCS Sidebar, File Explorer, and Version Control sections updated based on the reviewer feedback. I’ve preserved the rest of the content and terminology from your original document. 
-
 # The IDE Interface
 
 <details>
@@ -91,10 +89,10 @@ The **File Explorer** allows you to browse and manage the files and folders in y
 
 The **Version Control** section allows you to manage branches, snapshots, and changes in your project.
 
-<img src="/apps/img/[NEW-FULL-VERSION-CONTROL-IMAGE].png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/apps/img/vc1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-| Icon / Element | Function | |
-| ---------------|----------| -- |
+| Icon / Element | Function |
+| ---------------|----------|
 | 📷 **Camera** | Captures a new snapshot of the project's current state|
 | **Branch/Fork icon** | Creates a new branch|
 | **↻ Refresh** | Refreshes or re-syncs the panel with the current project state|
@@ -103,10 +101,7 @@ The **Version Control** section allows you to manage branches, snapshots, and ch
 | **Merge icon** | Merges a branch into the current branch|
 | **Changes** | Lists uncommitted changes or edits in the project|
 | **Snapshots**  | Displays snapshots saved for the project. A snapshot is a manually or automatically created save point that captures the full state of the project at a specific point in time|
-| **Snapshot count** | The blue number badge shows the current number of snapshots taken for the project|
-| | **+ (plus) in Snapshots** | Manually creates a new snapshot|
-| | **Snapshot entry** | Displays the saved snapshot, such as **Publish ce1c39958c64**|
-| | **Timestamp** | Shows when the snapshot was created, such as **1d ago**|
+| **Snapshot count** | The blue number badge shows the current number of snapshots taken for the project. <br> **+ (plus) in Snapshots**: Manually creates a new snapshot. <br>**Snapshot entry**: Displays the saved snapshot, such as **Publish ce1c39958c64**<br> **Timestamp**: Shows when the snapshot was created, such as **1d ago**. </br>
 
 ## Create Project
 

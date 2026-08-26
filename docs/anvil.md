@@ -112,9 +112,9 @@ Vuetify implements Google's Material Design language — the same design system 
 2. **Create** or **Select** an App: Start by either creating a new app or selecting an existing app.
 3. **Enable Anvil**:
       - Hover over the `Settings` icon.
-      - `Enable Anvil` from the options. <br><img src= "/misc/img/anvil1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      - `Enable Anvil` from the options. <br><img src= "/misc/img/anvil1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       - Choose a starter **template** based on your needs. [**Click here to know more about the Starter Templates**.](/anvil/#starter-templates)
-      - Click on `Enable Anvil.` <br><img src= "/misc/img/anvil2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      - Click on `Enable Anvil.` <br><img src= "/misc/img/anvil2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 4. **Explore the Anvil Folder**
 
@@ -143,7 +143,7 @@ Vuetify implements Google's Material Design language — the same design system 
 
 9. Navigate to the `Src` folder. It contains all the application source files, including UI components and logic, which define how the application is built and behaves.
       1. You can also create a new source file. <br><img src= "/misc/img/anvil11png.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
-      2. Click on `Create File`. <br><img src= "/misc/img/anvil12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
+      2. Click on `Create File`. <br><img src= "/misc/img/anvil12.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
       3. A new file will be created. This file can be deleted and is not necessary for Anvil execution. <br><img src= "/misc/img/anvil13.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>.
 
 10. The  `App.vue` file is the main application file that controls the overall UI structure, layout, and core functionality of the app. **This is a mandatory file to execute the Anvil App and cannot be deleted**. <img src= "/misc/img/anvil6.png" style="border: 2px solid #4472C4; border-radius: 8px;"> You can `edit` the code on this page as well.
@@ -157,8 +157,8 @@ Vuetify implements Google's Material Design language — the same design system 
 
     - Hover over the Anvil folder and click on `Settings`.
     - Open the `Changes` section, where users can see all modifications. <br><img src= "/misc/img/anvil8new.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    - Go to `Build & Publish`. <br><img src= "/misc/img/anvil9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-    - Run the build process and publish the app. <br><img src= "/misc/img/anvilchange.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - Go to `Build & Publish`. <br><img src= "/misc/img/anvil9.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - Run the build process and publish the app. <br><img src= "/misc/img/anvilchange.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 13. **Domain Setup**: Configures a public URL to share the application externally.
     1. Create a `new domain` for the Anvil platform. Click on the `+` sign. <br><img src= "/misc/img/anvil15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -171,11 +171,11 @@ Vuetify implements Google's Material Design language — the same design system 
     - Click **Build & Publish** to create a new version.
     - **Build History** lists all previous builds.
     - You can select and activate a previous build to revert changes.
-    - You can set any version as `Active` or `Inactive` as needed. <br><img src= "/misc/img/anvil17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    - You can set any version as `Active` or `Inactive` as needed. <br><img src= "/misc/img/anvil17.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-15. **Reset Anvil**: Resets the application to the original starter template, removing all current changes while keeping Anvil enabled.<br><img src= "/misc/img/resetanvil.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+15. **Reset Anvil**: Resets the application to the original starter template, removing all current changes while keeping Anvil enabled.<br><img src= "/misc/img/resetanvil.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-16. **Delete Anvil**: Removes Anvil from the project entirely, disabling its features without deleting the overall project.<br><img src= "/misc/img/deleteanvil.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+16. **Delete Anvil**: Removes Anvil from the project entirely, disabling its features without deleting the overall project.<br><img src= "/misc/img/deleteanvil.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 

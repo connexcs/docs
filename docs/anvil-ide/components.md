@@ -49,7 +49,7 @@ When a script runs, the **Preview** panel opens on the right side of the screen.
 | **Raw**    | Displays the unprocessed response exactly as returned by the server or runtime, including all original formatting and data|
 | **Copy**   | Copies the currently displayed output to the clipboard, allowing you to paste it into another application or share it with others|
 
-<img src= "/apps/img/aide25.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/aide25.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Console Logs
 
@@ -76,7 +76,7 @@ Each domain is bound to a chosen project build and ScriptForge runtime version, 
 
 The Domains panel is located in the Explorer sidebar.
 
-<img src= "/apps/img/domainloc.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/domainloc.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 - Expand the **Domains** section to see all domains currently configured for the project.
 - If none exist yet, the panel shows "No domains yet for this project."
@@ -160,7 +160,7 @@ To open the terminal:
 2. Wait for the terminal to initialize.
 3. After connecting, you'll see a welcome screen similar to the following: <br><img src= "/apps/img/aide31.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 4. Type `help` to get started.
-5. An example of using KV: <br><img src= "/apps/img/aide32.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. An example of using KV: <br><img src= "/apps/img/aide32.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 
@@ -312,7 +312,7 @@ Hovering over the pink "− N lines removed — hover to preview" banner reveals
 2. A syntax-highlighted code block showing the exact lines that were deleted.
 3. A reminder that **Undo** restores the deleted lines, or **Show diff** opens a side-by-side comparison.
 
-<img src= "/apps/img/externaleditor1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/externaleditor1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ---
 
