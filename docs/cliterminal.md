@@ -20,7 +20,7 @@
 <li>Knowledge of ConnexCS commands and workflows (recommended)</li>
 </ul>
 
-<strong>Related Topics</strong>: Terminal Tools (CX-Tools), ScriptForge, Anvil, Apps Platform, CLI Commands, JWT Authentication<br>
+<strong>Related Topics</strong>: Terminal Tools (CX-Tools), ScriptForge, Anvil, Apps Platform, CLI Commands, Opaque Tokens<br>
 
 <strong>Next Steps</strong>: Open the ConnexCS Terminal from the Control Panel, familiarize yourself with the available commands using <code>help</code>, authenticate if required, and begin executing supported CLI commands for development, troubleshooting, and operational tasks.<br>
 
@@ -191,7 +191,7 @@ The terminal provides a comprehensive set of commands for interacting with the p
 | `tls` | Displays TLS certificate details, including issuer, subject, expiration, and trust status | Verify a server's SSL/TLS certificate before establishing a secure connection | `tls [-p port] [--json] <host>` | `tls example.com` |
 | `tools`| Lists data manipulation tools available for use in pipelines | Explore the available utilities when building or debugging a pipeline | `tools` | `tools` |
 | `traceroute`| Displays the network path to a host hop by hop | Identify where network latency or routing issues occur | `traceroute [-4\|-6] [-m max_ttl] [-w timeout] <host>` | `traceroute example.com` |
-| `version`| Displays build information, session details, JWT claims, expiration, and rate limit information | Confirm the current platform version or inspect session details | `version [--json] [-R\|--refresh]` | `version --refresh` |
+| `version`| Displays build information, session details, Opaque Tokens, expiration, and rate limit information | Confirm the current platform version or inspect session details | `version [--json] [-R\|--refresh]` | `version --refresh` |
 |`whoami`| Displays the authenticated user for the current session | Verify which account is currently authenticated | `whoami` | `whoami` |
 | `whois`| Performs a WHOIS lookup for a domain or IP address *(alias for `rdap`)* | Check the registration information for a domain or public IP address | `whois [--json] <domain-or-ip>` | `whois example.com` |
 

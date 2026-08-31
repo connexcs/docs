@@ -54,4 +54,4 @@ It's a Server Side Chat Application.
 ## Authentication
 
 1. **Customer Login/Login/Company Login**: When you login using your name and password it gives you normal information. This allows you to login to the Customer Portal.
-2. **SIP Login**: When you login it gives you SIP information. Another thing which is done here is passing a `jwt` which is a `json` web token. You can send this token to Control Panel API or WebPhone API. It will help you communicate with other systems like Control Panel or WebPhone etc.
+2. **SIP Login**: When you login it gives you SIP information. Another thing which is done here is passing an `opaque token`. You can send this token to Control Panel API or WebPhone API. It will help you communicate with other systems like Control Panel or WebPhone etc.

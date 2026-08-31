@@ -6,9 +6,9 @@
 <strong>Audience</strong>: Developers, System Administrators, Operators, SREs, AI Integrators<br>
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: 10–20 minutes<br>
-<strong>Prerequisites</strong>: ConnexCS account with appropriate permissions; MCP-compatible client (e.g., Claude Desktop, VS Code, ChatGPT); ability to authenticate using JWT, OAuth, or credentials; basic understanding of ConnexCS tools such as CDR, SIP Trace, and routing.<br>
+<strong>Prerequisites</strong>: ConnexCS account with appropriate permissions; MCP-compatible client (e.g., Claude Desktop, VS Code, ChatGPT); ability to authenticate using Opaque tokens, or credentials; basic understanding of ConnexCS tools such as CDR, SIP Trace, and routing.<br>
 <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ai-agent/">AI Agent</a>, <a href="https://docs.connexcs.com/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/troubleshooting/signalling/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/troubleshooting/media/">Troubleshooting – Media</a>, <a href="https://docs.connexcs.com/developer/api/">API Integrations</a><br>
-<strong>Next Steps</strong>: Connect your MCP client to the ConnexCS MCP server, authenticate using JWT or OAuth, test example queries (call diagnostics, SIP trace, analytics), explore available tools via natural language prompts, and extend MCP functionality using custom endpoints or integrations.<br>
+<strong>Next Steps</strong>: Connect your MCP client to the ConnexCS MCP server, authenticate using Opaque Tokens, test example queries (call diagnostics, SIP trace, analytics), explore available tools via natural language prompts, and extend MCP functionality using custom endpoints or integrations.<br>
 
 </details>
 
@@ -100,7 +100,7 @@ You can also connect MCP from **Visual Studio Code**.
       "type": "http",
       "url": "https://app.connexcs.com/api/cp/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_JWT_TOKEN"
+        "Authorization": "Bearer YOUR_Opaque_TOKEN"
       }
     }
   }

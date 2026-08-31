@@ -8,7 +8,7 @@
 <strong>Time Required</strong>: 10–20 minutes<br>
 <strong>Prerequisites</strong>: ConnexCS account with Integrations and Branding permissions, custom domain / CNAME record access<br>
 <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/#multi-brand-support">Multi-Brand Support</a><br>
-<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a>, <a href="https://docs.connexcs.com/setup/integrations/jwt/">JWT Keys / Tokens</a><br>
+<strong>Next Steps</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integrations</a>, <a href="https://docs.connexcs.com/setup/integrations/opaque-tokens/">Opaque Tokens</a><br>
 
 </details>
 
