@@ -77,7 +77,7 @@ The authentication process uses the token as a secure reference rather than embe
 ## How to Add an Opaque Token
 
 1. Login to your account.
-2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Opaque Tokens**. <br><img src= "/setup/img/opaque1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Opaque Tokens**. <br><img src= "/setup/img/ot.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. Click on the blue `+` button, located at the top-right corner of the page. This opens the **Add Opaque Token** window.
 4. Fill in the following fields:
       1. **Name**: A required, descriptive label for the token (e.g., the integration or application it's issued for). This is used to identify the token later in the token list — it doesn't affect authentication.
