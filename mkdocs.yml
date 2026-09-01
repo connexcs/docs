@@ -147,6 +147,7 @@ nav:
     - Logging: logging.md
     
     - Class 5:
+        - Class 5 Overview: class5/class5-intro.md
         - AI Agent: class5/ai-agent.md
         - Knowledge Base: class5/knowledge-base.md
         - Apps: class5/apps.md
@@ -264,8 +265,11 @@ nav:
     - Terminal Tools: terminal-tools.md
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
-    - ANVIL: anvil.md
     - SSH Keys and SFTP Access: sftp.md
+    - Anvil: anvil.md
+    - ConnexCS Terminal: cliterminal.md
+    - Hearth: hearth.md
+    - ConnExamine: connexamine.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
@@ -297,11 +301,7 @@ nav:
     - Status: customer-portal/status.md
     - Interconnect: customer-portal/interconnect.md
 
-  - WebPhone:
-    - WebPhone App: webphoneapp.md
-    - WebPhone (Legacy): webphone.md
-
-  - Apps Platform: 
+  - App: 
     - Introduction: apps/introduction.md
     - Use Cases: apps/use-case.md
     - Features: apps/features.md
@@ -312,9 +312,6 @@ nav:
         - Databases: apps/architecture/database.md
         - Domain: apps/architecture/domain.md
         - Key Value Store: apps/architecture/key-value.md
-        - Page Builder:
-            - Page Builder: apps/page-builder.md
-            - Document Content Model: apps/architecture/dcm.md
         - ScriptForge: 
             - Introduction: apps/architecture/scriptforge.md
             - ScriptForge Migration Guide: apps/architecture/scriptforge-migration.md
@@ -323,7 +320,6 @@ nav:
                 - cxCallControl: apps/architecture/cxCallControl.md
                 - cxJob: apps/architecture/cxJob.md
                 - cxKV: apps/architecture/cxKV.md
-                - cxKysely: apps/architecture/cxKysely.md
                 - cxMcpServer: apps/architecture/cxMcpServer.md
                 - cxPubSub: apps/architecture/cxPubSub.md
                 - cxRegistry: apps/architecture/cxRegistry.md
@@ -336,7 +332,6 @@ nav:
 
         - Template: apps/architecture/template.md
         - Query Builder: apps/architecture/query-builder.md
-        - Project: apps/architecture/project.md
         - Pub / Sub Bus: apps/architecture/pub-sub.md
         - Environmental Variables: apps/architecture/environmental-variables.md
     - Components:
@@ -392,6 +387,13 @@ nav:
             - Script Creation: customer-portal/cp-cc-creating-scripts.md
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
+    - WebPhone App: webphoneapp.md
 
+
+  - Anvil Apps: 
+    - Peering Hub: anvil-apps/peering-hub.md
+    - Click-2-Dial: anvil-apps/click-2-dial.md
+    - Yoco Payments: anvil-apps/yoco-payments.md
+    - DID Purchase: anvil-apps/did-purchase.md
 
     
