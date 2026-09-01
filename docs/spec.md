@@ -15,25 +15,39 @@
 
 ## Overview
 
-**ConnexCS** is a Class 4 Cloud-based Softswitch (software switch).
+**ConnexCS** is a cloud-based **Class 4 Softswitch** designed to route and manage VoIP calls between different telephony networks.
 
-This means the call never terminates with the **ConnexCS** system.
+A Class 4 Softswitch operates at the **network level**. It receives a call, determines the appropriate destination based on configured routing rules, and forwards the call to the selected carrier or downstream system.
 
-The platform only handles call routing.
+ConnexCS does not provide the end-user call endpoint. Instead, it acts as an intermediary between **customers, carriers, and other VoIP systems**, providing the routing and switching layer that connects different networks.
 
-**Class 5 switches** perform call termination functions such as answering calls, playing messages, and more.
+ConnexCS provides capabilities such as:
 
-**ConnexCS** is delivered as a service, more precisely as a **PaaS (Platform as a Service)**.
+* **Call routing** based on configured routing strategies
+* **Carrier selection** based on destination, rates, quality, and other criteria
+* **Number and CLI manipulation**
+* **Call authorization and validation**
+* **Billing and usage management**
+* **Traffic and call monitoring**
+* **Interconnection between multiple VoIP networks**
 
-It enables clients to deploy a massively scalable distributed system across the globe with minimal technical expertise.
+For example, when a customer sends a call through ConnexCS, the platform evaluates the call against the configured routing rules and determines which carrier should receive it. ConnexCS then routes the call to the selected carrier.
 
-!!! question "SBC, Class 4 Softswitch, or Proxy?"
-    We've given extensive consideration to whether to brand our system as a Class 4 cloudswitch or an **SBC (Session Border Controller).**
+**Customer → ConnexCS Class 4 Softswitch → Carrier → Destination**
 
-    The typical Border part of the Session Border Controller blurs out because our platform delivers Over The Top (OTT), sitting on cloud architecture.
- An SBC is almost always a Class 4 switch, but a Class 4 switch doesn't have to be an SBC.
+### Class 4 vs. Class 5 Softswitch
 
- You can also deploy Class 5 switches or your dialers to communicate using our Class 4 Switch.
+A **Class 4 Softswitch** is primarily designed for handling and routing traffic between telecommunications networks. It focuses on high-volume call routing, switching, interconnection, and traffic management.
+
+A **Class 5 Softswitch**, on the other hand, is designed for end-user services and provides features such as voicemail, call forwarding, announcements, and other subscriber-facing functionality.
+
+ConnexCS is a **Class 4 Softswitch** and can connect to Class 5 Softswitches, dialers, and other VoIP applications that require a routing platform.
+
+### Cloud-Based Platform
+
+ConnexCS is delivered as a **Platform as a Service (PaaS)**. This allows customers to use a globally distributed and scalable Class 4 switching infrastructure without managing the underlying switching hardware or infrastructure.
+
+Customers can connect their VoIP systems, carriers, and applications to ConnexCS and use the platform to manage and route their voice traffic across multiple networks.
 
 ## Class 4 Softswitch
 
