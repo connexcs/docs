@@ -265,6 +265,7 @@ nav:
     - Terminal Tools: terminal-tools.md
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
+    - SSH Keys and SFTP Access: sftp.md
     - Anvil: anvil.md
     - ConnexCS Terminal: cliterminal.md
     - Hearth: hearth.md
