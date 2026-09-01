@@ -62,7 +62,7 @@ When you access a ConnexCS application, the general authentication flow is:
 
 The authentication service provides the centralized identity and authentication layer, while the ConnexCS application provides the actual service or functionality.
 
-### What Is `auth.connexcs.com`?
+## What Is `auth.connexcs.com`?
 
 `auth.connexcs.com` is the ConnexCS authentication service.
 
@@ -76,7 +76,7 @@ It is responsible for handling the authentication portion of the login process a
 
 > **The application provides the service, while `auth.connexcs.com` handles centralized authentication.**
 
-### Why Does ConnexCS Use `auth.connexcs.com`?
+## Why Does ConnexCS Use `auth.connexcs.com`?
 
 Centralizing authentication allows ConnexCS to manage authentication consistently across its applications, instead of each application independently handling the complete login process.
 
@@ -86,13 +86,13 @@ Centralizing authentication allows ConnexCS to manage authentication consistentl
 - **Centralized Session Management** — Authentication sessions can be managed through the central authentication service rather than independently by every application.
 - **Easier Application Integration** — New ConnexCS applications can use the centralized authentication mechanism instead of implementing a separate authentication system.
 
-### What Happens When I Log In Again?
+## What Happens When I Log In Again?
 
 If you already have a valid authentication session, you may not be required to enter your credentials again when accessing another ConnexCS application that uses the same centralized authentication service.
 
 The authentication service can recognize your existing session and allow the application to continue the login process. The exact behavior may depend on the application and the authentication session state.
 
-### Is This a Separate ConnexCS Account?
+## Is This a Separate ConnexCS Account?
 
 No. `auth.connexcs.com` is part of the ConnexCS authentication architecture.
 
@@ -118,7 +118,7 @@ The Profile tab also provides the **Sign out** option.
 
 Click **Sign out** to end your current authenticated session. If you are signed in on multiple devices or browsers, signing out of the current session does not necessarily sign you out of every other active session. Other sessions can be managed from the **Active Sessions** tab.
 
-<img src= "/misc/img/auth1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/misc/img/auth1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### 2. Passkeys
 
@@ -140,7 +140,7 @@ Click **Add a passkey** to register a passkey for your account. Once registered,
 
 Passkeys provide a passwordless authentication method and can help improve account security by using credentials protected by the user's device.
 
-<img src= "/misc/img/auth2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/misc/img/auth2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### 3. Active Sessions
 
@@ -171,7 +171,7 @@ You can sign out of sessions other than the current session. This is useful if:
 
 The current browser session is identified as **This session** — indicating the session you are currently using to access the account management page.
 
-<img src= "/misc/img/auth3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/misc/img/auth3.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### 4. Connected Apps
 
@@ -222,7 +222,7 @@ The actual access available to an application depends on the scopes granted to i
 
 Click **Revoke** to remove an application's authorization. Revoking an application invalidates its associated refresh tokens, preventing the application from continuing to obtain new access tokens through that authorization.
 
-<img src= "/misc/img/auth4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/misc/img/auth4.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 > **Important:** Revoking an application is different from signing out of a browser session. **Connected Apps** controls application authorization, while **Active Sessions** controls signed-in sessions.
 
@@ -230,7 +230,7 @@ Click **Revoke** to remove an application's authorization. Revoking an applicati
 
 The **API Tokens** tab is intended for long-lived authentication credentials used by scripts and integrations. These tokens are designed for programmatic access rather than interactive browser login.
 
-<img src= "/misc/img/auth5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/misc/img/auth5.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 > Long-lived tokens for scripts and integrations.
 
