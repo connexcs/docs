@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate to Advanced<br>
 <strong>Time Required</strong>: 15–30 minutes<br>
 <strong>Prerequisites</strong>: ConnexCS account with Integrations permissions, and a basic understanding of API authentication and access tokens<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/api/">API Integrations</a> (for token usage), OAuth Session (legacy — retired)<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/api/">API Integrations</a> (for token usage)<br>
 <strong>Next Steps</strong>: <a href="https://docs.connexcs.com/api/">API Usage Guide</a>, API Integration Setup<br>
 
 </details>
@@ -24,7 +24,9 @@ Unlike JSON Web Tokens (JWTs), opaque tokens do not contain readable information
 
 ## What Are Opaque Tokens?
 
-An opaque token is a randomly generated string that does not contain information that can be interpreted by the client. It functions as a **lookup key**: ConnexCS's servers hold the actual authentication record, and the token is simply the reference used to retrieve it.
+An opaque token is a randomly generated string that does not contain information that can be interpreted by the client.
+
+It functions as a **lookup key**: ConnexCS's servers hold the actual authentication record, and the token is simply the reference used to retrieve it.
 
 For example:
 
@@ -83,7 +85,7 @@ The authentication process uses the token as a secure reference rather than embe
       1. **Name**: A required, descriptive label for the token (e.g., the integration or application it's issued for). This is used to identify the token later in the token list — it doesn't affect authentication.
       2. **Scope**: A required, multi-select field defining what the token is permitted to do. For example, `API (Read)` grants read-only access, while `API (Write)` grants write access. Add or remove scopes as tags; only grant the minimum scopes the integration actually needs.
       3. **Expires In**: An optional dropdown to set the token's lifetime (e.g., 30 days, 90 days, 1 year). Use the shortest practical lifetime for the integration.
-5. Click `Save` to generate the token, or use the dropdown arrow next to `Save` for additional save options. <br><img src= "/setup/img/opaque2.png" width= "500" style= "border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. Click `Save` to generate the token, or use the dropdown arrow next to `Save` for additional save options.
 6. The new token appears in the **Opaque Tokens** list. The raw token value is only shown once, at creation — copy it into your application's configuration immediately, since it cannot be retrieved again afterward.
 
 > **Security Notice:** Treat an opaque token as a credential. Anyone who obtains an active token may be able to authenticate to the resources and services permitted by that token.
