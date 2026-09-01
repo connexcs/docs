@@ -114,16 +114,6 @@ To maintain account security:
 
 ---
 
-### Common Use Cases
-
-SSH keys are commonly used for:
-
-- Authenticating developers to supported ConnexCS services.
-- Secure access for CI/CD pipelines and automation.
-- Server-to-server authentication.
-- Integrating third-party applications.
-- Passwordless authentication for development workflows.
-
 ## SFTP Access
 
 ### Overview
