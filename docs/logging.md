@@ -449,6 +449,142 @@ Click on a specific Call ID to view details and run call tools.
 === "Raw Data"
     Underlying data that populates the call.
 
+#### Additional Fields in Call Details
+
+| **Field** | **ConnexCS-Specific Explanation** |
+|---|---|
+| **Routing Status** | The result of the call's routing attempt as processed by the ConnexCS Routing Engine (e.g., successfully routed, failed, rejected). Shown on the initial Call Details screen in the Logging section. |
+| **Authentication** | The auth check result the call went through before entering the routing engine — validated via Customer Auth (IP-based or credentials) as part of the standard call flow: Carrier → ConnexCS Switch → Routing Engine → Authorisation → Ingress Routing. |
+| **Call-ID** | Unique SIP call identifier for the A-leg of the call. Used across Logging, SIP Traces, Call Log Search, and the **Compare (Call IDs)** tool for correlating a call across the platform. |
+| **Call-ID-B** | The Call-ID for the B-leg (outbound/terminating leg). ConnexCS encodes this in a `CNX...` format; searchable standalone in Call Log Search, though not decoded when combined with Boolean operators. |
+| **Date/Time** | Timestamp of the call, filterable in Call Log Search using `after:`, `before:`, `since:`, `until:` with natural language or ISO date formats. |
+| **Registered User** | The SIP extension/user tied to this call if applicable — also an optional field when running the **Simulate** tool to test routing. |
+| **Induced PDD** | Post-Dial Delay artificially added by the ConnexCS platform itself during call processing (e.g., from routing/lookup steps, or **CPS Buffering** — where the system emits a "100 Trying (High CPS, Buffering)" response, increasing PDD when incoming traffic exceeds the configured CPS limit). |
+| **RTP** | Real-time Transport Protocol info for the call's media path — feeds into the **RTCP Reports/Stats** tab (MOS, Jitter, Packet Loss, R-Factor, Bitrate, Codec) shown lower on the Call Details page. |
+| **Timeouts** | Reflects SIP protocol timers (T1, T2, T4, Timer A–K per RFC 3261) governing retransmissions and response waits — visible in SIP Trace behavior. Also includes **Ping Timeout** as a release cause (see below). |
+| **Max Duration** | The configured maximum time (in seconds) a call is allowed to stay connected before ConnexCS force-terminates it — a **Missing BYE Protection** mechanism, set at the Route/DID/Tag level. |
+| **Routing Engine ID** | Identifies which regional Routing Engine instance (zone-based, e.g., US/EU server cluster) processed the call — set manually or automatically per server config. |
+| **User Agent** | The SIP User-Agent header of the originating device/softswitch/PBX — used in the **Compare (Call IDs)** tool to spot differences between successful vs. failed calls. |
+| **Source IP** | IP address the call entered the ConnexCS platform from (🇮🇳 = India in your screenshot) — the "Customer IP" in Simulate terminology. |
+| **CX Switch IP** | The ConnexCS Switch server IP that received/processed the call (🇬🇧 = UK) — called "Switch IP" in the Simulate tool, representing "where the call will traverse." |
+| **UDP** | SIP signaling transport protocol — ConnexCS notes re-transmissions (duplicate INVITEs) **only occur on UDP**, unlike TCP/SCTP. |
+| **Destination Number** | The dialed number — searchable via `dest_number=` in Call Log Search field-specific syntax. |
+| **LRN** | Location Routing Number — used for number portability lookups during Ingress/routing decisions. |
+| **CLI** | Calling Line Identification (caller ID) — searchable via `cli=` in Call Log Search; also configurable in the **Simulate** tool as "CLI/ANI" (where the test call will originate from). |
+| **Jurisdiction** | Regulatory/geographic classification of the call based on CLI and destination, used in rate card and billing logic. |
+| **Card ID** | The **Rate Card** applied to the call — determines the tariff/cost path; ConnexCS rate cards represent the call path and identify the carrier for incoming calls. |
+| **Script Forge** | Indicates whether a **ScriptForge** JavaScript routing script ran on this call — ConnexCS's custom scripting engine that executes within the Routing Engine, used for DNC logic, CLI/P-Asserted-ID manipulation, time-of-day restrictions, and custom routing algorithms. Configurable as Global Routing Priority (Run First/Run Last) with a Timeout Action. |
+| **Direction** | Inbound (Ingress) vs. Outbound relative to ConnexCS — per the platform's core call flow: Far End → PSTN → Carrier → ConnexCS Switch → Routing Engine → Authorisation → Ingress Routing. |
+| **Call Recording** | Whether recording was applied — determined by policy checks visible in the chronological **Logs** tab of Call ID Details, which traces recording configuration evaluation during call setup. |
+| **Transcoding** | Whether codec conversion occurred — configurable per DID/Route with a channel limit; typically used for low-bandwidth customers needing G.729. |
+| **PDD** | Actual measured Post-Dial Delay — filterable in CDR queries (e.g., "PDD less than 5 milliseconds"). |
+| **Ring Duration** | Time the destination rang before being answered, timed out, or released. |
+| **Release Reason** | Why the call ended — ConnexCS defines specific causes: **Downstream BYE** (originator hung up), **Upstream BYE** (receiver hung up), **MI Termination** (system-detected no audio, triggers BYE both sides), and **Ping Timeout** (missed SIP OPTIONS/200 OK response when SIP Ping is enabled). Also usable as a filter when re-rating CDRs. |
+| **DTMF** | Dual-Tone Multi-Frequency (keypad tones) — shown on the Call Details screen, relevant to IVR/Class 5 application interactions. |
+
+### Add to Compare (Compare Calls)
+
+The Compare feature allows you to select calls and analyze their information together.
+
+This is useful when you have, for example, a successful call and an unsuccessful call and want to investigate differences between their signaling or call information.
+
+#### Add a Call to Compare
+
+1. Locate the first call you want to investigate.
+2. Click `Add to Compare` (Green color `+` icon).
+3. Locate another call.
+4. Again `Click Add to Compare` for that call.
+5. The selected calls are added to the comparison set.
+6. A new icon will appear which says `Search Compare`.<br><img src= "/misc/img/log1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. You can see the 2 options from the drop-down: `View Selected` and `Clear Selected`.
+8. Click on `View Selected`.
+9. You will have 2 options `Compare Call IDs` or `Compare SIP Traces`. <br><img src= "/misc/img/log2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+10. **Compare Call IDs**: After adding calls to the comparison, you can filter the call records to display only the selected Call IDs. <br>Use View Call IDs to focus on the calls currently included in the comparison.</br>This removes unrelated records from the current view and makes it easier to investigate the selected calls. <br><img src= "/misc/img/log3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> Now lets discuss the options on the top-right:
+    1. `Diff`: The Diff view presents two input fields for selecting the Call IDs to compare — one for each side of the comparison. <br> **Leg A** and **Leg B** are dropdown selectors for choosing the Call IDs shown in the left and right positions of the Diff view, respectively. <br><img src= "/misc/img/log4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    2. `Raise a Ticket`: You can also raise a support ticket directly from the comparison interface. <br>This is useful when the comparison identifies an issue that requires assistance from ConnexCS Support.</br><br>When raising a ticket from the comparison workflow, relevant technical information from the selected calls or traces can be included with the ticket.</br> <br>Depending on the context, this may include: **Call ID details**, **SIP traces**, **Comparison information**, **Selected packet information**, **Call recordings**. <br>This allows the support request to retain the troubleshooting context that led to the escalation.</br><br> You can choose between **New Ticket** (currently selected) or **Append to Existing Ticket** — so a comparison can either start a fresh support case or get added as evidence to one already in progress. </br><br><img src= "/misc/img/log5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+    3. You have the option to `Collapse/Expand` the comparision window.
+    4. `Clear All` closes the comparision table.
+
+11. **Compare SIP Traces**: You can use the comparison interface to review trace information associated with the selected calls. <br>This is useful when investigating signaling differences between calls.</br> <br> For example, you may compare the trace of a successful call with the trace of a failed call to identify where their signaling behavior differs.</br> <br>The comparison interface allows you to inspect the relevant information without repeatedly switching between separate call views.</br>
+    1. Rest of the options like **Diff**, **Raise a Ticket**, **Collapse/Expand** and **Clear All** have the same fucntionality as discussed above.
+
+### Packet-by-Packet Comparison
+
+For more detailed troubleshooting, ConnexCS allows you to compare individual packets from a SIP trace.
+
+Each entry in the trace represents a packet. You can select packets and add them to the comparison view.
+
+**To compare packets**:
+
+1. Click on the required `Call ID` of the first call.
+2. Click on **Call Details :material-menu-right: SIP trace**.
+3. Locate the **first packet** you want to inspect.
+4. Click on `Add to compare`.
+5. Repeat this process for the second call. <br><img src= "/misc/img/log6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. Open the comparison view.
+7. Review the packets side by side. <br><img src= "/misc/img/log7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. Rest of the options like **Diff**, **Raise a Ticket**, **Collapse/Expand** and **Clear All** have the same fucntionality as discussed above.
+9. Differences between the selected packets are highlighted in the comparison interface, making it easier to identify changes in SIP headers, values, or other packet information.
+
+### Call Recordings
+
+When a recording is available for a call, a call recording/audio option is displayed.
+
+You can use this option to review the available recording as part of the call investigation.
+
+Call recordings may also be included as supporting information when an issue is escalated through the available support workflow.
+
+>Note: The recording option is available only when a recording exists for the selected call.
+
+### Diagnose
+
+#### Overview
+
+The **Diagnose** feature in ConnexCS provides a centralized way to investigate and troubleshoot a specific call directly from its call details.
+
+Instead of navigating through multiple sections to review the call history, analyze an issue, or check existing support activity, you can access the relevant information from the **Diagnose** interface.
+
+**With Diagnose, you can**:
+
+* Select from **predefined diagnostic questions** to investigate common call issues.
+* Enter **custom questions** for issues specific to the selected call.
+* Use **AI-assisted analysis** to review the call and help identify potential issues.
+* View related **conversations and support tickets**, including their available status and history.
+* **Raise a support ticket** directly from the call context when further assistance is required.
+
+Diagnose is designed to reduce the number of steps required to troubleshoot a call and provide a single place to review its available diagnostic and support information.
+
+#### How to diagnose a call?
+
+The Diagnose feature provides a centralized troubleshooting interface for a selected call.
+
+**To diagnose a call**:
+
+1. Locate the required call in the logging section.
+2. Click the `Diagnose icon` (**orange stethoscope button**) for the call.
+3. The Diagnose interface opens for the selected Call ID.
+4. When you open Diagnose, you can select from **predefined diagnostic questions**. <br>This allows you to start troubleshooting without manually gathering information from multiple areas of the platform.</br> Depending on the selected option, Diagnose can be used to review the call and investigate potential problems associated with it. <br><img src= "/misc/img/log8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   1. **Custom Questions**: If the predefined options do not describe the issue you are investigating, enter a custom question.<br>This allows you to investigate an issue specific to the selected Call ID rather than being limited to the predefined diagnostic options.</br><img src= "/misc/img/log9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+5. **AI-Assisted Call Review**: You can use the available **Ask AI** functionality to review information associated with the selected call.<br>This can help consolidate the relevant call information and assist with the initial investigation before further troubleshooting or escalation.</br><img src= "/misc/img/log9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. **Chat**: The **Chat** option allows you to contact the ConnexCS Support team regarding a specific call. <br>The selected **Call ID** and your question are automatically included in the conversation, providing the **NOC team** with the relevant call context.</br> You can continue the conversation through chat and choose **Email** or **Phone** as the preferred method for receiving a response. </br><img src= "/misc/img/log10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+7. **Raise a Ticket**: [Click here](**add a link**) for detailed explanation.
+
+> Note: ConnexCS uses icons for several call actions instead of displaying text labels. Hover over an icon to identify the corresponding action where applicable.
+
+#### Highlighted Differences
+
+When comparable packet information differs, the comparison view highlights those differences.
+
+This can help identify changes such as:
+
+1. SIP header differences
+2. Different parameter values
+3. Signaling changes
+4. Differences between successful and unsuccessful call flows
+
+The usefulness of highlighted differences depends on the type of information being compared. Packet-level comparison generally provides the most granular view for identifying signaling differences.
+
 ### SIP Traces
 
 **SIP Tracing** is a diagnostic tool for phone systems using SIP (Session Initiation Protocol) for interactions across trunks and between endpoints. Traces give detailed information about calls and call attempts while debugging and troubleshooting.
