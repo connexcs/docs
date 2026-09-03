@@ -74,14 +74,115 @@ Extensions add support for additional programming languages, debugging tools, th
 
 The **ConnexCS Sidebar** provides access to your project workspace, ConnexCS tools, and project-related actions.
 
-### File Explorer
+### Explorer
 
-The **File Explorer** allows you to browse and manage the files and folders in your project. It also provides access to file history and related project information.
+The **Explorer** provides access to project selection, ConnexCS Assistant, and related workspace actions.
 
-| Section | Description |
-| --------|------------ | 
-| **Explorer**     | Displays the project structure, including files and folders in your workspace. You can browse, open, create, rename, move, and delete files and directories. The Explorer also provides quick access to ConnexCS tools such as **Open ConnexCS Assistant**, **Open Assistant in Editor Tab**, **Refresh Explorer**, **Copy Status Report**, and **Sign Out**|
-| **File History** | Tracks changes made to files in your project and maintains previous versions. You can switch between the **Files** view to see the version history of individual files or the **Timeline** view to see project-wide changes in chronological order. You can also compare versions, restore previous file revisions, or roll back the entire project to an earlier point in time |
+| Option    | Description |
+| ----------|-------------|
+| **Select a Project** | Selects a project to load and work with in the Explorer|
+| **Open ConnexCS Assistant** | Opens the ConnexCS Assistant to interact with the assistant and get help with your project|
+| **Open Assistant in Editor Tab** | Opens the ConnexCS Assistant in a dedicated editor tab, allowing you to use the assistant while working on the project|
+| **Refresh Explorer** | Refreshes the Explorer to update the project and workspace information|
+| **Copy Status Report** | Copies the current status information, which can be useful for troubleshooting or sharing with the support team |
+| **Sign Out** | Signs you out of the ConnexCS Assistant|
+
+<img src="/apps/img/anvilexplorer.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+#### Refresh Explorer
+
+When you click **Refresh Explorer**, the Explorer refreshes and displays the current project workspace and its associated files and information.
+
+The refreshed Explorer window is divided into several sections:
+
+| Section | Description  |
+| --------|-=====------- |
+| **Open Editors** | Displays files or editors that are currently open in the workspace|
+| **Workspace**    | Displays the selected project and its folder structure. In the example, the **Test** project contains `backend` and `frontend` folders. You can expand these folders to browse their contents|
+| **Outline**      | Displays the structure or outline of the currently selected file when applicable|
+| **Timeline**     | Provides a timeline of changes or activity associated with the selected file|
+| **Domains**      | Displays domains associated with the selected project or workspace, such as the deployed project domain|
+| **File History** | Displays the project's file history, including folders and files along with their versions and modification information|
+
+**Workspace**
+
+The **Workspace** section provides a hierarchical view of the selected project. Expand a folder to view its files and subfolders.
+
+For example:
+
+```text
+Test
+├── backend
+└── frontend
+```
+
+The **File History** section provides additional information about previously modified files, including their version and when they were last updated.
+
+> **Note:** Clicking **Refresh Explorer** refreshes the Explorer and opens this workspace view, allowing you to view the latest project structure, files, domains, and file history.
+
+<img src="/apps/img/refreshexplorer.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+**Files- File History**
+
+The **Files** view displays the current file and folder structure of the selected project, along with version and modification information.
+
+| Element | Description|
+|---------|------------|
+| **Project name** | Displays the currently selected project. In this example, the project is **Test**|
+| **Folder**       | Displays project folders such as `frontend` and `backend`. Click the arrow to expand or collapse a folder|
+| **File**         | Displays the files available within each folder|
+| **Version**      | Shows the current version number of a file, such as `v46`, `v119`, or `v115`|
+| **Last Updated** | Shows when the file was last modified. The time may be displayed as a relative value such as **9d ago** or as a specific date. |
+| **Refresh**      | Refreshes the File History view to display the latest file and version information|
+
+**File Structure**
+
+The project structure shown in the example is:
+
+```text
+Test
+├── frontend
+│   └── App.vue
+│
+└── backend
+    ├── data
+    ├── buttons.json
+    ├── cxCallControl.js
+    ├── cxRegistry.js
+    ├── hearth.js
+    ├── index.js
+    └── test.js
+```
+
+The **Files** view is useful for quickly checking the project's current structure, identifying available files, and viewing their latest versions and modification dates.
+
+**Timeline- File History**
+
+The **Timeline** view in **File History** shows the project's saved points in time. It allows you to review when files were changed and provides an option to restore the **entire project** to an earlier point.
+
+The message **“Points in time across the project. Restoring rolls every file back to its version at that moment.”** means that restoring a timeline point does not affect just one file—it restores **all project files to the versions they had at that specific time**.
+
+**Timeline Options**
+
+| Option                      | Description                                                                                   |
+| --------------------------- | --------------------------------------------------------------------------------------------- |
+| **File Name**               | Shows the file associated with that timeline entry.                                           |
+| **Date & Time**             | Shows when the file was last updated at that point in the project history.                    |
+| **Open file**               | Opens the selected file so you can review its contents.                                       |
+| **Restore project to here** | Restores the **entire project** to the versions of all files available at that point in time. |
+
+**Example**
+
+If you select:
+
+**`App.vue — 8/25/2026, 6:29:21 PM`**
+
+* **Open file** → Opens the `App.vue` file from that point.
+* **Restore project to here** → Rolls the **entire project** back to its state as of that timeline point, not just `App.vue`.
+
+> **Important:** Use **Restore project to here** carefully, as it affects the project as a whole and rolls all files back to their versions at the selected point in time.
+
+<img src="/apps/img/timeline.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Version Control
 
@@ -159,53 +260,28 @@ The **Workspace** search box allows you to quickly find files, run commands, sea
 
 ## Chat
 
-Opens the chat panel, where you can interact with the AI assistant to get help with coding, explanations, debugging, code generation, documentation, and other development tasks.
+The Chat panel allows you to interact with the AI assistant for help with coding, debugging, code explanations, code generation, documentation, and other development tasks.
 
-Enter your request in the input box, and the assistant will provide context-aware responses based on your project.
+You can provide a prompt and add relevant project context when required. The assistant uses the available project context to provide more relevant responses. <br><img src="/apps/img/aide16.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-<br><img src="/apps/img/aide16.png" width="300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. **Generate Agent Instructions** — Helps the assistant understand your codebase.
+2. **Add Context (+)** — Attach relevant files, folders, instructions, or other workspace information to your prompt. <br><img src="/apps/img/aide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-1. `Generate Agent Instructions`: Creates AI agent instructions to help the assistant better understand your codebase and provide more relevant responses.
+3. **Models** — Select the AI model to use for the conversation.
+4. **Configure Tools** — Control the tools available to the AI assistant during the chat:
 
-2. `+` (Add Context): Allows you to attach additional context to your prompt, enabling the AI assistant to provide more accurate and relevant responses. You can include Files & Folders, Instructions, Problems, Symbols, Sessions, or Tools from your workspace. Use the search bar to quickly locate and attach the required context before submitting your prompt.
-
-    <br><img src="/apps/img/aide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-3. `Models`: Allows you to select or switch the AI model used by the assistant.
-
-4. `Configure Tools`: Allows you to select which tools the AI assistant can access during chat sessions. Enabling only the required tools helps the assistant perform tasks more effectively while limiting access to unnecessary capabilities. The selected tools are applied globally to all chat sessions that use the default agent.
-
-    | Tool  | Description |
-    | ------|------------ | 
-    | **Agent**   | Enables the assistant to delegate tasks to specialized AI agents when appropriate|
-    | **Execute** | Allows the assistant to execute code and applications on your local machine, subject to your approval and configuration|
-    | **Read**    | Grants the assistant permission to read files and folders within the current workspace to provide context-aware responses|
-    | **Todo**    | Enables the assistant to create, manage, and track task lists for planning and organizing work|
-    | **VS Code** | Allows the assistant to interact with supported Visual Studio Code features, such as opening files, navigating the workspace, and performing editor-related actions |
+    | Tool | Description |
+    |------|-------------|
+    | **Agent** | Delegate tasks to specialized agents |
+    | **Execute** | Run code/apps locally (with approval) |
+    | **Read** | Read workspace files |
+    | **Todo** | Manage task lists |
+    | **VS Code** | Interact with VS Code features |
 
     <img src="/apps/img/aide18.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-5. `New Chat`:
-
-    | Option | Description |
-    | -------|------------ | 
-    | **New Chat** | Starts a new chat session with the currently selected AI assistant|
-    | **New Chat Editor** | Opens a new chat session in a dedicated editor tab, allowing you to interact with the AI assistant alongside your code|
-    | **New Chat Window** | Opens a separate chat window for interacting with the AI assistant independently of the current workspace|
-    | **New Background Agent** | Creates a new AI agent that runs tasks in the background, allowing you to continue working while long-running operations are processed independently|
-    | **New Cloud Agent** | Creates a cloud-based AI agent that executes supported tasks using cloud resources instead of your local machine|
-    | **New Codex Agent** | Creates a specialized coding agent designed to assist with software development tasks such as writing code, debugging, refactoring, explaining code, and implementing features|
-
-6. `Views and More Actions`:
-
-    | **Option** | Description |
-    | -----------|------------ | 
-    | **Undo Last Edit** | Reverts the most recent change made in the current chat or editor. This option is available only when there is an action that can be undone|
-    | **Redo Last Edit** | Restores the last action that was undone, allowing you to reapply the most recent change|
-    | **Move Chat into Editor Area** | Moves the chat panel from the sidebar into the main editor area, allowing you to work with the chat in a tab alongside your files|
-    | **Move Chat into New Window**  | Opens the current chat in a separate window, providing more workspace for coding and multitasking|
-    | **Show Voice Transcripts**| Displays transcripts of voice-based conversations, allowing you to review spoken interactions as text|
-    | **Show View by Default** | Automatically opens the chat view when the editor starts or when a workspace is opened, making the AI assistant readily available|
+5. **New Chat** — Start a new conversation, or open it in a separate editor tab, new window, background agent, cloud agent, or Codex agent.
+6. **Views and More Actions** — Undo/redo last edit, move chat to editor area or new window, show voice transcripts, or set chat to open by default.
 
 7. `ConnexCS Assistant`: [Click here](https://docs.connexcs.com/globalaiagent/) for more full details.
 

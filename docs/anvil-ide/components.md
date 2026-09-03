@@ -49,7 +49,7 @@ When a script runs, the **Preview** panel opens on the right side of the screen.
 | **Raw**    | Displays the unprocessed response exactly as returned by the server or runtime, including all original formatting and data|
 | **Copy**   | Copies the currently displayed output to the clipboard, allowing you to paste it into another application or share it with others|
 
-<img src= "/apps/img/aide25.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<br><img src= "/apps/img/caa6_results.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Console Logs
 
@@ -58,7 +58,7 @@ While a script runs, any `console.log()` calls appear in the **CX Logs** panel a
 - Pause and clear the log output
 - Switch between logs from different scripts
 
-<img src= "/apps/img/aide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<br><img src= "/apps/img/caa6_console.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 

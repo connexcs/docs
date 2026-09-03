@@ -247,46 +247,28 @@ The **Workspace** search box allows you to quickly find files, run commands, sea
 
 ### Chat
 
-Opens the chat panel, where you can interact with the AI assistant to get help with coding, explanations, debugging, code generation, documentation, and other development tasks.
+The Chat panel allows you to interact with the AI assistant for help with coding, debugging, code explanations, code generation, documentation, and other development tasks.
 
-Enter your request in the input box, and the assistant will provide context-aware responses based on your project. <br><img src= "/apps/img/aide16.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+You can provide a prompt and add relevant project context when required. The assistant uses the available project context to provide more relevant responses. <br><img src="/apps/img/aide16.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-1. `Generate Agent Instructions`: Creates AI agent instructions to help the assistant better understand your codebase and provide more relevant responses.
-2. `+` (Add Context): Allows you to attach additional context to your prompt, enabling the AI assistant to provide more accurate and relevant responses. You can include Files & Folders, Instructions, Problems, Symbols, Sessions, or Tools from your workspace. Use the search bar to quickly locate and attach the required context before submitting your prompt. <br><img src= "/apps/img/aide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. `Models`: Allows you to select or switch the AI model used by the assistant.
-4. `Configure Tools`: Allows you to select which tools the AI assistant can access during chat sessions. Enabling only the required tools helps the assistant perform tasks more effectively while limiting access to unnecessary capabilities. The selected tools are applied globally to all chat sessions that use the default agent.
+1. **Generate Agent Instructions** — Helps the assistant understand your codebase.
+2. **Add Context (+)** — Attach relevant files, folders, instructions, or other workspace information to your prompt. <br><img src="/apps/img/aide17.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-    | Tool| Description|
-    | ----|----------- |
-    | **Agent** | Enables the assistant to delegate tasks to specialized AI agents when appropriate|
-    | **Execute** | Allows the assistant to execute code and applications on your local machine, subject to your approval and configuration|
-    | **Read** | Grants the assistant permission to read files and folders within the current workspace to provide context-aware responses|
-    | **Todo**  | Enables the assistant to create, manage, and track task lists for planning and organizing work|
-    | **VS Code** | Allows the assistant to interact with supported Visual Studio Code features, such as opening files, navigating the workspace, and performing editor-related actions|
+3. **Models** — Select the AI model to use for the conversation.
+4. **Configure Tools** — Control the tools available to the AI assistant during the chat:
 
-    <img src= "/apps/img/aide18.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    | Tool | Description |
+    |------|-------------|
+    | **Agent** | Delegate tasks to specialized agents |
+    | **Execute** | Run code/apps locally (with approval) |
+    | **Read** | Read workspace files |
+    | **Todo** | Manage task lists |
+    | **VS Code** | Interact with VS Code features |
 
-5. `New Chat`:
+    <img src="/apps/img/aide18.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-    | Option| Description |
-    | ------|-------------|
-    |**New Chat**| Starts a new chat session with the currently selected AI assistant|
-    |**New Chat Editor**|Opens a new chat session in a dedicated editor tab, allowing you to interact with the AI assistant alongside your code|
-    |**New Chat Window**|Opens a separate chat window for interacting with the AI assistant independently of the current workspace|
-    | **New Background Agent** | Creates a new AI agent that runs tasks in the background, allowing you to continue working while long-running operations are processed independently|
-    | **New Cloud Agent** | Creates a cloud-based AI agent that executes supported tasks using cloud resources instead of your local machine|
-    | **New Codex Agent** | Creates a specialized coding agent designed to assist with software development tasks such as writing code, debugging, refactoring, explaining code, and implementing features|
-
-6. `Views and More Actions`:
-
-    | Option| Description |
-    | ------|-------------|
-    | **Undo Last Edit** | Reverts the most recent change made in the current chat or editor. This option is available only when there is an action that can be undone|
-    | **Redo Last Edit** | Restores the last action that was undone, allowing you to reapply the most recent change|
-    | **Move Chat into Editor Area** | Moves the chat panel from the sidebar into the main editor area, allowing you to work with the chat in a tab alongside your files|
-    | **Move Chat into New Window**  | Opens the current chat in a separate window, providing more workspace for coding and multitasking|
-    | **Show Voice Transcripts** | Displays transcripts of voice-based conversations, allowing you to review spoken interactions as text|
-    | **Show View by Default** | Automatically opens the chat view when the editor starts or when a workspace is opened, making the AI assistant readily available|
+5. **New Chat** — Start a new conversation, or open it in a separate editor tab, new window, background agent, cloud agent, or Codex agent.
+6. **Views and More Actions** — Undo/redo last edit, move chat to editor area or new window, show voice transcripts, or set chat to open by default.
 
 7. `ConnexCS Assistant`: [Click here](https://docs.connexcs.com/globalaiagent/) for more full details.
 
@@ -355,7 +337,7 @@ When a script runs, the **Preview** panel opens on the right side of the screen.
 | **Raw**    | Displays the unprocessed response exactly as returned by the server or runtime, including all original formatting and data|
 | **Copy**   | Copies the currently displayed output to the clipboard, allowing you to paste it into another application or share it with others|
 
-<img src= "/apps/img/aide25.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<br><img src= "/apps/img/caa6_results.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Console Logs
 
@@ -364,7 +346,7 @@ While a script runs, any `console.log()` calls appear in the **CX Logs** panel a
 - Pause and clear the log output
 - Switch between logs from different scripts
 
-<img src= "/apps/img/aide26.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/apps/img/caa6_console.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ---
 
@@ -437,7 +419,7 @@ The ConnexCS Assistant is an AI-powered chat interface built into the IDE.
 
 ### Opening the Assistant
 
-- Click the **$(sparkle) Open Assistant** button in the ConnexCS sidebar
+- Click the **Open Assistant** button in the ConnexCS sidebar.
 - Or use the assistant icon in the secondary sidebar (right side panel)
 
 ### Using the Assistant
