@@ -451,7 +451,7 @@ Click on a specific Call ID to view details and run call tools.
 
 #### Additional Fields in Call Details
 
-| **Field** | **ConnexCS-Specific Explanation** |
+| Field | ConnexCS-Specific Explanation |
 |---|---|
 | **Routing Status** | The result of the call's routing attempt as processed by the ConnexCS Routing Engine (e.g., successfully routed, failed, rejected). Shown on the initial Call Details screen in the Logging section. |
 | **Authentication** | The auth check result the call went through before entering the routing engine — validated via Customer Auth (IP-based or credentials) as part of the standard call flow: Carrier → ConnexCS Switch → Routing Engine → Authorisation → Ingress Routing. |
@@ -495,17 +495,17 @@ This is useful when you have, for example, a successful call and an unsuccessful
 3. Locate another call.
 4. Again `Click Add to Compare` for that call.
 5. The selected calls are added to the comparison set.
-6. A new icon will appear which says `Search Compare`.<br><img src= "/misc/img/log1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. A new icon will appear which says `Search Compare`.<br><img src= "/misc/img/log1.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 7. You can see the 2 options from the drop-down: `View Selected` and `Clear Selected`.
 8. Click on `View Selected`.
-9. You will have 2 options `Compare Call IDs` or `Compare SIP Traces`. <br><img src= "/misc/img/log2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+9. You will have 2 options `Compare Call IDs` or `Compare SIP Traces`. <br><img src= "/misc/img/log2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 10. **Compare Call IDs**: After adding calls to the comparison, you can filter the call records to display only the selected Call IDs. <br>Use View Call IDs to focus on the calls currently included in the comparison.</br>This removes unrelated records from the current view and makes it easier to investigate the selected calls. <br><img src= "/misc/img/log3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> Now lets discuss the options on the top-right:
     1. `Diff`: The Diff view presents two input fields for selecting the Call IDs to compare — one for each side of the comparison. <br> **Leg A** and **Leg B** are dropdown selectors for choosing the Call IDs shown in the left and right positions of the Diff view, respectively. <br><img src= "/misc/img/log4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     2. `Raise a Ticket`: You can also raise a support ticket directly from the comparison interface. <br>This is useful when the comparison identifies an issue that requires assistance from ConnexCS Support.</br><br>When raising a ticket from the comparison workflow, relevant technical information from the selected calls or traces can be included with the ticket.</br> <br>Depending on the context, this may include: **Call ID details**, **SIP traces**, **Comparison information**, **Selected packet information**, **Call recordings**. <br>This allows the support request to retain the troubleshooting context that led to the escalation.</br><br> You can choose between **New Ticket** (currently selected) or **Append to Existing Ticket** — so a comparison can either start a fresh support case or get added as evidence to one already in progress. </br><br><img src= "/misc/img/log5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
     3. You have the option to `Collapse/Expand` the comparision window.
-    4. `Clear All` closes the comparision table.
+    4. `Clear All` closes the comparision window.
 
-11. **Compare SIP Traces**: You can use the comparison interface to review trace information associated with the selected calls. <br>This is useful when investigating signaling differences between calls.</br> <br> For example, you may compare the trace of a successful call with the trace of a failed call to identify where their signaling behavior differs.</br> <br>The comparison interface allows you to inspect the relevant information without repeatedly switching between separate call views.</br>
+11. **Compare SIP Traces**: You can use the comparison interface to review trace information associated with the selected calls. <br> This is useful when investigating signaling differences between calls.</br> <br> For example, you may compare the trace of a successful call with the trace of a failed call to identify where their signaling behavior differs.</br> <br>The comparison interface allows you to inspect the relevant information without repeatedly switching between separate call views.</br>
     1. Rest of the options like **Diff**, **Raise a Ticket**, **Collapse/Expand** and **Clear All** have the same fucntionality as discussed above.
 
 ### Packet-by-Packet Comparison
@@ -563,11 +563,11 @@ The Diagnose feature provides a centralized troubleshooting interface for a sele
 1. Locate the required call in the logging section.
 2. Click the `Diagnose icon` (**orange stethoscope button**) for the call.
 3. The Diagnose interface opens for the selected Call ID.
-4. When you open Diagnose, you can select from **predefined diagnostic questions**. <br>This allows you to start troubleshooting without manually gathering information from multiple areas of the platform.</br> Depending on the selected option, Diagnose can be used to review the call and investigate potential problems associated with it. <br><img src= "/misc/img/log8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-   1. **Custom Questions**: If the predefined options do not describe the issue you are investigating, enter a custom question.<br>This allows you to investigate an issue specific to the selected Call ID rather than being limited to the predefined diagnostic options.</br><img src= "/misc/img/log9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+4. When you open Diagnose, you can select from **predefined diagnostic questions**. <br>This allows you to start troubleshooting without manually gathering information from multiple areas of the platform.</br> Depending on the selected option, Diagnose can be used to review the call and investigate potential problems associated with it.
+      1. **Custom Questions**: If the predefined options do not describe the issue you are investigating, enter a custom question.<br>This allows you to investigate an issue specific to the selected Call ID rather than being limited to the predefined diagnostic options.</br><img src= "/misc/img/log8.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-5. **AI-Assisted Call Review**: You can use the available **Ask AI** functionality to review information associated with the selected call.<br>This can help consolidate the relevant call information and assist with the initial investigation before further troubleshooting or escalation.</br><img src= "/misc/img/log9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. **Chat**: The **Chat** option allows you to contact the ConnexCS Support team regarding a specific call. <br>The selected **Call ID** and your question are automatically included in the conversation, providing the **NOC team** with the relevant call context.</br> You can continue the conversation through chat and choose **Email** or **Phone** as the preferred method for receiving a response. </br><img src= "/misc/img/log10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+5. **AI-Assisted Call Review**: You can use the available **Ask AI** functionality to review information associated with the selected call.<br> This can help consolidate the relevant call information and assist with the initial investigation before further troubleshooting or escalation.</br><img src= "/misc/img/log9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. **Chat**: The **Chat** option allows you to contact the ConnexCS Support team regarding a specific call. <br>The selected **Call ID** and your question are automatically included in the conversation, providing the **NOC team** with the relevant call context.</br> You can continue the conversation through chat and choose **Email** or **Phone** as the preferred method for receiving a response. </br><img src= "/misc/img/log10.png" width "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 7. **Raise a Ticket**: [Click here](**add a link**) for detailed explanation.
 
 > Note: ConnexCS uses icons for several call actions instead of displaying text labels. Hover over an icon to identify the corresponding action where applicable.
