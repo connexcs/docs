@@ -96,7 +96,7 @@ When you click **Refresh Explorer**, the Explorer refreshes and displays the cur
 The refreshed Explorer window is divided into several sections:
 
 | Section | Description  |
-| --------|-=====------- |
+| --------|------------- |
 | **Open Editors** | Displays files or editors that are currently open in the workspace|
 | **Workspace**    | Displays the selected project and its folder structure. In the example, the **Test** project contains `backend` and `frontend` folders. You can expand these folders to browse their contents|
 | **Outline**      | Displays the structure or outline of the currently selected file when applicable|
