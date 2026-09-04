@@ -77,7 +77,7 @@ Below are setup instructions for some of the most common AI assistants.
       + **Name**: ConnexCS
       + **MCP Server URL**: `https://app.connexcs.com/api/cp/mcp/`
 
-5. Authenticate using **OAuth**.
+5. Authenticate using **Opaque Tokens**.
 
 Your AI assistant is now connected to the ConnexCS MCP server.
 
@@ -117,16 +117,18 @@ When connecting to the MCP server, authentication is required.
 
 + **Supported Methods**
 
-    1. `JSON Web Token (JWT)` (recommended)
-    2. `OAuth` (if supported by the client)
-    3. `Username & Password`
+    1. `Opaque Tokens`:
+       1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Opaque Tokens**. Generate or copy a key with type set to **Access Token**. This token is used to authenticate the WebSocket connection from your server.
+       2. **OR** You can generate Opaque Tokens from the [auth.connexcs.com](auth.connexcs.com).
+
+    2. `Username & Password`
 
 **Recommended by Client**
 
 |Client|Recommended Method|
 |-----|-------------------|
-|**Claude Desktop**|OAuth|
-|**VS Code**|JWT|
+|**Claude Desktop**|Opaque Tokens|
+|**VS Code**|Opaque Tokens|
 |**Others**|Any supported method|
 
 ---
@@ -201,7 +203,7 @@ The MCP implementation is **open source and fully customizable**, allowing you t
 
 ### Steps to Extend MCP
 
-1. Install the `Cx MCP App` from **Setup :material-menu-right: App Store :material-menu-right: Cx MCP**. [Click here](/setup/appstore/#) for more deails. 
+1. Install the `Cx MCP App` from **Setup :material-menu-right: App Store :material-menu-right: Cx MCP**. [Click here](/setup/appstore/#) for more deails.
 2. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu.
 
 <img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">

@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Developer Guide / Real-Time Transcription & WebSocket Integration<br> <strong>Audience</strong>: Developers, Solutions Engineers, Technical Integrators<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 20–30 minutes<br> <strong>Prerequisites</strong>: Access to platform control panel, familiarity with WebSocket concepts, basic scripting knowledge, and ability to generate OpaqueT tokens<br> <strong>Related Topics</strong>: <a href="/apps/architecture/scriptforge/">Script Forge</a>, <a href="/apps/architecture/cxWebSocket/">WebSocket Integration</a>, <a href="/setup/integrations/opaque-tokens/#introduction">Opaque Token Authentication</a><br> <strong>Next Steps</strong>: Validate real-time transcription flow, integrate the WebSocket stream into your application (e.g., dashboards or analytics tools), implement error handling and reconnection logic, and secure token management for production use.<br>
+<strong>Category</strong>: Developer Guide / Real-Time Transcription & WebSocket Integration<br> <strong>Audience</strong>: Developers, Solutions Engineers, Technical Integrators<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 20–30 minutes<br> <strong>Prerequisites</strong>: Access to platform control panel, familiarity with WebSocket concepts, basic scripting knowledge, and ability to generate Opaque Tokens<br> <strong>Related Topics</strong>: <a href="/apps/architecture/scriptforge/">Script Forge</a>, <a href="/apps/architecture/cxWebSocket/">WebSocket Integration</a>, <a href="/setup/integrations/opaque-tokens/#introduction">Opaque Token Authentication</a><br> <strong>Next Steps</strong>: Validate real-time transcription flow, integrate the WebSocket stream into your application (e.g., dashboards or analytics tools), implement error handling and reconnection logic, and secure token management for production use.<br>
 
 </details>
 
@@ -67,9 +67,10 @@ export async function main(data, ws) {
 !!! Question "How it works"
     `subscribe('transcription', '*', ...)` listens for every transcription event on the internal bus. Each event is immediately forwarded over the open WebSocket connection via `socket.send()`. `waitForClose()` suspends execution until the client closes the connection, keeping the subscription alive.
 
-### Step 3 — Get a JWT access token
+### Step 3 — Get an Opaque  access token
 
-1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: JWT Keys**. Generate or copy a key with type set to **Access Token**. This token is used to authenticate the WebSocket connection from your server.
+1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Opaque Tokens**. Generate or copy a key with type set to **Access Token**. This token is used to authenticate the WebSocket connection from your server.
+2. **OR** You can generate Opaque Tokens from the [auth.connexcs.com](auth.connexcs.com).
 
 !!! Warning "Warning"
     Keep this token secret. Anyone who holds it can connect to your Script Forge endpoint and receive live transcription data.
@@ -88,7 +89,7 @@ import websocket
 import datetime
 
 URL   = "wss://app.connexcs.com/api/cp/scriptforge/10141"   # ← your script ID
-TOKEN = "eyJhbGci..."                                        # ← your JWT token
+TOKEN = "eyJhbGci..."                                        # ← your Opaque token
 
 def on_open(ws):
     print(f"[{datetime.datetime.now()}] Connected")
@@ -113,4 +114,4 @@ ws = websocket.WebSocketApp(
 ws.run_forever()
 ```
 
-**URL format**: `wss://app.connexcs.com/api/cp/scriptforge/{SCRIPT_ID}` — replace `{SCRIPT_ID}` with the numeric ID copied from **Step 2**. The `Authorization: Bearer` header carries the JWT token from **Step 3**.
+**URL format**: `wss://app.connexcs.com/api/cp/scriptforge/{SCRIPT_ID}` — replace `{SCRIPT_ID}` with the numeric ID copied from **Step 2**. The `Authorization: Bearer` header carries the Opaque token from **Step 3**.
