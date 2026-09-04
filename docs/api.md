@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: 1–2 hours (initial setup)<br>
 <strong>Prerequisites</strong>: <a href="https://docs.connexcs.com/getting-started/">Getting Started</a>, <a href="https://docs.connexcs.com/ide/">Developer knowledge</a><br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ide/">IDE</a>, <a href="https://docs.connexcs.com/setup/integrations/api/">API Integration</a>, <a href="https://docs.connexcs.com/setup/integrations/jwt/">JWT Keys</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ide/">IDE</a>, <a href="https://docs.connexcs.com/setup/integrations/api/">API Integration</a>, <a href="https://docs.connexcs.com/setup/integrations/opaque-tokens/">Opaque Tokens</a><br>
 <strong>Next Steps</strong>: <a href="https://docs.connexcs.com/setup/integrations/api/">API Integration Setup</a>, <a href="https://docs.connexcs.com/apps/introduction/">Apps Platform</a><br>
 
 </details>

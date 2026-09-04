@@ -356,8 +356,8 @@
       - Note API endpoint URL
       - Save credentials securely
 
-3. **Set Up JWT Authentication** (Optional) ([JWT Keys](setup/integrations/jwt.md))
-      - Generate JWT refresh keys
+3. **Set Up Opaque Tokens** (Optional) ([Opaque Tokens](setup/integrations/opaque-tokens.md))
+      - Generate a secure token secret / set up the token store
       - Configure token expiration
       - Set up token refresh logic
 
