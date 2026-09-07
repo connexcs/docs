@@ -315,7 +315,7 @@ api:
     - apps/introduction
   next_steps:
     - setup/integrations/api
-    - setup/integrations/jwt
+    - setup/integrations/opaque-tokens
   common_followup:
     - ide
     - apps/introduction
@@ -697,7 +697,7 @@ workflows:
     steps:
       - api
       - setup/integrations/api
-      - setup/integrations/jwt
+      - setup/integrations/opaque-tokens
       - ide
     estimated_time: "2-4 hours"
     

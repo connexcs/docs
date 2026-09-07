@@ -192,8 +192,7 @@ nav:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
             - WebPhone: webphone.md
-            - JWT Keys: setup/integrations/jwt.md
-            - OAuth Session: setup/integrations/oauth.md
+            - Opaque Tokens: setup/integrations/opaque-tokens.md
         - Information:
             - Change Log: setup/information/change-log.md
             - Feature Requests: setup/information/feature-request.md

@@ -218,7 +218,6 @@ These settings are available when using the ConnexCS Connect extension in your o
 | Setting | What it does |
 |---|---|
 | `connexcs.apiHost` | Override the ConnexCS API base URL. Leave blank for the default. |
-| `connexcs.oauthHost` | Override the OAuth server URL. Leave blank for the default. |
 | `connexcs.assistant.enabled` | Turn the ConnexCS Assistant on or off. |
 | `connexcs.preview.urlTemplate` | Customise the URL used for the Anvil app preview. You can use `{app_id}` and `{file_path}` as placeholders. |
 | `connexcs.cli.url` | Override the full WebSocket URL for the CX Terminal. |

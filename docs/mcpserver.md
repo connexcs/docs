@@ -6,9 +6,9 @@
 <strong>Audience</strong>: Developers, System Administrators, Operators, SREs, AI Integrators<br>
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: 10–20 minutes<br>
-<strong>Prerequisites</strong>: ConnexCS account with appropriate permissions; MCP-compatible client (e.g., Claude Desktop, VS Code, ChatGPT); ability to authenticate using JWT, OAuth, or credentials; basic understanding of ConnexCS tools such as CDR, SIP Trace, and routing.<br>
+<strong>Prerequisites</strong>: ConnexCS account with appropriate permissions; MCP-compatible client (e.g., Claude Desktop, VS Code, ChatGPT); ability to authenticate using Opaque tokens, or credentials; basic understanding of ConnexCS tools such as CDR, SIP Trace, and routing.<br>
 <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/ai-agent/">AI Agent</a>, <a href="https://docs.connexcs.com/scriptforge/">ScriptForge</a>, <a href="https://docs.connexcs.com/troubleshooting/signalling/">Troubleshooting – Signalling</a>, <a href="https://docs.connexcs.com/troubleshooting/media/">Troubleshooting – Media</a>, <a href="https://docs.connexcs.com/developer/api/">API Integrations</a><br>
-<strong>Next Steps</strong>: Connect your MCP client to the ConnexCS MCP server, authenticate using JWT or OAuth, test example queries (call diagnostics, SIP trace, analytics), explore available tools via natural language prompts, and extend MCP functionality using custom endpoints or integrations.<br>
+<strong>Next Steps</strong>: Connect your MCP client to the ConnexCS MCP server, authenticate using Opaque Tokens, test example queries (call diagnostics, SIP trace, analytics), explore available tools via natural language prompts, and extend MCP functionality using custom endpoints or integrations.<br>
 
 </details>
 
@@ -77,7 +77,7 @@ Below are setup instructions for some of the most common AI assistants.
       + **Name**: ConnexCS
       + **MCP Server URL**: `https://app.connexcs.com/api/cp/mcp/`
 
-5. Authenticate using **OAuth**.
+5. Authenticate using **Opaque Tokens**.
 
 Your AI assistant is now connected to the ConnexCS MCP server.
 
@@ -100,7 +100,7 @@ You can also connect MCP from **Visual Studio Code**.
       "type": "http",
       "url": "https://app.connexcs.com/api/cp/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_JWT_TOKEN"
+        "Authorization": "Bearer YOUR_Opaque_TOKEN"
       }
     }
   }
@@ -117,16 +117,18 @@ When connecting to the MCP server, authentication is required.
 
 + **Supported Methods**
 
-    1. `JSON Web Token (JWT)` (recommended)
-    2. `OAuth` (if supported by the client)
-    3. `Username & Password`
+    1. `Opaque Tokens`:
+       1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Opaque Tokens**. Generate or copy a key with type set to **Access Token**. This token is used to authenticate the WebSocket connection from your server.
+       2. **OR** You can generate Opaque Tokens from the [auth.connexcs.com](auth.connexcs.com).
+
+    2. `Username & Password`
 
 **Recommended by Client**
 
 |Client|Recommended Method|
 |-----|-------------------|
-|**Claude Desktop**|OAuth|
-|**VS Code**|JWT|
+|**Claude Desktop**|Opaque Tokens|
+|**VS Code**|Opaque Tokens|
 |**Others**|Any supported method|
 
 ---
@@ -201,7 +203,7 @@ The MCP implementation is **open source and fully customizable**, allowing you t
 
 ### Steps to Extend MCP
 
-1. Install the `Cx MCP App` from **Setup :material-menu-right: App Store :material-menu-right: Cx MCP**. [Click here](/setup/appstore/#) for more deails. 
+1. Install the `Cx MCP App` from **Setup :material-menu-right: App Store :material-menu-right: Cx MCP**. [Click here](/setup/appstore/#) for more deails.
 2. **Point the MCP Server to Your App**: Navigate to **Setup :material-menu-right: Options :material-menu-right: General :material-menu-right: Custom MCP Endpoint**. Selct the app from the drop-down menu.
 
 <img src= "/misc/img/mcp_blog_custom.png" style="border: 2px solid #4472C4; border-radius: 8px;">
