@@ -15,13 +15,13 @@
 <strong>Prerequisites</strong>:<br>
 <ul>
 <li>A ConnexCS account</li>
-<li>A valid JWT token for authentication</li>
+<li>A valid Opaque token for authentication</li>
 <li>Basic familiarity with REST APIs or JavaScript/TypeScript</li>
 </ul>
 
-<strong>Related Topics</strong>: Anvil, ScriptForge, Apps Platform, REST API, JavaScript SDK, JWT Authentication<br>
+<strong>Related Topics</strong>: Anvil, ScriptForge, Apps Platform, REST API, JavaScript SDK, Opaque token Authentication<br>
 
-<strong>Next Steps</strong>: Learn how Hearth works, authenticate using a JWT token, choose between the REST API or JavaScript SDK, and explore the official SDK documentation and API reference.<br>
+<strong>Next Steps</strong>: Learn how Hearth works, authenticate using an Opaque token, choose between the REST API or JavaScript SDK, and explore the official SDK documentation and API reference.<br>
 
 </details>
 

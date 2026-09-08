@@ -45,6 +45,10 @@ You can organize ConnexCS **Customers** through customer cards.
 !!! question "How many customers can I add?"
     You can add unlimited customers, and we won't charge per customer, only on their individual usage.
 
+### Multi-Tenancy
+
+ConnexCS supports multi-tenancy, allowing multiple customers or service providers to share the same platform while maintaining independent authentication, routing, billing, billing IPs, CDR and configuration.
+
 ### Customer Dashboard
 
 Before creating a new customer, let's review the elements available on the Customer Dashboard.

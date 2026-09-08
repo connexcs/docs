@@ -52,7 +52,7 @@ Using the Anvil IDE provides several advantages for developing on the ConnexCS p
 The Anvil IDE includes a comprehensive set of development tools:
 
 - Hosted web IDE and VS Code-compatible extension.
-- Secure authentication using browser OAuth or API tokens.
+- Secure authentication using browser API tokens.
 - Project Explorer for browsing and managing Anvil project files.
 - ScriptForge execution with **Run** and **Run with Vars** actions.
 - Live execution results with formatted output.
@@ -104,7 +104,7 @@ Both options give you the same features. The hosted IDE is the quickest way to g
 4. Click on `Sign In to ConnexCS`.
 5. When you open the IDE for the first time, the ConnexCS panel on the left sidebar shows two sign-in options:
 
-   - **Sign in via Browser** — Opens a browser window for OAuth sign-in with your ConnexCS account. Recommended for most users.
+   - **Sign in via Browser** — Opens a browser window for ssign-in with your ConnexCS account. Recommended for most users.
 
    - **Sign in with API Token** — Paste a ConnexCS API token directly if you prefer token-based access.<br><img src= "/apps/img/aide1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -453,7 +453,6 @@ These settings are available when using the ConnexCS Connect extension in your o
 | Setting | What it does |
 |---|---|
 | `connexcs.apiHost` | Override the ConnexCS API base URL. Leave blank for the default. |
-| `connexcs.oauthHost` | Override the OAuth server URL. Leave blank for the default. |
 | `connexcs.assistant.enabled` | Turn the ConnexCS Assistant on or off. |
 | `connexcs.preview.urlTemplate` | Customise the URL used for the Anvil app preview. You can use `{app_id}` and `{file_path}` as placeholders. |
 | `connexcs.cli.url` | Override the full WebSocket URL for the CX Terminal. |

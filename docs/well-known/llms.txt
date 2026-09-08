@@ -135,7 +135,7 @@ cloudswitch_setup: [
 	"docs/setup/advanced/fraud.md",
 	"docs/setup/advanced/rtp-block.md",
 	"docs/setup/integrations/api.md",
-	"docs/setup/integrations/jwt.md",
+	"docs/setup/integrations/opaque-tokens.md",
 	"docs/setup/integrations/portal.md",
 	"docs/webphone.md",
 	"docs/setup/information/change-log.md",

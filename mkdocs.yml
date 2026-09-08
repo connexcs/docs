@@ -147,6 +147,7 @@ nav:
     - Logging: logging.md
     
     - Class 5:
+        - Class 5 Overview: class5/class5-intro.md
         - AI Agent: class5/ai-agent.md
         - Knowledge Base: class5/knowledge-base.md
         - Apps: class5/apps.md
@@ -191,8 +192,7 @@ nav:
             - API: setup/integrations/api.md
             - Portal: setup/integrations/portal.md
             - WebPhone: webphone.md
-            - JWT Keys: setup/integrations/jwt.md
-            - OAuth Session: setup/integrations/oauth.md
+            - Opaque Tokens: setup/integrations/opaque-tokens.md
         - Information:
             - Change Log: setup/information/change-log.md
             - Feature Requests: setup/information/feature-request.md
@@ -266,6 +266,7 @@ nav:
     - MCP Server: mcpserver.md
     - Anvil: anvil.md
     - Hearth: hearth.md
+    - ConnExamine: connexamine.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
@@ -393,7 +394,11 @@ nav:
     - Working with Files: anvil-ide/working-with-files.md
     - Anvil App Preview: anvil-ide/anvil-app-preview.md
     - Creating your First Anvil Project: anvil-ide/creating-your-first-anvil-project.md
-    
-    
+
+  - Anvil Apps: 
+    - Peering Hub: anvil-apps/peering-hub.md
+    - Click-2-Dial: anvil-apps/click-2-dial.md
+    - Yoco Payments: anvil-apps/yoco-payments.md
+    - DID Purchase: anvil-apps/did-purchase.md
 
     

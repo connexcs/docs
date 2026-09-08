@@ -1579,7 +1579,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://raw.githubusercontent.com/connexcs/docs/refs/heads/master/docs/setup/integrations/jwt.md</loc>
+    <loc>https://raw.githubusercontent.com/connexcs/docs/refs/heads/master/docs/setup/integrations/opaque-tokens.md</loc>
     <lastmod>2025-12-31T18:28:45+05:30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
