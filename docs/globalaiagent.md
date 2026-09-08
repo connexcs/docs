@@ -108,11 +108,9 @@ MCP is used for:
 
 ### When MCP is Not Required
 
-MCP is not needed for:
+MCP isn't needed for:
 
 - General questions
-
-- Documentation-related queries
 
 - Concept explanations
 
@@ -144,7 +142,7 @@ In these cases, the AI Agent responds independently without invoking backend too
 3. **Start Interaction**
 
       * Type your query in the chat box (e.g., *“Show me any issues in my account”*)
-      * The AI responds with insights, actions, or recommendations <br><img src= "/misc/img/gaa1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+      * The AI responds with insights, actions, or recommendations <br><img src= "/misc/img/log9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## Token Usage (Paid Feature)
 
