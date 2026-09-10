@@ -183,7 +183,7 @@
 | **API**  | *Application Programming Interface* | A set of rules and methods that allows software applications to communicate with each other |
 | **SDK**  | *Software Development Kit* | A collection of tools, libraries, and documentation that helps developers build applications for a specific platform or service |
 | **OIDC** | *OpenID Connect* | An authentication protocol built on OAuth 2.0 that allows applications to verify a user's identity |
-|SQL|*Structured Query Language*|Query Builder / SQL Auto-Complete section of IDE Components|
+|**SQL**|*Structured Query Language*|Query Builder / SQL Auto-Complete section of IDE Components|
 | **DDL**  | *Data Definition Language* | SQL commands used to create, modify, and delete database structures such as schemas and tables |
 | **HTTP** | *Hypertext Transfer Protocol* | A protocol used to transfer information between web clients and servers |
 |**HTTPS**|	*Hypertext Transfer Protocol Secure* |A protocol used to transmit data securely over the internet between a client (like a browser or an app) and a server|
