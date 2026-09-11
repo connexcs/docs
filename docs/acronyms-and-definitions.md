@@ -17,7 +17,7 @@
 |**ACD \ ALOC**|*Average Call Duration \ Average Length of Call*|The average length of calls. Average Call Duration or otherwise called Average Length of Call is a retrospective calculation of how long calls last, that is the mean average. Typically only connected calls are included in this calculation, so it is simply the total time that all of the calls were connected divided by the total number of connected calls.|
 |**ASR**|*Answer-Seisure Ratio*|The call answer rates as a percentage (connected calls divided by total calls).|  
 |**Channel**|n/a|An ongoing live call on the system. |
-|**CLI**|*Calling Line Identification*|Identifies the caller's telephone number, which is often displayed to the call recipient in the form of Caller-ID.|
+|**CLI**|*Caller Line Identification*|Identifies the caller's telephone number, which is often displayed to the call recipient in the form of Caller-ID.|
 |**CPS (Flow Speed)**|*Calls Per Second*|The number of allowed calls per second. ConnexCS uses this term and **Calls Per Second (CPS)** interchangeably.|
 |**CDR**|*Call Detail Records*|In-depth information about calls that pass through a VoIP exchange. CDRs are a source data for billing and consumer tracking.|
 |**Codec**|*Coder-Decoder*|Encodes and decodes data between analog and digital signals, with some form of compression.|
@@ -183,8 +183,10 @@
 | **API**  | *Application Programming Interface* | A set of rules and methods that allows software applications to communicate with each other |
 | **SDK**  | *Software Development Kit* | A collection of tools, libraries, and documentation that helps developers build applications for a specific platform or service |
 | **OIDC** | *OpenID Connect* | An authentication protocol built on OAuth 2.0 that allows applications to verify a user's identity |
+|**SQL**|*Structured Query Language*|Query Builder / SQL Auto-Complete section of IDE Components|
 | **DDL**  | *Data Definition Language* | SQL commands used to create, modify, and delete database structures such as schemas and tables |
 | **HTTP** | *Hypertext Transfer Protocol* | A protocol used to transfer information between web clients and servers |
+|**HTTPS**|	*Hypertext Transfer Protocol Secure* |A protocol used to transmit data securely over the internet between a client (like a browser or an app) and a server|
 | **CSV**  | *Comma-Separated Values* | A text-based format used to store tabular data, with values typically separated by commas |
 | **ESM**  | *ECMAScript Modules* | A JavaScript module system that allows code to be organized and imported between files or packages |
 | **CRM**  | *Customer Relationship Management*  | Systems and processes used to manage customer information and interactions |
@@ -204,6 +206,15 @@
 |**BPO** | *Business Process Outsourcing* | Listed as one of the types of organizations that can use the Call Center module|
 |**MSP** | *Managed Service Provider* |Listed as one of the organizations that can use the Call Center module|
 | **SBC** | *Session Border Controller* | Device that manages and secures VoIP traffic between networks|
+|**IDE**|*Integrated Development Environment*|A Software application that bundles together the essential tools a developer needs to write, test, and manage code|
+|**CLI**|*Command Line Interface*|CX Terminal — connects to the ConnexCS cx-cli tool|
+|**KV**|*Key-Value (Store)*| IDE Components — the KV Store for lightweight persistent data|
+|**WSL**|*Windows Subsystem for Linux*| IDE Interface — Remote Development connection option|
+|**JSON**|*JavaScript Object Notation*|ScriptForge Preview panel (JSON tab), token structure examples|
+|**VS Code**|*Visual Studio Code*|Referenced throughout as the extension platform (ConnexCS Connect extension, VS Code Marketplace)|
+|**Anvil**| *n/a*|ConnexCS's scripting and configuration platform for building frontend apps and backend logic.|
+|**.js / .vue / .sql**|	8JavaScript / Vue / SQL file extensions8|File types used in ScriptForge (.js), Anvil frontend (.vue), and Query Builder (.sql)|
+|**Opaque Token**|*n/a*| A randomly generated string used as an authentication credential; acts as a lookup key with no client-readable claims — ConnexCS validates it server-side.|
 
 ## ACD Calculation Method
 
