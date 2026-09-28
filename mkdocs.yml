@@ -135,9 +135,9 @@ nav:
 
         - Circuit Test: circuit-test.md
 
-        - Report: report.md
+        - Status: system-status.md
 
-        - Status: system-status.md  
+    - Report: report.md  
 
     - Global:
         - Global: global.md
