@@ -135,9 +135,21 @@ nav:
 
         - Circuit Test: circuit-test.md
 
-        - Report: report.md
+        - Status: system-status.md
 
-        - Status: system-status.md  
+    - Report: 
+        - Introduction: report.md
+        - Breakout: breakout.md
+        - Per Number: per-number.md
+        - DTMF: dtmf.md
+        - Schedule Report: schedule-report.md
+        - CDR Heuristics: cdr-heuristics.md.
+        - ASR per CLI: asr-per-cli.md
+        - SIP Response Breakdown: sip-response-breakdown.md
+        - USA Rate Center: usa-rate-center.md
+        - Carrier Win Rate: carrier-win-rate.md
+        - USA Calls: usa-calls.md
+        - Rate Card Analytics: rate-card-analytics.md
 
     - Global:
         - Global: global.md
