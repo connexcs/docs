@@ -28,7 +28,7 @@ Select a number and define the required date range to generate a list of calls a
    * **CLI**: Select this option to search for calls associated with a specific Calling Line Identification (CLI). The **CLI** field is displayed.
 4. Select the required **Customer**.
 5. Enter or select the number to investigate.
-6. Review the resulting call records and associated metrics.
+6. Review the resulting call records and associated metrics. <br><img src="/reports/img/pernumber.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## Searching Multiple Numbers
 
@@ -108,5 +108,3 @@ The Per Number report can be used to:
 * Investigate SIP response codes and call outcomes.
 * Review customer and provider charges.
 * Analyze multiple numbers using the **Numbers** option.
-
-<img src="/reports/img/pernumber.png" style="border: 2px solid #4472C4; border-radius: 8px;">

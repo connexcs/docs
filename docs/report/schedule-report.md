@@ -51,7 +51,7 @@ Scheduled reports are useful for recurring reporting requirements and ensure tha
 
 ## Grouping
 
-The ****Group**** field allows you to select one or more fields to organize the report data.
+The **Group** field allows you to select one or more fields to organize the report data.
 
 Grouping determines how the data is structured in the generated Breakout Report and can be used to organize information according to the selected reporting dimensions.
 
