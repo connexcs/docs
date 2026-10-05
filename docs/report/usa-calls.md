@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / USA Calls<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with U.S. call classification, Intrastate and Interstate traffic, customer/provider billing, and call duration metrics.<br> <strong>Related Topics</strong>: Reports, <a href="https://docs.connexcs.com/report/">Breakout Report</a>, <a href="https://docs.connexcs.com/rate-card-building/">Rate Cards</a><br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: USA Calls</strong>, select the report type, customers, providers, and date range, then review call counts, connected calls, durations, and billing information.<br>
+<strong>Category</strong>: Reporting & Analytics / USA Calls<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with U.S. call classification, Intrastate and Interstate traffic, customer/provider billing, and call duration metrics.<br> <strong>Related Topics</strong>: Reports, <a href="/report/breakout/">Breakout Report</a>, <a href="https://docs.connexcs.com/rate-card-building/">Rate Cards</a><br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: USA Calls</strong>, select the report type, customers, providers, and date range, then review call counts, connected calls, durations, and billing information.<br>
 
 </details>
 
@@ -27,15 +27,15 @@ To generate the report:
 1. Navigate to **Report :material-menu-right: USA Calls**.
 2. Select the report **Type**:
 
-   * **State**
-   * **LATA**
+      * **State**
+      * **LATA**
 3. Select the required **Customers** from the customer selector.
 4. Select the required **Providers** from the provider selector.
 5. Use the **date selector** to specify the reporting period.
 6. Review the call counts, connected calls, durations, and billing information in the report.
 7. Use the **Columns**, **Filters**, and **Custom Settings** panels to adjust the report presentation.
 
-<img src="/reports/img/usacalls.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/reports/img/usa-calls.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Report Type
 
@@ -130,8 +130,8 @@ The **Custom Settings** panel allows you to adjust how the report is displayed.
 
 2. **Row Height**: Adjust the height of rows displayed in the report:
 
-* **Lower row height** — displays more records within the available screen space.
-* **Higher row height** — provides more spacing between rows for easier reading.
+   * **Lower row height** — displays more records within the available screen space.
+   * **Higher row height** — provides more spacing between rows for easier reading.
 
 ## Reviewing Billing Information
 

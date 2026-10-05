@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / Rate Card Analytics<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Routing Teams, Product Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; configured rate cards and familiarity with customer usage, traffic, and billing concepts.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/report/">Reports</a>, <a href="https://docs.connexcs.com/rate-card-building/">Rate Cards</a>, Breakout Report<br> <strong>Next Steps</strong>: Navigate to <strong>Report :material-menu-right: Rate Card Analytics</strong>, select a rate card, define the reporting period, and review customer usage, traffic trends, and billing information.<br>
+<strong>Category</strong>: Reporting & Analytics / Rate Card Analytics<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Routing Teams, Product Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; configured rate cards and familiarity with customer usage, traffic, and billing concepts.<br> <strong>Related Topics</strong>: <a href="/report/report/">Reports</a>, <a href="https://docs.connexcs.com/rate-card-building/">Rate Cards</a>, Breakout Report<br> <strong>Next Steps</strong>: Navigate to <strong>Report :material-menu-right: Rate Card Analytics</strong>, select a rate card, define the reporting period, and review customer usage, traffic trends, and billing information.<br>
 
 </details>`
 
@@ -26,7 +26,7 @@ Once a rate card is selected, the dashboard provides the following analytics vie
 
 This view can be used to understand how call activity is distributed among customers using the selected rate card.
 
-Key information:
+**Key information**:
 
 * Customers associated with the selected rate card.
 * Call counts for each customer.

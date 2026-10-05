@@ -6,13 +6,10 @@
 
 </details>
 
-****Report :material-menu-right: CDR Heuristics****
+**Report :material-menu-right: CDR Heuristics**
 
 !!! warning "Alpha Version"
-
-```
-**CDR Heuristics** is currently an **Alpha** feature. The available analysis types, results, and functionality may change as the feature develops.
-```
+    **CDR Heuristics** is currently an **Alpha** feature. The available analysis types, results, and functionality may change as the feature develops.
 
 ## Overview
 
@@ -29,14 +26,18 @@ The available report types are:
 
 ## Using CDR Heuristics
 
-1. Navigate to ****Reports :material-menu-right: CDR Heuristics****.
-2. Select the required ****Report Type****.
-3. Specify the required ****Date Range****.
-4. Select the required ****Provider****.
-5. Click ****Generate Report****.
+1. Navigate to **Reports :material-menu-right: CDR Heuristics**.
+2. Select the required **Report Type**.
+3. Specify the required **Date Range**.
+4. Select the required **Provider**.
+5. Click **Generate Report**.
 6. Review the generated results for the selected report type.
 
-> ****Note:**** The available results and analysis depend on the selected report type and the CDR data available for the selected period and provider.
+<img src="/reports/img/cdrheuristics.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+<img src="/reports/img/cdrheu1.png" style="border: 2px solid #4472C4; border-radius: 8px
+
+> **Note:** The available results and analysis depend on the selected report type and the CDR data available for the selected period and provider.
 
 ## Report Types
 
@@ -71,18 +72,14 @@ Metrics analysis can help identify:
 
 #### Using Metrics
 
-1. Navigate to ****Reports :material-menu-right: CDR Heuristics****.
-2. Select ****Metrics**** as the **Report Type**.
-3. Specify the required ****Date Range****.
-4. Select the required ****Provider****.
-5. Click ****Generate Report****.
-6. Review the generated ****Summary**** and ****Data**** results.
+1. Navigate to **Reports :material-menu-right: CDR Heuristics**.
+2. Specify the required **Date Range**.
+3. Select the required **Provider**.
+4. Click **Generate Report**.
+5. Review the generated **Summary** and **Data** results.
 
 !!! info "Analysis Threshold"
-
-```
-The Metrics report displays the **Min Calls Threshold** used for the analysis in the generated report.
-```
+    The Metrics report displays the **Min Calls Threshold** used for the analysis in the generated report.
 
 #### Metrics Report Results
 
@@ -211,11 +208,11 @@ The following dimensions are analyzed:
 
 #### Using Modalities
 
-1. Navigate to ****Reports :material-menu-right: CDR Heuristics****.
-2. Select ****Modalities**** as the **Report Type**.
-3. Specify the required ****Date Range****.
-4. Select the required ****Provider****.
-5. Click ****Generate Report****.
+1. Navigate to **Reports :material-menu-right: CDR Heuristics**.
+2. Select **Modalities** as the **Report Type**.
+3. Specify the required **Date Range**.
+4. Select the required **Provider**.
+5. Click **Generate Report**.
 6. Review the identified failure dimensions and findings.
 
 Example findings may include:
@@ -242,11 +239,11 @@ The analysis uses signals including:
 
 #### Using Convergence
 
-1. Navigate to ****Reports :material-menu-right: CDR Heuristics****.
-2. Select ****Convergence**** as the **Report Type**.
-3. Specify the required ****Date Range****.
-4. Select the required ****Provider****.
-5. Click ****Generate Report****.
+1. Navigate to **Reports :material-menu-right: CDR Heuristics**.
+2. Select **Convergence** as the **Report Type**.
+3. Specify the required **Date Range**.
+4. Select the required **Provider**.
+5. Click **Generate Report**.
 6. Review the identified provider relationships and supporting signals.
 
 Convergence analysis can help:
@@ -272,11 +269,11 @@ The analysis monitors metrics including:
 
 #### Using Anomalies
 
-1. Navigate to ****Reports :material-menu-right: CDR Heuristics****.
-2. Select ****Anomalies**** as the **Report Type**.
-3. Specify the required ****Date Range****.
-4. Select the required ****Provider****.
-5. Click ****Generate Report****.
+1. Navigate to **Reports :material-menu-right: CDR Heuristics**.
+2. Select **Anomalies** as the **Report Type**.
+3. Specify the required **Date Range**.
+4. Select the required **Provider**.
+5. Click **Generate Report**.
 6. Review the detected anomalies and their assigned severity.
 
 #### Severity Levels
@@ -411,5 +408,3 @@ Use **Anomalies** analysis to identify abnormal changes in provider behavior and
 * Use **Convergence** to investigate potential provider relationships.
 * Use **Anomalies** to identify abnormal changes in provider behavior.
 * Review the detailed **Data** view when an outlier is identified in the Metrics report.
-
-<img src="/reports/img/cdrheuristics.png" style="border: 2px solid #4472C4; border-radius: 8px;">

@@ -14,11 +14,11 @@
 
 </details>
 
-**Report**
-
 ## Overview
 
-The **Report** section provides comprehensive insights into historical call data, network performance, routing efficiency, and operational activities. It enables users to monitor trends, analyze call statistics, evaluate performance, and gain better visibility into their operations.
+The **Report** section provides comprehensive insights into historical call data, network performance, routing efficiency, and operational activities.
+
+It enables users to monitor trends, analyze call statistics, evaluate performance, and gain better visibility into their operations.
 
 Reports can be viewed, analyzed, and downloaded to support day-to-day monitoring and data-driven decision-making.
 

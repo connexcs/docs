@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / Carrier Win Rate<br> <strong>Audience</strong>: Administrators, Operations Teams, Routing Teams, Billing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with providers, carrier routing, call volume, and basic reporting concepts.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/report/">Reports</a>, <a href="https://docs.connexcs.com/report/#breakout">Breakout Report</a>, Routing Strategy, Carrier Management<br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: Carrier Win Rate</strong>, select the required date range, review carrier positions and provider results, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to refine the displayed data.<br>
+<strong>Category</strong>: Reporting & Analytics / Carrier Win Rate<br> <strong>Audience</strong>: Administrators, Operations Teams, Routing Teams, Billing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with providers, carrier routing, call volume, and basic reporting concepts.<br> <strong>Related Topics</strong>: <a href="/report/report/">Reports</a>, <a href="/report/breakout">Breakout Report</a>, Routing Strategy, Carrier Management<br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: Carrier Win Rate</strong>, select the required date range, review carrier positions and provider results, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to refine the displayed data.<br>
 
 </details>
 
@@ -10,7 +10,7 @@
 
 ## Overview
 
-The ****Carrier Win Rate**** report provides a view of provider performance based on carrier positions during the selected reporting period.
+The **Carrier Win Rate** report provides a view of provider performance based on carrier positions during the selected reporting period.
 
 The report presents providers according to their **position**, allowing you to review how frequently each provider appears in the available positions.
 
@@ -127,31 +127,7 @@ Filters can be applied to available report fields, including:
 * **Pos 2**
 * **Pos 3**
 
-Select a field in the ****Filters**** panel and choose the required filter condition.
-
-### Filter Conditions
-
-| Condition                    | Description                                                                       |
-| -----------------------------| --------------------------------------------------------------------------------- |
-| **Equals**                   | Displays only records where the field exactly matches the specified value.        |
-| **Does not equal**           | Excludes records where the field matches the specified value.                     |
-| **Less than**                | Displays records where the value is lower than the specified value.               |
-| **Less than or equal to**    | Displays records where the value is less than or equal to the specified value.    |
-| **Greater than**             | Displays records where the value is higher than the specified value.              |
-| **Greater than or equal to** | Displays records where the value is greater than or equal to the specified value. |
-| **Between**                  | Displays records where the value falls within the specified range.                |
-
-!!! Example "Example"
-
-    ```
-    For the **\*\*Pos 1\*\*** field:
-
-    * **\*\*Equals \`10\`\*\*** — shows providers with exactly 10 occurrences in Position 1.
-
-    * **\*\*Greater than \`10\`\*\*** — shows providers with more than 10 occurrences in Position 1.
-
-    * **\*\*Less than or equal to \`10\`\*\*** — shows providers with 10 or fewer occurrences in Position 1.
-    ```
+Select a field in the **Filters** panel and choose the required filter condition.
 
 ## Columns
 
@@ -176,16 +152,16 @@ The **Custom Settings** panel provides options for adjusting the appearance and 
 
 2. **Row Height**: The **Row Height** setting controls the vertical spacing of rows in the provider results table.
 
-   * **Lower row height**: Displays more provider rows at once.
+      * **Lower row height**: Displays more provider rows at once.
 
-   * **Higher row height**: Provides more spacing between rows for easier readability.
+      * **Higher row height**: Provides more spacing between rows for easier readability.
 
 Custom settings affect the presentation of the report and do not change the underlying report data.
 
 ## Refreshing the Report
 
-Click ***Refresh** after changing the date range or other report parameters to ensure the report reflects the current selections.
+Click **Refresh** after changing the date range or other report parameters to ensure the report reflects the current selections.
 
 !!! info "Refreshing the Carrier Win Rate Report"
-    Remember to click **\*\*Refresh\*\*** each time parameters change to ensure you see the most recent selections onscreen.
+    Remember to click *Refresh* each time parameters change to ensure you see the most recent selections onscreen.
     When refreshing the report, use the **Report Refresh** button rather than the browser refresh button.

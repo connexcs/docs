@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / DTMF Report<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Support Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with DTMF, customer and provider charges, call reporting, and basic routing concepts.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/report/">Reports</a>, <a href="https://docs.connexcs.com/report/#breakout">Breakout Report</a><br> <strong>Next Steps</strong>: Navigate to the DTMF report, select the required customers and date range, refresh the report, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to analyze DTMF activity and associated customer and provider charges.<br>
+<strong>Category</strong>: Reporting & Analytics / DTMF Report<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Support Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with DTMF, customer and provider charges, call reporting, and basic routing concepts.<br> <strong>Related Topics</strong>: <a href="/report/report/">Reports</a>, <a href="/report/breakout/">Breakout Report</a><br> <strong>Next Steps</strong>: Navigate to the DTMF report, select the required customers and date range, refresh the report, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to analyze DTMF activity and associated customer and provider charges.<br>
 
 </details>
 
@@ -10,9 +10,9 @@
 
 ## Overview
 
-The ****DTMF**** report provides information about **Dual Tone Multi-Frequency (DTMF)** activity associated with calls.
+The **DTMF** report provides information about **Dual Tone Multi-Frequency (DTMF)** activity associated with calls.
 
-It is particularly useful for customers that generate DTMF traffic, such as **voice broadcast systems** and other applications that use keypad input during calls.
+It's particularly useful for customers that generate DTMF traffic, such as **voice broadcast systems** and other applications that use keypad input during calls.
 
 The report can be used to analyze the volume of DTMF activity and compare it with the associated **Customer Charge** and **Provider Charge**. This helps determine the cost-effectiveness of a route and understand the cost associated with DTMF activity.
 
@@ -85,30 +85,6 @@ The **Filters** panel allows you to refine the data displayed in the DTMF report
 
 Select a field in the **Filters** panel and choose the required filter condition. The available conditions depend on the type of data in the selected field.
 
-#### Filter Conditions
-
-| Condition                    | Description                                                                       |
-| -----------------------------| --------------------------------------------------------------------------------- |
-| **Equals**                   | Displays only records where the field exactly matches the specified value.        |
-| **Does not equal**           | Excludes records where the field matches the specified value.                     |
-| **Less than**                | Displays records where the value is lower than the specified value.               |
-| **Less than or equal to**    | Displays records where the value is less than or equal to the specified value.    |
-| **Greater than**             | Displays records where the value is higher than the specified value.              |
-| **Greater than or equal to** | Displays records where the value is greater than or equal to the specified value. |
-| **Between**                  | Displays records where the value falls within the specified range.                |
-
-!!! Example "Example"
-
-    ```
-    For the **\*\*DTMF Count\*\*** field:
-
-    * **\*\*Equals \`10\`\*\*** — shows records with exactly 10 DTMF events.
-
-    * **\*\*Greater than \`10\`\*\*** — shows records with more than 10 DTMF events.
-
-    * **\*\*Less than or equal to \`10\`\*\*** — shows records with 10 or fewer DTMF events.
-    ```
-
 ### Custom Settings
 
 The **Custom Settings** panel provides options for adjusting the appearance and presentation of the DTMF report.
@@ -117,9 +93,9 @@ The **Custom Settings** panel provides options for adjusting the appearance and 
 
 2. **Row Height**: The ****Row Height**** setting controls the vertical spacing of rows in the report grid. Use the slider to increase or decrease the amount of information displayed vertically on the screen.
 
-   * **Lower row height**: Displays more rows at once.
+      * **Lower row height**: Displays more rows at once.
 
-   * **Higher row height**: Provides more spacing between rows for easier readability.
+      * **Higher row height**: Provides more spacing between rows for easier readability.
 
 Custom settings affect the presentation of the report and don't change the underlying report data.
 
@@ -133,12 +109,9 @@ This allows DTMF activity and associated charges to be reviewed at different lev
 
 ## Refreshing the Report
 
-Click ****Refresh**** after changing the customer selection or date range to ensure the report reflects the current selections.
+Click **Refresh** after changing the customer selection or date range to ensure the report reflects the current selections.
 
 !!! info "Refreshing the DTMF Report"
-
-    ```
-    Remember to click **\*\*Refresh\*\*** each time parameters change to ensure you see the most recent selections onscreen.
+    Remember to click *Refresh* each time parameters change to ensure you see the most recent selections onscreen.
 
     When refreshing the list, use the **Report Refresh** button rather than the browser refresh button.
-    ```

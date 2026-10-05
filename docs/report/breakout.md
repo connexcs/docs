@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / Breakout Report<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with customer and provider data, call metrics, and basic CDR concepts.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/report/">Reports</a>, <a href="https://docs.connexcs.com/developers/analytics/">Analytics</a><br> <strong>Next Steps</strong>: Navigate to the Breakout report, select the required customers, providers, and date range, apply filters, refresh the report, and use Columns or Pivot Mode to customize the report view and analyze the data.<br>
+<strong>Category</strong>: Reporting & Analytics / Breakout Report<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with customer and provider data, call metrics, and basic CDR concepts.<br> <strong>Related Topics</strong>: <a href="/report/report/">Reports</a><br> <strong>Next Steps</strong>: Navigate to the Breakout report, select the required customers, providers, and date range, apply filters, refresh the report, and use Columns or Pivot Mode to customize the report view and analyze the data.<br>
 
 </details>
 
@@ -10,7 +10,9 @@
 
 ## Overview
 
-The **Breakout** report provides a consolidated view of customer call activity and associated billing and performance metrics. It uses processed Call Detail Record (CDR) data to present information such as call attempts, connected calls, duration, customer cost, provider cost, Average Call Duration (ACD), Answer-Seizure Ratio (ASR), profit, and profit margin.
+The **Breakout** report provides a consolidated view of customer call activity and associated billing and performance metrics. 
+
+It uses processed Call Detail Record (CDR) data to present information such as call attempts, connected calls, duration, customer cost, provider cost, Average Call Duration (ACD), Answer-Seizure Ratio (ASR), profit, and profit margin.
 
 The report can be filtered by customers, providers, and date range. Data can also be grouped and customized to provide different levels of detail for analysis.
 
@@ -55,7 +57,7 @@ Select a field in the **Filters** panel and choose the required filter condition
 
     * **Equals `10`** — shows records with exactly 10 attempts.
     * **Greater than `10`** — shows records with more than 10 attempts.
-    * **Less than or equal to `10
+    * **Less than or equal to `10`** — shows records with less than 10 attempts.
 
 ### Custom Settings
 
@@ -65,8 +67,8 @@ The **Custom Settings** panel provides options for adjusting the appearance and 
 
 2. **Row Height**: The **Row Height** setting controls the vertical spacing of rows in the report grid. Use the slider to increase or decrease the amount of information displayed vertically on the screen.
 
-* **Lower row height**: Displays more rows at once.
-* **Higher row height**: Provides more spacing between rows for easier readability.
+   * **Lower row height**: Displays more rows at once.
+   * **Higher row height**: Provides more spacing between rows for easier readability.
 
 Custom settings affect the presentation of the report and do not change the underlying report data.
 

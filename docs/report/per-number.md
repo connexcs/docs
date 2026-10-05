@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / Per Number Report<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Support Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with telephone numbers, CLI, destination numbers, SIP response codes, and basic call metrics.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/report/">Reports</a>, <a href="https://docs.connexcs.com/report/#breakout">Breakout Report</a><br> <strong>Next Steps</strong>: Navigate to the Per Number report, select <strong>Destination</strong> or <strong>CLI</strong>, specify the required customer and date range, select or search for the number, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to refine the displayed call information.<br>
+<strong>Category</strong>: Reporting & Analytics / Per Number Report<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Support Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with telephone numbers, CLI, destination numbers, SIP response codes, and basic call metrics.<br> <strong>Related Topics</strong>: <a href="/report/report/">Reports</a>, <a href="/report/breakout/">Breakout Report</a><br> <strong>Next Steps</strong>: Navigate to the Per Number report, select <strong>Destination</strong> or <strong>CLI</strong>, specify the required customer and date range, select or search for the number, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to refine the displayed call information.<br>
 
 </details>
 
@@ -24,8 +24,8 @@ Select a number and define the required date range to generate a list of calls a
 2. Select the required **date and time range**.
 3. Select the required search type:
 
-   * **Destination**: Select this option to search for calls associated with a specific destination number. The **Destination Number** field is displayed.
-   * **CLI**: Select this option to search for calls associated with a specific Calling Line Identification (CLI). The **CLI** field is displayed.
+      * **Destination**: Select this option to search for calls associated with a specific destination number. The **Destination Number** field is displayed.
+      * **CLI**: Select this option to search for calls associated with a specific Calling Line Identification (CLI). The **CLI** field is displayed.
 4. Select the required **Customer**.
 5. Enter or select the number to investigate.
 6. Review the resulting call records and associated metrics. <br><img src="/reports/img/pernumber.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -55,33 +55,13 @@ The **Columns** panel allows you to select which fields are displayed in the rep
 | **CLI** | Calling Line Identification (CLI), representing the originating or calling telephone number associated with the call. This column is applicable when **CLI** is selected|
 | **Destination Number** | The telephone number that was called or the destination associated with the call. This column is applicable when **Destination** is selected|
 
-> **Note:** The number field displayed in the report depends on the selected search type. **CLI** is displayed when **CLI** is selected, while **Destination Number** is displayed when **Destination** is selected|
+> **Note:** The number field displayed in the report depends on the selected search type. **CLI** is displayed when **CLI** is selected, while **Destination Number** is displayed when **Destination** is selected.
 
 ### Filters
 
 The **Filters** panel allows you to refine the data displayed in the Breakout report by applying conditions to individual fields. Filters can be applied to fields such as **Provider**, **Customer Destination Name**, **Provider Destination Name**, **Attempts**, and other available report columns.
 
 Select a field in the **Filters** panel and choose the required filter condition. The available conditions depend on the type of data in the selected field.
-
-#### Filter Conditions
-
-| Condition                    | Description                                                                       |
-| ---------------------------- | --------------------------------------------------------------------------------- |
-| **Equals**                   | Displays only records where the field exactly matches the specified value.        |
-| **Does not equal**           | Excludes records where the field matches the specified value.                     |
-| **Less than**                | Displays records where the value is lower than the specified value.               |
-| **Less than or equal to**    | Displays records where the value is less than or equal to the specified value.    |
-| **Greater than**             | Displays records where the value is higher than the specified value.              |
-| **Greater than or equal to** | Displays records where the value is greater than or equal to the specified value. |
-| **Between**                  | Displays records where the value falls within the specified range.                |
-
-!!! Example "Example"
-
-    For the **Attempts** field:
-
-    * **Equals `10`** — shows records with exactly 10 attempts.
-    * **Greater than `10`** — shows records with more than 10 attempts.
-    * **Less than or equal to `10
 
 ### Custom Settings
 
@@ -91,10 +71,10 @@ The **Custom Settings** panel provides options for adjusting the appearance and 
 
 2. **Row Height**: The **Row Height** setting controls the vertical spacing of rows in the report grid. Use the slider to increase or decrease the amount of information displayed vertically on the screen.
 
-* **Lower row height**: Displays more rows at once.
-* **Higher row height**: Provides more spacing between rows for easier readability.
+   * **Lower row height**: Displays more rows at once.
+   * **Higher row height**: Provides more spacing between rows for easier readability.
 
-Custom settings affect the presentation of the report and do not change the underlying report data.
+Custom settings affect the presentation of the report and don't change the underlying report data.
 
 ## Use Cases
 

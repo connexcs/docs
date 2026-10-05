@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / USA Rate Center<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with US telephone prefixes, rate centers, customer charges, provider charges, and call volume.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/report/">Reports</a>, <a href="https://docs.connexcs.com/report/#breakout">Breakout Report</a>, Rate Card Management<br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: USA Rate Center</strong>, select the required date range, review rate-center activity, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to refine the displayed results.<br>
+<strong>Category</strong>: Reporting & Analytics / USA Rate Center<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with US telephone prefixes, rate centers, customer charges, provider charges, and call volume.<br> <strong>Related Topics</strong>: <a href="/report/report/">Reports</a>, <a href="/report/breakout/">Breakout Report</a>, Rate Card Management<br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: USA Rate Center</strong>, select the required date range, review rate-center activity, and use the <strong>Columns</strong> and <strong>Filters</strong> panels to refine the displayed results.<br>
 
 </details>
 
@@ -10,11 +10,11 @@
 
 ## Overview
 
-In the United States, different states and regions can have varying call rates. The ****USA Rate Center**** report provides insights into the volume of calls associated with each rate center.
+In the United States, different states and regions can have varying call rates. The **USA Rate Center** report provides insights into the volume of calls associated with each rate center.
 
 A **rate center** represents a specific geographic region used for telecommunications billing and routing purposes.
 
-The report provides information about the telephone ****Prefix****, associated ****Rate Center****, customer charges, provider charges, and call volume.
+The report provides information about the telephone **Prefix**, associated **Rate Center**, customer charges, provider charges, and call volume.
 
 ## Using the USA Rate Center Report
 
@@ -56,32 +56,6 @@ Filters can be applied to available report fields, including:
 * **Total Provider Charge**
 * **Total Calls**
 
-Select a field in the ****Filters**** panel and choose the required filter condition.
-
-### Filter Conditions
-
-| Condition                    | Description                                                                       |
-| -----------------------------| --------------------------------------------------------------------------------- |
-| **Equals**                   | Displays only records where the field exactly matches the specified value.        |
-| **Does not equal**           | Excludes records where the field matches the specified value.                     |
-| **Less than**                | Displays records where the value is lower than the specified value.               |
-| **Less than or equal to**    | Displays records where the value is less than or equal to the specified value.    |
-| **Greater than**             | Displays records where the value is higher than the specified value.              |
-| **Greater than or equal to** | Displays records where the value is greater than or equal to the specified value. |
-| **Between**                  | Displays records where the value falls within the specified range.                |
-
-!!! Example "Example"
-
-    ```
-    For the **\*\*Total Calls\*\*** field:
-
-    * **\*\*Equals \`10\`\*\*** — shows records with exactly 10 calls.
-
-    * **\*\*Greater than \`10\`\*\*** — shows records with more than 10 calls.
-
-    * **\*\*Less than or equal to \`10\`\*\*** — shows records with 10 or fewer calls.
-    ```
-
 ## Custom Settings
 
 The **Custom Settings** panel provides options for adjusting the appearance and presentation of the USA Rate Center report.
@@ -90,9 +64,9 @@ The **Custom Settings** panel provides options for adjusting the appearance and 
 
 2. **Row Height**: The **Row Height** setting controls the vertical spacing of rows in the report grid.
 
-   * **Lower row height**: Displays more rows at once.
+      * **Lower row height**: Displays more rows at once.
 
-   * **Higher row height**: Provides more spacing between rows for easier readability.
+      * **Higher row height**: Provides more spacing between rows for easier readability.
 
 Custom settings affect the presentation of the report and do not change the underlying report data.
 
@@ -101,12 +75,8 @@ Custom settings affect the presentation of the report and do not change the unde
 Click **Refresh** after changing the date range or other report parameters to ensure the report reflects the current selections.
 
 !!! info "Refreshing the USA Rate Center Report"
-
-    ```
-    Remember to click **\*\*Refresh\*\*** each time parameters change to ensure you see the most recent selections onscreen.
-
+    Remember to click *Refresh* each time parameters change to ensure you see the most recent selections onscreen.
     When refreshing the report, use the **Report Refresh** button rather than the browser refresh button.
-    ```
 
 ## Use Cases
 

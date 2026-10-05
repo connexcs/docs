@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Reporting & Analytics / Scheduled Reports<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Support Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with Breakout reports, customers, providers, report columns, and basic reporting concepts.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/report/">Reports</a>, <a href="https://docs.connexcs.com/report/#breakout">Breakout Report</a><br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: Schedule Report</strong>, create a schedule using the required frequency, customers, providers, grouping, and columns, and click <strong>Save</strong> to automate recurring Breakout Report delivery.<br>
+<strong>Category</strong>: Reporting & Analytics / Scheduled Reports<br> <strong>Audience</strong>: Administrators, Billing Teams, Operations Teams, Support Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with Reports access; familiarity with Breakout reports, customers, providers, report columns, and basic reporting concepts.<br> <strong>Related Topics</strong>: <a href="/report/report/">Reports</a>, <a href="/report/breakout/">Breakout Report</a><br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: Schedule Report</strong>, create a schedule using the required frequency, customers, providers, grouping, and columns, and click <strong>Save</strong> to automate recurring Breakout Report delivery.<br>
 
 </details>
 
@@ -20,27 +20,27 @@ Scheduled reports are useful for recurring reporting requirements and ensure tha
 
 1. Navigate to **Reports :material-menu-right: Schedule Report**.
 
-2. Click the blue **+** button to create a new report schedule.
+2. Click the blue `+` button to create a new report schedule.
 
 3. The **Schedule Report** window opens.
 
 4. Enter the required information:
 
-   * **Name**: Enter a name for the report schedule.
+      * **Name**: Enter a name for the report schedule.
 
-   * **Email**: Specify the email address that should receive the scheduled report.
+      * **Email**: Specify the email address that should receive the scheduled report.
 
-   * **Frequency**: Select how often the report should be generated. Available options include **Daily**, **Weekly**, and **Monthly**.
+      * **Frequency**: Select how often the report should be generated. Available options include **Daily**, **Weekly**, and **Monthly**.
 
-   * **Group**: Select one or more fields by which the report data should be grouped.
+      * **Group**: Select one or more fields by which the report data should be grouped.
 
-   * **Customers**: Select one or more customers. Leave this field blank to include all customers.
+      * **Customers**: Select one or more customers. Leave this field blank to include all customers.
 
-   * **Providers**: Select one or more providers. Leave this field blank to include all providers.
+      * **Providers**: Select one or more providers. Leave this field blank to include all providers.
 
-   * **Columns****: Select the columns and metrics to include in the scheduled report.
+      * **Columns**: Select the columns and metrics to include in the scheduled report.
 
-5. Click ****Save**** to create the schedule.
+5. Click **Save** to create the schedule.
 
 6. The created reports will be available in the list.
 

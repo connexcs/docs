@@ -143,7 +143,7 @@ nav:
         - Per Number: report/per-number.md
         - DTMF: report/dtmf.md
         - Schedule Report: report/schedule-report.md
-        - CDR Heuristics: report/cdr-heuristics.md.
+        - CDR Heuristics: report/cdr-heuristics.md
         - ASR per CLI: report/asr-per-cli.md
         - SIP Response Breakdown: report/sip-response-breakdown.md
         - USA Rate Center: report/usa-rate-center.md
