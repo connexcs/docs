@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Payments<br> <strong>Audience</strong>: Administrators, Billing Teams, Finance Teams, Operations Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Customers, Companies, payments, and billing information.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/payment">Payment</a>, Invoices, Global, Customer Management<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: Payment</strong>, review payments across the account, create or update payment records where required, and use the available Columns, Filters, and Custom Settings options to manage the payment view.<br>
+<strong>Category</strong>: Global / Payments<br> <strong>Audience</strong>: Administrators, Billing Teams, Finance Teams, Operations Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Customers, Companies, payments, and billing information.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/payment">Payment</a>, <a href="/customer/invoices">Invoices</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>,<br> <strong>Next Steps</strong>: Navigate to <strong>Global > Payment</strong>, review payments across the account, create or update payment records where required, and use the available Columns, Filters, and Custom Settings options to manage the payment view.<br>
 
 </details>
 
@@ -59,12 +59,12 @@ The **Custom Settings** panel allows you to customize the appearance of the IP A
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each IP Authentication record.
 
-   * **Lower row height** — Displays more records within the available screen space.
-   * **Higher row height** — Provides more spacing between records for easier reading.
+      * **Lower row height** — Displays more records within the available screen space.
+      * **Higher row height** — Provides more spacing between records for easier reading.
 
 These settings affect only the presentation of the IP Authentication list and do not change the underlying authentication configuration.
 
-<img src="/misc/img/globalpayment.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/misc/img/globalpaymen.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Payment Actions
 

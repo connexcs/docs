@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Dialogs<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers, Support Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with active calls and call routing.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/dialogs">Dialogs</a>, Global, Customer Management, Routing<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: Dialog</strong>, review active calls across the account, use the available columns and filters to locate specific calls, and monitor their current state.<br>
+<strong>Category</strong>: Global / Dialogs<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers, Support Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with active calls and call routing.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/dialogs">Dialogs</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a> <a href="/customer/routing">Routing</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global > Dialog</strong>, review active calls across the account, use the available columns and filters to locate specific calls, and monitor their current state.<br>
 
 </details>
 

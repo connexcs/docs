@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Alerts<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Alerts and customer or carrier account configuration.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/alerts">Alerts</a>, Global, Customer Management, Carrier Management<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: Alert</strong>, review account-wide Alerts, create or modify an Alert, select the Company that will use the Alert, and use the <strong>Test</strong> option to simulate it.<br>
+<strong>Category</strong>: Global / Alerts<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Alerts and customer or carrier account configuration.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/alerts">Alerts</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: Alert</strong>, review account-wide Alerts, create or modify an Alert, select the Company that will use the Alert, and use the <strong>Test</strong> option to simulate it.<br>
 
 </details>
 
@@ -62,7 +62,7 @@ The Global Alerts page provides controls for managing Alerts, including:
 
 To work with multiple Alerts, select the required Alerts using the checkboxes in the first column.
 
-<img src="/misc/img/globalcli.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/misc/img/globalcli.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Creating an Alert
 
@@ -106,8 +106,8 @@ The **Custom Settings** panel allows you to adjust the appearance of the Alert t
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each Alert row.
 
-* **Lower row height** — Displays more Alerts within the available screen space.
-* **Higher row height** — Provides more spacing between Alerts for easier reading.
+      * **Lower row height** — Displays more Alerts within the available screen space.
+      * **Higher row height** — Provides more spacing between Alerts for easier reading.
 
 These settings change how the Alert list is displayed without changing the underlying Alert configuration or data.
 

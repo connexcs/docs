@@ -2,8 +2,17 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / SIP Registration<br> <strong>Audience</strong>: Administrators, Operations Teams, Network Engineers, Support Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with SIP registration and SIP users.<br> <strong>Related Topics</strong>: SIP Registration, SIP User Authentication, Global, SIP Configuration<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: SIP Registration</strong> and review the current inbound and outbound SIP registrations.<br>
-
+<strong>Category</strong>: Global / SIP Registration<br>
+<strong>Audience</strong>: Administrators, Operations Teams, Network Engineers, Support Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with SIP registration and SIP users.<br>
+<strong>Related Topics</strong>: 
+<a href="/customer/auth/#sip-user-authentication">SIP User Authentication</a>,
+<a href="/customer/auth/">Authentication</a>,
+<a href="/setup/config/sip-profile/">SIP Profile</a>,
+<a href="/customer-portal/cp-user-reg/">User Registration</a><br>
+<strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: SIP Registration</strong> and review the current inbound and outbound SIP registrations.<br>
 </details>
 
 **Global :material-menu-right: SIP Registrations**
@@ -17,7 +26,7 @@ It provides two registration views:
 * **Inbound Registrations** — Displays active registrations of desk phones or SIP users into ConnexCS.
 * **Outbound Registrations** — Displays active registrations from ConnexCS to external SIP endpoints.
 
-!!! note "**SIP Registration has no supplementary documentation or configuration options.** This section is intended for viewing the current registration state.:
+!!! note "**SIP Registration has no supplementary documentation or configuration options.** This section is intended for viewing the current registration state."
 
 ## Inbound Registrations
 
@@ -115,8 +124,8 @@ The **Custom Settings** panel allows you to customize the appearance of the IP A
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each IP Authentication record.
 
-   * **Lower row height** — Displays more records within the available screen space.
-   * **Higher row height** — Provides more spacing between records for easier reading.
+      * **Lower row height** — Displays more records within the available screen space.
+      * **Higher row height** — Provides more spacing between records for easier reading.
 
 These settings affect only the presentation of the IP Authentication list and do not change the underlying authentication configuration.
 

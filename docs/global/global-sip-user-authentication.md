@@ -2,7 +2,13 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / SIP User Authentication<br> <strong>Audience</strong>: Administrators, Operations Teams, Network Engineers, Support Teams<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with SIP users and SIP authentication.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/auth/#sip-user-authentication">SIP User Authentication</a>, SIP Registration, SIP Configuration, Global<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: SIP User Authentication</strong> to review SIP users, manage SIP passwords, send messages, and access available user-management features.<br>
+<strong>Category</strong>: Global / SIP User Authentication<br>
+<strong>Audience</strong>: Administrators, Operations Teams, Network Engineers, Support Teams<br>
+<strong>Difficulty</strong>: Intermediate<br>
+<strong>Time Required</strong>: Approximately 15–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with SIP users and SIP authentication.<br>
+<strong>Related Topics</strong>: <a href="/customer/auth/#sip-user-authentication">SIP User Authentication</a>, <a href="/global/">SIP Registration / Global</a>, <a href="/setup/config/sip-profile/">SIP Profile</a>, <a href="/customer-portal/cp-user-reg/">User Registration</a><br>
+<strong>Next Steps</strong>: Navigate to <strong>Global . SIP User Authentication</strong> to review SIP users, manage SIP passwords, send messages, and access available user-management features.<br>
 
 </details>
 
@@ -118,8 +124,8 @@ The **Custom Settings** panel allows you to customize the appearance of the IP A
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each IP Authentication record.
 
-   * **Lower row height** — Displays more records within the available screen space.
-   * **Higher row height** — Provides more spacing between records for easier reading.
+      * **Lower row height** — Displays more records within the available screen space.
+      * **Higher row height** — Provides more spacing between records for easier reading.
 
 These settings affect only the presentation of the IP Authentication list and do not change the underlying authentication configuration.
 

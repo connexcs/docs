@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Contacts<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Customer and Carrier account management.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts</a>, Global, Customer Management, Carrier Management<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: Contacts</strong>, review contacts across the account, and select the Company when creating a new Contact.<br>
+<strong>Category</strong>: Global / Contacts<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Customer and Carrier account management.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts</a>, <a href="/global/">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: Contacts</strong>, review contacts across the account, and select the Company when creating a new Contact.<br>
 
 </details>
 
@@ -92,8 +92,8 @@ The **Custom Settings** panel allows you to adjust the appearance of the Contact
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each Contact row.
 
-* **Lower row height** — Displays more Contacts within the available screen space.
-* **Higher row height** — Provides more spacing between Contacts for easier reading.
+      * **Lower row height** — Displays more Contacts within the available screen space.
+      * **Higher row height** — Provides more spacing between Contacts for easier reading.
 
 These settings change the presentation of the Contacts list without changing the underlying Contact information.
 

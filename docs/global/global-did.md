@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Direct Inward Dial (DID)<br> <strong>Audience</strong>: Administrators, Operations Teams, Telecom Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with DIDs, Customers, Providers, and telephone number management.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/did">DID</a>, <a href="https://docs.connexcs.com/developers/scriptforge/">ScriptForge</a>, Global, Customer Management, Carrier Management<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: DID</strong>, review DID assignments and inventory, manage available numbers, and use the available Columns, Filters, and Custom Settings options.<br>
+<strong>Category</strong>: Global / Direct Inward Dial (DID)<br> <strong>Audience</strong>: Administrators, Operations Teams, Telecom Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with DIDs, Customers, Providers, and telephone number management.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/did">DID</a>, <a href="/apps/architecture/scriptforge/">ScriptForge</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global > DID</strong>, review DID assignments and inventory, manage available numbers, and use the available Columns, Filters, and Custom Settings options.<br>
 
 </details>
 
@@ -18,7 +18,7 @@ The Global DID section provides the following views:
 
 * **Assigned** — Numbers currently assigned to accounts.
 * **Inventory** — Unassigned numbers available in the inventory.
-* **Provision** — Uses ConnexCS [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/) Drivers to interface with DID provider APIs so that new numbers can be assigned.
+* **Provision** — Uses ConnexCS [**ScriptForge**](/apps/architecture/scriptforge/) Drivers to interface with DID provider APIs so that new numbers can be assigned.
 * **Providers List** — Lists DIDs together with their associated Providers.
 
 ## DID Views
@@ -144,4 +144,4 @@ The Global DID view provides centralized access to DID information across the ac
     *See [**DID**](https://docs.connexcs.com/customer/did) for configuration details, including Bulk Upload.*
 
 !!! info "DID Provisioning"
-    For information about using [**ScriptForge**](https://docs.connexcs.com/developers/scriptforge/).
+    For information about using [**ScriptForge**](/apps/architecture/scriptforge/).

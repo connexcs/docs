@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Routing<br> <strong>Audience</strong>: Administrators, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with routing, Customer Cards, Provider Cards, Channels, and CPS.<br> <strong>Related Topics</strong>: <a href="/routing">Routing Overview</a>, <a href="/rate-card-building">Rate Card Overview</a>, Global, Customer Management<br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: Routing</strong>, review configured routes and account-wide routing activity, and use the available views to analyze routing information.<br>
+<strong>Category</strong>: Global / Routing<br> <strong>Audience</strong>: Administrators, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with routing, Customer Cards, Provider Cards, Channels, and CPS.<br> <strong>Related Topics</strong>: <a href="/routing">Routing Overview</a>, <a href="/rate-card-building">Rate Card Overview</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>,<br> <strong>Next Steps</strong>: Navigate to <strong>Global > Routing</strong>, review configured routes and account-wide routing activity, and use the available views to analyze routing information.<br>
 
 </details>
 
@@ -83,8 +83,8 @@ You can use the available settings to adjust how Routing information is presente
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each Routing record.
 
-   * **Lower row height** — Displays more Routing records within the available screen space.
-   * **Higher row height** — Provides more spacing between records for easier reading.
+      * **Lower row height** — Displays more Routing records within the available screen space.
+      * **Higher row height** — Provides more spacing between records for easier reading.
 
 ## Use Cases
 
