@@ -31,10 +31,15 @@ To generate the report:
 
       * **State**
       * **LATA**
+
 3. Select the required **Customers** from the customer selector.
+
 4. Select the required **Providers** from the provider selector.
+
 5. Use the **date selector** to specify the reporting period.
+
 6. Review the call counts, connected calls, durations, and billing information in the report.
+
 7. Use the **Columns**, **Filters**, and **Custom Settings** panels to adjust the report presentation.
 
 <img src="/reports/img/usa-calls.png" style="border: 2px solid #4472C4; border-radius: 8px;">
