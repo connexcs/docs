@@ -138,18 +138,18 @@ nav:
         - Status: system-status.md
 
     - Report: 
-        - Introduction: report.md
-        - Breakout: breakout.md
-        - Per Number: per-number.md
-        - DTMF: dtmf.md
-        - Schedule Report: schedule-report.md
-        - CDR Heuristics: cdr-heuristics.md.
-        - ASR per CLI: asr-per-cli.md
-        - SIP Response Breakdown: sip-response-breakdown.md
-        - USA Rate Center: usa-rate-center.md
-        - Carrier Win Rate: carrier-win-rate.md
-        - USA Calls: usa-calls.md
-        - Rate Card Analytics: rate-card-analytics.md
+        - Introduction: report/report.md
+        - Breakout: report/breakout.md
+        - Per Number: report/per-number.md
+        - DTMF: report/dtmf.md
+        - Schedule Report: report/schedule-report.md
+        - CDR Heuristics: report/cdr-heuristics.md.
+        - ASR per CLI: report/asr-per-cli.md
+        - SIP Response Breakdown: report/sip-response-breakdown.md
+        - USA Rate Center: report/usa-rate-center.md
+        - Carrier Win Rate: report/carrier-win-rate.md
+        - USA Calls: report/usa-calls.md
+        - Rate Card Analytics: report/rate-card-analytics.md
 
     - Global:
         - Global: global.md
