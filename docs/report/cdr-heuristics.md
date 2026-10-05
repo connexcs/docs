@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Analytics & Reporting / CDR Heuristics<br> <strong>Audience</strong>: Administrators, Engineers, Routing Teams, Network Operations<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 30–60 minutes for initial configuration and review; ongoing use for continuous monitoring<br> <strong>Prerequisites</strong>: Active ConnexCS account with CDR data available for analysis; familiarity with ASR, ACD, NER, PDD, FAS, carrier routing, and Least Cost Routing (LCR) concepts.<br> <strong>Related Topics</strong>: CDR, Reports, Carrier Management, Routing Strategy<br> <strong>Next Steps</strong>: Navigate to <strong>Reports :material-menu-right: CDR Heuristics</strong>, select the required report type, specify the date range and provider, generate the report, and review the resulting findings.<br>
+<strong>Category</strong>: Analytics & Reporting / CDR Heuristics<br> <strong>Audience</strong>: Administrators, Engineers, Routing Teams, Network Operations<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 30–60 minutes for initial configuration and review; ongoing use for continuous monitoring<br> <strong>Prerequisites</strong>: Active ConnexCS account with CDR data available for analysis; familiarity with ASR, ACD, NER, PDD, FAS, carrier routing, and Least Cost Routing (LCR) concepts.<br> <strong>Related Topics</strong>: CDR, Reports, Carrier Management, Routing Strategy<br> <strong>Next Steps</strong>: Navigate to <strong>Reports > CDR Heuristics</strong>, select the required report type, specify the date range and provider, generate the report, and review the resulting findings.<br>
 
 </details>
 
@@ -35,7 +35,7 @@ The available report types are:
 
 <img src="/reports/img/cdrheuristics.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-<img src="/reports/img/cdrheu1.png" style="border: 2px solid #4472C4; border-radius: 8px
+<img src="/reports/img/cdrheu1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 > **Note:** The available results and analysis depend on the selected report type and the CDR data available for the selected period and provider.
 

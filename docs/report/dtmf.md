@@ -89,9 +89,9 @@ Select a field in the **Filters** panel and choose the required filter condition
 
 The **Custom Settings** panel provides options for adjusting the appearance and presentation of the DTMF report.
 
-1. **Theme**: The ****Theme**** setting allows you to select the visual theme used for the report interface. Select a theme from the available options to change the appearance of the report grid.
+1. **Theme**: The **Theme** setting allows you to select the visual theme used for the report interface. Select a theme from the available options to change the appearance of the report grid.
 
-2. **Row Height**: The ****Row Height**** setting controls the vertical spacing of rows in the report grid. Use the slider to increase or decrease the amount of information displayed vertically on the screen.
+2. **Row Height**: The **Row Height** setting controls the vertical spacing of rows in the report grid. Use the slider to increase or decrease the amount of information displayed vertically on the screen.
 
       * **Lower row height**: Displays more rows at once.
 

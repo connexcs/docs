@@ -67,8 +67,8 @@ The **Custom Settings** panel provides options for adjusting the appearance and 
 
 2. **Row Height**: The **Row Height** setting controls the vertical spacing of rows in the report grid. Use the slider to increase or decrease the amount of information displayed vertically on the screen.
 
-   * **Lower row height**: Displays more rows at once.
-   * **Higher row height**: Provides more spacing between rows for easier readability.
+      * **Lower row height**: Displays more rows at once.
+      * **Higher row height**: Provides more spacing between rows for easier readability.
 
 Custom settings affect the presentation of the report and do not change the underlying report data.
 
