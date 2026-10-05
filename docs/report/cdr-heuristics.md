@@ -33,8 +33,6 @@ The available report types are:
 5. Click **Generate Report**.
 6. Review the generated results for the selected report type.
 
-<img src="/reports/img/cdrheuristics.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
 <img src="/reports/img/cdrheu1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 > **Note:** The available results and analysis depend on the selected report type and the CDR data available for the selected period and provider.

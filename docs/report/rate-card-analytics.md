@@ -6,6 +6,8 @@
 
 </details>`
 
+**Report :material-menu-right: Rate Card Analytics**
+
 ## Overview
 
 The **Rate Card Analytics** report provides analytics for a selected rate card. It helps users review how a rate card is being used across customers, understand traffic patterns over time, and examine associated billing information.
