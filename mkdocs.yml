@@ -140,7 +140,7 @@ nav:
         - Status: system-status.md  
 
     - Global:
-        - Overview: globalglobal.md
+        - Overview: global.md
         - Alert: global/global-alert.md
         - Alias: global/global-alias.md
         - Contacts: global/global-contact.md

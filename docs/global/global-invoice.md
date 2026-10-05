@@ -16,6 +16,8 @@ It allows administrators and billing teams to review invoice information and acc
 
 The Global Invoice view provides basic invoice information such as the invoice ID, Customer name, invoice date, total amount, payment status, and associated invoice payments.
 
+<img src="/misc/img/global-invoice.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
 ## Invoice Fields
 
 | Field               | Description                                                                        |
@@ -27,7 +29,7 @@ The Global Invoice view provides basic invoice information such as the invoice I
 | **Paid**            | Indicates the payment information or status recorded against the invoice.          |
 | **Invoice Payment** | Provides access to payments associated with the invoice through **View Payments**. |
 
-<img src="/misc/img/globalinvoice.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/misc/img/globalinvoicepng.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Invoice Payment
 

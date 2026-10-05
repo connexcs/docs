@@ -12,7 +12,7 @@
 <a href="/customer/auth/">Authentication</a>,
 <a href="/setup/config/sip-profile/">SIP Profile</a>,
 <a href="/customer-portal/cp-user-reg/">User Registration</a><br>
-<strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: SIP Registration</strong> and review the current inbound and outbound SIP registrations.<br>
+<strong>Next Steps</strong>: Navigate to <strong> Global > SIP Registration</strong> and review the current inbound and outbound SIP registrations.<br>
 </details>
 
 **Global :material-menu-right: SIP Registrations**

@@ -50,8 +50,8 @@ The **Custom Settings** panel allows you to customize the appearance of the IP A
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each IP Authentication record.
 
-   * **Lower row height** — Displays more records within the available screen space.
-   * **Higher row height** — Provides more spacing between records for easier reading.
+      * **Lower row height** — Displays more records within the available screen space.
+      * **Higher row height** — Provides more spacing between records for easier reading.
 
 These settings affect only the presentation of the IP Authentication list and do not change the underlying authentication configuration.
 

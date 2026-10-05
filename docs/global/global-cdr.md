@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Call Detail Records<br> <strong>Audience</strong>: Administrators, Operations Teams, Billing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Call Detail Records (CDRs).<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/cdr">CDR</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global :material-menu-right: CDR</strong>, review CDRs across Customers, and select specific CDRs for recalculation when required.<br>
+<strong>Category</strong>: Global / Call Detail Records<br> <strong>Audience</strong>: Administrators, Operations Teams, Billing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Call Detail Records (CDRs).<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/cdr">CDR</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global > CDR</strong>, review CDRs across Customers, and select specific CDRs for recalculation when required.<br>
 
 </details>
 
@@ -174,4 +174,4 @@ The Global CDR section can be used to:
 * Support operational and billing investigations involving specific CDRs.
 
 !!! info "More Information"
-    For more information about **CDRs**, including configuration details, see the [Customer CDRs](https://docs.connexcs.com/customer/cdr/)
+    For more information about **CDRs**, including configuration details, see the [Customer CDRs](https://docs.connexcs.com/customer/cdr/).

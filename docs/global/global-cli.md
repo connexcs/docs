@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Caller Line Identification (CLI)<br> <strong>Audience</strong>: Administrators, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with CLI, routing rules, Customer accounts, and SIP calling concepts.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/cli/#cli-routing-rules">CLI</a>, <a href="/routing">Routing Overview</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a>,<br> <strong>Next Steps</strong>: Navigate to <strong>Global > CLI</strong>, review CLIs across Customers, configure CLI rules when required, and use the available Columns, Filters, and Custom Settings options to manage the view.<br>
+<strong>Category</strong>: Global / Caller Line Identification (CLI)<br> <strong>Audience</strong>: Administrators, Operations Teams, Routing Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate to Advanced<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with CLI, routing rules, Customer accounts, and SIP calling concepts.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/cli/#cli-routing-rules">CLI</a>, <a href="/routing">Routing Overview</a>, <a href="/global/global">Global</a>, <a href="/customer/customer">Customer Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global > CLI</strong>, review CLIs across Customers, configure CLI rules when required, and use the available Columns, Filters, and Custom Settings options to manage the view.<br>
 
 </details>
 
@@ -31,7 +31,7 @@ The Global CLI table provides the following fields:
 | **Forced**       | Indicates whether the CLI is configured as a **Forced** CLI. A Forced CLI can be used when no other matching CLI rule is found|
 | **Allow Type**   | Defines the allowed CLI type, such as Mobile, Paging, VoIP, or Satellite|
 
-<img src="/misc/img/globalcli1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/misc/img/globalcli1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Creating a CLI Record
 
@@ -229,8 +229,8 @@ The **Custom Settings** panel allows you to customize the appearance of the Glob
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each CLI record.
 
-   * **Lower row height** — Displays more CLI records within the available screen space.
-   * **Higher row height** — Provides more spacing between records for easier reading.
+      * **Lower row height** — Displays more CLI records within the available screen space.
+      * **Higher row height** — Provides more spacing between records for easier reading.
 
 ## Use Cases
 
@@ -261,4 +261,3 @@ The Global CLI view provides centralized access to CLI records, while the Custom
 
 !!! info "More Information"
     *See [**CLI**](https://docs.connexcs.com/customer/cli/#cli-routing-rules) for more details.*
-
