@@ -139,7 +139,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).
     
-        <img src="/customer/img/basic12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src="/customer/img/basic12.png" width "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 

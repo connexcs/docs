@@ -243,7 +243,7 @@ Create advanced filters using any fields of the record. Select either Originatio
 * Select **Add Rule** to select extra fields and parameters to include in the custom query.
 * Use **Add Group** to group sets of queries into a series of groups, creating complex, compound, and multi-vector queries.
 
-    <img src= "/customer/img/querybuilder1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src= "/customer/img/querybuilder1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 !!! warning "Using Query Builder with large amounts of data"
     It's recommended not to run detailed and complex queries on large amounts of data. It's better to write more compact and pared down queries to retrieve this data.

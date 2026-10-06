@@ -63,7 +63,7 @@ Since the threshold represents the most numeric traits related to VoIP, it can f
 
 To add a customized alert, click :material-plus:.
 
-<img src= "/customer/img/customeralert.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/customeralert.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Field details:
 
@@ -121,7 +121,7 @@ The Global Alerts page provides controls for managing Alerts, including:
 
 To work with multiple Alerts, select the required Alerts using the checkboxes in the first column.
 
-<img src= "/customer/img/customeralert.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/customeralert.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Tags Alert
 

@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 15–30 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with SIP users and SIP authentication.<br>
-<strong>Related Topics</strong>: <a href="/customer/auth/#sip-user-authentication">SIP User Authentication</a>, <a href="/global/">SIP Registration / Global</a>, <a href="/setup/config/sip-profile/">SIP Profile</a>, <a href="/customer-portal/cp-user-reg/">User Registration</a><br>
+<strong>Related Topics</strong>: <a href="/customer/auth/#sip-user-authentication">SIP User Authentication</a>, <a href="/global/global/">SIP Registration / Global</a>, <a href="/setup/config/sip-profile/">SIP Profile</a>, <a href="/customer-portal/cp-user-reg/">User Registration</a><br>
 <strong>Next Steps</strong>: Navigate to <strong>Global . SIP User Authentication</strong> to review SIP users, manage SIP passwords, send messages, and access available user-management features.<br>
 
 </details>
@@ -115,8 +115,6 @@ The **Filters** panel allows you to narrow the displayed SIP Registration record
 !!! note "The exact filter conditions available depend on the type of field being filtered."
 
 ## Custom Settings
-
-### Custom Settings
 
 The **Custom Settings** panel allows you to customize the appearance of the IP Authentication table.
 

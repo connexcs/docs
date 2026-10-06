@@ -1,7 +1,5 @@
 # Transcription
 
-**Global :material-menu-right: Transcription**
-
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
 <strong>Category</strong>: Features / Call Transcription<br>
@@ -21,6 +19,8 @@
 <strong>Meta Description</strong>: Configure call transcription in ConnexCS to detect fraud, monitor compliance, and review agent quality using keyword search, query profiles, and automated alerts.<br>
 
 </details>
+
+**Global :material-menu-right: Transcription**
 
 ## Introduction
 

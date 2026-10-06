@@ -2,7 +2,7 @@
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Global / Contacts<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Customer and Carrier account management.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts</a>, <a href="/global/">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global > Contacts</strong>, review contacts across the account, and select the Company when creating a new Contact.<br>
+<strong>Category</strong>: Global / Contacts<br> <strong>Audience</strong>: Administrators, Operations Teams, Engineers<br> <strong>Difficulty</strong>: Intermediate<br> <strong>Time Required</strong>: Approximately 15–30 minutes<br> <strong>Prerequisites</strong>: Active ConnexCS account with access to the Global section; familiarity with Customer and Carrier account management.<br> <strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts</a>, <a href="/global/global/">Global</a>, <a href="/customer/customer">Customer Management</a>, <a href="/carrier/">Carrier Management</a><br> <strong>Next Steps</strong>: Navigate to <strong>Global > Contacts</strong>, review contacts across the account, and select the Company when creating a new Contact.<br>
 
 </details>
 
