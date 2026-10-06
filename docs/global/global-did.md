@@ -99,8 +99,8 @@ The **Custom Settings** panel allows you to customize the appearance of the DID 
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each DID record.
 
-   * **Lower row height** — Displays more DID records within the available screen space.
-   * **Higher row height** — Provides more spacing between records for easier reading.
+      * **Lower row height** — Displays more DID records within the available screen space.
+      * **Higher row height** — Provides more spacing between records for easier reading.
 
     These settings affect the presentation of the DID list and do not change the underlying DID configuration.
 

@@ -197,8 +197,8 @@ The **Custom Settings** panel allows you to adjust the appearance of the Alert t
 
 2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each Alert row.
 
-* **Lower row height** — Displays more Alerts within the available screen space.
-* **Higher row height** — Provides more spacing between Alerts for easier reading.
+      * **Lower row height** — Displays more Alerts within the available screen space.
+      * **Higher row height** — Provides more spacing between Alerts for easier reading.
 
 These settings change how the Alert list is displayed without changing the underlying Alert configuration or data.
 
