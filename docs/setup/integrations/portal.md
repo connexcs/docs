@@ -284,7 +284,7 @@ This is useful when the bank transfer is made **outside of any payment integrati
 
 1. **Customer makes a bank transfer**
    - The customer transfers money directly to your bank account using their preferred banking method.
-   - This payment is not processed through any payment integration.
+   - This payment isn't processed through any payment integration.
 
 2. **Customer submits the payment**
    - The customer enters the **amount transferred** in the customer portal.
