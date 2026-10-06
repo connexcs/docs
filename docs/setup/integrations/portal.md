@@ -299,6 +299,6 @@ This is useful when the bank transfer is made **outside of any payment integrati
       2. The amount is then applied to the customer's account balance.
 
 !!! Example "Example"
-    A customer transfers **500 dollars** directly to your bank account.<br>The customer enters **500 dollars** under Pending Bank Payments in the portal.</br>The payment appears in your system as:<br>**Amount:**500 dollars</br><br>**Status:** Pending</br> After you confirm the 500 dollars transfer in your bank account, you can activate the payment, and the amount will be credited to the customer's account.
+    A customer transfers **500 dollars** directly to your bank account.<br>The customer enters **500 dollars** under Pending Bank Payments in the portal.</br>The payment appears in your system as:<br>**Amount:**500 dollars</br>**Status:** Pending.<br>After you confirm the 500 dollars transfer in your bank account, you can activate the payment, and the amount will be credited to the customer's account.</br>
 
 > **Note:** Pending Bank Payments doesn't verify or process the bank transfer automatically. The payment must be manually verified against your bank account before being activated.
