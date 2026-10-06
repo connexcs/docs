@@ -273,3 +273,38 @@ Foster stronger customer loyalty by providing a seamless and personalized experi
 
 + **Gain a competitive edge**:
   Differentiate themselves in the market by offering a unique and personalized experience to each customer segment.
+
+## Pending Bank Payments
+
+The **Pending Bank Payments** feature allows customers to notify you when they have made a **manual bank transfer** to your bank account.
+
+This is useful when the bank transfer is made **outside of any payment integration** supported by the platform.
+
+### How it works
+
+1. **Customer makes a bank transfer**
+   - The customer transfers money directly to your bank account using their preferred banking method.
+   - This payment is not processed through any payment integration.
+
+2. **Customer submits the payment**
+   - The customer enters the **amount transferred** in the customer portal.
+   - The payment is then added to their account with a **Pending** status.
+
+3. **Admin verifies the payment**
+   - You can view the pending payment from your side.
+   - Check your bank account to confirm that the transfer has been received.
+
+4. **Activate the payment**
+   - Once you have confirmed the bank transfer, you can mark the payment as **active**.
+   - The amount is then applied to the customer's account balance.
+
+!!! Example "Example"
+    A customer transfers **$500** directly to your bank account.
+    The customer enters **$500** under Pending Bank Payments in the portal.
+    The payment appears in your system as:
+        **Amount:** $500  
+        **Status:** Pending
+
+    After you confirm the $500 transfer in your bank account, you can activate the payment, and the amount will be credited to the customer's account.
+
+> **Note:** Pending Bank Payments does not verify or process the bank transfer automatically. The payment must be manually verified against your bank account before being activated.
