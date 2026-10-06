@@ -283,26 +283,30 @@ This is useful when the bank transfer is made **outside of any payment integrati
 ### How it works
 
 1. **Customer makes a bank transfer**
-   - The customer transfers money directly to your bank account using their preferred banking method.
-   - This payment isn't processed through any payment integration.
+      - The customer transfers money directly to your bank account using their preferred banking method.
+      - This payment isn't processed through any payment integration.
 
 2. **Customer submits the payment**
    - The customer enters the **amount transferred** in the customer portal.
-   - The payment is then added to their account with a **Pending** status.
+     - The payment is then added to their account with a **Pending** status.
 
 3. **Admin verifies the payment**
-   - You can view the pending payment from your side.
-   - Check your bank account to confirm that the transfer has been received.
+      - You can view the pending payment from your side.
+      - Check your bank account to confirm that the transfer has been received.
 
 4. **Activate the payment**
-   - Once you have confirmed the bank transfer, you can mark the payment as **active**.
-   - The amount is then applied to the customer's account balance.
+      - Once you have confirmed the bank transfer, you can mark the payment as **active**.
+      - The amount is then applied to the customer's account balance.
 
 !!! Example "Example"
     A customer transfers **$500** directly to your bank account.
+
     The customer enters **$500** under Pending Bank Payments in the portal.
+    
     The payment appears in your system as:
+    
         **Amount:** $500  
+    
         **Status:** Pending
 
     After you confirm the $500 transfer in your bank account, you can activate the payment, and the amount will be credited to the customer's account.
