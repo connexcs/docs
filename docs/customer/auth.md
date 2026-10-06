@@ -139,7 +139,7 @@ To enable, click **:material-plus:** next to IP Authentication:
     + **Channels**: Set the maximum number of concurrent calls for this switch. 
     + **Flow Speed**: Set the Calls Per Second (CPS) (0 = unlimited calls).
     
-        <img src="/customer/img/basic12.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+        <img src="/customer/img/basic12.png" width "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 === "Advanced"
 
@@ -545,6 +545,93 @@ ___
           + Helps in managing timeouts and ensuring that both sides of the call are aware of its status.
     2. **Intercept Re-invite**:
           + Used in scenarios where customers' equipment can't handle re-invites properly; the system intercepts and responds on behalf of the customer.
+
+#### Bulk Edit
+
+The **Bulk Edit** feature allows administrators to update the configuration of multiple SIP users at the same time. Instead of opening each SIP user individually, select multiple users and apply the required settings through the **SIP User Authentication Bulk Edit** window.
+
+##### How to Use Bulk Edit
+
+1. Navigate to **Global :material-menu-right: SIP User Authentication**.
+2. Select the SIP users you want to modify.
+3. Click **Bulk Edit**.
+4. The **SIP User Authentication Bulk Edit** window opens. <br><img src="/misc/img/sipuserauthbulk.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. Enable the toggle next to each field that you want to update. *Bulk Edit Fields are discussed below*.
+6. Enter or select the required value.
+7. Review the selected fields and values.
+8. Save the changes to apply them to the selected SIP users.
+
+**Bulk Edit Fields**
+
+| Field           | Description|
+| :---------------| ----------- |
+| **SIP Profile**     | Selects the SIP Profile to apply to the selected SIP users. A SIP Profile can define common SIP-related settings for the users|
+| **Channels**        | Specifies the number of simultaneous channels permitted for the selected SIP users|
+| **Flow Speed**      | Defines the call flow rate allowed for the selected SIP users. The value is specified in **CPS (Calls Per Second)**|
+| **Protocol**        | Specifies the SIP transport protocol used by the SIP users. The screen shows **SIP (UDP)** as the selected value|
+| **Dial Pattern**    | Defines the number format or dialing pattern used by the SIP users. The screen shows **E164** as the selected option|
+| **NAT / SIP Ping**  | Controls the NAT/SIP Ping setting associated with the SIP users. The screen shows **Disabled** as the current value|
+| **Voicemail**       | Enables or disables the voicemail setting for the selected SIP users. The screen shows **Disabled**|
+| **Retain DID**      | Controls whether the DID associated with the SIP user is retained according to the selected setting. The screen shows **Disabled**|
+| **Smart Extension** | Controls the Smart Extension setting for the selected SIP users. The screen shows **Disabled**|
+| **Tech Prefix**     | Specifies a technical prefix that can be used as part of call routing or number manipulation for the selected SIP users|
+| **CLI Prefix**      | Specifies a prefix applied to the caller line identification (CLI) for the selected SIP users|
+| **Strip Digits**    | Specifies the number of digits to remove from the dialed number as part of number manipulation. The screen shows `0`, meaning no digits are configured to be stripped|
+| **IP Whitelist**    | Specifies the IP addresses or IP ranges that are permitted for the selected SIP users|
+
+**Bulk Edit Controls**
+
+Each field has a toggle on the right side of the Bulk Edit window.
+
+| **Toggle State** | **Behaviour**                                                                                          |
+| :--------------- | :----------------------------------------------------------------------------------------------------- |
+| **Disabled**     | The field isn't included in the bulk update. Existing values for that field remain unchanged.         |
+| **Enabled**      | The field is included in the bulk update, and the selected value is applied to the selected SIP users. |
+
+!!! tip "Example"
+    If you select 20 SIP users and enable the **Channels** toggle with a value of `10`, the bulk edit operation applies the configured Channels value to those selected SIP users. Other fields remain unchanged unless their respective toggles are also enabled.
+
+#### Bulk Upload
+
+To view the complete **Bulk Upload** procedure, refer to the [**Bulk Upload**](https://docs.connexcs.com/customer/did/#bulk-upload) documentation or select **Demo** from the **Bulk Upload** window to watch the demonstration video.
+
+#### Latency
+
+The **Latency** allows you to view the latency associated with a specific SIP user over time.
+
+To view the latency, select a **Username** from the dropdown. The system then displays the user's latency in a time-based chart.
+
+##### How to Use SIP User Latency
+
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: Customer [Name] :material-menu-right: Auth :material-menu-right: SIP User Authentication**.
+2. Select the **SIP user** for which you want to review latency.
+3. Open the **Latency** option.
+4. Select the required **Username** from the dropdown.
+5. Review the **User Latency** chart to observe latency measurements over time.
+
+<img src="/misc/img/sipuserlatency.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+##### User Latency Chart
+
+The chart displays:
+
+| Element               | Description                                                        |
+| --------------------- | ------------------------------------------------------------------ |
+| **Username**          | SIP user selected for the latency analysis.                        |
+| **User Latency**      | Chart showing the latency measured for the selected SIP user.      |
+| **Latency Unit (ms)** | Latency is displayed in **milliseconds (ms)**.                     |
+| **Time Axis**         | Shows the time points at which latency measurements are displayed. |
+| **Latency Axis**      | Shows the measured latency values in milliseconds.                 |
+
+**Understanding the Chart**
+
+The chart provides a time-based view rather than a single latency value. This allows you to observe whether latency changes during the displayed period.
+
+For example:
+
+* **Low or near-zero values** indicate that the displayed latency measurements are low.
+* **Higher values** indicate increased latency at the corresponding time.
+* **Changes or spikes** in the chart can help identify periods where latency increased.
 
 ### Channel Capacity Limitation
 

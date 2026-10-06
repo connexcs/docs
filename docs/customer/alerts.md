@@ -63,7 +63,7 @@ Since the threshold represents the most numeric traits related to VoIP, it can f
 
 To add a customized alert, click :material-plus:.
 
-<img src= "/customer/img/customeralert.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer/img/customeralert.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 Field details:
 
@@ -86,6 +86,145 @@ For example, "=" means "is equal to."
 * **Notice Level**: You can assign alert levels like **Warning** or **Error** for classifying and communicating the severity of events or conditions that require attention or action.
 
 Click **`Save`**, and it creates a new alert.
+
+### Alert List
+
+The Global Alerts page displays Alerts in a table with the following fields:
+
+|Column| Description|
+|------|------------|
+|**Title**|	Name or title of the Alert|
+|**Company**|Company associated with the Alert|
+|**Recipient**|	Recipient configured to receive the Alert|
+|**State**|	Current state of the Alert, such as Ready, Sent, or Paused.
+|**Table Change**|Indicates the configured table-change information associated with the Alert.
+
+### Alert State
+
+The State column indicates the current status of each Alert:
+
+* **Ready** — The Alert is ready for use.
+* **Sent** — The Alert has been sent.
+* **Paused** — The Alert is currently paused.
+
+### Managing Alerts
+
+The Global Alerts page provides controls for managing Alerts, including:
+
+* **Search** — Search for a specific Alert.
+* **Add (+)** — Create a new Alert.
+* **Refresh** — Refresh the Alert list.
+* **Delete** — Delete selected Alerts.
+* **Columns** — Configure which columns are displayed.
+* **Filters** — Filter the Alert list.
+* **Custom Settings** — Adjust the display settings.
+
+To work with multiple Alerts, select the required Alerts using the checkboxes in the first column.
+
+<img src= "/customer/img/customeralert.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+## Tags Alert
+
+### Overview
+
+The **Tags Alert** section provides a view of Alerts configured around **Tags**. It displays configured Tag Alerts in a table and provides tools to search, filter, customize, and analyze the displayed Alert data.
+
+### Tags Alert List (Column)
+
+The Tags Alert table provides the following fields:
+
+| Field               | Description |
+| --------------------|------------ | 
+| **Title**           | Name or title used to identify the Tag Alert|
+| **Tag**             | The Tag associated with the Alert|
+| **Table Change**    | Specifies the table-change event or condition associated with the Alert|
+| **Area**            | Defines the area or scope to which the Alert condition applies|
+| **Operator**        | Defines how the configured value is evaluated against the threshold, such as whether a value is equal to, greater than, or less than the configured threshold. |
+| **Threshold**       | The value that must be reached or exceeded for the Alert condition to be triggered, according to the configured operator|
+| **Reset Threshold** | The value used to determine when the Alert condition should be reset after it has been triggered|
+| **Sample Period**   | Defines the period over which data is evaluated for the Alert condition|
+| **Template**        | The notification template associated with the Alert|
+| **Penalty**         | Defines the penalty associated with the Alert configuration when its condition is met|
+| **Cron** | Defines the scheduled execution pattern for the Alert using a Cron schedule|
+| **Last Run** | Shows when the Alert was most recently executed|
+| **Next Run**        | Shows when the Alert is scheduled to run next|
+| **Notice Level**    | Defines the notice or notification level associated with the Alert|
+| **Query**           | The query used by the Alert to retrieve or evaluate the data required for its condition|
+
+!!! note
+    The exact behavior of fields such as **Table Change, Area, Penalty, Notice Level, and Query** depends on the Tag Alert configuration. The field names alone do not provide enough information to define their underlying processing logic more precisely.
+
+## Searching
+
+Use the **Search** field at the top of the page to quickly locate a specific Tag Alert.
+
+You can also use the search field within the **Columns** panel to find a particular field when configuring the table.
+
+## Columns
+
+The **Columns** panel allows you to control which fields are displayed in the Tags Alert table.
+
+Use the checkboxes to show or hide columns from the table.
+
+The drag handles beside the column names can be used to arrange the column order.
+
+## Pivot Mode
+
+The **Pivot Mode** option allows the displayed Tag Alert data to be organized in a pivot-style view.
+
+Enable **Pivot Mode** when you need to analyze the available Tag Alert data by grouping or summarizing it rather than viewing it only as a standard table.
+
+## Filters
+
+The **Filters** panel can be used to narrow the Tag Alert records displayed in the table.
+
+Filters can be applied to the available fields to focus the results on specific Alert configurations or values.
+
+For example, filtering can be useful when reviewing Alerts associated with a particular:
+
+* **Tag**
+* **Area**
+* **Operator**
+* **Threshold**
+* **Notice Level**
+* **Alert configuration**
+
+### Custom Settings
+
+The **Custom Settings** panel allows you to adjust the appearance of the Alert table.
+
+1. **Theme**: The **Theme** setting controls the visual appearance of the Alert table.
+
+2. **Row Height**: The **Row Height** setting controls the amount of vertical space used for each Alert row.
+
+      * **Lower row height** — Displays more Alerts within the available screen space.
+      * **Higher row height** — Provides more spacing between Alerts for easier reading.
+
+These settings change how the Alert list is displayed without changing the underlying Alert configuration or data.
+
+## Refreshing the Report
+
+Click the **Refresh** button at the top of the page to reload the Tag Alert data.
+
+This is useful after changes have been made or when you want to retrieve the latest Alert information.
+
+## Use Cases
+
+The Tags Alert view can be used to:
+
+* Review configured Tag Alerts.
+* Search for a specific Alert.
+* Review Tag Alert conditions and thresholds.
+* Check when an Alert last ran and when it is scheduled to run next.
+* Review Alert templates, queries, and notice levels.
+* Select the columns most relevant to your investigation.
+* Filter the Alert list to focus on specific configurations.
+* Use Pivot Mode for further analysis of the displayed Alert data.
+
+!!! info "More Information"
+    For more information about **Tag Alerts**, including configuration details and usage examples, see the [Tag Alerts page](https://docs.connexcs.com/tag/#alerts)
+
+<img src= "/customer/img/tagsalert.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ## Sample Alerts
 

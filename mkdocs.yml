@@ -140,9 +140,21 @@ nav:
         - Status: system-status.md  
 
     - Global:
-        - Global: global.md
-        - Transcription: transcription.md
-        - Alias: global-alias.md 
+        - Overview: global/global.md
+        - Alert: global/global-alert.md
+        - Alias: global/global-alias.md
+        - Contacts: global/global-contact.md
+        - CDR: global/global-cdr.md
+        - Dialog: global/global-dialogs.md 
+        - Routing: global/global-routing.md
+        - CLI: global/global-cli.md
+        - DID: global/global-did.md
+        - IP Authentication: global/global-ipauth.md
+        - Invoice: global/global-invoice.md
+        - Payment: global/global-payment.md
+        - SIP Registration: global/global-sip-registration.md
+        - SIP User Authentication: global/global-sip-user-authentication.md
+        - Transcription: global/global-transcription.md
     
     - Logging: logging.md
     

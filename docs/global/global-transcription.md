@@ -1,7 +1,5 @@
 # Transcription
 
-**Global :material-menu-right: Transcription**
-
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
 <strong>Category</strong>: Features / Call Transcription<br>
@@ -21,6 +19,8 @@
 <strong>Meta Description</strong>: Configure call transcription in ConnexCS to detect fraud, monitor compliance, and review agent quality using keyword search, query profiles, and automated alerts.<br>
 
 </details>
+
+**Global :material-menu-right: Transcription**
 
 ## Introduction
 
@@ -194,9 +194,9 @@ Once this service has been enabled on your account, you can follow the steps bel
 
 2.You will see 3 options:
 
-* **Select**: You can select a particular query profile built using the [Transcription Query Profile](/transcription/#transcription-query-profile).
+* **Select**: You can select a particular query profile built using the [Transcription Query Profile](https://docs.connexcs.com/transcription/#transcription-query-profile)
 * **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
-* [Transcription Query Profile](/transcription/#transcription-query-profile).
+* [Transcription Query Profile](https://docs.connexcs.com/transcription/#transcription-query-profile)
 
 3.Description of Transcription fields:
 
