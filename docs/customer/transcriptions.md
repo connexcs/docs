@@ -70,19 +70,6 @@ Transcription is billed per second of speech, and you can resell it to the custo
 5. **Cost control**: Sampling, duration limits and silence removal keep transcription costs predictable for each customer.
 6. **Additional revenue**: Resell transcription to the customer as a package at your own retail price.
 
-## How to Use the Transcription Feature
-
-### How to Enable the Transcription Feature
-
-Enabling transcription for a customer takes two steps: switch the feature on for your ConnexCS account, then turn it on for the customer's route.
-
-#### Step 1: Enable Transcription on Your Account
-
-1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Account**.
-2. Click **Enable Transcription**.
-
-<img src="/transcription/img/transcription-enable-transcriptions.png" alt="Enable Transcription" width="100"/>
-
 !!! warning "Pricing"
     Transcription is a paid feature. Check [Pricing](https://connexcs.com/pricing) before enabling it.
 
@@ -91,6 +78,21 @@ Enabling transcription for a customer takes two steps: switch the feature on for
 
 !!! info "No fee for silence"
     Silence is removed before billing. If a call lasts 50 seconds and no audio is exchanged for 20 seconds, you're billed for 30 seconds of transcription.
+
+## How to Use the Transcription Feature
+
+### How to Enable the Transcription Feature
+
+Enabling transcription for a customer takes two steps: switch the feature on for your ConnexCS account, then turn it on for the customer's route.
+
+#### Step 1: Enable Transcription on Your Account
+
+1. Navigate to **Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/)** and click <img src="/transcription/img/transcription-add.png" alt="add" width="50">.
+2. Choose your Transcription Package from **ConnexCS Package**.
+3. Enter the **Retail Cost** and click <img src="/transcription/img/transcriptions-save.png" alt="save" width="120">.
+4. Assign the package to the customer from their account.
+
+<img src="/transcription/img/transcription-package.png" alt="Transcription package" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 #### Step 2: Enable Transcription for the Customer
 
@@ -111,14 +113,6 @@ Enabling transcription for a customer takes two steps: switch the feature on for
 
 <img src="/transcription/img/trans1.png" alt="Enable transcription on the customer route" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-#### Step 3 (Optional): Resell Transcription as a Package
-
-1. Navigate to **Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/)** and click <img src="/transcription/img/transcription-add.png" alt="add" width="50">.
-2. Choose your Transcription Package from **ConnexCS Package**.
-3. Enter the **Retail Cost** and click <img src="/transcription/img/transcriptions-save.png" alt="save" width="120">.
-4. Assign the package to the customer from their account.
-
-<img src="/transcription/img/transcription-package.png" alt="Transcription package" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### How to Use Transcription in a Customer Account
 
@@ -463,7 +457,7 @@ Add an override for the customer and switch **Enabled** off. The customer's call
 
 The **Classifiers** sub-tab lists the classifiers available on your account. A classifier is a set of questions the AI model answers about each call, plus settings for when the model runs. Classifiers only *describe* calls; what happens next is decided by [Policies](#policies).
 
-<img src="/customer/img/newtranscript6d.png" alt="Classifiers list" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src="/customer/img/newtranscript6.png" alt="Classifiers list" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 **Toolbar**
 

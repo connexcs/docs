@@ -34,7 +34,7 @@ search:
 
 ## Overview
 
-**Global Transcription** gives you an account-wide view of transcription. It has the same interface and works the same way as [**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Transcription**](https://docs.connexcs.com/customer/transcriptions/), but instead of showing one customer's calls, it shows **all customers' calls** in one place.
+**Global Transcription** gives you an account-wide view of transcription. It has the same interface and works the same way as [**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Transcription**](/customer/transcriptions/), but instead of showing one customer's calls, it shows **all customers' calls** in one place.
 
 Use Global Transcription to:
 
@@ -44,7 +44,7 @@ Use Global Transcription to:
 + Monitor classification results and spot fraud or compliance issues across the account.
 
 !!! info "Same interface, wider scope"
-    Every tab, field and button on this page is documented on the [**Customer Transcription**](https://docs.connexcs.com/customer/transcriptions/) page. This page explains only what's different at the global level and links to the relevant section for full details.
+    Every tab, field and button on this page is documented on the [**Customer Transcription**](/customer/transcriptions/) page. This page explains only what's different at the global level and links to the relevant section for full details.
 
 ## Customer vs Global Transcription
 
