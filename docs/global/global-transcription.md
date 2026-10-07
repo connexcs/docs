@@ -1,381 +1,151 @@
+---
+title: "Global Transcription | Account-wide Call Transcription & Classifier | ConnexCS"
+description: "View, search and classify transcribed calls across all customers from Global Transcription in ConnexCS, using the same Conversations, Raw, Key Phrase Lookup and Classifier tools as the customer view."
+search:
+  boost: 3
+---
+
 # Transcription
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Features / Call Transcription<br>
-<strong>Audience</strong>: Administrators, Engineers, Analytics & Compliance Teams<br>
-<strong>Difficulty</strong>: Intermediate<br>
+<strong>Category</strong>: Global / Call Transcription<br>
+<strong>Audience</strong>: Administrators, Engineers, Support, Analytics & Compliance Teams<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 10–20 minutes<br>
 <strong>Prerequisites</strong>:
 <ul>
-<li>Active ConnexCS account with transcription enabled — this is a paid feature; check <a href="https://connexcs.com/pricing">Pricing</a> before setup.</li>
-<li>Basic understanding of keyword/phrase matching and boolean logic (AND, OR, NOT).</li>
+<li>Active ConnexCS account with Transcription enabled — this is a paid feature; check <a href="https://connexcs.com/pricing">Pricing</a> before setup.</li>
+<li>Transcription enabled on each customer whose calls you want to see (see <a href="/customer/transcriptions/#step-2-enable-transcription-for-the-customer">Enable Transcription for the Customer</a>).</li>
+<li>Familiarity with the <a href="/customer/transcriptions/">Customer Transcription</a> page, which documents every tab and field used here.</li>
 </ul>
 <strong>Related Topics</strong>:
-<a href="https://docs.connexcs.com/setup/advanced/fraud/">Fraud Profile</a> — complementary fraud monitoring controls ·
-<a href="https://docs.connexcs.com/setup/information/audit-log/">Audit Log</a> — review configuration changes and compliance audit trails ·
-<a href="https://docs.connexcs.com/globalaiagent/">Global AI Agent</a> — AI-assisted call analysis and platform queries<br>
-<strong>Next Steps</strong>: After enabling transcription, <a href="https://docs.connexcs.com/transcription/#transcription-query-profile">build a Query Profile</a> to define keyword detection rules, then <a href="https://docs.connexcs.com/transcription/#transcription-alerts">configure Alerts</a> to trigger automated responses when phrases are detected.<br>
-<strong>Need Help?</strong>: If the Enable Transcription option is not visible in your account, or if you require transcription in a language other than English, <a href="https://connexcs.com/contact-us">contact ConnexCS support</a>.<br>
-<strong>Meta Description</strong>: Configure call transcription in ConnexCS to detect fraud, monitor compliance, and review agent quality using keyword search, query profiles, and automated alerts.<br>
+<a href="/customer/transcriptions/">Customer – Transcription</a> — full reference for every tab and field ·
+<a href="https://docs.connexcs.com/customer/routing/">Customer – Routing</a> — enable transcription and sampling per customer ·
+<a href="https://docs.connexcs.com/customer/alerts/">Customer – Alerts</a> — alert recipients for transcription events ·
+<a href="https://docs.connexcs.com/setup/advanced/fraud/">Fraud Profile</a> — complementary fraud monitoring controls<br>
+<strong>Next Steps</strong>: <a href="#recommended-setup-order">Set up the Classifier</a> for your customers, then review account-wide outcomes on the <a href="/customer/transcriptions/#results">Results</a> sub-tab.<br>
+<strong>Need Help?</strong>: If the Enable Transcription option isn't visible in your account, or you need transcription in a language other than English, <a href="https://connexcs.com/contact-us">contact ConnexCS support</a>.<br>
+<strong>Meta Description</strong>: View, search and classify transcribed calls across all customers in ConnexCS Global Transcription, with links to the full Customer Transcription reference.<br>
 
 </details>
 
 **Global :material-menu-right: Transcription**
 
-## Introduction
+## Overview
 
-A transcription service translates voice communication, whether live or recorded, into text. If you have a recorded call, you may use this service to have it transcribed in English.
+**Global Transcription** gives you an account-wide view of transcription. It has the same interface and works the same way as [**Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Transcription**](/customer/transcriptions/), but instead of showing one customer's calls, it shows **all customers' calls** in one place.
 
-English by default; additional languages available on request.
+Use Global Transcription to:
 
-Depending on the needs of customers, you can define individual prices. You can also select the quantity you want to offer your customer.
++ Review and search transcribed calls across your whole customer base.
++ Create and manage Query Profiles that apply to all customers or to any individual customer.
++ Set up classifiers, policies and assignments for every customer from one screen.
++ Monitor classification results and spot fraud or compliance issues across the account.
 
-## Operational Use Cases
+!!! info "Same interface, wider scope"
+    Every tab, field and button on this page is documented on the [**Customer Transcription**](/customer/transcriptions/) page. This page explains only what's different at the global level and links to the relevant section for full details.
 
-Transcription and query analysis can help operators monitor conversations, identify operational risks, and improve customer interaction visibility.
+## Customer vs Global Transcription
 
-**Common use cases include**:
+| | Customer Transcription | Global Transcription |
+|---|---|---|
+| **Location** | **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Transcription** | **Global :material-menu-right: Transcription** |
+| **Calls shown** | Only the selected customer's calls | Calls from all customers |
+| **Best for** | Investigating a single customer, disputes, setup checks | Account-wide monitoring, fraud and compliance trends, managing rules for many customers |
+| **Tabs** | Conversations, Raw, Key Phrase Lookup, Classifier (Beta) | Same |
 
-1. **Fraud Monitoring**:
+## Before You Begin
 
-    Query profiles can help identify suspicious phrases, high-risk keywords, or unusual conversation patterns associated with fraudulent activity or social engineering attempts.
+Calls appear in Global Transcription only for customers that have transcription switched on. Setup is the same as for a single customer:
 
-2. **Compliance Review**:
+1. [Enable Transcription on your account](/customer/transcriptions/#step-1-enable-transcription-on-your-account) under **Setup :material-menu-right: Config :material-menu-right: Packages**.
+2. [Enable Transcription for each customer](/customer/transcriptions/#step-2-enable-transcription-for-the-customer) under **Ingress Routing :material-menu-right: Media :material-menu-right: Transcribe**, choosing a sampling level and optional duration limit.
 
-    Operators can monitor calls for regulatory or policy-related keywords to support internal compliance processes and operational audits.
+!!! note "Recorded calls only"
+    Only recorded calls are transcribed, and only the sampled percentage of each customer's calls appears.
 
-3. **Customer Experience Monitoring**:
+## Using Global Transcription
 
-    Conversation analysis can help identify recurring customer concerns, service quality issues, or negative interaction patterns that may require operational review.
+Navigate to **Global :material-menu-right: Transcription**. The page has the same four tabs as the customer view.
 
-4. **Keyword Detection**:
+### Conversations
 
-    Query profiles can automatically detect configured keywords or phrases within call transcripts to help surface relevant conversations for further review.
+Lists transcribed calls from **all customers**, grouped by date, with the caller, dialed number, time, duration and message count for each call.
 
-5. **Dispute Investigation**:
+| Topic | Details |
+|-------|---------|
+| Reading the list | [Understanding the Conversation List](/customer/transcriptions/#understanding-the-conversation-list) |
+| Finding a call by Call ID or number | [Search](/customer/transcriptions/#search) |
+| Date, minimum duration, minimum segments, group by and sort | [Filter](/customer/transcriptions/#filter) |
+| Reloading the list | [Refresh](/customer/transcriptions/#refresh) |
 
-    Searchable transcripts can help operators review historical conversations during customer disputes, escalations, or operational investigations.
+### Raw
 
----
+Shows individual transcript segments from **all customers**. At the global level the **Customer Name** column is especially useful, because results come from many customers; use the column filter or the **Filters** side panel to narrow results to one customer.
 
-## Query Profiles
+| Topic | Details |
+|-------|---------|
+| Filter words drop-down, query field and search button | [Search Bar](/customer/transcriptions/#search-bar) |
+| Call ID, Date, Customer Name, Text, Leg and Score | [Results Grid](/customer/transcriptions/#results-grid) |
+| Columns, Filters and Custom Settings | [Side Panel](/customer/transcriptions/#side-panel-columns-filters-and-custom-settings) |
+| AND, OR, NOT and exact-phrase searches | [Query Syntax](/customer/transcriptions/#query-syntax) |
 
-Query Profiles allow operators to define reusable keyword and phrase matching rules for transcript analysis.
+### Key Phrase Lookup
 
-Profiles can be configured globally or assigned to specific customers based on operational requirements.
+Lists the Query Profiles for **all customers**. From here you can create profiles that apply to every customer or to one specific customer.
 
----
+!!! tip "Account-wide profiles"
+    When creating a profile, leave **Customer Name** as **None** to apply it across all customers, for example a company-wide profanity or scam-phrase filter. Select a customer to create a profile for that customer only.
 
-### AND / OR / NOT Logic
+| Topic | Details |
+|-------|---------|
+| Add, Refresh, Delete and Search | [Toolbar](/customer/transcriptions/#toolbar) |
+| Name, Query, Customer Name, Visibility and Action | [Query Profile Columns](/customer/transcriptions/#query-profile-columns) |
+| Creating a profile, Visibility (Private / Public) and Action (Trigger Alert / Immediate Hangup) | [Create a Customer Query Profile](/customer/transcriptions/#create-a-customer-query-profile) |
+| Writing queries | [Query Syntax](/customer/transcriptions/#query-syntax) |
+| Getting notified when a profile matches | [Set Up Transcription Alerts](/customer/transcriptions/#set-up-transcription-alerts) |
 
-Query profiles support logical operators for flexible matching behavior.
+### Classifier <sup>Beta</sup>
 
-#### AND Example
+Uses an AI model to classify transcribed calls from **all customers** and act on the results. The Classifier works the same way as in the customer view; the global view is the most convenient place to manage it because the Assignments, Policies and Results sub-tabs already cover every customer.
 
-```text
-refund AND cancellation
-```
+!!! warning "Beta Version"
+    The Classifier is in **Beta**. Review results before relying on them for compliance, billing or call-blocking decisions.
 
-Matches transcripts containing both:
+#### Recommended Setup Order
 
-* “refund”
-* “cancellation”
+!!! note "Recommended setup order"
+    To use the Classifier tab efficiently, set it up in this order:
 
----
+    1. **Create a classifier** on the [Classifiers](/customer/transcriptions/#classifiers) sub-tab (or duplicate the ConnexCS classifier to customise it).
+    2. **Attach the classifier to a policy** on the [Policies](/customer/transcriptions/#policies) sub-tab by selecting it in the policy's **Classifier** field and setting the conditions and action.
+    3. **Assign the classifier to the customer** on the [Assignments](/customer/transcriptions/#assignments) sub-tab. From Global Transcription you can set the **All customers (default)** classifier for every customer, or add an override for individual customers.
 
-#### OR Example
+    Once all three are in place, the customers' calls are classified and the policy is evaluated. Check [Results](/customer/transcriptions/#results) to confirm everything is working.
 
-```text
-fraud OR scam
-```
+| Topic | Details |
+|-------|---------|
+| Classifiers, policies, assignments and results explained | [How Call Classification Works](/customer/transcriptions/#how-call-classification-works) |
+| Shadow vs Active | [Shadow and Active Modes](/customer/transcriptions/#shadow-and-active-modes) |
+| Account-wide default, customer overrides and opting customers out | [Assignments](/customer/transcriptions/#assignments) |
+| Classifier list, search and actions | [Classifiers](/customer/transcriptions/#classifiers) |
+| Viewing a classifier and its questions | [Viewing a Classifier](/customer/transcriptions/#viewing-a-classifier) |
+| New classifier fields and Advanced timing | [Create a New Classifier](/customer/transcriptions/#create-a-new-classifier) |
+| Policy list, filter drop-downs and columns | [Policies](/customer/transcriptions/#policies) |
+| New policy fields, conditions, actions and Advanced settings | [Create a New Policy](/customer/transcriptions/#create-a-new-policy) |
+| Results filters and columns | [Results](/customer/transcriptions/#results) |
+| Call category, characteristics, maliciousness, risk chart, rule matches and transcript | [Call Classification Details](/customer/transcriptions/#call-classification-details) |
 
-Matches transcripts containing either:
+!!! tip "Use the customer filters"
+    At the global level, the **All customers** drop-downs on the **Policies** and **Results** sub-tabs let you narrow the view to one customer without leaving the page.
 
-* “fraud”
-* “scam”
+## Best Practices and Troubleshooting
 
----
+The same guidance applies at the global level:
 
-#### NOT Example
++ [Best Practices](/customer/transcriptions/#best-practices) for writing queries and naming profiles.
++ [Troubleshooting](/customer/transcriptions/#troubleshooting) for missing calls, incomplete transcripts and other common issues.
 
-```text
-refund NOT approved
-```
-
-Matches transcripts containing:
-
-* “refund”
-
-but excluding transcripts containing:
-
-* “approved”
-
----
-
-### Phrase Matching
-
-Phrase matching helps identify exact conversation patterns.
-
-Example:
-
-```text
-"cancel my account"
-```
-
-Matches the complete phrase rather than individual keywords separately.
-
----
-
-### Reusable Profiles
-
-Query profiles can be reused across multiple customers, routes, or operational workflows.
-
-This helps standardize:
-
-* compliance monitoring
-* QA workflows
-* keyword detection
-* operational review processes
-
----
-
-### Global vs Customer Profiles
-
-#### Global Profiles
-
-Global profiles apply across multiple customers or environments and are useful for organization-wide monitoring policies.
-
----
-
-#### Customer Profiles
-
-Customer-specific profiles allow operators to create customized monitoring rules for individual customer requirements or workflows.
-
----
-
-## Transcription Setup
-
-### Enable Transcription
-
-To enable the Transcription feature on your account, navigate to **Setup :material-menu-right: Settings :material-menu-right: Account** and click the **Enable Transcription** button.
-
-<img src="/transcription/img/transcription-enable-transcriptions.png" enable transcription="package" width="100"/>
-
-!!! Warning "Pricing"
-    Check [Pricing](https://connexcs.com/pricing) here.
-
-!!! Warning
-    If you are unable to find the **Enable Transcription** option, please contact us for assistance in enabling the transcription service.
-
-!!! Info
-    Please take note that there is **no fee** for **silence**.
-
-    It implies that if a call lasts for 50 seconds and no audio is exchanged for 20 seconds, we will make every effort to cut out the silence from the audio and bill you for 30 seconds of transcribing service.
-
-### Add Transcription Service for your Customer
-
-Once this service has been enabled on your account, you can follow the steps below to enable this for your customers:
-
-1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing :material-menu-right: Ingress Routing  :material-menu-right: Media :material-menu-right: Transcribe**.
-2. From the drop-down you can select from multiple options like **Disabled**, **1% Sampling**, **5% Sampling**, **25% Sampling**, **50% Sampling** and **Enabled (Always On)**.
-
-!!! Info
-    Out of all the calls that are accessible, **% Sampling** indicates the proportion of calls that will be transcribed.
-
-<img src="/transcription/img/trans1.png" alt="enable" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-3.**Transcription Duration**: You can set a maximum transcription time (in seconds) for your transcription service per call. Please note, the transcription will stop at the specified time, even if it is mid-sentence.
-
-#### Confirm your Transcription Service Status
-
-1. Navigate to **Global :material-menu-right: Transcription**. You will be able to see the screen as shown below.
-
-<img src="/transcription/img/trans2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-2.You will see 3 options:
-
-* **Select**: You can select a particular query profile built using the [Transcription Query Profile](https://docs.connexcs.com/transcription/#transcription-query-profile)
-* **Search**: Allows you to search things like the **Call ID**, **Phrases** etc. [Click here](https://docs.connexcs.com/transcription/#search-transcriptions) to know more.
-* [Transcription Query Profile](https://docs.connexcs.com/transcription/#transcription-query-profile)
-
-3.Description of Transcription fields:
-
-* **Call ID**: Particular Call ID.
-* **Date**: Date of the call.
-* **Customer Name**: Name of the customer whose transcription is displayed.
-* **Text**: Sentences of the transcribed call.
-* **Leg**: Assigns `0` value to caller, `1` to the callee.
-* **Score**: While searching for the relevance of a document, the system rates it and assigns a score; this helps return the documents that best match the search criteria.
-
-#### Transcription Query Profile
-
-A Transcription Query Profile defines how the system should respond when a specific word or phrase is detected in a transcript.
-
-To create the query list, please follow the steps below:
-
-1. Click on the `Transcription Query Profile` button followed by the blue `+` icon.
-2. Enter the **Name** of your query list.
-3. Write your query in the **Query** tab, for example "I am calling from the UFO".
-4. Select the customer for whom you want to apply this particular query from the **Customer Name** drop-down.
-5. Form the **Visibility** drop-down you can either select **Public** or **Private**. Its a privacy setting that allows you to decide if you want your customers to be able to see (and use) the query that you have saved. **Public** will allow your customers to see this; **Private** will keep it hidden from them.
-
-    For example, you can choose **Customer Name** : **None** and **Visibility** as **Public** if you want every one of your customers to see the list.
-
-6. **Action**: Allows you to either [**Trigger Alert**](https://docs.connexcs.com/transcription/#transcription-alerts) when the phrase is detected or **Hangup** the call if that particular phrase is detected in the call.
-
-7. Click `Save`.
-
-<img src="/transcription/img/trans3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-##### Transcription Alerts
-
-You can navigate to a specific customer's account and add a Saved Query as an alert.
-
-You will either receive a call, text, or e-mail saying that the system has detected a particular word or phrase for a specific call.
-
-Please follow the below steps to add the Alerts:
-
-1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alert**.
-2. Enter the **Title** of the alert.
-3. Enter the **E-mail/Phone Number** you wish to receive the alert message.
-4. Select the **Area** as **Transcription**. For example, this alert can be used to inform Customer1 that their account has been disabled.
-5. You can also select the **Penalty** as soon as the alert triggers. This option will disable the customer's account for **1 minute**, **5 minutes**, **15 minutes**, **1 Hour**, **1 Day**, **1 Year** or just use the **Disabled** option for not using the penalty option.
-6. You can also select the **Template** from the drop-down.
-
-<img src="/transcription/img/trans4.png" alt="transcription" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-### Create a Transcription Package
-
-To create a package to resell to your customers, go to Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/). Click on <img src="/transcription/img/transcription-add.png" alt="add" width="50"> and choose your Transcription Package from **ConnexCS Package**.
-
-Select your **Retail Cost** and click on <img src="/transcription/img/transcriptions-save.png" alt="save" width="120"> and choose your Transcription Package from **ConnexCS Package**.
-
-<img src="/transcription/img/transcription-package.png" alt="package" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-## Search Transcriptions
-
-Once the system performs the call transcription process, it's kept into a full-text search engine, available only to you and, (in the future) your customer.
-
-To search for transcriptions, we will be sending a query to the server, which, based on your search criteria, will return results with a score.
-
-### Search Modifiers
-
-Search modifications allow you to describe what you want to find. Specific syntax is available to help you with this.
-
-### **Lemmatization**
-
-Our built-in search engine offers Lemmatization.
-
-Lemmatization is the grouping together of different forms of the same word. It enables end users to use any variation of a base word in search queries.
-
-It helps in receiving appropriate results.
-
-For example,
-
-1. Runs, running, and ran are all forms of the word **run**
-2. Builds, building, or built are all forms of the word **build.**
-
-### Ad-hoc Queries
-
-To view all existing transcriptions, you can enter `*` and choose the required date range.
-
-### Saved Queries
-
-Saved queries allow you to build a query that you can reuse.
-
-The **Transcription Query Profile** enables you to construct a query list and save it.
-
-You can search the created query list for the transcribed calls.
-
-### Boolean Search
-
-You can use various Operators to refine your research:
-
-|**Operator**|**Explanation**|**Example**|
-|------------|---------------|-----------|
-|`AND`|Includes entries that contain all the keywords provided in a list, separated by `AND/&/and`|1. `call AND connect AND echo`<br>2. `call and connect and echo`</br>3. `call & connect & echo`|
-|`OR`|Include entries that contain at least one keyword from the provided list, separated by `OR/or`|1. `call or connect or echo` <br> 2. `call OR connect OR echo`</br>|
-|`NOT`| This is the NOT operator it won't include the keywords prefixed by`-` symbol|`-call -connect -echo`|
-
-!!! Example
-
-    1. `AND` Operator
-    <img src="/transcription/img/and.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-    2. `OR` Operator
-    <img src="/transcription/img/or.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-    3. `NOT` Operator
-    <img src="/transcription/img/not.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-!!! Tip
-    By using **multiple search operators** together, you can create more specific search queries that help you find the most relevant entries more quickly.
-
-## Search & Investigation Workflows
-
-Transcripts and query matches can be used to support operational investigations and conversation review workflows.
-
----
-
-### Search by Keyword
-
-Operators can search transcripts using keywords or phrases to quickly locate relevant conversations.
-
----
-
-### Filter by Customer or Date
-
-Filtering options help narrow investigation scope using:
-
-* customer
-* date range
-* call direction
-* query profile
-* matched keywords
-
----
-
-### Review Flagged Conversations
-
-Calls matching configured query profiles can be reviewed for:
-
-* compliance checks
-* operational analysis
-* escalation handling
-* QA review
-
----
-
-### Investigate Customer Disputes
-
-Transcript searches can help operators review historical conversations during billing disputes, escalations, or service investigations.
-
-## Operational Best Practices
-
-### Optimize Queries for Accuracy
-
-Use targeted keywords and phrases to improve match relevance and reduce unnecessary results.
-
----
-
-### Avoid Overly Broad Keywords
-
-Very common words may generate excessive matches and reduce operational visibility.
-
----
-
-### Review False Positives Periodically
-
-Regularly review query results to refine keyword logic and improve detection accuracy.
-
----
-
-### Use Structured Naming Conventions
-
-Use clear naming conventions for query profiles to simplify operational management and reporting.
-
----
-
-### Regularly Validate Query Effectiveness
-
-Periodically test query profiles against real transcript data to ensure expected detection behavior.
+!!! tip "A customer's calls are missing from Global Transcription"
+    Check that transcription is enabled on that customer's route (**Ingress Routing :material-menu-right: Media :material-menu-right: Transcribe**) and that sampling isn't set too low.
