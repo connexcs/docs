@@ -16,15 +16,15 @@ search:
 <strong>Prerequisites</strong>:
 <ul>
 <li>Active ConnexCS account with Transcription enabled — this is a paid feature; check <a href="https://connexcs.com/pricing">Pricing</a> before setup.</li>
-<li>Transcription enabled on each customer whose calls you want to see (see <a href="https://docs.connexcs.com/customer/transcriptions/#step-2-enable-transcription-for-the-customer">Enable Transcription for the Customer</a>).</li>
-<li>Familiarity with the <a href="https://docs.connexcs.com/customer/transcriptions/">Customer Transcription</a> page, which documents every tab and field used here.</li>
+<li>Transcription enabled on each customer whose calls you want to see (see <a href="/customer/transcriptions/#step-2-enable-transcription-for-the-customer">Enable Transcription for the Customer</a>).</li>
+<li>Familiarity with the <a href="/customer/transcriptions/">Customer Transcription</a> page, which documents every tab and field used here.</li>
 </ul>
 <strong>Related Topics</strong>:
-<a href="https://docs.connexcs.com/customer/transcriptions/">Customer – Transcription</a> — full reference for every tab and field ·
+<a href="/customer/transcriptions/">Customer – Transcription</a> — full reference for every tab and field ·
 <a href="https://docs.connexcs.com/customer/routing/">Customer – Routing</a> — enable transcription and sampling per customer ·
 <a href="https://docs.connexcs.com/customer/alerts/">Customer – Alerts</a> — alert recipients for transcription events ·
 <a href="https://docs.connexcs.com/setup/advanced/fraud/">Fraud Profile</a> — complementary fraud monitoring controls<br>
-<strong>Next Steps</strong>: <a href="#recommended-setup-order">Set up the Classifier</a> for your customers, then review account-wide outcomes on the <a href="https://docs.connexcs.com/customer/transcriptions/#results">Results</a> sub-tab.<br>
+<strong>Next Steps</strong>: <a href="#recommended-setup-order">Set up the Classifier</a> for your customers, then review account-wide outcomes on the <a href="/customer/transcriptions/#results">Results</a> sub-tab.<br>
 <strong>Need Help?</strong>: If the Enable Transcription option isn't visible in your account, or you need transcription in a language other than English, <a href="https://connexcs.com/contact-us">contact ConnexCS support</a>.<br>
 <strong>Meta Description</strong>: View, search and classify transcribed calls across all customers in ConnexCS Global Transcription, with links to the full Customer Transcription reference.<br>
 
@@ -102,7 +102,7 @@ Lists the Query Profiles for **all customers**. From here you can create profile
 |-------|---------|
 | Add, Refresh, Delete and Search | [Toolbar](/customer/transcriptions/#toolbar) |
 | Name, Query, Customer Name, Visibility and Action | [Query Profile Columns](/customer/transcriptions/#query-profile-columns) |
-| Creating a profile, Visibility (Private / Public) and Action (Trigger Alert / Immediate Hangup) | [Create a Customer Query Profile](/transcriptions/#create-a-customer-query-profile) |
+| Creating a profile, Visibility (Private / Public) and Action (Trigger Alert / Immediate Hangup) | [Create a Customer Query Profile](/customer/transcriptions/#create-a-customer-query-profile) |
 | Writing queries | [Query Syntax](/customer/transcriptions/#query-syntax) |
 | Getting notified when a profile matches | [Set Up Transcription Alerts](/customer/transcriptions/#set-up-transcription-alerts) |
 
