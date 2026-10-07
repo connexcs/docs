@@ -59,9 +59,8 @@ Use Global Transcription to:
 
 Calls appear in Global Transcription only for customers that have transcription switched on. Setup is the same as for a single customer:
 
-1. [Enable Transcription on your account](https://docs.connexcs.com/customer/transcriptions/#step-1-enable-transcription-on-your-account) under **Setup :material-menu-right: Settings :material-menu-right: Account**.
-2. [Enable Transcription for each customer](https://docs.connexcs.com/customer/transcriptions/#step-2-enable-transcription-for-the-customer) under **Ingress Routing :material-menu-right: Media :material-menu-right: Transcribe**, choosing a sampling level and optional duration limit.
-3. (Optional) [Resell transcription as a package](https://docs.connexcs.com/customer/transcriptions/#step-3-optional-resell-transcription-as-a-package).
+1. [Enable Transcription on your account](/customer/transcriptions/#step-1-enable-transcription-on-your-account) under **Setup :material-menu-right: Config :material-menu-right: Packages**.
+2. [Enable Transcription for each customer](/customer/transcriptions/#step-2-enable-transcription-for-the-customer) under **Ingress Routing :material-menu-right: Media :material-menu-right: Transcribe**, choosing a sampling level and optional duration limit.
 
 !!! note "Recorded calls only"
     Only recorded calls are transcribed, and only the sampled percentage of each customer's calls appears.
@@ -76,10 +75,10 @@ Lists transcribed calls from **all customers**, grouped by date, with the caller
 
 | Topic | Details |
 |-------|---------|
-| Reading the list | [Understanding the Conversation List](https://docs.connexcs.com/customer/transcriptions/#understanding-the-conversation-list) |
-| Finding a call by Call ID or number | [Search](https://docs.connexcs.com/customer/transcriptions/#search) |
-| Date, minimum duration, minimum segments, group by and sort | [Filter](https://docs.connexcs.com/customer/transcriptions/#filter) |
-| Reloading the list | [Refresh](https://docs.connexcs.com/customer/transcriptions/#refresh) |
+| Reading the list | [Understanding the Conversation List](/customer/transcriptions/#understanding-the-conversation-list) |
+| Finding a call by Call ID or number | [Search](/customer/transcriptions/#search) |
+| Date, minimum duration, minimum segments, group by and sort | [Filter](/customer/transcriptions/#filter) |
+| Reloading the list | [Refresh](/customer/transcriptions/#refresh) |
 
 ### Raw
 
@@ -87,10 +86,10 @@ Shows individual transcript segments from **all customers**. At the global level
 
 | Topic | Details |
 |-------|---------|
-| Filter words drop-down, query field and search button | [Search Bar](https://docs.connexcs.com/customer/transcriptions/#search-bar) |
-| Call ID, Date, Customer Name, Text, Leg and Score | [Results Grid](https://docs.connexcs.com/customer/transcriptions/#results-grid) |
-| Columns, Filters and Custom Settings | [Side Panel](https://docs.connexcs.com/customer/transcriptions/#side-panel-columns-filters-and-custom-settings) |
-| AND, OR, NOT and exact-phrase searches | [Query Syntax](https://docs.connexcs.com/customer/transcriptions/#query-syntax) |
+| Filter words drop-down, query field and search button | [Search Bar](/customer/transcriptions/#search-bar) |
+| Call ID, Date, Customer Name, Text, Leg and Score | [Results Grid](/customer/transcriptions/#results-grid) |
+| Columns, Filters and Custom Settings | [Side Panel](/customer/transcriptions/#side-panel-columns-filters-and-custom-settings) |
+| AND, OR, NOT and exact-phrase searches | [Query Syntax](/customer/transcriptions/#query-syntax) |
 
 ### Key Phrase Lookup
 
@@ -101,11 +100,11 @@ Lists the Query Profiles for **all customers**. From here you can create profile
 
 | Topic | Details |
 |-------|---------|
-| Add, Refresh, Delete and Search | [Toolbar](https://docs.connexcs.com/customer/transcriptions/#toolbar) |
-| Name, Query, Customer Name, Visibility and Action | [Query Profile Columns](https://docs.connexcs.com/customer/transcriptions/#query-profile-columns) |
-| Creating a profile, Visibility (Private / Public) and Action (Trigger Alert / Immediate Hangup) | [Create a Customer Query Profile](https://docs.connexcs.com/customer/transcriptions/#create-a-customer-query-profile) |
-| Writing queries | [Query Syntax](https://docs.connexcs.com/customer/transcriptions/#query-syntax) |
-| Getting notified when a profile matches | [Set Up Transcription Alerts](https://docs.connexcs.com/customer/transcriptions/#set-up-transcription-alerts) |
+| Add, Refresh, Delete and Search | [Toolbar](/customer/transcriptions/#toolbar) |
+| Name, Query, Customer Name, Visibility and Action | [Query Profile Columns](/customer/transcriptions/#query-profile-columns) |
+| Creating a profile, Visibility (Private / Public) and Action (Trigger Alert / Immediate Hangup) | [Create a Customer Query Profile](/transcriptions/#create-a-customer-query-profile) |
+| Writing queries | [Query Syntax](/customer/transcriptions/#query-syntax) |
+| Getting notified when a profile matches | [Set Up Transcription Alerts](/customer/transcriptions/#set-up-transcription-alerts) |
 
 ### Classifier <sup>Beta</sup>
 
@@ -119,24 +118,24 @@ Uses an AI model to classify transcribed calls from **all customers** and act on
 !!! note "Recommended setup order"
     To use the Classifier tab efficiently, set it up in this order:
 
-    1. **Create a classifier** on the [Classifiers](https://docs.connexcs.com/customer/transcriptions/#classifiers) sub-tab (or duplicate the ConnexCS classifier to customise it).
-    2. **Attach the classifier to a policy** on the [Policies](https://docs.connexcs.com/customer/transcriptions/#policies) sub-tab by selecting it in the policy's **Classifier** field and setting the conditions and action.
-    3. **Assign the classifier to the customer** on the [Assignments](https://docs.connexcs.com/customer/transcriptions/#assignments) sub-tab. From Global Transcription you can set the **All customers (default)** classifier for every customer, or add an override for individual customers.
+    1. **Create a classifier** on the [Classifiers](/customer/transcriptions/#classifiers) sub-tab (or duplicate the ConnexCS classifier to customise it).
+    2. **Attach the classifier to a policy** on the [Policies](/customer/transcriptions/#policies) sub-tab by selecting it in the policy's **Classifier** field and setting the conditions and action.
+    3. **Assign the classifier to the customer** on the [Assignments](/customer/transcriptions/#assignments) sub-tab. From Global Transcription you can set the **All customers (default)** classifier for every customer, or add an override for individual customers.
 
-    Once all three are in place, the customers' calls are classified and the policy is evaluated. Check [Results](https://docs.connexcs.com/customer/transcriptions/#results) to confirm everything is working.
+    Once all three are in place, the customers' calls are classified and the policy is evaluated. Check [Results](/customer/transcriptions/#results) to confirm everything is working.
 
 | Topic | Details |
 |-------|---------|
-| Classifiers, policies, assignments and results explained | [How Call Classification Works](https://docs.connexcs.com/customer/transcriptions/#how-call-classification-works) |
-| Shadow vs Active | [Shadow and Active Modes](https://docs.connexcs.com/customer/transcriptions/#shadow-and-active-modes) |
-| Account-wide default, customer overrides and opting customers out | [Assignments](https://docs.connexcs.com/customer/transcriptions/#assignments) |
-| Classifier list, search and actions | [Classifiers](https://docs.connexcs.com/customer/transcriptions/#classifiers) |
-| Viewing a classifier and its questions | [Viewing a Classifier](https://docs.connexcs.com/customer/transcriptions/#viewing-a-classifier) |
-| New classifier fields and Advanced timing | [Create a New Classifier](https://docs.connexcs.com/customer/transcriptions/#create-a-new-classifier) |
-| Policy list, filter drop-downs and columns | [Policies](https://docs.connexcs.com/customer/transcriptions/#policies) |
-| New policy fields, conditions, actions and Advanced settings | [Create a New Policy](https://docs.connexcs.com/customer/transcriptions/#create-a-new-policy) |
-| Results filters and columns | [Results](https://docs.connexcs.com/customer/transcriptions/#results) |
-| Call category, characteristics, maliciousness, risk chart, rule matches and transcript | [Call Classification Details](https://docs.connexcs.com/customer/transcriptions/#call-classification-details) |
+| Classifiers, policies, assignments and results explained | [How Call Classification Works](/customer/transcriptions/#how-call-classification-works) |
+| Shadow vs Active | [Shadow and Active Modes](/customer/transcriptions/#shadow-and-active-modes) |
+| Account-wide default, customer overrides and opting customers out | [Assignments](/customer/transcriptions/#assignments) |
+| Classifier list, search and actions | [Classifiers](/customer/transcriptions/#classifiers) |
+| Viewing a classifier and its questions | [Viewing a Classifier](/customer/transcriptions/#viewing-a-classifier) |
+| New classifier fields and Advanced timing | [Create a New Classifier](/customer/transcriptions/#create-a-new-classifier) |
+| Policy list, filter drop-downs and columns | [Policies](/customer/transcriptions/#policies) |
+| New policy fields, conditions, actions and Advanced settings | [Create a New Policy](/customer/transcriptions/#create-a-new-policy) |
+| Results filters and columns | [Results](/customer/transcriptions/#results) |
+| Call category, characteristics, maliciousness, risk chart, rule matches and transcript | [Call Classification Details](/customer/transcriptions/#call-classification-details) |
 
 !!! tip "Use the customer filters"
     At the global level, the **All customers** drop-downs on the **Policies** and **Results** sub-tabs let you narrow the view to one customer without leaving the page.
@@ -145,8 +144,8 @@ Uses an AI model to classify transcribed calls from **all customers** and act on
 
 The same guidance applies at the global level:
 
-+ [Best Practices](https://docs.connexcs.com/customer/transcriptions/#best-practices) for writing queries and naming profiles.
-+ [Troubleshooting](https://docs.connexcs.com/customer/transcriptions/#troubleshooting) for missing calls, incomplete transcripts and other common issues.
++ [Best Practices](/customer/transcriptions/#best-practices) for writing queries and naming profiles.
++ [Troubleshooting](/customer/transcriptions/#troubleshooting) for missing calls, incomplete transcripts and other common issues.
 
 !!! tip "A customer's calls are missing from Global Transcription"
     Check that transcription is enabled on that customer's route (**Ingress Routing :material-menu-right: Media :material-menu-right: Transcribe**) and that sampling isn't set too low.

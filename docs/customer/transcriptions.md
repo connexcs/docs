@@ -87,7 +87,7 @@ Enabling transcription for a customer takes two steps: switch the feature on for
 
 #### Step 1: Enable Transcription on Your Account
 
-1. Navigate to **Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/)** and click <img src="/transcription/img/transcription-add.png" alt="add" width="50">.
+1. Navigate to **Setup :material-menu-right: Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/)** and click <img src="/transcription/img/transcription-add.png" alt="add" width="50">.
 2. Choose your Transcription Package from **ConnexCS Package**.
 3. Enter the **Retail Cost** and click <img src="/transcription/img/transcriptions-save.png" alt="save" width="120">.
 4. Assign the package to the customer from their account.
