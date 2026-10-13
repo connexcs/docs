@@ -35,8 +35,6 @@ search:
 
 ## Overview
 
-Transcription converts a customer's recorded calls into searchable text.
-
 The **Transcription** tab inside a customer account shows only that customer's transcribed calls, so you can review what was said on their calls, search for specific words or phrases, and act on what you find, without sifting through calls from other customers.
 
 Calls are transcribed in **English** by default; other languages are available on request.
@@ -45,9 +43,6 @@ Transcription is billed per second of speech, and you can resell it to the custo
 
 <img src="/customer/img/newtranscript1.png" alt="Customer Transcription" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-!!! note "Recorded calls only"
-    *Only recorded calls are transcribed*. If a call wasn't recorded, or fell outside the customer's sampling percentage, it won't appear in this tab.
-
 ## Key Features
 
 1. **Conversation view**: Each transcribed call is shown as a two-sided conversation between the caller (Leg 0) and the callee (Leg 1), grouped by day with call time, duration and message count.
@@ -55,11 +50,10 @@ Transcription is billed per second of speech, and you can resell it to the custo
 3. **Key Phrase Lookup**: Full-text search across the customer's transcripts with `AND`, `OR`, `NOT` and exact-phrase matching, ranked by relevance score.
 4. **Lemmatization**: Searches match different forms of the same word (for example, *run* also finds *runs*, *running* and *ran*).
 5. **Classifier**: Automatically categorises the customer's conversations to surface patterns.
-6. **Per-customer sampling**: Transcribe 1%, 5%, 25%, 50% or all of the customer's recorded calls.
+6. **Per-customer sampling:** Configure transcription for 1%, 5%, 25%, 50%, or 100% of a customer's calls.
 7. **Transcription duration limit**: Cap how many seconds of each call are transcribed.
 8. **Customer Query Profiles**: Save keyword and phrase rules for this customer that can trigger an alert or hang up the call.
-9. **Transcription Alerts**: Notify by e-mail, SMS or call, and optionally apply a penalty, when a saved phrase is detected.
-10. **No charge for silence**: Silent periods are removed before billing.
+9. **Transcription Alerts**: Notify by e-mail and optionally apply a penalty, when a saved phrase is detected.
 
 ## Benefits
 
@@ -75,9 +69,6 @@ Transcription is billed per second of speech, and you can resell it to the custo
 
 !!! warning
     If you can't find the **Enable Transcription** option, [contact ConnexCS support](https://connexcs.com/contact-us) to have it enabled.
-
-!!! info "No fee for silence"
-    Silence is removed before billing. If a call lasts 50 seconds and no audio is exchanged for 20 seconds, you're billed for 30 seconds of transcription.
 
 ## How to Use the Transcription Feature
 
@@ -106,15 +97,14 @@ Enabling transcription for a customer takes two steps: switch the feature on for
     + **Enabled (Always On)**
 
     !!! info "Sampling"
-        **% Sampling** is the proportion of the customer's eligible calls that will be transcribed. Choose **Enabled (Always On)** to transcribe every recorded call.
+        **% Sampling** is the proportion of the customer's eligible calls that will be transcribed. Choose **Enabled (Always On)** to transcribe every call.
 
 3. **Transcription Duration** (optional): Enter the maximum number of seconds to transcribe per call. Transcription stops at this limit, even mid-sentence.
 4. Click **`Save`**.
 
 <img src="/transcription/img/trans1.png" alt="Enable transcription on the customer route" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-
-### How to Use Transcription in a Customer Account
+### Configuring and Managing Transcription for a Customer Account
 
 Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Transcription**. The tab has four sections: **Conversations**, **Raw**, **Key Phrase Lookup** and **Classifier** <sup>Beta</sup>.
 
@@ -195,23 +185,12 @@ The search bar at the top of the Raw tab has two fields and a search button.
 
 **1. Filter words (saved Query Profile drop-down)**
 
-The **filter words** drop-down lists the [Transcription Query Profiles](#create-a-customer-query-profile) available for this customer. Each entry shows:
+    The **filter words** drop-down lists the [Transcription Query Profiles](#create-a-customer-query-profile) available for this customer. Each entry shows:
 
-+ **Left**: The profile **Name** (for example, **Compliance**, **Profanity Filter**, **Hang up on 5**).
-+ **Right**: The **Query** saved in that profile (for example, `I am calling from th...`, `five|5`).
+       + **Left**: The profile **Name** (for example, **Compliance**, **Profanity Filter**, **Hang up on 5**).
+       + **Right**: The **Query** saved in that profile (for example, `I am calling from th...`, `five|5`).
 
-When you select a profile, its query is automatically copied into the query field next to it, so you don't have to retype it. Click :material-close-circle-outline: in the drop-down to clear the selection.
-
-!!! example "Sample profiles in the drop-down"
-    | Profile Name | Saved Query | What it finds |
-    |--------------|-------------|---------------|
-    | Compliance | `I am calling from the...` | A specific scripted phrase. |
-    | Profanity Filter | `Arse\|Bloody\|Bugger\|...` | Any one of a list of offensive words. |
-    | Hang up on 5 | `five\|5` | Either "five" or "5". |
-    | Connected | `connected` | The word "connected". |
-    | amazon | `leave a message OR a...` | Either of two phrases. |
-
-    The pipe symbol `|` works as **OR**, so `five|5` matches either value.
+    When you select a profile, its query is automatically copied into the query field next to it, so you don't have to retype it. Click :material-close-circle-outline: in the drop-down to clear the selection.
 
 **2. Query field**
 
@@ -294,14 +273,14 @@ The profiles you create here also appear in the **filter words** drop-down on th
 
 ##### Query Profile Columns
 
-| Column | Description | Example |
-|--------|-------------|---------|
-| **Checkbox** | Select a profile to delete it. The checkbox in the header selects all profiles. | |
-| **Name** | The name of the profile. Click it to open and edit the profile. | `Hang up on 5` |
-| **Query** | The keyword or phrase rule the profile checks for. | `five\|5` |
-| **Customer Name** | The customer the profile applies to. Click it to open that customer's account. | `Adam` |
-| **Visibility** | Whether the customer can see and use the profile: **Private** or **Public**. | `Private` |
-| **Action** | What happens when the query matches: **Trigger Alert**, **Immediate Hangup**, or **None** if no action was selected (the profile is then used only for searching). | `Immediate Hangup` |
+| Column | Description |
+|--------|-------------|
+| **Checkbox** | Select a profile to delete it. The checkbox in the header selects all profiles. |
+| **Name** | The name of the profile. Click it to open and edit the profile. |
+| **Query** | The keyword or phrase rule the profile checks for. |
+| **Customer Name** | The customer the profile applies to. Click it to open that customer's account. |
+| **Visibility** | Whether the customer can see and use the profile: **Private** or **Public**. |
+| **Action** | What happens when the query matches: **Trigger Alert**, **Immediate Hangup**, or **None** if no action was selected (the profile is then used only for searching). |
 
 Each column header has a :material-filter-outline: **column filter** to filter the list by that column's value (for example, show only profiles with **Action** = **Immediate Hangup**) and a :material-dots-vertical: **column menu** for options such as sorting, pinning and resizing.
 
