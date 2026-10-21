@@ -78,12 +78,11 @@ Enabling transcription for a customer takes two steps: switch the feature on for
 
 #### Step 1: Enable Transcription on Your Account
 
-1. Navigate to **Setup :material-menu-right: Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/)** and click <img src="/transcription/img/transcription-add.png" alt="add" width="50">.
-2. Choose your Transcription Package from **ConnexCS Package**.
-3. Enter the **Retail Cost** and click <img src="/transcription/img/transcriptions-save.png" alt="save" width="120">.
-4. Assign the package to the customer from their account.
+1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Account**".
+2. Enable **Class 4 Transcription** from the list.
+3. If the `Enable Transcription` option isn't available, contact **ConnexCS Support**.
 
-<img src="/transcription/img/transcription-package.png" alt="Transcription package" width="500" style="border: 2px solid #4472C4; border-radius: 8px;">
+!!! Info "Transcription is a paid feature, and pricing should be checked before enabling the service."
 
 #### Step 2: Enable Transcription for the Customer
 
@@ -103,6 +102,13 @@ Enabling transcription for a customer takes two steps: switch the feature on for
 4. Click **`Save`**.
 
 <img src="/transcription/img/trans1.png" alt="Enable transcription on the customer route" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
+
+#### Enable Transcription for Reseller
+
+1. Navigate to **Setup :material-menu-right: Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/)** and click <img src="/transcription/img/transcription-add.png" alt="add" width="50">.
+2. Choose your Transcription Package from **ConnexCS Package**.
+3. Enter the **Retail Cost** and click <img src="/transcription/img/transcriptions-save.png" alt="save" width="120">.
+4. Assign the package to the customer from their account.
 
 ### Configuring and Managing Transcription for a Customer Account
 
@@ -199,7 +205,7 @@ The query field holds the search that will be run. It's filled automatically whe
 + Type a new query without selecting a profile.
 + Edit the query that a profile filled in, for example to add another keyword, without changing the saved profile.
 
-The field supports the same operators as [Key Phrase Lookup](#key-phrase-lookup): `AND`, `OR` (or `|`), `-` for NOT, and `"..."` for an exact phrase. For example, `amazon OR credit OR department` returns every segment that contains any of those three words.
+The field supports the same operators as [Key Phrase Lookup](#key-phrase-lookup): `AND`, `OR` (or `|`), `-` for NOT for an exact phrase. For example, `amazon OR credit OR department` returns every segment that contains any of those three words.
 
 **3. Search button**
 
@@ -354,7 +360,7 @@ You can then decide what should happen based on those answers, for example hangi
 
 ##### How Call Classification Works
 
-Expand **How call classification works?** at the top of the tab for a short explanation. Classification is built from four parts, each with its own sub-tab:
+Classification is built from four parts, each with its own sub-tab:
 
 | Part | What it does |
 |------|--------------|

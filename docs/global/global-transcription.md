@@ -59,8 +59,9 @@ Use Global Transcription to:
 
 Calls appear in Global Transcription only for customers that have transcription switched on. Setup is the same as for a single customer:
 
-1. [Enable Transcription on your account](/customer/transcriptions/#step-1-enable-transcription-on-your-account) under **Setup :material-menu-right: Config :material-menu-right: Packages**.
+1. [Enable Transcription on your account](/customer/transcriptions/#step-1-enable-transcription-on-your-account) under **Setup :material-menu-right: Settings :material-menu-right: Account**.
 2. [Enable Transcription for each customer](/customer/transcriptions/#step-2-enable-transcription-for-the-customer) under **Ingress Routing :material-menu-right: Media :material-menu-right: Transcribe**, choosing a sampling level and optional duration limit.
+3. [Enable Transcription for Reseller](/customer/transcriptions/#step-3-enable-transcription-for-reseller) under **Setup :material-menu-right: Config :material-menu-right: Package**.
 
 !!! note "Recorded calls only"
     Only recorded calls are transcribed, and only the sampled percentage of each customer's calls appears.
