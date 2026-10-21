@@ -35,7 +35,7 @@ search:
 
 ## Overview
 
-The **Transcription** tab inside a customer account shows only that customer's transcribed calls, so you can review what was said on their calls, search for specific words or phrases, and act on what you find, without sifting through calls from other customers.
+The **Transcription** tab inside a customer account shows only that customer's transcribed calls, so you can review what was said on their calls, search for specific words or phrases, and act on what you find, without sifting through calls from other customers. Transcription is performed in real time during the call.
 
 Calls are transcribed in **English** by default; other languages are available on request.
 
@@ -103,7 +103,7 @@ Enabling transcription for a customer takes two steps: switch the feature on for
 
 <img src="/transcription/img/trans1.png" alt="Enable transcription on the customer route" width="900" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-#### Enable Transcription for Reseller
+#### Step 3: Enable Transcription for Reseller (Optional)
 
 1. Navigate to **Setup :material-menu-right: Config :material-menu-right: [Packages](https://docs.connexcs.com/customer/package/)** and click <img src="/transcription/img/transcription-add.png" alt="add" width="50">.
 2. Choose your Transcription Package from **ConnexCS Package**.
@@ -194,7 +194,7 @@ The search bar at the top of the Raw tab has two fields and a search button.
     The **filter words** drop-down lists the [Transcription Query Profiles](#create-a-customer-query-profile) available for this customer. Each entry shows:
 
        + **Left**: The profile **Name** (for example, **Compliance**, **Profanity Filter**, **Hang up on 5**).
-       + **Right**: The **Query** saved in that profile (for example, `I am calling from th...`, `five|5`).
+       + **Right**: The **Query** saved in that profile (for example, `I am calling from the office`, `five|5`).
 
     When you select a profile, its query is automatically copied into the query field next to it, so you don't have to retype it. Click :material-close-circle-outline: in the drop-down to clear the selection.
 
@@ -331,7 +331,6 @@ The new profile appears in the Key Phrase Lookup list and in the **filter words*
 | `AND` / `and` / `&` | Matches when all keywords are present. | `refund AND cancellation` |
 | `OR` / `or` / `\|` | Matches when at least one keyword is present. | `amazon OR credit OR department`, `five\|5` |
 | `-` (NOT) | Excludes the prefixed keyword. | `refund -approved` |
-| `"..."` | Matches the exact phrase rather than separate words. | `"I am calling from the IRS"` |
 | `*` | Matches all transcripts (search only). | `*` |
 
 !!! info "Lemmatization"
@@ -537,7 +536,7 @@ Each question shows:
     !!! note
         Turn on **Classify during the call** if a policy should act on calls in progress (for example, hang up a likely scam). If you only need reporting, **Classify after the call ends** on its own is enough.
 
-3. (Optional) Expand **Advanced timing** to control how often the model checks a live call. These settings apply to classifying during the call.
+3. (*Optional*) Expand **Advanced timing** to control how often the model checks a live call. These settings apply to classifying during the call.
 
     | Field | Default | Description |
     |-------|---------|-------------|
@@ -618,7 +617,7 @@ You can use both drop-downs together, for example to see only the **ConnexCS Spa
     | **When** | Yes | When the policy is checked. Tick one or both:<br>• **During the call**: Checked while the call is in progress. Needed for **Hang up call** and live alerts. The classifier must have **Classify during the call** turned on.<br>• **After the call**: Checked on the final report once the call has ended. The classifier must have **Classify after the call ends** turned on. |
     | **Mode** | – | • **Shadow** (default): The policy is evaluated and the outcome is recorded in **Results**, but no action is taken.<br>• **Active**: The action is carried out.<br>The action is only carried out when **both** this policy **and** the customer's assignment are **Active**. |
 
-6. (Optional) Expand **Advanced** to fine-tune when the policy fires:
+6. (*Optional*) Expand **Advanced** to fine-tune when the policy fires:
 
     | Field | Default | Description |
     |-------|---------|-------------|
@@ -654,16 +653,16 @@ The **Results** sub-tab shows how each classified call was scored, what category
 |--------|-------------|---------|
 | **Time** | When the call took place. | `10/6/2026, 3:14:09 PM` |
 | **Customer** | The customer the call belongs to. | `Adam` |
-| **Call ID** | The call's unique ID. Click it to open the [Call classification](#call-classification-details) view. | `7765e5a8aba24df...` |
+| **Call ID** | The call's unique ID. Click it to open the [Call classification](#call-classification-details) view. | `7765e5a8aba24df` |
 | **Duration** | Length of the call. | `2:05` |
 | **Category** | The category the model gave the call (from the classifier's *Call category* question) and how strongly it chose that category. | `Credential theft 98%` |
 | **Risk** | The *Likely scam* score for the call. Higher values are highlighted in orange or red. When the score went higher at some point during the call, the highest value is shown as **peak**. | `65%` *peak 77%* |
-| **AI matches** | The policy actions that matched the call. Each action is shown as a badge (**Alert**, **Hang up**, **Tag**, or **Tag: [name]**). An outlined badge means the policy matched but the action wasn't carried out ("Would ..."), for example because it was in Shadow mode. A red **Executed** badge means an action was actually carried out on the call. `—` means nothing matched. | `Alert` `Hang up` `Tag: test_tag` `Executed` |
+| **AI matches** | The policy actions that matched the call. Each action is shown as a badge (**Alert**, **Hang up**, **Tag**, or **Tag: [name]**). An outlined badge means the policy matched but the action wasn't carried out ("Would"), for example because it was in Shadow mode. A red **Executed** badge means an action was actually carried out on the call. `—` means nothing matched. | `Alert` `Hang up` `Tag: test_tag` `Executed` |
 | **Keyword matches** | How many keyword rules matched the call, and when the first match happened. | `2 (first at 0:05)` |
 | **Status** | The classification status, for example **Final** once the final report is complete. | `Final` |
 
-!!! info "\"Would ...\" results"
-    A "Would ..." result means the rule matched but nothing was done to the call, either because the policy or assignment was in **Shadow** mode, or because the action wasn't attempted. Open the call to see the outcome of each action.
+!!! info "\"Would\" results"
+    A "Would" result means the rule matched but nothing was done to the call, either because the policy or assignment was in **Shadow** mode, or because the action wasn't attempted. Open the call to see the outcome of each action.
 
 !!! tip
     Sort or filter by **Risk** and **Category** to find the calls most likely to be scams, then open them to review what was said.
