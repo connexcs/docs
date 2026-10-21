@@ -274,7 +274,7 @@ The profiles you create here also appear in the **filter words** drop-down on th
 |---------|-------------|
 | :material-plus: **Add** (blue) | Create a new Query Profile. See [Create a Customer Query Profile](#create-a-customer-query-profile). |
 | :material-refresh: **Refresh** (grey) | Reload the list of profiles. |
-| :material-delete: **Delete** (red) | Delete the selected profiles. Tick the checkbox next to one or more profiles first; the button stays inactive until a profile is selected. |
+| :material-delete: **Delete** (red) | Delete the selected profiles. Tick the checkbox next to one or more profiles first; the button stays inactive until a profile is selected.|
 | **Search** | Type to find a profile by name, query or other visible values. |
 
 ##### Query Profile Columns
