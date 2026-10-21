@@ -78,7 +78,7 @@ Enabling transcription for a customer takes two steps: switch the feature on for
 
 #### Step 1: Enable Transcription on Your Account
 
-1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Account**".
+1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Account**.
 2. Enable **Class 4 Transcription** from the list.
 3. If the `Enable Transcription` option isn't available, contact **ConnexCS Support**.
 
