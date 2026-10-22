@@ -129,3 +129,17 @@ Use the options according to your organization's Caller ID, routing, and authent
 After configuring Authentication, Routing, and CLI Registration, click `Save changes` to apply the settings.
 
 Use `Reset` only when you intend to discard the current unsaved changes or restore the form's previous state, according to the application's behavior. <br><img src="/apps/img/dialapp6.png" alt="Phone Verification Settings with Save changes and Reset buttons" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+This application will be visible in the **Customer Portal**.
+
+## How to use Dial Phone Number Verification on Customer Portal
+
+!!! note "Prerequisite"
+    You must be logged in to the **Webphone** before using this feature.
+
+1. Login to **Customer Portal**.
+2. Click on `CLI` then `Add CLI`. <br><img src="/apps/img/dialapp7.png" alt="Add CLI" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+3. The Phone Number Verification window opens. Enter the phone number you want to verify, then click `Call with Code` to initiate the verification call. <br><img src="/apps/img/dialapp8.png" alt="Verification code" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+4. You will receive the call on the Webphone with the verification code. <br><img src="/apps/img/dialapp9.png" alt="Call on Webphone" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+5. Enter the verification code and click on `Verify`. <br><img src="/apps/img/dialapp10.png" alt="Call on Webphone" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+6. The CLI will be added and is visible on the CLI list. <br><img src="/apps/img/dialapp11.png" alt="Call on Webphone" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
