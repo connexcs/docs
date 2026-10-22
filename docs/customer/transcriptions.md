@@ -16,7 +16,7 @@ search:
 <strong>Prerequisites</strong>:
 <ul>
 <li>Active ConnexCS account with Transcription enabled — this is a paid feature; check <a href="https://connexcs.com/pricing">Pricing</a> before setup.</li>
-<li>Call recording active for the customer (only recorded calls can be transcribed).</li>
+<li>Transcription happens on live calls.</li>
 <li>Basic understanding of keyword/phrase matching and boolean logic (AND, OR, NOT).</li>
 </ul>
 <strong>Related Topics</strong>:
@@ -24,9 +24,9 @@ search:
 <a href="https://docs.connexcs.com/customer/alerts/">Customer – Alerts</a> — notify or penalise when a phrase is detected ·
 <a href="https://docs.connexcs.com/customer/package/">Customer – Packages</a> — resell transcription to the customer ·
 <a href="https://docs.connexcs.com/customer/cdr/">Customer – CDR</a> — match transcripts to call records ·
-<a href="https://docs.connexcs.com/transcription/">Global Transcription</a> — search across all customers<br>
+<a href="https://docs.connexcs.com/global/global/">Global Transcription</a> — search across all customers<br>
 <strong>Next Steps</strong>: After enabling transcription for the customer, <a href="#create-a-customer-query-profile">create a customer Query Profile</a>, then <a href="#set-up-transcription-alerts">configure Transcription Alerts</a> on the customer's account.<br>
-<strong>Need Help?</strong>: If the Enable Transcription option isn't visible in your account, or the customer needs transcription in a language other than English, <a href="https://connexcs.com/contact-us">contact ConnexCS support</a>.<br>
+<strong>Need Help?</strong>: If the Class 4 Transcription option isn't visible in your account, or the customer needs transcription in a language other than English, <a href="https://connexcs.com/contact-us">contact ConnexCS support</a>.<br>
 <strong>Meta Description</strong>: Enable and use call transcription for a specific customer account in ConnexCS to review conversations, detect key phrases, monitor compliance and trigger alerts.<br>
 
 </details>
@@ -68,19 +68,19 @@ Transcription is billed per second of speech, and you can resell it to the custo
     Transcription is a paid feature. Check [Pricing](https://connexcs.com/pricing) before enabling it.
 
 !!! warning
-    If you can't find the **Enable Transcription** option, [contact ConnexCS support](https://connexcs.com/contact-us) to have it enabled.
+    If you can't find the **Class 4 Transcription** option, [contact ConnexCS support](https://connexcs.com/contact-us) to have it enabled.
 
 ## How to Use the Transcription Feature
 
 ### How to Enable the Transcription Feature
 
-Enabling transcription for a customer takes two steps: switch the feature on for your ConnexCS account, then turn it on for the customer's route.
+Enabling transcription for a customer involves two required steps: enable Class 4 Transcription on your ConnexCS account and configure transcription on the customer's route. If you resell transcription, complete the optional third step to assign a package.
 
 #### Step 1: Enable Transcription on Your Account
 
 1. Navigate to **Setup :material-menu-right: Settings :material-menu-right: Account**.
 2. Enable **Class 4 Transcription** from the list.
-3. If the `Enable Transcription` option isn't available, contact **ConnexCS Support**.
+3. If the `Class 4 Transcription` option isn't available, contact **ConnexCS Support**.
 
 !!! Info "Transcription is a paid feature, and pricing should be checked before enabling the service."
 
@@ -191,12 +191,15 @@ The search bar at the top of the Raw tab has two fields and a search button.
 
 **1. Filter words (saved Query Profile drop-down)**
 
-    The **filter words** drop-down lists the [Transcription Query Profiles](#create-a-customer-query-profile) available for this customer. Each entry shows:
+The **filter words** drop-down lists the
+[Transcription Query Profiles](#create-a-customer-query-profile)
+available for this customer. Each entry shows:
 
-       + **Left**: The profile **Name** (for example, **Compliance**, **Profanity Filter**, **Hang up on 5**).
-       + **Right**: The **Query** saved in that profile (for example, `I am calling from the office`, `five|5`).
+- **Left**: The profile **Name**.
+- **Right**: The **Query** saved in that profile.
 
-    When you select a profile, its query is automatically copied into the query field next to it, so you don't have to retype it. Click :material-close-circle-outline: in the drop-down to clear the selection.
+When you select a profile, its query is automatically copied
+into the query field next to it.
 
 **2. Query field**
 
@@ -205,7 +208,7 @@ The query field holds the search that will be run. It's filled automatically whe
 + Type a new query without selecting a profile.
 + Edit the query that a profile filled in, for example to add another keyword, without changing the saved profile.
 
-The field supports the same operators as [Key Phrase Lookup](#key-phrase-lookup): `AND`, `OR` (or `|`), `-` for NOT for an exact phrase. For example, `amazon OR credit OR department` returns every segment that contains any of those three words.
+The field supports the same operators as [Key Phrase Lookup](#key-phrase-lookup): `AND`, `OR` (or `|`), `-` to exclude a keyword, and quotation marks (`" "`) to search for an exact phrase. For example, `amazon OR credit OR department` returns segments containing any of those three words.
 
 **3. Search button**
 
@@ -308,11 +311,11 @@ The vertical tabs on the right edge of the list work the same way as on the [Raw
 
     | Field | Required | Description |
     |-------|----------|-------------|
-    | **Name** | Yes | A clear name for the profile, for example `Profanity Filter` or `Customer1 – Fraud Phrases`. This is the name shown in the list and in the Raw tab's **filter words** drop-down. |
+    | **Name** | Yes | A clear name for the profile, for example `Profanity Filter` or `Customer A – Fraud Phrases`. This is the name shown in the list and in the Raw tab's **filter words** drop-down. |
     | **Query** | Yes | The keyword or phrase rule to detect. See [Query syntax](#query-syntax) below. |
     | **Customer Name** | Yes | The customer the profile applies to. Select the customer you're working on so the rule applies only to their calls. Leaving it as **None** makes the profile apply across all customers. |
     | **Visibility** | No | Who can see the profile (default **Private**):<br>• **Private**: Only you (the operator) can see and use it. The profile is hidden from the customer.<br>• **Public**: The customer can also see and use the profile from their portal. |
-    | **Action** | No | What happens when the query matches during a call:<br>• **Trigger Alert**: Raises a Transcription Alert so you're notified by e-mail, SMS or call. You also need to [set up the alert](#set-up-transcription-alerts) on the customer's account.<br>• **Immediate Hangup**: Ends the call as soon as the phrase is detected.<br>Leave it unselected if you only want to use the profile for searching. |
+    | **Action** | No | What happens when the query matches during a call:<br>• **Trigger Alert**: Raises a Transcription Alert so you're notified by e-mail. You also need to [set up the alert](#set-up-transcription-alerts) on the customer's account.<br>• **Immediate Hangup**: Ends the call as soon as the phrase is detected.<br>Leave it unselected if you only want to use the profile for searching. |
 
     !!! warning "Immediate Hangup"
         **Immediate Hangup** cuts off live calls without warning whenever the query matches. Test the query on the [Raw](#raw) tab first to make sure it doesn't match ordinary conversation.
@@ -332,6 +335,7 @@ The new profile appears in the Key Phrase Lookup list and in the **filter words*
 | `OR` / `or` / `\|` | Matches when at least one keyword is present. | `amazon OR credit OR department`, `five\|5` |
 | `-` (NOT) | Excludes the prefixed keyword. | `refund -approved` |
 | `*` | Matches all transcripts (search only). | `*` |
+| `"exact phrase"` | Searches for the exact phrase. | `"call failed"` |
 
 !!! info "Lemmatization"
     Different forms of a word are grouped together, so *build* also matches *builds*, *building* and *built*.
@@ -418,8 +422,8 @@ The assignments list covers your whole account, so it shows every customer that 
     | Customer | Classifier | Mode | Enabled | Result |
     |----------|------------|------|---------|--------|
     | All customers (default) | Not set | – | – | Customers without an override aren't classified. |
-    | Adam | ConnexCS Spam & Fraud (default) | Active | On | Adam's calls are classified and active policies take action. |
-    | Ank | ConnexCS Spam & Fraud (default) | Shadow | On | Ank's calls are classified and recorded in Results, but no action is taken. |
+    | Customer A | ConnexCS Spam & Fraud (default) | Active | On | Customer A calls are classified and active policies take action. |
+    | Customer B | ConnexCS Spam & Fraud (default) | Shadow | On | Customer B calls are classified and recorded in Results, but no action is taken. |
 
 **Set the account-wide default**
 
@@ -567,13 +571,13 @@ The **Policies** sub-tab decides *what is done* with a classifier's answers. A p
 | :material-refresh: **Refresh** | Reload the list of policies. |
 | **+ New policy** | Create a new policy. See [Create a New Policy](#create-a-new-policy). |
 
-You can use both drop-downs together, for example to see only the **ConnexCS Spam & Fraud (default)** policies that apply to **Adam**.
+You can use both drop-downs together, for example to see only the **ConnexCS Spam & Fraud (default)** policies that apply to **Customer A**.
 
 **Policy columns**
 
 | Column | Description | Example |
 |--------|-------------|---------|
-| **Policy** | The policy name and the classifier it uses, followed by a plain-language summary of the rule. | `a · ConnexCS Spam & Fraud (default)`<br>*When Likely scam ≥ 80% during the call, for Adam* |
+| **Policy** | The policy name and the classifier it uses, followed by a plain-language summary of the rule. | `a · ConnexCS Spam & Fraud (default)`<br>*When Likely scam ≥ 80% during the call, for Customer A* |
 | **Action** | What the policy does when its conditions are met:<br>• **Send alert**: Sends a Transcription alert.<br>• **Tag call**: Adds a tag to the call (the tag name is shown, for example `"test_tag"`).<br>• **Hang up call**: Ends the call. | `Hang up call` |
 | **Stage** | When the policy is checked: **During the call** or **After the call**. | `During the call` |
 | **Effective mode** | Whether the action is really carried out. **Active** means both the policy and the customer's [assignment](#assignments) are Active, so the action happens. **Shadow** means the outcome is only recorded in **Results**. | `Active` |
@@ -599,7 +603,7 @@ You can use both drop-downs together, for example to see only the **ConnexCS Spa
 
     | Field | Required | Description |
     |-------|----------|-------------|
-    | **Name** | Yes | A clear name for the policy, for example `Hang up likely scams – Adam`. |
+    | **Name** | Yes | A clear name for the policy, for example `Hang up likely scams – Customer A`. |
     | **Customers** | No | Which customers the policy applies to. The default, **All customers using this classifier**, applies it to every customer assigned the selected classifier. Select a specific customer to limit it to them. |
     | **Description** | No | Notes about the policy's purpose (up to 1000 characters). |
     | **Classifier** | Yes | The classifier whose answers the policy uses. You must choose a classifier before you can add conditions. |
@@ -719,7 +723,7 @@ A table of every rule that matched during the call:
 |--------|-------------|---------|
 | **Time** | How far into the call the rule matched. | `0:05` |
 | **Source** | What kind of rule matched, for example a **Keyword rule**. | `Keyword rule` |
-| **Rule** | The name of the rule that matched. | `test-ravi` |
+| **Rule** | The name of the rule that matched. | `test1` |
 | **Stage** | When it matched, for example **During call**. | `During call` |
 | **Action** | The action the rule was set to take. | `Hang up` |
 | **Outcome** | What actually happened, with the date and time. A red badge such as **Hung up** means the action was carried out. | `Hung up` *10/6/2026, 7:59:51 PM* |
@@ -730,11 +734,11 @@ The full conversation, line by line, with the **time** into the call, the **spea
 
 #### Set Up Transcription Alerts
 
-Add a saved Query Profile as an alert on the customer's account to be notified by e-mail, SMS or call when the phrase is detected.
+Add a saved Query Profile as an alert on the customer's account to be notified by e-mail when the phrase is detected.
 
 1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Alert**.
 2. Enter a **Title** for the alert.
-3. Enter the **E-mail/Phone Number** that should receive the alert.
+3. Enter the **E-mail address** that should receive the alert.
 4. Set **Area** to **Transcription**.
 5. Optionally choose a **Penalty** to disable the customer's account for **1 minute**, **5 minutes**, **15 minutes**, **1 Hour**, **1 Day** or **1 Year** when the alert triggers, or leave it as **Disabled**.
 6. Optionally select a **Template**.
@@ -747,15 +751,14 @@ Add a saved Query Profile as an alert on the customer's account to be notified b
 1. **Use targeted keywords**: Specific words and phrases give more relevant matches.
 2. **Avoid overly broad terms**: Very common words produce too many matches to review.
 3. **Review false positives**: Check query results regularly and refine the rules.
-4. **Name profiles clearly**: Include the customer and purpose in the profile name, for example `Customer1 – Fraud Phrases`.
-5. **Test profiles on real calls**: Run them in **Key Phrase Lookup** before attaching an alert or hangup action.
+4. **Name profiles clearly**: Include the customer and purpose in the profile name, for example `Customer A – Fraud Phrases`.
+5. **Test profiles on real calls**: Run them in the **Raw** tab first to verify the matching results before attaching an alert or hangup action.
 
 ## Troubleshooting
 
 | Issue | Likely Cause | Resolution |
 |-------|--------------|------------|
 | No calls listed | Transcription isn't enabled on the account or the customer's route. | Check **Setup :material-menu-right: Settings :material-menu-right: Account** and the customer's **Ingress Routing :material-menu-right: Media :material-menu-right: Transcribe** setting. |
-| Some calls missing | Sampling is below 100%, or the calls weren't recorded. | Set **Transcribe** to **Enabled (Always On)** and confirm recording is active. |
 | Transcript stops mid-call | **Transcription Duration** limit reached. | Increase or remove the duration limit. |
 | New call not showing | The list hasn't reloaded. | Click :material-refresh: **Refresh**. |
 | Poor results on non-English calls | English is the default language. | [Contact ConnexCS support](https://connexcs.com/contact-us) to request another language. |
