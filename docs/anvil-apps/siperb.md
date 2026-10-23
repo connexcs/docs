@@ -58,22 +58,20 @@ The integration helps administrators:
 
 ## Steps to Install and Use the app
 
-## How to Use Siperb
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **Siperb**, and click `Install`. <br><img src="/apps/img/siperb1.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-1. Navigate to **Setup > App Store > Anvil Store > Marketplace**, locate **Siperb**, and click `Install`. <br><img src="/apps/img/siperb1.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. An installation confirmation window will appear. Review the package details and click `Install` again. <br><img src="/apps/img/siperb2.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="200" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-2. An installation confirmation window will appear. Review the package details and click `Install` again. <br><img src="/apps/img/siperb2.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+3. Once installed, open Siperb from the installed applications list. The application details page displays the installation status, installed version, latest version, and package information.<br><img src="/apps/img/siperb3.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-3. Once installed, open Siperb from the installed applications list. The application details page displays the installation status, installed version, latest version, and package information.<br><img src="/apps/img/siperb3.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+4. To review the installed version and its changelog, navigate to the `Versions` tab. This section displays the version information, approval status, submission details, and changes included in the release.<br><img src="/apps/img/siperb4.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-4. To review the installed version and its changelog, navigate to the `Versions` tab. This section displays the version information, approval status, submission details, and changes included in the release.<br><img src="/apps/img/siperb4.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-5. To configure a custom domain, navigate to the `App Settings` tab. Under **Custom Domains**, click `+ Add`.<<img src="/apps/img/siperb5.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">>
+5. To configure a custom domain, navigate to the `App Settings` tab. Under **Custom Domains**, click `+ Add`.<img src="/apps/img/siperb5.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">
 
 6. A window will open, prompting you to enter the following details:
 
-   1. `Domain`: Enter the domain you want to associate with the Siperb application (for example, `test.cnx.page`).
-   2. Click `Create` to save the domain configuration. The application will be automatically rebuilt and republished after the domain is created. <br><img src="/apps/img/siperb6.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+      1. `Domain`: Enter the domain you want to associate with the Siperb application (for example, `test.cnx.page`).
+      2. Click `Create` to save the domain configuration. The application will be automatically rebuilt and republished after the domain is created. <br><img src="/apps/img/siperb6.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="300" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 8. A new window will where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
@@ -85,13 +83,14 @@ The integration helps administrators:
 10. Navigate to the **Control Panel**, click on the **Siperb** application. Paste the generated token and click on `Save and Sign In`.<br><img src="/apps/img/siperb12.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 11. **Siperb Dashboard** window will open-up. It provides a quick overview of the account, registered devices, and configured connections. It allows users to monitor their setup and quickly access device and connection management options.<br><img src="/apps/img/siperb13.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-            **Key sections of the dashboard**:
-                - **Account Overview**: Displays a welcome message and the account user's name, along with shortcuts to create a new device or connection.
-                - **Devices**: Shows the total number of registered devices. The Recent devices section lists recently added devices and their types, such as webpage or Electron.
-                - **Connections**: Displays the total number of configured connections, including trunks and routes.
-                - **Active Connections**: Shows the number of connections currently enabled.
-                - **Recent Connections**: Lists recently configured connections, their names, matching patterns, and current status (On or Off).
-                - **Quick Actions**: The **New device** and **New connection** buttons provide shortcuts to create devices and connections.
+    **Key sections of the dashboard**:
+      - **Account Overview**: Displays a welcome message and the account user's name, along with shortcuts to create a new device or connection.
+      - **Devices**: Shows the total number of registered devices. The Recent devices section lists recently added devices and their types, such as webpage or Electron.
+      - **Connections**: Displays the total number of configured connections, including trunks and routes.
+      - **Active Connections**: Shows the number of connections currently enabled.
+      - **Recent Connections**: Lists recently configured connections, their names, matching patterns, and current status (On or Off).
+      - **Quick Actions**: The **New device** and **New connection** buttons provide shortcuts to create devices and connections.
+
 12. **Siperb Profile**: It displays the user's account information, SIP identity, account details, permissions, and domain information. Users can review their profile and, where permitted, update their details.
 
 === "Details"
@@ -105,7 +104,7 @@ The integration helps administrators:
     - **Other Details**: Displays the domain, domain owner status, and parent account details, where available.
     - **Refresh**: Reloads the displayed profile information.
 
-    <br><img src="/apps/img/siperb15.png" alt="Siperb Profile Details tab showing profile information, SIP identity, account details, permissions, and domain information" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+    <img src="/apps/img/siperb15.png" alt="Siperb Profile Details tab showing profile information, SIP identity, account details, permissions, and domain information" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">
 
 === "vCard"
 
@@ -118,19 +117,18 @@ The integration helps administrators:
     - **Title Desc**: The contact's name or descriptive title.
     - **Edit vCard**: Allows the user to update contact card information, where permitted.
     - **Refresh**: Reloads the displayed contact information.
-
-    <br><img src="/apps/img/siperb16.png" alt="Siperb Profile vCard tab showing contact card details and Edit vCard button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+    <img src="/apps/img/siperb16.png" alt="Siperb Profile vCard tab showing contact card details and Edit vCard button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">
 
 13. **Domain Users** page allows administrators to manage users who can access the Siperb domain. Administrators can view existing users, check their roles, and invite new users. <br><img src="/apps/img/siperb17.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-The page includes the following sections:
+    * **The page includes the following sections**:
 
-    - **Total Users**: Displays the total number of users with access to the domain.
-    - **Domain Owners**: Shows the number of users with full administrative rights.
-    - **Members**: Displays the number of standard domain users.
-    - **All Domain Users**: Lists domain users and provides a search bar to find users by email address or description.
-    - **Invite Domain User**: Opens the invitation form to add a new user.
-    - **Refresh**: Reloads the user information.
+      - **Total Users**: Displays the total number of users with access to the domain.
+      - **Domain Owners**: Shows the number of users with full administrative rights.
+      - **Members**: Displays the number of standard domain users.
+      - **All Domain Users**: Lists domain users and provides a search bar to find users by email address or description.
+      - **Invite Domain User**: Opens the invitation form to add a new user.
+      - **Refresh**: Reloads the user information.
 
     * **How to Invite a Domain User**?
 
@@ -146,7 +144,7 @@ The page includes the following sections:
 
 14. The **Devices** page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-      The page includes the following options:
+      **The page includes the following options**:
 
     - **Search**: Find devices by description, platform, or other searchable details.
     - **Refresh**: Reload the device list.
@@ -158,7 +156,7 @@ The page includes the following sections:
     - **Created**: Shows when the device was created.
     - **Actions**: Use `Edit` to modify a device or `Delete` to remove it.
   
-  - **How to Create a Device**?
+      - **How to Create a Device**?
 
     1. Navigate to **Siperb :material-menu-right: Devices**.
     2. Click `New device`. The New device window opens. <br><img src="/apps/img/siperb21.png" alt="Siperb New device form with device name, platform, registration mode, and WebSocket settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
@@ -174,11 +172,11 @@ The page includes the following sections:
     4. Click `Create device` to register the device. Click `Cancel` to close the window without creating it.
 
 !!! Note "What happens when you click on `proxy`?
-    - **Overview**: Displays the device description, platform, registration mode, SIP contact, provisioning token, and creation date.
-    - **Console log**: Provides access to console logs for troubleshooting.
-    - **Register log**: Displays registration-related logs.
-    - **Network latency**: Provides network latency information for diagnosing connectivity or performance issues.
-    - **SIP traces**: Provides SIP signaling information for call and registration troubleshooting.
+       - **Overview**: Displays the device description, platform, registration mode, SIP contact, provisioning token, and creation date.
+       - **Console log**: Provides access to console logs for troubleshooting.
+       - **Register log**: Displays registration-related logs.
+       - **Network latency**: Provides network latency information for diagnosing connectivity or performance issues.
+       - **SIP traces**: Provides SIP signaling information for call and registration troubleshooting.
 
       Click `Edit device` to modify the device configuration or `Refresh` to reload its details.
 
@@ -217,9 +215,7 @@ The page includes the following options:
       - **Connection expiry**: Configure whether the connection should expire, where applicable.
       - **Restrict SIP methods**: Enable this option if SIP method restrictions are required.
 
-            **Registration**
-
-            This section contains settings for connections that use SIP registration.
+      **Registration**: This section contains settings for connections that use SIP registration.
 
         - **Registration server**: Enter the hostname or IP address of the remote PBX or registration server.
         - **Port**: Specify the SIP port. The screenshot shows `5060`.
@@ -235,11 +231,9 @@ The page includes the following options:
         - **Register binding SBC**: Displays the associated SBC binding information, where applicable.
         - **Registration disabled**: Enable this option to disable registration.
 
-            **Media Handling and Advanced Settings**
-
-            Expand these sections to configure additional options required for the connection. The available settings depend on the connection type and deployment requirements.
-
-     3. Review the configuration and click `Create connection` to save the connection. Click `Cancel` to leave without creating it.
+      **Media Handling and Advanced Settings**: Expand these sections to configure additional options required for the connection. The available settings depend on the connection type and deployment requirements.
+      
+      Review the configuration and click `Create connection` to save the connection. Click `Cancel` to leave without creating it.
 
 16. The **Create Interconnect** page allows administrators to create an outbound registration connection for a selected domain user. It configures the SIP registration server, authentication credentials, media handling, and advanced settings required for the connection. <br><img src="/apps/img/siperb24.png" alt="Siperb Create Interconnect form showing domain user, connection type, registration, and advanced settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
@@ -269,8 +263,8 @@ The page includes the following options:
 
     * **Create the Interconnect**
 
-    1. Select the required **Domain user**.
-    2. Enter a **Connection name**.
-    3. Configure the routing and registration details.
-    4. Review the Media Handling and Advanced Settings sections.
-    5. Click `Create interconnect` to create the connection. Click `Cancel` to exit without creating it.
+      1. Select the required **Domain user**.
+      2. Enter a **Connection name**.
+      3. Configure the routing and registration details.
+      4. Review the Media Handling and Advanced Settings sections.
+      5. Click `Create interconnect` to create the connection. Click `Cancel` to exit without creating it.
