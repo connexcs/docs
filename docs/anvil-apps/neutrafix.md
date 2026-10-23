@@ -62,7 +62,7 @@ It helps customers and administrators:
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **NeuTrafix**, and click `Install`. <br><img src="/apps/img/neutrafix1.png" alt="Connex Store marketplace showing NeuTrafix and the Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-2. An **Install Package** confirmation window will appear. Review the application name and version, then click `Install` to confirm. <br><img src="/apps/img/neutrafix2.png" alt="Install Package confirmation window for NeuTrafix version 3" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. An **Install Package** confirmation window will appear. Review the application name and version, then click `Install` to confirm. <br><img src="/apps/img/neutrafix2.png" alt="Install Package confirmation window for NeuTrafix version 3" width= "300" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3. After installation, open NeuTrafix from the installed applications list. The **Overview** tab displays the installation status, installed version, latest version, and package information.<br><img src="/apps/img/neutrafix3.png" alt="NeuTrafix Overview showing installation status and package information" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
@@ -71,17 +71,16 @@ It helps customers and administrators:
 5. Navigate to the `App Settings` tab to review the available application settings. <br><img src="/apps/img/neutrafix5.png" alt="NeuTrafix App Settings showing Custom domains and Assigned buttons" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 6. Review the following sections:
-
    - **Custom domains**: Map a domain to the application if required. Click `+ Add` to begin configuring a custom domain. Creating the domain triggers an automatic application rebuild and republication.
    - **Assigned buttons**: Displays the application entry registered in the ConnexCS portal navigation. The screenshot shows NeuTrafix as a portal navigation entry.
 
 7. If the application requires API user configuration, open the application's `Config` option and configure the API user according to the supplied Neutrafix integration settings. Save or confirm the configuration as prompted by the interface.
 
-        !!! Note "The exact API user field and confirmation dialog should be verified against the current configuration interface before publishing field-level instructions."
+!!! Note "The exact API user field and confirmation dialog should be verified against the current configuration interface before publishing field-level instructions."
 
 8. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-9. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" width "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
+9. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" width "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
 10. A window will appear displaying the following fields and sections: <br><img src="/apps/img/nt7.png" alt="NeuTrafix route marketplace showing filters and search results" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
     1. **Market View**: Select `See Purchased Routes` to view the list of routes you have already purchased.
