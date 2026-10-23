@@ -71,8 +71,8 @@ It helps customers and administrators:
 5. Navigate to the `App Settings` tab to review the available application settings. <br><img src="/apps/img/neutrafix5.png" alt="NeuTrafix App Settings showing Custom domains and Assigned buttons" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 6. Review the following sections:
-   - **Custom domains**: Map a domain to the application if required. Click `+ Add` to begin configuring a custom domain. Creating the domain triggers an automatic application rebuild and republication.
-   - **Assigned buttons**: Displays the application entry registered in the ConnexCS portal navigation. The screenshot shows NeuTrafix as a portal navigation entry.
+      - **Custom domains**: Map a domain to the application if required. Click `+ Add` to begin configuring a custom domain. Creating the domain triggers an automatic application rebuild and republication.
+      - **Assigned buttons**: Displays the application entry registered in the ConnexCS portal navigation. The screenshot shows NeuTrafix as a portal navigation entry.
 
 7. If the application requires API user configuration, open the application's `Config` option and configure the API user according to the supplied Neutrafix integration settings. Save or confirm the configuration as prompted by the interface.
 
@@ -80,7 +80,7 @@ It helps customers and administrators:
 
 ### Using Neutrafix
 
-1. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 2. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" width="500" style="border: 2px solid #4472C4; border-radius: 8px;"></br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
 
