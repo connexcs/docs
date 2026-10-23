@@ -35,7 +35,7 @@ The integration helps administrators:
 - Manage the installed application and its version through a centralized interface.
 - Configure a custom domain for the application when required.
 - Review application status and version history.
-- Remove the application if it is no longer required.
+- Remove the application if it's no longer required.
 
 ## Key Features
 
@@ -127,12 +127,12 @@ The integration helps administrators:
 13.**Domain Users** page allows administrators to manage users who can access the Siperb domain. Administrators can view existing users, check their roles, and invite new users. <br><img src="/apps/img/siperb17.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 * **The page includes the following sections**:
-  - **Total Users**: Displays the total number of users with access to the domain.
-  - **Domain Owners**: Shows the number of users with full administrative rights.
-  - **Members**: Displays the number of standard domain users.
-  - **All Domain Users**: Lists domain users and provides a search bar to find users by email address or description.
-  - **Invite Domain User**: Opens the invitation form to add a new user.
-  - **Refresh**: Reloads the user information.
+    - **Total Users**: Displays the total number of users with access to the domain.
+    - **Domain Owners**: Shows the number of users with full administrative rights.
+    - **Members**: Displays the number of standard domain users.
+    - **All Domain Users**: Lists domain users and provides a search bar to find users by email address or description.
+    - **Invite Domain User**: Opens the invitation form to add a new user.
+    - **Refresh**: Reloads the user information.
 
   * **How to Invite a Domain User**?
 
@@ -145,7 +145,7 @@ The integration helps administrators:
       - **Join mailing list**: Enable this option to add the user to the mailing list.
     4. Click `Send invite` to send the invitation. Click `Cancel` to close the window without sending it.
 
-14. The **Devices** page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+1.  The **Devices** page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
       **The page includes the following options**:
 
@@ -188,7 +188,7 @@ The integration helps administrators:
 
     <br><img src="/apps/img/siperb20.png" alt="Siperb device details showing overview and diagnostic tabs" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-15. The **Connections** page allows users to create and manage SIP connections in Siperb. Connections define how calls are routed to external trunks or registration-based endpoints using dial patterns and connection settings.<br><img src="/apps/img/siperb22.png" alt="Siperb Connections page showing connection names, types, dial patterns, weights, enabled status, and actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+15.The **Connections** page allows users to create and manage SIP connections in Siperb. Connections define how calls are routed to external trunks or registration-based endpoints using dial patterns and connection settings.<br><img src="/apps/img/siperb22.png" alt="Siperb Connections page showing connection names, types, dial patterns, weights, enabled status, and actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 The page includes the following options:
 
@@ -243,34 +243,30 @@ The page includes the following options:
 
 16.The **Create Interconnect** page allows administrators to create an outbound registration connection for a selected domain user. It configures the SIP registration server, authentication credentials, media handling, and advanced settings required for the connection. <br><img src="/apps/img/siperb24.png" alt="Siperb Create Interconnect form showing domain user, connection type, registration, and advanced settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-      * **Configuration Fields**
+* **Configuration Fields**
+    - **Domain user**: Select the domain user under whose account the connection will be created.
+    - **Connection type**: Displays the connection type. The screenshot shows `Outbound Registration`.
+    - **Connection name**: Enter a descriptive name for the connection, such as `Nairobi PBX trunk`.
 
-        - **Domain user**: Select the domain user under whose account the connection will be created.
-        - **Connection type**: Displays the connection type. The screenshot shows `Outbound Registration`.
-        - **Connection name**: Enter a descriptive name for the connection, such as `Nairobi PBX trunk`.
+* **Connection Routing**: Expand the **Connection Routing** section to configure the routing rules for the connection, including the dial pattern and related routing options.
 
-      * **Connection Routing**: Expand the **Connection Routing** section to configure the routing rules for the connection, including the dial pattern and related routing options.
+* **Registration**: Configure the SIP registration details required to connect to the remote PBX.
+    - **Registration server**: Select the configured registration server or the internet-reachable PBX.
+    - **Port**: Specify the SIP registration port. The default shown is `5060`.
+    - **SIP username**: Select the SIP username used for registration. This sets the `To` and `From` headers in the registration.
+    - **Authentication**: Select the authentication method. The screenshot shows `Set Username and Password`.
+    - **Auth username**: Enter the authentication username, if required.
+    - **Auth password**: Enter the corresponding authentication password.
 
-      * **Registration**: Configure the SIP registration details required to connect to the remote PBX.
+* **Media Handling**: Expand **Media Handling** to configure media-related options for the interconnect, according to the requirements of the SIP connection.
 
-        - **Registration server**: Select the configured registration server or the internet-reachable PBX.
-        - **Port**: Specify the SIP registration port. The default shown is `5060`.
-        - **SIP username**: Select the SIP username used for registration. This sets the `To` and `From` headers in the registration.
-        - **Authentication**: Select the authentication method. The screenshot shows `Set Username and Password`.
-        - **Auth username**: Enter the authentication username, if required.
-        - **Auth password**: Enter the corresponding authentication password.
+* **Advanced Settings** provides additional configuration options.
+    - **Reformat**: Add a row to define number-reformatting rules, where required.
+    - **Outbound call concurrency**: Specify the maximum number of concurrent outbound calls permitted for the connection. The screenshot shows `3`.
 
-    * **Media Handling**: Expand **Media Handling** to configure media-related options for the interconnect, according to the requirements of the SIP connection.
-
-    * **Advanced Settings** provides additional configuration options.
-
-      - **Reformat**: Add a row to define number-reformatting rules, where required.
-      - **Outbound call concurrency**: Specify the maximum number of concurrent outbound calls permitted for the connection. The screenshot shows `3`.
-
-    * **Create the Interconnect**
-
-        1. Select the required **Domain user**.
-        2. Enter a **Connection name**.
-        3. Configure the routing and registration details.
-        4. Review the Media Handling and Advanced Settings sections.
-        5. Click `Create interconnect` to create the connection. Click `Cancel` to exit without creating it.
+* **Create the Interconnect**
+    1. Select the required **Domain user**.
+    2. Enter a **Connection name**.
+    3. Configure the routing and registration details.
+    4. Review the Media Handling and Advanced Settings sections.
+    5. Click `Create interconnect` to create the connection. Click `Cancel` to exit without creating it.
