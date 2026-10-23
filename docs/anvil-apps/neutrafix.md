@@ -78,10 +78,13 @@ It helps customers and administrators:
 
 !!! Note "The exact API user field and confirmation dialog should be verified against the current configuration interface before publishing field-level instructions."
 
-8. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+### Using Neutrafix
 
-9. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" width "300" style="border: 2px solid #4472C4; border-radius: 8px;"></br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
-10. A window will appear displaying the following fields and sections: <br><img src="/apps/img/nt7.png" alt="NeuTrafix route marketplace showing filters and search results" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+1. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+2. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" width="500" style="border: 2px solid #4472C4; border-radius: 8px;"></br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
+
+3. A window will appear displaying the following fields and sections: <br><img src="/apps/img/nt7.png" alt="NeuTrafix route marketplace showing filters and search results" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
     1. **Market View**: Select `See Purchased Routes` to view the list of routes you have already purchased.
 
