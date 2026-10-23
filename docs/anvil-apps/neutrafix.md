@@ -60,25 +60,15 @@ It helps customers and administrators:
 
 ### Install Neutrafix
 
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **NeuTrafix**, and click `Install`.
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **NeuTrafix**, and click `Install`. <br><img src="/apps/img/neutrafix1.png" alt="Connex Store marketplace showing NeuTrafix and the Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-   <br><img src="/apps/img/neutrafix1.png" alt="Connex Store marketplace showing NeuTrafix and the Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+2. An **Install Package** confirmation window will appear. Review the application name and version, then click `Install` to confirm. <br><img src="/apps/img/neutrafix2.png" alt="Install Package confirmation window for NeuTrafix version 3" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-2. An **Install Package** confirmation window will appear. Review the application name and version, then click `Install` to confirm.
+3. After installation, open NeuTrafix from the installed applications list. The **Overview** tab displays the installation status, installed version, latest version, and package information.<br><img src="/apps/img/neutrafix3.png" alt="NeuTrafix Overview showing installation status and package information" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-   <br><img src="/apps/img/neutrafixt2.png" alt="Install Package confirmation window for NeuTrafix version 3" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+4. To review the application's release history, navigate to the `Versions` tab. This section displays the available versions and their approval status. <br><img src="/apps/img/neutrafix4.png" alt="NeuTrafix Versions tab showing version history and approval status" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-3. After installation, open NeuTrafix from the installed applications list. The **Overview** tab displays the installation status, installed version, latest version, and package information.
-
-   <br><img src="/apps/img/neutrafix3.png" alt="NeuTrafix Overview showing installation status and package information" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
-
-4. To review the application's release history, navigate to the `Versions` tab. This section displays the available versions and their approval status.
-
-   <br><img src="/apps/img/neutrafix4.png" alt="NeuTrafix Versions tab showing version history and approval status" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
-
-5. Navigate to the `App Settings` tab to review the available application settings.
-
-   <br><img src="/apps/img/neutrafix5.png" alt="NeuTrafix App Settings showing Custom domains and Assigned buttons" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+5. Navigate to the `App Settings` tab to review the available application settings. <br><img src="/apps/img/neutrafix5.png" alt="NeuTrafix App Settings showing Custom domains and Assigned buttons" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 6. Review the following sections:
 
@@ -87,51 +77,70 @@ It helps customers and administrators:
 
 7. If the application requires API user configuration, open the application's `Config` option and configure the API user according to the supplied Neutrafix integration settings. Save or confirm the configuration as prompted by the interface.
 
-   **Note:** The exact API user field and confirmation dialog should be verified against the current configuration interface before publishing field-level instructions.
+        !!! Note "The exact API user field and confirmation dialog should be verified against the current configuration interface before publishing field-level instructions."
 
-4. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" style="border: 2px solid #4472C4; border-radius: 8px;"><br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
-6. A window will appear with the following fields: <br><img src= "/apps/img/nt7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-      1. **Market View** allows users to `See Purchased Routes`. Opens list of routes already purchased by the user.
-      2. **Filter** Section:
-          | Field| Description| Usage|
-          | -----|------------|------|
-          | **Prefix** |Destination dialing prefix| Used to search routes for a specific number range (e.g., 91, 44, 1)|
-          | **Country**| Destination country| Filters routes available for a country|
-          | **Route Type**|Route classification | Filters route quality/type (e.g., CLI, Non-CLI, Premium, etc.)|
-          | **Seller**| Route provider/company| Shows routes offered by a specific seller|
-          | **Seller Route**| Seller-specific route category | Filters routes within seller inventory|
-          | **Route (Voice / SMS)** | Traffic type| Select whether searching Voice routes or SMS routes|
-          | **Minimum Price**|Lower price limit| Filters routes above specified price|
-          | **Maximum Price**| Upper price limit| Filters routes below specified price|
-          | **Order By**| Sorting criteria| Sort results (price, prefix, seller, etc.)|
-      3. **Search Result Section**: Displays routes matching the filter criteria.
-      4. **Result Table** Columns:
-          | Column| Description| Technical Meaning |
-          | ------|-------------|------------------ |
-          | **Prefix**| Destination prefix | Dialing code covered by the route|
-          | **Price (USD)**| Route rate| Cost per minute/message offered by seller|
-          | **Seller**| When users click on a seller, they can view the seller’s profile details.|
-          | **Type**| Route type| Traffic category (Voice/SMS or quality classification)  |
-          | **Destination**| Destination name| Country or operator served|
-          | **Route Information** | Route details| Technical information about route quality/configuration |
-          | **Purchase Route**| Action column| Button to buy/select the route|
-          |**View More**|Additional information|Available to display additional information|
-      5. **Purchase Route**: When you wish to purchase a route, double-click on the `Purchase` in the `Purchase Route` column. A window will open where you need to select the `Account` and `Carrier`. By default the carrier is `Neutrafix` but you can also choose the carrier from the drop-down. Click on `Confirm and Purchase Route`. <br><img src= "/apps/img/nt8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-      6. **Rate Card Assignment**: Whenever a new seller is created, a rate card is automatically added.
-!!! Info
-     A `NeuTrafix` carrier is automatically created each time a user logs into the application. Within this carrier, multiple seller-specific rate cards are associated. Whenever a user purchases a route, all corresponding prefixes linked to that purchase are automatically added under the respective seller’s rate card, after which they function as a standard rate card within the system.
+8. Click on the `NeuTrafix` app on the sidebar. Complete the `Signup` process if you are a new customer. <br><img src= "/apps/img/nt5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+9. If you are already a customer, click on `Login`. A window will prompt you to enter the `API Login` and `API Key`. Click on `Login`. **You can get the `API Login` and `API Key` from the NeuTrafix `Dashboard`**. <br><img src= "/apps/img/nt6.png" width "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br> ⚠️ **Note:** Use your API Username and API Password from the Profile section for authentication; standard login credentials are not supported.</br>
+10. A window will appear displaying the following fields and sections: <br><img src="/apps/img/nt7.png" alt="NeuTrafix route marketplace showing filters and search results" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+    1. **Market View**: Select `See Purchased Routes` to view the list of routes you have already purchased.
+
+    2. **Filter Section**: Use the following filters to find routes that match your requirements.
+
+        | Field | Description | Usage |
+        |---|---|---|
+        | **Prefix** | Destination dialing prefix | Search for routes covering a specific number range, such as 91, 44, or 1. |
+        | **Country** | Destination country | Filter routes available for a specific country. |
+        | **Route Type** | Route classification | Filter by route quality or type, such as CLI, Non-CLI, or Premium. |
+        | **Seller** | Route provider or company | Display routes offered by a specific seller. |
+        | **Seller Route** | Seller-specific route category | Filter routes within a seller's inventory. |
+        | **Route (Voice / SMS)** | Traffic type | Select whether to search for Voice or SMS routes. |
+        | **Minimum Price** | Lower price limit | Filter routes based on the minimum price. |
+        | **Maximum Price** | Upper price limit | Filter routes based on the maximum price. |
+        | **Order By** | Sorting criteria | Sort results by price, prefix, seller, or other available criteria. |
+
+    3. **Search Result Section**: Displays routes matching the selected filter criteria.
+
+    4. **Result Table Columns**: The search results table displays the following information.
+
+        | Column | Description | Technical Meaning |
+        |---|---|---|
+        | **Prefix** | Destination prefix | Dialing code covered by the route. |
+        | **Price (USD)** | Route rate | Cost per minute or message offered by the seller. |
+        | **Seller** | Route provider or company | Click the seller name to view the seller's profile details. |
+        | **Type** | Route type | Indicates the traffic category or route classification. |
+        | **Destination** | Destination name | Country or operator served by the route. |
+        | **Route Information** | Route details | Provides technical information about route quality or configuration. |
+        | **Purchase Route** | Purchase action | Provides the option to purchase a route. |
+        | **View More** | Additional information | Displays further route details when available. |
+
+    5. **Purchase Route**: To purchase a route, follow these steps:
+
+        1. Double-click **Purchase** in the **Purchase Route** column.
+        2. In the window that opens, select the **Account** and **Carrier**.
+        3. The carrier defaults to `Neutrafix`. You can select another carrier from the drop-down list if required.
+        4. Click **Confirm and Purchase Route** to complete the purchase.
+
+        <br><img src="/apps/img/nt8.png" alt="Neutrafix route purchase window showing account and carrier selection" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+
+    6. **Rate Card Assignment**: A rate card is automatically added whenever a new seller is created.
+
+        !!! info "How Rate Card Assignment Works"
+            A `Neutrafix` carrier is automatically created each time a user logs in to the application. Multiple seller-specific rate cards are associated with this carrier.
+
+            When a user purchases a route, the corresponding prefixes are automatically added to the relevant seller's rate card. The rate card then functions like a standard rate card within ConnexCS.
 
 !!! warning "Store Credentials Securely"
-    Store the generated credentials securely. They may not be displayed again after the registration process. Do not share API credentials or passwords with unauthorized users.
+    Store the credentials generated during registration securely, as they may not be displayed again. Do not share API credentials or passwords with unauthorized users.
 
 ## Troubleshooting
 
 | Issue | Recommended Action |
 |---|---|
-| NeuTrafix is not visible in the portal navigation. | Confirm that the application is installed and review the Assigned buttons section in App Settings. |
+| NeuTrafix is not visible in the portal navigation. | Confirm that the application is installed and review the **Assigned buttons** section in **App Settings**. |
 | Installation fails. | Verify your App Store permissions and retry the installation. |
-| API authentication fails. | Confirm that the API Username and API Password are correct and that API credentials, rather than standard login credentials, are being used. |
-| Buying activities are unavailable. | Check whether the required company documents have been submitted and approved by the Neutrafix team. |
+| API authentication fails. | Confirm that the API Username and API Password are correct. Use API credentials rather than standard login credentials. |
+| Buying activities are unavailable. | Check whether the required company documents have been submitted and approved by the NeuTrafix team. |
 | The installed version is outdated. | Review the application's version information and available releases in the Connex Store. |
-| A custom domain isn't available. | Review the domain configuration and allow for the automatic rebuild and republication process to complete. |
+| A custom domain is not available. | Review the domain configuration and allow the automatic rebuild and republication process to complete. |
