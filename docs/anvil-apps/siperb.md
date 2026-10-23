@@ -73,7 +73,7 @@ The integration helps administrators:
       1. `Domain`: Enter the domain you want to associate with the Siperb application (for example, `test.cnx.page`).
       2. Click `Create` to save the domain configuration. The application will be automatically rebuilt and republished after the domain is created. <br><img src="/apps/img/siperb6.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "400" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "270" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 8. A new window will where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 9. Steps to get the `Siperb API Token`:
       1. Login to your **Siperb Account**.
@@ -126,25 +126,24 @@ The integration helps administrators:
 
 13.**Domain Users** page allows administrators to manage users who can access the Siperb domain. Administrators can view existing users, check their roles, and invite new users. <br><img src="/apps/img/siperb17.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-    * **The page includes the following sections**:
+* **The page includes the following sections**:
+  - **Total Users**: Displays the total number of users with access to the domain.
+  - **Domain Owners**: Shows the number of users with full administrative rights.
+  - **Members**: Displays the number of standard domain users.
+  - **All Domain Users**: Lists domain users and provides a search bar to find users by email address or description.
+  - **Invite Domain User**: Opens the invitation form to add a new user.
+  - **Refresh**: Reloads the user information.
 
-        - **Total Users**: Displays the total number of users with access to the domain.
-        - **Domain Owners**: Shows the number of users with full administrative rights.
-        - **Members**: Displays the number of standard domain users.
-        - **All Domain Users**: Lists domain users and provides a search bar to find users by email address or description.
-        - **Invite Domain User**: Opens the invitation form to add a new user.
-        - **Refresh**: Reloads the user information.
+  * **How to Invite a Domain User**?
 
-    * **How to Invite a Domain User**?
-
-        1. Navigate to **Siperb :material-menu-right: Domain Users**.
-        2. Click `Invite domain user`. The invitation window opens. <br><img src="/apps/img/siperb18.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-        3. Enter the following details:
-            - **Email**: Enter the email address of the person you want to invite.
-            - **Description**: Enter an optional description to identify the user.
-            - **Send welcome email**: Enable this option to send a welcome email to the invited user.
-            - **Join mailing list**: Enable this option to add the user to the mailing list.
-        4. Click `Send invite` to send the invitation. Click `Cancel` to close the window without sending it.
+    1. Navigate to **Siperb :material-menu-right: Domain Users**.
+    2. Click `Invite domain user`. The invitation window opens. <br><img src="/apps/img/siperb18.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+    3. Enter the following details:
+      - **Email**: Enter the email address of the person you want to invite.
+      - **Description**: Enter an optional description to identify the user.
+      - **Send welcome email**: Enable this option to send a welcome email to the invited user.
+      - **Join mailing list**: Enable this option to add the user to the mailing list.
+    4. Click `Send invite` to send the invitation. Click `Cancel` to close the window without sending it.
 
 14. The **Devices** page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
@@ -165,13 +164,13 @@ The integration helps administrators:
         1. Navigate to **Siperb :material-menu-right: Devices**.
         2. Click `New device`. The New device window opens. <br><img src="/apps/img/siperb21.png" alt="Siperb New device form with device name, platform, registration mode, and WebSocket settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
         3. Enter the following details:
-           - **Name**: Enter a descriptive name for the device, such as `Reception desk phone`.
-           - **Platform**: Enter the platform identifier expected by the Siperb API, such as `script`.
-           - **Registration mode**: Select the required registration mode. The screenshot shows `Proxy`.
-           - **WebSocket server**: Enter the WebSocket server address when using WebSocket mode. This field is required only for WebSocket mode.
-           - **SIP domain (WebSocket)**: Enter the SIP domain used for the WebSocket connection.
-           - **SIP username (WebSocket)**: Enter the SIP username for authentication.
-           - **SIP password (WebSocket)**: Enter the corresponding SIP password.
+              - **Name**: Enter a descriptive name for the device, such as `Reception desk phone`.
+              - **Platform**: Enter the platform identifier expected by the Siperb API, such as `script`.
+              - **Registration mode**: Select the required registration mode. The screenshot shows `Proxy`.
+              - **WebSocket server**: Enter the WebSocket server address when using WebSocket mode. This field is required only for WebSocket mode.
+              - **SIP domain (WebSocket)**: Enter the SIP domain used for the WebSocket connection.
+              - **SIP username (WebSocket)**: Enter the SIP username for authentication.
+              - **SIP password (WebSocket)**: Enter the corresponding SIP password.
 
         4. Click `Create device` to register the device. Click `Cancel` to close the window without creating it.
 
@@ -242,7 +241,7 @@ The page includes the following options:
       
       Review the configuration and click `Create connection` to save the connection. Click `Cancel` to leave without creating it.
 
-16. The **Create Interconnect** page allows administrators to create an outbound registration connection for a selected domain user. It configures the SIP registration server, authentication credentials, media handling, and advanced settings required for the connection. <br><img src="/apps/img/siperb24.png" alt="Siperb Create Interconnect form showing domain user, connection type, registration, and advanced settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+16.The **Create Interconnect** page allows administrators to create an outbound registration connection for a selected domain user. It configures the SIP registration server, authentication credentials, media handling, and advanced settings required for the connection. <br><img src="/apps/img/siperb24.png" alt="Siperb Create Interconnect form showing domain user, connection type, registration, and advanced settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
       * **Configuration Fields**
 
