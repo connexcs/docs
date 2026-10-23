@@ -8,7 +8,7 @@
 <strong>Difficulty</strong>: Beginner<br>
 <strong>Time Required</strong>: Approximately 5–10 minutes for installation and configuration; additional time may be required to process DID spam score checks.<br>
 <strong>Prerequisites</strong>: An active ConnexCS account with access to Setup and App Store; permission to install applications and access the DID management interface; the Spam Score package added to the account; and a valid email address for API user configuration and report delivery.<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/appstore/">App Store</a>, <a href="https://docs.connexcs.com/setup/config/packages/">Packages</a>, DID Management, Spam Score, App Configuration<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/appstore/">App Store</a>, <a href="https://docs.connexcs.com/setup/config/packages/">Packages</a>, <a href="/customer/did/">DID Management, Spam Score, App Configuration<br>
 <strong>Next Steps</strong>: Install the DID Spam Score app, configure the API user email, select the DIDs to check, submit the spam score request, and review the results.
 </details>
 
@@ -70,27 +70,27 @@ Before using the app, ensure that:
 ### Install the App
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **DID Spam Score**, and click `Install`. <br><img src="/apps/img/didss1.png" alt="Connex Store marketplace showing the DID Spam Score app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-2. An **Install Package** window will appear. Review the package name and version, then click `Install` again to confirm.<br><img src="/apps/img/didss2.png" alt="Install Package confirmation window for DID Spam Score" width="300" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. An **Install Package** window will appear. Review the package name and version, then click `Install` again to confirm.<br><img src="/apps/img/didss2.png" alt="Install Package confirmation window for DID Spam Score" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 3. Once installed, open **DID Spam Score** from the installed applications list. The Overview tab displays the installation status, installed version, latest version, and package information.<br><img src="/apps/img/didss3.png" alt="DID Spam Score application Overview showing installation status and package information" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-4. To review the available application versions, navigate to the `Versions` tab. This section displays version numbers, approval status, submission details, and version history.<br><img src="/apps/img/didss4.png" alt="DID Spam Score Versions tab showing approved versions and version history" width= "400" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+4. To review the available application versions, navigate to the `Versions` tab. This section displays version numbers, approval status, submission details, and version history.<br><img src="/apps/img/didss4.png" alt="DID Spam Score Versions tab showing approved versions and version history" width= "600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ### Configure the App
 
 1. Navigate to the `App Settings` tab to review the app's configuration. The **Assigned buttons** section displays the **Spam Score** button and its location in the portal, `/global/did`.<br><img src="/apps/img/didss5.png" alt="DID Spam Score App Settings showing the Spam Score button assigned to the Global DID page" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-2. Click `Config` to open the application configuration. <br><img src="/apps/img/didss6.png" alt="DID Spam Score application Config button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. Click `Config` to open the application configuration. <br><img src="/apps/img/didss6.png" alt="DID Spam Score application Config button" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 3. In the **Environment Variables Config** window, configure the following field:
    - **Default Email**: Enter the email address used to log in as the API user in ConnexCS. This address is used by the application for API access.
-   Click `Save Config` to save the configuration.<br><img src="/apps/img/didss7.png" alt="Environment Variables Config showing the Default Email field and Save Config button" width= "400" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">\<br>
+   Click `Save Config` to save the configuration.<br><img src="/apps/img/didss7.png" alt="Environment Variables Config showing the Default Email field and Save Config button" width= "600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ### Run a Spam Score Check
 
 1. Navigate to **Global :material-menu-right: DID** in the ConnexCS portal.<br><img src="/apps/img/didss8.png" alt="ConnexCS Global DID page showing the DID list and Spam Score button" style="border: 2px solid #4472C4; border-radius: 8px; max- width: 100%;"></br>
 2. Select the DIDs you want to check by using the checkboxes beside the DID entries. You can select multiple DIDs for a single request.
 3. Click the `Spam Score` button at the top of the DID page.
-4. The DID Spam Score window will open and display the selected DIDs.<br><img src="/apps/img/didss9.png" alt="DID Spam Score request window showing selected DIDs, an email field, and the Spam Scout button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+4. The DID Spam Score window will open and display the selected DIDs.<br><img src="/apps/img/didss9.png" alt="DID Spam Score request window showing selected DIDs, an email field, and the Spam Scout button" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 5. Enter the email address to which the spam score report should be sent.
 6. Click `Spam Scout` to submit the selected DIDs for processing.
-7. Review the results displayed in the table. Each row contains the DID, its processing status, and the spam score when available.<br><img src="/apps/img/didss10.png" alt="DID Spam Score results table showing each DID, its processing status, and spam score" width= "400" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">\<br>
+7. Review the results displayed in the table. Each row contains the DID, its processing status, and the spam score when available.<br><img src="/apps/img/didss10.png" alt="DID Spam Score results table showing each DID, its processing status, and spam score" width= "600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">\<br>
 
 ## Troubleshooting
 
