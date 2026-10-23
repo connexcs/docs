@@ -65,7 +65,7 @@ The Dial Phone Number Verification app helps administrators:
 
 3. Once installed, open the app from the installed applications list. Verify that the application status is **Installed** and that the displayed version is up to date.<br><img src="/apps/img/dialapp3.png" alt="Dial Phone Number Verification application overview with Config button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-4. To review the application version and its release status, open the `Versions` tab. Review the available version information and approval status.<br><img src="/apps/img/dialapp4.png" alt="Dial Phone Number Verification Versions tab showing the approved version" width= "350" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+4. To review the application version and its release status, open the `Versions` tab. Review the available version information and approval status.<br><img src="/apps/img/dialapp4.png" alt="Dial Phone Number Verification Versions tab showing the approved version" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ## How to Configure Dial Phone Number Verification
 
