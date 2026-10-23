@@ -61,11 +61,11 @@ The Dial Phone Number Verification app helps administrators:
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **Dial Phone Number Verification**, and click `Install`. <br><img src="/apps/img/dialapp1.png" alt="Connex Store Marketplace showing Dial Phone Number Verification and the Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-2. An installation confirmation window will appear. Review the package name and version, then click `Install` again.<br><img src="/apps/img/dialapp2.png" alt="Install Package confirmation window for Dial Phone Number Verification" width= "200" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. An installation confirmation window will appear. Review the package name and version, then click `Install` again.<br><img src="/apps/img/dialapp2.png" alt="Install Package confirmation window for Dial Phone Number Verification" width= "400" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3. Once installed, open the app from the installed applications list. Verify that the application status is **Installed** and that the displayed version is up to date.<br><img src="/apps/img/dialapp3.png" alt="Dial Phone Number Verification application overview with Config button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-4. To review the application version and its release status, open the `Versions` tab. Review the available version information and approval status.<br><img src="/apps/img/dialapp4.png" alt="Dial Phone Number Verification Versions tab showing the approved version" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+4. To review the application version and its release status, open the `Versions` tab. Review the available version information and approval status.<br><img src="/apps/img/dialapp4.png" alt="Dial Phone Number Verification Versions tab showing the approved version" width= "350" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ## How to Configure Dial Phone Number Verification
 
@@ -91,7 +91,8 @@ To generate a token:
 
 The app identifies the API token as a **write-only secret**. It is not shown again and cannot be read back by application scripts. Store the token securely when it is generated. If it is lost or expires, use the application's supported token-generation process to create a replacement.
 
-**Important:** The token is used by the app to add CLIs and charge customers. Treat it as a sensitive credential and do not share it in screenshots, tickets, or documentation.
+!!! tip "Important"
+    The token is used by the app to add CLIs and charge customers. Treat it as a sensitive credential and do not share it in screenshots, tickets, or documentation.
 
 ### Routing
 
