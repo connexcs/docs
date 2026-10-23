@@ -59,16 +59,19 @@ The Dial Phone Number Verification app helps administrators:
 
 ## How to Install the App
 
-1. Navigate to **Setup > App Store > Anvil Store > Marketplace**, locate **Dial Phone Number Verification**, and click `Install`. <br><img src="/apps/img/dialapp1.png" alt="Connex Store Marketplace showing Dial Phone Number Verification and the Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-2. An installation confirmation window will appear. Review the package name and version, then click `Install` again.<br><img src="/apps/img/dialapp2.png" alt="Install Package confirmation window for Dial Phone Number Verification" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-3. Once installed, open the app from the installed applications list. Verify that the application status is **Installed** and that the displayed version is up to date.<br><img src="/apps/img/dialapp3.png" alt="Dial Phone Number Verification application overview with Config button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **Dial Phone Number Verification**, and click `Install`. <br><img src="/apps/img/dialapp1.png" alt="Connex Store Marketplace showing Dial Phone Number Verification and the Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+2. An installation confirmation window will appear. Review the package name and version, then click `Install` again.<br><img src="/apps/img/dialapp2.png" alt="Install Package confirmation window for Dial Phone Number Verification" width= "200" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+3. Once installed, open the app from the installed applications list. Verify that the application status is **Installed** and that the displayed version is up to date.<br><img src="/apps/img/dialapp3.png" alt="Dial Phone Number Verification application overview with Config button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
 4. To review the application version and its release status, open the `Versions` tab. Review the available version information and approval status.<br><img src="/apps/img/dialapp4.png" alt="Dial Phone Number Verification Versions tab showing the approved version" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ## How to Configure Dial Phone Number Verification
 
-1. Navigate to **Setup > App Store > Anvil Store > Installed Apps** and open **Dial Phone Number Verification**.
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Installed Apps** and open **Dial Phone Number Verification**.
 
-2. Click `Config` to open the Phone Verification Settings page. <br><img src="/apps/img/dialapp5.png" alt="Phone Verification Settings showing Authentication, Routing, and CLI Registration fields" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. Click `Config` to open the Phone Verification Settings page. <br><img src="/apps/img/dialapp5.png" alt="Phone Verification Settings showing Authentication, Routing, and CLI Registration fields" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3. Configure the following settings.
 
@@ -128,7 +131,7 @@ Use the options according to your organization's Caller ID, routing, and authent
 
 After configuring Authentication, Routing, and CLI Registration, click `Save changes` to apply the settings.
 
-Use `Reset` only when you intend to discard the current unsaved changes or restore the form's previous state, according to the application's behavior. <br><img src="/apps/img/dialapp6.png" alt="Phone Verification Settings with Save changes and Reset buttons" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+Use `Reset` only when you intend to discard the current unsaved changes or restore the form's previous state, according to the application's behavior. <br><img src="/apps/img/dialapp6.png" alt="Phone Verification Settings with Save changes and Reset buttons" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 This application will be visible in the **Customer Portal**.
 
@@ -139,7 +142,7 @@ This application will be visible in the **Customer Portal**.
 
 1. Login to **Customer Portal**.
 2. Click on `CLI` then `Add CLI`. <br><img src="/apps/img/dialapp7.png" alt="Add CLI" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-3. The Phone Number Verification window opens. Enter the phone number you want to verify, then click `Call with Code` to initiate the verification call. <br><img src="/apps/img/dialapp8.png" alt="Verification code" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+3. The Phone Number Verification window opens. Enter the phone number you want to verify, then click `Call with Code` to initiate the verification call. <br><img src="/apps/img/dialapp8.png" alt="Verification code" width= "300" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 4. You will receive the call on the Webphone with the verification code. <br><img src="/apps/img/dialapp9.png" alt="Call on Webphone" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-5. Enter the verification code and click on `Verify`. <br><img src="/apps/img/dialapp10.png" alt="Call on Webphone" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-6. The CLI will be added and is visible on the CLI list. <br><img src="/apps/img/dialapp11.png" alt="Call on Webphone" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+5. Enter the verification code and click on `Verify`. <br><img src="/apps/img/dialapp10.png" alt="Call on Webphone" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+6. The CLI will be added and is visible on the CLI list. <br><img src="/apps/img/dialapp11.png" alt="Call on Webphone" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
