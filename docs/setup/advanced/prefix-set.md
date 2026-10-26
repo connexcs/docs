@@ -4,10 +4,15 @@
 <summary><strong>Document Metadata</strong></summary>
 
 **Category**: Setup & Configuration → Advanced Settings → Prefix Set  
+
 **Audience**: Administrators, Engineers, Support Team  
+
 **Difficulty**: Intermediate  
+
 **Time Required**: 10–15 minutes  
+
 **Prerequisites**: ConnexCS account with access to Setup → Advanced → Prefix Set  
+
 **Related Topics**: [Routing](https://docs.connexcs.com/customer/routing/), [Global Routing](https://docs.connexcs.com/global-routing/), [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/), [Do Not Call (DNC)](https://docs.connexcs.com/dnc/)
 
 </details>
@@ -30,7 +35,7 @@ Prefix Sets support plain-text prefixes and regular expressions (RegEx). You can
 
 ### Step 1: Create a Prefix Set
 
-1\. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set** and click **+:material-plus:** in the top toolbar. The **Prefix Set** configuration window will appear. <br><img src="/apps/img/prefix-set1.png" alt="ConnexCS Prefix Set page showing the Add button and configuration window" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+1\. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set** and click **:material-plus:** in the top toolbar. The **Prefix Set** configuration window will appear. <br><img src="/apps/img/prefix-set1.png" alt="ConnexCS Prefix Set page showing the Add button and configuration window" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 2\. Enter a descriptive name in the **Name** field.
 
@@ -60,7 +65,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 7\. Select both **Customer Read** and **Customer Write** if the customer requires both types of access and the portal's permission model supports this combination.
 
-**Note:** Select the appropriate customer and permissions before enabling customer access. Customer Read and Customer Write control access permissions; they do not perform the same function as the global blacklist and allow-list flags.
+!!! Note "Select the appropriate customer and permissions before enabling customer access. Customer Read and Customer Write control access permissions; they don't perform the same function as the global blacklist and allow-list flags."
 
 ### Step 3: Open the Prefix Set Database
 
@@ -70,11 +75,11 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 3\. Use the database toolbar to add individual numbers, paste or upload multiple numbers, refresh the list, delete selected entries, or empty the database.
 
-**Note:** The Numbers link is available when the Prefix Set is configured for database management.
+!!! Note "The Numbers link is available when the Prefix Set is configured for database management."
 
 ### Step 4: Add an Individual Number
 
-1\. Open the required Prefix Set database and click **+:material-plus:** in the toolbar.
+1\. Open the required Prefix Set database and click **:material-plus:** in the toolbar.
 
 2\. An **Add Number** window will appear. Enter the phone number in the **Phone Number** field. <br><img src="/apps/img/prefix-set3.png" alt="Add Number window showing the Phone Number field and Save button" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
@@ -104,7 +109,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 6\. Click **Add number(s)** to add the numbers to the database.
 
-**Note:** The interface shown supports `.txt` and `.csv` files up to 20 MB. Check the displayed count before confirming the upload.
+!!! Note "The interface shown supports `.txt` and `.csv` files up to 20 MB. Check the displayed count before confirming the upload."
 
 ### Step 6: Delete Selected Numbers
 
@@ -132,7 +137,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 5\. Click **Empty Database** to remove all numbers from the database.
 
-**Warning:** This operation removes all numbers from the selected database and cannot be undone.
+!!! Warning "This operation removes all numbers from the selected database and can't be undone."
 
 ## Apply Prefix Sets
 
@@ -199,12 +204,12 @@ Validate all entries against your intended numbering plan and calling rules befo
 
 | Issue | Resolution |
 |---|---|
-| The Prefix Set cannot be saved | Check that the required Name and Data fields are completed when applicable. |
-| A number does not match the Prefix Set | Verify the prefix, number format, and RegEx syntax. |
+| The Prefix Set can't be saved | Check that the required Name and Data fields are completed when applicable. |
+| A number doesn't match the Prefix Set | Verify the prefix, number format, and RegEx syntax. |
 | The Numbers link is unavailable | Check that the Prefix Set has the Database flag enabled. |
-| A customer cannot view the Prefix Set | Verify the selected Customer and the applicable read permissions. |
-| A customer cannot modify the Prefix Set | Verify the applicable write permissions and any additional portal restrictions. |
-| Bulk upload does not add the expected numbers | Check the file format, separators, number format, and displayed new-entry count. |
+| A customer can't view the Prefix Set | Verify the selected Customer and the applicable read permissions. |
+| A customer can't modify the Prefix Set | Verify the applicable write permissions and any additional portal restrictions. |
+| Bulk upload doesn't add the expected numbers | Check the file format, separators, number format, and displayed new-entry count. |
 
 ## Summary
 
