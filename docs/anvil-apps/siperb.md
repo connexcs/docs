@@ -74,91 +74,34 @@ The integration helps administrators:
       2. Click `Create` to save the domain configuration. The application will be automatically rebuilt and republished after the domain is created. <br><img src="/apps/img/siperb6.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "270" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
 8. A new window will where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
 9. Steps to get the `Siperb API Token`:
       1. Login to your **Siperb Account**.
       2. Click on **Settings :material-menu-right: Developer Settings**. Click on `Generate Token`. <br><img src="/apps/img/siperb8.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
       3. A **Personal Access Token** window will appear, enter the **Token Name**, select the **Expiration** days from the drop-down and click on **Generate Token**. <br><img src="/apps/img/siperb9.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
       4. Copy the generated token. <br><img src="/apps/img/siperb10.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
 10. Navigate to the **Control Panel**, click on the **Siperb** application. Paste the generated token and click on `Save and Sign In`.<br><img src="/apps/img/siperb12.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-11. **Siperb Dashboard** window will open-up. It provides a quick overview of the account, registered devices, and configured connections. It allows users to monitor their setup and quickly access device and connection management options.<br><img src="/apps/img/siperb13.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-    **Key sections of the dashboard**:
+11. **Siperb Dashboard** window will open-up. It provides a quick overview of the account, registered devices, and configured connections. It allows users to monitor their setup and quickly access device and connection management options.<br><img src="/apps/img/siperb13_new.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-      - **Account Overview**: Displays a welcome message and the account user's name, along with shortcuts to create a new device or connection.
+12. **Siperb Profile**: It displays the user's account information, SIP identity, account details, permissions, and domain information. Users can review their profile and, where permitted, update their details.<br><img src="/apps/img/siperb16.png" alt="Siperb Profile vCard tab showing contact card details and Edit vCard button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-      - **Devices**: Shows the total number of registered devices. The Recent devices section lists recently added devices and their types, such as webpage or Electron.
+    1. The `Details` tab displays the user's account information, SIP identity, permissions, and domain details.
+    2. The `vCard` tab displays the user's contact information.
 
-      - **Connections**: Displays the total number of configured connections, including trunks and routes.
+13. **Domain Users** page allows administrators to manage users who can access the Siperb domain. Administrators can view existing users, check their roles, and invite new users. <br><img src="/apps/img/siperb17.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-      - **Active Connections**: Shows the number of connections currently enabled.
+      * **How to Invite a Domain User**?
 
-      - **Recent Connections**: Lists recently configured connections, their names, matching patterns, and current status (On or Off).
+        1. Navigate to **Siperb :material-menu-right: Domain Users**.
+        2. Click `Invite domain user`. The invitation window opens. <br><img src="/apps/img/siperb18.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+        3. Enter the following details: **Email**, **Description**, **Send welcome email**, **Join mailing list**.
+        4. Click `Send invite` to send the invitation. Click `Cancel` to close the window without sending it.
 
-      - **Quick Actions**: The **New device** and **New connection** buttons provide shortcuts to create devices and connections.
-
-12. **Siperb Profile**: It displays the user's account information, SIP identity, account details, permissions, and domain information. Users can review their profile and, where permitted, update their details.
-
-=== "Details"
-
-    The `Details` tab displays the user's account information, SIP identity, permissions, and domain details.
-
-    - **Profile Information**: Displays the user's name, email address, account type, and membership date. Click `Edit profile` to update editable profile details.
-    - **SIP Identity**: Displays the SIP user, SIP domain, and Address of Record (AOR), where configured.
-    - **Account**: Shows the User ID, user type, billing plan, creation date, last modified date, and account description.
-    - **Permissions**: Displays the features the user can access, such as Connections, Devices, Support, Apps, Domain Users, Developer Settings, Domain Admin, and SIP Traces.
-    - **Other Details**: Displays the domain, domain owner status, and parent account details, where available.
-    - **Refresh**: Reloads the displayed profile information.
-    <img src="/apps/img/siperb15.png" alt="Siperb Profile Details tab showing profile information, SIP identity, account details, permissions, and domain information" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">
-
-=== "vCard"
-
-    The `vCard` tab displays the user's contact information.
-
-    - **Email**: The email address associated with the contact card.
-    - **Mobile**: The user's mobile number, if configured.
-    - **Number1**: An additional contact number.
-    - **Number2**: Another contact number.
-    - **Title Desc**: The contact's name or descriptive title.
-    - **Edit vCard**: Allows the user to update contact card information, where permitted.
-    - **Refresh**: Reloads the displayed contact information.
-    <img src="/apps/img/siperb16.png" alt="Siperb Profile vCard tab showing contact card details and Edit vCard button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">
-
-13.**Domain Users** page allows administrators to manage users who can access the Siperb domain. Administrators can view existing users, check their roles, and invite new users. <br><img src="/apps/img/siperb17.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-* **The page includes the following sections**:
-    - **Total Users**: Displays the total number of users with access to the domain.
-    - **Domain Owners**: Shows the number of users with full administrative rights.
-    - **Members**: Displays the number of standard domain users.
-    - **All Domain Users**: Lists domain users and provides a search bar to find users by email address or description.
-    - **Invite Domain User**: Opens the invitation form to add a new user.
-    - **Refresh**: Reloads the user information.
-
-  * **How to Invite a Domain User**?
-
-    1. Navigate to **Siperb :material-menu-right: Domain Users**.
-    2. Click `Invite domain user`. The invitation window opens. <br><img src="/apps/img/siperb18.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-    3. Enter the following details:
-      - **Email**: Enter the email address of the person you want to invite.
-      - **Description**: Enter an optional description to identify the user.
-      - **Send welcome email**: Enable this option to send a welcome email to the invited user.
-      - **Join mailing list**: Enable this option to add the user to the mailing list.
-    4. Click `Send invite` to send the invitation. Click `Cancel` to close the window without sending it.
-
-1.  The **Devices** page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-      **The page includes the following options**:
-
-    - **Search**: Find devices by description, platform, or other searchable details.
-    - **Refresh**: Reload the device list.
-    - **New device**: Register a new device.
-    - **Description**: Displays the device name.
-    - **Platform**: Shows the device platform, such as `webpage` or `electron`.
-    - **Mode**: Displays the registration mode, such as `Proxy`.
-    - **SIP contact**: Displays SIP contact information, where available.
-    - **Created**: Shows when the device was created.
-    - **Actions**: Use `Edit` to modify a device or `Delete` to remove it.
-  
+14. The **Devices** page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
       - **How to Create a Device**?
 
         1. Navigate to **Siperb :material-menu-right: Devices**.
@@ -188,19 +131,7 @@ The integration helps administrators:
 
     <br><img src="/apps/img/siperb20.png" alt="Siperb device details showing overview and diagnostic tabs" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-15.The **Connections** page allows users to create and manage SIP connections in Siperb. Connections define how calls are routed to external trunks or registration-based endpoints using dial patterns and connection settings.<br><img src="/apps/img/siperb22.png" alt="Siperb Connections page showing connection names, types, dial patterns, weights, enabled status, and actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-The page includes the following options:
-
-- **Search**: Find connections by name, type, or dial pattern.
-- **Refresh**: Reload the connection list.
-- **New connection**: Create a new SIP connection.
-- **Name**: Displays the connection name.
-- **Type**: Identifies the connection type, such as `OutboundTrunk` or `OutboundRegistration`.
-- **Dial pattern**: Defines which dialed numbers match the connection.
-- **Weight**: Determines priority when multiple connections match. Lower values are tried first.
-- **Enabled**: Indicates whether the connection is enabled.
-- **Actions**: Use `Edit` to modify a connection or `Delete` to remove it.
+15. The **Connections** page allows users to create and manage SIP connections in Siperb. Connections define how calls are routed to external trunks or registration-based endpoints using dial patterns and connection settings.<br><img src="/apps/img/siperb22.png" alt="Siperb Connections page showing connection names, types, dial patterns, weights, enabled status, and actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 * **How to Create a New Connection**?
 
