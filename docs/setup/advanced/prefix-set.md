@@ -3,15 +3,15 @@
 <details>
 <summary><strong>Document Metadata</strong></summary>
 
-**Category**: Setup & Configuration → Advanced Settings → Prefix Set  
+**Category**: Setup & Configuration → Advanced Settings → Prefix Set
 
-**Audience**: Administrators, Engineers, Support Team  
+**Audience**: Administrators, Engineers, Support Team
 
-**Difficulty**: Intermediate  
+**Difficulty**: Intermediate
 
-**Time Required**: 10–15 minutes  
+**Time Required**: 10–15 minutes
 
-**Prerequisites**: ConnexCS account with access to Setup → Advanced → Prefix Set  
+**Prerequisites**: ConnexCS account with access to Setup → Advanced → Prefix Set
 
 **Related Topics**: [Routing](https://docs.connexcs.com/customer/routing/), [Global Routing](https://docs.connexcs.com/global-routing/), [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/), [Do Not Call (DNC)](https://docs.connexcs.com/dnc/)
 
@@ -45,7 +45,7 @@ Prefix Sets support plain-text prefixes and regular expressions (RegEx). You can
 
 5\. Select the appropriate options in **Flags**. You can select multiple flags depending on the intended use of the Prefix Set.
 
-6\. Click **Save** to create the Prefix Set.
+6\. Click **Save** to create the Prefix Set. <br><img src="/apps/img/ps3.png" alt="Add Number window showing the Phone Number field and Save button" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ### Step 2: Configure Prefix Set Flags
 
@@ -71,7 +71,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 1\. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set** and locate the required Prefix Set.
 
-2\. In the **Database** column, click **Numbers**. The associated database page will open and display the number of entries stored in the database. <br><img src="/apps/img/ps2.png" alt="ConnexCS Prefix Set list showing the Numbers link in the Database column" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2\. In the **Database** column, click **Numbers**. The associated database page will open and display the number of entries stored in the database. <br><img src="/apps/img/ps4.png" alt="Delete confirmation window asking whether to remove selected numbers from the database" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3\. Use the database toolbar to add individual numbers, paste or upload multiple numbers, refresh the list, delete selected entries, or empty the database.
 
@@ -81,7 +81,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 1\. Open the required Prefix Set database and click **:material-plus:** in the toolbar.
 
-2\. An **Add Number** window will appear. Enter the phone number in the **Phone Number** field. <br><img src="/apps/img/ps3.png" alt="Add Number window showing the Phone Number field and Save button" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2\. An **Add Number** window will appear. Enter the phone number in the **Phone Number** field. <br><img src="/apps/img/ps5.png" alt="Paste or Upload Numbers window showing the text area and file upload option" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3\. Click **Save** to add the number to the database.
 
@@ -91,7 +91,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 1\. Open the required Prefix Set database and click **Paste / Upload** in the toolbar.
 
-2\. The **Paste / Upload Numbers** window will appear. Enter the numbers in the text area or click **Load from file** to select a supported `.txt` or `.csv` file. <br><img src="/apps/img/ps4.png" alt="Paste or Upload Numbers window showing the text area and file upload option" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2\. The **Paste / Upload Numbers** window will appear. Enter the numbers in the text area or click **Load from file** to select a supported `.txt` or `.csv` file. 
 
 3\. Enter the numbers using either of the following formats:
 
@@ -107,7 +107,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 5\. Review the number of new entries displayed by the interface.
 
-6\. Click **Add number(s)** to add the numbers to the database.
+6\. Click **Add number(s)** to add the numbers to the database. <br><img src="/apps/img/ps6.png" alt="Paste or Upload Numbers window showing the text area and file upload option" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 !!! Note "The interface shown supports `.txt` and `.csv` files up to 20 MB. Check the displayed count before confirming the upload."
 
@@ -117,13 +117,13 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 2\. Select the checkbox beside the number or numbers you want to delete.
 
-3\. Click the **Delete** (trash) icon in the toolbar. A confirmation window will appear. <br><img src="/apps/img/ps5.png" alt="Delete confirmation window asking whether to remove selected numbers from the database" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+3\. Click the **Delete** (trash) icon in the toolbar. A confirmation window will appear.
 
 4\. Review the number of entries selected for deletion.
 
-5\. Click **Delete** to confirm.
+5\. Click **Delete** to confirm. <br><img src="/apps/img/ps7.png" alt="Paste or Upload Numbers window showing the text area and file upload option" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-**Note:** Only the selected numbers are removed. Verify your selection before confirming.
+!!! Note "Only the selected numbers are removed. Verify your selection before confirming."
 
 ### Step 7: Empty the Database
 
@@ -131,7 +131,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 2\. Click **Empty Database** in the toolbar.
 
-3\. An **Empty Database** confirmation window will appear, displaying the total number of entries that will be removed. <br><img src="/apps/img/ps6.png" alt="Empty Database confirmation window warning that all numbers will be removed" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+3\. An **Empty Database** confirmation window will appear, displaying the total number of entries that will be removed. <br><img src="/apps/img/ps8.png" alt="Empty Database confirmation window warning that all numbers will be removed" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 4\. Review the number of entries and confirm that you have selected the correct database.
 
