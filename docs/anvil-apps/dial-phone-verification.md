@@ -67,11 +67,13 @@ The Dial Phone Number Verification app helps administrators:
 
 4. To review the application version and its release status, open the `Versions` tab. Review the available version information and approval status.<br><img src="/apps/img/dialapp4.png" alt="Dial Phone Number Verification Versions tab showing the approved version" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
+5. To check the app settings or add custom domian click on the `App Settings` option. <br><img src="/apps/img/dialapp5.png" alt="Dial Phone Number Verification Versions tab showing the approved version" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
 ## How to Configure Dial Phone Number Verification
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Installed Apps** and open **Dial Phone Number Verification**.
 
-2. Click `Config` to open the Phone Verification Settings page. <br><img src="/apps/img/dialapp5.png" alt="Phone Verification Settings showing Authentication, Routing, and CLI Registration fields" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. Click `Config` to open the Phone Verification Settings page. <br><img src="/apps/img/dialapp6.png" alt="Phone Verification Settings showing Authentication, Routing, and CLI Registration fields" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3. Configure the following settings.
 
@@ -112,6 +114,8 @@ For `Caller ID (CLI)`, enter the number you want displayed on the verification c
 
 For `Charge per verification`, enter the amount to deduct from the customer's balance for each successful number verification. The interface indicates that the amount supports up to three decimal places and that setting the value to `0` disables charging. The balance may go negative, according to the displayed configuration guidance.
 
+!!! note "Charges are deducted when the verification call is created and the recipient answers it, regardless of whether the OTP is entered."
+
 ### CLI Registration
 
 The CLI Registration section defines how verified phone numbers are added as CLIs.
@@ -132,18 +136,20 @@ Use the options according to your organization's Caller ID, routing, and authent
 
 After configuring Authentication, Routing, and CLI Registration, click `Save changes` to apply the settings.
 
-Use `Reset` only when you intend to discard the current unsaved changes or restore the form's previous state, according to the application's behavior. <br><img src="/apps/img/dialapp6.png" alt="Phone Verification Settings with Save changes and Reset buttons" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+Use `Reset` only when you intend to discard the current unsaved changes or restore the form's previous state, according to the application's behavior. 
 
 This application will be visible in the **Customer Portal**.
 
 ## How to use Dial Phone Number Verification on Customer Portal
 
-!!! note "Prerequisite"
-    You must be logged in to the **Webphone** before using this feature.
-
 1. Login to **Customer Portal**.
+
 2. Click on `CLI` then `Add CLI`. <br><img src="/apps/img/dialapp7.png" alt="Add CLI" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-3. The Phone Number Verification window opens. Enter the phone number you want to verify, then click `Call with Code` to initiate the verification call. <br><img src="/apps/img/dialapp8.png" alt="Verification code" width= "300" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-4. You will receive the call on the Webphone with the verification code. <br><img src="/apps/img/dialapp9.png" alt="Call on Webphone" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-5. Enter the verification code and click on `Verify`. <br><img src="/apps/img/dialapp10.png" alt="Call on Webphone" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-6. The CLI will be added and is visible on the CLI list. <br><img src="/apps/img/dialapp11.png" alt="Call on Webphone" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+3. The Phone Number Verification window opens. Enter the phone number you want to verify, then click `Call with Code` to initiate the verification call. <br><img src="/apps/img/dialapp8.png" alt="Phone Number Verification window" width="300" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+4. The following screenshot shows an example of a verification call displayed in the WebPhone interface. It is provided for reference; the interface may vary depending on your configuration. <br><img src="/apps/img/dialapp9.png" alt="Example of a phone verification call displayed in the WebPhone interface" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+5. Enter the verification code in the **Phone Number Verification** window and click `Verify`. <br><img src="/apps/img/dialapp10.png" alt="Phone Number Verification window for entering the verification code" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+6. The CLI will be added and is visible on the CLI list. <br><img src="/apps/img/dialapp11.png" alt="Customer Portal CLI list showing the added CLI" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
