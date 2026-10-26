@@ -93,7 +93,7 @@ It helps customers and administrators:
    - **Login Password**: The password used to log in to the NeuTrafix account.
    - **API Password**: The password used for API authentication.
 
-4. Save the credentials securely when they are displayed. Do not share them with unauthorized users.
+4. Save the credentials securely when they're displayed. Don't share them with unauthorized users.
 
 5. The NeuTrafix account is created immediately after registration. However, company verification is a separate process.
 
