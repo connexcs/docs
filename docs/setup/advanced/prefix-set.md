@@ -71,7 +71,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 1\. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set** and locate the required Prefix Set.
 
-2\. In the **Database** column, click **Numbers**. The associated database page will open and display the number of entries stored in the database. <br><img src="/apps/img/ps4.png" alt="Delete confirmation window asking whether to remove selected numbers from the database" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2\. In the **Database** column, click **Numbers**. The associated database page will open and display the number of entries stored in the database. <br><img src="/apps/img/ps4.png" alt="Delete confirmation window asking whether to remove selected numbers from the database" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3\. Use the database toolbar to add individual numbers, paste or upload multiple numbers, refresh the list, delete selected entries, or empty the database.
 
@@ -111,7 +111,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 !!! Note "The interface shown supports `.txt` and `.csv` files up to 20 MB. Check the displayed count before confirming the upload."
 
-### Step 6: Delete Selected Numbers
+### Step 6: Delete Selected Numbers (*Only if required*)
 
 1\. Open the Prefix Set database.
 
@@ -125,7 +125,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 !!! Note "Only the selected numbers are removed. Verify your selection before confirming."
 
-### Step 7: Empty the Database
+### Step 7: Empty the Database (*Only if required*)
 
 1\. Open the required Prefix Set database.
 
