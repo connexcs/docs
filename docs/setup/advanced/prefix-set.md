@@ -5,15 +5,15 @@
 
 **Category**: Setup & Configuration → Advanced Settings → Prefix Set
 
-<br>**Audience**: Administrators, Engineers, Support Team</br>
+**Audience**: Administrators, Engineers, Support Team
 
 **Difficulty**: Intermediate
 
-<br>**Time Required**: 10–15 minutes</br>
+**Time Required**: 10–15 minutes
 
 **Prerequisites**: ConnexCS account with access to Setup → Advanced → Prefix Set
 
-<br>**Related Topics**: [Routing](https://docs.connexcs.com/customer/routing/), [Global Routing](https://docs.connexcs.com/global-routing/), [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/), [Do Not Call (DNC)](https://docs.connexcs.com/dnc/)</br>
+**Related Topics**: [Routing](https://docs.connexcs.com/customer/routing/), [Global Routing](https://docs.connexcs.com/global-routing/), [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/), [Dial-Plan Rules](https://docs.connexcs.com/guides/howto/restrict-calling-plan/), [Do Not Call (DNC)](https://docs.connexcs.com/dnc/)
 
 </details>
 
@@ -131,7 +131,7 @@ The **Flags** field determines how the Prefix Set is used. The available options
 
 2\. Click **Empty Database** in the toolbar.
 
-3\. An **Empty Database** confirmation window will appear, displaying the total number of entries that will be removed. <br><img src="/apps/img/ps8.png" alt="Empty Database confirmation window warning that all numbers will be removed" width="600" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+3\. An **Empty Database** confirmation window will appear, displaying the total number of entries that will be removed. <br><img src="/apps/img/ps8.png" alt="Empty Database confirmation window warning that all numbers will be removed" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 4\. Review the number of entries and confirm that you have selected the correct database.
 
