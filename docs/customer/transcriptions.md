@@ -330,9 +330,9 @@ The new profile appears in the Key Phrase Lookup list and in the **filter words*
 ##### Query Syntax
 
 | Operator | Explanation | Example |
-|----------|-------------|---------|
+|---|---|---|
 | `AND` / `and` / `&` | Matches when all keywords are present. | `refund AND cancellation` |
-| `OR` / `or` / `\|` | Matches when at least one keyword is present. | `amazon OR credit OR department`, `five\|5` |
+| `OR` / `or` / <code>&#124;</code> | Matches when at least one keyword is present. | `amazon OR credit OR department`, <code>five&#124;5</code> |
 | `-` (NOT) | Excludes the prefixed keyword. | `refund -approved` |
 | `*` | Matches all transcripts (search only). | `*` |
 | `"exact phrase"` | Searches for the exact phrase. | `"call failed"` |
