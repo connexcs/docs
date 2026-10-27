@@ -16,7 +16,9 @@
 
 ## Overview
 
-The Siperb app is an application developed by ConnexCS to integrate Siperb with the ConnexCS platform. It is distributed through the Connex Store and can be installed by an authorized administrator.
+The Siperb app is an application developed by ConnexCS to integrate Siperb with the ConnexCS platform. It's distributed through the Connex Store and can be installed by an authorized administrator.
+
+Siperb is a browser-based SIP phone and Session Border Controller (SBC) service that enables users to make and manage VoIP calls. The Siperb app integrates the service with ConnexCS, allowing users to install and configure it from the App Store.
 
 Once installed, Siperb is available as a separate option in the ConnexCS portal navigation, allowing authorized users to access the integration directly from their account.
 
@@ -75,47 +77,60 @@ The integration helps administrators:
 
 7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "270" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-8. A new window will where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+8. A new window will appear where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 9. Steps to get the `Siperb API Token`:
       1. Login to your **Siperb Account**.
       2. Click on **Settings :material-menu-right: Developer Settings**. Click on `Generate Token`. <br><img src="/apps/img/siperb8.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
       3. A **Personal Access Token** window will appear, enter the **Token Name**, select the **Expiration** days from the drop-down and click on **Generate Token**. <br><img src="/apps/img/siperb9.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-      4. Copy the generated token. <br><img src="/apps/img/siperb10.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+      4. Copy the generated token. <br><img src="/apps/img/siperb10_new.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+        > **Security Warning:** The Siperb API token is displayed only once. Copy it and store it securely in an approved password manager or secrets vault. Treat the token as a password, and do not share it or expose it in documentation, screenshots, or source control.
 
 10. Navigate to the **Control Panel**, click on the **Siperb** application. Paste the generated token and click on `Save and Sign In`.<br><img src="/apps/img/siperb12.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-11. **Siperb Dashboard** window will open-up. It provides a quick overview of the account, registered devices, and configured connections. It allows users to monitor their setup and quickly access device and connection management options.<br><img src="/apps/img/siperb13_new.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+## App Features
 
-12. **Siperb Profile**: It displays the user's account information, SIP identity, account details, permissions, and domain information. Users can review their profile and, where permitted, update their details.<br><img src="/apps/img/siperb16.png" alt="Siperb Profile vCard tab showing contact card details and Edit vCard button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+### Siperb Dashboard
+
+It provides a quick overview of the account, registered devices, and configured connections. It allows users to monitor their setup and quickly access device and connection management options.<br><img src="/apps/img/siperb13_new.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+### Siperb Profile
+
+It displays the user's account information, SIP identity, account details, permissions, and domain information. Users can review their profile and, where permitted, update their details.<br><img src="/apps/img/siperb16.png" alt="Siperb Profile vCard tab showing contact card details and Edit vCard button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
     1. The `Details` tab displays the user's account information, SIP identity, permissions, and domain details.
     2. The `vCard` tab displays the user's contact information.
 
-13. **Domain Users** page allows administrators to manage users who can access the Siperb domain. Administrators can view existing users, check their roles, and invite new users. <br><img src="/apps/img/siperb17.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+### Domain Users
 
-      * **How to Invite a Domain User**?
+This page allows administrators to manage users who can access the Siperb domain. Administrators can view existing users, check their roles, and invite new users. <br><img src="/apps/img/siperb17.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-        1. Navigate to **Siperb :material-menu-right: Domain Users**.
-        2. Click `Invite domain user`. The invitation window opens. <br><img src="/apps/img/siperb18.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-        3. Enter the following details: **Email**, **Description**, **Send welcome email**, **Join mailing list**.
-        4. Click `Send invite` to send the invitation. Click `Cancel` to close the window without sending it.
+* **How to Invite a Domain User?**
 
-14. The **Devices** page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-      - **How to Create a Device**?
+    1. Navigate to **Siperb :material-menu-right: Domain Users**.
+    2. Click `Invite domain user`. The invitation window opens. <br><img src="/apps/img/siperb18.png" alt="Siperb Domian" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+    3. Enter the following details: **Email**, **Description**, **Send welcome email**, **Join mailing list**.
+    4. Click `Send invite` to send the invitation. Click `Cancel` to close the window without sending it.
 
-        1. Navigate to **Siperb :material-menu-right: Devices**.
-        2. Click `New device`. The New device window opens. <br><img src="/apps/img/siperb21.png" alt="Siperb New device form with device name, platform, registration mode, and WebSocket settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-        3. Enter the following details:
-              - **Name**: Enter a descriptive name for the device, such as `Reception desk phone`.
-              - **Platform**: Enter the platform identifier expected by the Siperb API, such as `script`.
-              - **Registration mode**: Select the required registration mode. The screenshot shows `Proxy`.
-              - **WebSocket server**: Enter the WebSocket server address when using WebSocket mode. This field is required only for WebSocket mode.
-              - **SIP domain (WebSocket)**: Enter the SIP domain used for the WebSocket connection.
-              - **SIP username (WebSocket)**: Enter the SIP username for authentication.
-              - **SIP password (WebSocket)**: Enter the corresponding SIP password.
+### Devices
 
-        4. Click `Create device` to register the device. Click `Cancel` to close the window without creating it.
+This page allows users to create and manage devices registered with their Siperb account. Users can view device details, access diagnostic logs, and edit or delete devices. <br><img src="/apps/img/siperb19.png" alt="Siperb Devices list showing registered devices and available actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+- **How to Create a Device?**
+
+    1. Navigate to **Siperb :material-menu-right: Devices**.
+    2. Click `New device`. The New device window opens. <br><img src="/apps/img/siperb21.png" alt="Siperb New device form with device name, platform, registration mode, and WebSocket settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+    3. Enter the following details:
+        - **Name**: Enter a descriptive name for the device, such as `Reception desk phone`.
+        - **Platform**: Enter the platform identifier expected by the Siperb API, such as `script`.
+        - **Registration mode**: Select the required registration mode. The screenshot shows `Proxy`.
+        - **WebSocket server**: Enter the WebSocket server address when using WebSocket mode. This field is required only for WebSocket mode.
+        - **SIP domain (WebSocket)**: Enter the SIP domain used for the WebSocket connection.
+        - **SIP username (WebSocket)**: Enter the SIP username for authentication.
+        - **SIP password (WebSocket)**: Enter the corresponding SIP password.
+
+    4. Click `Create device` to register the device. Click `Cancel` to close the window without creating it.
 
 !!! note "What happens when you click on `proxy`?"
 
@@ -131,9 +146,11 @@ The integration helps administrators:
 
     <br><img src="/apps/img/siperb20.png" alt="Siperb device details showing overview and diagnostic tabs" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-15. The **Connections** page allows users to create and manage SIP connections in Siperb. Connections define how calls are routed to external trunks or registration-based endpoints using dial patterns and connection settings.<br><img src="/apps/img/siperb22.png" alt="Siperb Connections page showing connection names, types, dial patterns, weights, enabled status, and actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+### Connections
 
-* **How to Create a New Connection**?
+This page allows users to create and manage SIP connections in Siperb. Connections define how calls are routed to external trunks or registration-based endpoints using dial patterns and connection settings.<br><img src="/apps/img/siperb22.png" alt="Siperb Connections page showing connection names, types, dial patterns, weights, enabled status, and actions" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+* **How to Create a New Connection?**
 
       1. Navigate to **Siperb :material-menu-right: Connections** and click `New connection`. <br><img src="/apps/img/siperb23.png" alt="Siperb New Connection form showing connection type, routing, registration, and advanced settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
@@ -172,7 +189,9 @@ The integration helps administrators:
       
       Review the configuration and click `Create connection` to save the connection. Click `Cancel` to leave without creating it.
 
-16.The **Create Interconnect** page allows administrators to create an outbound registration connection for a selected domain user. It configures the SIP registration server, authentication credentials, media handling, and advanced settings required for the connection. <br><img src="/apps/img/siperb24.png" alt="Siperb Create Interconnect form showing domain user, connection type, registration, and advanced settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+### Create Interconnect
+
+This page allows administrators to create an outbound registration connection for a selected domain user. It configures the SIP registration server, authentication credentials, media handling, and advanced settings required for the connection. <br><img src="/apps/img/siperb24.png" alt="Siperb Create Interconnect form showing domain user, connection type, registration, and advanced settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 * **Configuration Fields**
     - **Domain user**: Select the domain user under whose account the connection will be created.
