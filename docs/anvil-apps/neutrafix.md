@@ -71,13 +71,12 @@ It helps customers and administrators:
 5. Navigate to the `App Settings` tab to review the available application settings. <br><img src="/apps/img/neutrafix5.png" alt="NeuTrafix App Settings showing Custom domains and Assigned buttons" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 6. Review the following sections:
+   1. **Custom domains**: Map a domain to the application if required. Click `+ Add` to begin configuring a custom domain. Creating the domain triggers an automatic application rebuild and republication.
+   2. **Assigned buttons**: Displays the application entry registered in the ConnexCS portal navigation. The screenshot shows NeuTrafix as a portal navigation entry.
 
-   - **Custom domains**: Map a domain to the application if required. Click `+ Add` to begin configuring a custom domain. Creating the domain triggers an automatic application rebuild and republication.
-   - **Assigned buttons**: Displays the application entry registered in the ConnexCS portal navigation. The screenshot shows NeuTrafix as a portal navigation entry.
+7. To configure the API user, open the application's `Config` option. Select the required **API User** and click `Confirm` to save the configuration. <br><img src="/apps/img/nt3.png" alt="NeuTrafix application configuration showing the API User selection" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-7. To configure the API user, open the application's `Config` option. Select the required **API User** and click `Confirm` to save the configuration. <br><img src="/apps/img/nt3.png" alt="NeuTrafix application configuration showing the API User selection" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-   Review the configuration and confirm that the API user has been assigned as required. <br><img src="/apps/img/nt4.png" alt="NeuTrafix API User configuration confirmation" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+   Review the configuration and confirm that the API user has been assigned as required. <br><img src="/apps/img/nt4.png" alt="NeuTrafix API User configuration confirmation" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ### Using NeuTrafix
 
@@ -108,7 +107,7 @@ It helps customers and administrators:
 
 1. Open the **NeuTrafix** app from the ConnexCS portal sidebar.
 
-2. If you already have a NeuTrafix account, click `Login`. The login window displays the `API Login` and `API Key` fields. Enter the API credentials associated with your NeuTrafix account, then click `Login`. <br><img src="/apps/img/nt6.png" alt="API Login" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. If you already have a NeuTrafix account, click `Login`. The login window displays the `API Login` and `API Key` fields. Enter the API credentials associated with your NeuTrafix account, then click `Login`. <br><img src="/apps/img/nt6.png" alt="API Login" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 3. If you can't locate the required API credentials, check the **Profile** section of your NeuTrafix account for the API username and API password. Use the credentials intended for API authentication, not your standard account login credentials.
 
@@ -163,14 +162,14 @@ After logging in, the route marketplace displays the available search filters an
 
    4. Click **Confirm and Purchase Route** to complete the purchase.
 
-   **Note:** You must complete company verification before purchasing routes. If purchasing is unavailable, check the verification status of your company documents.
+      !!! Note "You must complete company verification before purchasing routes. If purchasing is unavailable, check the verification status of your company documents."
 
 6. **Rate Card Assignment**: A rate card is automatically added whenever a new seller is created.
 
-   !!! info "How Rate Card Assignment Works"
-       A `NeuTrafix` carrier is used to associate seller-specific rate cards with the ConnexCS configuration. Confirm with the application owner whether this carrier is created on the first login or through another initialization process.
+!!! info "How Rate Card Assignment Works"
+      A `NeuTrafix` carrier is used to associate seller-specific rate cards with the ConnexCS configuration. Confirm with the application owner whether this carrier is created on the first login or through another initialization process.
 
-       When a user purchases a route, the corresponding prefixes are automatically added to the relevant seller's rate card. The rate card then functions like a standard rate card within ConnexCS.
+      When a user purchases a route, the corresponding prefixes are automatically added to the relevant seller's rate card. The rate card then functions like a standard rate card within ConnexCS.
 
 ## Troubleshooting
 
