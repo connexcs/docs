@@ -97,10 +97,10 @@ It provides a quick overview of the account, registered devices, and configured 
 
 ### Siperb Profile
 
-It displays the user's account information, SIP identity, account details, permissions, and domain information. Users can review their profile and, where permitted, update their details.<br><img src="/apps/img/siperb16.png" alt="Siperb Profile vCard tab showing contact card details and Edit vCard button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+It displays the user's account information, SIP identity, account details, permissions, and domain information. Users can review their profile and, where permitted, update their details.
 
-    1. The `Details` tab displays the user's account information, SIP identity, permissions, and domain details.
-    2. The `vCard` tab displays the user's contact information.
+1. The `Details` tab displays the user's account information, SIP identity, permissions, and domain details.
+2. The `vCard` tab displays the user's contact information.
 
 ### Domain Users
 
