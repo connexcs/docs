@@ -16,7 +16,7 @@
 
 The DID Spam Score app is developed by ConnexCS to help customers check the spam scores of their Direct Inward Dialing (DID) numbers through the ConnexCS platform.
 
-The app integrates with [Spam Scout scoring](https://docs.connexcs.com/guides/spam-callsblock/#64-using-spam-scout-scoring) to process selected DIDs and retrieve their spam score information. Users can select one or more DIDs and submit a request to check their spam scores.
+The app integrates with [Spam Scout scoring](/guides/spam-callsblock/#64-using-spam-scout-scoring) to process selected DIDs and retrieve their spam score information. Users can select one or more DIDs and submit a request to check their spam scores.
 
 When more than five DIDs are checked, the configured default email address is used to send the relevant notification. After processing, the app displays the status and spam score for each selected DID. The results can help customers identify numbers that may have been flagged as spam.
 
