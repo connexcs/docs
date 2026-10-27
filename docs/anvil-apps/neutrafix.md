@@ -8,7 +8,7 @@
 <strong>Difficulty</strong>: Beginner<br>
 <strong>Time Required</strong>: Approximately 5–10 minutes for installation and initial configuration. Additional time may be required for account registration, company verification, and marketplace access.<br>
 <strong>Prerequisites</strong>: An active ConnexCS account with access to Setup and App Store; permission to install applications; and valid NeuTrafix account credentials or the ability to register a new account. Company verification documents may be required to enable purchasing activities.<br>
-<strong>Related Topics</strong>: <a href="/setup/appstore/">App Store</a>, App Deployment, API Authentication, Route Marketplace, Prefix Management, Rate Cards<br>
+<strong>Related Topics</strong>: <a href="/setup/appstore/">App Store</a>, App Deployment, API Authentication, Route Marketplace, Prefix Management, <a href="/rate-card-building/">Rate Cards</a><br>
 <strong>Next Steps</strong>: Install NeuTrafix from the Connex Store, configure the application, register or log in to NeuTrafix, complete company verification, and access the route marketplace.<br>
 </details>
 
@@ -106,11 +106,17 @@ It helps customers and administrators:
 
 #### Log In
 
-1. Open the `NeuTrafix` app from the ConnexCS portal sidebar.
+1. Open the **NeuTrafix** app from the ConnexCS portal sidebar.
 
-2. If you already have a NeuTrafix account, click `Login`. The login window displays the `API Login` and `API Key` fields. Enter the API credentials associated with your NeuTrafix account and click `Login`. <br><img src="/apps/img/nt6.png" alt="NeuTrafix login window showing the API Login and API Key fields" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+2. If you already have a NeuTrafix account, click `Login`. The login window displays the `API Login` and `API Key` fields. Enter the API credentials associated with your NeuTrafix account, then click `Login`. <br><img src="/apps/img/nt6.png" alt="API Login" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-   The API credentials are available in the NeuTrafix Profile section, where the corresponding API username and API password are displayed. Use the credentials intended for API authentication rather than standard login credentials.
+3. If you can't locate the required API credentials, check the **Profile** section of your NeuTrafix account for the API username and API password. Use the credentials intended for API authentication, not your standard account login credentials.
+
+#### Troubleshooting
+
+| Issue | Recommended Action |
+|---|---|
+| API authentication fails | Check that the values entered in `API Login` and `API Key` are the API credentials required by NeuTrafix. If authentication fails, verify the credential names and values in the NeuTrafix Profile section or contact the NeuTrafix support team. | Dentials intended for API authentication rather than standard login credentials|
 
 #### Explore the Route Marketplace
 
@@ -170,10 +176,10 @@ After logging in, the route marketplace displays the available search filters an
 
 | Issue | Recommended Action |
 |---|---|
-| NeuTrafix is not visible in the portal navigation. | Confirm that the application is installed and review the **Assigned buttons** section in **App Settings**. |
+| NeuTrafix isn't visible in the portal navigation. | Confirm that the application is installed and review the **Assigned buttons** section in **App Settings**. |
 | Installation fails. | Verify your App Store permissions and retry the installation. |
 | API authentication fails. | Confirm that the API credentials are correct. Use the API credentials expected by the login dialog rather than standard login credentials. Check the Profile section for the API credentials. |
 | Sign-up succeeds, but purchasing is unavailable. | Confirm that the required company documents have been submitted to the NeuTrafix team and approved. |
 | The installed version is outdated. | Review the application's version information and available releases in the Connex Store. |
-| A custom domain is not available. | Review the domain configuration and allow the automatic rebuild and republication process to complete. |
+| A custom domain isn't available. | Review the domain configuration and allow the automatic rebuild and republication process to complete. |
 | The expected carrier or rate card is unavailable. | Check the route purchase configuration and confirm the carrier and seller-specific rate card settings with your ConnexCS administrator. |
