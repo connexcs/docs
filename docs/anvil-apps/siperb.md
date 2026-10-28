@@ -68,18 +68,11 @@ The integration helps administrators:
 
 4. To review the installed version and its changelog, navigate to the `Versions` tab. This section displays the version information, approval status, submission details, and changes included in the release.<br><img src="/apps/img/siperb4.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-5. To configure a custom domain, navigate to the `App Settings` tab. Under **Custom Domains**, click `+ Add`.<img src="/apps/img/siperb5.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">
+5. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "270" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-6. A window will open, prompting you to enter the following details:
+6. A new window will appear where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-      1. `Domain`: Enter the domain you want to associate with the Siperb application (for example, `test.cnx.page`).
-      2. Click `Create` to save the domain configuration. The application will be automatically rebuilt and republished after the domain is created. <br><img src="/apps/img/siperb6.png" alt="Connex Store marketplace showing the Siperb app and Install button" width="500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "270" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-8. A new window will appear where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
-
-9. Steps to get the `Siperb API Token`:
+7. Steps to get the `Siperb API Token`:
       1. Login to your **Siperb Account**.
       2. Click on **Settings :material-menu-right: Developer Settings**. Click on `Generate Token`. <br><img src="/apps/img/siperb8.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
       3. A **Personal Access Token** window will appear, enter the **Token Name**, select the **Expiration** days from the drop-down and click on **Generate Token**. <br><img src="/apps/img/siperb9.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
@@ -87,7 +80,7 @@ The integration helps administrators:
 
         > **Security Warning:** The Siperb API token is displayed only once. Copy it and store it securely in an approved password manager or secrets vault. Treat the token as a password, and do not share it or expose it in documentation, screenshots, or source control.
 
-10. Navigate to the **Control Panel**, click on the **Siperb** application. Paste the generated token and click on `Save and Sign In`.<br><img src="/apps/img/siperb12.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+8.  Navigate to the **Control Panel**, click on the **Siperb** application. Paste the generated token and click on `Save and Sign In`.<br><img src="/apps/img/siperb12.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ## App Features
 
