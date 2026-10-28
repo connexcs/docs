@@ -10,8 +10,6 @@
 
 ---
 
-!!! warning "Creating Agents is **ONLY** for **Auto Dialer** and **Preview Dialer**."
-
 ## Overview
 
 **Agent creation** is the process of setting up the agents who will be part of a call center campaign.
@@ -22,13 +20,28 @@ Additionally, bulk agent creation allows you to quickly set up multiple agents a
 
 ## Steps to add the Agent
 
-This section has information on the agents. You can also `Create Bulk Agents`. <br><img src= "/customer-portal/img/16ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+### Create Bulk Agents
 
 !!! Note "Important Note"
       Ensure the [**Internal Number Block**](https://docs.connexcs.com/customer/main/#steps-to-implement-internal-number-block) is configured before proceeding to Agent creation.
 
-1. Select a `SIP Profile`.
+1. Click on `Bulk Create`. <br><img src= "/customer-portal/img/ccrevamp13.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. Add the `Number of Agents` for participation in this campaign.
+2. Select a `SIP Profile`.
 
-3. Click on `Create`. <br><img src= "/customer-portal/img/17ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Add the `Number of Agents` for participation in this campaign.
+
+4. Click on `Create`. <br><img src= "/customer-portal/img/ccrevamp14.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+### Create a single Agent
+
+1. `Add Agent`: Opens the New Agent window, allowing users to create and configure a single agent.
+2. A window with the following fileds will appear:
+   1. `SIP Profile` **(Required)**: Select the SIP profile to assign to the agent from the drop-down list.
+   2. `Username` **(Required)**: Select an internal number from the drop-down list to use as the agent's username.
+   3. `Password` **(Required)**: Enter a password or click the key icon to generate a strong password automatically.
+      - `Copy Password`: Copies the generated or entered password using the copy icon.
+      - **Note:** The password field allows users to enter their own password or generate one using the key icon.
+   4. `Cancel`: Closes the New Agent window without saving the agent.
+   5. `Save`: Saves the agent configuration and creates the agent.
+   6. `Close (×)`: Closes the New Agent window. <br><img src= "/customer-portal/img/ccrevamp15.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
