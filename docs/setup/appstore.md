@@ -171,32 +171,6 @@ To explore the available Anvil applications, see the [Anvil Apps](/anvil-apps/pe
 
 ## Useful Tools and Applications
 
-### DID Spam Score
-
-#### Overview
-
-This application helps you update the spam score of your DIDs and send a report to the provided email ID.
-
-!!! Note "Please note that this service is chargeable. Check [Pricing](https://connexcs.com/pricing) here."
-
-#### Prerequisites
-
-Before using the app, ensure that the [**Spam Score package**](https://docs.connexcs.com/setup/config/packages/) is added to your account.
-
-#### Steps to Use the App
-
-1. Setup Email that will be used as API user.
-2. Navigate to **IDE :material-menu-right: DID Spam Score App :material-menu-right: Environmental Variables**.
-3. Locate the `cx_api_user` variable. <img src= "/apps/img/fli.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;">
-4. Enter the email address you use to log in as the value.<img src= "/apps/img/fli1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. Select **DIDs** for **Spam Score Check**.
-6. Navigate to **Global :material-menu-right: DID**.
-7. Select the DIDs you want to check.
-8. Once selected, click on the `Spam Score button` at the top of the page. <br><img src= "/apps/img/fli2.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-9. Send the `Spam Score Report`.
-10. After clicking the Spam Score button, you will be prompted to enter the **email address** to which the DID spam report will be sent.
-11. Enter the desired email address and click `Spam Scout`. <br><img src= "/apps/img/fli3.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
 ### Autonomous Calling
 
 #### Overview
