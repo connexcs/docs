@@ -115,10 +115,33 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 
 ### Step 2: Configuration
 
-1. Click on `Webphone Config`. <br><img src= "/setup/img/webnew2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. Select the `SIP Server` from the dropdown. Click on `Add Server` under `Add New Server`.
-3. `Enable` or `disable` the **Use CLI as Username** setting. When enabled, the **Username** is automatically used as the caller ID, so you don't need to enter a separate caller ID.
-4. You can either use your own domian or an existing one.
+1. Click on `Webphone Config`. Allows users to configure SIP server connections, WebSocket settings, general WebPhone behaviour, and custom domains.<br><img src= "/setup/img/webnew2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. `Webphone Config`: <br><img src= "/setup/img/webphoneconfig.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+   1. `SIP Servers`: Displays the SIP servers configured for the project. If no servers have been added, the message `No servers configured yet` is displayed.
+
+   2. `Add New Server`: Allows users to configure and add a SIP server.
+
+      1. `SIP Server`: Select the SIP server type from the drop-down list. The screenshot shows `Custom` selected.
+      2. `Custom SIP Server`: Enter the hostname or address of the custom SIP server, such as `sip.example.com`.
+      3. `WebSocket URL`: Enter the WebSocket URL used by the WebPhone to connect to the SIP server, such as `wss://sip.example.com`.
+      4. `Add Server`: Adds the configured SIP server to the list. The button appears disabled until the required information is provided.
+
+   3. `General Settings`: Allows users to configure the general behaviour of the WebPhone.
+
+      1. `Use CLI as Username`: When enabled, uses the Username value as the Calling Line Identification (CLI) instead of requiring a separate CLI value.
+         - `Enabled`: The setting is active.
+         - `Disabled`: The setting is inactive.
+      2. `Debug Mode`: Enables verbose JsSIP debug logging in the browser console for all WebPhone users.
+         - `Enabled`: Verbose debug logging is enabled.
+         - `Disabled`: Verbose debug logging is disabled.
+      3. `Registration Expiry (seconds)`: Specifies how long each SIP REGISTER request remains valid before the WebPhone re-registers. The screenshot shows `600` seconds as the default value. The displayed guidance indicates a configurable range of `60–3600` seconds.
+
+   4. `Domain Configuration`: Allows users to manage custom domains for the project.
+
+      1. `Configured Domains`: Displays the custom domains already configured for the project. If no domains have been added, the message `No domains configured yet` is displayed.
+      2. `Add New Domain`: Enter the domain name to add, such as `example.com`.
+      3. `Add`: Adds the entered domain to the project's domain configuration. The button appears disabled until the required information is provided.
 
 !!! Note
     Please note you can change this later if you want to deploy this on your own domain.

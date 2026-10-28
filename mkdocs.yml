@@ -408,7 +408,6 @@ nav:
             - Script Creation: customer-portal/cp-cc-creating-scripts.md
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
-    - WebPhone App: webphoneapp.md
 
   - Anvil IDE:
     - Introduction: anvil-ide/introduction.md
@@ -428,4 +427,5 @@ nav:
     - Dial Phone Verification: anvil-apps/dial-phone-verification.md
     - DID Spam Score: anvil-apps/did-spam-score.md
     - Neutrafix: anvil-apps/neutrafix.md
+    - WebPhone App: anvil-apps/webphoneapp.md
     
