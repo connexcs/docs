@@ -19,6 +19,7 @@
 The Siperb app is an application developed by ConnexCS to integrate Siperb with the ConnexCS platform. It's distributed through the Connex Store and can be installed by an authorized administrator.
 
 Siperb is a browser-based SIP phone and Session Border Controller (SBC) service that enables users to make and manage VoIP calls. The Siperb app integrates the service with ConnexCS, allowing users to install and configure it from the App Store.
+The Siperb app is an application developed by ConnexCS to integrate Siperb with the ConnexCS platform. It is distributed through the Connex Store and can be installed by an authorized administrator.
 
 Once installed, Siperb is available as a separate option in the ConnexCS portal navigation, allowing authorized users to access the integration directly from their account.
 
@@ -213,3 +214,19 @@ This page allows administrators to create an outbound registration connection fo
     3. Configure the routing and registration details.
     4. Review the Media Handling and Advanced Settings sections.
     5. Click `Create interconnect` to create the connection. Click `Cancel` to exit without creating it.
+1. Navigate to **Setup > App Store > Anvil Store > Marketplace**, locate **Siperb**, and click `Install`. <br><img src="/apps/img/siperb1.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+2. An installation confirmation window will appear. Review the package details and click `Install` again. <br><img src="/apps/img/siperb2.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+3. Once installed, open Siperb from the installed applications list. The application details page displays the installation status, installed version, latest version, and package information.<br><img src="/apps/img/siperb3.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+4. To review the installed version and its changelog, navigate to the `Versions` tab. This section displays the version information, approval status, submission details, and changes included in the release.<br><img src="/apps/img/siperb4.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+5. To configure a custom domain, navigate to the `App Settings` tab. Under **Custom Domains**, click `+ Add`.<<img src="/apps/img/siperb5.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">>
+
+6. A window will open, prompting you to enter the following details:
+
+   1. `Domain`: Enter the domain you want to associate with the Siperb application (for example, `test.cnx.page`).
+   2. Click `Create` to save the domain configuration. The application will be automatically rebuilt and republished after the domain is created. <br><img src="/apps/img/siperb6.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+
+7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
