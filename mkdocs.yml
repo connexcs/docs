@@ -425,5 +425,6 @@ nav:
     - Yoco Payments: anvil-apps/yoco-payments.md
     - DID Purchase: anvil-apps/did-purchase.md
     - Dial Phone Verification: anvil-apps/dial-phone-verification.md
+    - DID Spam Score: anvil-apps/did-spam-score.md
 
     
