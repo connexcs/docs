@@ -168,7 +168,7 @@ The audit log also provides a refresh control and a search field to help locate 
 
 Rows highlighted in red indicate differences between the two recorded versions.
 
-A dash (`-`) indicates that no value was recorded for that version. It does not necessarily mean that the value was removed.
+A dash (`-`) indicates that no value was recorded for that version. It doesn't necessarily mean that the value was removed.
 
 Use this view to identify changes to template fields and help investigate unexpected configuration changes.
 
