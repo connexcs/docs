@@ -198,7 +198,7 @@ To setup WebRTC on a server:
 
 1. Now let's have a look at the deployed domain.
 2. Enter in the domain name in the URL e.g., `test4.cnx.page`.
-3. A login window will appear withe th following fields: <br><img src= "/setup/img/webnew3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. A login window will appear withe th following fields: <br><img src= "/setup/img/webphonecalllogs.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    1. Select a **Server** from the dropdown if `multiple servers` are available. If only `one server` has been added, it is selected automatically. If `no servers` have been added, you will need to enter the server details manually.
    2. Enter the **SIP Username**.
    3. Enter the **Password**.
@@ -207,12 +207,180 @@ To setup WebRTC on a server:
 
 #### Navigation
 
-1. **Dialpad**: Dialpad for making and answering calls.
-2. **Mic Off**: Mute the call.
-3. **Hangup**: Disconnect the call.
-4. **Call Hold**: Hold the call.
-5. **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
-6. **Log Out** (top-right): Click on this button to sign out of the Webphone.
-7. **Current Call Time**: Displays the duration of the ongoing call.
+> **Note**: When Debug Mode is enabled, the Console option becomes available, displaying call-related information that you can use to troubleshoot and debug calls.
 
-<br><img src= "/setup/img/webnew5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. **Dialpad**: Dialpad for making and answering calls.
+2. **Call Logs**: Displays call records in ConnexCS for monitoring call activity, reviewing outcomes, and troubleshooting call-related issues. <br><img src= "/setup/img/webphonecalllogs1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. **Mic Off**: Mute the call.
+4. **Hangup**: Disconnect the call.
+5. **Call Hold**: Hold the call.
+6. **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
+7. **Log Out** (top-right): Click on this button to sign out of the Webphone.
+8. **Current Call Time**: Displays the duration of the ongoing call.
+
+<br><img src= "/setup/img/webphonecall.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+## Troubleshooting Logs
+
+Troubleshooting Logs in ConnexCS WebPhone provide diagnostic information about calls made or received during the current session.
+
+Users can review call status, termination details, call timing, and a chronological timeline of call events to understand how a call progressed and identify potential issues.
+
+The logs remain in memory for the current session only. Users can inspect individual call records, copy the diagnostic information, or download a call log for further analysis.
+
+### Key Features
+
+- **Call history**: Displays calls captured during the current WebPhone session.
+- **Call status**: Identifies the call outcome, such as a normal termination.
+- **Call details**: Displays information such as call direction, number, start time, answer time, talk time, and termination cause.
+- **Event timeline**: Shows call events in chronological order with timestamps.
+- **Copy logs**: Copies the available call log information for further investigation.
+- **Download call log**: Downloads the diagnostic information for offline review.
+- **Session-based storage**: Keeps troubleshooting logs in memory for the current session only.
+
+### How to Use?
+
+#### Step 1 — Open Troubleshooting Logs
+
+1. Open ConnexCS WebPhone.
+2. Open the navigation menu.
+3. Select **Troubleshooting Logs**, labelled **Why a call failed**. <br><img src= "/setup/img/webphonetroubleshoting1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+### Step 2 — Review the call list
+
+The Troubleshooting Logs panel displays the calls captured during the current session.
+
+Each call entry includes the following information:
+
+| Field | Description |
+|---|---|
+| **Number** | Displays the phone number or destination associated with the call. |
+| **Call summary** | Provides a brief description of the call outcome, such as `Hung up from this webphone`. |
+| **Date and time** | Displays when the call event occurred. |
+| **Status label** | Indicates the call classification, such as `Normal`. |
+| **Arrow (>)** | Opens the detailed troubleshooting information for the selected call. |
+
+The panel also includes a close (**X**) button to close the troubleshooting view.
+
+**Screenshot explanation:**
+
+The example shows call `160`, with the summary `Hung up from this webphone`, recorded on October 29, 2026, at 6:47:34 PM. The `Normal` status indicates that the call ended normally rather than being identified as a failure. <br><img src= "/setup/img/webphonetroubleshoting2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+### Step 3 — Inspect the call details
+
+1. In the Troubleshooting Logs panel, select the call you want to investigate.
+2. The call details view opens.
+3. Review the call status, call information, and event timeline. <br><img src= "/setup/img/webphonetroubleshoting3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### Call status summary
+
+The top section displays a status message explaining the call outcome.
+
+In the example screenshot:
+
+- **Source: Normal**: Identifies the classification assigned to the call.
+- **Hung up from this webphone**: Indicates that the WebPhone user ended the call.
+- **Status description**: Explains that the call connected and ended normally through the WebPhone.
+
+The status summary helps determine whether the call completed as expected before examining the detailed events.
+
+#### Call details fields
+
+| Field | Description |
+|---|---|
+| **Direction** | Indicates whether the call was outgoing or incoming. |
+| **Number** | Displays the number associated with the call. |
+| **Started** | Displays the date and time when the call started. |
+| **Answered after** | Displays the elapsed time between call initiation and answer. |
+| **Talk time** | Displays the duration of the connected conversation. |
+| **Ended by** | Identifies the endpoint or party recorded as ending the call, such as WebPhone. |
+| **Cause** | Displays the recorded call termination cause, such as `Terminated`. |
+| **Call-ID** | Displays the call identifier when available. This can help correlate the call with other diagnostic records. |
+
+**Screenshot explanation:**
+
+The example shows an outgoing call to `160`. The call was answered after approximately 1.9 seconds, remained connected for 7.2 seconds, and was ended by the WebPhone. The recorded cause is `Terminated`.
+
+These fields provide a summary of the call lifecycle and help distinguish between call setup issues, answer delays, and call termination events.
+
+### Step 4 — Review the event timeline
+
+The **Timeline** section displays call events in chronological order. Each entry includes a relative timestamp and a description of the event.
+
+The example screenshot shows the following sequence:
+
+| Timestamp | Event | Explanation |
+|---|---|---|
+| `+0.000s` | WebPhone sent call request (INVITE) upstream | The WebPhone initiated the call by sending a SIP INVITE request. |
+| `+1.894s` | Media connectivity (ICE): checking | The WebPhone began checking possible network paths for media connectivity. |
+| `+1.909s` | Call answered (200 OK) | A successful SIP response indicated that the call was answered. |
+| `+1.911s` | Call confirmed (ACK) | The WebPhone sent an acknowledgement confirming the successful call setup. |
+| `+2.043s` | Media connectivity (ICE): connected | The media connectivity check completed successfully. |
+| `+9.137s` | User pressed hang up — sending BYE | The WebPhone user initiated call termination. |
+| `+9.144s` | Call ended by this webphone: Terminated | The call ended, and the WebPhone recorded the termination event. |
+
+The timestamps are relative to the start of the call. They help establish the order of events and identify delays between call setup, answer, media connectivity, and termination.
+
+**Note:** The example represents a call that connected and ended normally. If a call fails, examine the timeline for unsuccessful responses, missing expected events, media connectivity issues, or unexpected termination messages. The precise events displayed depend on the call and the diagnostic information available.
+
+### Step 5 — Copy or download the call log
+
+The call details view provides the following actions at the bottom of the panel:
+
+- **Clear**: Clears the troubleshooting logs from the current session.
+- **Copy**: Copies the available call log information so it can be shared or reviewed elsewhere.
+- **Download call log**: Downloads the call log for further investigation or to share with the support team.
+
+To investigate a call:
+
+1. Open the relevant call record.
+2. Review the status summary, call details, and timeline.
+3. Click **Copy** to copy the log or **Download call log** to save it.
+4. Review the diagnostic information or provide it to the technical support team when assistance is required.
+
+> **Important:** Use **Clear** carefully, as it removes the available troubleshooting logs from the current session. The logs are session-based and should be copied or downloaded before the session ends if they're needed later.
+
+### Troubleshooting Guidelines
+
+| Observation | What to check |
+|---|---|
+| The call wasn't answered. | Review the call timeline for SIP responses and check whether an answer event appears. |
+| The call connected but had no audio. | Inspect the ICE connectivity events and investigate possible network or media connectivity issues. |
+| The call ended unexpectedly. | Check the `Ended by` field, termination cause, and final timeline events. |
+| The call took too long to connect. | Compare the call initiation, answer, and media connectivity timestamps. |
+| Further investigation is required. | Copy or download the call log and correlate the available details with other diagnostic records. |
+
+### WebPhone Console (Debug Mode)
+
+The WebPhone Console displays diagnostic messages that help troubleshoot SIP registration, authentication, signalling, and call connectivity issues. When Debug Mode is enabled, users can access the browser's Developer Tools to inspect these messages.
+
+#### How to Access the Console
+
+1. Enable **Debug Mode** in WebPhone.
+2. Press **F12** on your keyboard to open the browser's Developer Tools.
+3. Select the **Console** tab to view the diagnostic messages generated by WebPhone.<br><img src= "/setup/img/webphoneconsole.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### Console Fields and Messages
+
+The Console displays various diagnostic messages and SIP protocol details.
+
+- **`JsSIP:DigestAuthentication`**: Displays SIP digest authentication activity, including the generation of authentication responses.
+- **`JsSIP:Transport`**: Displays transport activity, such as sending SIP messages.
+- **`REGISTER sip`**: Indicates that WebPhone is sending a SIP registration request to register its endpoint.
+- **`Via`**: Contains routing and transport information for the SIP request.
+- **`To` and `From`**: Identify the intended recipient and the originator of the SIP request.
+- **`Call-ID`**: Provides a unique identifier used to correlate SIP messages belonging to a call or signalling transaction.
+- **`CSeq`**: Identifies the sequence number and method of a SIP request.
+- **`Authorization`**: Contains authentication information used to authorize the SIP request.
+- **`Contact`**: Specifies the contact address associated with the SIP endpoint.
+- **`Expires`**: Indicates the requested registration expiry interval. In the screenshot, the value is `60` seconds.
+- **`Allow`**: Lists the SIP methods supported by the endpoint, such as `INVITE`, `ACK`, `CANCEL`, and `BYE`.
+- **`Supported`**: Lists additional SIP protocol extensions supported by the endpoint.
+- **`User-Agent`**: Identifies the SIP library and version used by WebPhone. The screenshot shows `JsSIP 3.10.1`.
+- **`Content-Length`**: Indicates the length of the SIP message body in bytes. A value of `0` means the message has no body.
+
+#### Troubleshooting
+
+Use the Console to investigate issues such as failed registration, authentication errors, or unsuccessful call setup. Review the sequence of messages and any error responses to identify where the process fails.
+
+> **Note:** Console output may contain sensitive information. Avoid sharing logs publicly, particularly when they include authentication headers or account details. Redact sensitive information before sharing logs with the ConnexCS support team.
