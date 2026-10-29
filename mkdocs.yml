@@ -202,6 +202,7 @@ nav:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
             - SIP Profile: setup/config/sip-profile.md
+            - Templates: setup/config/templates.md
         - Account Manager:
             - Commission: setup/account-manager/commission.md
             - Payment: setup/account-manager/payment.md
