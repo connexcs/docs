@@ -209,7 +209,7 @@ To setup WebRTC on a server:
 > **Note**: When Debug Mode is enabled, the Console option becomes available, displaying call-related information that you can use to troubleshoot and debug calls.
 
 1. **Dialpad**: Dialpad for making and answering calls.
-2. **Call Logs**: Displays call records in ConnexCS for monitoring call activity, reviewing outcomes, and troubleshooting call-related issues. <br><img src= "/setup/img/webphonecalllogs1.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. **Call Logs**: Displays call records in ConnexCS for monitoring call activity, reviewing outcomes, and troubleshooting call-related issues. <br><img src= "/setup/img/webphonecalllogs1.png" width= "250" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 3. **Mic Off**: Mute the call.
 4. **Hangup**: Disconnect the call.
 5. **Call Hold**: Hold the call.
