@@ -39,12 +39,13 @@ This key determines which Yoco account the API requests are executed against and
 
 1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Yoco** and click `Install`. A window will open hit the `Install` button again. <br><img src= "/apps/img/yp1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. Click on the installed App and click on `Config`. <br><img src= "/apps/img/yp2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Click on the installed App and click on `Config`. <br><img src= "/apps/img/yococonfignew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. A window will open, prompting you to enter the following details:
-      + `API User`: The selected API user represents the authenticated entity making API requests.
-      + Enter the `Secret Key`. This key is required for authentication. Follow the steps [here](/anvil-apps/yoco-payments/#where-to-obtain-the-api-secret-key) to generate and retrieve the API key. **ConnexCS uses this key to securely authenticate and authorise all payment-related API requests**.
-      + `Surcharge`: Configure an additional charge to be applied to payments. You can choose one of the following options:
-        + **Amount (ZAR)**: Applies a fixed surcharge in South African Rand (ZAR).
-        + **Percent**: Applies a percentage-based surcharge on the transaction amount. Click `Save`.</br><img src= "/apps/img/yp3.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. The YoCco button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
+      + `ConnexCS auth token`: Lets the app record completed payments in ConnexCS. Select how long the token stays valid (for example, **Valid for 1 year**) and click `Create token`. The token is stored as a write-only secret and is never shown again. **Create the token before taking payments, because completed payments cannot be recorded without one**.
+      + Enter the `Yoco secret key`. This key is used to create checkouts and register the payment webhook. Follow the steps [here](/anvil-apps/yoco-payments/#where-to-obtain-the-api-secret-key) to generate and retrieve the key. **The key is encrypted at rest and is never sent back to the browser**.
+      + `Surcharge` (optional): A processing fee deducted from each payment before the customer is credited. You can choose one of the following options:
+        + **Fixed amount**: Deducts a fixed surcharge from each payment.
+        + **Percentage**: Deducts a percentage of the transaction amount.
+4. Click `Save configuration`. Changes apply to new payments straight away.
+5. The YoCco button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
