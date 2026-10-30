@@ -498,7 +498,6 @@ ConnexCS is GC6 compliant for end users, which:
 
 To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.connexcs.com/customer/cli/#creating-a-record) above.
 
-
 [cli1]: /customer/img/cli1.png "Edit CLI" style="border: 2px solid #4472C4; border-radius: 8px;"
 
 ## CLI and PAID Responsibilities
@@ -508,3 +507,134 @@ To set the "P-Asserted-ID" per customer, see [**Configure CLI**](https://docs.co
 3. If a customer isn't complaining, you can allocate a PAID from YOUR OWN list of CLI's, which can help you trace the calls.
 4. You shouldn't delete any information but you can fix the syntax or format.
 5. You shouldn't present any invalid / false information.
+
+## CLI Pool (Pooled Usage)
+
+### Overview
+
+CLI Pool (Pooled Usage) makes sure every number in a `CLI` or `DID` list is used once before any number is used a second time, while still picking numbers at random.
+
+You can upload a list of `CLIs` or `DIDs`, and a forced CLI rule picks one number from that list for every outbound call.
+
+The existing strategy is stateless **uniform random selection**: each pick is independent, with no per-number usage tracked across calls.
+
+**Pooled Usage** adds a stateful, usage-aware selection strategy alongside it. It's enabled per forced CLI rule with the **Least Used Pool** flag and is evaluated together with the existing `hit_limit` and `hit_interval` constraints.
+
+It targets high-cardinality number lists where the expected calls per number per period is low.
+
+!!! Example
+    A 150,000-number list constrained to at most 5 uses per number per 24-hour interval has a ceiling of 750,000 calls per day.
+
+### Why Pooled Usage scales to large number lists
+
+Random selection works well when each number gets many calls, and breaks down when each number should get only a few.
+
+**Small list, many calls:** With 5 numbers and 1,000 calls, each number gets about 200 calls: one might get 198, another 203. The spread is small compared with the average, so the list is used evenly.
+
+**Large list, few calls per number:** With 150,000 numbers and a target of 5 uses each per 24 hours, the system makes about 750,000 calls a day. Each call has a 1 in 150,000 chance of picking any given number. Random picking reuses some numbers many times while others are never picked at all, so the per-number target cannot be met.
+
+The existing CLI hit limit stops a number being used beyond its limit, but it still relies on random selection to choose which number comes next. Pooled Usage fixes the selection itself.
+
+### How Pooled Usage works
+
+Pooled Usage keeps the pick random, but only among the numbers that have been used the least so far.
+
+Think of the list as a set of pools, one per usage level. Every number starts in the "used 0 times" pool. Each call picks a random number from the lowest pool and moves it up one level. Only when that pool is empty does the next call draw from the "used once" pool, and so on.
+
+```mermaid
+flowchart TD
+    A([New outbound call]) --> B["Start at the lowest pool<br/>(used 0 times)"]
+    B --> C{"Does this pool<br/>have numbers?"}
+    C -- No --> D["Move to the next pool<br/>(used once, used twice, ...)"]
+    D --> C
+    C -- Yes --> E[Pick a random number from the pool]
+    E --> F{"Under the hit limit<br/>for this period?"}
+    F -- Yes --> G[Move the number up one pool]
+    G --> H([Place the call with this CLI])
+    F -- No --> I{"Any other number<br/>under the limit?"}
+    I -- Yes --> E
+    I -- No --> J(["Reject the call<br/>405 CLI Hit Limit Reached"])
+```
+
+> **The result**: every number is used once before any is used twice, every number twice before any is used three times, and so on.
+
+For each call:
+
+1. Find the pool of least-used numbers.
+2. Pick one number at random from that pool.
+3. If that number has already reached its hit limit for the current period, try a few more at random, then check the rest of the pool (and the pools above it) in order.
+4. Count the use, confirm the number is still in the list, and place the call with it.
+
+**New numbers** added to the list start at the same level as the least-used numbers, so they join the rotation without taking every call until they catch up. **Removed numbers** are never returned: the system checks a number still exists before using it.
+
+When a new period starts (for example every 24 hours), the per-period counts reset and all numbers become available again. The overall usage order is kept across periods, so the rotation stays even over time.
+
+### How to use this feature
+
+You turn on Pooled Usage by adding a forced CLI rule to the customer's routing and selecting the **Least Used Pool** flag.
+
+1. Go to **Management :material-menu-right: Customer :material-menu-right: Customer[Name]** and open the customer.
+2. Open the **Routing** tab.
+3. In the **CLI** section on the right, click `+` to add a CLI rule.
+4. Set **Forced** to **Yes** and choose the **Direction Applied** (for example, Termination).
+5. In **Database**, pick your number list from under **Prefix Set Database** (for example, `Test`). <img src= "/customer/img/clipool1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. In **Flags**, select **Least Used Pool**. <br><img src= "/customer/img/clipool2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. Optionally set **Hit Limit** (the most times one number may be used per period) and **Hit Interval** (the length of the period).
+8. Click **Save**.
+
+### Configuration
+
+Pooled Usage is switched on per rule and works with the existing CLI hit limit and interval settings.
+
+| Setting | What it does | If left empty |
+| --- | --- | --- |
+| Selection strategy (Pooled Usage / `LEAST_USED` flag) | Turns on pooled selection for the rule. Applies to forced number lists, and to DIDs set to Random (or Performance when it falls back to random). | The rule keeps the existing random pick. |
+| CLI hit limit (`hit_limit`) | The most times one number may be used in a period. | Numbers are still chosen evenly, but nothing stops a number being reused. Set a very high value for effectively no limit. |
+| Interval (`hit_interval`) | Length of a period, in seconds (e.g. 86400 = 24 hours, 172800 = 48 hours). Periods start on fixed boundaries, e.g. on the hour for 3600. | 24 hours. |
+| Number list | A CLI number list, or the customer's DIDs. Rules that use the same list share its usage counts. | Not applicable. |
+
+**Capacity per period** = hit limit × number of numbers in the list. A 150,000-number list with a limit of 5 per 24 hours can serve up to 750,000 calls a day.
+
+### When the pool is exhausted
+
+Once every number has reached its hit limit for the current period, further calls are rejected with **405 CLI Hit Limit Reached**. The system does not fall back to reusing numbers over the limit.
+
+Before rejecting, it checks for any part of the list it has not read yet and tries once more. Numbers become available again when the next period starts.
+
+To avoid rejections, do one of the following:
+
+- Raise the hit limit.
+- Add more numbers to the list.
+- Shorten the interval.
+
+### Choosing a strategy: Random or Pooled Usage
+
+Use **Pooled Usage** when each number should get only a few calls per period; keep **Random** when each number gets many.
+
+The deciding figure is **calls per number per period** = calls in the period ÷ numbers in the list.
+
+| Situation | Use | Why |
+| --- | --- | --- |
+| A hit limit is set | Pooled Usage | Only a counted pick can enforce the limit exactly. Random can overshoot when calls arrive close together. |
+| No limit, fewer than ~2 calls per number | Pooled Usage | Random leaves a large share of the list unused (at 0.5 calls per number, about 61% is never used) while reusing others. |
+| No limit, ~2 to ~20 calls per number | Either | Random still leaves some numbers unused and usage varies noticeably between numbers. |
+| No limit, more than ~20 calls per number | Random | Usage evens out on its own (within about ±22% of average), with nothing extra to store. |
+
+Pooled Usage is slightly less random than Random: a number cannot come up again until every other number has been used. It is also somewhat slower per call, which needs to be confirmed in testing.
+
+### FAQ and known limitations
+
+**Once all numbers are used up, does it start reusing them?**
+<br>No. Calls are rejected with 405 CLI Hit Limit Reached until the next period starts.</br>
+
+**I added numbers but they are not being used yet.**
+<br>The list is re-read in the background about every 15 minutes. New numbers then start at the lowest level and are used soon after.</br>
+
+**I removed a number but it came up once more.**
+<br>It cannot be used: the system confirms the number still exists before placing the call, and picks another if it does not.</br>
+
+**Does the limit reset at an exact moment?**
+<br>Periods start on fixed boundaries. A number used just before a boundary and again just after can be used up to twice the limit within a short span. Within one period the limit is exact.</br>
+
+**Is it slower than Random?**
+<br>Somewhat, since each call runs a counted pick. Performance on large lists still needs to be measured before rollout.</br>
