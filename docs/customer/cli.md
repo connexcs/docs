@@ -578,7 +578,7 @@ You turn on Pooled Usage by adding a forced CLI rule to the customer's routing a
 3. In the **CLI** section on the right, click `+` to add a CLI rule.
 4. Set **Forced** to **Yes** and choose the **Direction Applied** (for example, Termination).
 5. In **Database**, pick your number list from under **Prefix Set Database** (for example, `Test`). <img src= "/customer/img/clipool1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. In **Flags**, select **Least Used Pool**. <img src= "/customer/img/clipool2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. In **Flags**, select **Least Used Pool**. <img src= "/customer/img/clipool2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 7. Optionally set **Hit Limit** (the most times one number may be used per period) and **Hit Interval** (the length of the period).
 8. Click **Save**.
 
@@ -625,19 +625,16 @@ Pooled Usage is slightly less random than Random: a number cannot come up again 
 ### FAQ and known limitations
 
 **Once all numbers are used up, does it start reusing them?**
-No. Calls are rejected with 405 CLI Hit Limit Reached until the next period starts.
+<br>No. Calls are rejected with 405 CLI Hit Limit Reached until the next period starts.</br>
 
 **I added numbers but they are not being used yet.**
-The list is re-read in the background about every 15 minutes. New numbers then start at the lowest level and are used soon after.
+<br>The list is re-read in the background about every 15 minutes. New numbers then start at the lowest level and are used soon after.</br>
 
 **I removed a number but it came up once more.**
-It cannot be used: the system confirms the number still exists before placing the call, and picks another if it does not.
+<br>It cannot be used: the system confirms the number still exists before placing the call, and picks another if it does not.</br>
 
 **Does the limit reset at an exact moment?**
-Periods start on fixed boundaries. A number used just before a boundary and again just after can be used up to twice the limit within a short span. Within one period the limit is exact.
-
-**What happens if Redis is down?**
-Calls keep working. Numbers are picked at random from the list without counting, so the hit limit is not enforced until Redis is back.
+<br>Periods start on fixed boundaries. A number used just before a boundary and again just after can be used up to twice the limit within a short span. Within one period the limit is exact.</br>
 
 **Is it slower than Random?**
-Somewhat, since each call runs a counted pick. Performance on large lists still needs to be measured before rollout.
+<br>Somewhat, since each call runs a counted pick. Performance on large lists still needs to be measured before rollout.</br>
