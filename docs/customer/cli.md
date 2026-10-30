@@ -578,7 +578,7 @@ You turn on Pooled Usage by adding a forced CLI rule to the customer's routing a
 3. In the **CLI** section on the right, click `+` to add a CLI rule.
 4. Set **Forced** to **Yes** and choose the **Direction Applied** (for example, Termination).
 5. In **Database**, pick your number list from under **Prefix Set Database** (for example, `Test`). <img src= "/customer/img/clipool1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. In **Flags**, select **Least Used Pool**. <img src= "/customer/img/clipool2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
+6. In **Flags**, select **Least Used Pool**. <br><img src= "/customer/img/clipool2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 7. Optionally set **Hit Limit** (the most times one number may be used per period) and **Hit Interval** (the length of the period).
 8. Click **Save**.
 
