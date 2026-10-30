@@ -41,7 +41,7 @@ This key determines which Yoco account the API requests are executed against and
 
 2. Click on the installed App and click on `Config`. <br><img src= "/apps/img/yococonfignew1.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. A window will open, prompting you to enter the following details: <br><img src= "/apps/img/yococonfignew2.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. A window will open, prompting you to enter the following details: <br><img src= "/apps/img/yococonfignew2.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
       + `ConnexCS auth token`: Lets the app record completed payments in ConnexCS. Select how long the token stays valid (for example, **Valid for 1 year**) and click `Create token`. The token is stored as a write-only secret and is never shown again. **Create the token before taking payments, because completed payments cannot be recorded without one**.
       + Enter the `Yoco secret key`. This key is used to create checkouts and register the payment webhook. Follow the steps [here](/anvil-apps/yoco-payments/#where-to-obtain-the-api-secret-key) to generate and retrieve the key. **The key is encrypted at rest and is never sent back to the browser**.
       + `Surcharge` (optional): A processing fee deducted from each payment before the customer is credited. You can choose one of the following options:
