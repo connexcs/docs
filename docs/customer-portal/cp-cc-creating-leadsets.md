@@ -22,19 +22,93 @@ Properly configured leadsets ensure that calls are made to the right audience, i
 
 ## Steps for creating Leadsets
 
-This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/21ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/ccrevamp19.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 1. A new window will appear, prompting you to enter the required information:
     1. Enter the leadset `Name`.
     2. Pen-down any required `Description`.
     3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
-    4. **State**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
-    5. Click on `Confirm` to create the leadset. <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
-         <h4 style="margin-top: 0; margin-bottom: 10px;">Broadcast Dialer Leadset Configuration</h4>
-         <img src="/customer-portal/img/67ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Broadcast Dialer Leadset Configuration">
-         </div>  **Please note for `Auto` or `Preview` Dialer, select their respective `Campaigns`.**  
+    4. **Status**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
+    5. Click on `Save` to create the leadset. <br><img src= "/customer-portal/img/ccrevamp20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>  
 
-2. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/69ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/ccrevamp21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+   1. `All Leadsets`: Returns to the list of all leadsets.
+
+   2. `Leadset Name`: Displays the name of the selected leadset, such as `test2`.
+
+   3. `Campaign`: Displays the campaign associated with the leadset, such as `Preview Dialler`.
+
+   4. `State`: Indicates whether the leadset is `Active` or `Inactive`.
+
+   5. `Activation Toggle`: Allows users to enable or disable the leadset.
+
+   6. `Edit Leadset`: Opens the leadset settings for editing.
+
+   7. `Lead Stats`: Displays the total number of leads in the leadset and their current status in the calling process.
+
+      1. `Total Leads`: Displays the total number of leads added to the leadset.
+      2. `Dialable Leads`: Displays the number of leads eligible for dialing.
+      3. `In Progress`: Displays the number of leads currently being processed.
+      4. `Call Answered`: Displays the number of calls answered by recipients.
+      5. `Call Ringing`: Displays the number of calls that are currently ringing.
+      6. `Failed Calls`: Displays the number of calls that failed to connect.
+      7. `Dropped Calls`: Displays the number of calls that were disconnected unexpectedly.
+      8. `Live`: Indicates that the lead statistics are displayed in live mode.
+      9. `Refresh Button`: Refreshes the lead statistics displayed on the screen.
+
+   8. `Leads`: Displays the list of leads associated with the selected leadset. The heading also indicates the total number of leads, such as `Leads (0)`.
+
+      1. `Refresh Button`: Refreshes the lead list.
+      2. `Delete`: Allows users to delete selected leads, where applicable.
+      3. `Recycle`: Opens the lead recycling functionality to manage leads for reuse, where supported.
+      4. `Bulk Upload`: Opens the interface for uploading multiple leads in a single operation.
+      5. `Upload Lead`: Opens the form for adding an individual lead.
+      6. `Search Leads`: Allows users to search for leads in the leadset.
+
+   9. `Leads Table`: Displays the details of leads associated with the leadset.
+
+      1. `Phone`: Displays the lead's phone number.
+      2. `Status`: Displays the current status of the lead.
+      3. `Summary`: Displays the summary associated with the lead, if available.
+      4. `First Name`: Displays the lead's first name.
+      5. `Last Name`: Displays the lead's last name.
+      6. `Middle Name`: Displays the lead's middle name, if available.
+      7. `Title`: Displays the lead's title, if available.
+      8. `Gender`: Displays the lead's gender, if available.
+      9. `Date of Birth`: Displays the lead's date of birth, if available.
+      10. `Email`: Displays the lead's email address.
+      11. `Alt Phone`: Enter an alternative phone number for the lead, if available.
+      12. `Phone Code`: Enter the telephone dialing code associated with the lead's phone number.
+      13. `Address 1`: Enter the lead's primary street address.
+      14. `Address 2`: Enter additional address details, such as an apartment, suite, or building number.
+      15. `Address 3`: Enter any further address details, if applicable.
+      16. `City`: Enter the city where the lead is located.
+      17. `State`: Enter the state associated with the lead's address.
+      18. `Province`: Enter the province or other regional subdivision associated with the lead's address, if applicable.
+      19. `Postal Code`: Enter the postal or ZIP code associated with the lead's address.
+      20. `Country Code`: Enter the country code associated with the lead.
+      21. `Vendor Lead Code`: Enter the lead identifier assigned by the external vendor, if applicable.
+      22. `Source Id`: Enter the identifier used to identify the lead's source.
+      23. `Security Phrase`: Enter the security phrase associated with the lead, if applicable.
+      24. `Business`: Enter the name of the business associated with the lead, if applicable.
+      25. `Rank`: Specify the lead's rank using the `−` and `+` buttons to decrease or increase the value. The default value displayed is `0`.
+      26. `GMT Offset Now`: Specify the lead's current GMT offset using the `−` and `+` buttons to decrease or increase the value. The default value displayed is `0`.
+      27. `User`: Enter the user associated with the lead, if applicable.
+      28. `Comments`: Enter additional notes or comments about the lead.
+      29. `Cancel`: Closes the Upload Lead form without uploading the lead.
+      30. `Upload`: Submits the entered information to add the lead to the leadset.
+
+### Uploading leadset
+
+#### Bulk Upload
+
+This option allows you to upload  up to **100000** rows per file.
+
+1. Click on the `Bulk Upload` button.
+2. Upload the `.csv` file.<br><img src= "/customer-portal/img/ccrevamp23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Click on `Upload Leads`. <br><img src= "/customer-portal/img/ccrevamp24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
 
 3. **A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset.(**Note: This image does not represent the dashboard after it has fully loaded**). <br><img src= "/customer-portal/img/24ccnew12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -44,59 +118,3 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
        3. Click on `Leadset Data` to view the leadset data.
        4. Click on `Upload Leads` to upload the leadset data.
        5. Upload your data via `File`, `URL` or by entering the `Text`.
-
-### Uploading a File
-
-1. Drag and Drop a file or click to upload the `.csv`. <br><img src= "/customer-portal/img/70ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. A new window will open where two actions must be completed to create the leadset. <br><img src="/customer-portal/img/71ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. `Set row`: To indicate where the upload should start. `Right-click` on the row to want to start the uploading and click on `Set Start Row`.
-4. `Map Table Columns`: Refers to the process of aligning or linking columns from one table to another, ensuring data consistency and accurate integration. This is essential when importing, migrating, or syncing data between different databases or systems. `Right-click` on the column you wish to be mapped, click on `Map Column` then `Phone` (required field) and `Status` (required field). Click on `Upload`. This will upload the leadset data to the server. <br><img src="/customer-portal/img/72ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src="/customer-portal/img/73ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-5. The leadset gets uploaded successfully. <br><img src="/customer-portal/img/75ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. The leadset dashboard now displays total uploaded leads and dialable leads as well. <br><img src="/customer-portal/img/76ccnew.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-7. **Continue to Modify**: If you click here, it will redirect to the Data Suite. [Click here](https://docs.connexcs.com/datasuite/) to know more.
-8. **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
-9. **Add Lead (Form)**: Manually add a lead via a form. <br><img src="/customer-portal/img/31cc.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-10. **Lead Status**: Displays whether a lead is available, being worked on, needs follow-up, or is no longer active
-    1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.
-    2. `Dialable Leads`: Leads that are ready to be called (i.e., they're active, have valid numbers, and meet campaign rules).
-    3. `Data Recycle`: Recycles leads that didn’t connect (e.g., no answer, busy) by returning them to the dial queue and updating their status based on retry rules.
-
-11. **Call Status**: Displays counts for different call outcomes; like `Call Answered`, `Failed Calls`, `Call In Progress`, `Call Ringing`, `Dropped Calls`.
-
-12. **Disposition Status**: Shows a pie chart for all the call disposition outcomes. Each colored section of the pie chart corresponds to one of these dispositions.
-
-13. **Lead Agents Activity**: It displays performance stats of individual agents. The metrics include `Call Transfered`, `Busy`, `Call Back`, `Do Not Call`, `Not interested`, `Null`, `Sale made`, `Wrong details` etc.
-
-!!! Note "This section is only valid for Broadcast Dialer"
-    With your Campaign, Agents, Agent Script, and Leadset configured, the next step is to access the **Agent Dialer** to start placing calls.
-
-    !!! Tip "Disposition in Broadcast Dialer"
-        As in the Broadcast Dialer the AI Agent can't set the `Disposition Status`. You need to do the following in order to add the capability for adding the disposition status.
-        While creating your AI Agent you need to the following things:
-            1. In the `Advanced` tab select `Set Variable` in the `Built-in Function` field.
-            2. In the `Model` tab in the `Prompt` field you need to give a prompt which says that the status should be saved in the variable; using the **functions**: `name`=`status` and `value`=`[status]`
-
-    !!! Example "Example Prompt"
-        Your first task is to ask the status: "What's your status?", as you don't currently know the status.
-        Once the status has been provided, store it in the variable name. Don't store the variable unless you have been given it by the customer. don't save anything until the customer gives you instructions.
-        Don't proceed with anything else until you have successfully collected and stored the status by calling the setVariable function with `name`=`status` and `value`=`[status]`.
-
-### Uploading via URL
-
-1. Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/77ccnew1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. Follow the same process as described in the **Upload via File** section, starting from **Step 2** through to the final step.
-
-### Uploading via Text
-
-1. Enter the text in the following format:
-
-    ```bash
-        Column 1,Column 2,   
-        Phone, Status
-        10800, New
-        10801, New
-    ```
-
-2. Click on `Upload`. <br><img src="/customer-portal/img/bd21new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.

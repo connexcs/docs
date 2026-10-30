@@ -18,17 +18,15 @@ Our Dialer is a comprehensive contact center solution designed to streamline out
 
 It includes a Dialer Dashboard, Agent Management, Campaign Management, and Lead Management functionalities.
 
-The dialer supports **Auto Dialer**, **Preview Dialer** and **Broadcast Dialer (AI Agent)** for flexibility in call operations.
+The dialer supports **Auto Dialer**, and **Preview Dialer** for flexibility in call operations.
 
 ## Types of Dialer
 
-Here, we've three types of dialers at your disposal.
+Here, we've two types of dialers at your disposal.
 
 **1. Preview Dialer**
 
 **2. Auto Dialer**
-
-**3. Broadcast Dialer**
 
 ### Preview Dialer
 
@@ -79,38 +77,6 @@ The agent gets enough time to review and decide whether to call the person and h
         G --> B
         F --> A
     ```
-
-### Broadcast Dialer (AI Agent)
-
-A Broadcast Dialer is an automated outbound calling system where an AI Agent initiates and manages the entire interaction with the customer — without any human intervention.
-
-Once activated, the system starts dialing contacts in bulk. The AI Agent engages with each person using natural conversation, guided by a predefined script and logic.
-
-In addition to AI-driven interactions, the Broadcast Dialer also supports **IVR (Interactive Voice Response)**, allowing customers to respond to prompts (e.g., by pressing keypad numbers) for routing, surveys, confirmations, or other automated workflows.
-
-You can create your own personal AI Agent. [Click here](https://docs.connexcs.com/class5/ai-agent/) to know more.
-
-**Pros**:
-
-+ High speed and efficiency — thousands of calls per hour.
-+ Consistent, 24/7 availability.
-+ Reduced cost due to no human involvement.
-
-!!! question "How it works?"
-    ```mermaid
-    flowchart TD
-        style A fill:#F3E5F5,stroke:#6A1B9A,stroke-width:2,rx:10,ry:10
-        style B fill:#E8F5E9,stroke:#2E7D32,stroke-width:2,rx:10,ry:10
-        style C fill:#FFEBEE,stroke:#C62828,stroke-width:2,rx:10,ry:10
-        style D fill:#E1F5FE,stroke:#0277BD,stroke-width:2,rx:10,ry:10
-        style E fill:#FFF3E0,stroke:#EF6C00,stroke-width:2,rx:10,ry:10
-
-        A(["🤖 AI Agent becomes active<br/>🟢 Starts broadcast campaign"]) --> B(["📞 System auto-dials next contact"])
-        B --> C(["🧠 AI Agent interacts:<br/>- Uses custom script<br/>- Detects intents<br/>- Responds in real-time"])
-        C --> D(["📝 AI logs outcome:<br/>- Call summary<br/<br/>- Disposition<br/>- Optional transcription"])
-        D --> E(["🔄 Moves to next contact automatically"])
-        E --> B
-    ``` 
 
 From this point forward, we move into the next section [Setting up and using the Contact Center](https://docs.connexcs.com/customer-portal/cp-cc-install/).
 
