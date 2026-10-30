@@ -220,13 +220,13 @@ This page allows administrators to create an outbound registration connection fo
 
 3. Once installed, open Siperb from the installed applications list. The application details page displays the installation status, installed version, latest version, and package information.<br><img src="/apps/img/siperb3.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-4. To review the installed version and its changelog, navigate to the `Versions` tab. This section displays the version information, approval status, submission details, and changes included in the release.<br><img src="/apps/img/siperb4.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+4. To review the installed version and its changelog, navigate to the `Versions` tab. This section displays the version information, approval status, submission details, and changes included in the release.<br><img src="/apps/img/siperb4.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-5. To configure a custom domain, navigate to the `App Settings` tab. Under **Custom Domains**, click `+ Add`.<<img src="/apps/img/siperb5.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">>
+5. To configure a custom domain, navigate to the `App Settings` tab. Under **Custom Domains**, click `+ Add`.<<img src="/apps/img/siperb5.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;">>
 
 6. A window will open, prompting you to enter the following details:
 
    1. `Domain`: Enter the domain you want to associate with the Siperb application (for example, `test.cnx.page`).
    2. Click `Create` to save the domain configuration. The application will be automatically rebuilt and republished after the domain is created. <br><img src="/apps/img/siperb6.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "350" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+7. To access Siperb, log in to the ConnexCS portal and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "200" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>

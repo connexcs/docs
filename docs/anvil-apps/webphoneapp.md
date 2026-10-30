@@ -116,7 +116,7 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 ### Step 2: Configuration
 
 1. Click on `Webphone Config`. Allows users to configure SIP server connections, WebSocket settings, general WebPhone behaviour, and custom domains.<br><img src= "/setup/img/webnew2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. `Webphone Config`: <br><img src= "/setup/img/webphoneconfig.png" width= "550" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. `Webphone Config`: <br><img src= "/setup/img/webphoneconfig.png" width= "450" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. `SIP Servers`: Displays the SIP servers configured for the project. If no servers have been added, the message `No servers configured yet` is displayed.
 
