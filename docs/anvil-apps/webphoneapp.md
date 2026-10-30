@@ -116,7 +116,7 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 ### Step 2: Configuration
 
 1. Click on `Webphone Config`. Allows users to configure SIP server connections, WebSocket settings, general WebPhone behaviour, and custom domains.<br><img src= "/setup/img/webnew2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. `Webphone Config`: <br><img src= "/setup/img/webphoneconfig.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. `Webphone Config`: <br><img src= "/setup/img/webphoneconfig.png" width= "550" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. `SIP Servers`: Displays the SIP servers configured for the project. If no servers have been added, the message `No servers configured yet` is displayed.
 
@@ -143,8 +143,7 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
       2. `Add New Domain`: Enter the domain name to add, such as `example.com`.
       3. `Add`: Adds the entered domain to the project's domain configuration. The button appears disabled until the required information is provided.
 
-!!! Note
-    Please note you can change this later if you want to deploy this on your own domain.
+!!! Note "Please note you can change this later if you want to deploy this on your own domain."
 
 ### Step 3: Create Certificates
 
@@ -198,7 +197,7 @@ To setup WebRTC on a server:
 
 1. Now let's have a look at the deployed domain.
 2. Enter in the domain name in the URL e.g., `test4.cnx.page`.
-3. A login window will appear withe th following fields: <br><img src= "/setup/img/webphonecalllogs.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. A login window will appear withe th following fields: <br><img src= "/setup/img/webphonecalllogs.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    1. Select a **Server** from the dropdown if `multiple servers` are available. If only `one server` has been added, it is selected automatically. If `no servers` have been added, you will need to enter the server details manually.
    2. Enter the **SIP Username**.
    3. Enter the **Password**.
@@ -216,9 +215,7 @@ To setup WebRTC on a server:
 5. **Call Hold**: Hold the call.
 6. **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
 7. **Log Out** (top-right): Click on this button to sign out of the Webphone.
-8. **Current Call Time**: Displays the duration of the ongoing call.
-
-<br><img src= "/setup/img/webphonecall.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. **Current Call Time**: Displays the duration of the ongoing call. <br><img src= "/setup/img/webphonecall.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ## Troubleshooting Logs
 
@@ -244,7 +241,7 @@ The logs remain in memory for the current session only. Users can inspect indivi
 
 1. Open ConnexCS WebPhone.
 2. Open the navigation menu.
-3. Select **Troubleshooting Logs**, labelled **Why a call failed**. <br><img src= "/setup/img/webphonetroubleshoting1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Select **Troubleshooting Logs**, labelled **Why a call failed**. <br><img src= "/setup/img/webphonetroubleshooting1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Step 2 — Review the call list
 
@@ -264,13 +261,13 @@ The panel also includes a close (**X**) button to close the troubleshooting view
 
 **Screenshot explanation:**
 
-The example shows call `160`, with the summary `Hung up from this webphone`, recorded on October 29, 2026, at 6:47:34 PM. The `Normal` status indicates that the call ended normally rather than being identified as a failure. <br><img src= "/setup/img/webphonetroubleshoting2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+The example shows call `160`, with the summary `Hung up from this webphone`, recorded on October 29, 2026, at 6:47:34 PM. The `Normal` status indicates that the call ended normally rather than being identified as a failure. <br><img src= "/setup/img/webphonetroubleshooting2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ### Step 3 — Inspect the call details
 
 1. In the Troubleshooting Logs panel, select the call you want to investigate.
 2. The call details view opens.
-3. Review the call status, call information, and event timeline. <br><img src= "/setup/img/webphonetroubleshoting3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Review the call status, call information, and event timeline. <br><img src= "/setup/img/webphonetroubleshooting3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 #### Call status summary
 
@@ -321,7 +318,7 @@ The example screenshot shows the following sequence:
 
 The timestamps are relative to the start of the call. They help establish the order of events and identify delays between call setup, answer, media connectivity, and termination.
 
-**Note:** The example represents a call that connected and ended normally. If a call fails, examine the timeline for unsuccessful responses, missing expected events, media connectivity issues, or unexpected termination messages. The precise events displayed depend on the call and the diagnostic information available.
+> **Note:** The example represents a call that connected and ended normally. If a call fails, examine the timeline for unsuccessful responses, missing expected events, media connectivity issues, or unexpected termination messages. The precise events displayed depend on the call and the diagnostic information available.
 
 ### Step 5 — Copy or download the call log
 
