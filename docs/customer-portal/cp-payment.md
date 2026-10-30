@@ -53,13 +53,13 @@ To add a new payment, select **`Make Payment`**.
 
 Yoco manages the full payment lifecycle, including transaction authorisation, validation, and settlement, while the platform initiating the payment remains out of scope for handling sensitive payment data.
 
-<img src= "/customer-portal/img/yococp.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer-portal/img/yococpnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Amount**: Enter the amount to be paid. The amount must be greater than ZAR 2.
 
     !!! Note "Any configured **surcharge** (fixed or percentage) is applied automatically."
 
-+ **Currency**: Displays the currency in which the payment will be processed. **Currency is fixed to ZAR (South African Rand)**.
++ **Currency is fixed to ZAR (South African Rand)**.
 
 ## Pay with Paynamics
 

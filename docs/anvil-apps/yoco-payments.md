@@ -48,4 +48,4 @@ This key determines which Yoco account the API requests are executed against and
         + **Fixed amount**: Deducts a fixed surcharge from each payment.
         + **Percentage**: Deducts a percentage of the transaction amount.
 4. Click `Save configuration`. Changes apply to new payments straight away.
-5. The YoCco button is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
+5. The [Yoco payment button](https://docs.connexcs.com/customer-portal/cp-payment/#yoco-payment) is displayed in the Customer Portal under the Payments section, where end customers can securely complete their payment transactions.
