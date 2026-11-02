@@ -171,29 +171,6 @@ To explore the available Anvil applications, see the [Anvil Apps](/anvil-apps/pe
 
 ## Useful Tools and Applications
 
-### Autonomous Calling
-
-#### Overview
-
-This application allows autonomous dialling of numbers from an uploaded list.
-
-#### Steps to Use the App
-
-1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Autonomous Calling** and click `Install`. <br><img src= "/apps/img/ac1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-2. A window will appear, select the version of the app and hit `Install` again. <br><img src= "/apps/img/ac2.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. After refreshing the Control Panel, the `Auto Dial` button will appear on the side bar.
-4. Click `Auto Dial`, then `Config` to setup the calling process.
-      + Select the `Customer` from the drop-down.
-      + Enter the `Outbound Server` in use.
-      + Enter the extension in the `Endpoint` field.
-      + Enter the `CLI` and click `Confirm`.<img src= "/apps/img/ac3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. Click on `Set Numbers` to add the number list for the autonomous dialing process. Click on `Save Numbers`. <img src= "/apps/img/ac4.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. Hit the `Start` button to dial the numbers automatically. `.<img src= "/apps/img/ac5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-
-!!! Note "Important Note"
-    1. Ensure that all phone numbers are entered in the complete international format (e.g., +44 for the UK, +1 for the US).
-    2. When entering multiple phone numbers, list each number on a new line.
-
 ### ASR per CLI
 
 #### Overview
