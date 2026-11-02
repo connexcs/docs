@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Intermediate<br>
 <strong>Time Required</strong>: Approximately 20–40 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account, administrative access to the Customer Portal module, and required permissions to install and configure contact-center features in the portal<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Customer Portal – Contact Center Overview</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal Access Configuration</a>, <a href="https://docs.connexcs.com/customer/customer/#customer-dashboard">Customer Dashboard</a>, <a href="https://docs.connexcs.com/customer/main/#contacts">Contacts Management</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer-portal/cp-contact-center/">Customer Portal – Contact Center Overview</a>, <a href="https://docs.connexcs.com/setup/integrations/portal/">Portal Access Configuration</a>, <a href="https://docs.connexcs.com/customer/customer/#customer-dashboard">Customer Dashboard</a>
 <strong>Next Steps</strong>: Follow installation steps to enable contact-center features in the Customer Portal, assign roles and permissions, test portal login and functionality, and verify integration with existing customer and contact data<br>
 
 </details>
@@ -17,8 +17,8 @@
 1. Login to your **Control Panel**.
 2. Navigate to **Setup :material-menu-right: App Store**.
 3. Click on the **Contact Center** application. Click on `Install`. <br><img src= "/customer-portal/img/1cc_new.png" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
-4. Click `Install` again. <br><img src= "/customer-portal/img/2cc_new.png" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
-5. Once installed, open the application details page. The **Overview** tab displays the installation status and package information, including: <br><img src= "/customer-portal/img/3cc_new.png" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
+4. Click `Install` again. <br><img src= "/customer-portal/img/2cc_new.png" width= "300" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
+5. Once installed, open the application details page. The **Overview** tab displays the installation status and package information, including: <br><img src= "/customer-portal/img/3cc_new.png" width= "700" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
 
       - **Package slug**: Unique application identifier.
       - **Visibility**: Indicates whether the application is Public or restricted.
@@ -29,12 +29,12 @@
       - **Installed package ID**: Unique identifier of the installed package.
       - **Package ID**: Unique identifier assigned to the application package.
 
-   The application status indicates whether the installed version is up to date. <br><img src= "/customer-portal/img/4cc_new.png" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
+   The application status indicates whether the installed version is up to date. <br><img src= "/customer-portal/img/4cc_new.png" width= "500" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
 
 ## Configure the Contact Center App
 
-1. Click on `Config`. <br><img src= "/customer-portal/img/5cc_new.png" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
-2. A window will open with the following details: <br><img src= "/customer-portal/img/6cc_new.png" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
+1. Click on `Config`. <br><img src= "/customer-portal/img/5cc_new.png" width= "500" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
+2. A window will open with the following details: <br><img src= "/customer-portal/img/6cc_new.png" width= "500" style="border: 2px solid #4472C4; padding: 2.5px; border-radius: 8px;"></br>
 
 ### 1. Authentication
 

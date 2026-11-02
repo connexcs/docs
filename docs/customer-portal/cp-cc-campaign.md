@@ -21,7 +21,7 @@ It involves configuring various elements to optimize outreach, customer service,
 1. Navigate to **Customer Portal :material-menu-right: Contact Center**.
 2. In the `Campaign` tab, click `Add Campaign`.
 
-    <img src="/customer-portal/img/ccrevamp7.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src="/customer-portal/img/ccrevamp7.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 3. A window will pop up:
     1. **GENERAL**:
@@ -55,11 +55,11 @@ It involves configuring various elements to optimize outreach, customer service,
 
     **Auto Dialler Campaign**
 
-    <img src="/customer-portal/img/ccrevamp9.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src="/customer-portal/img/ccrevamp9.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
     **Preview Dialler Campaign**
 
-    <img src="/customer-portal/img/ccrevamp10.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    <img src="/customer-portal/img/ccrevamp10.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 4. Click the `Save` button.
 5. Click `See More` in the `Details` column.

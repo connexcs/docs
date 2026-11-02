@@ -21,8 +21,7 @@ In this section, we will cover the **Dialer Dashboard**, which provides real-tim
 ## Dashboard Overview
 
 1. Navigate to **Customer Portal :material-menu-right: Contact Center**.
-2. **Accessing the Dialer**:
-      1. The dashboard provides a real-time overview of campaign activities, agent statuses, data remaining and call progress.
+2. **Accessing the Dialer**: The dashboard provides a real-time overview of campaign activities, agent statuses, data remaining and call progress.
 3. **Dashboard Features**:
       1. **Agents Logged In**: Tracks number of active agents.
       2. **Agents Paused**: Number of agents currently not available take calls but are logged in the system.
