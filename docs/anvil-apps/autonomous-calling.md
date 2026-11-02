@@ -57,13 +57,9 @@ It helps users:
 
 ### Installation
 
-1. Navigate to **Setup > App Store > Anvil Store > Marketplace**, locate **Autonomous Calling**, and click `Install`.
+1. Navigate to **Setup :material-menu-right: App Store :material-menu-right: Anvil Store :material-menu-right: Marketplace**, locate **Autonomous Calling**, and click `Install`. <br><img src="/apps/img/autocall1.png" alt="Connex Store Marketplace displaying Autonomous Calling and its Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
-   <br><img src="/apps/img/autocall1.png" alt="Connex Store Marketplace displaying Autonomous Calling and its Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
-
-2. An installation confirmation window will appear. Review the application name and version, then click `Install` again to confirm.
-
-   <br><img src="/apps/img/autocall2.png" alt="Autonomous Calling installation confirmation window" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+2. An installation confirmation window will appear. Review the application name and version, then click `Install` again to confirm.<br><img src="/apps/img/autocall2.png" alt="Autonomous Calling installation confirmation window" width= "300" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 3. Once installed, open the application details page. The **Overview** tab displays the installation status and package information, including:
 
@@ -76,32 +72,22 @@ It helps users:
    - **Installed package ID**: Unique identifier of the installed package.
    - **Package ID**: Unique identifier assigned to the application package.
 
-   The application status indicates whether the installed version is up to date.
+   The application status indicates whether the installed version is up to date. <br><img src="/apps/img/autocall3.png" alt="Autonomous Calling application Overview tab showing installation and package information" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
-   <br><img src="/apps/img/autocall3.png" alt="Autonomous Calling application Overview tab showing installation and package information" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
-
-4. To review the application's release history, navigate to the `Versions` tab. This section displays the available application versions, their approval status, submission date, review information, and release notes, where provided.
-
-   <br><img src="/apps/img/autocall3.png" alt="Autonomous Calling Versions tab showing approved application releases" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+4. To review the application's release history, navigate to the `Versions` tab. This section displays the available application versions, their approval status, submission date, review information, and release notes, where provided. <br><img src="/apps/img/autocall3.png" alt="Autonomous Calling Versions tab showing approved application releases" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 5. To review application settings, navigate to the `App Settings` tab.
 
    This section contains:
 
    - **Custom Domains**: Allows administrators to map a custom domain to the application. Click `+ Add` to configure a domain. Creating a domain automatically rebuilds and republishes the application.
-   - **Assigned Buttons**: Displays the application buttons registered in the portal and where they appear. The Autonomous Calling option is displayed in the portal side navigation.
-
-   <br><img src="/apps/img/autocall5.png" alt="Autonomous Calling App Settings showing Custom Domains and Assigned Buttons" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+   - **Assigned Buttons**: Displays the application buttons registered in the portal and where they appear. The Autonomous Calling option is displayed in the portal side navigation. <br><img src="/apps/img/autocall5.png" alt="Autonomous Calling App Settings showing Custom Domains and Assigned Buttons" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 ### Configure Autonomous Calling
 
-6. Navigate to the application **Overview** tab and click `Autonomous Config`.
+1. Navigate to the application **Overview** tab and click `Autonomous Config`. <br><img src="/apps/img/autocall6.png" alt="Autonomous Config button on the Autonomous Calling application page" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
-   <br><img src="/apps/img/autocall6.png" alt="Autonomous Config button on the Autonomous Calling application page" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
-
-7. The **Autonomous Calling** configuration window will appear. Enter the following details:
-
-   <br><img src="/apps/img/autocall7.png" alt="Autonomous Calling configuration window displaying connection and calling settings" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+2. The **Autonomous Calling** configuration window will appear. Enter the following details: <br><img src="/apps/img/autocall7.png" alt="Autonomous Calling configuration window displaying connection and calling settings" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
    | Field | Description |
    |---|---|
@@ -122,13 +108,11 @@ It helps users:
    - The **Endpoint** field identifies the ConnexML endpoint through which calls are routed.
    - The **Concurrent Calls** setting controls the number of simultaneous calls and cannot exceed 10.
 
-8. After entering the required configuration details, click `Save Config` to save the settings.
-
-   <br><img src="/apps/img/autocall7.png" alt="Autonomous Calling configuration with Save Config button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+3. After entering the required configuration details, click `Save Config` to save the settings.
 
 ### Start the Calling Process
 
-9. After saving the configuration, refresh the ConnexCS Control Panel. The `Autonomous Calling` option will appear in the left-hand navigation menu.
+1. After saving the configuration, refresh the ConnexCS Control Panel. The `Autonomous Calling` option will appear in the left-hand navigation menu.
 
    Click `Autonomous Calling` to open the bulk outbound dialler interface.
 
@@ -140,11 +124,9 @@ It helps users:
    - **Clear All**: Clear all contacts from the calling list.
    - **Start Calling**: Initiate the autonomous calling process.
 
-   Initially, the Contacts section displays `No contacts yet` until numbers are added.
+   Initially, the Contacts section displays `No contacts yet` until numbers are added. <br><img src="/apps/img/autocall8.png" alt="Autonomous Calling interface showing calling controls and an empty Contacts section" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
-   <br><img src="/apps/img/autocall8.png" alt="Autonomous Calling interface showing calling controls and an empty Contacts section" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
-
-10. Click `Set Numbers` to add the destination phone numbers.
+2. Click `Set Numbers` to add the destination phone numbers.
 
     A **Set Numbers** window will appear with a text area where you can enter multiple phone numbers.
 
@@ -154,9 +136,9 @@ It helps users:
 
     Click `Save Numbers` to add the numbers to the calling list. Saving the numbers replaces the existing list.
 
-    <br><img src="/apps/img/autocall9.png" alt="Set Numbers window showing multiple phone numbers entered on separate lines" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+    <br><img src="/apps/img/autocall9.png" alt="Set Numbers window showing multiple phone numbers entered on separate lines" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
-11. Once the numbers are saved, they appear in the **Contacts** section.
+3. Once the numbers are saved, they appear in the **Contacts** section.
 
     The interface displays the following summary counters:
 
@@ -177,9 +159,7 @@ It helps users:
     | **Phone Number** | Displays the destination phone number added to the calling list. |
     | **Status** | Displays the current calling status of the contact, such as Pending, Calling, Completed, Failed, or Stopped. |
 
-    Click `Start Calling` to initiate the autonomous outbound calling process.
-
-    <br><img src="/apps/img/autocall10.png" alt="Autonomous Calling interface showing contact summary counters and individual contact statuses" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+    Click `Start Calling` to initiate the autonomous outbound calling process. <br><img src="/apps/img/autocall10.png" alt="Autonomous Calling interface showing contact summary counters and individual contact statuses" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 ## Managing the Calling Process
 
@@ -218,10 +198,10 @@ The status information helps administrators identify which contacts are waiting 
 
 | Issue | Recommended Action |
 |---|---|
-| Autonomous Calling is not visible in the portal navigation. | Confirm that the application is installed and review the **Assigned Buttons** section under **App Settings**. Refresh the Control Panel after installation. |
-| Configuration cannot be saved. | Check that all mandatory fields marked with an asterisk (*) have been completed. |
+| Autonomous Calling isn't visible in the portal navigation. | Confirm that the application is installed and review the **Assigned Buttons** section under **App Settings**. Refresh the Control Panel after installation. |
+| Configuration can't be saved. | Check that all mandatory fields marked with an asterisk (*) have been completed. |
 | No contacts appear in the Contacts section. | Click `Set Numbers`, enter the destination phone numbers, and click `Save Numbers`. |
-| Numbers are not being processed. | Verify the Customer, Class 5 PBX Server, Class 4 Outbound Server, CLI, and Endpoint configuration. |
+| Numbers aren't being processed. | Verify the Customer, Class 5 PBX Server, Class 4 Outbound Server, CLI, and Endpoint configuration. |
 | Calls are failing. | Verify the destination numbers, outbound routing configuration, CLI, and server connectivity. |
-| Concurrent calling is not working as expected. | Review the **Concurrent Calls** configuration and ensure that the value does not exceed 10. |
-| Call statuses do not appear to be updated. | Click `Refresh` to retrieve the latest available contact statuses. |
+| Concurrent calling isn't working as expected. | Review the **Concurrent Calls** configuration and ensure that the value does'nt exceed 10. |
+| Call statuses don't appear to be updated. | Click `Refresh` to retrieve the latest available contact statuses. |
