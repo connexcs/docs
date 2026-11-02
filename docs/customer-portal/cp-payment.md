@@ -53,7 +53,7 @@ To add a new payment, select **`Make Payment`**.
 
 Yoco manages the full payment lifecycle, including transaction authorisation, validation, and settlement, while the platform initiating the payment remains out of scope for handling sensitive payment data.
 
-<img src= "/customer-portal/img/yococpnew.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+<img src= "/customer-portal/img/yococpnew.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Amount**: Enter the amount to be paid. The amount must be greater than ZAR 2.
 
