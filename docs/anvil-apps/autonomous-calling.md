@@ -63,29 +63,29 @@ It helps users:
 
 3. Once installed, open the application details page. The **Overview** tab displays the installation status and package information, including:
 
-   - **Package slug**: Unique application identifier.
-   - **Visibility**: Indicates whether the application is Public or restricted.
-   - **Installed version**: Version currently installed on the account.
-   - **Latest version**: Most recent available application version.
-   - **Created**: Date and time when the package was created.
-   - **Updated**: Date and time when the package was last updated.
-   - **Installed package ID**: Unique identifier of the installed package.
-   - **Package ID**: Unique identifier assigned to the application package.
+      - **Package slug**: Unique application identifier.
+      - **Visibility**: Indicates whether the application is Public or restricted.
+      - **Installed version**: Version currently installed on the account.
+      - **Latest version**: Most recent available application version.
+      - **Created**: Date and time when the package was created.
+      - **Updated**: Date and time when the package was last updated.
+      - **Installed package ID**: Unique identifier of the installed package.
+      - **Package ID**: Unique identifier assigned to the application package.
 
-   The application status indicates whether the installed version is up to date. <br><img src="/apps/img/autocall3.png" alt="Autonomous Calling application Overview tab showing installation and package information" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+   The application status indicates whether the installed version is up to date. <br><img src="/apps/img/autocall3.png" alt="Autonomous Calling application Overview tab showing installation and package information" width= "700" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
-4. To review the application's release history, navigate to the `Versions` tab. This section displays the available application versions, their approval status, submission date, review information, and release notes, where provided. <br><img src="/apps/img/autocall3.png" alt="Autonomous Calling Versions tab showing approved application releases" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+4. To review the application's release history, navigate to the `Versions` tab. This section displays the available application versions, their approval status, submission date, review information, and release notes, where provided. <br><img src="/apps/img/autocall4.png" alt="Autonomous Calling Versions tab showing approved application releases" width= "700" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 5. To review application settings, navigate to the `App Settings` tab.
 
    This section contains:
 
    - **Custom Domains**: Allows administrators to map a custom domain to the application. Click `+ Add` to configure a domain. Creating a domain automatically rebuilds and republishes the application.
-   - **Assigned Buttons**: Displays the application buttons registered in the portal and where they appear. The Autonomous Calling option is displayed in the portal side navigation. <br><img src="/apps/img/autocall5.png" alt="Autonomous Calling App Settings showing Custom Domains and Assigned Buttons" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+   - **Assigned Buttons**: Displays the application buttons registered in the portal and where they appear. The Autonomous Calling option is displayed in the portal side navigation. <br><img src="/apps/img/autocall5.png" alt="Autonomous Calling App Settings showing Custom Domains and Assigned Buttons" width= "700" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 ### Configure Autonomous Calling
 
-1. Navigate to the application **Overview** tab and click `Autonomous Config`. <br><img src="/apps/img/autocall6.png" alt="Autonomous Config button on the Autonomous Calling application page" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+1. Navigate to the application **Overview** tab and click `Autonomous Config`. <br><img src="/apps/img/autocall6.png" alt="Autonomous Config button on the Autonomous Calling application page" width= "700" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 2. The **Autonomous Calling** configuration window will appear. Enter the following details: <br><img src="/apps/img/autocall7.png" alt="Autonomous Calling configuration window displaying connection and calling settings" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
@@ -122,9 +122,7 @@ It helps users:
    - **Refresh**: Refresh the contact list and display the latest available call statuses.
    - **Reset Status**: Reset the statuses of contacts for another calling attempt, where applicable.
    - **Clear All**: Clear all contacts from the calling list.
-   - **Start Calling**: Initiate the autonomous calling process.
-
-   Initially, the Contacts section displays `No contacts yet` until numbers are added. <br><img src="/apps/img/autocall8.png" alt="Autonomous Calling interface showing calling controls and an empty Contacts section" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+   - **Start Calling**: Initiate the autonomous calling process. <br>Initially, the Contacts section displays `No contacts yet` until numbers are added. <br><img src="/apps/img/autocall8.png" alt="Autonomous Calling interface showing calling controls and an empty Contacts section" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br></br>
 
 2. Click `Set Numbers` to add the destination phone numbers.
 
@@ -134,9 +132,7 @@ It helps users:
     - Use the complete international phone number format.
     - The number counter below the text area displays the number of entries.
 
-    Click `Save Numbers` to add the numbers to the calling list. Saving the numbers replaces the existing list.
-
-    <br><img src="/apps/img/autocall9.png" alt="Set Numbers window showing multiple phone numbers entered on separate lines" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
+    Click `Save Numbers` to add the numbers to the calling list. Saving the numbers replaces the existing list. <br><img src="/apps/img/autocall9.png" alt="Set Numbers window showing multiple phone numbers entered on separate lines" width= "500" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
 3. Once the numbers are saved, they appear in the **Contacts** section.
 
