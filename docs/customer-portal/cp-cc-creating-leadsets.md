@@ -22,16 +22,16 @@ Properly configured leadsets ensure that calls are made to the right audience, i
 
 ## Steps for creating Leadsets
 
-This section has information on the Leadsets. You can also `Create Leadset` . <br><img src= "/customer-portal/img/ccrevamp19.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+This section has information on the Leadsets. You can also `Add Leadset` . <br><img src= "/customer-portal/img/ccrevamp19_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 1. A new window will appear, prompting you to enter the required information:
     1. Enter the leadset `Name`.
     2. Pen-down any required `Description`.
     3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
     4. **Status**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
-    5. Click on `Save` to create the leadset. <br><img src= "/customer-portal/img/ccrevamp20.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>  
+    5. Click on `Save` to create the leadset. <br><img src= "/customer-portal/img/ccrevamp20_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>  
 
-2. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/ccrevamp21.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/ccrevamp21_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
    1. `All Leadsets`: Returns to the list of all leadsets.
 
@@ -99,22 +99,85 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
       29. `Cancel`: Closes the Upload Lead form without uploading the lead.
       30. `Upload`: Submits the entered information to add the lead to the leadset.
 
-### Uploading leadset
+### Upload Lead Bulk Upload data
 
-#### Bulk Upload
+#### Uploading via File
 
-This option allows you to upload  up to **100000** rows per file.
+1. Drag and Drop a **file** or click to upload the `.csv`. The uploaded file name and total number of rows are displayed.<br><img src= "/customer-portal/img/70ccnew1_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-1. Click on the `Bulk Upload` button.
-2. Upload the `.csv` file.<br><img src= "/customer-portal/img/ccrevamp23.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. Click on `Upload Leads`. <br><img src= "/customer-portal/img/ccrevamp24.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. **Mappings**: Use the `Mappings` tab to map the CSV columns (such as `phone` and `status`) to the corresponding lead fields in ConnexCS; mandatory fields are marked with an asterisk (\*).<br><img src= "/customer-portal/img/neweadset1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
+3. **Populate**: Use the `Populate` tab to add or replace column values with a common value that will be applied to all uploaded records. <br><img src= "/customer-portal/img/neweadset2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. **A Leadset Dashboard** monitoring window will appear which displays the metrics of the leadset.(**Note: This image does not represent the dashboard after it has fully loaded**). <br><img src= "/customer-portal/img/24ccnew12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. **Setup**: Use the `Setup` tab to configure the `First data row` from which the system should read the CSV data and export the uploaded data in `CSV` or `JSON` format if required.<br><img src= "/customer-portal/img/neweadset3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. Description of the fields in the stats window:
-       1. `Status`: Set the leadset to `Active` or `Inactive` state.
-       2. Refresh your leadset parameters using `Refresh Lead Stats`.
-       3. Click on `Leadset Data` to view the leadset data.
-       4. Click on `Upload Leads` to upload the leadset data.
-       5. Upload your data via `File`, `URL` or by entering the `Text`.
+5. **Validate & Upload**: Click `Validate & upload` to validate the mapped data; once validation passes, the system starts uploading the leads and displays the upload progress.<br><img src= "/customer-portal/img/neweadset4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+6. **Upload Confirmation**: Once the upload is complete, a success message confirms that all leads have been uploaded successfully.<br><img src= "/customer-portal/img/neweadset5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+7. **Lead Stats**: After uploading, navigate to the Leads dashboard to view lead statistics, including `Total Leads`, `Dialable Leads`, `In Progress`, `Call Answered`, `Call Ringing`, `Failed Calls`, and `Dropped Calls`. <br><img src= "/customer-portal/img/neweadset6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. **Data Recycle**: The Data Recycle window allows users to change the status of existing lead records in bulk. It helps move leads from one call status to another without manually updating each record.<br><img src= "/customer-portal/img/neweadset7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   1. `Old Status`: Select the existing status of the leads you want to update.
+   2. `New Status`: Select the status to which the selected leads should be changed.
+   3. `Recycle`: Click Recycle to apply the new status to the matching lead records.
+   4. `Cancel`: Click Cancel to close the window without applying the changes. <br><img src= "/customer-portal/img/neweadset8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+9. **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
+10. **Lead Status**: Displays whether a lead is available, being worked on, needs follow-up, or is no longer active
+    1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.
+    2. `Dialable Leads`: Leads that are ready to be called (i.e., they're active, have valid numbers, and meet campaign rules).
+    3. `Data Recycle`: Recycles leads that didn’t connect (e.g., no answer, busy) by returning them to the dial queue and updating their status based on retry rules.
+
+#### Uploading via URL
+
+1. Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/newleadset9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Follow the same process as described in the **Upload via File** section, starting from **Step 2** through to the final step.
+
+### Uploading via Text
+
+1. Enter the text in the following format:
+
+    ```bash  
+        Phone, Status
+        10800, New
+        10801, New
+    ```
+
+2. Click on `Upload`. <br><img src="/customer-portal/img/newleadset10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step. <br><img src="/customer-portal/img/newleadset11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### Single Lead
+
+The `Single lead` option allows users to manually add an individual lead by entering their contact information, personal details, location, and other relevant attributes.
+
+The following table describes the available fields:
+
+| Field            | Description                                                                                    |
+| ---------------- | ---------------------------------------------------------------------------------------------- |
+| **Phone**            | Enter the lead's primary phone number. This is a mandatory field.                              |
+| **Status**           | Select the current status of the lead from the available options.                              |
+| **First Name**       | Enter the lead's first name.                                                                   |
+| **Last Name**        | Enter the lead's last name or surname.                                                         |
+| **Middle Initial**   | Enter the middle initial of the lead.                                                          |
+| **Title**            | Enter the lead's professional or personal title, such as Mr., Mrs., Dr., or a job designation. |
+| **Gender**           | Specify the lead's gender.                                                                     |
+| **Date of Birth**    | Enter the lead's date of birth in `YYYY-MM-DD` format.                                         |
+| **Email**            | Enter the lead's email address.                                                                |
+| **Alt Phone**        | Enter an alternative contact number for the lead.                                              |
+| **Phone Code**       | Enter the international dialing code associated with the phone number.                         |
+| **Address 1**        | Enter the primary street address of the lead.                                                  |
+| **Address 2**        | Enter additional address details, such as an apartment, suite, or building number.             |
+| **Address 3**        | Enter any further address information, if applicable.                                          |
+| **City**             | Enter the city where the lead is located.                                                      |
+| **State**            | Enter the state or region associated with the lead's address.                                  |
+| **Province**         | Enter the province or administrative region where the lead resides.                            |
+| **Postal Code**      | Enter the postal or ZIP code of the lead's location.                                           |
+| **Country Code**     | Enter the country code associated with the lead's location.                                    |
+| **Vendor Lead Code** | Enter the lead identification code provided by the lead vendor, if applicable.                 |
+| **Source ID**        | Enter the identifier used to track the source from which the lead originated.                  |
+| **Security Phrase**  | Enter the security phrase associated with the lead, if applicable.                             |
+| **Business**         | Enter the name of the company or business associated with the lead.                            |
+| **Rank**             | Specify the lead's priority or ranking using the available numeric control.                    |
+| **GMT Offset Now**   | Specify the GMT offset associated with the lead's current time zone.                           |
+| **User**             | Enter or associate the user assigned to the lead.                                              |
+| **Comments**         | Add additional notes, remarks, or relevant information about the lead.                         |
