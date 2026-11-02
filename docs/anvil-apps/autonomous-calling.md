@@ -76,13 +76,6 @@ It helps users:
 
 4. To review the application's release history, navigate to the `Versions` tab. This section displays the available application versions, their approval status, submission date, review information, and release notes, where provided. <br><img src="/apps/img/autocall4.png" alt="Autonomous Calling Versions tab showing approved application releases" width= "700" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
 
-5. To review application settings, navigate to the `App Settings` tab.
-
-   This section contains:
-
-   - **Custom Domains**: Allows administrators to map a custom domain to the application. Click `+ Add` to configure a domain. Creating a domain automatically rebuilds and republishes the application.
-   - **Assigned Buttons**: Displays the application buttons registered in the portal and where they appear. The Autonomous Calling option is displayed in the portal side navigation. <br><img src="/apps/img/autocall5.png" alt="Autonomous Calling App Settings showing Custom Domains and Assigned Buttons" width= "700" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
-
 ### Configure Autonomous Calling
 
 1. Navigate to the application **Overview** tab and click `Autonomous Config`. <br><img src="/apps/img/autocall6.png" alt="Autonomous Config button on the Autonomous Calling application page" width= "700" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"><br>
