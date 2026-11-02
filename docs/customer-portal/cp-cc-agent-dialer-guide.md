@@ -42,7 +42,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
     <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
     <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer</h4>
-    <img src="/customer-portal/img/agentdialer2.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Selection">
+    <img src="/customer-portal/img/agentdialer2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Selection">
     </div>
 
 3. The Agent Dialer interface appears with the following fields:
@@ -50,7 +50,10 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     1. `Agent Status` toggle **(*Only for Auto Dialer*)**: Make sure it's **enabled (green)**, meaning the agent is active and ready to take calls.
     2. `Selected Campaign`: The campaign chosen from the drop-down menu.
     3. `Keypad`: For dialing numbers.
-    4. `Script`: Displays the call script the agent should follow.
+    4. `Script`: Displays the call script the agent should follow.<div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
+    <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer</h4>
+    <img src="/customer-portal/img/agentdialer4.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Interface">
+    </div>
     5. `Logout`: Lets the agent log off from the system.
     6. `Contact Information`: Customer details sourced from the **uploaded Leadset** or entered manually via the **Lead Form**. The contact information is updated after the agent receives the call.
     7. `Lead Preview` **(*Only for Preview Dialer*)**: Opens lead details for the agent.
@@ -63,12 +66,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     </div>
 
     <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
-    <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer</h4>
-    <img src="/customer-portal/img/agentdialer4.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Interface">
-    </div>
-
-    <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
-    <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer – Lead Details</h4>
+    <h4 style="margin-top: 0; margin-bottom: 10px;">Preview Dialer </h4>
     <img src="/customer-portal/img/agentdialer3.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Lead Details">
     </div>
 
@@ -77,7 +75,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     - **Auto Dialer**: As soon as `Agent Status` is enabled, the agent starts receiving calls.
     - **Preview Dialer**: Click the `Call` button to phone the customer.
 
-    <img src="/customer-portal/img/agentdialer5.png" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Call Button">
+    <img src="/customer-portal/img/agentdialer5.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Call Button">
 
 5. A `Live Call` window appears with the following controls:
 
@@ -96,18 +94,16 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
 6. After the call ends, the agent can either `Submit` the disposition and get ready for the next call, or click `Submit & Go On Pause` **(*Only for Auto Dialer*)**.
 
-    <img src="/customer-portal/img/agentdialer7.png" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Submit Disposition">
+    <img src="/customer-portal/img/agentdialer7.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Submit Disposition">
 
-7. `Invalid Details`: Lets the agent flag the lead if information is incorrect or incomplete.
+7. Agents can also update the customer details using the `Edit` button.
 
-8. Agents can also update the customer details using the `Edit` button.
-
-9. Move to the next call:
+8. Move to the next call:
 
     - **Preview Dialer**: Click `Get Next Lead` to dial the next customer.
     - **Auto Dialer**: The next call goes through automatically after **30 seconds**.
 
-10. The updated `Leadset Overview` can be viewed.
+9. The updated `Leadset Overview` can be viewed.
 
     <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
     <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer</h4>
