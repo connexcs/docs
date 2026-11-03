@@ -29,7 +29,7 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
     2. Pen-down any required `Description`.
     3. Select the `Campaign` from the drop-down for which you wish to associate the leadset.
     4. **Status**: Configure the leadset’s operational status by setting it to either Active (available for assignment and dialing) or Inactive (disabled or paused).
-    5. Click on `Save` to create the leadset. <br><img src= "/customer-portal/img/ccrevamp20_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>  
+    5. Click on `Save` to create the leadset. <br><img src= "/customer-portal/img/ccrevamp20_new.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>  
 
 2. Click on `See More` in the `Details` column. <br><img src= "/customer-portal/img/ccrevamp21_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -103,24 +103,24 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
 
 #### Uploading via File
 
-1. Drag and Drop a **file** or click to upload the `.csv`. The uploaded file name and total number of rows are displayed.<br><img src= "/customer-portal/img/70ccnew1_new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Drag and Drop a **file** or click to upload the `.csv`. The uploaded file name and total number of rows are displayed.<br><img src= "/customer-portal/img/70ccnew1_new9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-2. **Mappings**: Use the `Mappings` tab to map the CSV columns (such as `phone` and `status`) to the corresponding lead fields in ConnexCS; mandatory fields are marked with an asterisk (\*).<br><img src= "/customer-portal/img/neweadset1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. **Mappings**: Use the `Mappings` tab to map the CSV columns (such as `phone` and `status`) to the corresponding lead fields in ConnexCS; mandatory fields are marked with an asterisk (\*).<br><img src= "/customer-portal/img/newleadset1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. **Populate**: Use the `Populate` tab to add or replace column values with a common value that will be applied to all uploaded records. <br><img src= "/customer-portal/img/neweadset2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. **Populate**: Use the `Populate` tab to add or replace column values with a common value that will be applied to all uploaded records. <br><img src= "/customer-portal/img/newleadset2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-4. **Setup**: Use the `Setup` tab to configure the `First data row` from which the system should read the CSV data and export the uploaded data in `CSV` or `JSON` format if required.<br><img src= "/customer-portal/img/neweadset3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. **Setup**: Use the `Setup` tab to configure the `First data row` from which the system should read the CSV data and export the uploaded data in `CSV` or `JSON` format if required.<br><img src= "/customer-portal/img/newleadset3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-5. **Validate & Upload**: Click `Validate & upload` to validate the mapped data; once validation passes, the system starts uploading the leads and displays the upload progress.<br><img src= "/customer-portal/img/neweadset4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. **Validate & Upload**: Click `Validate & upload` to validate the mapped data; once validation passes, the system starts uploading the leads and displays the upload progress.<br><img src= "/customer-portal/img/newleadset4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-6. **Upload Confirmation**: Once the upload is complete, a success message confirms that all leads have been uploaded successfully.<br><img src= "/customer-portal/img/neweadset5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. **Upload Confirmation**: Once the upload is complete, a success message confirms that all leads have been uploaded successfully.<br><img src= "/customer-portal/img/newleadset5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-7. **Lead Stats**: After uploading, navigate to the Leads dashboard to view lead statistics, including `Total Leads`, `Dialable Leads`, `In Progress`, `Call Answered`, `Call Ringing`, `Failed Calls`, and `Dropped Calls`. <br><img src= "/customer-portal/img/neweadset6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-8. **Data Recycle**: The Data Recycle window allows users to change the status of existing lead records in bulk. It helps move leads from one call status to another without manually updating each record.<br><img src= "/customer-portal/img/neweadset7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. **Lead Stats**: After uploading, navigate to the Leads dashboard to view lead statistics, including `Total Leads`, `Dialable Leads`, `In Progress`, `Call Answered`, `Call Ringing`, `Failed Calls`, and `Dropped Calls`. <br><img src= "/customer-portal/img/newleadset6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. **Data Recycle**: The Data Recycle window allows users to change the status of existing lead records in bulk. It helps move leads from one call status to another without manually updating each record.<br><img src= "/customer-portal/img/newleadset7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    1. `Old Status`: Select the existing status of the leads you want to update.
    2. `New Status`: Select the status to which the selected leads should be changed.
    3. `Recycle`: Click Recycle to apply the new status to the matching lead records.
-   4. `Cancel`: Click Cancel to close the window without applying the changes. <br><img src= "/customer-portal/img/neweadset8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+   4. `Cancel`: Click Cancel to close the window without applying the changes. <br><img src= "/customer-portal/img/newleadset8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 9. **Edit Leadset**: Modify the details of an existing Leadset. The system will present the same interface as `Create Leadset`.
 10. **Lead Status**: Displays whether a lead is available, being worked on, needs follow-up, or is no longer active
     1. `Total Leads`: The total number of leads uploaded or assigned to the campaign or leadset.
@@ -144,7 +144,7 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
 
 2. Click on `Upload`. <br><img src="/customer-portal/img/newleadset10_new.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step. 
+3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.
 
 #### Single Lead
 

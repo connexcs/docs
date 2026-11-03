@@ -38,12 +38,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
     <img src="/customer-portal/img/agentdialer1.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Agent Login">
 
-2. Select the campaign (`Auto Dialer` / `Preview Dialer`) from the drop-down menu and click `Confirm`.
-
-    <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
-    <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer</h4>
-    <img src="/customer-portal/img/agentdialer2.png" width= "50" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Selection">
-    </div>
+2. Select the campaign (`Auto Dialer` / `Preview Dialer`) from the drop-down menu and click `Confirm`.<b><img src="/customer-portal/img/agentdialer2.png" width= "50" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Selection"></br>
 
 3. The Agent Dialer interface appears with the following fields:
 
@@ -93,7 +88,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
 6. After the call ends, the agent can either `Submit` the disposition and get ready for the next call, or click `Submit & Go On Pause` **(*Only for Auto Dialer*)**.
 
-    <img src="/customer-portal/img/agentdialer7.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Submit Disposition">
+    <img src="/customer-portal/img/agentdialer7.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Submit Disposition">
 
 7. Agents can also update the customer details using the `Edit` button.
 
