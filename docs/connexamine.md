@@ -157,16 +157,17 @@ sudo connexamine --auto
 
 ---
 
-### How to use ConnExamine on the Control Panel?
+### How to use ConnExamine on the Control Panel (Grid View)?
 
 1. Login to your account.
 2. Navigate to **Global :material-menu-right: ConnExamine**.
-3. Click on the `+ Claim Box` button.
-4. Enter the `Code`- which is the `Deamon Token` or the `IP Address`.
-5. Click on `Claim`. <br><img src= "/misc/img/connex1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> *
-6. All the session information is visible on the ConnExamine dashboard.<br><img src= "/misc/img/connex2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-7. Click on the `Session ID` to get more insights on the current session.<br><img src= "/misc/img/connex3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-8. Session details explained:
+3. `Grid View`: Displays all monitored sessions in a tabular layout, providing an overview of their connection status, location, associated customer, last update time, and system resource utilisation.
+4. Click on the `+ Claim Box` button.
+5. Enter the `Code`- which is the `Deamon Token` or the `IP Address`.
+6. Click on `Claim`. <br><img src= "/misc/img/connex1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+7. All the session information is visible on the ConnExamine dashboard.<br><img src= "/misc/img/connex2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+8. Click on the `Session ID` to get more insights on the current session.<br><img src= "/misc/img/connex3.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+9. **Session details explained**:
 
    * **Overview**
 
@@ -193,7 +194,7 @@ Displays information about the monitored host and the installed Connexamine agen
    * **Capability Definitions**
 
 | Capability | Description |
-| -----------|------------ | 
+| -----------|------------ |
 | **metrics** | Reports aggregated call setup metrics to the ConnexCS portal|
 | **vitals** | Reports host health metrics, including CPU, memory, disk usage, uptime, and system load. |
 | **failure_samples**  | Collects representative failed call samples for troubleshooting|
@@ -227,7 +228,7 @@ Displays call setup statistics collected during the previous **5-second** report
 Displays representative call failures collected during the previous **60-second** sampling interval.
 
 | Field | Description |
-| ------|------------ | 
+| ------|------------ |
 | **Categories** | Groups failures by SIP response code or timeout category (for example, `sip_480`, `sip_481`, `sip_503`). Selecting a category displays representative failed call samples to assist with troubleshooting recurring issues|
 
    * **Some Additional Fields**
@@ -238,6 +239,113 @@ Displays representative call failures collected during the previous **60-second*
 | **Status** | Current connection status of the Connexamine agent (for example, **Connected** or **Disconnected**)|
 | **Window (s)** *(Metrics)*| Specifies the reporting interval, in seconds, over which call setup metrics are aggregated before being sent to the ConnexCS portal|
 | **Window (s)** *(Failure Samples)* | Specifies the sampling interval, in seconds, during which failed call samples are collected and grouped before being reported|
+
+### How to use ConnExamine on the Control Panel (Stats View)?
+
+The **Stats** view in ConnExamine provides a graphical representation of server performance, system resource utilisation, signalling activity, clock synchronisation, and agent information. It allows administrators to monitor connected servers, compare performance across different agents, and identify potential issues over a selected time period.
+
+To access the Stats view:
+
+1. Navigate to **Global :material-menu-right: ConnExamine** in the Control Panel.
+2. Click the **Stats** tab to view the graphical statistics.
+3. Select the required time range, agent, or date range to filter the displayed information.
+
+#### 1. Configure the Statistics View
+
+Before analysing the charts, configure the following filters:
+
+- **Time Range**: Select a predefined time range to display statistics for the last 5 minutes, 15 minutes, 30 minutes, 1 hour, 6 hours, 24 hours, 7 days, or 30 days.
+- **Agent Selection**: Select one or more agents to compare their performance and resource utilisation. The charts display separate data series for each selected agent.
+- **Date Range**: Specify a custom start date and end date to view statistics for a particular period.
+- **Auto-refresh**: Enable this option to refresh the statistics automatically at regular intervals.
+- **Refresh**: Click the refresh icon to manually reload the displayed statistics.
+
+#### 2. Overview
+
+The **Overview** tab provides a consolidated view of important performance and resource metrics. It displays the following charts:
+
+- **CPU Usage**: Displays CPU utilisation for each selected agent, helping identify variations in processing load.
+- **Session Up**: Shows the number of active sessions over the selected period.
+- **Memory**: Displays memory utilisation, including used and total memory for each agent.
+- **Load Average (1m)**: Shows the system load average over one minute.
+- **Failures (avg)**: Displays the average number of failures recorded over time.
+
+> **Note**: Hover over a chart to view the corresponding date, agent, and metric values. Click the expand icon on a chart to view it in a larger format. <br><img src= "/misc/img/stats1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+The expanded chart provides a detailed view of the selected metric, making it easier to examine individual data points and compare values across agents. <br><img src= "/misc/img/stats2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### 3. Performance & Latency
+
+The **Performance & Latency** tab displays call performance metrics and latency measurements to help identify delays and variations in call processing.
+
+It includes the following charts:
+
+- **Answered Latency**: Displays the minimum, average, and maximum latency recorded for answered calls.
+- **Answered Calls (avg)**: Shows the average number of answered calls over the selected period.
+- **Answered Latency Std Dev**: Displays the standard deviation of answered-call latency, helping identify variations in response times.
+- **Trying Latency**: Displays the minimum, average, and maximum latency associated with call attempts.
+- **Trying Attempts (avg)**: Shows the average number of call attempts over time.
+- **Trying Latency Std Dev**: Displays the standard deviation of latency for call attempts.
+
+These metrics help administrators identify latency spikes, inconsistent call response times, and changes in call-processing performance. <br><img src= "/misc/img/stats3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### 4. System Resources
+
+The **System Resources** tab provides detailed information about the resource utilisation and operational health of each selected agent.
+
+It includes the following charts:
+
+- **CPU Usage (detail)**: Displays detailed CPU utilisation over time for each agent.
+- **Load Average (1m/5m/15m)**: Shows system load averages calculated over 1-minute, 5-minute, and 15-minute intervals.
+- **Memory (detail)**: Displays memory utilisation, including used and total memory.
+- **Memory Free %**: Shows the percentage of available memory over time.
+- **Disk Free**: Displays the available disk space for each agent.
+- **Process Uptime**: Shows how long the monitored process has been running.
+
+These metrics help administrators monitor resource consumption, identify potential capacity issues, and investigate unexpected changes in system performance.<br><img src= "/misc/img/stats4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### 5. Signalling & Traffic
+
+The **Signalling & Traffic** tab provides information about call signalling activity, incoming requests, and signalling-related failures.
+
+It includes the following charts:
+
+- **Invites Sent (avg)**: Displays the average number of INVITE requests sent over the selected period.
+- **Trying Received (avg)**: Shows the average number of incoming TRYING responses or messages received.
+- **Messages Received (by type, avg)**: Displays the average number of received messages grouped by message type, such as `clock_skew_alert`, `failure_samples`, `hello`, `metrics`, `update_status`, and `vitals`.
+- **Failures (avg)**: Displays the average number of signalling failures over time.
+- **Failures by SIP Code (avg)**: Groups failures by SIP response code, helping identify the response codes associated with unsuccessful call attempts.
+- **Failures by Timeout Kind (avg)**: Displays failures grouped by timeout category, helping identify issues such as `no_ringing_pdd_exceeded`, `no_trying`, and `ring_timeout_no_answer`.
+
+These charts help administrators analyse signalling traffic, monitor request activity, and identify recurring SIP errors or timeout-related issues.<br><img src= "/misc/img/stats5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### 6. Clock & Sync
+
+The **Clock & Sync** tab displays clock-related metrics for the selected agents. It helps administrators monitor synchronisation between servers and identify clock discrepancies.
+
+It includes the following charts:
+
+- **Clock RTT**: Displays the round-trip time (RTT) associated with clock synchronisation measurements for each agent, in milliseconds.
+- **Clock Skew**: Shows the difference between the clock of an agent and the reference clock, in milliseconds.
+
+These metrics help identify clock synchronisation issues and discrepancies that may affect timestamp accuracy and coordination between servers.<br><img src= "/misc/img/stats6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### 7. Agent Info
+
+The **Agent Info** tab displays the technical details of the agents connected to ConnExamine.
+
+The table includes the following fields:
+
+- **Host**: Displays the hostname or identifier of the monitored agent.
+- **Instance**: Displays the instance associated with the agent, if available.
+- **Agent Version**: Displays the installed ConnExamine agent version.
+- **OS / Arch**: Displays the operating system and system architecture on which the agent is running.
+- **Git Commit**: Displays the Git commit reference associated with the agent build, if available.
+- **Last Reported**: Displays the date and time when the agent last reported its information.
+
+This information helps administrators verify agent versions, identify the operating environment, and check when each agent last communicated with the Control Panel.<br><img src= "/misc/img/stats7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+> **Note:** The charts support interactive inspection. Hover over individual data points to view their corresponding values, use the expand icon to examine a chart in detail, and use the available time and agent filters to compare performance across different periods and agents.
 
 ## How to use ConnExamine with ConnexCS Terminal
 
@@ -282,7 +390,145 @@ Within that SIP traffic, it only actively **tracks** outbound INVITEs — calls 
 | Call content / audio | Never | Connexamine never touches media, only signaling headers |
 | SIP message bodies (SDP, etc.) | Never | Only specific signaling headers (Call-ID, From, To, response codes) are parsed |
 
-In short: what leaves the box in `--auto` mode is *timing statistics, response codes, Call-IDs, IPs, and host health* — the minimum needed to diagnose a connectivity problem remotely. It is not a call log and cannot be used to reconstruct who called whom.
+> **In short**: what leaves the box in `--auto` mode is *timing statistics, response codes, Call-IDs, IPs, and host health* — the minimum needed to diagnose a connectivity problem remotely. It is not a call log and cannot be used to reconstruct who called whom.
+
+## Monitoring ViciDial with ConnExamine
+
+### Overview
+
+Install ConnExamine on your ViciDial server and you get continuous, SIP-level monitoring of every outbound call setup, reported to the ConnexCS Control Panel. You see slow or failing trunks before your agents or customers complain.
+
+ViciDial's own real-time reports focus on agents, campaigns and queues. They don't show what happens at the SIP level between your dialer and your carrier. So when a trunk slows down or starts rejecting calls, most teams only find out from a complaint or a sudden drop in connect rates.
+
+A "channel unavailable" message is not observability. It tells you a call failed, not where or why. ConnExamine fills that gap by measuring each stage of call setup and grouping failures by SIP response code.
+
+> **Who this guide is for:** ViciDial administrators, NOC engineers and support staff who send ViciDial traffic through ConnexCS or any other SIP provider.
+
+### What ConnExamine measures
+
+ConnExamine is a lightweight SIP call-setup inspector built by ConnexCS. It runs on your own ViciDial server, watches outbound SIP INVITEs, and works out how long each stage of call setup takes and where calls fail.
+
+It works on servers outside ConnexCS's infrastructure, so a self-hosted ViciDial box is fully supported.
+
+For every outbound call, it records four things:
+
+| Metric | What it measures | What a bad value tells you |
+| --- | --- | --- |
+| **Trying Time** | INVITE to `100 Trying` | The far end is slow to respond or unreachable |
+| **Post Dial Delay (PDD)** | INVITE to `180 Ringing` or `183 Session Progress` | The carrier is slow to route the call; callers hear dead air |
+| **Ring Time** | `180/183` to `200 OK` | How long the call rang before it was answered |
+| **Final Disposition** | Final SIP response code, or the stage where it timed out | Whether a call was rejected (for example `503`) or silently timed out |
+
+In the Control Panel it also shows host health for the ViciDial box: CPU, memory, disk, load and uptime. That lets you tell "the carrier is failing" apart from "the dialer server is overloaded," which otherwise look the same.
+
+> **How it compares to sngrep:** sngrep and Wireshark show raw SIP traffic for an engineer to interpret. ConnExamine pre-calculates the timings, colour-codes them good, average or poor, and can report continuously. Use sngrep for deep protocol work such as transfers or re-INVITEs; use ConnExamine to answer "is this connection healthy, and where is it failing?"
+
+### Install ConnExamine on your ViciDial server
+
+Setup takes about 10 minutes: install the agent, start it in daemon mode, then claim the box in the Control Panel.
+
+**Before you start, check that:**
+
+- You have root or sudo access to the ViciDial (Linux) server.
+- Your ViciDial trunks send SIP over **UDP port 5060**. ConnExamine does not see SIP over TCP, TLS or non-standard ports.
+- You can log in to the ConnexCS Control Panel.
+- If you run a ViciDial cluster, you know which servers place outbound calls. Install the agent on each of them.
+
+**Steps:**
+
+1. Log in to the ViciDial server's terminal and run the installer:
+
+    ```
+    curl -fsSL https://cdn.cnxcdn.com/connexamine/install.sh | bash
+    ```
+
+2. Start ConnExamine in daemon mode, so it runs in the background and reports continuously:
+
+    ```
+    sudo connexamine --auto
+    ```
+
+3. Copy the **Daemon Token** (code) it displays. You need it to claim the box.
+4. In the ConnexCS Control Panel, go to **Global → ConnExamine**.
+5. Click **+ Claim Box**, enter the Daemon Token or the server's IP address, and click **Claim**.
+6. The ViciDial box now appears on the ConnExamine dashboard with status **Connected**.
+
+You can also claim a box from the ConnexCS Terminal (the **CLI Terminal** icon in the Control Panel) with `connexamine adopt <code|ip>`.
+
+> **Quick check without daemon mode:** run `sudo connexamine` to open interactive mode. Calls scroll past in a colour-coded table, and nothing leaves the server. Press `Ctrl+C` to exit. Add `--test-mode` to see simulated traffic for a demo.
+
+## Read the ConnExamine dashboard
+
+Open **Global → ConnExamine** and click a box's **Session ID** to see its live view. Each panel answers a different question about your ViciDial server:
+
+| Panel | What it shows | Question it answers |
+| --- | --- | --- |
+| **Overview** | Session ID, public IP, linked customer, last update time | Is this box reporting, and whose is it? |
+| **Box Info** | Hostname, agent version, OS / architecture, capabilities | Which server is this, and what can the agent do? |
+| **Vitals** | Load average (1, 5, 15 min), CPU, memory used / total, disk free, uptime | Is the ViciDial server itself healthy? |
+| **Metrics (5s)** | Call setup stats grouped by destination IP over the last 5 seconds: INVITE count, Trying responses, latency | Which carrier or trunk is slow right now? |
+| **Failure Samples (60s)** | Failed calls grouped by SIP code or timeout, for example `sip_480`, `sip_503` | What kind of failure is happening, and how often? |
+| **Status** | **Connected** or **Disconnected** | Is the agent still running? |
+
+**Comparing trunks:** because Metrics groups everything by destination IP, a ViciDial server with several carriers shows each one side by side. If one destination has far higher PDD or more timeouts than the rest, the problem is that carrier, not your dialer.
+
+**Comparing over time:** check the same box at busy and quiet hours. If timings only degrade at peak and Vitals show high CPU or load, the ViciDial server is the bottleneck.
+
+### Diagnose a ViciDial failure
+
+When agents report dead air, dropped calls or low connect rates, work through these steps from the ConnexCS Terminal or the dashboard.
+
+1. **List your boxes.** Run `connexamine list` and pick the ViciDial server. This opens its live dashboard.
+2. **Check Status and Vitals.** If the box is Disconnected, or CPU and load are maxed out, fix the server first.
+3. **Find the slow stage in Metrics.** Look at each destination IP:
+    - High Trying Time: the carrier is slow to acknowledge, or unreachable.
+    - High PDD: the carrier is slow to route; callers hear silence before ringing.
+    - Timeouts with no SIP response: likely a network or firewall problem.
+4. **Read the failure category.** Open **Failure Samples** and select a category to see real failed calls with their Call-IDs.
+5. **Test the network path.** From the box, run:
+    - `connexamine ping <session-id> <target>` for reachability and latency.
+    - `connexamine mtr <session-id> <target>` for packet loss along the route.
+6. **Pull the full snapshot** with `connexamine show <session-id>` (add `--json` to export it), and share the Call-IDs with your carrier or ConnexCS support.
+
+**Common SIP codes in Failure Samples:**
+
+| Code | Meaning | Usual next step |
+| --- | --- | --- |
+| `480` | Temporarily unavailable | Check the destination numbers and the carrier's capacity |
+| `481` | Call / transaction does not exist | Check for NAT or session timer problems |
+| `486` | Busy here | Normal at low volume; investigate if it spikes |
+| `503` | Service unavailable | The carrier is rejecting traffic; check limits or failover |
+| Timeout | No response at that stage | Check firewall rules, routing and the carrier's IP |
+
+This SIP-level view is what ViciDial doesn't give you on its own.
+
+### Best practices and limitations
+
+Run ConnExamine in daemon mode on every outbound ViciDial server all the time, not only when something breaks. Continuous data means you can see when a problem started, without having to reproduce it.
+
+**Best practices:**
+
+- Install on every dialer node in a cluster, so each one reports separately.
+- Check the dashboard at the start of each shift and after any carrier or routing change.
+- Compare PDD and failure rates per carrier weekly, to spot a trunk that is slowly degrading.
+- Use custom thresholds in interactive mode to match your campaigns, for example:
+
+    ```
+    sudo connexamine --trying-timeout 3000 --pdd-timeout 15000
+    ```
+
+- Keep the server clock in sync; the agent reports clock skew if it drifts.
+
+**What ConnExamine does not cover:**
+
+- Only SIP on **UDP 5060**: no TCP, TLS or custom ports.
+- Only **outbound** INVITEs; inbound calls are not tracked.
+- No media or audio, so it won't detect one-way audio or poor call quality.
+- No ViciDial agent, campaign or queue metrics; keep using ViciDial's real-time report for those.
+
+ConnExamine does not yet replace every kind of dialer monitoring. Use it as the SIP and server-health layer alongside ViciDial's own reports.
+
+> **Data and privacy:** in daemon mode the agent sends only timing statistics, SIP response codes, Call-IDs, IP addresses and host health, encrypted in transit. Caller and called numbers appear only on screen in interactive mode and are never sent. Audio and SIP message bodies are never captured.
 
 ## Summary
 
