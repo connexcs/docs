@@ -38,7 +38,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
     <img src="/customer-portal/img/agentdialer1.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Agent Login">
 
-2. Select the campaign (`Auto Dialer` / `Preview Dialer`) from the drop-down menu and click `Confirm`.<b><img src="/customer-portal/img/agentdialer2.png" width= "50" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Selection"></br>
+2. Select the campaign (`Auto Dialer` / `Preview Dialer`) from the drop-down menu and click `Confirm`.<b><img src="/customer-portal/img/agentdialer2.png" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Auto Dialer Campaign Selection"></br>
 
 3. The Agent Dialer interface appears with the following fields:
 
