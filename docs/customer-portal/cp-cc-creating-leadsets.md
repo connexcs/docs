@@ -142,7 +142,7 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
         10801, New
     ```
 
-2. Click on `Upload`. <br><img src="/customer-portal/img/newleadset10.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Click on `Upload`. <br><img src="/customer-portal/img/newleadset10_new.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step. 
 
