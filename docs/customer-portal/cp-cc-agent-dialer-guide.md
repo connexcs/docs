@@ -51,7 +51,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     </div>
     5. `Logout`: Lets the agent log off from the system.
     6. `Contact Information`: Customer details sourced from the **uploaded Leadset** or entered manually via the **Lead Form**. The contact information is updated after the agent receives the call.
-    7. `Lead Preview` **(*Only for Preview Dialer*)**: Opens lead details for the agent.
+    7. `Lead Preview` (*Only for Preview Dialer*): Opens lead details for the agent.
     8. `Get Next Lead`: Becomes active after the current call ends and displays the next customer's information.
 
     <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
@@ -64,10 +64,10 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     <img src="/customer-portal/img/agentdialer3.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Lead Details">
     </div>
 
-4. **Start the call**:
+4. Start the call:
 
-    - **Auto Dialer**: As soon as `Agent Status` is enabled, the agent starts receiving calls.
-    - **Preview Dialer**: Click the `Call` button to phone the customer.
+    - Auto Dialer: As soon as `Agent Status` is enabled, the agent starts receiving calls.
+    - Preview Dialer: Click the `Call` button to phone the customer.
 
     <img src="/customer-portal/img/agentdialer5.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Call Button">
 
@@ -86,7 +86,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     <img src="/customer-portal/img/agentdialer6.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Live Call">
     </div>
 
-6. After the call ends, the agent can either `Submit` the disposition and get ready for the next call, or click `Submit & Go On Pause` **(*Only for Auto Dialer*)**.
+6. After the call ends, the agent can either `Submit` the disposition and get ready for the next call, or click `Submit & Go On Pause` (*Only for Auto Dialer*).
 
     <img src="/customer-portal/img/agentdialer7.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Submit Disposition">
 
@@ -94,8 +94,8 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
 8. Move to the next call:
 
-    - **Preview Dialer**: Click `Get Next Lead` to dial the next customer.
-    - **Auto Dialer**: The next call goes through automatically after **30 seconds**.
+    - Preview Dialer: Click `Get Next Lead` to dial the next customer.
+    - Auto Dialer: The next call goes through automatically after **30 seconds**.
 
 9. The updated `Leadset Overview` can be viewed.
 
