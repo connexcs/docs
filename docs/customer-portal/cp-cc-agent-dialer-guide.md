@@ -42,7 +42,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
     <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
     <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer</h4>
-    <img src="/customer-portal/img/agentdialer2.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Selection">
+    <img src="/customer-portal/img/agentdialer2.png" width= "50" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Auto Dialer Campaign Selection">
     </div>
 
 3. The Agent Dialer interface appears with the following fields:
@@ -57,8 +57,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     5. `Logout`: Lets the agent log off from the system.
     6. `Contact Information`: Customer details sourced from the **uploaded Leadset** or entered manually via the **Lead Form**. The contact information is updated after the agent receives the call.
     7. `Lead Preview` **(*Only for Preview Dialer*)**: Opens lead details for the agent.
-    8. `Invalid Details` **(*Only for Auto Dialer*)**: Lets the agent flag the lead if information is incorrect or incomplete.
-    9. `Get Next Lead`: Becomes active after the current call ends and displays the next customer's information.
+    8. `Get Next Lead`: Becomes active after the current call ends and displays the next customer's information.
 
     <div style="background-color: #f5f5f5a1; padding: 15px; border-radius: 8px; margin: 10px 0;">
     <h4 style="margin-top: 0; margin-bottom: 10px;">Auto Dialer</h4>
@@ -70,7 +69,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
     <img src="/customer-portal/img/agentdialer3.png" style="border: 2px solid #4472C4; border-radius: 8px; width: 100%;" alt="Preview Dialer Lead Details">
     </div>
 
-4. Start the call:
+4. **Start the call**:
 
     - **Auto Dialer**: As soon as `Agent Status` is enabled, the agent starts receiving calls.
     - **Preview Dialer**: Click the `Call` button to phone the customer.
@@ -94,7 +93,7 @@ Both dialer types allow agents to manage live calls with features like hold, tra
 
 6. After the call ends, the agent can either `Submit` the disposition and get ready for the next call, or click `Submit & Go On Pause` **(*Only for Auto Dialer*)**.
 
-    <img src="/customer-portal/img/agentdialer7.png" width= "700" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Submit Disposition">
+    <img src="/customer-portal/img/agentdialer7.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;" alt="Submit Disposition">
 
 7. Agents can also update the customer details using the `Edit` button.
 

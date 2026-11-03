@@ -129,10 +129,10 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
 
 #### Uploading via URL
 
-1. Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/newleadset9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Enter the URL in the CSV format and hit the Upload button. <br><img src="/customer-portal/img/newleadset9.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. Follow the same process as described in the **Upload via File** section, starting from **Step 2** through to the final step.
 
-### Uploading via Text
+#### Uploading via Text
 
 1. Enter the text in the following format:
 
@@ -142,13 +142,13 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
         10801, New
     ```
 
-2. Click on `Upload`. <br><img src="/customer-portal/img/newleadset10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+2. Click on `Upload`. <br><img src="/customer-portal/img/newleadset10.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step. <br><img src="/customer-portal/img/newleadset11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step. 
 
 #### Single Lead
 
-The `Single lead` option allows users to manually add an individual lead by entering their contact information, personal details, location, and other relevant attributes.
+The `Single lead` option allows users to manually add an individual lead by entering their contact information, personal details, location, and other relevant attributes. <br><img src="/customer-portal/img/newleadset11.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 The following table describes the available fields:
 
