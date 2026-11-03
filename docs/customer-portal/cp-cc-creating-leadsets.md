@@ -111,9 +111,9 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
 
 4. **Setup**: Use the `Setup` tab to configure the `First data row` from which the system should read the CSV data and export the uploaded data in `CSV` or `JSON` format if required.<br><img src= "/customer-portal/img/newleadset3.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-5. **Validate & Upload**: Click `Validate & upload` to validate the mapped data; once validation passes, the system starts uploading the leads and displays the upload progress. <br><img src= "/customer-portal/img/newleadset4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+5. **Validate & Upload**: Click `Validate & upload` to validate the mapped data; once validation passes, the system starts uploading the leads and displays the upload progress. <br><img src= "/customer-portal/img/newleadset4.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-6. **Upload Confirmation**: Once the upload is complete, a success message confirms that all leads have been uploaded successfully.<br><img src= "/customer-portal/img/newleadset5.png" width= "600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+6. **Upload Confirmation**: Once the upload is complete, a success message confirms that all leads have been uploaded successfully.<br><img src= "/customer-portal/img/newleadset5.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 7. **Lead Stats**: After uploading, navigate to the Leads dashboard to view lead statistics, including `Total Leads`, `Dialable Leads`, `In Progress`, `Call Answered`, `Call Ringing`, `Failed Calls`, and `Dropped Calls`. <br><img src= "/customer-portal/img/newleadset6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 8. **Data Recycle**: The Data Recycle window allows users to change the status of existing lead records in bulk. It helps move leads from one call status to another without manually updating each record.<br><img src= "/customer-portal/img/newleadset7.png" width= "400" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
