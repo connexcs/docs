@@ -202,26 +202,15 @@ Use ScriptForge for **Dynamic Call Management**.
 
 ## Bulk Upload
 
-**Global :material-menu-right: DID :material-menu-right: Bulk Upload :material-menu-right: New Bulk Upload**
-
-**Management :material-menu-right: Customer / Carrier :material-menu-right: (open an account) :material-menu-right: DID :material-menu-right: Bulk Upload :material-menu-right: New Bulk Upload**
-
-**Setup :material-menu-right: Advanced :material-menu-right: Prefix Set :material-menu-right: Numbers :material-menu-right: Paste / Upload :material-menu-right: New Bulk Upload**
-
-**Management :material-menu-right: Rate Card :material-menu-right: (open a card) :material-menu-right: New Bulk Upload**
-
 ### Overview
 
-**New Bulk Upload** is the ConnexCS Control Panel's tool for **loading large volumes of records** (DIDs, Prefix Set numbers and Rate Card entries) from a file, a public URL or pasted text.
+**New Bulk Upload** is a tool for **loading large volumes of records** (DIDs, Prefix Set numbers and Rate Card entries) from a file, a public URL or pasted text.
 
 It reads your data in the browser, **automatically matches your columns to destination fields**, lets you link and correct values before anything is written, **validates every row**, and then uploads in batches, confirming each one with the destination.
 
 Uploads keep running in the background. You can close the window, keep working, run several uploads at once, move an upload between browser tabs, and reopen an upload after its tab closes.
 
 Column matching is **AI-assisted**. The uploader guesses which destination field each column belongs to and shows how confident it is in each guess, so you only need to check the ones it isn't sure about. In a production environment most files are already close to the destination's format, so the uploader's job is usually to get the mapping right and let you make the few small corrections a file needs.
-
-!!! Note
-    The previous uploader remains available as **Bulk Upload (Data Suite)**, **Paste / Upload (Classic)** or **Bulk Upload (Classic)**, depending on the page.
 
 ### What problem it solves: Simplifying large data imports
 
@@ -245,17 +234,6 @@ Importing thousands of records by hand, or with an uploader that fails silently,
 | **Validate** | Check every row against the destination's rules | Catch problems before anything is written |
 | **Upload** | Send rows in batches and track confirmations | Know exactly what was written |
 | **Review** | See results, download failures, retry | Recover from failures safely |
-
-### Comparison with the Classic uploader
-
-| | New Bulk Upload | Classic uploader |
-|---|---|---|
-| **Column mapping** | Automatic, with confidence scores and explanations | Manual |
-| **Data preparation** | Associations, Populate, cell editing, added columns, undo history | Limited |
-| **Validation** | Full background validation with grouped issues | Basic |
-| **Progress** | Counts only rows confirmed by the destination, per batch | Basic progress |
-| **Background running** | Yes, across tabs, with upload history | No |
-| **Retry** | Continues the same upload; written rows are never resent | Start again |
 
 ### Benefits
 
@@ -283,7 +261,7 @@ Importing thousands of records by hand, or with an uploader that fails silently,
 
 Each New Bulk Upload opens in its own full-screen window, titled **Bulk Upload DIDs** or **Bulk Upload Rate Card**. You can run several at once.
 
-#### Upload names
+### Upload names
 
 Every upload is given a **three-word name** when it starts, for example *amber-falcon-river*. The name appears at the top of the window, ahead of the file name, in the upload history and in every message about that upload. Use it to tell uploads apart, especially when files have similar names.
 
@@ -304,8 +282,7 @@ Every upload is given a **three-word name** when it starts, for example *amber-f
 
 **Supported formats:** CSV, TSV (tab-separated) and Excel 2003 XML Spreadsheet (`.xml`, also called SpreadsheetML).
 
-!!! Note
-    Modern Excel workbooks (`.xlsx`) are not supported. Save the workbook as CSV first.
+!!! Note "Modern Excel workbooks (`.xlsx`) are not supported. Save the workbook as CSV first."
 
 The uploader detects the delimiter and which of the first ten rows holds the column headings. If there is no heading row, columns are named **Column 1**, **Column 2** and so on.
 
@@ -328,7 +305,7 @@ The **Mappings** tab lists each destination field and the column that feeds it. 
 | **Search and filter** | Search by name, or filter to **All fields**, **Mapped**, **Unmapped** or **Worth checking** (weak matches and unmatched columns). |
 | **Linked fields** | Fields that link to existing records (such as *Customer*, *Call Recording* or *Package*) show a broken-link icon and how many values still need linking, **Review associations**, or **Map a column first**. Click to open in Associations. Once every value is linked, the icon changes to a connected link. |
 
-##### Understanding match confidence
+#### Understanding match confidence
 
 Every time the uploader guesses a mapping, it records how confident it is that the guess is right. Point at the percentage to see what it means. <br><img src= "/customer/img/nbu4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
@@ -336,20 +313,17 @@ Every time the uploader guesses a mapping, it records how confident it is that t
 * In the example, the column is named `phone`. The uploader judged that `phone` most likely holds DIDs and mapped it, but with only **14%** confidence, because only part of the name and values matched.
 * Matches below **60%** appear under the **Worth checking** filter. This is the uploader asking: *"Did I map this correctly?"* Confirm the mapping or choose a different column.
 
-!!! Note
-    The uploader is good at obvious matches such as `phone` to **DID**. When a column doesn't clearly correspond to any field (for example, a generic `status` column), check its mapping yourself, because even a person might not know which destination field it belongs to.
+> **Note**: The uploader is good at obvious matches such as `phone` to **DID**. When a column doesn't clearly correspond to any field (for example, a generic `status` column), check its mapping yourself, because even a person might not know which destination field it belongs to.
 
-##### Mapping from the preview
+#### Mapping from the preview
 
 You can also map a column directly from the preview. Right-click any cell in the column and open **Map column**. The menu lists every destination field, marks the field the column feeds as **Current**, offers **Use DID suggestion** (the suggested field) and **Do not upload**.<br><img src= "/customer/img/nbu4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 When a field is already fed by another column, the menu shows that column's name beside the field. In the example below, **DID** is already fed by `phone`; choosing **DID** for the `status` column would move the mapping to `status`.<br><img src= "/customer/img/nbu5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-!!! Tip
-    Anything you can do in the preparation panel, you can also do directly in the preview table, and the other way round. The panel is a visual helper for people who prefer working with fields and values; the table suits people who prefer working like a spreadsheet.
+!!! Tip "Anything you can do in the preparation panel, you can also do directly in the preview table, and the other way round. The panel is a visual helper for people who prefer working with fields and values; the table suits people who prefer working like a spreadsheet."
 
-!!! Tip
-    Every change can be undone. The undo button beside **Validate & upload** reverses the latest change. The arrow beside it opens the change history: a list of every change made to the data in this upload, newest first. If you've made a mistake, choose an earlier point in the list to go back to it and undo several changes at once. The back arrow beside the destination name returns to file selection.
+!!! Tip "Every change can be undone. The undo button beside **Validate & upload** reverses the latest change. The arrow beside it opens the change history: a list of every change made to the data in this upload, newest first. If you've made a mistake, choose an earlier point in the list to go back to it and undo several changes at once. The back arrow beside the destination name returns to file selection."
 
 The preparation panel can be collapsed for more preview space and reopened with the **Mappings** handle at the left edge.
 
@@ -380,13 +354,11 @@ Some fields don't accept just any value. A **Customer** field, for example, only
 
 In the example below, the **Customer** field has two value groups, **A** and **B**, each appearing in one row and marked **unresolved**. The field shows **2 to associate**.<br><img src= "/customer/img/nbu6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-After both groups are linked to the existing customer *demo*, they show **associated**, the field shows **Associated**, and the preview's **CUSTOMER** column shows *demo* with a connected-link icon.<br><img src= "/customer/img/nbu7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+After both groups are linked to the existing customer *demo*, they show **associated**, the field shows **Associated**, and the preview's **CUSTOMER** column shows *demo* with a connected-link icon.<br><img src= "/customer/img/nbu7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src= "/customer/img/nbu8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-!!! Tip
-    You can also associate a single cell from the preview: double-click a cell in a linked column to open its **Choose association** list of existing records.
+!!! Tip "You can also associate a single cell from the preview: double-click a cell in a linked column to open its **Choose association** list of existing records."
 
-!!! Note
-    When you open Associations from a preview cell (right-click :material-menu-right: **Column** :material-menu-right: **Review value associations**), that cell's value is pinned to the top and marked **This cell**. It is not selected; only a ticked checkbox selects a group.
+> **Note**: When you open Associations from a preview cell (right-click :material-menu-right: **Column** :material-menu-right: **Review value associations**), that cell's value is pinned to the top and marked **This cell**. It is not selected; only a ticked checkbox selects a group.
 
 ##### Populate
 
@@ -394,15 +366,13 @@ After both groups are linked to the existing customer *demo*, they show **associ
 2. Type a replacement in a group's **Replacement value** box and press `Enter` or click **Apply**. `Escape` discards what you typed.
 3. Or tick several groups, type a value in the top box, and click **Apply**. With the scope set to **Unres**, one value covers every group without its own value.
 
-The **Add a column to populate** list shows the columns in your file that can be populated (here, `phone` and `status`).<br><img src= "/customer/img/nbu8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+The **Add a column to populate** list shows the columns in your file that can be populated (here, `phone` and `status`).
 
-In the example below, the `phone` column (mapped to **DID**) was populated: *10800* is replaced with *10900* and *10801* with *10901*. Each group shows **will be replaced**, the column shows **Configured**, and the preview shows the new values.<br><img src= "/customer/img/nbu9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+In the example below, the `phone` column (mapped to **DID**) was populated: *10800* is replaced with *10900* and *10801* with *10901*. Each group shows **will be replaced**, the column shows **Configured**, and the preview shows the new values.<br><img src= "/customer/img/nbu9.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br><br><img src= "/customer/img/nbu10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-!!! Tip
-    For one-off changes, you can also edit a value inline: double-click any cell in the preview and type, just as you would in a spreadsheet.
+!!! Tip "For one-off changes, you can also edit a value inline: double-click any cell in the preview and type, just as you would in a spreadsheet."
 
-!!! Note
-    Columns that link to records are set in **Associations**, not Populate.
+> **Note**: Columns that link to records are set in **Associations**, not Populate.
 
 ##### Associations vs Populate
 
@@ -440,7 +410,7 @@ Both tabs work on **value groups** (the distinct values in a column), but they s
 
 ##### Setup options
 
-The uploader usually sets these correctly, so most uploads never need the **Setup** tab. Use it when you want to change what was detected.<br><img src= "/customer/img/nbu10.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+The uploader usually sets these correctly, so most uploads never need the **Setup** tab. Use it when you want to change what was detected.<br><img src= "/customer/img/nbu11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 | Option | Description |
 |--------|-------------|
@@ -465,8 +435,7 @@ When deleting:
 * You are asked to confirm how many records will be deleted before anything is sent.
 * **Retry delete** resends unconfirmed rows without asking, because deleting a record that's already gone changes nothing.
 
-!!! Warning
-    Deleting records cannot be undone.
+!!! Danger "Deleting records cannot be undone."
 
 ##### Working in the preview
 
@@ -491,8 +460,7 @@ The preview works like a spreadsheet.
 | **Column** | **Review value associations**, **Populate column…**, **Add a fixed column before…**, **Add a fixed column after…**, **Move column left**, **Move column right**, **Remove added column**, **Hide from preview**. |
 | **Export** | **Transformed CSV** or **Transformed JSON**. |
 
-!!! Note
-    Edits are stored as small changes on top of your file. The original file is never modified.
+> **Note**: Edits are stored as small changes on top of your file. The original file is never modified.
 
 #### Step 4: Validate
 
@@ -506,8 +474,7 @@ The preview works like a spreadsheet.
       | **Issues found** | Click **Review N issues**. The **Issues** tab groups problems by reason with affected cell counts and sample rows. Use **Show column** or **Resolve values**, then click **Validate again**. |
       | **Partial validation results** | Shown if you stopped validation; covers the rows checked so far. |
 
-!!! Note
-    Browser checks give quick feedback, but the destination makes the final decision. A row can still be rejected during upload, for example a DID that already exists elsewhere.
+> **Note**: Browser checks give quick feedback, but the destination makes the final decision. A row can still be rejected during upload, for example a DID that already exists elsewhere.
 
 !!! Example "Rate Cards"
     Once validation passes, you are asked **Do you wish to set this as the Active Revision?** The upload goes into a new revision either way, and retries or reopened uploads keep using that revision. If you choose **Yes**, the card switches to it only after every row is uploaded, so a partial upload never leaves the card on an incomplete revision.
@@ -535,7 +502,7 @@ You don't need to watch it. Close the window at any time and the upload keeps ru
 
 #### Step 6: Review the result
 
-When every row is written, the window shows **Upload complete** at 100%.<br><img src= "/customer/img/nbu11.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+When every row is written, the window shows **Upload complete** at 100%.<br><img src= "/customer/img/12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 | Result | Meaning |
 |--------|---------|
@@ -589,8 +556,7 @@ Each upload is a card:
 * **Removes** a finished upload, or one that can no longer be reopened, straight away.
 * Is unavailable while an upload is running: **Cancel this upload before discarding it**.
 
-!!! Note
-    Closing the **Bulk uploads** tab only hides it until another upload starts or finishes. It does not delete anything.
+> **Note**: Closing the **Bulk uploads** tab only hides it until another upload starts or finishes. It does not delete anything.
 
 ### Working across browser tabs
 
@@ -623,7 +589,7 @@ Some uploads can't be reopened, for example a completed upload (only its status 
 !!! Warning
     If the browser can't save an upload (for example, storage is full), you'll see **Upload *name* could not be saved in this browser, so it may not reopen if this tab closes.** The upload itself continues.
 
-#### Signing out and session expiry
+### Signing out and session expiry
 
 Signing out, or your session expiring, clears every upload kept in this browser for you, in every tab. An upload still running stops. Another person signing in on the same browser sees only their own uploads.
 
@@ -673,7 +639,6 @@ Click **Help** at the top of the uploader to open **How bulk upload works**, wit
     | **Minimise** | Collapses the panel back to its tab at the bottom of the screen. Uploads keep running. |
     | **Maximise** | Expands the panel to give the upload history more room. |
     | **Pin / Unpin floater launcher** | **Pin** keeps the panel docked and open while you move around the Control Panel, so you can keep an eye on progress. **Unpin** releases it, so it closes back to its launcher tab when you're done looking. |
-
 
 ## Range Holders
 
