@@ -424,5 +424,9 @@ nav:
             - Script Creation: customer-portal/cp-cc-creating-scripts.md
             - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
             - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
-
+    - Siperb: anvil-apps/siperb.md
+    - Dial Phone Verification: anvil-apps/dial-phone-verification.md
+    - DID Spam Score: anvil-apps/did-spam-score.md
+    - Neutrafix: anvil-apps/neutrafix.md
+    - Autonomous Calling: anvil-apps/autonomous-calling.md
     
