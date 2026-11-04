@@ -78,7 +78,7 @@ The agent gets enough time to review and decide whether to call the person and h
         F --> A
     ```
 
-From this point forward, we move into the next section [Setting up and using the Contact Center](https://docs.connexcs.com/customer-portal/cp-cc-install/).
+From this point forward, we move into the next section [Setting up and using the Contact Center](/customer-portal/cp-cc-install/).
 
 ⚠️ Note: This is an advanced application-based Contact Center.
 For simple queue-based call handling, refer to the [Class 5 Call Center](/class5/call-center/).

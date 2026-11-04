@@ -66,38 +66,7 @@ This section has information on the Leadsets. You can also `Add Leadset` . <br><
       5. `Upload Lead`: Opens the form for adding an individual lead.
       6. `Search Leads`: Allows users to search for leads in the leadset.
 
-   9. `Leads Table`: Displays the details of leads associated with the leadset.
-
-      1. `Phone`: Displays the lead's phone number.
-      2. `Status`: Displays the current status of the lead.
-      3. `Summary`: Displays the summary associated with the lead, if available.
-      4. `First Name`: Displays the lead's first name.
-      5. `Last Name`: Displays the lead's last name.
-      6. `Middle Name`: Displays the lead's middle name, if available.
-      7. `Title`: Displays the lead's title, if available.
-      8. `Gender`: Displays the lead's gender, if available.
-      9. `Date of Birth`: Displays the lead's date of birth, if available.
-      10. `Email`: Displays the lead's email address.
-      11. `Alt Phone`: Enter an alternative phone number for the lead, if available.
-      12. `Phone Code`: Enter the telephone dialing code associated with the lead's phone number.
-      13. `Address 1`: Enter the lead's primary street address.
-      14. `Address 2`: Enter additional address details, such as an apartment, suite, or building number.
-      15. `Address 3`: Enter any further address details, if applicable.
-      16. `City`: Enter the city where the lead is located.
-      17. `State`: Enter the state associated with the lead's address.
-      18. `Province`: Enter the province or other regional subdivision associated with the lead's address, if applicable.
-      19. `Postal Code`: Enter the postal or ZIP code associated with the lead's address.
-      20. `Country Code`: Enter the country code associated with the lead.
-      21. `Vendor Lead Code`: Enter the lead identifier assigned by the external vendor, if applicable.
-      22. `Source Id`: Enter the identifier used to identify the lead's source.
-      23. `Security Phrase`: Enter the security phrase associated with the lead, if applicable.
-      24. `Business`: Enter the name of the business associated with the lead, if applicable.
-      25. `Rank`: Specify the lead's rank using the `−` and `+` buttons to decrease or increase the value. The default value displayed is `0`.
-      26. `GMT Offset Now`: Specify the lead's current GMT offset using the `−` and `+` buttons to decrease or increase the value. The default value displayed is `0`.
-      27. `User`: Enter the user associated with the lead, if applicable.
-      28. `Comments`: Enter additional notes or comments about the lead.
-      29. `Cancel`: Closes the Upload Lead form without uploading the lead.
-      30. `Upload`: Submits the entered information to add the lead to the leadset.
+   9. `Leads Table`: Displays the details of leads associated with the leadset. [Click here](/customer-portal/cp-cc-creating-leadsets/#single-lead) for more information on the leadset fields
 
 ### Upload Lead Bulk Upload data
 

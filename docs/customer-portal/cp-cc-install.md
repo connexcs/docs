@@ -82,13 +82,8 @@ This section configures the timing parameters that control agent activity after 
 
 | Field | Description |
 |---|---|
-| **Disposition Timeout (ms)** | Specifies the maximum time an agent has to submit the call disposition after a call ends. The default value shown is `30000` milliseconds (30 seconds). |
-| **Wrap-up Time (s)** | Specifies the time an agent has after a call ends to complete post-call activities before proceeding. The default value shown is `30` seconds. |
-
-**Understanding the fields:**
-
-- **Disposition Timeout**: Defines the time limit for submitting the call disposition, such as the call outcome.
-- **Wrap-up Time**: Defines the post-call interval available to an agent for completing activities related to the previous call.
+| **Disposition Timeout (ms)** | The maximum time an agent has to submit the call disposition (such as the call outcome) after a call ends. Default: `30000` milliseconds (30 seconds). |
+| **Wrap-up Time (s)** | The post-call interval an agent has to complete activities related to the previous call before moving on. Default: `30` seconds. |
 
 Both values can be adjusted according to the contact center's operational requirements.
 
