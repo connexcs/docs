@@ -457,7 +457,7 @@ You can also claim a box from the ConnexCS Terminal (the **CLI Terminal** icon i
 
 > **Quick check without daemon mode:** run `sudo connexamine` to open interactive mode. Calls scroll past in a colour-coded table, and nothing leaves the server. Press `Ctrl+C` to exit. Add `--test-mode` to see simulated traffic for a demo.
 
-## Read the ConnExamine dashboard
+### Read the ConnExamine dashboard
 
 Open **Global → ConnExamine** and click a box's **Session ID** to see its live view. Each panel answers a different question about your ViciDial server:
 
@@ -474,7 +474,7 @@ Open **Global → ConnExamine** and click a box's **Session ID** to see its live
 
 **Comparing over time:** check the same box at busy and quiet hours. If timings only degrade at peak and Vitals show high CPU or load, the ViciDial server is the bottleneck.
 
-### Diagnose a ViciDial failure
+#### Diagnose a ViciDial failure
 
 When agents report dead air, dropped calls or low connect rates, work through these steps from the ConnexCS Terminal or the dashboard.
 
@@ -502,7 +502,7 @@ When agents report dead air, dropped calls or low connect rates, work through th
 
 This SIP-level view is what ViciDial doesn't give you on its own.
 
-### Best practices and limitations
+#### Best practices and limitations
 
 Run ConnExamine in daemon mode on every outbound ViciDial server all the time, not only when something breaks. Continuous data means you can see when a problem started, without having to reproduce it.
 
