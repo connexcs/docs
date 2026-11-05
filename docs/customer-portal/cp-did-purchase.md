@@ -14,11 +14,9 @@
 
 ## Overview
 
-The DID Purchase application allows customers to browse and acquire DIDs (phone numbers) that are made available by their carrier through the ConnexCS platform.
+ **DID Purchase** is a self-service application that lets you browse, search, and purchase available Direct Inward Dialing (DID) numbers directly from within the provider's platform.
 
-ConnexCS does not sell or resell DIDs directly — instead, it provides the infrastructure for carriers to list, manage, and distribute their own DID inventories to their customers.
-
-Each DID may have a different subscription plan, which can include flexible billing options such as monthly, weekly, or daily cycles, depending on how the carrier has configured its offerings.
+Instead of requesting numbers manually through support, users can search for available DIDs by prefix or area code, review setup and recurring costs upfront, add selections to a cart, and check out — all from a single interface.
 
 ### DID Pricing in the Customer Portal
 
@@ -37,8 +35,7 @@ This feature demonstrates the capability of the ConnexCS platform to integrate w
 ## Steps to Purchase the DID(s)
 
 1. Login to your account.
-2. Click **Purchase DID Now :material-menu-right: Start Purchasing DIDs**. <img src= "/customer-portal/img/pdid1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;">
-3. A **DID Ordering** window will appear, enter the DID number and hit the **Search** button. A list of DID numbers will appear. <img src= "/customer-portal/img/pdid2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-4. Select the DIDs you wish to purchase, click on **Add Selected DIDs To Cart**, then **Proceed to Cart**. <img src= "/customer-portal/img/pdid3.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-5. Click on **Checkout** button in the next window. <img src= "/customer-portal/img/pdid4.png" style="border: 2px solid #4472C4; border-radius: 8px;">
-6. The purchased DIDs will be visible on the Purchase DID portal. <img src= "/customer-portal/img/pdid5.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+2. Click **DID Purchase**.
+3. In the **DID Ordering** window, enter the DID prefix/area code and click **Search** to view available numbers.
+4. Select the DIDs you wish to purchase, click on **Add to Cart**, then **Checkout**.
+5. The purchased DIDs will be visible on the Purchase DID portal. <br><img src= "/customer-portal/img/cpdidp1.png" width= "800" style="border: 2px solid #4472C4; border-radius: 8px;"></br>

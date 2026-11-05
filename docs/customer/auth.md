@@ -37,7 +37,91 @@ When you enable **IP Authentication**, you link a customer switch's IP address t
     
     See [**Threat Detection**](https://docs.connexcs.com/setup/advanced/firewall/) for more details.
 
-### Enable IP Authentication
+## Multi-tenancy
+
+**Multi-tenancy** allows multiple customer accounts to authenticate and send traffic through the same signaling IP address while ensuring that each incoming call is correctly associated with the intended customer account.
+
+Instead of relying solely on the source IP address, the authentication process uses additional identifiers to determine which customer owns the call.
+
+ConnexCS supports the following multi-tenancy authentication methods:
+
+### Tech Prefix
+
+The **Tech Prefix** method identifies the customer by examining the technical prefix included in the called number.
+
+When multiple customers send traffic from the same source IP address:
+
+1. The platform verifies that a Tech Prefix is present.
+2. It compares the received Tech Prefix against the configured Tech Prefix values for all customers using that IP address.
+3. The call is assigned to the customer whose configured Tech Prefix matches the received value.
+4. Authentication and call processing continue using that customer's configuration.
+
+```mermaid
+flowchart TD
+    A[Incoming Call] --> B[Identify Source IP]
+
+    B --> C{Multiple Customers<br/>Using Same IP?}
+
+    C -- No --> D[Authenticate Customer by IP]
+    D --> E[Process Call]
+
+    C -- Yes --> F{Tech Prefix Present?}
+
+    F -- No --> G[Authentication Failed]
+    G --> H[Reject Call]
+
+    F -- Yes --> I[Extract Tech Prefix]
+    I --> J[Compare Tech Prefix<br/>with Customer Configurations]
+    J --> K[Matching Customer Found?]
+
+    K -- No --> G
+
+    K -- Yes --> L[Assign Call to Matching Customer]
+    L --> M[Authenticate Using Customer Configuration]
+    M --> E
+```
+
+This method allows multiple customers to share a single IP while maintaining separate routing and billing based on unique Tech Prefixes.
+
+---
+
+### CLI Authentication
+
+The **CLI Authentication** method identifies the customer using the Calling Line Identity (CLI) instead of a Tech Prefix.
+
+When multiple customers share the same source IP address:
+
+1. Each customer must configure the list of authorized CLIs in their account.
+2. When a call is received, the platform first matches the source IP address.
+3. If multiple customers are associated with that IP, the platform compares the incoming CLI with the configured CLI lists.
+4. The call is assigned to the customer whose account contains the matching CLI.
+5. Authentication and call processing then continue using that customer's configuration.
+
+```mermaid
+flowchart TD
+    A[Incoming Call] --> B[Identify Source IP]
+
+    B --> C{Multiple Customers<br/>Using Same IP?}
+
+    C -- No --> D[Authenticate Customer by IP]
+    D --> E[Process Call]
+
+    C -- Yes --> F[Extract Incoming CLI]
+    F --> G[Compare CLI with<br/>Configured Customer CLI Lists]
+
+    G --> H{Matching CLI Found?}
+
+    H -- No --> I[Authentication Failed]
+    I --> J[Reject Call]
+
+    H -- Yes --> K[Assign Call to Matching Customer]
+    K --> L[Authenticate Using Customer Configuration]
+    L --> E
+```
+
+This approach is useful when customers cannot use Tech Prefixes but can guarantee unique CLI ownership across shared IP addresses.
+
+## Enable IP Authentication
 
 To enable, click **:material-plus:** next to IP Authentication:
 

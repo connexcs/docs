@@ -53,6 +53,87 @@ Ingress Routing is the process that allocates an incoming call (dialed by our cu
     
     You can find additional documentation in the [**Routing Overview**](https://docs.connexcs.com/routing/) and [**Routing Strategy**](https://docs.connexcs.com/routing-strategy/) sections.
 
+### Multi-Tenancy
+
+**Multi-tenancy** routing enables multiple customers to share the same routing infrastructure while ensuring that calls are routed to the appropriate destination based on configurable routing identifiers.
+
+When several routes exist, the platform requires a mechanism to distinguish which route should process an incoming call.
+
+ConnexCS supports two methods for identifying the correct route in a multi-tenant environment:
+
+* **Dial String**
+* **Tech Prefix**
+
+These methods can be used independently depending on how customer traffic is presented to the platform.
+
+#### Dial String
+
+The **Dial String** method routes calls by matching the dialled number against a configured dial pattern.
+
+**During routing**:
+
+1. The platform evaluates the dialled number against the configured Dial String (dial pattern).
+2. If the dialled number matches the configured pattern, the route is considered eligible for call routing.
+3. If multiple routes exist, only those with matching Dial Strings are evaluated further according to the routing strategy.
+4. If no Dial String is configured, the route matches **all** dialled numbers and attempts to route every call.
+
+```mermaid
+flowchart TD
+    A[Incoming Call] --> B[Read Dialled Number]
+    B --> C{Dial String Configured?}
+
+    C -- No --> D[Match All Dialled Numbers]
+    D --> E[Route Eligible for Routing]
+    E --> F[Apply Routing Strategy]
+    F --> G[Forward Call]
+
+    C -- Yes --> H[Compare Dialled Number<br/>with Dial String Pattern]
+    H --> I{Pattern Matches?}
+
+    I -- No --> J[Route Not Eligible]
+    J --> K[Evaluate Next Route or Reject Call]
+
+    I -- Yes --> E
+```
+
+This method is commonly used to separate customer traffic based on destination number patterns without requiring any prefixes to be added to the dialled number.
+
+---
+
+#### Tech Prefix
+
+The **Tech Prefix** method routes calls using a technical prefix appended to the dialled number.
+
+**During routing:**
+
+1. The platform checks whether the dialled number contains a configured Tech Prefix.
+2. The received Tech Prefix is compared against the Tech Prefix configured on each route.
+3. The matching route is selected for further routing evaluation.
+4. The Tech Prefix can then be removed before the call is forwarded to the destination, ensuring that the called party receives the original dialled number.
+
+```mermaid
+flowchart TD
+    A[Incoming Call] --> B[Read Dialled Number]
+    B --> C{Tech Prefix Present?}
+
+    C -- No --> D[Route Not Eligible]
+    D --> E[Evaluate Next Route or Reject Call]
+
+    C -- Yes --> F[Extract Tech Prefix]
+    F --> G[Compare with Configured<br/>Route Tech Prefixes]
+
+    G --> H{Matching Route Found?}
+
+    H -- No --> D
+
+    H -- Yes --> I[Select Matching Route]
+    I --> J[Remove Tech Prefix]
+    J --> K[Apply Routing Strategy]
+    K --> L[Forward Call with Original Dialled Number]
+```
+
+This method is commonly used when multiple customers or routes share the same routing infrastructure but require deterministic route selection based on a unique technical identifier embedded in the dialled number.
+
 ## Configure Routing
 
 View and configure existing routes on the Routing tab in the Customer card. To create a new route, click `+` in **Ingress Routing**.

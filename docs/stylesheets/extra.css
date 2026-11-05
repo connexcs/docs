@@ -13,7 +13,7 @@ body{
 }
 
 .md-main > .md-main__inner {
-  display: grid;
+  display: flex;
   grid-template-columns: 20% 50% 30%;
   margin-top: 0;
 }
