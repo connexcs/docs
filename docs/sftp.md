@@ -9,7 +9,7 @@
 <strong>Difficulty</strong>: Beginner to Intermediate<br>
 <strong>Time Required</strong>: 10–15 minutes<br>
 <strong>Prerequisites</strong>: A ConnexCS account, appropriate permissions to manage SSH Keys and enable SFTP access, and an SFTP client (such as WinSCP, FileZilla, Cyberduck, MobaXterm, or OpenSSH) if connecting via SFTP.<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/guides/doc-guide/">Document Guide</a> — documentation standards, File System — managing stored files, Call Recordings, Voicemail, Audio Files, Profile Settings.<br>
+<strong>Related Topics</strong> <a href="files.md">File System</a>,s
 <strong>Next Steps</strong>: Configure an SSH public key, enable SFTP access, connect using your preferred authentication method, and securely manage files stored within the ConnexCS File System.<br>
 
 </details>
@@ -24,10 +24,9 @@ The **SSH Keys** feature enables administrators and users to register trusted pu
 
 **SFTP Access** allows users to securely connect to the ConnexCS File System using an SFTP client to upload, download, modify, and manage files. It supports both **username/password** and **SSH key** authentication, making it suitable for interactive use as well as automated scripts and third-party applications.
 
-
 ## SSH Keys
 
-## Overview
+### Overview
 
 The **SSH (Secure Shell) Keys** section allows you to securely manage the SSH public keys associated with your ConnexCS account.
 
@@ -64,7 +63,7 @@ The SSH Keys section enables you to:
 
 ---
 
-### To authorize/configure an SSH key:
+### To enable an SSH key:
 
 1. Login to your account.
 2. Navigate to `Profile :material-menu-right: SSH Keys`.
@@ -83,7 +82,7 @@ The SSH Keys section enables you to:
 |--------|-------------|
 | **New SSH Key** | Add a new SSH public key to your account. |
 | **View Keys** | Display all SSH keys currently associated with your account. |
-| **Remove Key** | Delete an SSH key that is no longer required or trusted. |
+| **Remove Key** | Delete an SSH key that's no longer required or trusted. |
 
 ---
 
@@ -154,7 +153,7 @@ Supported clients include:
 
 1. Login to your account.
 2. Navigate to `Profile :material-menu-right: Advanced`. Click on `Edit`. <br> <img src= "/misc/img/sftp3.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. Enable the `Flags`. Click `Save`. <br> <img src= "/misc/img/sftp4.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. Enable the `Flags` as shown on the image below. Click `Save`. <br> <img src= "/misc/img/sftp4.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 ---
 
@@ -176,18 +175,7 @@ SSH key authentication provides enhanced security and eliminates the need to ent
 
 ### Configuring SSH Keys
 
-To authorize an SSH key:
-
-1. Login to your account.
-2. Navigate to `Profile :material-menu-right: SSH Keys`.
-3. Create a `New SSH Key`. <br> <img src= "/misc/img/sftp1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-4. Enter `Key` Details:
-      * Key Name (Identifier)
-      * SSH Public Key <br> <img src= "/misc/img/sftp2.png" width= "350" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-    > Only the Public Key should be uploaded. Never upload your Private Key.
-
-5. Click on `Save`. After saving, the SSH key becomes available for SFTP authentication.
+To use key-based authentication, first add your public key as described in [To authorize/configure an SSH key](#to-authorizeconfigure-an-ssh-key).
 
 ---
 

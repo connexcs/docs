@@ -49,3 +49,7 @@ We support the automatic archival of rate cards.
 These can be downloaded in `.csv` format for convenient access and record-keeping.
 
 [texttospeech]: /misc/img/texttospeech.png "Text to Speech"
+
+## ## SFTP Access
+
+SFTP access is now documented on its own page: [SSH Keys and SFTP Access](sftp.md).
