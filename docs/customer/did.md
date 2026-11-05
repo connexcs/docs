@@ -502,7 +502,7 @@ You don't need to watch it. Close the window at any time and the upload keeps ru
 
 #### Step 6: Review the result
 
-When every row is written, the window shows **Upload complete** at 100%.<br><img src= "/customer/img/12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+When every row is written, the window shows **Upload complete** at 100%.<br><img src= "/customer/img/nbu12.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 | Result | Meaning |
 |--------|---------|
