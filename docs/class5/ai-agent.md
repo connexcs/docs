@@ -45,15 +45,15 @@ With AI-driven automation, businesses can enhance customer experience while sign
 1. Login to your account.
 2. Navigate to **Class 5 :material-menu-right: AI Agent**.
 3. Click on the blue `+` icon.
-<img src= "/class5/img/aiagent1.png">
+<img src= "/class5/img/aiagent1.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 4. A window will open up where you can create your customizable AI Agent for your customers.
-<img src= "/class5/img/aiagent2.png">
+<img src= "/class5/img/aiagent2.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 5. Fill in the following fields to setup your AI Agent:
-   1. **Name**: Give a name to your AI Agent.
-   2. **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
-   3. **Host**: It's the hosting server where your AI Agent runs and processes interactions.
-   4. **PBX Server**: Select the PBX Server from the drop-down.
-   5. **Company**: Associate the AI Agent with a customer.
+      1. **Name**: Give a name to your AI Agent.
+      2. **Destination**: Enter the Extension for the callers to call (essentially, the dial-in number).
+      3. **Host**: It's the hosting server where your AI Agent runs and processes interactions.
+      4. **PBX Server**: Select the PBX Server from the drop-down.
+      5. **Company**: Associate the AI Agent with a customer.
 
 === "Model"
 
@@ -75,6 +75,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
 === "Transcriber"
 
     + **Transcriber**: Select single or multiple transcriber for converting audio to text. You can select the transcriber depending on the selected platform.
+    + **ASR Provider** (*Automatic Speech Recognition Provider*) is a company or platform that provides speech-to-text services, converting spoken language into written text.
     + **End Turn Threshold**: A sidecar classifier that detects the probability the user has finished speaking.
         + When the classifier gives a **low value**, it means the system thinks the person is still speaking — maybe just taking a **short pause**.
         + A **high value** means the system thinks the person has **finished talking**.
@@ -86,7 +87,6 @@ With AI-driven automation, businesses can enhance customer experience while sign
     |0.9|main assume that the speech will continue|
     |1|Always Assume that there is more speech to come|
     
-    + **ASR Provider** (*Automatic Speech Recognition Provider*) is a company or platform that provides speech-to-text services, converting spoken language into written text.
     + **Answer Machine Detection Keywords**: If the AI Agent detects a phrase (any phrase entered by the user) like "Please leave a message" at the start of the call, it will automatically disconnect. **Enter multiple keywords, each on a new line (*use `Enter` to separate*)**. 
     + **Transcriber Timeout**: It defines the maximum time the system waits for a response during speech-to-text transcription before terminating the process. If no speech is detected within this period, the transcriber stops listening and times out. On timeout `<SILENT_TIMEOUT>` will be sent to the LLM.
     + **Transcriber Silence Threshold (sec)**: Defines the maximum duration (in seconds) the system will wait for a response from the ASR (Automatic Speech Recognition) engine. If no transcription is received within this threshold, the transcriber will stop waiting and proceed accordingly. <br><img src= "/class5/img/trans1234.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
@@ -124,7 +124,7 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Search Knowledge Base**: Allows the AI to query indexed documents in the Knowledge Base and return relevant information in response to a user's question.
         + **Transfer**: Allows transfering calls to another agent.
     + **Knowledge Base**: Allows you to select which indexed documents an AI Agent can reference when answering user queries. 
-    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task. [Click here](/class5/ai-agent/#task) to know more about tasks.
+    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task.
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script. <br><img src= "/class5/img/settings1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src= "/class5/img/settings2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 === "System Prompt"
