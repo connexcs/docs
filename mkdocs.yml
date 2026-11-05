@@ -202,6 +202,7 @@ nav:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
             - SIP Profile: setup/config/sip-profile.md
+            - Templates: setup/config/templates.md
         - Account Manager:
             - Commission: setup/account-manager/commission.md
             - Payment: setup/account-manager/payment.md
@@ -291,6 +292,7 @@ nav:
     - Anvil: anvil.md
     - Hearth: hearth.md
     - ConnExamine: connexamine.md
+    - ConnexCS Centralized Authentication: centralized-authentication.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
