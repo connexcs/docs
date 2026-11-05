@@ -124,7 +124,6 @@ With AI-driven automation, businesses can enhance customer experience while sign
         + **Search Knowledge Base**: Allows the AI to query indexed documents in the Knowledge Base and return relevant information in response to a user's question.
         + **Transfer**: Allows transfering calls to another agent.
     + **Knowledge Base**: Allows you to select which indexed documents an AI Agent can reference when answering user queries. 
-    + **First Task**: Select the list of pre-created tasks, so that your AI will perform this task as the first task and rest prompts after this task.
     + **Vars**<sup>TOML</sup>:  Select the variables you want pass into the ScriptForge script. <br><img src= "/class5/img/settings1.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src= "/class5/img/settings2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 === "System Prompt"
