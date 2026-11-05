@@ -352,7 +352,7 @@ Some fields don't accept just any value. A **Customer** field, for example, only
       * Tick several groups, choose a record in the **Choose value** box at the top, and click **Apply** or press `Enter`.
 3. Use the scope picker (**Sel** or **Unres**) to apply to the **Selected** groups or to every **Unresolved** group.
 
-In the example below, the **Customer** field has two value groups, **A** and **B**, each appearing in one row and marked **unresolved**. The field shows **2 to associate**.<br><img src= "/customer/img/nbu6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+In the example below, the **Customer** field has two value groups, **A** and **B**, each appearing in one row and marked **unresolved**. The field shows **2 to associate**.<br><img src= "/customer/img/nbu6.png" width ="200" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 After both groups are linked to the existing customer *demo*, they show **associated**, the field shows **Associated**, and the preview's **CUSTOMER** column shows *demo* with a connected-link icon.<br><img src= "/customer/img/nbu7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br> <br><img src= "/customer/img/nbu8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
