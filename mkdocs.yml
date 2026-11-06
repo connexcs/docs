@@ -202,6 +202,7 @@ nav:
             - Contracts: setup/config/contracts.md
             - Packages: setup/config/packages.md
             - SIP Profile: setup/config/sip-profile.md
+            - Templates: setup/config/templates.md
         - Account Manager:
             - Commission: setup/account-manager/commission.md
             - Payment: setup/account-manager/payment.md
@@ -261,7 +262,7 @@ nav:
             - Do Not Call lists: dnc.md
             - Calling Card: calling-card.md
             - Capacity Limiting: limiting-cps.md
-            - Feature List: feature-list.md
+
         - How To:
             - Locate Call-ID: guides/howto/callid.md
             - Restrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
@@ -291,6 +292,7 @@ nav:
     - Anvil: anvil.md
     - Hearth: hearth.md
     - ConnExamine: connexamine.md
+    - ConnexCS Centralized Authentication: centralized-authentication.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
@@ -397,17 +399,6 @@ nav:
         - Transfer: apps/components/transfer.md
         - Tree Select: apps/components/tree-select.md
         - Webphone: apps/components/webphone.md
-    - Contact Center:
-        - Introduction: customer-portal/cp-contact-center.md
-        - Contact Center Setup and Usage Guide: customer-portal/cp-cc-install.md
-        - Dialer Dashboard: customer-portal/cp-cc-dialer-dashboard.md
-        - Setting Up the Dialer:
-            - Introduction: customer-portal/cp-cc-setting-up-dialer.md
-            - Campaign Creation: customer-portal/cp-cc-campaign.md
-            - Agent Creation: customer-portal/cp-cc-creating-agents.md
-            - Script Creation: customer-portal/cp-cc-creating-scripts.md
-            - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
-            - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
     - WebPhone App: webphoneapp.md
 
   - Anvil IDE:
@@ -419,13 +410,25 @@ nav:
     - Anvil App Preview: anvil-ide/anvil-app-preview.md
     - Creating your First Anvil Project: anvil-ide/creating-your-first-anvil-project.md
 
-  - Anvil Apps: 
-    - Peering Hub: anvil-apps/peering-hub.md
+  - Anvil Apps:
+    - Autonomous Calling: anvil-apps/autonomous-calling.md
     - Click-2-Dial: anvil-apps/click-2-dial.md
-    - Yoco Payments: anvil-apps/yoco-payments.md
-    - DID Purchase: anvil-apps/did-purchase.md
-    - Siperb: anvil-apps/siperb.md
+    - Contact Center:
+        - Introduction: customer-portal/cp-contact-center.md
+        - Contact Center Setup and Usage Guide: customer-portal/cp-cc-install.md
+        - Dialer Dashboard: customer-portal/cp-cc-dialer-dashboard.md
+        - Setting Up the Dialer:
+            - Introduction: customer-portal/cp-cc-setting-up-dialer.md
+            - Campaign Creation: customer-portal/cp-cc-campaign.md
+            - Agent Creation: customer-portal/cp-cc-creating-agents.md
+            - Script Creation: customer-portal/cp-cc-creating-scripts.md
+            - Leadset Creation: customer-portal/cp-cc-creating-leadsets.md
+        - Agent Dialer Guide: customer-portal/cp-cc-agent-dialer-guide.md
     - Dial Phone Verification: anvil-apps/dial-phone-verification.md
+    - DID Purchase: anvil-apps/did-purchase.md
     - DID Spam Score: anvil-apps/did-spam-score.md
     - Neutrafix: anvil-apps/neutrafix.md
+    - Peering Hub: anvil-apps/peering-hub.md
+    - Siperb: anvil-apps/siperb.md
+    - Yoco Payments: anvil-apps/yoco-payments.md
     
