@@ -262,7 +262,7 @@ nav:
             - Do Not Call lists: dnc.md
             - Calling Card: calling-card.md
             - Capacity Limiting: limiting-cps.md
-            - Feature List: feature-list.md
+
         - How To:
             - Locate Call-ID: guides/howto/callid.md
             - Restrict Users to Specific Countries/Routing: guides/howto/restrict-calling-plan.md
