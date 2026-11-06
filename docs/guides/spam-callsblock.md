@@ -30,7 +30,7 @@ ConnexCS helps block these spam and scam calls.
 ## 2. Block Calls based on Dial String Prefix Set in Routing
 
 1. Go to **Setup > Advanced > Prefix Set** to create a Prefix Set. The Prefix Set defines a list of pre-defined numbers.
-[Click here](https://docs.connexcs.com/setup/advanced/prefix-set/#configure-prefix-set) to follow the steps for configuring the Prefix Set.
+[Click here](/setup/advanced/prefix-set/#create-a-prefix-set) to follow the steps for configuring the Prefix Set.
 2. After configuring the Prefix Set, go to **Management > Customer > Customer [Name] > Routing > Basic > Dial String Prefix Set**.
 3. Click on the drop-down menu to select the configured Prefix Set.
 
@@ -42,7 +42,7 @@ Global blocking lets you block calls for everyone.
 
 You can enable Global Blocking while configuring the Prefix Set.
 
-In the [**Flags**](https://docs.connexcs.com/setup/advanced/prefix-set/#flags) field, you can either select **Global Dialled Number Blacklist** or **Global CLI Blacklist**.
+In the [**Flags**](/setup/advanced/prefix-set/#create-a-prefix-set) field, you can either select **Global Dialled Number Blacklist** or **Global CLI Blacklist**.
 
 ## 3. Block Calls based on Price Limits
 

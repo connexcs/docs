@@ -7,7 +7,7 @@
 <strong>Difficulty</strong>: Beginner to Intermediate<br>
 <strong>Time Required</strong>: Approximately 20–30 minutes<br>
 <strong>Prerequisites</strong>: Active ConnexCS account with access to Compliance Tools, and permission to manage DNC lists<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs">DNO</a>, <a href="https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc">Federal DNC</a>, <a href="https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps">TPS</a><br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/advanced/prefix-set/">Prefix Set</a>, <a href="https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs">DNO</a>, <a href="https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc">Federal DNC</a>, <a href="https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps">TPS</a><br>
 <strong>Next Steps</strong>: After configuring your DNC settings, set up automated lookups via <code>Routing → Routing Table</code> filters and review additional compliance datasets under <strong>Compliance Tools</strong>.<br>
 
 </details>
@@ -16,13 +16,45 @@ In today's society, all modern call carriers should recognise and honor **Do Not
 
 Calling numbers on these lists can result in costly fines and prosecutions.
 
-Use Script Forge to manage these calls by adding the numbers to the system. If you dial a number on the list, the caller will receive an alert that the number is on the DNC list and the call won't get completed.
+To block calls to numbers on your own DNC list, store the numbers in a Prefix Set that has the **Database** flag enabled, then select that Prefix Set as the DNC list on the customer's route. If a customer dials a number on the list, the call won't get completed.
 
-## Do Not Call Check
+## Create a DNC List Using a Prefix Set Database
+
+**Step 1: Create the Prefix Set**
+
+1. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/)**.
+2. Click `+` to create a new Prefix Set and give it a **Name** (for example, `My DNC List`).
+3. Under **Flags**, enable the **Database** flag.
+4. Click **Save**.
+
+**Step 2: Add the Numbers**
+
+1. Open the Prefix Set you created.
+2. In **Data**, enter the numbers you want to block, one per line.
+3. Click **Save**.
+
+!!! tip "Keep the list up to date"
+    Add new numbers to the same Prefix Set as you receive opt-out requests. Routes that use the Prefix Set pick up the changes without needing to be reconfigured.
+
+**Step 3: Select the Prefix Set on the Customer's Route**
+
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**.
+2. Open the route under **Ingress Routing**.
+3. Go to **Security & Controls :material-menu-right: DNC List**.
+4. Select the Prefix Set you created.
+5. Click **Save**.
+
+!!! info "Federal DNC and TPS"
+    You can select your own Prefix Set alongside the [**United States Federal DNC**](https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc) and [**United Kingdom TPS**](https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps) in the same DNC List field.
+
+## Script Forge DNC Check (Legacy)
+
+!!! warning "Legacy method"
+    This method is kept for existing deployments. For new setups, use a [**Prefix Set database**](#create-a-dnc-list-using-a-prefix-set-database) instead.
 
 **Step 1: Setup the Database**
 
-[Click here](https://docs.connexcs.com/apps/architecture/database/) to know the processof Database creation.
+[Click here](https://docs.connexcs.com/apps/architecture/database/) to know the process of Database creation.
 
 **Step 2: Configure Script Forge**
 
@@ -31,7 +63,7 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 3. Select `App` for the **Type**.
 4. Click **Save**.
 5. Click the newly created App.
-6. Add the JavaScript code [**dnc-add.js**](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-check.js).
+6. Add the JavaScript code [**dnc-check.js**](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-check.js).
 7. Click the green arrow to `Save and Run`.
 
 !!! info "More on Script Forge"
@@ -49,14 +81,14 @@ Use Script Forge to manage these calls by adding the numbers to the system. If y
 
 3. Click **Save**.
 
-## Add individual customers to DNC
+### Add individual customers to DNC (Legacy)
 
 Add the following to Script Forge:
 
 1. Under **Developer :material-menu-right: Script Forge**.
 2. Add the Script **Name**.
 3. Select `App` for the **Type**.
-4. Slick **Save**.
+4. Click **Save**.
 5. Click on the newly created App.
 6. Add the JavaScript code [**dnc-add.js**](https://github.com/connexcs/scriptforge-examples/blob/master/dnc-add.js).
 7. Click the green arrow to `Save and Run`.

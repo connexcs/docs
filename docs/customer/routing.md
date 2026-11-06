@@ -151,7 +151,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Tech Prefix**: This lets you distinguish a route from an inbound party.
   When several customers share the same IP address, each customer needs an individual Tech Prefix so the switch can route calls correctly.
   It enables service providers to differentiate between several rate cards. You also have an option to generate a random number in one click.
-+ **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers.
++ + **Dial String Prefix Set**: Helpful for commonly used sets of prefixes. Rather than entering a complete list of prefixes for the UK, for example, you can create a predefined Prefix Set (defined under **Setup :material-menu-right: Advanced :material-menu-right:** [**Prefix Set**](/setup/advanced/prefix-set/)) and then select it here for appropriate customers. A Prefix Set can also be a global list or a number database. For more details, see [**Prefix Set**](/setup/advanced/prefix-set/).
 + **Dial String**: Only allows a dialled number to pass through if it matches the defined dial string (or "dial pattern"). (If you customer enters nothing, it matches everything and attempts to send all calls).
 
 + **Enabled**: You can enable and [disable](https://docs.connexcs.com/customer/routing/#disabled-routes) the routes here.
@@ -201,7 +201,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
     The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
 
-+ **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
++ **DNC (Do Not Call) List**: The customer won't be able to dial the numbers in the specified DNC list. To use your own list, select a [**Prefix Set**](/setup/advanced/prefix-set/) that has the **Database** flag enabled.
 
     Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/) or [**United Kingdom TPS**](https://www.tpsonline.org.uk/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
 

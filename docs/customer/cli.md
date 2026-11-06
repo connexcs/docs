@@ -125,11 +125,11 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **Database** (To add CLI and PAID from a database):
 
-    1. Upload a list of numbers you choose as CLI or PAID under **Developer > Database**.
-    2. Go to **Customer > Routing > CLI** add the same database under database field. Under rewrite PAID field add this database.
+    1. Create a [**Prefix Set**](/setup/advanced/prefix-set/) with the **Database** flag enabled, containing the numbers you want to use as CLI or PAID.
+    2. Go to **Customer :material-menu-right: Routing :material-menu-right: CLI** and select that Prefix Set in the **Database** field. To use it for PAID as well, select it in the **Rewrite PAID** field.
 
     !!! note
-        Make sure you select  the **Forced** option as **Yes**.
+        Make sure you select the **Forced** option as **Yes**.
 
 + **Dialed Number Match**: To route to a specific CLI, you dialled match number.
 
@@ -229,9 +229,9 @@ Filters are `AND` together, meaning that for a call to pass in this example, the
 
 #### Filter CLI from a Large List
 
-Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers under Developer :material-menu-right: [Database](https://docs.connexcs.com/developers/database/).
+To manage large lists of numbers, add them to a [**Prefix Set**](/setup/advanced/prefix-set/) with the **Database** flag enabled.
 
-You can use the following options to filter by the uploaded list. Note that the filter is a partial match.
+You can then use the following options to filter by that list. Note that the filter is a partial match.
 
 | P-Asserted-ID  | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID  | Userspace DB  |
 |------------------|-------------|-----------------------|--------|----------|---------------|
@@ -320,7 +320,7 @@ For example, if you have various DIDs (in this case, `123456`, `123567`, and `12
 
 #### Pick a CLI from a Large List
 
-Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers, you can use the following options to choose a number at random.
+To manage large lists of numbers, add them to a [**Prefix Set**](/setup/advanced/prefix-set/) with the **Database** flag enabled. You can then use the following options to choose a number from that list at random.
 
 | P-Asserted-ID | Rewrite CLI | Rewrite P-Asserted-ID | Forced | Use DID| Userspace DB  |
 |-----------------|-------------|-----------------------|--------|--------------|---------------|

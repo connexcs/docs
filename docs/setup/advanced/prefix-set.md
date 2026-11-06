@@ -1,192 +1,85 @@
-# Prefix Sets
+# Do Not Call Lists
 
 <details> <summary><strong>Document Metadata</strong></summary> <br>
 
-<strong>Category</strong>: Setup & Configuration → Advanced Settings → Prefix Set<br>
-<strong>Audience</strong>: Administrators, Engineers, Support Team<br>
-<strong>Difficulty</strong>: Intermediate<br>
-<strong>Time Required</strong>: 10–15 minutes<br>
-<strong>Prerequisites</strong>: ConnexCS account with access to Setup → Advanced → Prefix Set<br>
-<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/customer/routing/">Routing</a>, <a href="https://docs.connexcs.com/global-routing/">Global Routing</a>, <a href="https://docs.connexcs.com/routing-strategy/">Routing Strategy</a>, <a href="https://docs.connexcs.com/customer-ratecard/">Customer Rate Cards</a>, <a href="https://docs.connexcs.com/guides/howto/restrict-calling-plan/">Dial-Plan Rules</a><br>
-<strong>Next Steps</strong>: Apply the Prefix Set where it's needed: as a prefix list in routing or a rate card, as a global block or allow list through its flags, or as a number database selected in Routing → Security & Controls → DNC list or Routing → CLI → Database.<br>
+<strong>Category</strong>: Compliance & Call Filtering / DNC Management<br>
+<strong>Audience</strong>: Administrators, Compliance Teams, Support Engineers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 20–30 minutes<br>
+<strong>Prerequisites</strong>: Active ConnexCS account with access to Compliance Tools, and permission to manage DNC lists<br>
+<strong>Related Topics</strong>: <a href="https://docs.connexcs.com/setup/advanced/prefix-set/">Prefix Set</a>, <a href="https://docs.connexcs.com/dnc/#us-dno-requirements-in-connexcs">DNO</a>, <a href="https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc">Federal DNC</a>, <a href="https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps">TPS</a><br>
+<strong>Next Steps</strong>: After configuring your DNC settings, set up automated lookups via <code>Routing → Routing Table</code> filters and review additional compliance datasets under <strong>Compliance Tools</strong>.<br>
 
 </details>
 
-## Overview
+In today's society, all modern call carriers should recognise and honor **Do Not Call Lists (DNC).**
 
-A **Prefix Set** is a reusable list of telephone number prefixes or numbers. You maintain the list in one place and select it wherever it's needed, instead of entering the same entries in several configurations.
+Calling numbers on these lists can result in costly fines and prosecutions.
 
-A Prefix Set has three uses:
+To block calls to numbers on your own DNC list, store the numbers in a Prefix Set that has the **Database** flag enabled, then select that Prefix Set as the DNC list on the customer's route. If a customer dials a number on the list, the call won't get completed.
 
-| Use | What it holds | Where it takes effect |
-|---|---|---|
-| [**1. Prefix list**](#use-1-prefix-list) | Prefixes or RegEx patterns in the **Data** field | Routing → Dial String Prefix Set, Routing → Strategy → Prefix Set, Customer Rate Card → Profits → Config → Prefix Set |
-| [**2. Global lists**](#use-2-global-lists) | Prefixes or RegEx patterns, plus a global flag | System-wide, for all customers. Nothing needs to be selected elsewhere. |
-| [**3. Number database**](#use-3-number-database) | Individual numbers stored in a database | Routing → Security & Controls → DNC list, Routing → CLI → Database |
+## Create a DNC List Using a Prefix Set Database
 
-One Prefix Set can have several flags at once. For example, you can turn on both **Database** and **Global CLI Blacklist**.
+**Step 1: Create the Prefix Set**
 
-## Create a Prefix Set
+1. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: [Prefix Set](https://docs.connexcs.com/setup/advanced/prefix-set/)** and click **:material-plus:** in the top toolbar.
+2. Enter a descriptive **Name**, for example `My DNC List`.
+3. Under **Flags**, select **Database**. The **Data** field is removed from the form, because the numbers are managed in the database instead.
+4. (Optional) To let a customer view or edit the list in their portal, select the **Customer** and turn on **Customer Read** or **Customer Write**. See [Customer access](https://docs.connexcs.com/setup/advanced/prefix-set/#customer-access).
+5. Click **Save**.
 
-These fields are shared by all three uses.
+**Step 2: Add the Numbers**
 
-1. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set** and click **:material-plus:** in the top toolbar. The **Prefix Set** configuration window will appear. <br><img src="/apps/img/ps1.png" alt="ConnexCS Prefix Set page showing the Add button and configuration window" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. In the Prefix Set list, locate the Prefix Set and click **Numbers** in the **Database** column.
+2. Add the numbers you want to block, in international format without the leading `+` or `00` (for example `441234567890`):
+    + **Single number**: Click **:material-plus:** in the toolbar, enter the number in **Phone Number**, and click **Save**.
+    + **Large list**: Click **Paste / Upload**, then paste the numbers or click **Load from file** to select a `.txt` or `.csv` file (up to 20 MB). Put one number per line, or separate numbers with commas. Check the count of new entries, then click **Add number(s)**.
 
-2. Enter a descriptive **Name** that identifies the purpose of the set, for example `UK Landlines` or `Blocked CLIs`.
+For deleting numbers or emptying the database, see [Number database](https://docs.connexcs.com/setup/advanced/prefix-set/#use-3-number-database).
 
-3. Enter the entries in the **Data** field, one prefix or RegEx pattern per line. Required unless the Database flag is on. See [Use 1](#use-1-prefix-list) for examples.
+!!! tip "Keep the list up to date"
+    Add new numbers to the same Prefix Set as you receive opt-out requests. You don't need to change the route each time.
 
-4. Select a **Customer** if the set belongs to a specific customer. This is needed for [customer access](#customer-access).
+!!! warning "Emptying the database removes every number in it and can't be undone. The customer can dial those numbers again straight away."
 
-5. Select one or more **Flags**:
+**Step 3: Select the Prefix Set on the Customer's Route**
 
-   | Flag | Purpose | See |
-   |---|---|---|
-   | **Global Dialled Number Blacklist** | Blocks matching destination numbers for all customers | [Use 2](#use-2-global-lists) |
-   | **Global CLI Blacklist** | Blocks calls from matching CLIs for all customers | [Use 2](#use-2-global-lists) |
-   | **Global CLI Allow** | Lets matching CLIs bypass CLI blocking | [Use 2](#use-2-global-lists) |
-   | **Database** | Stores numbers in a database instead of the Data field | [Use 3](#use-3-number-database) |
-   | **Customer Read** | Lets the selected customer view the set in their portal | [Customer access](#customer-access) |
-   | **Customer Write** | Lets the selected customer edit the set in their portal | [Customer access](#customer-access) |
+1. Navigate to **Management :material-menu-right: Customer :material-menu-right: [Customer Name] :material-menu-right: Routing**.
+2. Open the route under **Ingress Routing**.
+3. Go to **Security & Controls :material-menu-right: DNC List**.
+4. Select the Prefix Set you created.
+5. Click **Save**.
 
-6. Click **Save**.
+!!! info "Federal DNC and TPS"
+    You can select your own Prefix Set alongside the [**United States Federal DNC**](https://docs.connexcs.com/customer/routing/#united-states-federal-do-not-call-dnc) and [**United Kingdom TPS**](https://docs.connexcs.com/customer/routing/#united-kingdom-telephone-preference-service-tps) in the same DNC List field.
 
-## Use 1: Prefix list
+## Do Not Originate (DNO) List Blocking
 
-A prefix list is a Prefix Set whose **Data** field holds the prefixes or patterns. Select it in any of these places:
+A DNO list is a collection of phone numbers that are flagged as never being used for an outgoing contact.
 
-| Where | Path | What it does |
-|---|---|---|
-| **Customer routing** | **Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Basic :material-menu-right: Dial String Prefix Set**. See [Customer Routing](https://docs.connexcs.com/customer/routing/#basic). | Only dialled numbers that match the set are allowed on this route. |
-| **Global routing** | **Routing :material-menu-right: Routing Global :material-menu-right: Basic :material-menu-right: Dial String Prefix Set**. See [Global Routing](https://docs.connexcs.com/global-routing/). | Only dialled numbers that match the set are allowed on routes that use this template. |
-| **Routing strategy** | **Customer :material-menu-right: Routing :material-menu-right: Ingress Routing :material-menu-right: Strategy :material-menu-right: Prefix Set**. See [Routing Strategy](https://docs.connexcs.com/routing-strategy/). | Applies the selected routing strategy to matching numbers. Select **Drop** as the strategy to block them. |
-| **Customer rate card** | **Customer Rate Cards :material-menu-right: Profits :material-menu-right: Add :material-menu-right: Config :material-menu-right: Prefix Set**. See [Customer Rate Cards](https://docs.connexcs.com/customer-ratecard/#main-tab). | The profit rule applies only to the prefixes in the set. |
+A list of phone numbers that have been found to be spoofed and used to enable illegal, fraudulent, or other malicious traffic is a DNO list.
 
-### Example entries
+These are unassigned or unallocated numbers as well as inbound-only lines that should never be used to make calls.
 
-The Data field accepts plain text, regular expressions, or a mix of both. Enter one entry per line.
+DNO blocks the Do Not Originate Numbers and Non-allocated number ranges.
 
-**Plain-text prefixes**
+Following are the steps to enable the DNO list.
 
-```text
-441
-442
-```
+1. Go to **Management :material-menu-right: Customer** and select the customer you want to enable the DNO list for.
+2. Then go to **Routing :material-menu-right: Security & Controls** and from the drop-down you can enable the DNO list.
+3. The DNO does two things when its enabled. First, it blocks the DNO numbers from the Federal Government and second, it blocks the numbers we know which don't exist.
+4. You should enable the **FTC DNC Report ANI Block (USA)** option. This blocks the calls which have been reported as originating invalid numbers.
+5. Click on `Save`.
+<img src= "/guides/img/dno.jpg" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-Matches dial strings beginning with `441` or `442`.
+### US DNO Requirements in ConnexCS
 
-**Regular expression**
+According to [Federal Register Vol. 87, No. 222](https://www.govinfo.gov/content/pkg/FR-2022-11-18/pdf/2022-25148.pdf?utm_medium=email&utm_campaign=subscription+mailing+list&utm_source=federalregister.gov), DNO list should contain the following.
 
-```regex
-^44(1|2)
-```
+1. Known DNO numbers
+2. Non-allocated ranges
+3. Allocated ranges but unused numbers
 
-Matches the same dial strings as above:
+The [FCC](https://www.ftc.gov/news-events/topics/do-not-call-registry) decided against requiring the use of a particular list but will still let gateway providers use any DNO list as long as it's reasonable.
 
-- `^` matches the beginning of the dial string.
-- `44` matches the digits `44`.
-- `(1|2)` matches either `1` or `2`.
-
-**Combination: UK landlines and Canadian area codes**
-
-```text
-441
-442
-^1(204|226|236|249|250|289|306|343|403|416|418|438|450|506|514|519|579|581|587|604|613|647|705|709|778|780|807|819|867|902|905)
-```
-
-Combines UK prefixes with a regular expression matching the listed Canadian area codes.
-
-!!! Tip "Test RegEx patterns against sample numbers and your numbering plan before applying a Prefix Set to live routing. A pattern that's too broad can allow or block more traffic than intended."
-
-## Use 2: Global lists
-
-The three global flags turn a Prefix Set into a system-wide list. They apply to **all customers**, and **nothing needs to be selected anywhere else**: saving the Prefix Set with the flag on is enough.
-
-- **Global Dialled Number Blacklist**: Any call to a destination number that matches the set is rejected, whichever customer places it.
-- **Global CLI Blacklist**: Any call whose CLI (caller ID) matches the set is rejected, whichever customer places it.
-- **Global CLI Allow**: A call whose CLI matches the set bypasses CLI blocking, including DID block-source rules and Spam Scout scoring. It also overrides the Global CLI Blacklist.
-
-!!! Warning "Global flags affect every customer on the system immediately. Check the entries carefully before saving, and use Global CLI Allow sparingly because it disables call screening for matching CLIs."
-
-## Use 3: Number database
-
-Turn on the **Database** flag when you need a list of individual numbers rather than prefixes, typically a large list that you upload. When the flag is on, the **Data** field is removed from the form and a note says that numbers are managed in the Database. <br><img src="/apps/img/ps3.png" alt="Prefix Set form with the Database flag selected" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-Select the database in either of these places:
-
-| Where | Path | What it does |
-|---|---|---|
-| **DNC list** | **Routing :material-menu-right: Security & Controls :material-menu-right: DNC list** | The customer can't dial the numbers in the database. |
-| **CLI database** | **Routing :material-menu-right: CLI :material-menu-right: Database** | The numbers are used as the CLI or PAID pool, selected randomly, by performance, or persistently. |
-
-### Open the database
-
-1. Navigate to **Setup :material-menu-right: Advanced :material-menu-right: Prefix Set** and locate the Prefix Set.
-
-2. In the **Database** column, click **Numbers**. The database page opens and shows the number of entries stored. <br><img src="/apps/img/ps4.png" alt="Prefix Set list showing the Numbers link" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-The toolbar lets you add numbers, paste or upload numbers, refresh the list, delete selected entries, or empty the database.
-
-### Add a single number
-
-1. In the database, click **:material-plus:** in the toolbar. The **Add Number** window appears.
-
-2. Enter the number in the **Phone Number** field, in international format without the leading `+` or `00` (for example `441234567890`). <br><img src="/apps/img/ps5.png" alt="Add Number window" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-3. Click **Save** and check that the number appears in the list.
-
-### Paste or upload numbers
-
-For large lists, bulk upload is quicker than adding numbers one at a time.
-
-1. In the database, click **Paste / Upload** in the toolbar. The **Paste / Upload Numbers** window appears.
-
-2. Paste the numbers into the text area, or click **Load from file** to select a `.txt` or `.csv` file (up to 20 MB). Put one number per line, or separate numbers with commas. Use international format without the leading `+` or `00`:
-
-   ```text
-   441234567890
-   442345678090
-   ```
-
-3. Check the count of new entries shown in the window.
-
-4. Click **Add number(s)**. <br><img src="/apps/img/ps6.png" alt="Paste or Upload Numbers window showing the text area and file upload option" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-### Delete selected numbers
-
-1. In the database, select the checkbox beside each number to delete.
-
-2. Click the **Delete** (trash) icon in the toolbar. A confirmation window shows how many entries are selected.
-
-3. Check the count, then click **Delete**. Only the selected numbers are removed. <br><img src="/apps/img/ps7.png" alt="Delete confirmation window" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-### Empty the database
-
-1. In the database, click **Empty Database** in the toolbar. A confirmation window shows the total number of entries that will be removed. <br><img src="/apps/img/ps8.png" alt="Empty Database confirmation window warning that all numbers will be removed" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-
-2. Check that you're in the correct database, then click **Empty Database**.
-
-!!! Warning "Emptying the database removes every number in it and can't be undone. If the database is in use as a DNC list, the customer can dial those numbers again straight away."
-
-## Customer access
-
-To share a Prefix Set with a customer, select the customer in the **Customer** field, then turn on one or both access flags:
-
-- **Customer Read**: The customer can see the Prefix Set and its entries in their customer portal, but can't change them.
-- **Customer Write**: The customer can add, edit, and remove entries in the Prefix Set from their customer portal.
-
-Grant only the access the customer needs. Customer Read and Customer Write control portal access only; they don't block or allow any calls.
-
-## Troubleshooting
-
-| Issue | Resolution |
-|---|---|
-| The Prefix Set can't be saved | Check that **Name** is filled in, and that **Data** is filled in unless the Database flag is on. |
-| A number doesn't match the Prefix Set | Check the prefix, number format, and RegEx syntax. |
-| The Data field is missing | The Database flag is on. Manage numbers through the **Numbers** link instead. |
-| The Numbers link is unavailable | Turn on the **Database** flag. |
-| A global block or allow list has no effect | Check that the correct global flag is selected and that the entries match the number format in the call. |
-| A customer can't view the Prefix Set | Check the selected **Customer** and the **Customer Read** flag. |
-| A customer can't modify the Prefix Set | Check the **Customer Write** flag. |
-| Bulk upload doesn't add the expected numbers | Check the file type, separators, number format, and the new-entry count shown before confirming. |
+[dnc-3]: /misc/img/dnc-3.png "DNC-3" style="border: 2px solid #4472C4; border-radius: 8px;"
