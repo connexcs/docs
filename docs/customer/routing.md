@@ -144,7 +144,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following three ways:
 
-    + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
+    + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.).
     + **Extension**: (uses SIP users in Customer :material-menu-right: Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
     + **Customer IP**: (uses IPs in Customer :material-menu-right: Authconfigured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
 
@@ -155,14 +155,29 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Dial String**: Only allows a dialled number to pass through if it matches the defined dial string (or "dial pattern"). (If you customer enters nothing, it matches everything and attempts to send all calls).
 
 + **Enabled**: You can enable and [disable](https://docs.connexcs.com/customer/routing/#disabled-routes) the routes here.
++ **Auto (*Only when you select Internal*)**: It generates dial strings from all possible internal extensions.
++ **PBX Server (*Only when you select Internal*)**: A private phone system that connects internal extensions and routes calls to external networks.
++ **Inter Customer (*Only when you select Extension*)**: Allows this customer to call extensions belonging to other customers on the same account.
 
 <img src= "/customer/img/rbasic.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Advanced
 
 + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
++ **Disable Topology Hiding:** Passes SIP headers such as Via, Record-Route and Contact through unchanged, exposing the internal network addresses that ConnexCS would otherwise hide.
 + **Lock** (Allow): Ensures calls are only routed through specified carriers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
+  
+The two options are mutually exclusive, so the UI hides Exclude once Lock is on.
+
+- **Lock** is an **allowlist**. Only the carriers you specify are used, and everything else is already blocked.
+- **Exclude** is a **denylist**. Every carrier is available except the ones you list.
+
+With Lock enabled, every carrier not in the lock list is already excluded, so a separate Exclude list would do nothing. If you excluded a carrier that is in the lock list, the two settings would contradict each other. Hiding Exclude prevents both cases.
+
+You could add a note to the docs:
+
+> **Note:** **Lock** and **Exclude** are mutually exclusive. When **Lock** is enabled, **Exclude** is hidden, because only the locked carriers can be used.
 
 !!! Info "Call Routing Process"
     ```mermaid
@@ -186,7 +201,16 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     :material-menu-right: `High - Block Calls or Account`
 
 + **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
-+ **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
++ **Redial Count Mode:** Chooses which calls count towards **Redial Max Count**.
+
+| Option | Description |
+| --- | --- |
+| **Count Connected** (default) | Counts only answered calls. Unanswered, busy or failed attempts don't count towards the limit. |
+| **Count Attempts** | Counts every call attempt, answered or not. |
+
+> **Example:** With **Redial Max Count** set to `3`, **Count Connected** allows unlimited attempts until 3 calls have been answered. **Count Attempts** blocks further calls after 3 attempts, even if none were answered.
+
+Use **Count Attempts** to stop repeated dialling of unreachable numbers, which is common with auto-dialers. Use **Count Connected** to limit how often the same contact is actually reached.+ **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
 
 !!! Example "Example: Redial Max Count and Redial Max Period"
     For example, if you have set Redial Max Count (maximum redials in a given time period) as 4 and Redial Max Period as 24 hours for your customer, then your customer can **resume redialling after 24 hours after the last call "starts"/last call was placed**.
