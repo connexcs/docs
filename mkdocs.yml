@@ -293,6 +293,7 @@ nav:
     - Hearth: hearth.md
     - ConnExamine: connexamine.md
     - ConnexCS Centralized Authentication: centralized-authentication.md
+    - ConnexCS Terminal: cliterminal.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
