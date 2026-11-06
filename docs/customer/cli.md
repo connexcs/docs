@@ -125,7 +125,7 @@ The **P-Asserted-ID** manipulation uses the same syntax as the Replace CLI.
 
 + **Database** (To add CLI and PAID from a database):
 
-    1. Upload a list of numbers you choose as CLI or PAID under **Developer > Database**.
+    1. Upload a list of numbers you choose as CLI or PAID under **Setup > Advanced > Prefix Set**.
     2. Go to **Customer > Routing > CLI** add the same database under database field. Under rewrite PAID field add this database.
 
     !!! note
@@ -229,7 +229,7 @@ Filters are `AND` together, meaning that for a call to pass in this example, the
 
 #### Filter CLI from a Large List
 
-Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers under Developer :material-menu-right: [Database](https://docs.connexcs.com/developers/database/).
+Our Userspace database allows you to manage large lists of numbers. Once you upload the numbers under [**Setup > Advanced > Prefix Set**(/setup/advanced/#prefix-set)].
 
 You can use the following options to filter by the uploaded list. Note that the filter is a partial match.
 
@@ -296,9 +296,7 @@ In this example, approximately 50% of the calls are sent with `111111111111` and
 | `222222222222` |||| Yes| Disabled | None|
 
 !!! tip "Large Numbers of Random CLIs"
-    To filter or replace calls with a larger number of CLIs or to perform more complex rules.
-
-    Use Scriptforge to create a custom application that reads from a database to achieve far more comprehensive solutions.
+    To filter or replace calls with a larger number of CLIs or to perform more complex rules. [Click here](/customer/cli/#cli-pool-pooled-usage).
 
 #### Pick CLI from DID
 
@@ -387,6 +385,10 @@ persist=600 //value is in seconds
     - Continue sequentially with CLI 3 through CLI 10, each active for the next 10 minutes
 
     After all 10 CLIs complete their respective 10-minute cycles, the system seamlessly returns to CLI 1, initiating another 10-minute period. This cyclic pattern repeats consistently.
+
+##### CLI Pool
+
+Please [click here](/customer/cli/#cli-pool-pooled-usage) to know about the pooled usage.
 
 ### Manipulate CLI
 
