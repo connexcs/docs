@@ -211,12 +211,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://raw.githubusercontent.com/connexcs/docs/refs/heads/master/docs/apps/architecture/cxUserspace.md</loc>
-    <lastmod>2026-01-14T14:54:50+05:30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://raw.githubusercontent.com/connexcs/docs/refs/heads/master/docs/apps/architecture/cxWebSocket.md</loc>
     <lastmod>2026-01-14T14:54:50+05:30</lastmod>
     <changefreq>weekly</changefreq>
