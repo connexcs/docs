@@ -225,6 +225,12 @@ Use **Count Attempts** to stop repeated dialling of unreachable numbers, which i
 
     The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
 
++ **Redial Max Period**: **Redial Max Period:** The time window over which **Redial Max Count** is measured. When the period ends, the count resets.
+
+> **Example:** With **Redial Max Count** set to `3` and **Redial Max Period** set to `1 hour`, a number can be called 3 times in any hour. Further calls in that hour are blocked until the period resets.
+
+**Redial Count Mode** decides which calls count towards the limit: answered calls only, or every attempt.
+
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
     Apart from your own DNC list you can also choose [**United States Federal DNC**](https://www.donotcall.gov/) or [**United Kingdom TPS**](https://www.tpsonline.org.uk/). Choosing not to accept telemarketing calls is possible because of the National Do Not Call Registry.
@@ -276,49 +282,47 @@ Use **Count Attempts** to stop repeated dialling of unreachable numbers, which i
     This enables accurate routing, blocking, and classification across both **USA (NANPA)** numbers and **International numbers**.
 
 2. **USA Number Lookup**
- 
+
       a. **Line-Type Lookup (LRN Database)**: The system first checks the LRN line-type database for the exact number. <br> The system checks the LRN/line-type database for the exact phone number. </br> If the number exists, the classification returned here is treated as the primary and most accurate source.
- 
-!!! Example "Example 1"
-    `201-555-0198` → Found in LRN → Fixed. <br>If the number is not present in LRN, the system falls back to the NANPA prefix (range type)</br>.
- 
-!!! Example "Example 2"
-    `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
- 
 
-b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
-
-!!! Example "Example"
-    `212-XXX-XXXX`  → RBOC
+        !!! Example "Example 1"
+            `201-555-0198` → Found in LRN → Fixed. <br>If the number is not present in LRN, the system falls back to the NANPA prefix (range type)</br>.
  
+        !!! Example "Example 2"
+            `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
+
+      b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
+
+        !!! Example "Example"
+            `212-XXX-XXXX`  → RBOC
+
 c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
 
-!!! Example "Example 1"
-    a. `+91 98XXXXXXX` → Mobile <br>b. `+971 4XXXXXXX` → Fixed</br>
+        !!! Example "Example 1"
+            a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed</br>
 
 3. **Use in Block Destination Type**
 
       a. **USA Numbers**
- 
+
 i. **LRN Number type check**:
 
 Perform Line-Type Check (LRN database).
 
 If not found → NANPA range type is used.
- 
+
 **Output Destination Type:- (Mobile / Fixed / VoIP/OTHER)**
- 
- 
+
 ii. **Prefix type check**:
 
 Perform USA Range Type check.
- 
+
 **Output Destination type :- CAP/ CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS**.
- 
+
 iii. **For International Numbers**:
 
 Directly apply the International Number Plan classification.
- 
+
 **Output Destination Type (FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES)**
 
 #### United States Federal Do Not Call (DNC)
@@ -374,7 +378,8 @@ To enable TPS for a customer account:
     3. TPS Package is **free-of-charge**.
 
 ##### Reporting and Attribution (Reseller/White-Label Scenarios)
-If a customer resells TPS lookups (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply. 
+
+If a customer resells TPS lookups (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply.
 
 The reporting system typically records which account performed the lookups, and ConnexCS will report totals attributed to the account that performed the queries.
 
@@ -489,6 +494,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
+
 |              |**With RTP Proxy**|**Without RTP Proxy**|
 |--------------|:----------------:|--------------------:|
 |**Audio Path**|Indirect|Direct|
@@ -534,7 +540,15 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
 
++ **Recording Duration (Seconds):** The maximum length of a call recording, in seconds. When the limit is reached, recording stops but the call continues.
+
+> **Example:** With **Recording Duration** set to `300`, only the first 5 minutes of each recorded call are saved.
+
 + **Transcribe:** Its a voice to text conversion feature. [Click here](https://docs.connexcs.com/transcription/#introduction) to know more about this service.
+
++ **Transcribe Duration (Seconds):** The maximum length of a call to transcribe, in seconds. Speech after the limit isn't transcribed, but the call continues.
+
+> **Example:** With **Transcribe Duration** set to `120`, only the first 2 minutes of each call are transcribed.
 
 + **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
 
@@ -542,7 +556,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
 + **Generate RTCP**: Enabling this feature generates RTCP packets, while disabling it allows them to pass through undisturbed.
 
-+ + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
++ **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
     + **Types of Permissions include**:
         + **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that weren't included in the carrier's initial codec list won't be taken into consideration.
@@ -736,7 +750,6 @@ It enhances call routing by tracking the validity of dialed numbers over a 30-da
 !!! failure "Disadvantages of ASR"
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Doesn't offer improvements for all destinations.
-
 
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case" style="border: 2px solid #4472C4; border-radius: 8px;"
 
