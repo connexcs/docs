@@ -173,7 +173,7 @@ The two options are mutually exclusive, so the UI hides Exclude once Lock is on.
 - **Lock** is an **allowlist**. Only the carriers you specify are used, and everything else is already blocked.
 - **Exclude** is a **denylist**. Every carrier is available except the ones you list.
 
-With Lock enabled, every carrier not in the lock list is already excluded, so a separate Exclude list would do nothing. If you excluded a carrier that is in the lock list, the two settings would contradict each other. Hiding Exclude prevents both cases.
+With Lock enabled, every carrier not in the lock list is already excluded, so a separate Exclude list would do nothing. If you excluded a carrier that's in the lock list, the two settings would contradict each other. Hiding Exclude prevents both cases.
 
 You could add a note to the docs:
 
@@ -296,7 +296,7 @@ Use **Count Attempts** to stop repeated dialling of unreachable numbers, which i
         !!! Example "Example"
             `212-XXX-XXXX`  → RBOC
 
-c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
+c. For **non-USA numbers**, NANPA and LRN don't apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
 
         !!! Example "Example 1"
             a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed</br>
