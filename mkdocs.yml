@@ -350,7 +350,6 @@ nav:
                 - cxRest: apps/architecture/cxRest.md
                 - cxRouter: apps/architecture/cxRouter.md
                 - cxSend: apps/architecture/cxSend.md
-                - cxUserspace: apps/architecture/cxUserspace.md
                 - cxWebSocket: apps/architecture/cxWebSocket.md
             - Live transcription via WebSocket: apps/architecture/livetranscription.md
 
