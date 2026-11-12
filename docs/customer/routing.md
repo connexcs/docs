@@ -144,7 +144,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **Rate Card**: Also known as Tariff, this allows you to select the rate card used on a customer's account. You can handle these calls in the following three ways:
 
-    + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.). If selected, the "Auto" option becomes available, which will generate dial strings from all possible internal extensions.
+    + **Internal**: Send a call to the ConnexCS Class5 (Voice Mail, Interactive Voice Response (IVR), etc.).
     + **Extension**: (uses SIP users in Customer :material-menu-right: Auth configured SIP Users) Send a call to a Session Initiation Protocol (SIP) Authenticated user on the account.
     + **Customer IP**: (uses IPs in Customer :material-menu-right: Authconfigured IPs) Send a call from an agent back to the customer's Private Branch eXchange (PBX), using either the Tech Prefix (e.g.: #9) or a Dial String (e.g.: `^[0-9](4)$`).
 
@@ -155,14 +155,29 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 + **Dial String**: Only allows a dialled number to pass through if it matches the defined dial string (or "dial pattern"). (If you customer enters nothing, it matches everything and attempts to send all calls).
 
 + **Enabled**: You can enable and [disable](https://docs.connexcs.com/customer/routing/#disabled-routes) the routes here.
++ **Auto (*Only when you select Internal*)**: It generates dial strings from all possible internal extensions.
++ **PBX Server (*Only when you select Internal*)**: A private phone system that connects internal extensions and routes calls to external networks.
++ **Inter Customer (*Only when you select Extension*)**: Allows this customer to call extensions belonging to other customers on the same account.
 
 <img src= "/customer/img/rbasic.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 ### Advanced
 
 + **On Net Call Routing**: Enabling this flag determines if a call should be routed internally  between customers to DID's.
++ **Disable Topology Hiding:** Passes SIP headers such as Via, Record-Route and Contact through unchanged, exposing the internal network addresses that ConnexCS would otherwise hide.
 + **Lock** (Allow): Ensures calls are only routed through specified carriers.
 + **Exclude** (Deny): Exclude access to one or more rate cards in the list of available providers.
+  
+The two options are mutually exclusive, so the UI hides Exclude once Lock is on.
+
+- **Lock** is an **allowlist**. Only the carriers you specify are used, and everything else is already blocked.
+- **Exclude** is a **denylist**. Every carrier is available except the ones you list.
+
+With Lock enabled, every carrier not in the lock list is already excluded, so a separate Exclude list would do nothing. If you excluded a carrier that's in the lock list, the two settings would contradict each other. Hiding Exclude prevents both cases.
+
+You could add a note to the docs:
+
+> **Note:** **Lock** and **Exclude** are mutually exclusive. When **Lock** is enabled, **Exclude** is hidden, because only the locked carriers can be used.
 
 !!! Info "Call Routing Process"
     ```mermaid
@@ -177,6 +192,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 ### Security & Controls
 
 + **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
+
 + **Fraud Mode**: Specify how the profile will gets into application, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
 
     :material-menu-right: `Disabled`
@@ -186,6 +202,18 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     :material-menu-right: `High - Block Calls or Account`
 
 + **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
+
++ **Redial Count Mode:** Chooses which calls count towards **Redial Max Count**.
+
+| Option | Description |
+| --- | --- |
+| **Count Connected** (default) | Counts only answered calls. Unanswered, busy or failed attempts don't count towards the limit. |
+| **Count Attempts** | Counts every call attempt, answered or not. |
+
+> **Example:** With **Redial Max Count** set to `3`, **Count Connected** allows unlimited attempts until 3 calls have been answered. **Count Attempts** blocks further calls after 3 attempts, even if none were answered.
+
+Use **Count Attempts** to stop repeated dialling of unreachable numbers, which is common with auto-dialers. Use **Count Connected** to limit how often the same contact is actually reached.
+
 + **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
 
 !!! Example "Example: Redial Max Count and Redial Max Period"
@@ -200,6 +228,12 @@ View and configure existing routes on the Routing tab in the Customer card. To c
     |Redial number 4|08:00 PM|
 
     The last(4<sup>th</sup> call) redial call was placed at 08:00 PM, so the customer can start redialing at 08:00 PM the next day.
+
++ **Redial Max Period**: **Redial Max Period:** The time window over which **Redial Max Count** is measured. When the period ends, the count resets.
+
+> **Example:** With **Redial Max Count** set to `3` and **Redial Max Period** set to `1 hour`, a number can be called 3 times in any hour. Further calls in that hour are blocked until the period resets.
+
+**Redial Count Mode** decides which calls count towards the limit: answered calls only, or every attempt.
 
 + **DNC (Do Not Call) List**: The customer won't be able to able to dial the numbers in the specified DNC list. You can add the list of numbers in the [**Database**](https://docs.connexcs.com/developers/database/).
 
@@ -228,7 +262,7 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 + **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI / ANI's.
 
-+ **FTC Log DNC Only (USA)**: When this option is enabled, the system checks whether the dialed number is listed in the FTC Do Not Call (DNC) registry and records this information in the meta column of the CDR. <br> This feature is for **monitoring purposes** only, it does not block or restrict calls.</br> It allows you to analyze and measure the percentage of traffic that falls under DNC, without affecting call routing or completion.
++ **FTC Log DNC Only (USA)**: When this option is enabled, the system checks whether the dialed number is listed in the FTC Do Not Call (DNC) registry and records this information in the meta column of the CDR. <br> This feature is for **monitoring purposes** only, it doesn't block or restrict calls.</br> It allows you to analyze and measure the percentage of traffic that falls under DNC, without affecting call routing or completion.
 
 + **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
 
@@ -246,56 +280,69 @@ View and configure existing routes on the Routing tab in the Customer card. To c
 
 #### Destination Type Lookup & Fallback Logic — USA and International
 
-1. **Overview**
+## 1. Overview
 
-    ConnexCS uses a multi-layered lookup mechanism to determine the destination type for any given phone number.
-    This enables accurate routing, blocking, and classification across both **USA (NANPA)** numbers and **International numbers**.
+ConnexCS uses a multi-layered lookup mechanism to determine the destination type for any given phone number. This enables accurate routing, blocking, and classification across both **USA (NANPA) numbers** and **international numbers**.
 
-2. **USA Number Lookup**
- 
-      a. **Line-Type Lookup (LRN Database)**: The system first checks the LRN line-type database for the exact number. <br> The system checks the LRN/line-type database for the exact phone number. </br> If the number exists, the classification returned here is treated as the primary and most accurate source.
- 
-!!! Example "Example 1"
-    `201-555-0198` → Found in LRN → Fixed. <br>If the number is not present in LRN, the system falls back to the NANPA prefix (range type)</br>.
- 
-!!! Example "Example 2"
+## 2. Number Lookup Mechanism
+
+### 2.1 USA Number Lookup
+
+**a. Line-Type Lookup (LRN Database)**
+
+The system first checks the LRN line-type database for the exact phone number. If the number exists, the classification returned by this lookup is treated as the primary and most accurate source.
+
+!!! example "Example 1"
+    `201-555-0198` → Found in LRN → Fixed
+
+If the number isn't present in the LRN database, the system falls back to the NANPA prefix (range type).
+
+!!! example "Example 2"
     `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
- 
 
-b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
+**b. Prefix Type Check (NPANXX(X) Range Holder)**
 
-!!! Example "Example"
-    `212-XXX-XXXX`  → RBOC
- 
-c. For **non-USA numbers**, NANPA and LRN do not apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
+If the number doesn't exist in the line-type database, the system falls back to the USA Range Type. LRN is not used for this check.
 
-!!! Example "Example 1"
-    a. `+91 98XXXXXXX` → Mobile <br>b. `+971 4XXXXXXX` → Fixed</br>
+!!! example "Example"
+    `212-XXX-XXXX` → RBOC
 
-3. **Use in Block Destination Type**
+### 2.2 International Number Lookup
 
-      a. **USA Numbers**
- 
-i. **LRN Number type check**:
+For **non-USA numbers**, NANPA and LRN don't apply. The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.
 
-Perform Line-Type Check (LRN database).
+!!! example "Examples"
+    - `+91 98XXXXXXX` → Mobile
+    - `+971 4XXXXXXX` → Fixed
 
-If not found → NANPA range type is used.
- 
-**Output Destination Type:- (Mobile / Fixed / VoIP/OTHER)**
- 
- 
-ii. **Prefix type check**:
+## 3. Use in Block Destination Type
 
-Perform USA Range Type check.
- 
-**Output Destination type :- CAP/ CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS**.
- 
-iii. **For International Numbers**:
+### 3.1 USA Numbers
+
+**a. LRN Number Type Check**
+
+- Perform a line-type check using the LRN database.
+- If the number is not found, use the NANPA range type.
+
+**Output Destination Type:**
+
+`Mobile / Fixed / VoIP / OTHER`
+
+**b. Prefix Type Check**
+
+Perform a USA Range Type check.
+
+**Output Destination Type:**
+
+`CAP / CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS`
+
+### 3.2 International Numbers
 
 Directly apply the International Number Plan classification.
- 
-**Output Destination Type (FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES)**
+
+**Output Destination Type:**
+
+`FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES`
 
 #### United States Federal Do Not Call (DNC)
 
@@ -350,7 +397,8 @@ To enable TPS for a customer account:
     3. TPS Package is **free-of-charge**.
 
 ##### Reporting and Attribution (Reseller/White-Label Scenarios)
-If a customer resells TPS lookups (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply. 
+
+If a customer resells TPS lookups (for example, by creating a package and selling lookup access to their customers), reporting obligations may still apply.
 
 The reporting system typically records which account performed the lookups, and ConnexCS will report totals attributed to the account that performed the queries.
 
@@ -465,6 +513,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
 !!! info "RTP Proxy distinctions"
     When a call gets established between the customer and the provider, audio can be setup in one of two ways:
+
 |              |**With RTP Proxy**|**Without RTP Proxy**|
 |--------------|:----------------:|--------------------:|
 |**Audio Path**|Indirect|Direct|
@@ -510,7 +559,15 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 !!! tip "The Call Recording setting is disabled"
     You need to enable the feature first on the account in **Setup :material-menu-right: Settings :material-menu-right: [Packages](https://docs.connexcs.com/setup/settings/account/#packages)** before it gets enabled here for individual customers.
 
++ **Recording Duration (Seconds):** The maximum length of a call recording, in seconds. When the limit is reached, recording stops but the call continues.
+
+> **Example:** With **Recording Duration** set to `300`, only the first 5 minutes of each recorded call are saved.
+
 + **Transcribe:** Its a voice to text conversion feature. [Click here](https://docs.connexcs.com/transcription/#introduction) to know more about this service.
+
++ **Transcribe Duration (Seconds):** The maximum length of a call to transcribe, in seconds. Speech after the limit isn't transcribed, but the call continues.
+
+> **Example:** With **Transcribe Duration** set to `120`, only the first 2 minutes of each call are transcribed.
 
 + **Block DTMF:** This option allows you to either `pass` or `block` DTMF through your calls.
 
@@ -518,7 +575,7 @@ Enter the number  of channels allowed for transcoding. This is a limited option.
 
 + **Generate RTCP**: Enabling this feature generates RTCP packets, while disabling it allows them to pass through undisturbed.
 
-+ + **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
++ **RTP Codec**: This fields allows you to have more specific control over the Codecs you choose for your system. After the selection you can assign various **Permissions** to the Codecs you select.
 
     + **Types of Permissions include**:
         + **Except**: This permission allows you to block all the codecs apart from the ones in the Whitelist. Codecs that weren't included in the carrier's initial codec list won't be taken into consideration.
@@ -712,7 +769,6 @@ It enhances call routing by tracking the validity of dialed numbers over a 30-da
 !!! failure "Disadvantages of ASR"
     + Marginal impact on your NER due to false positive matches. This is usually kept within tolerances of < 0.1%.
     + Doesn't offer improvements for all destinations.
-
 
 [techprefix-usecase]: /customer/img/techprefix-usecase.png "Tech Prefix Use Case" style="border: 2px solid #4472C4; border-radius: 8px;"
 
