@@ -192,6 +192,7 @@ You could add a note to the docs:
 ### Security & Controls
 
 + **Fraud Profile**: Apply one of the Fraud Profiles configured under **Setup :material-menu-right: Advanced :material-menu-right: [Fraud Profile](https://docs.connexcs.com/setup/advanced/fraud/#setup-fraud-detection)**.
+
 + **Fraud Mode**: Specify how the profile will gets into application, this is dependent on the [**Fraud Mode Thresholds**](https://docs.connexcs.com/setup/advanced/fraud/#fraud-mode) configured in the Profile.
 
     :material-menu-right: `Disabled`
@@ -201,6 +202,7 @@ You could add a note to the docs:
     :material-menu-right: `High - Block Calls or Account`
 
 + **Redial Max Count**: This a smart limitation feature that allows the carrier to restrict the maximum number of times their customers can redial. After reaching this limit, customers must wait for a certain amount of time defined by the **Redial Max Period**. For example, you select 5 for this field, it means your customer can dial only 5 times.
+
 + **Redial Count Mode:** Chooses which calls count towards **Redial Max Count**.
 
 | Option | Description |
@@ -210,7 +212,9 @@ You could add a note to the docs:
 
 > **Example:** With **Redial Max Count** set to `3`, **Count Connected** allows unlimited attempts until 3 calls have been answered. **Count Attempts** blocks further calls after 3 attempts, even if none were answered.
 
-Use **Count Attempts** to stop repeated dialling of unreachable numbers, which is common with auto-dialers. Use **Count Connected** to limit how often the same contact is actually reached.+ **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
+Use **Count Attempts** to stop repeated dialling of unreachable numbers, which is common with auto-dialers. Use **Count Connected** to limit how often the same contact is actually reached.
+
++ **Redial Max Period**: It refers to the duration of time during which a customer is restricted from making further redial attempts to the same number after reaching the maximum redial count.
 
 !!! Example "Example: Redial Max Count and Redial Max Period"
     For example, if you have set Redial Max Count (maximum redials in a given time period) as 4 and Redial Max Period as 24 hours for your customer, then your customer can **resume redialling after 24 hours after the last call "starts"/last call was placed**.
@@ -258,7 +262,7 @@ Use **Count Attempts** to stop repeated dialling of unreachable numbers, which i
 
 + **FTC DNC Report ANI Block (USA)**: When `Enabled`, ConnexCS will take a copy of FTC data (using the [FCC's **Do Not Call (DNC) Reported Calls Data API**](https://www.ftc.gov/developer/api/v0/endpoints/do-not-call-dnc-reported-calls-data-api)) and add it to the system. We can then block callers from known spammer CLI / ANI's.
 
-+ **FTC Log DNC Only (USA)**: When this option is enabled, the system checks whether the dialed number is listed in the FTC Do Not Call (DNC) registry and records this information in the meta column of the CDR. <br> This feature is for **monitoring purposes** only, it does not block or restrict calls.</br> It allows you to analyze and measure the percentage of traffic that falls under DNC, without affecting call routing or completion.
++ **FTC Log DNC Only (USA)**: When this option is enabled, the system checks whether the dialed number is listed in the FTC Do Not Call (DNC) registry and records this information in the meta column of the CDR. <br> This feature is for **monitoring purposes** only, it doesn't block or restrict calls.</br> It allows you to analyze and measure the percentage of traffic that falls under DNC, without affecting call routing or completion.
 
 + **DNO**: [Click here](https://docs.connexcs.com/dnc/#do-not-originate-dno-list-blocking) to know more about it.
 
@@ -276,54 +280,69 @@ Use **Count Attempts** to stop repeated dialling of unreachable numbers, which i
 
 #### Destination Type Lookup & Fallback Logic — USA and International
 
-1. **Overview**
+## 1. Overview
 
-    ConnexCS uses a multi-layered lookup mechanism to determine the destination type for any given phone number.
-    This enables accurate routing, blocking, and classification across both **USA (NANPA)** numbers and **International numbers**.
+ConnexCS uses a multi-layered lookup mechanism to determine the destination type for any given phone number. This enables accurate routing, blocking, and classification across both **USA (NANPA) numbers** and **international numbers**.
 
-2. **USA Number Lookup**
+## 2. Number Lookup Mechanism
 
-      a. **Line-Type Lookup (LRN Database)**: The system first checks the LRN line-type database for the exact number. <br> The system checks the LRN/line-type database for the exact phone number. </br> If the number exists, the classification returned here is treated as the primary and most accurate source.
+### 2.1 USA Number Lookup
 
-        !!! Example "Example 1"
-            `201-555-0198` → Found in LRN → Fixed. <br>If the number is not present in LRN, the system falls back to the NANPA prefix (range type)</br>.
- 
-        !!! Example "Example 2"
-            `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
+**a. Line-Type Lookup (LRN Database)**
 
-      b. **Prefix Type Check (Checked against the NPANXX(X) Range Holder)**: If the number does not exist in the line-type database, the system falls back to the USA Range Type: LRN is not used for this check.
+The system first checks the LRN line-type database for the exact phone number. If the number exists, the classification returned by this lookup is treated as the primary and most accurate source.
 
-        !!! Example "Example"
-            `212-XXX-XXXX`  → RBOC
+!!! example "Example 1"
+    `201-555-0198` → Found in LRN → Fixed
 
-c. For **non-USA numbers**, NANPA and LRN don't apply. <br>The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.</br>
+If the number isn't present in the LRN database, the system falls back to the NANPA prefix (range type).
 
-        !!! Example "Example 1"
-            a. `+91 98XXXXXXX` → Mobile <br> b. `+971 4XXXXXXX` → Fixed</br>
+!!! example "Example 2"
+    `201-2019-XXXX` → Block assigned as Mobile → Result: Mobile
 
-3. **Use in Block Destination Type**
+**b. Prefix Type Check (NPANXX(X) Range Holder)**
 
-      a. **USA Numbers**
+If the number doesn't exist in the line-type database, the system falls back to the USA Range Type. LRN is not used for this check.
 
-i. **LRN Number type check**:
+!!! example "Example"
+    `212-XXX-XXXX` → RBOC
 
-Perform Line-Type Check (LRN database).
+### 2.2 International Number Lookup
 
-If not found → NANPA range type is used.
+For **non-USA numbers**, NANPA and LRN don't apply. The system directly uses the International Number Plan, which classifies numbers based on country numbering rules and regulator allocations.
 
-**Output Destination Type:- (Mobile / Fixed / VoIP/OTHER)**
+!!! example "Examples"
+    - `+91 98XXXXXXX` → Mobile
+    - `+971 4XXXXXXX` → Fixed
 
-ii. **Prefix type check**:
+## 3. Use in Block Destination Type
 
-Perform USA Range Type check.
+### 3.1 USA Numbers
 
-**Output Destination type :- CAP/ CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS**.
+**a. LRN Number Type Check**
 
-iii. **For International Numbers**:
+- Perform a line-type check using the LRN database.
+- If the number is not found, use the NANPA range type.
+
+**Output Destination Type:**
+
+`Mobile / Fixed / VoIP / OTHER`
+
+**b. Prefix Type Check**
+
+Perform a USA Range Type check.
+
+**Output Destination Type:**
+
+`CAP / CLEC / GENERAL / ICO / IPES / L RESELLER / PCS / RBOC / ULEC / UNKNOWN / W RESELLER / WIRELESS`
+
+### 3.2 International Numbers
 
 Directly apply the International Number Plan classification.
 
-**Output Destination Type (FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES)**
+**Output Destination Type:**
+
+`FIXED / MOBILE / MOBILE/FIXED / MOBILE/PAGING / PAGING / SATELLITE / SUPPLEMENTARY SERVICES`
 
 #### United States Federal Do Not Call (DNC)
 
