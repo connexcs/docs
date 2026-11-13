@@ -289,9 +289,11 @@ nav:
     - Terminal Tools: terminal-tools.md
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
+    - SSH Keys and SFTP Access: sftp.md
     - Hearth: hearth.md
     - ConnExamine: connexamine.md
     - ConnexCS Centralized Authentication: centralized-authentication.md
+    - ConnexCS Terminal: cliterminal.md
 
   - Customer Portal:
     - Dashboard: customer-portal/cp-dashboard.md
