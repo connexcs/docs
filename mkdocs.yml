@@ -290,7 +290,6 @@ nav:
     - Global AI Agent: globalaiagent.md
     - MCP Server: mcpserver.md
     - SSH Keys and SFTP Access: sftp.md
-    - Anvil: anvil.md
     - Hearth: hearth.md
     - ConnExamine: connexamine.md
     - ConnexCS Centralized Authentication: centralized-authentication.md
