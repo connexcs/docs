@@ -1,138 +1,211 @@
 # Templates
 
-**Setup :material-menu-right: Config :material-menu-right: Templates**
+<details>
+<summary><strong>Document Metadata</strong></summary>
+<br>
 
-Create your own **Templates** to customise the content displayed on outbound emails/SMS, the Customer Portal, and WebPhone. ConnexCS **Templates** use the mustash-compatible template language [**Handlebars**](https://handlebarsjs.com/guide/).
+<strong>Category</strong>: Setup Guide / Configuration Management<br>
+<strong>Audience</strong>: ConnexCS Administrators, System Administrators, Technical Support Engineers<br>
+<strong>Difficulty</strong>: Beginner to Intermediate<br>
+<strong>Time Required</strong>: Approximately 5–10 minutes<br>
+<strong>Prerequisites</strong>: Access to the ConnexCS control panel and permission to access Setup > Config > Templates.<br>
+<strong>Related Topics</strong>: Setup, Config, App Store, Audit Logs<br>
+<strong>Next Steps</strong>: Create a custom template, associate it with the relevant application, configure the required message content, and review audit logs to track changes.
 
-!!! note "Template Syntax"
-    It's important for you to follow the template syntax and enter fields such as `{email}` or `{account_name}` exactly. If not, the system won't  correctly replace when the template is rendered.
+</details>
 
-## Add Template
+## Overview
 
-Click the blue :material-plus: to add a new Template.
+The **Templates** feature in ConnexCS allows users to create and manage reusable message templates for different purposes, such as notifications, emails, and SMS messages.
 
-+ **Name** the template.
-+ **Subject** for the communication (supports variables).
-+ **SMS** field doesn't actually send the SMS, but it's usable when other parts of the system have SMS set.
-+ Use **Text** or **HTML** for the content of the communication.
+Templates can include HTML content, a subject line, plain-text content, SMS content, and scripts, depending on the intended use.
 
-    ![alt text][addtemp]
+Templates help standardize communication by allowing applications and platform features to reuse predefined content instead of requiring users to create messages from scratch.
 
- Select **`Save`** to complete the configuration.
+The Templates page displays existing templates and provides options to create new templates, view their details, edit them, refresh the list, delete eligible templates, and review audit logs.
 
-!!! tip "Rendering Variables"
-    The templating system will replace placeholders with the variable when it's rendered.
+## Key Features
 
-### Invoice
+- **Reusable templates**: Store predefined message content for use by supported applications and platform features.
+- **Multiple content formats**: Configure HTML, subject, text, SMS, and script fields, as required.
+- **Application association**: Associate a template with a supported application using the App field.
+- **Template management**: Create, view, edit, and delete eligible templates.
+- **System-generated templates**: Identify system templates using the `System` label. When available, clone a system-generated template to create a separate copy for customization.
+- **Audit logging**: Review recorded template creation and update operations, including the differences between recorded versions.
 
-Templates use [**Handlebars**](https://handlebarsjs.com/guide/#what-is-handlebars) as markup.
+## Benefits
 
-A handlebars expression looks like: **<p>{{content1}} {{content2}}</p>**
+- **Consistent communication**: Use standardized message content across supported workflows.
+- **Reduced configuration effort**: Reuse existing content instead of recreating messages.
+- **Application-specific configuration**: Associate templates with the relevant application where supported.
+- **Change visibility**: Use audit logs to review recorded changes and compare template versions.
+- **Safer customization**: Clone a system-generated template when a separate customizable copy is needed, rather than modifying the original.
 
-When the template gets executed, the contents get replaced with values from a variable.
+## How to Use?
 
-Here, we've made the variables available for creating a customized **Invoice**.
+### Step 1 — Navigate to Templates
 
-Handlebars make use of [**Built-in Helpers**](https://handlebarsjs.com/guide/builtin-helpers.html).
+1. Log in to the ConnexCS control panel.
+2. Navigate to **Setup :material-menu-right: Config :material-menu-right: Templates**.
+3. The **Templates** page displays the available templates in a table. <br><img src="/setup/img/template2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-{% raw %}
-| **Built-in Helper Name** | **Explanation** | **Syntax** | **Template**| **Example Input**| **Example Output**|
-|--------------------------|----|----------------|----|--------------------|---------------------------|
-| **#if**| The "if" helper shows content conditionally; if the input is useful it will display the information; otherwise, it keeps the section empty, if its argument returns false, undefined, null, "", 0, or [] | {{#if content1}}{{content2}}{{/if}}| {{#if account.postcode}}{{account.postcode}}{{/if}} || It will take the value of postcode from the account information already added while subscribing |
-| **#unless**| It's the opposite of "if" helper, will render the block when the argument returns "false" values.| {{#unless name}} {{/unless}}| {{#unless name}} <h3 class="warning">WARNING: This entry doesn't have a name!</h3> {{/unless}} | {}| WARNING: This entry doesn't have a name!|
-| **#each**| "each" helps loop through lists, and "this" refers to the current element. It simplifies list processing.| {{#each content}}     <li>{{this}}</li>   {{/each}}| <ul class="people_list">   {{#each people}}     <li>{{this}}</li>   {{/each}} </ul>| {   people: [     "XXX",     "YYY",     "ZZZ",   ], } |<li>XXX</li>     <li>YYY</li>     <li>ZZZ</li> |
-| **#with**| "with" helper changes this context to focus on specific data, making it easier to work with. You can consider the "with" helper as information filter. | {{#with content}} {{content1}} {{content2}....} {{/with}} | {{#with person}} {{firstname}} {middlename} {{lastname}} {{/with}} | {   person: {     firstname: "Ben",     middlename: "Roy"     lastname: "Charles",   }, } | Ben Roy Charles |
-| **#lookup** | The "lookup" helper is used to retrieve values from an object or array based on a provided key or index. | {{#each content}}    {{.}} xxxx {{lookup ../}} {{/each}}  | {{#each people}}    {{.}} lives in {{lookup ../cities @index}} {{/each}}| {    people: ["Adam", "Ben"],   customer: [     "PM Dialer",     "Phonebook",   ], } | Adam is customer of PM Dialer Ben is customer of Phonebook |
-| **#log** | The "log" helper in Handlebars allows you to print data at specific points in the template, helping you debug and understand the rendering process. | {{log 'xxxx'}} | {{log 'this is a simple log output'}} | null||
-{% endraw %}
+The table includes the following columns:
 
-#### Invoice Variables
+| Field | Description |
+| ------|------------ |
+| **Name** | Displays the template name. Click the name to open the template and view its details. Templates marked with the `System` label are system-generated templates |
+| **App** | Displays the application associated with the template, if one is configured|
+| **HTML**    | Displays a preview of the HTML content stored in the template|
+| **Subject** | Displays the subject line configured for the template|
+| **Text**    | Displays the plain-text content configured for the template|
+| **Sms**     | Displays the SMS message content configured for the template|
+| **Script**  | Displays the script content associated with the template, if configured|
 
-We've several invoice variables which you can use and customize your **Invoice** form.
+The page also provides the following controls:
 
-Before describing those variables, we first discuss the steps for creating the **Invoice Template**
+- **Add (+)**: Opens the form for creating a new template.
+- **Refresh**: Reloads the template list.
+- **Delete**: Deletes selected templates when the operation is permitted.
+- **Help (?)**: Opens the available help information.
+- **Search**: Searches for templates in the list.
+- **Columns**: Opens the column configuration options.
+- **Filters**: Opens the filtering options for the table.
+- **Custom Settings**: Opens the available table customization settings.
 
-1. Login to your **Control Panel**.
-2. Click on **Developer > Templates** and click on the blue `+` button.
-3. Enter the details like **Name**, **Subject**, **App**, **SMS**, **Text**.
-4. Click on the **HTML** tab and write the code for generating the Invoice.
+### Step 2 — Create a new template
 
-<img src= "/developers/img/invoice1.png">
+1. Navigate to **Setup :material-menu-right: Config :material-menu-right: Templates**.
+2. Click the **+ (Add)** button in the upper-right corner of the page. <br><img src="/setup/img/template2.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. The template creation form opens. Enter the required information in the available fields.<br><img src="/setup/img/template3.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-!!! Note Important Note
-     You just need to add or remove the variables from the invoice template that we'll offer.
+#### Configuration fields
 
-{% raw %}
-| **Variable Name**| **Explanation**|
-|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| account.name| Provides you with the account name|
-| account.address| Provides you with the account address|
-| account.city| Provides you with the city name associated with the account|
-| account.county| Provides you with the county name associated with the account |
-| account.postcode| Provides you with the postcode associated with the account|
-| company.name| Provides you with the country name|
-| company.address| Provides you with the country address|
-| company.postcode| Provides you with the country postcode|
-| account.id| Provides you with the Account Number|
-| invoice.id| Provides you with the Invoice number  |
-| {#if lines.0.start_date}}{{dateFormat lines.0.start_date 'll'}} to {{dateFormat lines.0.end_date 'll'}}{{/if}} | Billing Period|
-| dateFormat invoice_date| Invoice Date|
-| dateFormat date_due| Provides you with the Due Date|
-| company.currency| Provides you with the Total Due Amount|
-| sec2min duration (converts seconds to minutes)| Provides you with the total Billable Minutes|
-| connected| Call Count|
-| numberFormat unit_price, {numberFormat net, {numberFormat tax, numberFormat sub_total| Gives you the total Amount |
-| nl2br account.config.payment_details| Account Details|
-| account.phone | Telephone|
-| account.email| Billing Email| Billing e-mail address.
-| dateFormat date | Formats the date to: YYYY-MM-DD |
-| numberFormat (Input: 55662890)| Formats the provided number (Output: 5,56,62,890)|
-| currencyFormat currency (Input: 25000)| Formats the provided currency and displays the amount in dollars (Output: $25,000)|
-| 'math', function| It performs mathematical functions like addition, subtraction, division, and multiplication. |
-| sub_total{{sub_total} ($10)| Sub total amount|
-| tax {{ tax}} ($1)| Tax applied on the bill|
-| total {{ total} | Total amount due (Sub total amount + Tax amount = $10 + $1= $11)|
-{% endraw %}
+| Field | Description  |
+| ------|------------- | 
+| **Name**    | Enter a unique, descriptive name for the template, such as `demo` or `payment_notification`|
+| **Subject** | Enter the subject line for the message. This field is marked as required in the form|
+| **App**     | Select the application associated with the template from the dropdown list, where applicable. For example, the screenshot shows `Anvil-Login`|
+| **SMS**     | Enter the message content intended for SMS delivery. The displayed counter indicates the current character count|
+| **HTML**    | Enter the HTML-formatted content for messages that support HTML. Use valid HTML markup where required|
 
-!!! Info 
-    You can use **nlb2r** function to create the next line.
+The template form also supports **Text** and **Script** fields, as shown in the template list. Their availability and use depend on the template configuration and the supported workflow.
 
-## Stock Templates
+> **Note**: Configure only the content fields required by the intended use case. The fields used and the formats supported depend on the application or workflow that consumes the template.
 
-ConnexCS provides standard templates which you can customise as you wish. To customise any template, click on the template name, modify as needed, and click Save. To revert the template to its original configuration, select the checkbox next to the Name and click **`Reset`**.
+1. Review the entered information and confirm that the template name and subject are correct.
+2. Click **Save** to create the template.
+3. Return to the Templates list and verify that the new template appears.
 
-## ScriptForge Integration
+### Step 3 — View a template
 
-Dynamic Templates with custom variables are made by including ScriptForge(further details [**here**](https://docs.connexcs.com/developers/scriptforge/). It's done by using the `scriptforge` tag. Ex: To include a ScriptForge script with ID 1234, use `{%raw%}{{scriptforge 1234}}{% endraw %}`.
+1. Navigate to **Setup :material-menu-right: Config :material-menu-right: Templates**.
+2. Locate the template you want to inspect.
+3. Click the template name.<br><img src="/setup/img/template4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. The template details page displays the configured information.
 
-This will pass ALL the variables in the current scope to ScriptForge. Whatever ScriptForge returns is then made available back in the main scope for use with the template system.
-  
-### Sample RSS Feed Injection into a template
+The details page can display the following information:
 
-This example can be used to provide a custom page in the [**WebPhone**](https://docs.connexcs.com/webphone/)
+- **Subject**: The configured subject line.
+- **App**: The associated application, if configured.
+- **SMS**: The configured SMS message.
+- **HTML**: The configured HTML content.
+- Other available template fields, depending on the template configuration.
 
-**ScriptForge**
+The details page also provides navigation and management controls.
 
-```javascript linenums="1"
-const rssParser = require('rss-parser');
-const parser = new rssParser();
-function main (vars) {
-	return parser.parseURL('http://feeds.bbci.co.uk/news/rss.xml');
-}
-```
+- **Back**: Returns to the Templates list.
+- **Edit**: Opens the template in edit mode.
+- **View Audit Log**: Opens the audit log for the template.
 
-**Template**
+### Step 4 — Edit a template
 
-{% raw %}
-```xml
-<h1>Here is the news</h1>
+1. Open the template you want to modify.
+2. Click **Edit**.
+3. Update the required fields, such as the subject, application, SMS content, or HTML content.
+4. Review the changes.
+5. Click **Save** to apply the updates.
+6. Reopen the template to verify that the changes have been saved. <br><img src="/setup/img/template5.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-{{scriptforge 1234}}
-<h1>News</h1>
-{{#each items}}
-<h2>{{title}}</h2>
-{{/each}}
-```
-{% endraw %}
+> **Note:** Before editing a template used by an application or an automated workflow, verify that the changes won't affect the expected message format or behavior.
 
-[addtemp]: /setup/img/addtemplate.png "Add Temp"
+### Step 5 — View the audit log
+
+The audit log records template operations, allowing users to review when a template was created or updated and which user performed the action.
+
+1. Navigate to **Setup :material-menu-right: Config :material-menu-right: Templates**.
+2. Open the template whose history you want to review.
+3. Click **View Audit Log** in the upper-right corner of the template details page. <br><img src="/setup/img/template6.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. The **Audit Log** window opens and displays the recorded operations for that template. <br><img src="/setup/img/template7.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### Audit log fields
+
+| Field  | Description |
+| -------|------------ | 
+| **User** | Displays the user associated with the recorded operation|
+| **IP** | Displays the IP address recorded for the operation, when available|
+| **Date Time** | Displays the date and time when the operation was recorded|
+| **Action** | Identifies the operation. For example, `POST` indicates a creation operation and `PUT` indicates an update operation in the displayed audit log |
+| **Table** | Identifies the database table associated with the operation. For templates, the displayed value is `template`|
+| **Message**   | Provides a description of the operation, such as `New template` or `Update template`|
+| **Data** | Provides the **View Difference** option for inspecting the recorded data changes|
+
+The audit log also provides a refresh control and a search field to help locate recorded entries. <br><img src="/setup/img/template8.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+#### Compare template changes
+
+1. Open the template's **Audit Log**.
+2. Locate the operation you want to inspect.
+3. Click **View Difference** in the Data column.
+4. The **View Data Difference** window displays the recorded field values for the old and new versions.
+
+#### View Data Difference fields
+
+| Field    | Description |
+| -------- | ----------- |
+| **Name** | Identifies the field whose value is being compared. Examples include `name`, `subject`, `html`, and `sms`|
+| **Old**  | Displays the value recorded for the earlier version|
+| **New**  | Displays the value recorded for the newer version|
+
+Rows highlighted in red indicate differences between the two recorded versions.
+
+A dash (`-`) indicates that no value was recorded for that version. It doesn't necessarily mean that the value was removed.
+
+Use this view to identify changes to template fields and help investigate unexpected configuration changes.
+
+### Step 6 — Clone a system-generated template (*Optional*)
+
+System-generated templates are identified by the `System` label in the Templates list.
+
+If a system-generated template needs to be customized, use the **clone option**, where available, to create a separate copy. This allows you to customize the copied template without directly modifying the original system-generated template.
+
+1. Navigate to **Setup :material-menu-right: Config :material-menu-right: Templates**.
+2. Locate the system-generated template you want to reuse. Look for the `System` label next to its name.
+3. Open the template and check the available actions or options for cloning it.
+4. Select the clone option, if available.
+5. Enter an appropriate name for the copied template and modify the fields as required.
+6. Save the copied template.
+7. Return to the Templates list and verify that the new template appears separately from the original.
+
+> **Note:** The exact location and availability of the clone action may depend on the interface and the permissions assigned to your account. A system-generated template shouldn't be assumed to be directly editable.
+
+## Best Practices
+
+- Use descriptive template names so that administrators can identify their purpose easily.
+- Associate templates with the correct application when required.
+- Validate HTML content before using it in production workflows.
+- Keep SMS messages concise and verify the displayed character count.
+- Clone system-generated templates when you need a separate version for customization and the clone action is available.
+- Review the audit log after making important changes.
+- Test customized templates in the relevant workflow before relying on them in production.
+- Avoid including passwords, access tokens, or other sensitive information directly in template content.
+
+## Troubleshooting
+
+| Issue  | Recommended action |
+|---------|-------------------|
+| The template isn't visible in the list| Refresh the list, clear or adjust filters, and use the search field to locate the template |
+| The template can't be edited| Check whether it's system-generated and whether your account has the required permissions. Clone it if the option is available and customization is required|
+| The template is associated with the wrong application. | Open the template in edit mode and verify the App field, if it's editable|
+| HTML content isn't displayed as expected| Review the HTML markup and validate the content in the application or workflow that uses the template|
+| An unexpected template change is detected| Open the audit log and use View Difference to compare the recorded versions|
+| The clone option is unavailable| Verify the available actions for the template and check your account permissions|
