@@ -31,7 +31,7 @@ To setup a **Routing Global** template, first create it and then apply it to the
 
     <img src= "/misc/img/routingglobal.png" width= "300" style="border: 2px solid #4472C4; border-radius: 8px;">
 
-3. The **Tag** field is essentially the name of the template. When you use the template toset-up a customer, the Tag is visible in **Customer :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Tags**.
+3. The **Tag** field is essentially the name of the template. When you use the template to set-up a customer, the Tag is visible in **Customer :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Tags**.
 
     <img src= "/misc/img/tags.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
