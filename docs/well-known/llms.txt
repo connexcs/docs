@@ -297,8 +297,7 @@ apps_platform_nav: [
 	"docs/apps/components/time.md",
 	"docs/apps/components/transfer.md",
 	"docs/apps/components/tree-select.md",
-	"docs/apps/components/webphone.md",
-	"docs/apps/components/img/img.md"
+	"docs/apps/components/webphone.md"
 ]
 
 [workflows]
