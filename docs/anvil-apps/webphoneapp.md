@@ -115,35 +115,38 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 
 ### Step 2: Configuration
 
-1. Click on `Webphone Config`. Allows users to configure SIP server connections, WebSocket settings, general WebPhone behaviour, and custom domains.<br><img src= "/setup/img/webnew2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+1. Click `Webphone Config`. Here you set up SIP server connections, WebSocket settings, general WebPhone behaviour, the custom design and custom domains.<br><img src= "/setup/img/webnew2.png" width="600" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 2. `Webphone Config`: <br><img src= "/setup/img/webphoneconfig.png" width= "450" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
-   1. `SIP Servers`: Displays the SIP servers configured for the project. If no servers have been added, the message `No servers configured yet` is displayed.
+   1. `SIP Servers`: Lists the SIP servers configured for the project. Each entry shows the server alias (for example `test1`) and its host (for example `test1.host.connexcs.net`). Click the 🗑 icon next to a server to remove it. If no servers have been added, the message `No servers configured yet` is displayed.
 
-   2. `Add New Server`: Allows users to configure and add a SIP server.
+   2. `Add New Server`: Configure and add a SIP server.
 
-      1. `SIP Server`: Select the SIP server type from the drop-down list. The screenshot shows `Custom` selected.
-      2. `Custom SIP Server`: Enter the hostname or address of the custom SIP server, such as `sip.example.com`.
-      3. `WebSocket URL`: Enter the WebSocket URL used by the WebPhone to connect to the SIP server, such as `wss://sip.example.com`.
-      4. `Add Server`: Adds the configured SIP server to the list. The button appears disabled until the required information is provided.
+      1. `SIP Server`: Select one of your active ConnexCS servers from the drop-down list, or select `Custom`.
+      2. `Custom SIP Server`: Appears only when `Custom` is selected. Enter the hostname or address of the custom SIP server, such as `sip.example.com`.
+      3. `WebSocket URL`: Enter the secure WebSocket URL the WebPhone uses to connect to the SIP server, such as `wss://sip.example.com`.
+      4. `Add Server`: Adds the SIP server to the list. The button stays disabled until a SIP server and a WebSocket URL are provided.
 
-   3. `General Settings`: Allows users to configure the general behaviour of the WebPhone.
+   3. `General Settings`: Configure the general behaviour of the WebPhone. Each switch shows `Enabled` or `Disabled`.
 
-      1. `Use CLI as Username`: When enabled, uses the Username value as the Calling Line Identification (CLI) instead of requiring a separate CLI value.
-         - `Enabled`: The setting is active.
-         - `Disabled`: The setting is inactive.
-      2. `Debug Mode`: Enables verbose JsSIP debug logging in the browser console for all WebPhone users.
-         - `Enabled`: Verbose debug logging is enabled.
-         - `Disabled`: Verbose debug logging is disabled.
-      3. `Registration Expiry (seconds)`: Specifies how long each SIP REGISTER request remains valid before the WebPhone re-registers. The screenshot shows `600` seconds as the default value. The displayed guidance indicates a configurable range of `60–3600` seconds.
+      1. `Use CLI as Username`: When enabled, uses the Username as the Calling Line Identification (CLI), so users don't need to enter a separate CLI.
+      2. `Debug Mode`: When enabled, writes verbose JsSIP debug logs to the browser console for all WebPhone users. Users also need this enabled to open the `Call Metrics` page.
+      3. `Send P-Preferred-Identity`: When enabled, adds a `P-Preferred-Identity` header to outbound INVITEs. The switch may turn it into `P-Asserted-Identity`.
+      4. `Registration Expiry (seconds)`: How long each SIP REGISTER stays valid before the WebPhone re-registers. Enter a value from `60` to `3600` seconds. The default is `600`; the screenshot shows `90`.
 
-   4. `Domain Configuration`: Allows users to manage custom domains for the project.
+   4. `Appearance`: Controls whether users see your custom design.
 
-      1. `Configured Domains`: Displays the custom domains already configured for the project. If no domains have been added, the message `No domains configured yet` is displayed.
+      1. `Design Your Webphone`: When enabled, users see the design you built in the designer (logo, name, colours, navigation, dialpad, inputs and login screen). When disabled, users see the standard design, but your saved design is kept so you can turn it back on.
+      2. `Design status card`: Shows the app name (for example `WebPhone`) and whether a custom design has been saved (`Custom design saved`).
+      3. `Open Designer`: Opens the Design Your Webphone Studio, where you customise and save the design. See [Design Your Webphone](#) for details.
+
+   5. `Domain Configuration`: Manage the custom domains for the project.
+
+      1. `Configured Domains`: Lists the custom domains already added, such as `test2.cnx.page`. Click ✏ to edit a domain or 🗑 to delete it. If no domains have been added, the message `No domains configured yet` is displayed.
       2. `Add New Domain`: Enter the domain name to add, such as `example.com`.
-      3. `Add`: Adds the entered domain to the project's domain configuration. The button appears disabled until the required information is provided.
+      3. `Add`: Adds the domain to the project. You can also press Enter. The button stays disabled until a domain is entered.
 
-!!! Note "Please note you can change this later if you want to deploy this on your own domain."
+!!! Note "You can change these settings later, for example if you want to deploy the WebPhone on your own domain."
 
 ### Step 3: Create Certificates
 
@@ -197,25 +200,64 @@ To setup WebRTC on a server:
 
 1. Now let's have a look at the deployed domain.
 2. Enter in the domain name in the URL e.g., `test4.cnx.page`.
-3. A login window will appear withe th following fields: <br><img src= "/setup/img/webphonecalllogs.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+3. A login window will appear withe th following fields: <br><img src= "/setup/img/webphoneloginscreen.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
    1. Select a **Server** from the dropdown if `multiple servers` are available. If only `one server` has been added, it is selected automatically. If `no servers` have been added, you will need to enter the server details manually.
    2. Enter the **SIP Username**.
    3. Enter the **Password**.
    4. Enter the **CLI** *only if* the `Use CLI as Username` setting is **enabled**.
-4. After logging in you can dial from your WebPhone. <br><img src= "/setup/img/webnew4.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+4. After logging in you can dial from your WebPhone. <br><img src= "/setup/img/webphonecalllogs.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 #### Navigation
 
 > **Note**: When Debug Mode is enabled, the Console option becomes available, displaying call-related information that you can use to troubleshoot and debug calls.
 
-1. **Dialpad**: Dialpad for making and answering calls.
-2. **Call Logs**: Displays call records in ConnexCS for monitoring call activity, reviewing outcomes, and troubleshooting call-related issues. <br><img src= "/setup/img/webphonecalllogs1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
-3. **Mic Off**: Mute the call.
-4. **Hangup**: Disconnect the call.
-5. **Call Hold**: Hold the call.
-6. **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
-7. **Log Out** (top-right): Click on this button to sign out of the Webphone.
-8. **Current Call Time**: Displays the duration of the ongoing call. <br><img src= "/setup/img/webphonecall.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+This is a browser-based softphone (a SIP phone that runs in the browser). Here's what each part of the screen means.
+
+**Top bar**
+
+- **Registered (green)**: Your extension has successfully signed in to the phone server (SIP registration). If it turns red or says "Unregistered," you can't make or receive calls.
+- **Moon icon**: Switches between light and dark mode.
+- **Avatar**: Your profile/account menu (initials from your extension).
+
+**Left sidebar**
+
+- **Dialpad**: The calling screen you're on now.
+- **Call Logs**: History of incoming, outgoing and missed calls. <br><img src= "/setup/img/webphonecalllogs1.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+- **Call Metrics**: Stats and reports about your calling activity.
+- **Notifications toggle**: Turns browser alerts on or off for incoming calls and other alerts.
+- **12900 · Available · Ext. 12900**: Your extension number and current presence status. The `«` button collapses the sidebar.
+
+**Center (dialpad)**
+
+- **Ready to call · 12900**: The phone is idle and ready, using extension 12900.
+- **Number or username**: Type a phone number, extension, or SIP username to call.
+- **Keypad**: Standard phone keys. The letters (ABC, DEF…) are for vanity numbers. `*` and `#` are used for feature codes and phone menus. Holding `0` usually enters `+` for international numbers.
+- **Green call button**: Starts the call. It looks faded because no number has been entered yet.
+- **Hangup**: Disconnect the call.
+- **Call Hold**: Hold the call.
+- **Clipboard**: When you copy something on your computer, it's stored on the clipboard. You can then paste it on the Webphone.
+- **Current Call Time**: Displays the duration of the ongoing call. <br><img src= "/setup/img/webphonecall.png" width= "500" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+
+
+**Right panel**
+
+- **Date, greeting and clock (20:32)**: Current day and time. The `>` arrow likely collapses this panel.
+- **Profile card**: Shows your extension (12900), and "test2" is probably the display name or account/tenant label. **Available** means you're accepting calls; clicking it usually lets you change to Busy, Away or Do Not Disturb.
+- **Today**:
+  - **Calls**: Total calls made or received today.
+  - **Talk time**: Total time spent on connected calls.
+  - **Missed**: Incoming calls you didn't answer.
+  - **Connect rate**: The share of calls that actually connected. It shows "—" because there are no calls yet to calculate from.
+- **Missed calls to return**: A callback list. "You're all caught up" means nothing is pending.
+- **Speed dial**: Save frequent contacts for one-click calling (**+ Add** / **Add a contact**).
+- **Log Out** (top-right): Click on this button to sign out of the Webphone.
+
+**Bottom status checks**
+
+- **Connection: Secure (WSS)**: The phone talks to the server over an encrypted WebSocket, which is good.
+- **Microphone: Allowed**: The browser has permission to use your mic, which calls need.
+- **Notifications: On**: The browser can show alerts for incoming calls.
+- **Troubleshooting logs**: Technical logs (SIP messages, errors) that are useful if calls fail or audio has problems.
 
 ## Troubleshooting Logs
 

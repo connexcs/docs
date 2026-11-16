@@ -427,5 +427,6 @@ nav:
     - Dial Phone Verification: anvil-apps/dial-phone-verification.md
     - DID Spam Score: anvil-apps/did-spam-score.md
     - Neutrafix: anvil-apps/neutrafix.md
-    - WebPhone App: anvil-apps/webphoneapp.md
-    
+    - WebPhone App:
+        - Webphone Introduction: anvil-apps/webphoneapp.md
+        - Design Webphone App: anvil-apps/design-webphoneapp.md
