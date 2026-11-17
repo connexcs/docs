@@ -47,13 +47,11 @@ Click the :material-plus: button.
 
 + **Type**: Our system offers a **Free Minutes** option (select from the drop-down menu). This allows you to allocate complimentary calling minutes to your customers. For more details, please [click here](/customer/package/#free-minutes-package).
 
-+ **Destination**: Selecting the **Type** will unlock the **Destination** tab. This tab allows you to specify the regions where the Free Minutes bundle will be applicable.For example, if you are offering free minutes only in the UK, India, and the USA, add the destination as ^44|^91|^1.
++ **Destination**: Selecting the **Type** will unlock the **Destination** tab. This tab allows you to specify the regions where the Free Minutes bundle will be applicable. For example, if you are offering free minutes only in the UK, India, and the USA, add the destination as ^44|^91|^1.
   
-+ **Minimum Spend**: This calculates the customer spend for the billing period.
++ **Minimum Spend**: When enabled, the customer must spend at least the package's **Retail** amount in each billing period. If they spend less, the difference is charged to their account.
 
-    If spend is below the Retail amount configured above, the spend get subtracted from Retail, and that charge adds to their account.
-
-    For example, Retail value is to 50, but customer only spends 25, an extra charge of 25 applies for that billing cycle.
+    For example, if Retail is 50 and the customer spends 25, an extra 25 is charged for that billing period.
 
 Click **`Save`** to make the Package available to assign to customer accounts.
 

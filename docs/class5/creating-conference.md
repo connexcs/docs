@@ -53,6 +53,10 @@ Click **`Save`** and the new conference room is available for use.
 
     To allow external numbers to dial into the conference, set up a [**Customer DID**](https://docs.connexcs.com/customer/did/#configure-direct-inward-call) and set the **Destination** to "Internal" (set the internal destination as the extension number of the conference), and then select the available pre-configured conference.
 
+* **PIN**: Callers are asked for this PIN when they dial the conference extension, and must enter it to join. Leave it blank to let anyone who dials the extension join without a PIN.
+
+* **Moderator PIN**: Callers who enter this PIN instead of the regular PIN join as the moderator, who presides over the conference. Use a different value from the regular PIN, and share it only with the person running the call.
+
 ## Conference Call Keypad Options
 
 Callers can use the keypad to control the audio on the conference call.
