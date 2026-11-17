@@ -268,7 +268,7 @@ Leave any of these empty to use the default.
 
 ## 7. Typography & Shape
 
-Navigate to the **Control Panel :material-menu-right: Webphone Config :material-menu-right: Topograpy & Shape** **OR** Click on **Open Desginer**. <br><img src= "/setup/img/webphonetopography.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
+Navigate to the **Control Panel :material-menu-right: Webphone Config :material-menu-right: Typography & Shape** **OR** Click on **Open Desginer**. <br><img src= "/setup/img/webphonetopograpy.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 | Option | Description | Default |
 |---|---|---|

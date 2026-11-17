@@ -138,7 +138,7 @@ PKI ensures end-point integrity, so you can be confident that the endpoint you c
 
       1. `Design Your Webphone`: When enabled, users see the design you built in the designer (logo, name, colours, navigation, dialpad, inputs and login screen). When disabled, users see the standard design, but your saved design is kept so you can turn it back on.
       2. `Design status card`: Shows the app name (for example `WebPhone`) and whether a custom design has been saved (`Custom design saved`).
-      3. `Open Designer`: Opens the Design Your Webphone Studio, where you customise and save the design. See [Design Your Webphone](#) for details.
+      3. `Open Designer`: Opens the Design Your Webphone Studio, where you customise and save the design. See [Design Your Webphone](/anvil-apps/design-webphone/) for details.
 
    5. `Domain Configuration`: Manage the custom domains for the project.
 
