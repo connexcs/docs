@@ -465,7 +465,7 @@ Click on a specific Call ID to view details and run call tools.
 | **Max Duration** | The configured maximum time (in seconds) a call is allowed to stay connected before ConnexCS force-terminates it — a **Missing BYE Protection** mechanism, set at the Route/DID/Tag level. |
 | **Routing Engine ID** | Identifies which regional Routing Engine instance (zone-based, e.g., US/EU server cluster) processed the call — set manually or automatically per server config. |
 | **User Agent** | The SIP User-Agent header of the originating device/softswitch/PBX — used in the **Compare (Call IDs)** tool to spot differences between successful vs. failed calls. |
-| **Source IP** | IP address the call entered the ConnexCS platform from (🇮🇳 = India in your screenshot) — the "Customer IP" in Simulate terminology. |
+| **Source IP** | IP address the call entered the ConnexCS platform from. The flag shows the IP's country. This is the "Customer IP" in Simulate terminology. |
 | **CX Switch IP** | The ConnexCS Switch server IP that received/processed the call (🇬🇧 = UK) — called "Switch IP" in the Simulate tool, representing "where the call will traverse." |
 | **UDP** | SIP signaling transport protocol — ConnexCS notes re-transmissions (duplicate INVITEs) **only occur on UDP**, unlike TCP/SCTP. |
 | **Destination Number** | The dialed number — searchable via `dest_number=` in Call Log Search field-specific syntax. |

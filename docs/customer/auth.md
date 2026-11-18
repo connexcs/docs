@@ -224,6 +224,8 @@ To enable, click **:material-plus:** next to IP Authentication:
 === "Parameter Rewrite"
 
     The **Parameter Rewrite** tab is used to manipulate data as it comes into the system, particularly useful for formatting phone numbers.
+    
+    Parameter Rewrite normalises numbers at the edge of your network (perimeter normalisation): every destination number and CLI arriving from this customer is converted to a single format, usually E.164, before routing.
 
     !!! question "When and Why is it useful?"
         It is most useful when you need to create **automatic replacements** for destination numbers or CLI, so a number is formatted in the appropriate [**E164 format**](https://en.wikipedia.org/wiki/E.164). 

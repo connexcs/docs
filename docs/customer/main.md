@@ -96,15 +96,16 @@ Follow these steps to reset a Contact password:
 
 ### Access the Customer Portal
 
-It's necessary to view the Customer Portal for issues or questions they may have.
+You can open a customer's portal directly from the control panel, without their password. This is useful when a customer reports an issue or has a question about what they can see.
 
 To access the Customer Portal:
 
-1. Click the blue `down arrow` to the right of the **Contact**.
-
+1. Click the blue `down arrow` to the right of the Contact.
 2. Choose `Portal Login`.
 
-   This will load the Customer's Portal.
+The Customer Portal opens, signed in as that contact. You see exactly what the contact sees, and any changes you make apply to their account.
+
+!!! Note "Portal Login doesn't need the contact's password. You can also open a customer's portal from the dropdown next to the customer's name on the `Main` tab."
 
 ## Internal Number Block
 

@@ -22,7 +22,7 @@ Use **Status** to create Status Pages for your customer portals, typically for r
 
 Follow these steps to configure outage reporting on Customer Portals:
 
-**Step 1: Define Status Component**
+### Step 1: Define Status Component
 
 1. Click :material-plus: under **Status Component**.
 2. Enter a **Title** and optional **Description**.
@@ -31,7 +31,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 
 3. Click **`Save`**.
 
-**Step 2: Setup Report History**
+### Step 2: Setup Report History
 
 1. Click :material-plus: under **Report History**.
 
@@ -44,7 +44,7 @@ Follow these steps to configure outage reporting on Customer Portals:
 6. Select one or more Status Component(s) affected, and the severity of the issue.
 7. Click **`Save`**.
 
-**Step 3: Enable on customer portal**
+### Step 3: Enable on customer portal
 
 1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Portal**.
 2. Click the domain name.

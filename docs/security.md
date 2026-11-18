@@ -150,6 +150,8 @@ One-click is all it takes to put the SSL certificates on your customer portal.
 2. Click  **Domains**.
 3. Click **Deploy Certificate**.
 
+Certificates are free, issued by Let's Encrypt, and renewed automatically. See [**Certificate**](/setup/information/certificate/) for details.
+
 ## User Enhanced Security
 
 Besides the above ConnexCS security, we also recommend the following practices to protect your ConnexCS account.
