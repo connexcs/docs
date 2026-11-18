@@ -243,7 +243,22 @@ Click **`Email`**, enter the email address and click **`Send`**.
 
 === "Basic"
 
-    * **Match**: Enter the prefix to match, either as a Regular Expression or a standard prefix (numeric only, typically an international country code, not a provider or customer tech prefix). Adding an up arrow `^` on the prefix draws all associated prefixes from the provider card. For example, if you enter '49, it will include '491', '492', '4912345', and so on.
+    * **Match**: The destination prefixes this profit rule applies to. Enter either a standard numeric prefix (typically an international country code, not a provider or customer tech prefix) or a Regular Expression.
+
+        Start the value with `^` to include every prefix on the provider card that begins with it. For example, `^49` matches `491`, `492`, `4912345` and so on.
+
+        | Match | Applies to |
+        |---|---|
+        | `^44` | All UK prefixes |
+        | `^447` | UK mobile prefixes only |
+        | `^44(20\|121)` | London (`4420…`) and Birmingham (`44121…`) |
+        | `^1(212\|646\|917)` | New York area codes 212, 646 and 917 |
+        | `^(33\|34\|39)` | France, Spain and Italy |
+        | `^49(?!15)` | Germany, except prefixes starting `4915` |
+
+        !!! Tip
+            Rules are matched against the prefixes on the provider card, so test a new pattern on a small card first. Use [regex101.com](https://regex101.com/) to check a pattern before saving it.
+
     + **Profit Type**: Select how to add profit:
         
         :material-menu-right: `Absolute`- actual value charged
@@ -253,7 +268,7 @@ Click **`Email`**, enter the email address and click **`Send`**.
         :material-menu-right: `Percent`- cost from the carrier multiplied by this percent
         
     + **Apply To**: Setup rules to govern how Profit is applied to different types of calls.
-    + **Status**: Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes. 
+    + **Status**: Use Blocked, here or after importing a Carrier Rate Card, to disable specific prefixes.
 
 === "Config"
 

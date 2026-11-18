@@ -173,7 +173,7 @@ The following sections will appear when you click on the `blue +` sign.
 
 === "Address"
 
-    * **Address:** Complete the customer's physical address.
+    * **Address:** The customer's physical address, which can appear on invoices. Fill in the street address, city, state or region, postcode and country.
 
 === "Verification"
 
@@ -203,6 +203,13 @@ The following sections will appear when you click on the `blue +` sign.
         In the image below you can see the time slider starts from 12:00 AM till 8:00 AM, this means your customers are only allowed to dial between 12:00 AM and 8:00 AM. After 8:00 AM your customers won't be able to call. The rest of the slots (grey color) are restricted slots.
 
         <img src= "/customer/img/restrict.png" width="400" style="border: 2px solid #4472C4; border-radius: 8px;">
+    
+    !!! info "Storing customer meta information"
+    Each customer record can hold extra information alongside its billing and routing settings:
+
+    + **Address** tab: the customer's physical address.
+    + **Config** tab: **Website**, **Ext. Accounting ID** (to match the customer in your accounting system), **Tags** (labels used by global alerts and routing) and **Vars TOML** (custom key–value data that ScriptForge scripts can read).
+    + **Notes** tab: free-text notes for your team. <br>Contacts and their details are stored separately on the customer's [**Main**](/customer/main/#contacts) page.</br>
 
 !!! note
     The daily spend day is defined from 00:00 UTC to 00:00 UTC.

@@ -85,6 +85,9 @@ Use a prefix (defined in Customer :material-menu-right: Routing ) to select the 
         D --> E[System Evaluates and Logs Key Quality Parameters]
     ```
 
+!!! Tip "Several failover destinations (serial forking)"
+    To try several destinations in order until one answers, set the destination to **Internal** and send the call to a [**Group**](/customer-portal/cp-group/) with **Group Type** set to **Sequential**. Each member is tried in turn until the call is answered.
+
 ### Capacity Limits
 
 Set the maximum number of INBOUND concurrent calls in **Channels**, and Calls Per Second (CPS) in **Flow Speed**.

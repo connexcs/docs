@@ -98,6 +98,7 @@ nav:
             - Contracts: customer/contracts.md
             - Documents: customer/documents.md
             - Class5: customer/class5.md
+            - Call Recording: customer/call-recording.md
 
         - Carrier: 
             - Carrier Overview: carrier.md

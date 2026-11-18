@@ -34,7 +34,7 @@ You can issue Vouchers in one of the following 3 forms:
 
 Click **`Add`**
 
-* **Count:** Enter the number of vouchers you wish to create (you can use a voucher only once).
+* **Count:** The number of vouchers to generate in one batch. Each voucher has its own code and can be used only once. Use this to create calling cards in bulk.
 
 * **Minimum Activation:** Enter the minimum purchase amount required for the consumer to use the voucher.
 
