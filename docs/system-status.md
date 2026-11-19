@@ -44,6 +44,25 @@ Follow these steps to configure outage reporting on Customer Portals:
 6. Select one or more Status Component(s) affected, and the severity of the issue.
 7. Click **`Save`**.
 
+#### Incident Progression
+
+Each report moves through a set of statuses as you work on the issue. Update the status as things change so customers can follow progress on their Status page.
+
+| Status | Use it when |
+|---|---|
+| **Investigating** | The issue has been reported and you're looking into it. |
+| **Identified** | You've found the cause and are working on a fix. |
+| **Watching** | A fix is in place and you're monitoring to confirm it holds. |
+| **Fixed** | The issue is resolved. |
+
+To update an incident:
+
+1. Click the report under **Report History**.
+2. Change the **Status**, and update the **Description** with what's changed.
+3. Click **`Save`**.
+
+Customers see the latest status in **Report History** on their [**Status page**](/customer-portal/status/).
+
 ### Step 3: Enable on customer portal
 
 1. Navigate to **Setup :material-menu-right: Integrations :material-menu-right: Portal**.

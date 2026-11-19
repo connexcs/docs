@@ -622,7 +622,7 @@ After the call is over the **BYE** message is sent.
 
     We keep a record of every packet sent and received by your server over the last seven (7) days.
 
-To view the SIP Trace of a call:
+2. Click **`SIP traces`** to see the call as a SIP ladder diagram, with each message drawn between the parties in the order it was sent.
 
 1. Click a **Call ID** to view its SIP traces.
 2. Click **`SIP traces`** to view the SIP trace.
@@ -631,6 +631,9 @@ To view the SIP Trace of a call:
 
 3. Toggle between Relative Time and Absolute Time for a specific time of day.
 4. Options to download as Text or an Image.
+
+!!! tip "Packet captures (PCAP)"
+    To open a call's SIP trace as a PCAP file, use the `trace` command in the [**CLI Terminal**](/cliterminal/#pcap).
 
 !!! note "Known issues with SIP Traces"
 

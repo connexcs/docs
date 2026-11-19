@@ -43,6 +43,17 @@
         * 🔴 **Red** – Gateway is inactive, unreachable, or failing health checks.
         
         **Impact:** Determines whether traffic can route through the assigned gateway.
+
+    !!! Info "Sending numbers in the carrier's format (de-normalisation)"
+        Use the **Parameter Rewrite** tab on a carrier IP to change the destination number or CLI before the call is sent to that carrier. This lets you keep one number format inside ConnexCS, usually E.164, and convert it to whatever format each carrier requires.
+
+        For example:
+
+        + Remove the country code for a carrier that expects national format: `441782…` becomes `01782…`
+        + Add a leading `+` for a carrier that expects it: `441782…` becomes `+441782…`
+        + Add a tech prefix the carrier uses to identify your traffic: `441782…` becomes `1234#441782…`
+
+        Customer-side Parameter Rewrite does the opposite: it normalises numbers as they arrive. See [**Customer Auth**](https://docs.connexcs.com/customer/auth/#enable-ip-authentication) for how to write rewrite rules.
   
 2. Carrier **SIP User Authentication** is only used to allow a carrier to connect to the system, not for outbound connections.
 [**Customer Auth**](https://docs.connexcs.com/customer/auth/) gives information on the field details.
@@ -54,4 +65,4 @@
 + **Flexible SIP Response Handling**: Customizes responses to ensure compatibility with different carriers.
 + **Enhanced Security & Authentication**: Supports multiple authentication methods for secure carrier interactions.
 + **Optimized Routing & Load Balancing**: Enables intelligent traffic distribution across carrier gateways.
-+ **Efficient Parameter Rewriting**: Ensures seamless call processing by maintaining a uniform number format.
++ **Efficient Parameter Rewriting**: Converts numbers to the format each carrier requires (de-normalisation), while customer-side rewriting keeps a uniform format inside ConnexCS.

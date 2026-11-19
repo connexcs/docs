@@ -47,9 +47,9 @@ Click on the Group name, then click **`Edit`** to revise the following:
       style E fill:#ECEFF1,stroke:#16C440,stroke-width:2px
       ```
 
-    + **Sequential**: Routes a call in a sequential order based on the order under Group Members. By default, the  call routes to the member whose extension number has the highest value (for example, 5021).
-      + If the member with the second-highest extension number doesn't respond, the call gets routed to the extension with the third-highest value (for example, 4097).
-      + If the member with second highest extension number doesn't respond, the call gets routed to the extension with the third highest value (for example, 4095). This process continues until a member receives the call.
+    + **Sequential**: Rings group members one at a time, in the order listed under Group Members. By default, the call goes first to the member with the highest extension number (for example, 5021).
+      + If that member doesn't answer, the call goes to the member with the next-highest extension number (for example, 4097).
+      + If they don't answer either, the call goes to the next member (for example, 4095), and so on until someone answers.
 
     ```mermaid
     graph LR

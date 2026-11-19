@@ -152,7 +152,7 @@ See: [Security](https://docs.connexcs.com/security/), [STIR/SHAKEN Cert](https:/
 
 ### Observability
 
-- **Always-on SIP capture** allows any call to be reconstructed and rendered as a signaling ladder diagram after the fact, including calls from prior weeks, subject to retention limits.
+- **Always-on SIP capture** allows any call from the last seven days to be reconstructed and shown as a signaling ladder diagram after the fact.
 - **Real-time CDRs** are generated per call.
 - **Circuit tests** measure MOS (Mean Opinion Score), PDD (Post-Dial Delay), and DTMF signaling accuracy on demand.
 - Diagnostic data captured through this layer is queryable by the MCP Server (see above).

@@ -38,28 +38,28 @@ Use the **Carrier** section in **ConnexCS** for simplified Carrier management wh
 
 From the **Carriers** page, you can perform several management operations.
 
-+ :material-plus::Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
++ :material-plus: **Add**: Add new Carriers (see [**Create Carrier**](https://docs.connexcs.com/carrier/#create-carrier) below for details.)
 
 + **Refresh**: Refresh the page, helpful when making edits or looking at real-time changes. This created page is like a web app so some information will update automatically.
 
-+ **Bulk Edit**: Select several Carriers, then click **Bulk Edit** to change the fields such as Channels Status, Flow Speed (CPS), Portal Access, and Country.
++ **Bulk Edit**: Select several Carriers, then click **Bulk Edit** to change fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
 
 + **Delete**: To delete several carriers at a time, select one or more carriers from the list and then click the trash bin icon and confirm.
 
 + **?**: Link to documentation for the current page.
 
-+ **Send**: ConnexCS includes Refer ConnexCS for your customers.
++ **Send**: Send a Refer ConnexCS message to your carriers.
 
-1. Select several customers using the tick-box selector on the left side of each row. (Customers aren't visible to each other in the sent message.)
-2. Click on "Send" at the top right then choose Refer ConnexCS.
-3. Refer ConnexCS: This feature allows you to send simple ConnexCS Referrals to you customers.
-    + You can send referrals to multiple **Customers**.
-    + You can select the **Template** from the drop-down list.
-    + Enter the **Subject**.
-    + Write the Body of the referral.
-    + Click on `Send`.
-  
-<img src= "/carrier/img/carrier_referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
+    1. Select one or more carriers using the tick-box on the left side of each row. (Recipients can't see each other in the sent message.)
+    2. Click **Send** at the top right, then choose **Refer ConnexCS**.
+    3. **Refer ConnexCS** lets you send a simple ConnexCS referral to the selected carriers:
+        + You can send referrals to multiple **Carriers**.
+        + Select the **Template** from the drop-down list.
+        + Enter the **Subject**.
+        + Write the **Body** of the referral.
+        + Click `Send`.
+
+    <img src= "/carrier/img/carrier_referral.png" style="border: 2px solid #4472C4; border-radius: 8px;">
 
 + **Active**: Used to sort Carriers based on the selected status. Results on the page will automatically arrange themselves according to the filter.
 
@@ -74,7 +74,7 @@ From the **Carriers** page, you can perform several management operations.
 + **Columns** pop out on the right allowing you to add / remove options, change column order, and in some cases you can create row groups and total values for pivot functionality.
 + **Filters** pop out on the right allowing you to filter your carriers.
 
-+ Adjust Column ordering
++ **Column ordering**: Drag columns to change their order.
 
 ## Create Carrier
 
@@ -126,17 +126,20 @@ From the **Carriers** page, you can perform several management operations.
         
         :material-menu-right: `Required`: Call won't be delivered to the provider without the PA-ID.
     
-    * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the start to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.
+    * **Consec Fail Backoff:** When Enabled, if a carrier goes down, only a fraction of calls will be sent to the carrier until the call starts to complete again (calls aren't completely disabled otherwise there is no way to know when the carrier is back up again). The First Reply Timeout is skipped.
         * **Purpose**: Helps determine if a route is down.
         * **Functionality**:
             * Counts the number of consecutive failed calls.
             * Resets to zero when a call successfully connects.
             * If 10,000 consecutive calls fail, it indicates a route is likely down.
-    * **Tags** and **TOML:** Not applicable to carriers.
-    * **Ext.Accounting ID:** This is used to fill in work in an external accounting field to correlate between Connexcs and the external accountancy system.
-    * **Call Recording Retention Days:** How long the customer wants to keep the recorded calls.
+    * **Tags**: Add meta-data identifiers to the carrier, for example to group carriers for filtering or reporting.
+    * **Vars<sup>[TOML](https://en.wikipedia.org/wiki/TOML)</sup>:** Custom variables for this carrier, stored in TOML format (similar to INI files). ScriptForge scripts can read them, and they're also used for header rules (see [**Headers from Customers to Providers**](#headers-from-customers-to-providers)).
+    * **Ext. Accounting ID:** The carrier's ID in your external accounting system, used to match records between ConnexCS and that system.
+    * **Call Recording Retention Days:** How many days to keep recorded calls for this carrier.
     * **Gateway Failover:** Enables automatic switching between multiple IP addresses configured within a carrier's authentication settings. By default, when a call reaches this carrier, it is attempted on one of the IPs configured in the carrier's authentication settings. If the call fails, it does not fail over to a different IP within the same carrier. However, enabling Gateway Failover allows the call to fail over to a different IP within the same carrier.
-    Gateway Failover typically offers several options that determine the behavior when a call fails on the first IP:
+
+        Gateway Failover offers these options, which determine what happens when a call fails on the first IP:
+
         * *None*: No failover occurs.
         * *Failover 1*: After a call fails on the first IP, the system attempts to route the call through one alternative IP configured in the authentication setting.
         * *Failover 2*: After a call fails on the first IP, the system attempts to route the call through up to two alternative IPs.
@@ -163,26 +166,26 @@ To ensure compatibility, set the switch manufacturer to `bandwidth.com`.
 
 Customize the handling of X-Headers between the User Agent Client (UAC) and the carrier. By default, all UAC-originating X-Headers are removed for standardization, but this configuration allows selective retention of specific headers crucial for carrier communication.
 
-When the Carrier requires information on the headers sent from the UAC, you can use below discussed process:
+When the Carrier requires information on the headers sent from the UAC, use the following process:
 
-1. Login to your account.
-2. Navigate to Management :material-menu-right: Customer :material-menu-right: Carrier :material-menu-right: blue `+` button :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>.
-3. Consider an example here: **Example of how to retain X-ng199 but remove all other X-headers**
+1. Log in to your account.
+2. Navigate to Management :material-menu-right: Carrier :material-menu-right: [Carrier Name] :material-menu-right: Edit :material-menu-right: Config :material-menu-right: Vars<sup>TOML</sup>.
+3. Consider an example here: **Example of how to retain X-ng911 but remove all other X-headers**
 4. Enter the code in the Vars<sup>TOML</sup> section.
 
-```js linenums="1"
-[headers] // configuration for headers
-remove_regex="^X-(?:(?!(ng911)).)*" // only retain X-ng199 but remove all other X-headers
-```
+    ```toml linenums="1"
+    [headers] # configuration for headers
+    remove_regex="^X-(?:(?!(ng911)).)*" # only retain X-ng911 but remove all other X-headers
+    ```
 
-The **Default Setting** is:
+    The **Default Setting** is:
 
-```js linenums="1"
-[headers]
-remove_regex="^X-.*"
-```
+    ```toml linenums="1"
+    [headers]
+    remove_regex="^X-.*"
+    ```
 
-5.Click `Save`.
+5. Click `Save`.
 
 !!! Warning
     Misconfigured regular expressions may remove essential SIP headers and **break SIP protocol behaviour**, leading to call failures or service disruption. This is an advanced configuration and must be used with care.
@@ -207,7 +210,7 @@ Gateway Failover allows ConnexCS to automatically try alternative IP addresses w
 5. Click **`Save`**
 6. Repeat steps 3–5 for each additional IP you want available as a failover target
 
-Each IP entry in the Auth tab represents a separate gateway endpoint. When Gateway Failover is enabled, If a call fails on the first selected IP, the system will automatically retry using another available IP under the same carrier.
+Each IP entry in the Auth tab represents a separate gateway endpoint. When Gateway Failover is enabled, if a call fails on the first selected IP, the system will automatically retry using another available IP under the same carrier.
 
 ### Step 2 — Enable Gateway Failover
 
@@ -220,8 +223,8 @@ Each IP entry in the Auth tab represents a separate gateway endpoint. When Gatew
     |---|---|
     | **None** | No failover — call fails immediately if primary IP does not respond |
     | **Failover 1** | If the initial IP attempt fails, the call is retried on 1 other IP within the same carrier |
-    | **Failover 2** | If the initial IP attempt fails, the call is retried on up to 2 other IP within the same carrier |
-    | **Failover 3** | If the initial IP attempt fails, the call is retried up to 3 other IP within the same carrier |
+    | **Failover 2** | If the initial IP attempt fails, the call is retried on up to 2 other IPs within the same carrier |
+    | **Failover 3** | If the initial IP attempt fails, the call is retried on up to 3 other IPs within the same carrier |
 
 5. Click **`Save`**
 

@@ -28,7 +28,7 @@ ConnexCS offers a range of options to limit CPS and Channels across the entire a
 |**Per Carrier IP Address (outbound traffic to a specific gateway)**|Under the carrier, go to Auth :material-menu-right: IP Auth :material-menu-right: select the IP address|
 |**Per Carrier DID (inbound traffic to a specific number)**| Global :material-menu-right: DID :material-menu-right: select the DID :material-menu-right: Capacity Limits|
 |**Per Customer**|Management :material-menu-right: Customer :material-menu-right: select customer name :material-menu-right: Edit|
-|**Per Customer IP Address or SIP user**|Under the customer, Routing :material-menu-right: select the IP or username :material-menu-right: Capacity Limits|
+|**Per Customer IP Address or SIP user**|Under the customer, go to Auth :material-menu-right: select the IP or SIP user :material-menu-right: **Channels** and **Flow Speed**|
 |**Per Customer Ingress Routing (to carrier)**|Under the customer, go to Routing :material-menu-right: select the name :material-menu-right: Capacity Limits
 
 *(*DID: Direct Inward Dialing*)
