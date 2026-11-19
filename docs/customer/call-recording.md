@@ -155,9 +155,8 @@ The overall workflow is:
 :material-arrow-right: **Play or Download Recording**
 
 !!! tip "Quick Reference"
-    **Account-level enablement:** `Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: Wholesale Call Recording (per minute)`
-    **Outbound:** `Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Media and Session Control :material-menu-right: Call Recording`
-    **Inbound:** `Management :material-menu-right: Customer :material-menu-right: DID :material-menu-right: Media :material-menu-right: Call Recording`
-    **View:** `Logging :material-menu-right: Call ID :material-menu-right: Call Recording`
-    **Download:** `Management :material-menu-right: Customer :material-menu-right: CDR :material-menu-right: Call Recording`
-    **Files:** `Files :material-menu-right: recording`
+    **Account-level enablement:** Setup :material-menu-right: Settings :material-menu-right: Account :material-menu-right: Wholesale Call Recording (per minute)
+    **Outbound:** Management :material-menu-right: Customer :material-menu-right: Routing :material-menu-right: Media and Session Control :material-menu-right: Call Recording <br>**Inbound:** Management :material-menu-right: Customer :material-menu-right: DID :material-menu-right: Media :material-menu-right: Call Recording</br>
+    **View:** Logging :material-menu-right: Call ID :material-menu-right: Call Recording
+    <br>**Download:** Management :material-menu-right: Customer :material-menu-right: CDR :material-menu-right: Call Recording`
+    **Files:** `Files :material-menu-right: recording</br>
