@@ -263,7 +263,7 @@ Each New Bulk Upload opens in its own full-screen window, titled **Bulk Upload D
 
 ### Upload names
 
-Every upload is given a **three-word name** when it starts, for example *amber-falcon-river*. The name appears at the top of the window, ahead of the file name, in the upload history and in every message about that upload. Use it to tell uploads apart, especially when files have similar names.
+Every upload is given a **random name** when it starts, for example *amber-falcon-river*. The name appears at the top of the window, ahead of the file name, in the upload history and in every message about that upload. Use it to tell uploads apart, especially when files have similar names.
 
 ### How to use Bulk Upload
 
