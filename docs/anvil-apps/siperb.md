@@ -65,7 +65,7 @@ The integration helps administrators:
 
 5. To access Siperb, log in to the ConnexCS Control Panel and click `Siperb` in the left-hand navigation menu. This opens the Siperb application integrated with your ConnexCS account.<br><img src="/apps/img/siperb7.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "270" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
-6. A new window will appear where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+6. A new window will appear where you need to enter the `Siperb API Token`. <br><img src="/apps/img/siperb11.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "450" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 7. Steps to get the `Siperb API Token`:
       1. Login to your **Siperb Account**.
@@ -75,7 +75,7 @@ The integration helps administrators:
 
         > **Security Warning:** The Siperb API token is displayed only once. Copy it and store it securely in an approved password manager or secrets vault. Treat the token as a password, and do not share it or expose it in documentation, screenshots, or source control.
 
-8.  Navigate to the **Control Panel**, click on the **Siperb** application. Paste the generated token and click on `Save and Sign In`.<br><img src="/apps/img/siperb12.png" alt="Connex Store marketplace showing the Siperb app and Install button" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
+8.  Navigate to the **Control Panel**, click on the **Siperb** application. Paste the generated token and click on `Save and Sign In`.<br><img src="/apps/img/siperb12.png" alt="Connex Store marketplace showing the Siperb app and Install button" width= "450" style="border: 2px solid #4472C4; border-radius: 8px; max-width: 100%;"></br>
 
 ## App Features
 

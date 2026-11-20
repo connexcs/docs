@@ -429,7 +429,6 @@ nav:
     - DID Purchase: anvil-apps/did-purchase.md
     - DID Spam Score: anvil-apps/did-spam-score.md
     - Neutrafix: anvil-apps/neutrafix.md
-    - Peering Hub: anvil-apps/peering-hub.md
-    - Siperb: anvil-apps/siperb.md
-    - Yoco Payments: anvil-apps/yoco-payments.md
-    
+    - WebPhone App:
+        - Webphone Introduction: anvil-apps/webphoneapp.md
+        - Design Webphone App: anvil-apps/design-webphone.md
