@@ -191,9 +191,11 @@ c. **Bulk Upload**: The preferred method for adding a Rate Card is to import/upl
 !!! Danger "Manually generated cards"
     When users create Provider Rate Card CSV files manually in Excel (rather than generating them from a rate card management system), they may introduce errors such as empty rows or duplicate prefixes, which could cause the file upload to error.
 
-d. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows.
+d. **New Bulk Upload**: [Click here](/customer/did/#bulk-upload) to use the **New Bulk Upload** Feature.
 
-e. **Build from Provider Card**:
+e. **Manual Add**: To manually add Rate Card rows, select Create Draft and then add / modify / delete required rows.
+
+f. **Build from Provider Card**:
   <br>1. Click **`Build`** and confirm.</br>
   2. A notification will tell you if the build was successful. You may need to refresh the card to see the new settings.
 

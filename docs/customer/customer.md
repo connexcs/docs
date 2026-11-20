@@ -71,6 +71,8 @@ Before creating a new customer, let's review the elements available on the Custo
 
     2. You must include the **Customer name** and **Currency** as necessary columns in the.csv file for bulk uploading.
 
+5. **New Bulk Upload**: [Click here](/customer/did/#bulk-upload) to use the **New Bulk Upload** Feature.
+
 **Bulk Edit**: Select several customers, then click **Bulk Edit** to revise fields such as Channels, Status, Flow Speed (CPS), Portal Access, and Country.
 
 **Delete**: Delete several customers at a time.

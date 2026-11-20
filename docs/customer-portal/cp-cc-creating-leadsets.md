@@ -100,3 +100,7 @@ This section has information on the Leadsets. You can also `Create Leadset` . <b
 2. Click on `Upload`. <br><img src="/customer-portal/img/bd21new.png" style="border: 2px solid #4472C4; border-radius: 8px;"></br>
 
 3. Follow the same process as described in the **Upload via File/Upload via URL** section, starting from **Step 2** through to the final step.
+
+### New Bulk Upload
+
+[Click here](/customer/did/#bulk-upload) to use the **New Bulk Upload** Feature.

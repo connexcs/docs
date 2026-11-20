@@ -63,6 +63,7 @@ This system ensures up-to-date customer information and facilitates quick action
             + Right-click on the second row and select **Start Row** to show the first line of data (the first row is typically column headers).
             + Right-click on each column to **Map Columns** to appropriate fields.
             + Once you have filled out all the required fields, click **Upload to Server**.
+    + **New Bulk Upload**: [Click here](/customer/did/#bulk-upload) to use the **New Bulk Upload** Feature.
 
     !!! Note "Note"
         1. Before uploading the .csv file, please ensure that it doesn't contain any exponential or scientific notations. The inclusion of the notations will result in errors.

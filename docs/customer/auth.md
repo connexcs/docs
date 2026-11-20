@@ -595,6 +595,10 @@ Each field has a toggle on the right side of the Bulk Edit window.
 
 To view the complete **Bulk Upload** procedure, refer to the [**Bulk Upload**](https://docs.connexcs.com/customer/did/#bulk-upload) documentation or select **Demo** from the **Bulk Upload** window to watch the demonstration video.
 
+##### New Bulk Upload
+
+[Click here](/customer/did/#bulk-upload) to use the **New Bulk Upload** Feature.
+
 #### Latency
 
 The **Latency** allows you to view the latency associated with a specific SIP user over time.

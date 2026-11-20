@@ -191,6 +191,10 @@ Four options are available: **New Workspace**, **Load Workspace**, **Bulk Upload
     |**Update**|```UPDATE 'Example' SET Col2 = '4' WHERE Col2 = '97405'```|<img src= "/misc/img/ds16.png" style="border: 2px solid #4472C4; border-radius: 8px;">
     |**Delete**|```DELETE FROM 'Example' WHERE Col2 = '4'```|<img src= "/misc/img/ds17.png" style="border: 2px solid #4472C4; border-radius: 8px;">|
 
+#### New Bulk Upload
+
+[Click here](/customer/did/#bulk-upload) to use the **New Bulk Upload** Feature.
+
 ### Remote Query
 
 Upload your data follow the steps mentioned in [Step 3](/datasuite/#step-3-upload-data).

@@ -236,6 +236,10 @@ You can perform this for an individual Customer (**Management :material-menu-rig
 
 See [**Script Forge**](https://docs.connexcs.com/developers/scriptforge/) for more information.
 
+### New Bulk Upload
+
+[Click here](/customer/did/#bulk-upload) to use the **New Bulk Upload** Feature.
+
 ## Range Holders
 
 Following are the steps to configure the Range Holder cards.
