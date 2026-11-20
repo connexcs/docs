@@ -141,7 +141,7 @@ DIDs can also be accessed from:
 The Global DID view provides centralized access to DID information across the account, while these locations provide DID management within the respective Customer or Carrier account.
 
 !!! info "More Information"
-    *See [**DID**](/customer/did/#bulk-upload) for configuration details, including Bulk Upload.*
+    *See [**DID**](/customer/did/#bulk-upload) for configuration details, including New Bulk Upload.*
 
 !!! info "DID Provisioning"
     For information about using [**ScriptForge**](/apps/architecture/scriptforge/).
